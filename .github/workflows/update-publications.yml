@@ -36,7 +36,9 @@ jobs:
         run: |
           python scripts/update_scopus_bibtex.py \
             --authors scripts/scopus_authors.json \
-            --output data/publications.bib
+            --output data/publications.bib \
+            --view STANDARD \
+            --abstract-view STANDARD
 
       - name: Commit updated bibliography if changed
         run: |
