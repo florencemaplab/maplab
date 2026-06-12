@@ -1,0 +1,27 @@
+[
+  {
+    "slug": "alessandro-benedetto",
+    "name": "Alessandro Benedetto",
+    "scopus_author_id": "57189371872",
+    "orcid": "0000-0002-9713-1300"
+  },
+  {
+    "slug": "roberto-arrighi",
+    "name": "Roberto Arrighi",
+    "scopus_author_id": "",
+    "orcid": "0000-0002-5435-6729",
+    "search_query": "AUTHLASTNAME(Arrighi) AND AUTHFIRST(Roberto) AND AFFIL(Florence)"
+  },
+  {
+    "slug": "giovanni-anobile",
+    "name": "Giovanni Anobile",
+    "scopus_author_id": "36466056200",
+    "orcid": "0000-0003-2796-0661"
+  },
+  {
+    "slug": "elisa-castaldi",
+    "name": "Elisa Castaldi",
+    "scopus_author_id": "55660832000",
+    "orcid": "0000-0003-0327-6697"
+  }
+]
