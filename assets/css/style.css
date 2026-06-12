@@ -147,15 +147,16 @@ p { margin: 0 0 1rem; }
 }
 
 .lede {
-  font-size: 1.06rem;
+  font-size: 1.02rem;
   color: var(--muted);
   max-width: 70ch;
+  margin-bottom: 0;
 }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.55fr) 330px;
-  gap: 1.6rem;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 1.25rem;
   align-items: start;
 }
 
@@ -171,19 +172,26 @@ p { margin: 0 0 1rem; }
   box-shadow: var(--shadow);
 }
 
+.hero > div,
+.profile-intro {
+  align-self: start;
+  min-height: 0;
+}
+
 .hero > div {
-  padding: 1.7rem 1.75rem;
+  padding: 1.2rem 1.35rem;
 }
 
 .profile-card,
 .panel,
 .note {
-  padding: 1.25rem;
+  padding: 1.15rem;
 }
 
 .profile-card {
   position: sticky;
   top: 5.6rem;
+  align-self: start;
 }
 
 .profile-photo {
@@ -572,4 +580,24 @@ code {
   .people-grid {
     grid-template-columns: 1fr;
   }
+}
+
+
+/* Compact hero fix: keep the author intro from stretching to the photo card height. */
+.hero {
+  align-items: start;
+}
+
+.hero > div,
+.profile-intro,
+.profile-card {
+  align-self: start;
+}
+
+.profile-intro {
+  min-height: 0 !important;
+}
+
+.profile-intro .lede:last-child {
+  margin-bottom: 0;
 }
