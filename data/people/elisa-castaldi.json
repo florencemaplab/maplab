@@ -1,0 +1,60 @@
+{
+  "slug": "elisa-castaldi",
+  "shortName": "Castaldi",
+  "name": "Elisa Castaldi",
+  "role": "Associate Professor",
+  "ssd": "PSIC-01/B – Neuropsychology and cognitive neuroscience",
+  "department": "NEUROFARBA, University of Florence",
+  "email": "elisa.castaldi@unifi.it",
+  "photo": "../assets/images/elisa-castaldi.jpg",
+  "photoCredit": "PisaVisionLab",
+  "summary": "Associate Professor at the University of Florence. Her work addresses numerical cognition, visual perception, developmental dyscalculia, neuroimaging and plasticity of the visual system.",
+  "research": "Her research investigates the perceptual and neural bases of numerical cognition and visual processing, with attention to development, atypical trajectories and experience-dependent plasticity.",
+  "interests": [
+    "Numerical cognition",
+    "Developmental dyscalculia",
+    "Visual perception",
+    "Visual plasticity",
+    "fMRI",
+    "Development"
+  ],
+  "teaching": {
+    "text": "Teaching information is maintained on the official University of Florence profile and course catalogue.",
+    "links": [
+      {
+        "label": "Open UniFI teaching/profile page",
+        "url": "https://cercachi.unifi.it/p-doc2-0-0-A-3f2b3a32392c29.html"
+      }
+    ]
+  },
+  "cv": [
+    "Associate Professor, University of Florence.",
+    "Research on numerical cognition, visual perception and developmental dyscalculia.",
+    "Faculty member of Florence MAPLab and PisaVisionLab."
+  ],
+  "topics": "Current themes include visual and numerical plasticity, developmental dyscalculia, individual differences in mathematical cognition and neuroimaging of perceptual systems.",
+  "links": [
+    {
+      "label": "UniFI",
+      "url": "https://cercachi.unifi.it/p-doc2-0-0-A-3f2b3a32392c29.html"
+    },
+    {
+      "label": "Personal website",
+      "url": "https://www.elisacastaldi.org/"
+    },
+    {
+      "label": "PisaVisionLab",
+      "url": "https://www.pisavisionlab.org/members/elisa-castaldi/"
+    }
+  ],
+  "aliases": [
+    "Elisa Castaldi",
+    "Castaldi Elisa",
+    "Castaldi, Elisa",
+    "E Castaldi",
+    "E. Castaldi",
+    "Castaldi E",
+    "Castaldi, E",
+    "Castaldi E."
+  ]
+}

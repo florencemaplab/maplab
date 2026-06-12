@@ -1,0 +1,59 @@
+{
+  "slug": "alessandro-benedetto",
+  "shortName": "Benedetto",
+  "name": "Alessandro Benedetto",
+  "role": "Fixed-term researcher, Italian Law 240/10",
+  "ssd": "PSIC-01/B – Neuropsychology and cognitive neuroscience",
+  "department": "NEUROFARBA, University of Florence",
+  "email": "alessandro.benedetto@unifi.it",
+  "photo": "../assets/images/alessandro-benedetto.jpg",
+  "photoCredit": "PisaVisionLab",
+  "summary": "Researcher in cognitive neuroscience and psychobiology at the University of Florence. His work focuses on human perceptual systems, sensorimotor integration, visual neuroscience and neural dynamics.",
+  "research": "His research focuses on human perceptual systems and sensorimotor integration, combining psychophysics, EEG, fMRI, eye-movement recordings, computational modelling and pupillometry.",
+  "interests": [
+    "Action and perception",
+    "Eye movements",
+    "EEG",
+    "fMRI",
+    "Neural oscillations",
+    "Serial dependence",
+    "Predictive signals"
+  ],
+  "teaching": {
+    "text": "Teaching information is maintained on the official University of Florence profile and course catalogue.",
+    "links": [
+      {
+        "label": "Open UniFI teaching/profile page",
+        "url": "https://cercachi.unifi.it/p-doc2-0-0-A-3f2b3a3234282e.html"
+      }
+    ]
+  },
+  "cv": [
+    "2023–present: Fixed-term researcher at the University of Florence.",
+    "2022: Post-doc associate, Center for Visual Science, University of Rochester.",
+    "2017–2021: Post-doc fellow, University of Pisa.",
+    "2017: PhD and Doctor Europaeus in Neuroscience, University of Florence.",
+    "2013: Master’s degree in Psychology, Cognitive Neuroscience, Vita-Salute San Raffaele University."
+  ],
+  "topics": "Current themes include visuomotor communication, neural oscillations, perceptual history and serial dependence, predictive modulation of perception, and the coupling between action and sensory processing.",
+  "links": [
+    {
+      "label": "UniFI",
+      "url": "https://cercachi.unifi.it/p-doc2-0-0-A-3f2b3a3234282e.html"
+    },
+    {
+      "label": "PisaVisionLab",
+      "url": "https://www.pisavisionlab.org/members/alessandro-benedetto/"
+    }
+  ],
+  "aliases": [
+    "Alessandro Benedetto",
+    "Benedetto Alessandro",
+    "Benedetto, Alessandro",
+    "A Benedetto",
+    "A. Benedetto",
+    "Benedetto A",
+    "Benedetto, A",
+    "Benedetto A."
+  ]
+}

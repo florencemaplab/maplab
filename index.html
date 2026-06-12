@@ -3,75 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MAPLab People</title>
-  <meta name="description" content="Personal pages for MAPLab faculty members.">
-  <link rel="stylesheet" href="assets/css/style.css?v=20260612e">
+  <title>Florence MAPLab | People</title>
+  <meta name="description" content="Faculty pages for Florence MAPLab.">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260612f">
 </head>
-<body data-bib-url="data/publications.bib">
+<body data-people-index="data/people/people.json">
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="index.html">Florence MAPLab <span>People pages</span></a>
-      <div class="nav-links">
-        <a href="people/alessandro-benedetto.html">Benedetto</a>
-        <a href="people/roberto-arrighi.html">Arrighi</a>
-        <a href="people/giovanni-anobile.html">Anobile</a>
-        <a href="people/elisa-castaldi.html">Castaldi</a>
-      </div>
+      <a class="brand" href="index.html">
+        <span class="brand-title">Florence MAPLab</span>
+        <span class="brand-subtitle">Vision, action & neurophysiology</span>
+      </a>
+      <div class="nav-links" data-people-nav></div>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="profile-intro">
+    <section class="lab-hero">
+      <div>
         <div class="kicker">Florence MAPLab</div>
-        <h1>Personal pages</h1>
-        <p class="lede">A compact GitHub Pages structure for individual MAPLab profiles. Each page has profile information, research interests, CV highlights, teaching links, and an automatically filtered publication list loaded from one shared BibTeX file.</p>
+        <h1>People</h1>
+        <p class="lede">Personal academic pages for MAPLab faculty. Profiles, teaching, CV highlights and publication lists are generated from small JSON files and one shared BibTeX bibliography.</p>
       </div>
-      <aside class="profile-card">
-        <h2>Shared bibliography</h2>
-        <p>All publication lists are generated from:</p>
-        <p><code>data/publications.bib</code></p>
-        <p>Add a new BibTeX entry there once, and it appears on every matching author page.</p>
-      </aside>
     </section>
 
     <section>
-      <h2>Faculty pages</h2>
-      <div class="people-grid">
-        <a class="person-tile" href="people/alessandro-benedetto.html">
-          <img class="tile-photo" src="assets/images/alessandro-benedetto.jpg" alt="Photo of Alessandro Benedetto">
-          <div>
-            <h2>Alessandro Benedetto</h2>
-            <p>Perception, sensorimotor integration, EEG, fMRI, eye movements.</p>
-          </div>
-        </a>
-        <a class="person-tile" href="people/roberto-arrighi.html">
-          <img class="tile-photo" src="assets/images/roberto-arrighi.jpg" alt="Photo of Roberto Arrighi">
-          <div>
-            <h2>Roberto Arrighi</h2>
-            <p>Visual and auditory perception, timing, multisensory integration.</p>
-          </div>
-        </a>
-        <a class="person-tile" href="people/giovanni-anobile.html">
-          <img class="tile-photo" src="assets/images/giovanni-anobile.jpeg" alt="Photo of Giovanni Anobile">
-          <div>
-            <h2>Giovanni Anobile</h2>
-            <p>Numerosity, attention, multisensory and sensorimotor number cognition.</p>
-          </div>
-        </a>
-        <a class="person-tile" href="people/elisa-castaldi.html">
-          <img class="tile-photo" src="assets/images/elisa-castaldi.jpg" alt="Photo of Elisa Castaldi">
-          <div>
-            <h2>Elisa Castaldi</h2>
-            <p>Numerical cognition, dyscalculia, visual plasticity, fMRI.</p>
-          </div>
-        </a>
+      <div class="section-heading">
+        <div>
+          <div class="kicker">Faculty</div>
+          <h2>Research profiles</h2>
+        </div>
       </div>
+      <div class="people-grid" data-people-grid></div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>Content drafted from public MAPLab, UniFI and PisaVisionLab profile information. Review before publishing.</p>
+    <p>To add a person, copy <code>people/template.html</code>, create a matching JSON file in <code>data/people/</code>, then add the slug to <code>data/people/people.json</code>.</p>
   </footer>
+
+  <script src="assets/js/index.js?v=20260612f" defer></script>
 </body>
 </html>
