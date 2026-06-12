@@ -2,7 +2,8 @@ name: Update publications from Scopus
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    # Once a day. GitHub scheduled workflows use UTC time.
+    - cron: "15 3 * * *"
   workflow_dispatch:
 
 permissions:
@@ -22,13 +23,12 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt
+        run: python -m pip install -r requirements.txt
 
       - name: Update BibTeX from Scopus
         env:
           SCOPUS_API_KEY: ${{ secrets.SCOPUS_API_KEY }}
+          # Optional. Add this secret only if your institution gives you one.
           SCOPUS_INST_TOKEN: ${{ secrets.SCOPUS_INST_TOKEN }}
         run: |
           python scripts/update_scopus_bibtex.py \
