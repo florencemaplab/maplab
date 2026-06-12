@@ -172,6 +172,11 @@
     }, {});
   }
 
+  function sortedYearsFromEntries(entries) {
+    return Array.from(new Set(entries.map((entry) => entry.fields.year || "n.d.")))
+      .sort((a, b) => Number.parseInt(b, 10) - Number.parseInt(a, 10));
+  }
+
   function renderGroupedPublications(entries) {
     const groups = groupEntriesByYear(entries);
     const years = Object.keys(groups).sort((a, b) => Number.parseInt(b, 10) - Number.parseInt(a, 10));
@@ -185,7 +190,7 @@
         });
         const count = items.length;
         return `
-          <section class="publication-year" data-publication-year>
+          <section class="publication-year" data-publication-year data-year="${htmlEscape(year)}">
             <h3>
               <span>${htmlEscape(year)}</span>
               <small>${count} publication${count === 1 ? "" : "s"}</small>
@@ -199,17 +204,72 @@
       .join("");
   }
 
+  function renderYearFilter(years) {
+    if (years.length <= 1) return null;
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "year-filter";
+    wrapper.setAttribute("role", "group");
+    wrapper.setAttribute("aria-label", "Filter publications by year");
+
+    const buttons = ["all", ...years];
+    buttons.forEach((year) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "year-filter-button";
+      button.dataset.year = year;
+      button.textContent = year === "all" ? "All years" : year;
+      button.setAttribute("aria-pressed", year === "all" ? "true" : "false");
+      if (year === "all") button.classList.add("is-active");
+      wrapper.appendChild(button);
+    });
+
+    return wrapper;
+  }
+
+  function countLabel(number, activeYear) {
+    const base = `${number} publication${number === 1 ? "" : "s"}`;
+    return activeYear && activeYear !== "all" ? `${base} in ${activeYear}` : base;
+  }
+
   async function initPublications() {
     const list = document.querySelector("[data-publications-list]");
     if (!list) return;
 
     const count = document.querySelector("[data-publications-count]");
     const input = document.querySelector("[data-publications-search]");
+    const tools = document.querySelector(".publication-tools");
     const bibUrl = document.body.dataset.bibUrl || "../data/publications.bib";
     const aliases = (document.body.dataset.authorAliases || "")
       .split("|")
       .map((alias) => alias.trim())
       .filter(Boolean);
+
+    let activeYear = "all";
+
+    function updatePublicationsVisibility() {
+      const query = normalize(input ? input.value : "");
+      let visible = 0;
+
+      list.querySelectorAll("[data-publication-year]").forEach((group) => {
+        const yearMatches = activeYear === "all" || group.dataset.year === activeYear;
+        let groupVisible = 0;
+
+        group.querySelectorAll(".publication").forEach((item) => {
+          const textMatches = item.dataset.search.includes(query);
+          const show = yearMatches && textMatches;
+          item.hidden = !show;
+          if (show) {
+            visible++;
+            groupVisible++;
+          }
+        });
+
+        group.hidden = groupVisible === 0;
+      });
+
+      if (count) count.textContent = countLabel(visible, activeYear);
+    }
 
     try {
       const response = await fetch(bibUrl);
@@ -226,29 +286,33 @@
       }
 
       list.innerHTML = renderGroupedPublications(entries);
-      if (count) count.textContent = `${entries.length} publication${entries.length === 1 ? "" : "s"}`;
 
-      if (input) {
-        input.addEventListener("input", () => {
-          const query = normalize(input.value);
-          let visible = 0;
+      const years = sortedYearsFromEntries(entries);
+      const filter = renderYearFilter(years);
+      if (filter && tools) {
+        const oldFilter = tools.querySelector(".year-filter");
+        if (oldFilter) oldFilter.remove();
+        tools.insertBefore(filter, count || null);
 
-          list.querySelectorAll("[data-publication-year]").forEach((group) => {
-            let groupVisible = 0;
-            group.querySelectorAll(".publication").forEach((item) => {
-              const show = item.dataset.search.includes(query);
-              item.hidden = !show;
-              if (show) {
-                visible++;
-                groupVisible++;
-              }
-            });
-            group.hidden = groupVisible === 0;
+        filter.addEventListener("click", (event) => {
+          const button = event.target.closest("button[data-year]");
+          if (!button) return;
+
+          activeYear = button.dataset.year;
+          filter.querySelectorAll("button[data-year]").forEach((item) => {
+            const selected = item === button;
+            item.classList.toggle("is-active", selected);
+            item.setAttribute("aria-pressed", selected ? "true" : "false");
           });
-
-          if (count) count.textContent = `${visible} publication${visible === 1 ? "" : "s"}`;
+          updatePublicationsVisibility();
         });
       }
+
+      if (input) {
+        input.addEventListener("input", updatePublicationsVisibility);
+      }
+
+      updatePublicationsVisibility();
     } catch (error) {
       list.innerHTML = `<div class="note">Could not load publications. Check that <code>${htmlEscape(bibUrl)}</code> exists and is published with the site.</div>`;
       if (count) count.textContent = "Publications unavailable";

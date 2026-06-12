@@ -301,3 +301,33 @@ code {
   .profile-card, .panel { margin-top: 1rem; }
   h1 { font-size: 2rem; }
 }
+
+.year-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  align-items: center;
+  flex: 1 1 100%;
+  order: 3;
+}
+
+.year-filter-button {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--text);
+  padding: .35rem .6rem;
+  font: inherit;
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+.year-filter-button:hover,
+.year-filter-button:focus {
+  border-color: var(--text);
+}
+
+.year-filter-button.is-active {
+  background: var(--text);
+  border-color: var(--text);
+  color: #fff;
+}

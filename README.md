@@ -97,3 +97,6 @@ https://florencemaplab.github.io/maplab/people/elisa-castaldi.html
 ## Notes before publishing
 
 The profile text is drafted from public official profile information. Review names, roles, CV highlights, teaching links and publications before final publication. The package intentionally avoids copying full CVs verbatim and avoids sensitive personal details such as home addresses, birth dates and family information.
+
+
+Publication pages automatically group records by year and include an All years/year filter generated from `data/publications.bib`.
