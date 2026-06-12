@@ -1,36 +1,65 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <title>Laboratorio di Nome del Laboratorio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Laboratorio di Nome del Laboratorio</h1>
-    <p>Università / Dipartimento / Istituto</p>
-  </header>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f6f8fb;
+  color: #222;
+  line-height: 1.6;
+}
 
-  <main>
-    <h2>Membri del laboratorio</h2>
+header {
+  background: #1f4e79;
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
 
-    <section class="membri">
-      <article class="card">
-        <img src="immagini/mario-rossi.jpg" alt="Foto di Mario Rossi">
-        <h3>Mario Rossi</h3>
-        <p><strong>Ruolo:</strong> Principal Investigator</p>
-        <p><strong>Interessi:</strong> genomica, bioinformatica, machine learning</p>
-        <p><a href="mailto:mario.rossi@universita.it">Email</a></p>
-      </article>
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
 
-      <article class="card">
-        <img src="immagini/giulia-bianchi.jpg" alt="Foto di Giulia Bianchi">
-        <h3>Giulia Bianchi</h3>
-        <p><strong>Ruolo:</strong> PhD student</p>
-        <p><strong>Interessi:</strong> single-cell RNA-seq, analisi dati</p>
-        <p><a href="mailto:giulia.bianchi@universita.it">Email</a></p>
-      </article>
-    </section>
-  </main>
-</body>
-</html>
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.membri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #ddd;
+}
+
+.card h3 {
+  margin-bottom: 0.3rem;
+}
+
+.card a {
+  color: #1f4e79;
+  font-weight: bold;
+}
