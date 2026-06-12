@@ -185,7 +185,7 @@ def fetch_entries_for_author(
     session: requests.Session,
     query: str,
     max_results: int = DEFAULT_MAX_RESULTS_PER_AUTHOR,
-    view: str = "COMPLETE",
+    view: str = "STANDARD",
 ) -> List[Dict[str, Any]]:
     entries: List[Dict[str, Any]] = []
     start = 0
@@ -199,7 +199,17 @@ def fetch_entries_for_author(
             "view": view,
             "sort": "-coverDate",
         }
-        payload = request_json(session, SCOPUS_SEARCH_URL, params)
+        try:
+            payload = request_json(session, SCOPUS_SEARCH_URL, params)
+        except ScopusError as exc:
+            # Some Scopus API keys are valid for STANDARD view only.
+            # If COMPLETE is not authorized, fall back instead of failing the whole workflow.
+            if view != "STANDARD" and ("AUTHORIZATION_ERROR" in str(exc) or "not authorized" in str(exc).lower()):
+                print("Warning: Scopus Search COMPLETE view is not authorized; retrying with STANDARD view.", file=sys.stderr)
+                params["view"] = "STANDARD"
+                payload = request_json(session, SCOPUS_SEARCH_URL, params)
+            else:
+                raise
         assert payload is not None
         results = payload.get("search-results", {})
 
@@ -423,7 +433,7 @@ def extract_coredata_from_abstract(payload: Dict[str, Any]) -> Dict[str, Any]:
     return result
 
 
-def fetch_scopus_abstract_authors(session: requests.Session, entry: Dict[str, Any], abstract_view: str = "FULL") -> Tuple[List[str], Dict[str, Any]]:
+def fetch_scopus_abstract_authors(session: requests.Session, entry: Dict[str, Any], abstract_view: str = "STANDARD") -> Tuple[List[str], Dict[str, Any]]:
     eid = first_value(entry, "eid")
     scopus_id = scopus_identifier_from_entry(entry)
 
@@ -754,8 +764,8 @@ def main(argv: Optional[List[str]] = None) -> int:
     parser.add_argument("--authors", default="scripts/scopus_authors.json", help="JSON config with authors")
     parser.add_argument("--output", default="data/publications.bib", help="Output BibTeX file")
     parser.add_argument("--max-results-per-author", type=int, default=DEFAULT_MAX_RESULTS_PER_AUTHOR)
-    parser.add_argument("--view", default="COMPLETE", choices=["STANDARD", "COMPLETE"], help="Scopus Search API view")
-    parser.add_argument("--abstract-view", default="FULL", help="Scopus Abstract Retrieval API view")
+    parser.add_argument("--view", default="STANDARD", choices=["STANDARD", "COMPLETE"], help="Scopus Search API view")
+    parser.add_argument("--abstract-view", default="STANDARD", help="Scopus Abstract Retrieval API view")
     parser.add_argument("--sleep", type=float, default=0.25, help="Pause between API calls, in seconds")
     parser.add_argument("--crossref-mailto", default=os.environ.get("CROSSREF_MAILTO", ""), help="Optional email for Crossref polite pool")
     args = parser.parse_args(argv)
