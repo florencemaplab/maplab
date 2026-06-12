@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Laboratorio di Nome del Laboratorio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Laboratorio di Nome del Laboratorio</h1>
+    <p>Università / Dipartimento / Istituto</p>
+  </header>
+
+  <main>
+    <h2>Membri del laboratorio</h2>
+
+    <section class="membri">
+      <article class="card">
+        <img src="immagini/mario-rossi.jpg" alt="Foto di Mario Rossi">
+        <h3>Mario Rossi</h3>
+        <p><strong>Ruolo:</strong> Principal Investigator</p>
+        <p><strong>Interessi:</strong> genomica, bioinformatica, machine learning</p>
+        <p><a href="mailto:mario.rossi@universita.it">Email</a></p>
+      </article>
+
+      <article class="card">
+        <img src="immagini/giulia-bianchi.jpg" alt="Foto di Giulia Bianchi">
+        <h3>Giulia Bianchi</h3>
+        <p><strong>Ruolo:</strong> PhD student</p>
+        <p><strong>Interessi:</strong> single-cell RNA-seq, analisi dati</p>
+        <p><a href="mailto:giulia.bianchi@universita.it">Email</a></p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
