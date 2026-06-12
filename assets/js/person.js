@@ -79,16 +79,18 @@
   }
 
   function parseBibTeX(text) {
-    return splitBibEntries(text).map((raw) => {
-      const header = raw.match(/^@([^{]+)\{\s*([^,]+),/);
-      if (!header) return null;
-      const body = raw.slice(header[0].length, -1);
-      return {
-        type: header[1].trim().toLowerCase(),
-        key: header[2].trim(),
-        fields: parseFields(body)
-      };
-    }).filter(Boolean);
+    return splitBibEntries(text)
+      .map((raw) => {
+        const header = raw.match(/^@([^{]+)\{\s*([^,]+),/);
+        if (!header) return null;
+        const body = raw.slice(header[0].length, -1);
+        return {
+          type: header[1].trim().toLowerCase(),
+          key: header[2].trim(),
+          fields: parseFields(body)
+        };
+      })
+      .filter(Boolean);
   }
 
   function authorsContain(entry, aliases) {
@@ -118,31 +120,83 @@
       .replace(/'/g, "&#039;");
   }
 
+  function bibYear(entry) {
+    const year = Number.parseInt(entry.fields.year, 10);
+    return Number.isFinite(year) ? year : 0;
+  }
+
+  function venueLine(entry) {
+    const f = entry.fields;
+    const venue = f.journal || f.booktitle || f.publisher || "";
+    const volume = f.volume || "";
+    const number = f.number || "";
+    const pages = f.pages || "";
+    const volumeIssue = volume && number ? `${volume}(${number})` : volume;
+    return [venue, volumeIssue, pages].filter(Boolean).join(", ");
+  }
+
   function publicationHTML(entry) {
     const f = entry.fields;
     const title = htmlEscape(f.title || "Untitled publication");
     const authors = htmlEscape(formatAuthors(f.author));
-    const venue = htmlEscape(f.journal || f.booktitle || f.publisher || "");
-    const year = htmlEscape(f.year || "");
-    const volume = htmlEscape(f.volume || "");
-    const number = htmlEscape(f.number || "");
-    const pages = htmlEscape(f.pages || "");
+    const venue = htmlEscape(venueLine(entry));
+    const year = htmlEscape(f.year || "n.d.");
     const doi = (f.doi || "").replace(/^https?:\/\/doi.org\//i, "");
     const url = f.url || (doi ? `https://doi.org/${doi}` : "");
+    const searchable = htmlEscape(normalize(`${f.title} ${formatAuthors(f.author)} ${venueLine(entry)} ${f.year} ${doi}`));
 
-    const venueBits = [venue, volume && (number ? `${volume}(${number})` : volume), pages].filter(Boolean).join(", ");
+    const linkedTitle = url
+      ? `<a href="${htmlEscape(url)}">${title}</a>`
+      : title;
+
     const links = [];
     if (doi) links.push(`<a href="https://doi.org/${htmlEscape(doi)}">DOI</a>`);
-    if (url && !doi) links.push(`<a href="${htmlEscape(url)}">Link</a>`);
+    else if (url) links.push(`<a href="${htmlEscape(url)}">Link</a>`);
 
     return `
-      <article class="publication" data-search="${htmlEscape(normalize(`${title} ${authors} ${venue} ${year}`))}">
-        <div class="publication-title">${title}</div>
-        <div class="publication-meta">${authors}</div>
-        <div class="publication-meta">${[venueBits, year].filter(Boolean).join(" · ")}</div>
+      <li class="publication" data-search="${searchable}">
+        <div class="publication-title">${linkedTitle}</div>
+        <div class="publication-authors">${authors}</div>
+        <div class="publication-meta">${[venue, year].filter(Boolean).join(" · ")}</div>
         ${links.length ? `<div class="publication-links">${links.join(" ")}</div>` : ""}
-      </article>
+      </li>
     `;
+  }
+
+  function groupEntriesByYear(entries) {
+    return entries.reduce((groups, entry) => {
+      const year = entry.fields.year || "n.d.";
+      if (!groups[year]) groups[year] = [];
+      groups[year].push(entry);
+      return groups;
+    }, {});
+  }
+
+  function renderGroupedPublications(entries) {
+    const groups = groupEntriesByYear(entries);
+    const years = Object.keys(groups).sort((a, b) => Number.parseInt(b, 10) - Number.parseInt(a, 10));
+
+    return years
+      .map((year) => {
+        const items = groups[year].sort((a, b) => {
+          const titleA = normalize(a.fields.title || "");
+          const titleB = normalize(b.fields.title || "");
+          return titleA.localeCompare(titleB);
+        });
+        const count = items.length;
+        return `
+          <section class="publication-year" data-publication-year>
+            <h3>
+              <span>${htmlEscape(year)}</span>
+              <small>${count} publication${count === 1 ? "" : "s"}</small>
+            </h3>
+            <ol class="year-publications">
+              ${items.map(publicationHTML).join("")}
+            </ol>
+          </section>
+        `;
+      })
+      .join("");
   }
 
   async function initPublications() {
@@ -163,7 +217,7 @@
       const bibText = await response.text();
       const entries = parseBibTeX(bibText)
         .filter((entry) => authorsContain(entry, aliases))
-        .sort((a, b) => Number(b.fields.year || 0) - Number(a.fields.year || 0));
+        .sort((a, b) => bibYear(b) - bibYear(a));
 
       if (!entries.length) {
         list.innerHTML = `<div class="note">No publications found for this author in <code>${htmlEscape(bibUrl)}</code>. Add BibTeX entries containing one of the author aliases in this page.</div>`;
@@ -171,18 +225,27 @@
         return;
       }
 
-      list.innerHTML = entries.map(publicationHTML).join("");
+      list.innerHTML = renderGroupedPublications(entries);
       if (count) count.textContent = `${entries.length} publication${entries.length === 1 ? "" : "s"}`;
 
       if (input) {
         input.addEventListener("input", () => {
           const query = normalize(input.value);
           let visible = 0;
-          list.querySelectorAll(".publication").forEach((item) => {
-            const show = item.dataset.search.includes(query);
-            item.hidden = !show;
-            if (show) visible++;
+
+          list.querySelectorAll("[data-publication-year]").forEach((group) => {
+            let groupVisible = 0;
+            group.querySelectorAll(".publication").forEach((item) => {
+              const show = item.dataset.search.includes(query);
+              item.hidden = !show;
+              if (show) {
+                visible++;
+                groupVisible++;
+              }
+            });
+            group.hidden = groupVisible === 0;
           });
+
           if (count) count.textContent = `${visible} publication${visible === 1 ? "" : "s"}`;
         });
       }
