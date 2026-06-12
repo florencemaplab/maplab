@@ -3,7 +3,7 @@ name: Update publications from Scopus
 on:
   schedule:
     # Once a day. GitHub scheduled workflows use UTC time.
-    - cron: "15 3 * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
