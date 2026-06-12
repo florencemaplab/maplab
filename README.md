@@ -1,6 +1,6 @@
 # MAPLab personal pages for GitHub Pages
 
-This package contains a minimal static site for four individual MAPLab profiles:
+This package contains a simple static site for four individual MAPLab profiles:
 
 - Alessandro Benedetto
 - Roberto Arrighi
@@ -25,9 +25,21 @@ The pages are designed for the repository `florencemaplab/maplab` and should wor
 │   ├── css/style.css
 │   ├── js/person.js
 │   └── images/
+│       ├── alessandro-benedetto.jpg
+│       ├── roberto-arrighi.jpg
+│       ├── giovanni-anobile.jpeg
+│       └── elisa-castaldi.jpg
 ├── cv/
 └── .nojekyll
 ```
+
+## Style
+
+The design is intentionally minimal: plain white background, simple navigation, one profile photo, profile metadata, research/CV sections, and a searchable publication list.
+
+## Images
+
+The profile photos included here come from the public PisaVisionLab member pages. Review permissions before publication if needed.
 
 ## How publications work
 
@@ -60,35 +72,6 @@ Add a normal BibTeX entry to `data/publications.bib`:
 ```
 
 Once committed, it will appear automatically on every matching author page.
-
-## Add photos
-
-Put images in:
-
-```text
-assets/images/
-```
-
-Suggested filenames:
-
-```text
-alessandro-benedetto.jpg
-roberto-arrighi.jpg
-giovanni-anobile.jpg
-elisa-castaldi.jpg
-```
-
-Then replace the initials block in each page, for example:
-
-```html
-<div class="avatar" aria-hidden="true">AB</div>
-```
-
-with:
-
-```html
-<div class="avatar"><img src="../assets/images/alessandro-benedetto.jpg" alt="Portrait of Alessandro Benedetto"></div>
-```
 
 ## Add CV PDFs
 
