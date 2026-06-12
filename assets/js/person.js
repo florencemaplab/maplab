@@ -93,10 +93,67 @@
       .filter(Boolean);
   }
 
+  function authorNameVariants(name) {
+    const raw = String(name || "").trim();
+    const variants = new Set();
+    const add = (value) => {
+      const normalized = normalize(value);
+      if (normalized) variants.add(normalized);
+    };
+
+    add(raw);
+
+    // BibTeX often stores authors as "Surname, Given Names".
+    // Page aliases are usually "Given Names Surname". Keep both orders.
+    if (raw.includes(",")) {
+      const parts = raw.split(",").map((part) => part.trim()).filter(Boolean);
+      if (parts.length >= 2) {
+        const surname = parts[0];
+        const given = parts.slice(1).join(" ");
+        add(`${given} ${surname}`);
+        add(`${surname} ${given}`);
+      }
+    } else {
+      const parts = raw.split(/\s+/).filter(Boolean);
+      if (parts.length >= 2) {
+        const given = parts.slice(0, -1).join(" ");
+        const surname = parts[parts.length - 1];
+        add(`${surname} ${given}`);
+        add(`${given} ${surname}`);
+      }
+    }
+
+    return Array.from(variants);
+  }
+
+  function namesMatch(authorName, alias) {
+    const authorVariants = authorNameVariants(authorName);
+    const aliasVariants = authorNameVariants(alias);
+
+    return authorVariants.some((authorVariant) =>
+      aliasVariants.some((aliasVariant) => {
+        if (!authorVariant || !aliasVariant) return false;
+        if (authorVariant === aliasVariant) return true;
+        // Allow middle names/initials without making very short aliases unsafe.
+        return (
+          aliasVariant.length >= 8 &&
+          authorVariant.length >= 8 &&
+          (authorVariant.includes(aliasVariant) || aliasVariant.includes(authorVariant))
+        );
+      })
+    );
+  }
+
   function authorsContain(entry, aliases) {
     const authorField = entry.fields.author || "";
-    const normalizedAuthorField = normalize(authorField.replace(/\band\b/gi, " "));
-    return aliases.some((alias) => normalizedAuthorField.includes(normalize(alias)));
+    const authors = authorField
+      .split(/\s+and\s+/i)
+      .map((name) => name.trim())
+      .filter(Boolean);
+
+    return authors.some((authorName) =>
+      aliases.some((alias) => namesMatch(authorName, alias))
+    );
   }
 
   function formatAuthors(authorField) {
