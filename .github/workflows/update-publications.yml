@@ -1,0 +1,48 @@
+name: Update publications from Scopus
+
+on:
+  schedule:
+    # Once a day. GitHub scheduled workflows use UTC time.
+    - cron: "15 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-publications:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Update BibTeX from Scopus
+        env:
+          SCOPUS_API_KEY: ${{ secrets.SCOPUS_API_KEY }}
+          # Optional. Add this secret only if your institution gives you one.
+          SCOPUS_INST_TOKEN: ${{ secrets.SCOPUS_INST_TOKEN }}
+        run: |
+          python scripts/update_scopus_bibtex.py \
+            --authors scripts/scopus_authors.json \
+            --output data/publications.bib
+
+      - name: Commit updated bibliography if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/publications.bib
+          if git diff --cached --quiet; then
+            echo "No publication changes to commit."
+          else
+            git commit -m "Update publications from Scopus"
+            git push
+          fi
