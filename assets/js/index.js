@@ -12,7 +12,7 @@
     },
     {
       id: "phd",
-      label: "PhD"
+      label: "Graduate"
     }
   ];
 
@@ -81,6 +81,97 @@
     const style = document.createElement("style");
     style.id = "people-planes-styles";
     style.textContent = `
+      .nav-links {
+        align-items: center;
+      }
+
+      .people-menu {
+        position: relative;
+      }
+
+      .people-menu summary {
+        list-style: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        color: var(--muted, #5d6a75);
+        padding: 0.48rem 0.72rem;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        font-size: 0.91rem;
+        font-weight: 650;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .people-menu summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .people-menu summary::after {
+        content: "▾";
+        font-size: 0.7rem;
+        line-height: 1;
+        transform: translateY(1px);
+      }
+
+      .people-menu[open] summary,
+      .people-menu summary:hover,
+      .people-menu summary:focus {
+        color: var(--navy, #153e5c);
+        background: var(--accent-soft, #e8f3f7);
+        border-color: rgba(31, 108, 148, 0.14);
+        outline: none;
+      }
+
+      .people-menu-panel {
+        position: absolute;
+        right: 0;
+        top: calc(100% + 0.55rem);
+        z-index: 60;
+        width: min(320px, calc(100vw - 2rem));
+        padding: 0.85rem;
+        border: 1px solid rgba(220, 227, 234, 0.95);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: var(--shadow, 0 16px 38px rgba(19, 32, 43, 0.075));
+      }
+
+      .people-menu-section + .people-menu-section {
+        margin-top: 0.72rem;
+        padding-top: 0.72rem;
+        border-top: 1px solid rgba(220, 227, 234, 0.9);
+      }
+
+      .people-menu-title {
+        margin: 0 0 0.42rem;
+        color: var(--subtle, #7b8893);
+        font-size: 0.72rem;
+        font-weight: 830;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .people-menu-names {
+        display: grid;
+        gap: 0.18rem;
+      }
+
+      .nav-links .people-menu-names a {
+        display: block;
+        border-radius: 11px;
+        padding: 0.42rem 0.55rem;
+        color: var(--ink, #13202b);
+        font-size: 0.91rem;
+        font-weight: 700;
+      }
+
+      .nav-links .people-menu-names a:hover {
+        background: var(--accent-soft, #e8f3f7);
+        color: var(--navy, #153e5c);
+        text-decoration: none;
+      }
+
       .people-grid {
         grid-template-columns: 1fr !important;
         gap: 1rem !important;
@@ -204,6 +295,19 @@
       }
 
       @media (max-width: 640px) {
+        .people-menu {
+          width: 100%;
+        }
+
+        .people-menu summary {
+          width: fit-content;
+        }
+
+        .people-menu-panel {
+          left: 0;
+          right: auto;
+        }
+
         .people-plane:nth-child(2),
         .people-plane:nth-child(3) {
           transform: none;
@@ -220,13 +324,37 @@
     document.head.appendChild(style);
   }
 
+  function navDropdownHTML(people, hrefPrefix) {
+    const grouped = CATEGORIES.map((category) => ({
+      ...category,
+      people: people.filter((person) => categoryFor({}, person) === category.id)
+    })).filter((category) => category.people.length);
+
+    return `
+      <a class="main-site-link" href="https://maplab.unifi.it/">MAPLab main site</a>
+      <details class="people-menu">
+        <summary>People</summary>
+        <div class="people-menu-panel">
+          ${grouped.map((category) => `
+            <section class="people-menu-section">
+              <h3 class="people-menu-title">${escapeHTML(category.label)}</h3>
+              <div class="people-menu-names">
+                ${category.people.map((person) => `
+                  <a href="${hrefPrefix}${escapeHTML(person.slug)}.html">${escapeHTML(person.shortName || person.slug)}</a>
+                `).join("")}
+              </div>
+            </section>
+          `).join("")}
+        </div>
+      </details>
+    `;
+  }
+
   function renderNav(people) {
     const nav = $("[data-people-nav]");
     if (!nav) return;
-
-    nav.innerHTML = people
-      .map((person) => `<a href="people/${escapeHTML(person.slug)}.html">${escapeHTML(person.shortName || person.slug)}</a>`)
-      .join("");
+    injectPeopleStyles();
+    nav.innerHTML = navDropdownHTML(people, "people/");
   }
 
   function personCard(profile) {

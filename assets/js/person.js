@@ -1,6 +1,30 @@
 (function () {
   const $ = (selector, root = document) => root.querySelector(selector);
 
+  const NAV_CATEGORIES = [
+    {
+      id: "faculty",
+      label: "Faculty"
+    },
+    {
+      id: "postdoc",
+      label: "Post-doc"
+    },
+    {
+      id: "phd",
+      label: "Graduate"
+    }
+  ];
+
+  const FALLBACK_CATEGORIES = {
+    "giovanni-anobile": "faculty",
+    "roberto-arrighi": "faculty",
+    "alessandro-benedetto": "faculty",
+    "elisa-castaldi": "faculty",
+    "serena-castellotti": "postdoc",
+    "irene-burgio": "phd"
+  };
+
   function slugFromPath() {
     const file = window.location.pathname.split("/").pop() || "";
     return file.replace(/\.html?$/i, "") || "template";
@@ -28,6 +52,143 @@
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#039;");
+  }
+
+  function normalizeCategory(value) {
+    const normalized = String(value || "")
+      .trim()
+      .toLowerCase()
+      .replace(/[\s_-]+/g, "");
+
+    if (["faculty", "staff"].includes(normalized)) return "faculty";
+    if (["postdoc", "postdoctoral", "postdoctoralresearcher"].includes(normalized)) return "postdoc";
+    if (["phd", "phdstudent", "graduate", "graduatestudent", "doctoral", "doctoralstudent"].includes(normalized)) return "phd";
+    return "";
+  }
+
+  function navCategoryFor(person) {
+    return (
+      normalizeCategory(person.category) ||
+      normalizeCategory(person.group) ||
+      FALLBACK_CATEGORIES[person.slug] ||
+      "faculty"
+    );
+  }
+
+  function injectNavStyles() {
+    if ($("#people-nav-dropdown-styles")) return;
+
+    const style = document.createElement("style");
+    style.id = "people-nav-dropdown-styles";
+    style.textContent = `
+      .nav-links {
+        align-items: center;
+      }
+
+      .people-menu {
+        position: relative;
+      }
+
+      .people-menu summary {
+        list-style: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        color: var(--muted, #5d6a75);
+        padding: 0.48rem 0.72rem;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        font-size: 0.91rem;
+        font-weight: 650;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .people-menu summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .people-menu summary::after {
+        content: "▾";
+        font-size: 0.7rem;
+        line-height: 1;
+        transform: translateY(1px);
+      }
+
+      .people-menu[open] summary,
+      .people-menu summary:hover,
+      .people-menu summary:focus {
+        color: var(--navy, #153e5c);
+        background: var(--accent-soft, #e8f3f7);
+        border-color: rgba(31, 108, 148, 0.14);
+        outline: none;
+      }
+
+      .people-menu-panel {
+        position: absolute;
+        right: 0;
+        top: calc(100% + 0.55rem);
+        z-index: 60;
+        width: min(320px, calc(100vw - 2rem));
+        padding: 0.85rem;
+        border: 1px solid rgba(220, 227, 234, 0.95);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: var(--shadow, 0 16px 38px rgba(19, 32, 43, 0.075));
+      }
+
+      .people-menu-section + .people-menu-section {
+        margin-top: 0.72rem;
+        padding-top: 0.72rem;
+        border-top: 1px solid rgba(220, 227, 234, 0.9);
+      }
+
+      .people-menu-title {
+        margin: 0 0 0.42rem;
+        color: var(--subtle, #7b8893);
+        font-size: 0.72rem;
+        font-weight: 830;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .people-menu-names {
+        display: grid;
+        gap: 0.18rem;
+      }
+
+      .nav-links .people-menu-names a {
+        display: block;
+        border-radius: 11px;
+        padding: 0.42rem 0.55rem;
+        color: var(--ink, #13202b);
+        font-size: 0.91rem;
+        font-weight: 700;
+      }
+
+      .nav-links .people-menu-names a:hover,
+      .nav-links .people-menu-names a.is-current {
+        background: var(--accent-soft, #e8f3f7);
+        color: var(--navy, #153e5c);
+        text-decoration: none;
+      }
+
+      @media (max-width: 640px) {
+        .people-menu {
+          width: 100%;
+        }
+
+        .people-menu summary {
+          width: fit-content;
+        }
+
+        .people-menu-panel {
+          left: 0;
+          right: auto;
+        }
+      }
+    `;
+    document.head.appendChild(style);
   }
 
   function setText(selector, value) {
@@ -311,11 +472,32 @@
     const nav = $("[data-people-nav]");
     if (!nav) return;
     const current = slugFromPath();
-    nav.innerHTML = people.map((person) => {
-      const href = `${person.slug}.html`;
-      const active = person.slug === current ? " is-current" : "";
-      return `<a class="${active.trim()}" href="${href}">${escapeHTML(person.shortName || person.slug)}</a>`;
-    }).join("");
+    injectNavStyles();
+
+    const grouped = NAV_CATEGORIES.map((category) => ({
+      ...category,
+      people: people.filter((person) => navCategoryFor(person) === category.id)
+    })).filter((category) => category.people.length);
+
+    nav.innerHTML = `
+      <a class="main-site-link" href="https://maplab.unifi.it/">MAPLab main site</a>
+      <details class="people-menu">
+        <summary>People</summary>
+        <div class="people-menu-panel">
+          ${grouped.map((category) => `
+            <section class="people-menu-section">
+              <h3 class="people-menu-title">${escapeHTML(category.label)}</h3>
+              <div class="people-menu-names">
+                ${category.people.map((person) => {
+                  const active = person.slug === current ? " is-current" : "";
+                  return `<a class="${active.trim()}" href="${escapeHTML(person.slug)}.html">${escapeHTML(person.shortName || person.slug)}</a>`;
+                }).join("")}
+              </div>
+            </section>
+          `).join("")}
+        </div>
+      </details>
+    `;
   }
 
   function renderProfile(profile) {
