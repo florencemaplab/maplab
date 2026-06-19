@@ -1,0 +1,56 @@
+{
+  "slug": "irene-burgio",
+  "shortName": "Irene",
+  "name": "Irene Burgio",
+  "role": "PhD",
+  "ssd": "PSIC-01/B – Neuropsychology and cognitive neuroscience",
+  "department": "NEUROFARBA, University of Florence",
+  "email": "irene.burgio@unifi.it",
+  "photo": "../assets/images/irene-burgio.jpeg",
+  "photoCredit": "PisaVisionLab",
+  "summary": "Professor of neuropsychology and cognitive neuroscience at the University of Florence. His research addresses visual and auditory perception, temporal processing, biological motion and multisensory integration.",
+  "research": "His work studies perceptual mechanisms and neural constraints underlying time, motion and multisensory integration, with a focus on how sensory information is combined to guide perception and action.",
+  "interests": [
+    "Visual perception",
+    "Auditory perception",
+    "Temporal processing",
+    "Biological motion",
+    "Multisensory integration",
+    "Action and perception"
+  ],
+  "teaching": {
+    "text": "Teaching information is maintained on the official University of Florence profile and course catalogue.",
+    "links": [
+      {
+        "label": "Open UniFI teaching/profile page",
+        "url": "https://cercachi.unifi.it/p-doc2-0-0-A-3f2b342d3b272d.html"
+      }
+    ]
+  },
+  "cv": [
+    "Full Professor, University of Florence.",
+    "Research in visual, auditory and multisensory perception.",
+    "Faculty member of Florence MAPLab and PisaVisionLab."
+  ],
+  "topics": "Current themes include time perception, sensory integration, motion processing, perceptual decision mechanisms and the interaction between action systems and sensory representations.",
+  "links": [
+    {
+      "label": "UniFI",
+      "url": "https://cercachi.unifi.it/p-doc2-0-0-A-3f2b342d3b272d.html"
+    },
+    {
+      "label": "PisaVisionLab",
+      "url": "https://www.pisavisionlab.org/members/irene-burgio/"
+    }
+  ],
+  "aliases": [
+    "Irene Burgio",
+    "Burgio Irene",
+    "Burgio, Irene",
+    "I Burgio",
+    "I. Burgio",
+    "Burgio I",
+    "Burgio, I",
+    "Burgio I."
+  ]
+}
