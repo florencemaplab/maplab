@@ -255,10 +255,9 @@
         const items = groups[year].sort((a, b) =>
           normalize(a.fields.title).localeCompare(normalize(b.fields.title))
         );
-        const count = items.length;
         return `
           <section class="publication-year" data-publication-year data-year="${escapeHTML(year)}">
-            <h3><span>${escapeHTML(year)}</span><small>${count} publication${count === 1 ? "" : "s"}</small></h3>
+            <h3><span>${escapeHTML(year)}</span></h3>
             <ol class="year-publications">
               ${items.map(publicationHTML).join("")}
             </ol>

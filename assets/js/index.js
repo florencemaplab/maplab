@@ -4,18 +4,15 @@
   const CATEGORIES = [
     {
       id: "faculty",
-      label: "Faculty",
-      description: "Principal investigators and faculty members of the Florence MAPLab."
+      label: "Faculty"
     },
     {
       id: "postdoc",
-      label: "Post-doc",
-      description: "Post-doctoral researchers contributing to MAPLab projects."
+      label: "Post-doc"
     },
     {
       id: "phd",
-      label: "PhD",
-      description: "Graduate and doctoral researchers in the lab."
+      label: "PhD"
     }
   ];
 
@@ -79,60 +76,105 @@
   }
 
   function injectPeopleStyles() {
-    if ($("#people-category-styles")) return;
+    if ($("#people-planes-styles")) return;
 
     const style = document.createElement("style");
-    style.id = "people-category-styles";
+    style.id = "people-planes-styles";
     style.textContent = `
-      .people-window {
+      .people-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+      }
+
+      .people-plane {
+        position: relative;
+        overflow: hidden;
         display: grid;
+        gap: 0.9rem;
+        padding: clamp(1rem, 2vw, 1.25rem);
+        border: 1px solid rgba(220, 227, 234, 0.92);
+        border-radius: var(--radius, 20px);
+        background:
+          radial-gradient(circle at top right, rgba(31, 108, 148, 0.10), transparent 20rem),
+          rgba(255, 255, 255, 0.94);
+        box-shadow: var(--shadow-soft, 0 7px 22px rgba(19, 32, 43, 0.05));
+      }
+
+      .people-plane + .people-plane {
+        margin-top: -0.12rem;
+      }
+
+      .people-plane:nth-child(2) {
+        transform: translateX(0.75rem);
+        max-width: calc(100% - 0.75rem);
+      }
+
+      .people-plane:nth-child(3) {
+        transform: translateX(1.5rem);
+        max-width: calc(100% - 1.5rem);
+      }
+
+      .people-plane::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 5px;
+        background: linear-gradient(180deg, var(--navy, #153e5c), var(--blue, #1f6c94));
+        opacity: 0.82;
+      }
+
+      .people-plane-header {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        gap: 0.35rem;
+      }
+
+      .people-plane-title {
+        margin: 0;
+        color: var(--navy, #153e5c);
+        font-size: clamp(1.15rem, 1.6vw, 1.45rem);
+        font-weight: 830;
+        letter-spacing: -0.035em;
+      }
+
+      .people-plane-names {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .people-plane-names a {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.32rem 0.58rem;
+        border: 1px solid rgba(31, 108, 148, 0.16);
+        border-radius: 999px;
+        background: var(--accent-soft, #e8f3f7);
+        color: var(--navy, #153e5c);
+        font-size: 0.86rem;
+        font-weight: 720;
+      }
+
+      .people-plane-names a:hover {
+        background: #dceef5;
+        text-decoration: none;
+      }
+
+      .people-plane-grid {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 1rem;
       }
 
-      .people-category-tabs {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.45rem;
-        padding: 0.5rem;
-        border: 1px solid rgba(220, 227, 234, 0.92);
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.78);
-        width: fit-content;
-        max-width: 100%;
-      }
-
-      .people-category-tab {
-        appearance: none;
-        border: 1px solid transparent;
-        border-radius: 999px;
-        background: transparent;
-        color: var(--muted, #5d6a75);
-        cursor: pointer;
-        font: inherit;
-        font-size: 0.9rem;
-        font-weight: 750;
-        padding: 0.52rem 0.78rem;
-        transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
-      }
-
-      .people-category-tab:hover,
-      .people-category-tab:focus {
-        color: var(--navy, #153e5c);
-        outline: none;
-        background: var(--accent-soft, #e8f3f7);
-      }
-
-      .people-category-tab.is-active {
-        color: #fff;
-        background: linear-gradient(135deg, var(--navy, #153e5c), var(--blue, #1f6c94));
-        border-color: transparent;
-        box-shadow: 0 8px 18px rgba(31, 108, 148, 0.16);
-      }
-
-      .people-category-summary {
-        color: var(--muted, #5d6a75);
-        max-width: 64ch;
-        margin: -0.25rem 0 0;
+      .people-plane[data-category="postdoc"] .people-plane-grid,
+      .people-plane[data-category="phd"] .people-plane-grid {
+        grid-template-columns: repeat(2, minmax(180px, 260px));
       }
 
       .person-placeholder {
@@ -150,22 +192,28 @@
         letter-spacing: -0.05em;
       }
 
-      .person-tile[data-category="postdoc"] {
-        border-color: rgba(43, 127, 136, 0.22);
-      }
-
-      .person-tile[data-category="phd"] {
-        border-color: rgba(31, 108, 148, 0.18);
-      }
-
-      @media (max-width: 560px) {
-        .people-category-tabs {
-          border-radius: 18px;
-          width: 100%;
+      @media (max-width: 980px) {
+        .people-plane-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
-        .people-category-tab {
-          flex: 1 1 auto;
+        .people-plane[data-category="postdoc"] .people-plane-grid,
+        .people-plane[data-category="phd"] .people-plane-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 640px) {
+        .people-plane:nth-child(2),
+        .people-plane:nth-child(3) {
+          transform: none;
+          max-width: 100%;
+        }
+
+        .people-plane-grid,
+        .people-plane[data-category="postdoc"] .people-plane-grid,
+        .people-plane[data-category="phd"] .people-plane-grid {
+          grid-template-columns: 1fr;
         }
       }
     `;
@@ -200,15 +248,26 @@
     `;
   }
 
-  function preparePeopleWindow(grid) {
-    const existingWindow = grid.closest(".people-window");
-    if (existingWindow) return existingWindow;
+  function peoplePlane(category, profiles) {
+    const names = profiles
+      .map((profile) => `
+        <li>
+          <a href="people/${escapeHTML(profile.slug)}.html">${escapeHTML(profile.name || profile.shortName || profile.slug)}</a>
+        </li>
+      `)
+      .join("");
 
-    const wrapper = document.createElement("div");
-    wrapper.className = "people-window";
-    grid.parentNode.insertBefore(wrapper, grid);
-    wrapper.appendChild(grid);
-    return wrapper;
+    return `
+      <section class="people-plane" data-category="${escapeHTML(category.id)}" aria-labelledby="people-${escapeHTML(category.id)}">
+        <header class="people-plane-header">
+          <h2 class="people-plane-title" id="people-${escapeHTML(category.id)}">${escapeHTML(category.label)}</h2>
+          <ul class="people-plane-names">${names}</ul>
+        </header>
+        <div class="people-plane-grid">
+          ${profiles.map(personCard).join("")}
+        </div>
+      </section>
+    `;
   }
 
   function renderPeopleDirectory(profiles) {
@@ -217,70 +276,15 @@
 
     injectPeopleStyles();
 
-    const wrapper = preparePeopleWindow(grid);
-    let tabs = $("[data-people-category-tabs]", wrapper);
-    let summary = $("[data-people-category-summary]", wrapper);
-
-    if (!tabs) {
-      tabs = document.createElement("div");
-      tabs.className = "people-category-tabs";
-      tabs.dataset.peopleCategoryTabs = "";
-      tabs.setAttribute("role", "tablist");
-      tabs.setAttribute("aria-label", "People categories");
-      wrapper.insertBefore(tabs, grid);
-    }
-
-    if (!summary) {
-      summary = document.createElement("p");
-      summary.className = "people-category-summary";
-      summary.dataset.peopleCategorySummary = "";
-      wrapper.insertBefore(summary, grid);
-    }
-
     const profilesByCategory = CATEGORIES.reduce((acc, category) => {
       acc[category.id] = profiles.filter((profile) => profile.category === category.id);
       return acc;
     }, {});
 
-    tabs.innerHTML = CATEGORIES
+    grid.innerHTML = CATEGORIES
       .filter((category) => profilesByCategory[category.id].length)
-      .map((category, index) => {
-        const count = profilesByCategory[category.id].length;
-        return `
-          <button
-            type="button"
-            class="people-category-tab${index === 0 ? " is-active" : ""}"
-            data-people-category="${escapeHTML(category.id)}"
-            aria-pressed="${index === 0 ? "true" : "false"}"
-          >
-            ${escapeHTML(category.label)} <span aria-hidden="true">· ${count}</span>
-          </button>
-        `;
-      })
+      .map((category) => peoplePlane(category, profilesByCategory[category.id]))
       .join("");
-
-    function showCategory(categoryId) {
-      const category = CATEGORIES.find((item) => item.id === categoryId) || CATEGORIES[0];
-      const selectedProfiles = profilesByCategory[category.id] || [];
-
-      tabs.querySelectorAll("[data-people-category]").forEach((button) => {
-        const active = button.dataset.peopleCategory === category.id;
-        button.classList.toggle("is-active", active);
-        button.setAttribute("aria-pressed", active ? "true" : "false");
-      });
-
-      summary.textContent = category.description;
-      grid.innerHTML = selectedProfiles.map(personCard).join("");
-    }
-
-    tabs.addEventListener("click", (event) => {
-      const button = event.target.closest("[data-people-category]");
-      if (!button) return;
-      showCategory(button.dataset.peopleCategory);
-    });
-
-    const firstCategory = CATEGORIES.find((category) => profilesByCategory[category.id].length);
-    showCategory(firstCategory ? firstCategory.id : "faculty");
   }
 
   async function init() {
