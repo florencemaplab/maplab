@@ -1,26 +1,32 @@
 [
   {
     "slug": "giovanni-anobile",
-    "shortName": "Anobile"
+    "shortName": "Anobile",
+    "category": "faculty"
   },
   {
     "slug": "roberto-arrighi",
-    "shortName": "Arrighi"
+    "shortName": "Arrighi",
+    "category": "faculty"
   },
   {
     "slug": "alessandro-benedetto",
-    "shortName": "Benedetto"
+    "shortName": "Benedetto",
+    "category": "faculty"
   },
   {
     "slug": "elisa-castaldi",
-    "shortName": "Castaldi"
+    "shortName": "Castaldi",
+    "category": "faculty"
   },
   {
     "slug": "serena-castellotti",
-    "shortName": "Castellotti"
+    "shortName": "Castellotti",
+    "category": "postdoc"
   },
   {
     "slug": "irene-burgio",
-    "shortName": "Burgio"
+    "shortName": "Burgio",
+    "category": "phd"
   }
 ]
