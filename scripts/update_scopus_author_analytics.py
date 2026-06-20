@@ -210,6 +210,17 @@ def parse_int(value: Any) -> Optional[int]:
     return int(match.group(0)) if match else None
 
 
+def h_index_from_counts(counts: Iterable[int]) -> int:
+    sorted_counts = sorted((int(count) for count in counts if count is not None), reverse=True)
+    h = 0
+    for index, count in enumerate(sorted_counts, start=1):
+        if count >= index:
+            h = index
+        else:
+            break
+    return h
+
+
 def find_first_key(obj: Any, wanted_keys: Iterable[str]) -> Any:
     wanted = set(wanted_keys)
     if isinstance(obj, dict):
@@ -315,54 +326,72 @@ def fetch_abstract_metadata(session: requests.Session, eid: str) -> Tuple[str, L
     return "", []
 
 
-def fetch_author_metrics(session: requests.Session, scopus_author_ids: List[str]) -> Dict[str, Any]:
+def fetch_author_metrics(
+    session: requests.Session,
+    scopus_author_ids: List[str],
+    fallback_citation_counts: Optional[List[int]] = None,
+) -> Dict[str, Any]:
+    fallback_citation_counts = fallback_citation_counts or []
+    fallback_total_citations = sum(int(value) for value in fallback_citation_counts if value is not None)
+    fallback_h_index = h_index_from_counts(fallback_citation_counts)
+
     metrics: Dict[str, Any] = {
         "scopus_author_id": ", ".join(scopus_author_ids),
-        "document_count": None,
-        "citation_count": None,
-        "cited_by_count": None,
-        "h_index": None,
+        "citation_count": fallback_total_citations if fallback_total_citations else None,
+        "cited_by_count": fallback_total_citations if fallback_total_citations else None,
+        "h_index": fallback_h_index if fallback_h_index else None,
     }
 
     totals = Counter()
     h_values: List[int] = []
 
     for author_id in scopus_author_ids:
-        payload = request_json(
-            session,
-            SCOPUS_AUTHOR_URL.format(author_id=author_id),
-            params={"view": "STANDARD"},
-            fail_soft=True,
-        )
-        if not payload:
-            continue
+        # STANDARD is safest; METRICS sometimes works and may include citation/h-index fields.
+        for view in ["STANDARD", "METRICS"]:
+            payload = request_json(
+                session,
+                SCOPUS_AUTHOR_URL.format(author_id=author_id),
+                params={"view": view},
+                fail_soft=True,
+            )
+            if not payload:
+                continue
 
-        responses = payload.get("author-retrieval-response")
-        response = responses[0] if isinstance(responses, list) and responses else responses
-        if not isinstance(response, dict):
-            continue
+            responses = payload.get("author-retrieval-response")
+            response = responses[0] if isinstance(responses, list) and responses else responses
+            if not isinstance(response, dict):
+                continue
 
-        core = response.get("coredata", {})
-        if not isinstance(core, dict):
-            core = {}
+            core = response.get("coredata", {})
+            if not isinstance(core, dict):
+                core = {}
 
-        doc = parse_int(core.get("document-count"))
-        citation = parse_int(core.get("citation-count"))
-        cited_by = parse_int(core.get("cited-by-count"))
-        h_index = parse_int(core.get("h-index"))
+            # Elsevier can expose these fields either in coredata or nested profile blocks.
+            citation = (
+                parse_int(core.get("citation-count"))
+                or parse_int(core.get("cited-by-count"))
+                or parse_int(find_first_key(response, {"citation-count"}))
+                or parse_int(find_first_key(response, {"cited-by-count"}))
+            )
+            h_index = (
+                parse_int(core.get("h-index"))
+                or parse_int(find_first_key(response, {"h-index"}))
+                or parse_int(find_first_key(response, {"hindex"}))
+            )
 
-        if doc is not None:
-            totals["document_count"] += doc
-        if citation is not None:
-            totals["citation_count"] += citation
-        if cited_by is not None:
-            totals["cited_by_count"] += cited_by
-        if h_index is not None:
-            h_values.append(h_index)
+            if citation is not None:
+                totals["citation_count"] += citation
+            if h_index is not None:
+                h_values.append(h_index)
 
-    for key in ["document_count", "citation_count", "cited_by_count"]:
-        if key in totals:
-            metrics[key] = totals[key]
+            # If STANDARD already worked, do not require METRICS.
+            if citation is not None or h_index is not None:
+                break
+
+    if "citation_count" in totals and totals["citation_count"] > 0:
+        metrics["citation_count"] = totals["citation_count"]
+        metrics["cited_by_count"] = totals["citation_count"]
+
     if h_values:
         metrics["h_index"] = max(h_values)
 
@@ -529,11 +558,15 @@ def main(argv: Optional[List[str]] = None) -> int:
 
         texts: List[str] = []
         author_lists: List[List[str]] = []
+        citation_counts: List[int] = []
         abstracts_found = 0
 
         seen_eids = set()
         for entry in entries:
             title = first_value(entry, "dc:title")
+            cited_by = parse_int(entry.get("citedby-count"))
+            if cited_by is not None:
+                citation_counts.append(cited_by)
             abstract = ""
             full_authors: List[str] = []
 
@@ -559,12 +592,11 @@ def main(argv: Optional[List[str]] = None) -> int:
 
             time.sleep(args.sleep)
 
-        metrics = fetch_author_metrics(session, scopus_ids) if scopus_ids else {
+        metrics = fetch_author_metrics(session, scopus_ids, citation_counts) if scopus_ids else {
             "scopus_author_id": "",
-            "document_count": len(entries) if entries else None,
-            "citation_count": None,
-            "cited_by_count": None,
-            "h_index": None,
+            "citation_count": sum(citation_counts) if citation_counts else None,
+            "cited_by_count": sum(citation_counts) if citation_counts else None,
+            "h_index": h_index_from_counts(citation_counts) if citation_counts else None,
         }
 
         output = {

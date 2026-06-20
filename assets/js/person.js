@@ -575,7 +575,7 @@
         justify-content: space-between;
         align-items: baseline;
         gap: 0.8rem;
-        margin-bottom: 0.78rem;
+        margin-bottom: 0.82rem;
       }
 
       .scopus-analytics-header h3 {
@@ -591,99 +591,107 @@
 
       .scopus-metrics {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
-        gap: 0.55rem;
-        margin-bottom: 0.9rem;
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        gap: 0.65rem;
+        margin-bottom: 0.95rem;
+        max-width: 360px;
       }
 
       .scopus-metric {
-        padding: 0.65rem 0.7rem;
-        border: 1px solid rgba(220, 227, 234, 0.92);
-        border-radius: 14px;
-        background: linear-gradient(180deg, #ffffff, #f8fbfd);
+        padding: 0.72rem 0.78rem;
+        border: 1px solid rgba(31, 108, 148, 0.15);
+        border-radius: 15px;
+        background:
+          radial-gradient(circle at top right, rgba(43, 127, 136, 0.10), transparent 55%),
+          linear-gradient(180deg, #ffffff, #f7fbfd);
       }
 
       .scopus-metric-value {
         display: block;
         color: var(--navy, #153e5c);
-        font-size: 1.25rem;
-        line-height: 1.1;
-        font-weight: 830;
-        letter-spacing: -0.03em;
+        font-size: 1.42rem;
+        line-height: 1.05;
+        font-weight: 850;
+        letter-spacing: -0.04em;
       }
 
       .scopus-metric-label {
         display: block;
-        margin-top: 0.22rem;
+        margin-top: 0.24rem;
         color: var(--subtle, #7b8893);
         font-size: 0.72rem;
         line-height: 1.2;
-        font-weight: 800;
-        letter-spacing: 0.08em;
+        font-weight: 830;
+        letter-spacing: 0.09em;
         text-transform: uppercase;
       }
 
       .scopus-visuals {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(260px, 0.9fr);
-        gap: 0.85rem;
+        grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+        gap: 0.9rem;
         align-items: stretch;
       }
 
       .word-cloud-card,
       .coauthor-card {
         min-width: 0;
-        padding: 0.85rem;
+        padding: 0.95rem;
         border: 1px solid rgba(220, 227, 234, 0.92);
-        border-radius: 16px;
-        background: #fff;
+        border-radius: 18px;
+        background:
+          radial-gradient(circle at top left, rgba(31, 108, 148, 0.07), transparent 45%),
+          #fff;
       }
 
       .word-cloud-card h4,
       .coauthor-card h4 {
         margin: 0 0 0.65rem;
         color: var(--ink, #13202b);
-        font-size: 0.92rem;
+        font-size: 0.94rem;
         letter-spacing: 0;
       }
 
-      .word-cloud {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.42rem 0.55rem;
-        align-items: center;
+      .word-cloud-svg {
+        width: 100%;
+        height: auto;
+        display: block;
+        overflow: visible;
       }
 
-      .word-cloud span {
-        display: inline-flex;
-        color: var(--navy, #153e5c);
-        line-height: 1.05;
-        font-weight: 760;
+      .word-cloud-word {
+        font-family: inherit;
+        font-weight: 820;
+        dominant-baseline: middle;
+        text-anchor: middle;
+        paint-order: stroke;
+        stroke: rgba(255, 255, 255, 0.78);
+        stroke-width: 3px;
+        stroke-linejoin: round;
+        cursor: default;
+        transition: opacity 0.16s ease, transform 0.16s ease;
       }
 
-      .word-cloud span:nth-child(3n+2) {
-        color: var(--blue, #1f6c94);
+      .word-cloud-word:hover {
+        opacity: 1;
       }
 
-      .word-cloud span:nth-child(4n+3) {
-        color: var(--teal, #2b7f88);
+      .coauthor-map-wrap {
+        position: relative;
       }
 
       .coauthor-map {
         width: 100%;
         height: auto;
-        min-height: 240px;
+        min-height: 250px;
         display: block;
-      }
-
-      .coauthor-map text {
-        font-family: inherit;
-        fill: var(--ink, #13202b);
+        overflow: visible;
       }
 
       .coauthor-map .edge {
-        stroke: rgba(31, 108, 148, 0.26);
+        stroke: rgba(31, 108, 148, 0.20);
         stroke-linecap: round;
+        transition: stroke 0.16s ease, stroke-opacity 0.16s ease;
       }
 
       .coauthor-map .node-center {
@@ -691,31 +699,51 @@
       }
 
       .coauthor-map .node-coauthor {
-        fill: var(--accent-soft, #e8f3f7);
+        fill: #ffffff;
         stroke: var(--blue, #1f6c94);
-        stroke-width: 1.3;
+        stroke-width: 1.4;
+        transition: fill 0.16s ease, stroke-width 0.16s ease, transform 0.16s ease;
+        cursor: pointer;
       }
 
-      .coauthor-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.35rem;
-        margin-top: 0.55rem;
+      .coauthor-map .coauthor-node:hover .node-coauthor,
+      .coauthor-map .coauthor-node:focus .node-coauthor {
+        fill: var(--accent-soft, #e8f3f7);
+        stroke-width: 2.2;
       }
 
-      .coauthor-list span {
-        display: inline-flex;
-        padding: 0.25rem 0.48rem;
-        border-radius: 999px;
-        border: 1px solid rgba(31, 108, 148, 0.14);
-        background: var(--accent-soft, #e8f3f7);
+      .coauthor-map .coauthor-label {
+        opacity: 0;
+        pointer-events: none;
+        font-family: inherit;
+        font-size: 11px;
+        font-weight: 760;
+        fill: var(--ink, #13202b);
+        paint-order: stroke;
+        stroke: rgba(255, 255, 255, 0.92);
+        stroke-width: 4px;
+        stroke-linejoin: round;
+        transition: opacity 0.16s ease;
+      }
+
+      .coauthor-map .coauthor-node:hover .coauthor-label,
+      .coauthor-map .coauthor-node:focus .coauthor-label {
+        opacity: 1;
+      }
+
+      .coauthor-tooltip {
+        margin-top: 0.45rem;
+        min-height: 1.25rem;
+        color: var(--muted, #5d6a75);
+        font-size: 0.84rem;
+      }
+
+      .coauthor-tooltip strong {
         color: var(--navy, #153e5c);
-        font-size: 0.78rem;
-        font-weight: 700;
       }
 
       .scopus-note {
-        margin-top: 0.55rem;
+        margin-top: 0.58rem;
         color: var(--subtle, #7b8893);
         font-size: 0.78rem;
       }
@@ -724,8 +752,11 @@
         .scopus-visuals {
           grid-template-columns: 1fr;
         }
-      }
-    `;
+
+        .scopus-metrics {
+          max-width: none;
+        }
+      }    `;
     document.head.appendChild(style);
   }
 
@@ -742,84 +773,160 @@
   }
 
   function metricCard(label, value) {
+    const hasValue = value !== null && value !== undefined && value !== "";
     return `
       <div class="scopus-metric">
-        <span class="scopus-metric-value">${escapeHTML(numberOrDash(value))}</span>
+        <span class="scopus-metric-value">${escapeHTML(hasValue ? numberOrDash(value) : "–")}</span>
         <span class="scopus-metric-label">${escapeHTML(label)}</span>
       </div>
     `;
   }
 
+  function valueOfKeyword(item) {
+    return Number(item.value || item.count || 0);
+  }
+
+  function keywordColor(index) {
+    const colors = [
+      "var(--navy, #153e5c)",
+      "var(--blue, #1f6c94)",
+      "var(--teal, #2b7f88)",
+      "#315f75",
+      "#247080"
+    ];
+    return colors[index % colors.length];
+  }
+
   function wordCloudHTML(keywords) {
-    const words = (keywords || []).slice(0, 42);
+    const words = (keywords || [])
+      .filter((item) => item && item.text)
+      .slice(0, 34);
+
     if (!words.length) {
       return `<p class="scopus-note">No keyword data available yet. The next Scopus update will use titles and abstracts when available.</p>`;
     }
 
-    const values = words.map((item) => Number(item.value || item.count || 0)).filter(Number.isFinite);
+    const values = words.map(valueOfKeyword).filter(Number.isFinite);
     const min = Math.min(...values);
     const max = Math.max(...values);
+    const cx = 300;
+    const cy = 160;
+
+    const placed = words.map((item, index) => {
+      const value = valueOfKeyword(item);
+      const ratio = max === min ? 0.65 : (value - min) / (max - min);
+      const size = 12 + ratio * 22;
+      const angle = index * 2.399963229728653; // golden angle
+      const radius = index === 0 ? 0 : 18 + Math.sqrt(index) * 32;
+      const x = cx + Math.cos(angle) * radius;
+      const y = cy + Math.sin(angle) * radius * 0.62;
+      const rotate = index > 8 && index % 7 === 0 ? -8 : index > 8 && index % 5 === 0 ? 8 : 0;
+
+      return { item, value, size, x, y, rotate };
+    });
 
     return `
-      <div class="word-cloud" aria-label="Keyword cloud">
-        ${words.map((item) => {
-          const value = Number(item.value || item.count || 0);
-          const scaled = max === min ? 1.1 : 0.84 + ((value - min) / (max - min)) * 0.95;
-          return `<span style="font-size:${scaled.toFixed(2)}rem" title="${escapeHTML(value)} occurrences">${escapeHTML(item.text)}</span>`;
-        }).join("")}
-      </div>
+      <svg class="word-cloud-svg" viewBox="0 0 600 320" role="img" aria-label="Keyword cloud generated from Scopus titles and abstracts">
+        ${placed.map((word, index) => `
+          <text
+            class="word-cloud-word"
+            x="${word.x.toFixed(1)}"
+            y="${word.y.toFixed(1)}"
+            fill="${keywordColor(index)}"
+            font-size="${word.size.toFixed(1)}"
+            opacity="${(0.58 + Math.min(0.42, word.size / 70)).toFixed(2)}"
+            transform="rotate(${word.rotate} ${word.x.toFixed(1)} ${word.y.toFixed(1)})"
+          >
+            <title>${escapeHTML(word.item.text)} · ${escapeHTML(numberOrDash(word.value))}</title>
+            ${escapeHTML(word.item.text)}
+          </text>
+        `).join("")}
+      </svg>
     `;
   }
 
   function shortLabel(name) {
     const text = String(name || "").trim();
-    if (text.length <= 19) return text;
+    if (text.length <= 22) return text;
     const parts = text.split(/\s+/);
     if (parts.length >= 2) {
       const last = parts[parts.length - 1];
       const initials = parts.slice(0, -1).map((part) => `${part[0]}.`).join(" ");
       return `${initials} ${last}`;
     }
-    return `${text.slice(0, 18)}…`;
+    return `${text.slice(0, 21)}…`;
   }
 
   function coauthorNetworkHTML(profileName, coauthors) {
-    const items = (coauthors || []).slice(0, 14);
+    const items = (coauthors || [])
+      .filter((item) => item && (item.name || item.label || item.id))
+      .slice(0, 18);
+
     if (!items.length) {
       return `<p class="scopus-note">No coauthor network available yet.</p>`;
     }
 
-    const cx = 240;
-    const cy = 132;
-    const radius = 88;
+    const cx = 260;
+    const cy = 145;
     const maxCount = Math.max(...items.map((item) => Number(item.count || item.value || 1)));
 
     const nodes = items.map((item, index) => {
-      const angle = (Math.PI * 2 * index) / items.length - Math.PI / 2;
+      const ring = index < 8 ? 1 : 2;
+      const ringIndex = ring === 1 ? index : index - 8;
+      const ringSize = ring === 1 ? Math.min(8, items.length) : Math.max(1, items.length - 8);
+      const angle = (Math.PI * 2 * ringIndex) / ringSize - Math.PI / 2 + (ring === 2 ? Math.PI / 9 : 0);
+      const radius = ring === 1 ? 82 : 118;
       const count = Number(item.count || item.value || 1);
-      const r = 7 + (count / maxCount) * 9;
+      const r = 5.5 + Math.sqrt(count / maxCount) * 10.5;
       const x = cx + Math.cos(angle) * radius;
-      const y = cy + Math.sin(angle) * radius;
-      const labelX = cx + Math.cos(angle) * (radius + 28);
-      const labelY = cy + Math.sin(angle) * (radius + 28);
-      const anchor = labelX < cx - 10 ? "end" : labelX > cx + 10 ? "start" : "middle";
-      return { ...item, x, y, r, labelX, labelY, anchor, count };
+      const y = cy + Math.sin(angle) * radius * 0.78;
+      const labelY = y - r - 8;
+      return { ...item, x, y, r, labelY, count };
     });
 
+    const centerName = shortLabel(profileName);
+
     return `
-      <svg class="coauthor-map" viewBox="0 0 480 265" role="img" aria-label="Coauthor network map">
-        ${nodes.map((node) => `<line class="edge" x1="${cx}" y1="${cy}" x2="${node.x.toFixed(1)}" y2="${node.y.toFixed(1)}" stroke-width="${Math.max(1.2, Math.min(5, node.count / maxCount * 4)).toFixed(1)}"></line>`).join("")}
-        <circle class="node-center" cx="${cx}" cy="${cy}" r="18"></circle>
-        <text x="${cx}" y="${cy + 36}" text-anchor="middle" font-size="11" font-weight="800">${escapeHTML(shortLabel(profileName))}</text>
-        ${nodes.map((node) => `
-          <circle class="node-coauthor" cx="${node.x.toFixed(1)}" cy="${node.y.toFixed(1)}" r="${node.r.toFixed(1)}"></circle>
-          <text x="${node.labelX.toFixed(1)}" y="${node.labelY.toFixed(1)}" text-anchor="${node.anchor}" font-size="10" font-weight="650">${escapeHTML(shortLabel(node.name || node.label || node.id))}</text>
-        `).join("")}
-      </svg>
-      <div class="coauthor-list">
-        ${items.slice(0, 10).map((item) => `<span>${escapeHTML(item.name || item.label || item.id)} · ${escapeHTML(numberOrDash(item.count || item.value))}</span>`).join("")}
+      <div class="coauthor-map-wrap">
+        <svg class="coauthor-map" viewBox="0 0 520 300" role="img" aria-label="Interactive coauthor network map">
+          ${nodes.map((node, index) => `<line class="edge edge-${index}" x1="${cx}" y1="${cy}" x2="${node.x.toFixed(1)}" y2="${node.y.toFixed(1)}" stroke-width="${Math.max(0.8, Math.min(4.5, Math.sqrt(node.count / maxCount) * 4)).toFixed(1)}"></line>`).join("")}
+          <circle class="node-center" cx="${cx}" cy="${cy}" r="18"></circle>
+          <text x="${cx}" y="${cy + 37}" text-anchor="middle" font-size="11" font-weight="820">${escapeHTML(centerName)}</text>
+
+          ${nodes.map((node, index) => {
+            const name = node.name || node.label || node.id;
+            return `
+              <g class="coauthor-node" tabindex="0" data-coauthor="${escapeHTML(name)}" data-count="${escapeHTML(node.count)}">
+                <title>${escapeHTML(name)} · ${escapeHTML(numberOrDash(node.count))} shared publication${node.count === 1 ? "" : "s"}</title>
+                <circle class="node-coauthor" cx="${node.x.toFixed(1)}" cy="${node.y.toFixed(1)}" r="${node.r.toFixed(1)}"></circle>
+                <text class="coauthor-label" x="${node.x.toFixed(1)}" y="${node.labelY.toFixed(1)}" text-anchor="middle">${escapeHTML(shortLabel(name))}</text>
+              </g>
+            `;
+          }).join("")}
+        </svg>
+        <div class="coauthor-tooltip" data-coauthor-tooltip>Hover over a node to see the coauthor name.</div>
       </div>
     `;
+  }
+
+  function activateCoauthorTooltip(root) {
+    const tooltip = root.querySelector("[data-coauthor-tooltip]");
+    if (!tooltip) return;
+
+    root.querySelectorAll(".coauthor-node").forEach((node) => {
+      const show = () => {
+        const name = node.dataset.coauthor || "";
+        const count = node.dataset.count || "";
+        tooltip.innerHTML = `<strong>${escapeHTML(name)}</strong>${count ? ` · ${escapeHTML(count)} shared publication${Number(count) === 1 ? "" : "s"}` : ""}`;
+      };
+      const clear = () => {
+        tooltip.textContent = "Hover over a node to see the coauthor name.";
+      };
+      node.addEventListener("mouseenter", show);
+      node.addEventListener("focus", show);
+      node.addEventListener("mouseleave", clear);
+      node.addEventListener("blur", clear);
+    });
   }
 
   async function renderScopusAnalytics(prefix, slug, profile) {
@@ -856,17 +963,15 @@
       </div>
 
       <div class="scopus-metrics">
-        ${metricCard("Documents", metrics.document_count)}
         ${metricCard("Citations", metrics.citation_count || metrics.cited_by_count)}
         ${metricCard("h-index", metrics.h_index)}
-        ${metricCard("Analyzed", data.publications_analyzed)}
       </div>
 
       <div class="scopus-visuals">
         <div class="word-cloud-card">
           <h4>Keyword cloud</h4>
           ${wordCloudHTML(data.keywords)}
-          <p class="scopus-note">Generated from Scopus titles and abstracts when accessible; titles are used as fallback.</p>
+          <p class="scopus-note">Generated from Scopus titles and abstracts when accessible.</p>
         </div>
 
         <div class="coauthor-card">
@@ -877,6 +982,7 @@
     `;
 
     panel.appendChild(wrapper);
+    activateCoauthorTooltip(wrapper);
   }
 
   async function init() {
