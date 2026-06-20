@@ -374,6 +374,8 @@ def fetch_crossref_authors(doi: str, mailto: str = "") -> List[str]:
     headers = {"Accept": "application/json"}
     if mailto:
         headers["User-Agent"] = f"MAPLab publication updater (mailto:{mailto})"
+    else:
+        headers["User-Agent"] = "MAPLab publication updater"
 
     url = CROSSREF_WORKS_URL.format(doi=doi)
     try:
@@ -668,11 +670,16 @@ def enrich_entries(
             if abstract:
                 entry["_abstract"] = abstract
 
-        if not enriched_authors and crossref_mailto and doi:
+        if not enriched_authors and doi:
+            # Crossref is used as a DOI-based fallback for full author lists.
+            # This is essential for the coauthor network: Scopus Search STANDARD
+            # can return partial author metadata, while Crossref usually returns
+            # the complete author list for DOI-indexed papers.
             enriched_authors = fetch_crossref_authors(doi, mailto=crossref_mailto)
 
         # Use enrichment only if it improves the author list.
         if len(enriched_authors) > len(current_authors):
+            print(f"  enriched authors: {len(current_authors)} → {len(enriched_authors)}")
             entry["_enriched_authors"] = enriched_authors
 
         time.sleep(min(sleep, 0.1))

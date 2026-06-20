@@ -306,7 +306,11 @@ def canonical_author_key(author: str) -> str:
         return ""
     surname = parts[-1]
     given_initials = "".join(part[0] for part in parts[:-1] if part)
-    return f"{surname}:{given_initials[:2]}" if given_initials else surname
+
+    # Use surname + first initial rather than surname + first two initials.
+    # This merges variants such as "Burr, David", "Burr, D." and
+    # "Burr, David C." that otherwise fragment the same collaborator.
+    return f"{surname}:{given_initials[:1]}" if given_initials else surname
 
 
 def author_name_score(name: str) -> Tuple[int, int]:

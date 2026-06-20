@@ -1166,7 +1166,7 @@
     if (!parts.length) return "";
     const surname = parts[parts.length - 1];
     const initials = parts.slice(0, -1).map((part) => part[0]).join("");
-    return initials ? `${surname}:${initials.slice(0, 2)}` : surname;
+    return initials ? `${surname}:${initials.slice(0, 1)}` : surname;
   }
 
   function betterName(current, candidate) {
