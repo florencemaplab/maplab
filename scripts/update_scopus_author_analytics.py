@@ -2,6 +2,45 @@
 """
 Generate per-person Scopus analytics JSON files for the MAPLab people pages.
 
+SURNAME_PARTICLES = {
+    "da", "de", "del", "della", "di", "dos", "du", "la", "le",
+    "van", "von", "der", "den", "ter", "ten", "st", "saint"
+}
+
+
+def author_signature_for_matching(name: str) -> str:
+    raw = re.sub(r"\s+", " ", str(name or "")).strip()
+    if not raw:
+        return ""
+    raw = re.sub(r"\b([A-Z])\.\s*", r"\1 ", raw)
+
+    def norm(v):
+        v = unicodedata.normalize("NFD", str(v or ""))
+        v = "".join(ch for ch in v if unicodedata.category(ch) != "Mn")
+        v = v.lower()
+        v = re.sub(r"[.,]", " ", v)
+        v = re.sub(r"[^a-z0-9 ]+", " ", v)
+        return re.sub(r"\s+", " ", v).strip()
+
+    if "," in raw:
+        parts = [p.strip() for p in raw.split(",") if p.strip()]
+        surname_raw = parts[0] if parts else ""
+        given_raw = " ".join(parts[1:]) if len(parts) > 1 else ""
+    else:
+        parts = [p for p in raw.split() if p]
+        if not parts:
+            return ""
+        given_raw = parts[0]
+        if len(parts) >= 2 and norm(parts[-2]) in SURNAME_PARTICLES:
+            surname_raw = " ".join(parts[-2:])
+        else:
+            surname_raw = parts[-1]
+
+    surname = norm(surname_raw)
+    given = norm(given_raw)
+    return f"{surname}:{given[0]}" if surname and given else surname
+
+
 No Abstract Retrieval or Author Retrieval is used here, to avoid entitlement
 errors. Metrics are derived from Scopus Search records; coauthors are counted
 from data/publications.bib.
@@ -298,19 +337,7 @@ def name_matches_alias(name: str, aliases: List[str]) -> bool:
 
 
 def canonical_author_key(author: str) -> str:
-    display = bib_author_display_name(author)
-    display = re.sub(r"\b([A-Z])\.\s*", r"\1 ", display)
-    normalized = normalize_name(display)
-    parts = normalized.split()
-    if not parts:
-        return ""
-    surname = parts[-1]
-    given_initials = "".join(part[0] for part in parts[:-1] if part)
-
-    # Use surname + first initial rather than surname + first two initials.
-    # This merges variants such as "Burr, David", "Burr, D." and
-    # "Burr, David C." that otherwise fragment the same collaborator.
-    return f"{surname}:{given_initials[:1]}" if given_initials else surname
+    return author_signature_for_matching(author)
 
 
 def author_name_score(name: str) -> Tuple[int, int]:

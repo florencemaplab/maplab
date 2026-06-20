@@ -66,6 +66,54 @@ def normalize_name(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
+SURNAME_PARTICLES = {
+    "da", "de", "del", "della", "di", "dos", "du", "la", "le",
+    "van", "von", "der", "den", "ter", "ten", "st", "saint"
+}
+
+
+def author_signature(name: str) -> str:
+    """Return a robust author signature: surname + first given-name initial.
+
+    Examples:
+    - "Burr, David C." -> "burr:d"
+    - "David Burr" -> "burr:d"
+    - "Del Viva, Maria Michela" -> "del viva:m"
+    - "Maria Michela Del Viva" -> "del viva:m"
+    - "De Vito, Giuseppe" -> "de vito:g"
+
+    This intentionally ignores middle initials and small formatting differences.
+    """
+    raw = normalize_space(name)
+    if not raw:
+        return ""
+
+    raw = re.sub(r"\b([A-Z])\.\s*", r"\1 ", raw)
+
+    if "," in raw:
+        parts = [normalize_space(part) for part in raw.split(",") if normalize_space(part)]
+        surname_raw = parts[0] if parts else ""
+        given_raw = " ".join(parts[1:]) if len(parts) > 1 else ""
+    else:
+        parts = [part for part in raw.split() if part]
+        if not parts:
+            return ""
+        given_raw = parts[0]
+        if len(parts) >= 2 and normalize_name(parts[-2]) in SURNAME_PARTICLES:
+            surname_raw = " ".join(parts[-2:])
+        else:
+            surname_raw = parts[-1]
+
+    surname = normalize_name(surname_raw)
+    given = normalize_name(given_raw)
+    first_initial = given[0] if given else ""
+
+    if not surname:
+        return ""
+    return f"{surname}:{first_initial}" if first_initial else surname
+
+
+
 def clean_bib_value(value: str) -> str:
     value = normalize_space(value)
     replacements = {
@@ -182,13 +230,7 @@ def bib_author_display_name(author: str) -> str:
 
 
 def canonical_author_key(author: str) -> str:
-    display = re.sub(r"\b([A-Z])\.\s*", r"\1 ", bib_author_display_name(author))
-    parts = normalize_name(display).split()
-    if not parts:
-        return ""
-    surname = parts[-1]
-    initials = "".join(part[0] for part in parts[:-1] if part)
-    return f"{surname}:{initials[:1]}" if initials else surname
+    return author_signature(author)
 
 
 def author_name_score(name: str) -> Tuple[int, int]:
@@ -213,25 +255,12 @@ def aliases_for_profile(profile: Dict[str, Any]) -> List[str]:
 
 
 def name_matches_alias(name: str, aliases: List[str]) -> bool:
-    variants = {normalize_name(name)}
-    if "," in name:
-        parts = [part.strip() for part in name.split(",") if part.strip()]
-        if len(parts) >= 2:
-            variants.add(normalize_name(f"{parts[1]} {parts[0]}"))
-            variants.add(normalize_name(f"{parts[0]} {parts[1]}"))
-    else:
-        parts = name.split()
-        if len(parts) >= 2:
-            variants.add(normalize_name(f"{parts[-1]} {' '.join(parts[:-1])}"))
+    name_sig = author_signature(name)
+    if not name_sig:
+        return False
+    alias_sigs = {author_signature(alias) for alias in aliases if author_signature(alias)}
+    return name_sig in alias_sigs
 
-    alias_variants = [normalize_name(alias) for alias in aliases if normalize_name(alias)]
-    for alias in alias_variants:
-        for variant in variants:
-            if variant == alias:
-                return True
-            if len(variant) >= 8 and len(alias) >= 8 and (variant in alias or alias in variant):
-                return True
-    return False
 
 
 def tokenize(text: str) -> List[str]:
@@ -457,7 +486,7 @@ def main() -> int:
     parser.add_argument("--people-index", default="data/people/people.json")
     parser.add_argument("--people-dir", default="data/people")
     parser.add_argument("--output", default="data/network/lab-network.json")
-    parser.add_argument("--max-external", type=int, default=320)
+    parser.add_argument("--max-external", type=int, default=800)
     args = parser.parse_args()
 
     bib_path = Path(args.bibtex)
