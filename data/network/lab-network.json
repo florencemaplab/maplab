@@ -294,7 +294,7 @@
         "type": "lab",
         "category": "faculty",
         "documents": 68,
-        "total_link_strength": 241,
+        "total_link_strength": 238,
         "cluster": 0
       },
       {
@@ -321,7 +321,7 @@
         "type": "lab",
         "category": "faculty",
         "documents": 43,
-        "total_link_strength": 226,
+        "total_link_strength": 223,
         "cluster": 3
       },
       {
@@ -406,15 +406,6 @@
         "cluster": 3
       },
       {
-        "id": "co:tinelli:f",
-        "name": "Francesca Tinelli",
-        "type": "external",
-        "category": "",
-        "documents": 15,
-        "total_link_strength": 81,
-        "cluster": 0
-      },
-      {
         "id": "co:grippo:a",
         "name": "Antonello Grippo",
         "type": "external",
@@ -476,6 +467,15 @@
         "documents": 4,
         "total_link_strength": 78,
         "cluster": 3
+      },
+      {
+        "id": "co:tinelli:f",
+        "name": "Francesca Tinelli",
+        "type": "external",
+        "category": "",
+        "documents": 14,
+        "total_link_strength": 77,
+        "cluster": 0
       },
       {
         "id": "co:fainardi:e",
@@ -739,15 +739,6 @@
         "cluster": 3
       },
       {
-        "id": "co:bartoli:m",
-        "name": "Mariaelisa Bartoli",
-        "type": "external",
-        "category": "",
-        "documents": 4,
-        "total_link_strength": 20,
-        "cluster": 0
-      },
-      {
         "id": "co:togoli:i",
         "name": "Irene Togoli",
         "type": "external",
@@ -924,6 +915,15 @@
         "type": "external",
         "category": "",
         "documents": 4,
+        "total_link_strength": 16,
+        "cluster": 0
+      },
+      {
+        "id": "co:bartoli:m",
+        "name": "Mariaelisa Bartoli",
+        "type": "external",
+        "category": "",
+        "documents": 3,
         "total_link_strength": 16,
         "cluster": 0
       },
@@ -2026,15 +2026,6 @@
         "cluster": 4
       },
       {
-        "id": "co:filippo:g",
-        "name": "Gasperini Filippo",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 4,
-        "cluster": 3
-      },
-      {
         "id": "co:forth:g",
         "name": "Georgia Forth",
         "type": "external",
@@ -2727,12 +2718,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:tinelli:f",
-        "target": "giovanni-anobile",
-        "count": 8,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:burr:d",
         "target": "co:moscoso:p",
         "count": 7,
@@ -2753,6 +2738,12 @@
       {
         "source": "co:morrone:m",
         "target": "elisa-castaldi",
+        "count": 7,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:tinelli:f",
+        "target": "giovanni-anobile",
         "count": 7,
         "type": "coauthorship"
       },
@@ -2951,18 +2942,6 @@
       {
         "source": "co:baldanzi:f",
         "target": "elisa-castaldi",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bartoli:m",
-        "target": "co:tinelli:f",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bartoli:m",
-        "target": "giovanni-anobile",
         "count": 4,
         "type": "coauthorship"
       },
@@ -3249,12 +3228,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:tinelli:f",
-        "target": "elisa-castaldi",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:troiano:s",
         "target": "elisa-castaldi",
         "count": 4,
@@ -3281,6 +3254,18 @@
       {
         "source": "co:baldanzi:f",
         "target": "co:fainardi:e",
+        "count": 3,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:bartoli:m",
+        "target": "co:tinelli:f",
+        "count": 3,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:bartoli:m",
+        "target": "giovanni-anobile",
         "count": 3,
         "type": "coauthorship"
       },
@@ -3557,6 +3542,12 @@
       {
         "source": "co:piegari:a",
         "target": "roberto-arrighi",
+        "count": 3,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:tinelli:f",
+        "target": "elisa-castaldi",
         "count": 3,
         "type": "coauthorship"
       },
@@ -6028,12 +6019,6 @@
       },
       {
         "source": "co:bartoli:m",
-        "target": "co:filippo:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bartoli:m",
         "target": "co:gori:m",
         "count": 1,
         "type": "coauthorship"
@@ -6053,12 +6038,6 @@
       {
         "source": "co:bartoli:m",
         "target": "co:tacchi:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bartoli:m",
-        "target": "elisa-castaldi",
         "count": 1,
         "type": "coauthorship"
       },
@@ -8511,24 +8490,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:filippo:g",
-        "target": "co:tinelli:f",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:filippo:g",
-        "target": "elisa-castaldi",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:filippo:g",
-        "target": "giovanni-anobile",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:fornaciai:m",
         "target": "co:park:j",
         "count": 1,
@@ -10883,8 +10844,8 @@
     ],
     "stats": {
       "lab_members": 7,
-      "external_collaborators": 251,
-      "edges": 1378
+      "external_collaborators": 250,
+      "edges": 1373
     }
   }
 }
