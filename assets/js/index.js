@@ -776,42 +776,47 @@
     const allNodes = data.nodes || [];
     const allEdges = data.edges || [];
     const labNodes = allNodes.filter((node) => node.type === "lab");
+
+    function nodeMetric(node) {
+      return Number(node.weight || node.documents || node.total_link_strength || 1);
+    }
+
     const coauthorNodes = allNodes
       .filter((node) => node.type !== "lab")
-      .sort((a, b) => Number(b.weight || 0) - Number(a.weight || 0))
-      .slice(0, 72);
+      .sort((a, b) => nodeMetric(b) - nodeMetric(a) || String(a.name || "").localeCompare(String(b.name || "")));
 
     if (!labNodes.length || !coauthorNodes.length) {
       return `<div class="note">No lab-wide collaboration network available yet.</div>`;
     }
 
+    // Important: use the full JSON node list. Do not silently slice to a top-N subset.
     const visibleIds = new Set([...labNodes, ...coauthorNodes].map((node) => node.id));
     const edges = allEdges
       .filter((edge) => visibleIds.has(edge.source) && visibleIds.has(edge.target))
-      .sort((a, b) => Number(b.count || 0) - Number(a.count || 0))
-      .slice(0, 145);
+      .sort((a, b) => Number(b.count || 0) - Number(a.count || 0));
 
-    const width = 920;
-    const height = 560;
+    const width = 1180;
+    const height = 820;
     const cx = width / 2;
     const cy = height / 2 + 8;
     const positions = {};
-    const maxNodeWeight = Math.max(...coauthorNodes.map((node) => Number(node.weight || 1)), 1);
+    const maxNodeWeight = Math.max(...coauthorNodes.map((node) => nodeMetric(node)), 1);
     const maxEdgeWeight = Math.max(...edges.map((edge) => Number(edge.count || 1)), 1);
 
     labNodes.forEach((node, index) => {
       const angle = (Math.PI * 2 * index) / labNodes.length - Math.PI / 2;
       positions[node.id] = {
-        x: cx + Math.cos(angle) * 118,
-        y: cy + Math.sin(angle) * 82,
+        x: cx + Math.cos(angle) * 132,
+        y: cy + Math.sin(angle) * 96,
         angle
       };
     });
 
+    const labIds = new Set(labNodes.map((node) => node.id));
     const strongestLabFor = {};
     edges.forEach((edge) => {
-      const sourceIsLab = labNodes.some((node) => node.id === edge.source);
-      const targetIsLab = labNodes.some((node) => node.id === edge.target);
+      const sourceIsLab = labIds.has(edge.source);
+      const targetIsLab = labIds.has(edge.target);
       const labId = sourceIsLab ? edge.source : targetIsLab ? edge.target : "";
       const otherId = sourceIsLab ? edge.target : targetIsLab ? edge.source : "";
       if (!labId || !otherId || !visibleIds.has(otherId)) return;
@@ -821,15 +826,24 @@
       }
     });
 
+    const ringCounts = new Map();
     coauthorNodes.forEach((node, index) => {
       const strongest = strongestLabFor[node.id];
       const labPos = strongest ? positions[strongest.labId] : null;
       const baseAngle = labPos ? labPos.angle : (index * 2.399963229728653);
-      const ring = index < 18 ? 1 : index < 44 ? 2 : 3;
-      const spread = ((index % 9) - 4) * 0.13;
-      const angle = baseAngle + spread + (ring - 1) * 0.08;
-      const radius = ring === 1 ? 202 : ring === 2 ? 258 : 312;
-      const yScale = 0.72;
+
+      const groupKey = strongest ? strongest.labId : "ungrouped";
+      const groupIndex = ringCounts.get(groupKey) || 0;
+      ringCounts.set(groupKey, groupIndex + 1);
+
+      const ring = Math.floor(groupIndex / 28) + 1;
+      const within = groupIndex % 28;
+      const centered = 28 === 1 ? 0 : (within / 27) - 0.5;
+      const spread = centered * 0.95;
+      const angle = baseAngle + spread + (ring - 1) * 0.105;
+      const radius = 210 + (ring - 1) * 70;
+      const yScale = 0.66;
+
       positions[node.id] = {
         x: cx + Math.cos(angle) * radius,
         y: cy + Math.sin(angle) * radius * yScale,
@@ -845,9 +859,9 @@
       const my = (a.y + b.y) / 2;
       const dx = b.x - a.x;
       const dy = b.y - a.y;
-      const curve = 0.12;
+      const curve = 0.075;
       const qx = mx - dy * curve;
-      const qy = my + dx * curve * 0.45;
+      const qy = my + dx * curve * 0.35;
       return `M ${a.x.toFixed(1)} ${a.y.toFixed(1)} Q ${qx.toFixed(1)} ${qy.toFixed(1)} ${b.x.toFixed(1)} ${b.y.toFixed(1)}`;
     }
 
@@ -859,13 +873,15 @@
       const sourceLab = source && source.type === "lab";
       const targetLab = target && target.type === "lab";
       const internal = sourceLab && targetLab;
-      const width = 0.65 + Math.sqrt(count / maxEdgeWeight) * 5.2;
+      const width = 0.34 + Math.sqrt(count / maxEdgeWeight) * 4.4;
+      const opacity = Math.min(0.56, 0.08 + Math.sqrt(count / maxEdgeWeight) * 0.34);
       return `
         <path class="labnet-edge ${internal ? "labnet-internal" : ""}"
           data-source="${escapeHTML(edge.source)}"
           data-target="${escapeHTML(edge.target)}"
           d="${pathFor(edge)}"
-          stroke-width="${width.toFixed(2)}">
+          stroke-width="${width.toFixed(2)}"
+          opacity="${opacity.toFixed(2)}">
           <title>${escapeHTML(source ? source.name : edge.source)} — ${escapeHTML(target ? target.name : edge.target)} · ${escapeHTML(numberOrDash(count))} shared publication${count === 1 ? "" : "s"}</title>
         </path>
       `;
@@ -873,8 +889,9 @@
 
     const labMarkup = labNodes.map((node) => {
       const p = positions[node.id];
+      const metric = nodeMetric(node);
       return `
-        <g class="labnet-node labnet-lab" tabindex="0" data-node="${escapeHTML(node.id)}" data-name="${escapeHTML(node.name)}" data-weight="${escapeHTML(node.weight || 0)}" transform="translate(${p.x.toFixed(1)} ${p.y.toFixed(1)})">
+        <g class="labnet-node labnet-lab" tabindex="0" data-node="${escapeHTML(node.id)}" data-name="${escapeHTML(node.name)}" data-weight="${escapeHTML(metric)}" transform="translate(${p.x.toFixed(1)} ${p.y.toFixed(1)})">
           <circle r="18"></circle>
           <text class="labnet-label" y="37" text-anchor="middle">${escapeHTML(labShortName(node.name))}</text>
         </g>
@@ -883,12 +900,14 @@
 
     const coauthorMarkup = coauthorNodes.map((node) => {
       const p = positions[node.id];
-      const weight = Number(node.weight || 1);
-      const r = 4.8 + Math.sqrt(weight / maxNodeWeight) * 13;
+      const metric = nodeMetric(node);
+      const r = 3.6 + Math.sqrt(metric / maxNodeWeight) * 12.8;
+      const label = labShortName(node.name);
+      const labelOpacity = metric >= 3 ? "1" : "0.74";
       return `
-        <g class="labnet-node labnet-coauthor" tabindex="0" data-node="${escapeHTML(node.id)}" data-name="${escapeHTML(node.name)}" data-weight="${escapeHTML(weight)}" transform="translate(${p.x.toFixed(1)} ${p.y.toFixed(1)})">
+        <g class="labnet-node labnet-coauthor" tabindex="0" data-node="${escapeHTML(node.id)}" data-name="${escapeHTML(node.name)}" data-weight="${escapeHTML(metric)}" transform="translate(${p.x.toFixed(1)} ${p.y.toFixed(1)})">
           <circle r="${r.toFixed(1)}"></circle>
-          <text class="labnet-label" y="${(-r - 8).toFixed(1)}" text-anchor="middle">${escapeHTML(labShortName(node.name))}</text>
+          <text class="labnet-label" y="${(-r - 7).toFixed(1)}" text-anchor="middle" opacity="${labelOpacity}">${escapeHTML(label)}</text>
         </g>
       `;
     }).join("");
@@ -903,21 +922,19 @@
             <filter id="labnet-soft-shadow" x="-60%" y="-60%" width="220%" height="220%">
               <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#13202b" flood-opacity="0.10"/>
             </filter>
-          </defs>
-          <rect x="0" y="0" width="${width}" height="${height}" rx="28" fill="url(#labnet-bg)"></rect>
-          <defs>
             <radialGradient id="labnet-bg" cx="50%" cy="45%" r="70%">
               <stop offset="0%" stop-color="#ffffff"/>
               <stop offset="62%" stop-color="#f7fbfd"/>
               <stop offset="100%" stop-color="#edf5f8"/>
             </radialGradient>
           </defs>
+          <rect x="0" y="0" width="${width}" height="${height}" rx="28" fill="url(#labnet-bg)"></rect>
           ${edgeMarkup}
           ${coauthorMarkup}
           ${labMarkup}
         </svg>
         <div class="lab-network-tooltip" data-lab-network-tooltip>
-          Hover over a node to highlight collaborations.
+          Showing ${escapeHTML(numberOrDash(labNodes.length + coauthorNodes.length))} nodes and ${escapeHTML(numberOrDash(edges.length))} links from <code>data/network/lab-network.json</code>.
         </div>
       </div>
     `;
@@ -2123,7 +2140,7 @@
     let errorMessage = "";
 
     try {
-      const response = await fetch("data/network/lab-network.json");
+      const response = await fetch("data/network/lab-network.json?v=20260621full");
       if (!response.ok) {
         errorMessage = `Could not load data/network/lab-network.json (${response.status}).`;
       } else {
