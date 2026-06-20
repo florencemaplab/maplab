@@ -1761,8 +1761,7 @@
       const labNodes = allNodesRaw.filter((node) => node.type === "lab");
       const externalBase = allNodesRaw
         .filter((node) => node.type !== "lab")
-        .sort((a, b) => rankNode(b) - rankNode(a))
-        .slice(0, 170);
+        .sort((a, b) => rankNode(b) - rankNode(a));
 
       const searchMatches = new Set();
       if (search) {
@@ -1803,7 +1802,7 @@
       const nodes = graph.nodes;
       const edges = graph.edges;
       currentNodes = nodes;
-      status.textContent = `${nodes.length} authors · ${edges.length} links`;
+      status.textContent = `${nodes.length} authors · ${nodes.filter((node) => node.type !== "lab").length} collaborators · ${edges.length} links`;
 
       const nodeById = new Map(nodes.map((node) => [node.id, node]));
       const linkObjects = edges.map((edge) => ({ ...edge, source: nodeById.get(edge.source), target: nodeById.get(edge.target) })).filter((edge) => edge.source && edge.target);
