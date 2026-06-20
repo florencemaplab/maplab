@@ -1,13 +1,13 @@
 {
   "slug": "irene-burgio",
   "name": "Irene Burgio",
-  "generated_at": "2026-06-20T19:11:55Z",
-  "source": "Scopus Search API for metrics/keywords; shared BibTeX for coauthor counts",
+  "generated_at": "2026-06-20T19:24:29Z",
+  "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "60138900600",
-    "citation_count": null,
-    "cited_by_count": null,
-    "h_index": null
+    "citation_count": 0,
+    "cited_by_count": 0,
+    "h_index": 0
   },
   "publications_analyzed": 1,
   "abstracts_found": 0,
@@ -81,18 +81,5 @@
       "value": 2
     }
   ],
-  "coauthors": [
-    {
-      "name": "Paula A. Maldonado Moscoso",
-      "count": 1
-    },
-    {
-      "name": "Giovanni Anobile",
-      "count": 1
-    },
-    {
-      "name": "Elisa Castaldi",
-      "count": 1
-    }
-  ]
+  "coauthors": []
 }

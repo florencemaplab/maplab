@@ -1,8 +1,8 @@
 {
   "slug": "serena-castellotti",
   "name": "Serena Castellotti",
-  "generated_at": "2026-06-20T19:11:55Z",
-  "source": "Scopus Search API for metrics/keywords; shared BibTeX for coauthor counts",
+  "generated_at": "2026-06-20T19:24:29Z",
+  "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57205731708",
     "citation_count": 287,
@@ -235,135 +235,15 @@
   ],
   "coauthors": [
     {
-      "name": "Maria Michela Del Viva",
-      "count": 16
-    },
-    {
-      "name": "Ottavia D’Agostino",
-      "count": 5
-    },
-    {
-      "name": "Anna Montagnini",
-      "count": 3
-    },
-    {
-      "name": "Elvio Blini",
-      "count": 2
-    },
-    {
-      "name": "Roberto Arrighi",
-      "count": 2
-    },
-    {
-      "name": "Irene Petrizzo",
-      "count": 2
-    },
-    {
-      "name": "Stefano Mastandrea",
-      "count": 2
-    },
-    {
-      "name": "Elisa Castaldi",
+      "name": "D’Agostino O.",
       "count": 1
     },
     {
-      "name": "Elisa Gragnoli",
+      "name": "Del Viva M.M.",
       "count": 1
     },
     {
-      "name": "Giada Baglioni",
-      "count": 1
-    },
-    {
-      "name": "Roberta Criminisi",
-      "count": 1
-    },
-    {
-      "name": "Barbara Giangrasso",
-      "count": 1
-    },
-    {
-      "name": "Giacomo Mazzotta",
-      "count": 1
-    },
-    {
-      "name": "Alessandro Benedetto",
-      "count": 1
-    },
-    {
-      "name": "Marija Soldo",
-      "count": 1
-    },
-    {
-      "name": "Tina Plank",
-      "count": 1
-    },
-    {
-      "name": "Mark W. Greenlee",
-      "count": 1
-    },
-    {
-      "name": "Angelica Mencarini",
-      "count": 1
-    },
-    {
-      "name": "Martina Fabozzi",
-      "count": 1
-    },
-    {
-      "name": "Raimondo Varano",
-      "count": 1
-    },
-    {
-      "name": "Irene Baldriga",
-      "count": 1
-    },
-    {
-      "name": "Martin Szinte",
-      "count": 1
-    },
-    {
-      "name": "Galina V. Paramei",
-      "count": 1
-    },
-    {
-      "name": "Alessandra Biondi",
-      "count": 1
-    },
-    {
-      "name": "Luigi Pignatiello",
-      "count": 1
-    },
-    {
-      "name": "Carlo Francisci",
-      "count": 1
-    },
-    {
-      "name": "Lisa Scipioni",
-      "count": 1
-    },
-    {
-      "name": "Martina Conti",
-      "count": 1
-    },
-    {
-      "name": "Claudia Feitosa-Santana",
-      "count": 1
-    },
-    {
-      "name": "Simone Grassini",
-      "count": 1
-    },
-    {
-      "name": "Antti Revonsuo",
-      "count": 1
-    },
-    {
-      "name": "Viola Benedetti",
-      "count": 1
-    },
-    {
-      "name": "Mika Koivisto",
+      "name": "Grassini S.",
       "count": 1
     }
   ]
