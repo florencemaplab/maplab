@@ -742,33 +742,25 @@
       }))
       .filter((item) => item.text)
       .sort((a, b) => b.value - a.value || a.text.localeCompare(b.text))
-      .slice(0, 58);
+      .slice(0, 60);
 
-    if (!words.length) return `<div class="note">No lab keyword data available yet.</div>`;
+    if (!words.length) return `<div class="note">No keyword data available yet.</div>`;
 
     const values = words.map((item) => item.value).filter(Number.isFinite);
     const max = Math.max(...values, 1);
-    const featured = words.slice(0, 10);
-    const supporting = words.slice(10);
+    const min = Math.min(...values, max);
+    const spread = Math.max(max - min, 1);
 
-    const featuredHTML = featured.map((item, index) => {
-      const ratio = Math.max(0.18, item.value / max);
+    const cloudHTML = words.map((item, index) => {
+      const ratio = Math.max(0.1, (item.value - min) / spread);
+      const size = 0.92 + ratio * 1.45;
+      const weight = Math.round(520 + ratio * 260);
       const tone = index % 6;
+      const lift = ((index % 7) - 3) * 1.4;
       return `
-        <span class="theme-token theme-token-featured tone-${tone}"
-          style="--theme-ratio:${ratio.toFixed(3)}"
-          title="${escapeHTML(item.text)} · ${escapeHTML(numberOrDash(item.value))}">
-          ${escapeHTML(item.text)}
-        </span>
-      `;
-    }).join("");
-
-    const supportingHTML = supporting.map((item, index) => {
-      const ratio = Math.max(0.12, item.value / max);
-      const tone = (index + 2) % 6;
-      return `
-        <span class="theme-token tone-${tone}"
-          style="--theme-ratio:${ratio.toFixed(3)}"
+        <span
+          class="lab-cloud-word tone-${tone}"
+          style="--cloud-size:${size.toFixed(3)}rem; --cloud-weight:${weight}; --cloud-lift:${lift.toFixed(1)}px;"
           title="${escapeHTML(item.text)} · ${escapeHTML(numberOrDash(item.value))}">
           ${escapeHTML(item.text)}
         </span>
@@ -776,15 +768,12 @@
     }).join("");
 
     return `
-      <div class="research-theme-cloud" aria-label="MAPLab research themes generated from publication titles">
-        <div class="theme-cloud-glow theme-cloud-glow-a"></div>
-        <div class="theme-cloud-glow theme-cloud-glow-b"></div>
-
-        <div class="theme-featured">
-          ${featuredHTML}
+      <div class="lab-keyword-cloud-art">
+        <div class="lab-keyword-cloud-backdrop backdrop-a"></div>
+        <div class="lab-keyword-cloud-backdrop backdrop-b"></div>
+        <div class="lab-keyword-cloud-inner">
+          ${cloudHTML}
         </div>
-
-        ${supportingHTML ? `<div class="theme-supporting">${supportingHTML}</div>` : ""}
       </div>
     `;
   }
@@ -2196,11 +2185,11 @@
 
           <div class="lab-cloud-card">
             <div class="lab-card-title">
-              <h3>Research themes</h3>
-              <span>title-based</span>
+              <h3>Research keyword cloud</h3>
+              <span>lab-wide</span>
             </div>
             ${labKeywordCloudHTML(data.keywords || [])}
-            <p class="lab-atlas-note">Themes are generated from publication titles in the shared Scopus/BibTeX record.</p>
+            <p class="lab-atlas-note">Keyword cloud is generated from publication titles in the shared Scopus/BibTeX record.</p>
           </div>
         </div>
       </div>
