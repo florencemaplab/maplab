@@ -49,6 +49,7 @@ jobs:
             --authors scripts/scopus_authors.json \
             --people-index data/people/people.json \
             --people-dir data/people \
+            --bibtex data/publications.bib \
             --output-dir data/scopus
 
       - name: Commit updated bibliography and analytics if changed

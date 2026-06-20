@@ -87,6 +87,232 @@ def slugify(value: str) -> str:
     return value.strip("-") or "person"
 
 
+def split_bib_entries(text: str) -> List[str]:
+    entries: List[str] = []
+    i = 0
+    while i < len(text):
+        at = text.find("@", i)
+        if at == -1:
+            break
+        brace = text.find("{", at)
+        if brace == -1:
+            break
+
+        depth = 0
+        end = brace
+        while end < len(text):
+            char = text[end]
+            if char == "{":
+                depth += 1
+            elif char == "}":
+                depth -= 1
+                if depth == 0:
+                    end += 1
+                    break
+            end += 1
+
+        entries.append(text[at:end])
+        i = end
+    return entries
+
+
+def parse_bib_fields(body: str) -> Dict[str, str]:
+    fields: Dict[str, str] = {}
+    pos = 0
+
+    while pos < len(body):
+        match = re.search(r"\s*([a-zA-Z][a-zA-Z0-9_-]*)\s*=\s*", body[pos:])
+        if not match:
+            break
+
+        pos += match.start() + len(match.group(0))
+        name = match.group(1).lower()
+        value = ""
+
+        if pos < len(body) and body[pos] == "{":
+            depth = 0
+            start = pos + 1
+            end = start
+            while end < len(body):
+                if body[end] == "{":
+                    depth += 1
+                elif body[end] == "}":
+                    if depth == 0:
+                        break
+                    depth -= 1
+                end += 1
+            value = body[start:end]
+            pos = end + 1
+        elif pos < len(body) and body[pos] == '"':
+            start = pos + 1
+            end = start
+            while end < len(body) and body[end] != '"':
+                end += 1
+            value = body[start:end]
+            pos = end + 1
+        else:
+            end = pos
+            while end < len(body) and body[end] != ",":
+                end += 1
+            value = body[pos:end]
+            pos = end
+
+        fields[name] = clean_bib_value(value)
+
+        comma = body.find(",", pos)
+        if comma == -1:
+            break
+        pos = comma + 1
+
+    return fields
+
+
+def parse_bibtex(path: str | Path) -> List[Dict[str, Any]]:
+    path = Path(path)
+    if not path.exists():
+        return []
+
+    text = path.read_text(encoding="utf-8")
+    entries: List[Dict[str, Any]] = []
+
+    for raw in split_bib_entries(text):
+        header = re.match(r"^@([^{]+)\{\s*([^,]+),", raw)
+        if not header:
+            continue
+        body = raw[len(header.group(0)):-1]
+        entries.append({
+            "type": header.group(1).strip().lower(),
+            "key": header.group(2).strip(),
+            "fields": parse_bib_fields(body),
+        })
+
+    return entries
+
+
+def clean_bib_value(value: str) -> str:
+    value = normalize_space(value)
+    replacements = {
+        r"\_": "_",
+        r"\&": "&",
+        r"\%": "%",
+        r"\$": "$",
+        r"\#": "#",
+        r"\{": "{",
+        r"\}": "}",
+        r"\textbackslash{}": "\\",
+        r"\textasciitilde{}": "~",
+        r"\textasciicircum{}": "^",
+    }
+    for old, new in replacements.items():
+        value = value.replace(old, new)
+    return normalize_space(value)
+
+
+def split_bib_authors(author_field: str) -> List[str]:
+    return [
+        clean_bib_value(author).strip()
+        for author in re.split(r"\s+and\s+", author_field or "", flags=re.I)
+        if clean_bib_value(author).strip()
+    ]
+
+
+def bib_author_display_name(author: str) -> str:
+    author = clean_bib_value(author)
+    if "," in author:
+        parts = [part.strip() for part in author.split(",") if part.strip()]
+        if len(parts) >= 2:
+            return normalize_space(f"{' '.join(parts[1:])} {parts[0]}")
+    return normalize_space(author)
+
+
+def canonical_author_key(author: str) -> str:
+    display = bib_author_display_name(author)
+    display = re.sub(r"\b([A-Z])\.\s*", r"\1 ", display)
+    normalized = normalize_name(display)
+    parts = normalized.split()
+    if not parts:
+        return ""
+
+    # Merge common variants such as "David Burr", "D Burr", "David C Burr".
+    surname = parts[-1]
+    given_initials = "".join(part[0] for part in parts[:-1] if part)
+    if given_initials:
+        return f"{surname}:{given_initials[:2]}"
+    return surname
+
+
+def author_name_score(name: str) -> Tuple[int, int]:
+    display = bib_author_display_name(name)
+    # Prefer full names over initials-only forms.
+    full_parts = [part for part in re.split(r"\s+", display) if len(part.strip(".")) > 1]
+    return (len(full_parts), len(display))
+
+
+def bib_entry_matches_profile(entry: Dict[str, Any], aliases: List[str]) -> bool:
+    fields = entry.get("fields", {})
+    maplab_people = fields.get("maplab_people") or fields.get("maplab_person") or ""
+    mapped_names = [
+        item.strip()
+        for item in re.split(r"\s*(?:;|\||, and | and )\s*", maplab_people, flags=re.I)
+        if item.strip()
+    ]
+
+    if any(name_matches_alias(name, aliases) for name in mapped_names):
+        return True
+
+    authors = split_bib_authors(fields.get("author", ""))
+    return any(name_matches_alias(bib_author_display_name(author), aliases) for author in authors)
+
+
+def coauthor_counts_from_bibtex(
+    bib_entries: List[Dict[str, Any]],
+    aliases: List[str],
+    max_coauthors: int = 80,
+) -> List[Dict[str, Any]]:
+    counts: Counter[str] = Counter()
+    best_names: Dict[str, str] = {}
+
+    for entry in bib_entries:
+        if not bib_entry_matches_profile(entry, aliases):
+            continue
+
+        authors = split_bib_authors(entry.get("fields", {}).get("author", ""))
+
+        # Count a coauthor once per paper, even if a duplicated author string appears.
+        seen_in_paper = set()
+
+        for author in authors:
+            display = bib_author_display_name(author)
+            if not display or name_matches_alias(display, aliases):
+                continue
+
+            key = canonical_author_key(display)
+            if not key or key in seen_in_paper:
+                continue
+
+            seen_in_paper.add(key)
+            counts[key] += 1
+
+            previous = best_names.get(key)
+            if previous is None or author_name_score(display) > author_name_score(previous):
+                best_names[key] = display
+
+    return [
+        {"name": best_names.get(key, key), "count": int(count)}
+        for key, count in counts.most_common(max_coauthors)
+    ]
+
+
+def bib_titles_for_profile(bib_entries: List[Dict[str, Any]], aliases: List[str]) -> List[str]:
+    titles: List[str] = []
+    for entry in bib_entries:
+        if bib_entry_matches_profile(entry, aliases):
+            title = entry.get("fields", {}).get("title", "")
+            if title:
+                titles.append(title)
+    return titles
+
+
 def author_id_list(value: Any) -> List[str]:
     text = normalize_space(value)
     if not text:
@@ -529,6 +755,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     parser.add_argument("--people-index", default="data/people/people.json")
     parser.add_argument("--people-dir", default="data/people")
     parser.add_argument("--output-dir", default="data/scopus")
+    parser.add_argument("--bibtex", default="data/publications.bib", help="Shared BibTeX file used for accurate coauthor counts")
     parser.add_argument("--max-results-per-author", type=int, default=DEFAULT_MAX_RESULTS_PER_AUTHOR)
     parser.add_argument("--sleep", type=float, default=0.2)
     args = parser.parse_args(argv)
@@ -542,6 +769,7 @@ def main(argv: Optional[List[str]] = None) -> int:
 
     authors = load_json(args.authors)
     profiles = build_people_profiles(Path(args.people_index), Path(args.people_dir))
+    bib_entries = parse_bibtex(args.bibtex)
 
     session = requests.Session()
     session.headers.update(scopus_headers(api_key, inst_token))
@@ -610,16 +838,26 @@ def main(argv: Optional[List[str]] = None) -> int:
             "h_index": h_index_from_counts(citation_counts) if citation_counts else None,
         }
 
+        # Coauthor counts must come from the shared BibTeX bibliography, not from
+        # Abstract Retrieval metadata: Scopus often returns partial author lists
+        # there depending on entitlement. The BibTeX file is the source of truth
+        # for what is displayed on the personal pages.
+        bib_coauthors = coauthor_counts_from_bibtex(bib_entries, aliases)
+        if not bib_coauthors:
+            bib_coauthors = coauthor_counts(author_lists, aliases)
+
+        keyword_texts = texts + bib_titles_for_profile(bib_entries, aliases)
+
         output = {
             "slug": slug,
             "name": profile.get("name", name),
             "generated_at": now,
-            "source": "Scopus Search API; Scopus Abstract Retrieval when authorized",
+            "source": "Scopus Search API for metrics/keywords; shared BibTeX for coauthor counts",
             "metrics": metrics,
             "publications_analyzed": len(entries),
             "abstracts_found": abstracts_found,
-            "keywords": keyword_counts(texts),
-            "coauthors": coauthor_counts(author_lists, aliases),
+            "keywords": keyword_counts(keyword_texts),
+            "coauthors": bib_coauthors,
         }
 
         write_json(Path(args.output_dir) / f"{slug}.json", output)
