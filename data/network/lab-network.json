@@ -4,125 +4,86 @@
   "source": "Static network generated from data/publications.bib",
   "title_based_keywords": true,
   "abstracts_used": false,
+  "keyword_extractor": "phrase_v2_frontend_guarded",
   "keywords": [
     {
-      "text": "numerosity",
-      "value": 153
+      "text": "numerosity perception",
+      "value": 204
     },
     {
       "text": "adaptation",
-      "value": 63
+      "value": 84
     },
     {
-      "text": "attention",
-      "value": 54
-    },
-    {
-      "text": "number",
-      "value": 21
-    },
-    {
-      "text": "time",
-      "value": 13
-    },
-    {
-      "text": "foveal vision",
-      "value": 12
-    },
-    {
-      "text": "math",
-      "value": 10
-    },
-    {
-      "text": "estimation",
-      "value": 10
-    },
-    {
-      "text": "visual cortex",
-      "value": 9
+      "text": "multisensory perception",
+      "value": 44
     },
     {
       "text": "eye movements",
-      "value": 9
+      "value": 44
     },
     {
-      "text": "motion perception",
-      "value": 9
+      "text": "pupil responses",
+      "value": 36
     },
     {
-      "text": "space",
-      "value": 9
+      "text": "auditory perception",
+      "value": 32
     },
     {
-      "text": "math anxiety",
-      "value": 8
+      "text": "attentional mechanisms",
+      "value": 32
     },
     {
       "text": "developmental dyscalculia",
-      "value": 8
+      "value": 28
+    },
+    {
+      "text": "subitizing",
+      "value": 25
+    },
+    {
+      "text": "numerosity adaptation",
+      "value": 24
+    },
+    {
+      "text": "foveal vision",
+      "value": 16
     },
     {
       "text": "number sense",
-      "value": 8
+      "value": 16
     },
     {
-      "text": "cognitive",
-      "value": 8
+      "text": "numerosity estimation",
+      "value": 16
     },
     {
-      "text": "early",
-      "value": 8
+      "text": "transcranial magnetic stimulation",
+      "value": 12
     },
     {
-      "text": "auditory",
-      "value": 8
+      "text": "visual cortex",
+      "value": 12
     },
     {
-      "text": "mapping",
-      "value": 7
-    },
-    {
-      "text": "size",
-      "value": 7
-    },
-    {
-      "text": "information",
-      "value": 7
-    },
-    {
-      "text": "spatial",
-      "value": 7
-    },
-    {
-      "text": "dyscalculia",
-      "value": 7
-    },
-    {
-      "text": "mechanism",
-      "value": 7
+      "text": "motion perception",
+      "value": 12
     },
     {
       "text": "psychophysics",
-      "value": 6
+      "value": 10
     },
     {
       "text": "symmetry perception",
-      "value": 6
+      "value": 8
     },
     {
       "text": "serial dependence",
-      "value": 6
+      "value": 8
     },
     {
       "text": "navigated transcranial",
-      "value": 6
-    },
-    {
-      "text": "pupil size",
-      "value": 6
-    },
-    {
-      "text": "auditory time",
       "value": 6
     },
     {
@@ -130,43 +91,7 @@
       "value": 6
     },
     {
-      "text": "mapping number",
-      "value": 6
-    },
-    {
-      "text": "motor",
-      "value": 6
-    },
-    {
-      "text": "action",
-      "value": 6
-    },
-    {
-      "text": "sense",
-      "value": 6
-    },
-    {
-      "text": "representation",
-      "value": 5
-    },
-    {
-      "text": "discrimination",
-      "value": 5
-    },
-    {
       "text": "anxiety",
-      "value": 5
-    },
-    {
-      "text": "pupil",
-      "value": 5
-    },
-    {
-      "text": "optimal",
-      "value": 5
-    },
-    {
-      "text": "encoding",
       "value": 5
     },
     {
@@ -174,40 +99,16 @@
       "value": 5
     },
     {
-      "text": "pupillary",
-      "value": 5
+      "text": "active vision",
+      "value": 4
     },
     {
-      "text": "fast",
-      "value": 5
+      "text": "magnetic resonance imaging",
+      "value": 4
     },
     {
-      "text": "temporal",
-      "value": 5
-    },
-    {
-      "text": "saccadic",
-      "value": 5
-    },
-    {
-      "text": "featur",
-      "value": 5
-    },
-    {
-      "text": "primary",
-      "value": 5
-    },
-    {
-      "text": "sensitivity",
-      "value": 5
-    },
-    {
-      "text": "perceived",
-      "value": 5
-    },
-    {
-      "text": "subitizing",
-      "value": 5
+      "text": "sensorimotor numerosity",
+      "value": 4
     },
     {
       "text": "tumour surgery",
@@ -218,31 +119,11 @@
       "value": 4
     },
     {
-      "text": "psychophysiological behavioral",
-      "value": 4
-    },
-    {
-      "text": "grouping strategy",
-      "value": 4
-    },
-    {
-      "text": "time estimation",
+      "text": "strategy numerosity",
       "value": 4
     },
     {
       "text": "millisecond second",
-      "value": 4
-    },
-    {
-      "text": "separate mechanism",
-      "value": 4
-    },
-    {
-      "text": "visuo-spatial working memory",
-      "value": 4
-    },
-    {
-      "text": "visuo-spatial working",
       "value": 4
     },
     {
@@ -262,28 +143,48 @@
       "value": 4
     },
     {
-      "text": "primary school",
-      "value": 4
-    },
-    {
       "text": "implied motion",
-      "value": 4
-    },
-    {
-      "text": "math achievement",
-      "value": 4
-    },
-    {
-      "text": "shared numerical representation",
-      "value": 4
-    },
-    {
-      "text": "numerical representation action",
       "value": 4
     },
     {
       "text": "shared numerical",
       "value": 4
+    },
+    {
+      "text": "dyscalculic development",
+      "value": 4
+    },
+    {
+      "text": "periventricular leukomalacia",
+      "value": 4
+    },
+    {
+      "text": "numerosity texture-density",
+      "value": 4
+    },
+    {
+      "text": "compression event",
+      "value": 4
+    },
+    {
+      "text": "requir attention",
+      "value": 4
+    },
+    {
+      "text": "attention resourc",
+      "value": 4
+    },
+    {
+      "text": "phase congruency",
+      "value": 4
+    },
+    {
+      "text": "optical coating",
+      "value": 4
+    },
+    {
+      "text": "reading",
+      "value": 2
     }
   ],
   "network": {
@@ -496,21 +397,21 @@
         "cluster": 3
       },
       {
-        "id": "co:petrizzo:i",
-        "name": "Irene Petrizzo",
-        "type": "external",
-        "category": "",
-        "documents": 15,
-        "total_link_strength": 55,
-        "cluster": 1
-      },
-      {
         "id": "co:moscoso:p",
         "name": "Paula Andrea Maldonado Moscoso",
         "type": "external",
         "category": "",
         "documents": 13,
         "total_link_strength": 55,
+        "cluster": 1
+      },
+      {
+        "id": "co:petrizzo:i",
+        "name": "Irene Petrizzo",
+        "type": "external",
+        "category": "",
+        "documents": 14,
+        "total_link_strength": 53,
         "cluster": 1
       },
       {
@@ -2548,6 +2449,15 @@
         "cluster": 1
       },
       {
+        "id": "co:i:p",
+        "name": "Petrizzo I.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 2,
+        "cluster": 0
+      },
+      {
         "id": "co:lunardi:r",
         "name": "Roy Lunardi",
         "type": "external",
@@ -2667,13 +2577,13 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:petrizzo:i",
+        "source": "co:moscoso:p",
         "target": "roberto-arrighi",
-        "count": 13,
+        "count": 12,
         "type": "coauthorship"
       },
       {
-        "source": "co:moscoso:p",
+        "source": "co:petrizzo:i",
         "target": "roberto-arrighi",
         "count": 12,
         "type": "coauthorship"
@@ -2703,12 +2613,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:petrizzo:i",
-        "target": "giovanni-anobile",
-        "count": 9,
-        "type": "coauthorship"
-      },
-      {
         "source": "alessandro-benedetto",
         "target": "co:morrone:m",
         "count": 8,
@@ -2723,6 +2627,12 @@
       {
         "source": "co:morrone:m",
         "target": "co:tinelli:f",
+        "count": 8,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:petrizzo:i",
+        "target": "giovanni-anobile",
         "count": 8,
         "type": "coauthorship"
       },
@@ -9309,6 +9219,18 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:i:p",
+        "target": "giovanni-anobile",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:i:p",
+        "target": "roberto-arrighi",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:iaia:m",
         "target": "co:marinelli:c",
         "count": 1,
@@ -10883,8 +10805,8 @@
     ],
     "stats": {
       "lab_members": 7,
-      "external_collaborators": 251,
-      "edges": 1378
+      "external_collaborators": 252,
+      "edges": 1380
     }
   }
 }
