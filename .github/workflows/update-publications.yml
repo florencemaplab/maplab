@@ -12,9 +12,6 @@ concurrency:
   group: scopus-update
   cancel-in-progress: false
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   update-publications:
     runs-on: ubuntu-latest
@@ -38,21 +35,30 @@ jobs:
           SCOPUS_API_KEY: ${{ secrets.SCOPUS_API_KEY }}
           SCOPUS_INST_TOKEN: ${{ secrets.SCOPUS_INST_TOKEN }}
         run: |
-          python scripts/update_scopus_bibtex.py             --authors scripts/scopus_authors.json             --output data/publications.bib             --view COMPLETE             --skip-abstract-retrieval
+          python scripts/update_scopus_bibtex.py \
+            --authors scripts/scopus_authors.json \
+            --output data/publications.bib \
+            --view COMPLETE \
+            --skip-abstract-retrieval
 
       - name: Update author Scopus analytics
         env:
           SCOPUS_API_KEY: ${{ secrets.SCOPUS_API_KEY }}
           SCOPUS_INST_TOKEN: ${{ secrets.SCOPUS_INST_TOKEN }}
         run: |
-          python scripts/update_scopus_author_analytics.py             --authors scripts/scopus_authors.json             --people-index data/people/people.json             --people-dir data/people             --bibtex data/publications.bib             --output-dir data/scopus
+          python scripts/update_scopus_author_analytics.py \
+            --authors scripts/scopus_authors.json \
+            --people-index data/people/people.json \
+            --people-dir data/people \
+            --bibtex data/publications.bib \
+            --output-dir data/scopus
 
       - name: Commit updated bibliography and analytics if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/publications.bib data/scopus scripts/scopus_authors.json
+          git add data/publications.bib data/scopus
 
           if git diff --cached --quiet; then
             echo "No publication or analytics changes to commit."
