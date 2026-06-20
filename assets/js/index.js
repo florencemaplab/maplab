@@ -1233,97 +1233,45 @@
       return [a, b].sort().join("||");
     }
 
-    function profileForAuthor(authorName) {
-      return profiles.find((profile) => nameMatchesAlias(authorName, profileAliases(profile))) || null;
-    }
-
-    function labProfilesForEntry(entry, authorsRaw) {
-      const fields = entry.fields || {};
-      const explicitSlugs = String(fields.maplab_slugs || "")
-        .split(/\s*(?:;|\||,)\s*/)
-        .map((item) => item.trim())
-        .filter(Boolean);
-
-      const bySlug = explicitSlugs
-        .map((slug) => profiles.find((profile) => profile.slug === slug))
-        .filter(Boolean);
-
-      if (bySlug.length) return Array.from(new Map(bySlug.map((profile) => [profile.slug, profile])).values());
-
-      const maplabPeople = String(fields.maplab_people || fields.maplab_person || "")
-        .split(/\s*(?:;|\||, and | and )\s*/i)
-        .map((item) => item.trim())
-        .filter(Boolean);
-
-      const byMappedName = [];
-      maplabPeople.forEach((name) => {
-        profiles.forEach((profile) => {
-          if (nameMatchesAlias(name, profileAliases(profile))) byMappedName.push(profile);
-        });
-      });
-
-      if (byMappedName.length) {
-        return Array.from(new Map(byMappedName.map((profile) => [profile.slug, profile])).values());
-      }
-
-      const byAuthorField = [];
-      authorsRaw.forEach((authorName) => {
-        const profile = profileForAuthor(authorName);
-        if (profile) byAuthorField.push(profile);
-      });
-
-      return Array.from(new Map(byAuthorField.map((profile) => [profile.slug, profile])).values());
-    }
-
     entries.forEach((entry) => {
       const fields = entry.fields || {};
       if (fields.title) titles.push(fields.title);
 
       const authorsRaw = splitBibAuthors(fields.author || "").map(bibAuthorDisplayName).filter(Boolean);
-      const labProfiles = labProfilesForEntry(entry, authorsRaw);
-      if (!labProfiles.length) return;
+      if (!authorsRaw.length) return;
 
       const participants = [];
       const seen = new Set();
+      const hasLab = authorsRaw.some((authorName) => profiles.some((profile) => nameMatchesAlias(authorName, profileAliases(profile))));
+      if (!hasLab) return;
 
-      // First add MAPLab members from explicit maplab_people/maplab_slugs.
-      // This is much more reliable than trying to infer membership only from the author string.
-      labProfiles.forEach((profile) => {
-        const node = ensureNode(profile.slug, profile.name, "lab", profile.category || "");
-        if (!seen.has(profile.slug)) {
-          seen.add(profile.slug);
-          node.documents += 1;
-          participants.push(profile.slug);
-        }
-      });
-
-      // Then add all non-MAPLab coauthors from the author list.
       authorsRaw.forEach((authorName) => {
-        const matchedProfile = profileForAuthor(authorName);
-        if (matchedProfile) {
-          // If the matched MAPLab author was not already in maplab_people, keep it too.
-          const node = ensureNode(matchedProfile.slug, matchedProfile.name, "lab", matchedProfile.category || "");
-          if (!seen.has(matchedProfile.slug)) {
-            seen.add(matchedProfile.slug);
-            node.documents += 1;
-            participants.push(matchedProfile.slug);
+        let matchedProfile = null;
+        for (const profile of profiles) {
+          if (nameMatchesAlias(authorName, profileAliases(profile))) {
+            matchedProfile = profile;
+            break;
           }
-          return;
         }
 
-        const canonical = canonicalCoauthorKey(authorName);
-        if (!canonical) return;
+        let nodeId;
+        let node;
+        if (matchedProfile) {
+          nodeId = matchedProfile.slug;
+          node = ensureNode(nodeId, matchedProfile.name, "lab", matchedProfile.category || "");
+        } else {
+          const canonical = canonicalCoauthorKey(authorName);
+          if (!canonical) return;
+          nodeId = `co:${canonical}`;
+          node = ensureNode(nodeId, authorName, "external", "");
+        }
 
-        const nodeId = `co:${canonical}`;
-        const node = ensureNode(nodeId, authorName, "external", "");
         if (!seen.has(nodeId)) {
           seen.add(nodeId);
           node.documents += 1;
           participants.push(nodeId);
         }
       });
-
-      if (participants.length < 2) return;
 
       for (let i = 0; i < participants.length; i += 1) {
         for (let j = i + 1; j < participants.length; j += 1) {
@@ -1356,13 +1304,14 @@
     }
 
     externalNodes.sort((a, b) => (b.total_link_strength - a.total_link_strength) || (b.documents - a.documents) || a.name.localeCompare(b.name));
-    const keptExternal = externalNodes.slice(0, 320);
+    const keptExternal = externalNodes.slice(0, 280);
     const keepIds = new Set([...labNodes, ...keptExternal].map((node) => node.id));
 
     const edges = Array.from(edgeMap.values())
       .filter((edge) => keepIds.has(edge.source) && keepIds.has(edge.target))
       .sort((a, b) => b.count - a.count);
 
+    // Weighted label propagation for lightweight VOSviewer-like clusters.
     const adjacency = new Map();
     const nodes = [...labNodes, ...keptExternal];
     nodes.forEach((node) => adjacency.set(node.id, []));
@@ -1412,7 +1361,7 @@
       slug: "lab",
       name: "MAPLab",
       generated_at: "",
-      source: "Client-side fallback from data/publications.bib using maplab_people/maplab_slugs",
+      source: "Client-side fallback from data/publications.bib",
       title_based_keywords: true,
       abstracts_used: false,
       keywords: keywordCountsFromTitles(titles),
@@ -1683,7 +1632,7 @@
       return (node.type === "lab" ? 100000 : 0) + Number(node.total_link_strength || 0) * 8 + Number(node.documents || 0);
     }
 
-    const defaultThreshold = maxWeight >= 4 ? 2 : 1;
+    const defaultThreshold = 1;
 
     container.innerHTML = `
       <div class="lab-network-toolbar-simple">
@@ -1733,13 +1682,14 @@
 
     const width = 980;
     const height = 610;
+    const zoom = d3.zoom().scaleExtent([0.4, 4.5]).on("zoom", (event) => viewport.attr("transform", event.transform));
+    svg.call(zoom);
+
     svg.selectAll("*").remove();
     const defs = svg.append("defs");
     defs.append("filter").attr("id", "simple-node-shadow").attr("x", "-60%").attr("y", "-60%").attr("width", "220%").attr("height", "220%").html(`<feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#13202b" flood-opacity="0.15"/>`);
 
     const viewport = svg.append("g").attr("class", "constellation-viewport");
-    const zoom = d3.zoom().scaleExtent([0.4, 4.5]).on("zoom", (event) => viewport.attr("transform", event.transform));
-    svg.call(zoom);
     const hullLayer = viewport.append("g");
     const linkLayer = viewport.append("g");
     const nodeLayer = viewport.append("g");
@@ -2090,41 +2040,62 @@
     const grid = $("[data-people-grid]");
     if (!grid || $("#lab-collaboration-atlas")) return;
 
+    let data = null;
+    let sourceNote = "";
+
+    try {
+      const response = await fetch("data/scopus/lab.json");
+      if (response.ok) {
+        const jsonData = await response.json();
+        if (labNetworkLooksUsable(jsonData)) {
+          data = jsonData;
+        } else {
+          sourceNote = "The lab-wide JSON looked incomplete, so the map was rebuilt from other local data.";
+          console.info("data/scopus/lab.json exists but is incomplete; trying publications.bib and individual JSON files.");
+        }
+      }
+    } catch (error) {
+      console.info("Lab-wide Scopus analytics JSON unavailable; falling back to local data.", error);
+    }
+
+    if (!data) {
+      try {
+        const bibData = await buildLabAtlasFromBibTeXURL(profiles);
+        if (labNetworkLooksUsable(bibData)) {
+          data = bibData;
+          if (!sourceNote) sourceNote = "Built from data/publications.bib.";
+        }
+      } catch (error) {
+        console.info("Could not build lab atlas from BibTeX.", error);
+      }
+    }
+
+    if (!data) {
+      try {
+        const individualData = await buildLabAtlasFromIndividualScopus(profiles);
+        if (labNetworkLooksUsable(individualData)) {
+          data = individualData;
+          sourceNote = "Built from individual Scopus analytics files because lab-wide data were incomplete.";
+        }
+      } catch (error) {
+        console.info("Could not build lab atlas from individual Scopus JSON files.", error);
+      }
+    }
+
     injectLabAtlasStyles();
 
     const section = document.createElement("section");
     section.className = "lab-atlas";
     section.id = "lab-collaboration-atlas";
 
-    let data = null;
-    let errorMessage = "";
-
-    try {
-      const response = await fetch("data/network/lab-network.json");
-      if (!response.ok) {
-        errorMessage = `Could not load data/network/lab-network.json (${response.status}).`;
-      } else {
-        data = await response.json();
-      }
-    } catch (error) {
-      errorMessage = "Could not load data/network/lab-network.json.";
-      console.info(errorMessage, error);
-    }
-
-    const network = data && (data.network || data);
-    const nodes = network && Array.isArray(network.nodes) ? network.nodes : [];
-    const edges = network && Array.isArray(network.edges) ? network.edges : [];
-    const externalNodes = nodes.filter((node) => node && node.type !== "lab");
-
-    if (!data || !nodes.length || !edges.length || !externalNodes.length) {
+    if (!data) {
       section.innerHTML = `
         <div class="lab-atlas-shell">
           <div class="lab-atlas-head">
             <div>
               <p class="kicker">Lab-wide map</p>
               <h2>Collaboration and research landscape</h2>
-              <p>The static collaboration map has not been generated yet.</p>
-              <p class="lab-atlas-note">${escapeHTML(errorMessage || "Run the GitHub Action so it creates data/network/lab-network.json.")}</p>
+              <p>The lab-wide network is not available yet. The site could not find usable coauthor data in <code>data/scopus/lab.json</code>, <code>data/publications.bib</code>, or the individual <code>data/scopus/*.json</code> files.</p>
             </div>
           </div>
         </div>
@@ -2142,14 +2113,16 @@
             <p class="kicker">Lab-wide map</p>
             <h2>Collaboration and research landscape</h2>
             <p>A clean collaboration constellation across MAPLab members and their coauthors. Link thickness reflects the number of shared publications.</p>
+            ${sourceNote ? `<p class="lab-atlas-note">${escapeHTML(sourceNote)}</p>` : ""}
           </div>
+          ${data.generated_at ? `<div class="lab-atlas-date">Updated ${escapeHTML(compactDate(data.generated_at))}</div>` : ""}
         </div>
 
         <div class="lab-atlas-grid">
           <div class="lab-network-card">
             <div class="lab-card-title">
               <h3>Collaboration constellation</h3>
-              <span>${escapeHTML(numberOrDash(externalNodes.length))} collaborators</span>
+              <span>simple map</span>
             </div>
             <div data-lab-network></div>
           </div>
