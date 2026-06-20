@@ -1400,46 +1400,49 @@
     style.id = "lab-atlas-vos-styles";
     style.textContent = `
       .lab-network-card {
-        padding: clamp(0.85rem, 1.5vw, 1.1rem);
+        padding: 0.95rem;
       }
 
-      .lab-network-toolbar-deluxe {
-        align-items: stretch;
-        gap: 0.85rem;
+      .lab-network-toolbar-simple {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.8rem;
         margin: 0 0 0.9rem;
       }
 
-      .lab-network-controls {
+      .lab-network-controls-simple {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.65rem;
+        gap: 0.6rem;
         align-items: center;
       }
 
-      .lab-network-controls label {
-        min-height: 2.45rem;
+      .lab-network-chip {
+        min-height: 2.35rem;
         display: inline-flex;
         align-items: center;
         gap: 0.5rem;
-        padding: 0.35rem 0.55rem;
+        padding: 0.32rem 0.65rem;
         border: 1px solid rgba(220, 227, 234, 0.95);
         border-radius: 999px;
-        background: rgba(255, 255, 255, 0.74);
+        background: rgba(255, 255, 255, 0.82);
         color: var(--muted, #5d6a75);
         font-size: 0.8rem;
-        font-weight: 720;
+        font-weight: 700;
       }
 
-      .lab-network-controls label span:first-child {
+      .lab-network-chip span:first-child {
         color: var(--subtle, #7b8893);
         font-size: 0.72rem;
-        font-weight: 850;
-        letter-spacing: 0.08em;
+        font-weight: 840;
         text-transform: uppercase;
+        letter-spacing: 0.08em;
       }
 
-      .lab-search-label input {
-        width: min(210px, 38vw);
+      .lab-network-chip input[type="search"] {
+        width: min(190px, 35vw);
         border: 0;
         outline: 0;
         background: transparent;
@@ -1448,66 +1451,48 @@
         font-weight: 650;
       }
 
-      .lab-network-controls select {
-        border: 0;
-        outline: 0;
-        background: transparent;
-        color: var(--navy, #153e5c);
-        font: inherit;
-        font-weight: 780;
-      }
-
-      .lab-network-controls input[type="range"] {
-        width: 145px;
+      .lab-network-chip input[type="range"] {
+        width: 120px;
         accent-color: var(--blue, #1f6c94);
       }
 
-      .lab-check-label {
-        padding-right: 0.7rem !important;
-      }
-
-      .lab-check-label input {
-        accent-color: var(--blue, #1f6c94);
-      }
-
-      .lab-network-actions {
+      .lab-network-actions-simple {
         display: inline-flex;
-        gap: 0.5rem;
+        gap: 0.45rem;
         align-items: center;
-        justify-content: flex-end;
       }
 
-      .lab-network-actions button {
+      .lab-network-actions-simple button {
         border: 1px solid rgba(31, 108, 148, 0.15);
         border-radius: 999px;
         background: var(--accent-soft, #e8f3f7);
         color: var(--navy, #153e5c);
-        padding: 0.55rem 0.75rem;
+        padding: 0.55rem 0.8rem;
         font: inherit;
-        font-size: 0.82rem;
+        font-size: 0.81rem;
         font-weight: 780;
         cursor: pointer;
       }
 
-      .lab-network-actions button:hover {
+      .lab-network-actions-simple button:hover {
         background: #dceff5;
       }
 
-      .lab-network-stage-deluxe {
+      .lab-network-stage-simple {
         position: relative;
-        min-height: 680px;
+        min-height: 610px;
         border-radius: 24px;
         overflow: hidden;
         border: 1px solid rgba(226, 232, 236, 0.95);
         background:
-          radial-gradient(circle at 14% 16%, rgba(43, 127, 136, 0.10), transparent 23%),
-          radial-gradient(circle at 86% 12%, rgba(31, 108, 148, 0.11), transparent 25%),
+          radial-gradient(circle at 18% 18%, rgba(43, 127, 136, 0.10), transparent 24%),
+          radial-gradient(circle at 82% 12%, rgba(31, 108, 148, 0.11), transparent 26%),
           linear-gradient(180deg, #fbfdfe, #f4f9fb);
       }
 
       .lab-network-canvas {
         width: 100%;
-        height: 680px;
+        height: 610px;
         display: block;
         cursor: grab;
       }
@@ -1528,7 +1513,7 @@
         right: 0.95rem;
         padding: 0.48rem 0.68rem;
         border-radius: 999px;
-        background: rgba(255, 255, 255, 0.88);
+        background: rgba(255, 255, 255, 0.9);
         border: 1px solid rgba(220, 227, 234, 0.95);
         color: var(--muted, #5d6a75);
         font-size: 0.78rem;
@@ -1539,12 +1524,12 @@
         position: absolute;
         left: 0.95rem;
         bottom: 0.95rem;
-        max-width: min(460px, calc(100% - 1.9rem));
-        padding: 0.82rem 0.95rem;
-        border-radius: 17px;
-        background: rgba(255, 255, 255, 0.94);
+        max-width: min(430px, calc(100% - 1.9rem));
+        padding: 0.8rem 0.95rem;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.95);
         border: 1px solid rgba(220, 227, 234, 0.95);
-        box-shadow: 0 18px 36px rgba(19, 32, 43, 0.09);
+        box-shadow: 0 18px 36px rgba(19, 32, 43, 0.08);
         color: var(--muted, #5d6a75);
         font-size: 0.84rem;
         line-height: 1.45;
@@ -1553,68 +1538,56 @@
       .lab-network-tooltip strong {
         display: block;
         color: var(--navy, #153e5c);
-        font-size: 0.98rem;
-        margin-bottom: 0.18rem;
+        font-size: 0.96rem;
+        margin-bottom: 0.14rem;
       }
 
-      .lab-network-footer {
-        display: grid;
-        gap: 0.5rem;
-        margin-top: 0.82rem;
+      .lab-network-footer-simple {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.8rem;
+        margin-top: 0.78rem;
+        color: var(--subtle, #7b8893);
+        font-size: 0.78rem;
       }
 
-      .lab-network-legend {
+      .lab-network-legend-simple {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.48rem 0.72rem;
-        color: var(--subtle, #7b8893);
-        font-size: 0.76rem;
+        gap: 0.45rem 0.75rem;
       }
 
-      .lab-network-legend span {
+      .lab-network-legend-simple span {
         display: inline-flex;
         align-items: center;
-        gap: 0.34rem;
-        padding: 0.28rem 0.48rem;
-        border-radius: 999px;
-        border: 1px solid rgba(220, 227, 234, 0.8);
-        background: rgba(255, 255, 255, 0.7);
+        gap: 0.35rem;
       }
 
-      .lab-network-legend i {
+      .lab-network-legend-simple i {
         width: 0.72rem;
         height: 0.72rem;
         border-radius: 999px;
         display: inline-block;
       }
 
-      .lab-network-legend em {
-        color: var(--subtle, #7b8893);
-        font-style: normal;
-      }
-
-      .lab-network-hint {
-        color: var(--subtle, #7b8893);
-        font-size: 0.78rem;
-      }
-
       @media (max-width: 980px) {
-        .lab-network-stage-deluxe {
-          min-height: 540px;
+        .lab-network-stage-simple {
+          min-height: 520px;
         }
 
         .lab-network-canvas {
-          height: 540px;
+          height: 520px;
         }
 
-        .lab-network-actions {
-          justify-content: flex-start;
+        .lab-network-footer-simple {
+          flex-direction: column;
+          align-items: flex-start;
         }
       }
     `;
     document.head.appendChild(style);
   }
-
 
   function vosTooltipHTML(node) {
     const role = node.type === "lab" ? `MAPLab member${node.category ? ` · ${escapeHTML(node.category)}` : ""}` : "External collaborator";
@@ -1648,96 +1621,53 @@
     }));
 
     const maxWeight = d3.max(allEdgesRaw, (d) => d.count) || 1;
-    const maxDocuments = d3.max(allNodesRaw, (d) => d.documents || 1) || 1;
-    const maxStrength = d3.max(allNodesRaw, (d) => d.total_link_strength || 1) || 1;
-    const maxCluster = d3.max(allNodesRaw, (d) => d.cluster || 0) || 0;
-
+    const maxStrength = d3.max(allNodesRaw, (d) => Math.max(d.total_link_strength || 0, d.documents || 0)) || 1;
     const clusterPalette = [
       "#1f6c94", "#2b7f88", "#7b5ea7", "#c97b32", "#9b4c77",
-      "#2a8a5e", "#5b6c9b", "#b84f4f", "#5e8b2d", "#8b6a2d",
-      "#3f7eaa", "#7b8f36"
+      "#2a8a5e", "#5b6c9b", "#b84f4f", "#5e8b2d", "#8b6a2d"
     ];
+    const clusterColor = d3.scaleOrdinal().range(clusterPalette);
 
-    const clusterColor = d3.scaleOrdinal()
-      .domain(d3.range(maxCluster + 1))
-      .range(clusterPalette);
-
-    const idToNode = new Map(allNodesRaw.map((node) => [node.id, node]));
-    const linkStrengthByNode = new Map();
-    allNodesRaw.forEach((node) => linkStrengthByNode.set(node.id, 0));
-    allEdgesRaw.forEach((edge) => {
-      linkStrengthByNode.set(edge.source, (linkStrengthByNode.get(edge.source) || 0) + edge.count);
-      linkStrengthByNode.set(edge.target, (linkStrengthByNode.get(edge.target) || 0) + edge.count);
-    });
-
-    allNodesRaw.forEach((node) => {
-      node.total_link_strength = Math.max(node.total_link_strength || 0, linkStrengthByNode.get(node.id) || 0);
-    });
-
-    function clusterName(clusterId) {
-      const members = allNodesRaw
-        .filter((node) => node.cluster === clusterId && node.type !== "lab")
-        .sort((a, b) => (b.total_link_strength - a.total_link_strength) || (b.documents - a.documents))
-        .slice(0, 2)
-        .map((node) => labShortName(node.name));
-      return members.length ? members.join(" / ") : `Cluster ${clusterId + 1}`;
+    function rankNode(node) {
+      return (node.type === "lab" ? 100000 : 0) + Number(node.total_link_strength || 0) * 8 + Number(node.documents || 0);
     }
 
-    function defaultMode() {
-      return allNodesRaw.length > 260 ? "core" : "full";
-    }
+    const defaultThreshold = maxWeight >= 4 ? 2 : 1;
 
     container.innerHTML = `
-      <div class="lab-network-toolbar lab-network-toolbar-deluxe">
-        <div class="lab-network-controls">
-          <label class="lab-search-label">
+      <div class="lab-network-toolbar-simple">
+        <div class="lab-network-controls-simple">
+          <label class="lab-network-chip">
             <span>Search</span>
             <input type="search" placeholder="author name…" data-network-search>
           </label>
-
-          <label>
-            <span>View</span>
-            <select data-network-mode>
-              <option value="full">Full network</option>
-              <option value="core">Core map</option>
-              <option value="lab">Lab neighbourhood</option>
-              <option value="strong">Strong links</option>
-            </select>
-          </label>
-
-          <label>
-            <span>Minimum shared papers</span>
-            <input type="range" min="1" max="${Math.max(1, maxWeight)}" step="1" value="1" data-edge-threshold>
-            <strong data-edge-threshold-value>1</strong>
-          </label>
-
-          <label class="lab-check-label">
-            <input type="checkbox" checked data-network-labels>
-            <span>Labels</span>
+          <label class="lab-network-chip">
+            <span>Min links</span>
+            <input type="range" min="1" max="${Math.max(1, maxWeight)}" step="1" value="${defaultThreshold}" data-edge-threshold>
+            <strong data-edge-threshold-value>${defaultThreshold}</strong>
           </label>
         </div>
-
-        <div class="lab-network-actions">
+        <div class="lab-network-actions-simple">
           <button type="button" data-network-reset>Reset view</button>
           <button type="button" data-network-clear>Clear focus</button>
         </div>
       </div>
 
-      <div class="lab-network-stage lab-network-stage-deluxe">
-        <svg class="lab-network-canvas" viewBox="0 0 1040 680" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="lab-network-stage-simple">
+        <svg class="lab-network-canvas" viewBox="0 0 980 610" preserveAspectRatio="xMidYMid meet"></svg>
         <div class="lab-network-overlay">
           <div class="lab-network-status" data-lab-network-status></div>
-          <div class="lab-network-tooltip" data-lab-network-tooltip>
-            Hover a node to inspect an author. Click to keep the focus.
-          </div>
+          <div class="lab-network-tooltip" data-lab-network-tooltip>Hover a node to inspect a collaborator. Click a node to keep the focus.</div>
         </div>
       </div>
 
-      <div class="lab-network-footer">
-        <div class="lab-network-legend" data-cluster-legend></div>
-        <div class="lab-network-hint">
-          Mouse wheel or trackpad to zoom, drag to pan. Link thickness shows repeated coauthorship.
+      <div class="lab-network-footer-simple">
+        <div class="lab-network-legend-simple">
+          <span><i style="background:#153e5c"></i>MAPLab members</span>
+          <span><i style="background:#1f6c94"></i>External collaborators</span>
+          <span><i style="background:linear-gradient(90deg, #dfe9ef, #7fa6bd)"></i>Stronger links = more shared papers</span>
         </div>
+        <div>Zoom, pan and hover to explore the constellation.</div>
       </div>
     `;
 
@@ -1747,253 +1677,132 @@
     const slider = container.querySelector("[data-edge-threshold]");
     const sliderValue = container.querySelector("[data-edge-threshold-value]");
     const searchInput = container.querySelector("[data-network-search]");
-    const modeSelect = container.querySelector("[data-network-mode]");
-    const labelsToggle = container.querySelector("[data-network-labels]");
     const resetButton = container.querySelector("[data-network-reset]");
     const clearButton = container.querySelector("[data-network-clear]");
-    const clusterLegend = container.querySelector("[data-cluster-legend]");
 
-    if (modeSelect) modeSelect.value = defaultMode();
-
-    const width = 1040;
-    const height = 680;
+    const width = 980;
+    const height = 610;
+    const zoom = d3.zoom().scaleExtent([0.4, 4.5]).on("zoom", (event) => viewport.attr("transform", event.transform));
+    svg.call(zoom);
 
     svg.selectAll("*").remove();
-
     const defs = svg.append("defs");
+    defs.append("filter").attr("id", "simple-node-shadow").attr("x", "-60%").attr("y", "-60%").attr("width", "220%").attr("height", "220%").html(`<feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#13202b" flood-opacity="0.15"/>`);
 
-    defs.append("filter")
-      .attr("id", "vos-glow")
-      .attr("x", "-70%")
-      .attr("y", "-70%")
-      .attr("width", "240%")
-      .attr("height", "240%")
-      .html(`
-        <feGaussianBlur stdDeviation="4.5" result="coloredBlur"></feGaussianBlur>
-        <feMerge>
-          <feMergeNode in="coloredBlur"></feMergeNode>
-          <feMergeNode in="SourceGraphic"></feMergeNode>
-        </feMerge>
-      `);
+    const viewport = svg.append("g").attr("class", "constellation-viewport");
+    const hullLayer = viewport.append("g");
+    const linkLayer = viewport.append("g");
+    const nodeLayer = viewport.append("g");
+    const labelLayer = viewport.append("g");
 
-    defs.append("filter")
-      .attr("id", "vos-node-shadow")
-      .attr("x", "-70%")
-      .attr("y", "-70%")
-      .attr("width", "240%")
-      .attr("height", "240%")
-      .html(`<feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#13202b" flood-opacity="0.16"/>`);
-
-    const viewport = svg.append("g").attr("class", "vos-viewport");
-    const hullLayer = viewport.append("g").attr("class", "vos-hulls");
-    const linkLayer = viewport.append("g").attr("class", "vos-links");
-    const nodeLayer = viewport.append("g").attr("class", "vos-nodes");
-    const labelLayer = viewport.append("g").attr("class", "vos-labels");
-
-    const zoom = d3.zoom()
-      .scaleExtent([0.28, 5.5])
-      .on("zoom", (event) => viewport.attr("transform", event.transform));
-
-    svg.call(zoom);
     resetButton.addEventListener("click", () => {
-      svg.transition().duration(450).call(zoom.transform, d3.zoomIdentity);
+      svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity);
     });
 
     let pinnedNodeId = "";
-    let currentDraw = null;
+    let currentNodes = [];
+    let currentApplyFocus = null;
 
-    function baseNodeRank(node) {
-      return (node.type === "lab" ? 100000 : 0) + Number(node.total_link_strength || 0) * 8 + Number(node.documents || 0);
-    }
-
-    function filteredGraph() {
-      const threshold = Number(slider.value || 1);
-      const mode = modeSelect.value || "full";
-
-      let candidateNodes = [...allNodesRaw];
-      const labIds = new Set(candidateNodes.filter((node) => node.type === "lab").map((node) => node.id));
-
-      if (mode === "core") {
-        const external = candidateNodes
-          .filter((node) => node.type !== "lab")
-          .sort((a, b) => baseNodeRank(b) - baseNodeRank(a))
-          .slice(0, 170);
-        candidateNodes = [...candidateNodes.filter((node) => node.type === "lab"), ...external];
-      }
-
-      if (mode === "lab") {
-        const labLinked = new Set();
-        allEdgesRaw.forEach((edge) => {
-          if (edge.count < threshold) return;
-          const sourceLab = labIds.has(edge.source);
-          const targetLab = labIds.has(edge.target);
-          if (sourceLab && !targetLab) labLinked.add(edge.target);
-          if (targetLab && !sourceLab) labLinked.add(edge.source);
-          if (sourceLab && targetLab) {
-            labLinked.add(edge.source);
-            labLinked.add(edge.target);
-          }
-        });
-        const external = candidateNodes
-          .filter((node) => node.type !== "lab" && labLinked.has(node.id))
-          .sort((a, b) => baseNodeRank(b) - baseNodeRank(a))
-          .slice(0, 220);
-        candidateNodes = [...candidateNodes.filter((node) => node.type === "lab"), ...external];
-      }
-
-      if (mode === "strong") {
-        const autoThreshold = Math.max(threshold, Math.min(maxWeight, Math.max(2, Math.ceil(maxWeight * 0.18))));
-        const ids = new Set();
-        allEdgesRaw.forEach((edge) => {
-          if (edge.count >= autoThreshold) {
-            ids.add(edge.source);
-            ids.add(edge.target);
-          }
-        });
-        candidateNodes = candidateNodes.filter((node) => node.type === "lab" || ids.has(node.id));
-      }
-
-      const keepIds = new Set(candidateNodes.map((node) => node.id));
-      let edges = allEdgesRaw.filter((edge) => edge.count >= threshold && keepIds.has(edge.source) && keepIds.has(edge.target));
-
-      if (mode === "strong") {
-        const autoThreshold = Math.max(threshold, Math.min(maxWeight, Math.max(2, Math.ceil(maxWeight * 0.18))));
-        edges = allEdgesRaw.filter((edge) => edge.count >= autoThreshold && keepIds.has(edge.source) && keepIds.has(edge.target));
-      }
-
-      const connectedIds = new Set();
-      edges.forEach((edge) => {
-        connectedIds.add(edge.source);
-        connectedIds.add(edge.target);
-      });
-      candidateNodes.filter((node) => node.type === "lab").forEach((node) => connectedIds.add(node.id));
-
-      const nodes = candidateNodes.filter((node) => connectedIds.has(node.id));
-      const nodeIds = new Set(nodes.map((node) => node.id));
-      edges = edges.filter((edge) => nodeIds.has(edge.source) && nodeIds.has(edge.target));
-
+    function buildGraph() {
+      const threshold = Number(slider.value || defaultThreshold);
+      sliderValue.textContent = String(threshold);
       const search = normalizeName(searchInput.value || "");
-      let searchMatches = new Set();
+
+      const labNodes = allNodesRaw.filter((node) => node.type === "lab");
+      const externalBase = allNodesRaw
+        .filter((node) => node.type !== "lab")
+        .sort((a, b) => rankNode(b) - rankNode(a))
+        .slice(0, 170);
+
+      const searchMatches = new Set();
       if (search) {
-        nodes.forEach((node) => {
+        allNodesRaw.forEach((node) => {
           if (normalizeName(node.name).includes(search)) searchMatches.add(node.id);
         });
       }
 
-      return { nodes: nodes.map((node) => ({ ...node })), edges: edges.map((edge) => ({ ...edge })), threshold, mode, searchMatches };
-    }
+      const keepIds = new Set([...labNodes, ...externalBase].map((node) => node.id));
+      searchMatches.forEach((id) => keepIds.add(id));
 
-    function updateClusterLegend(nodes) {
-      const clusters = Array.from(
-        d3.rollups(
-          nodes.filter((node) => node.type !== "lab"),
-          (items) => ({
-            count: items.length,
-            strength: d3.sum(items, (item) => Number(item.total_link_strength || 0)),
-            label: clusterName(Number(items[0].cluster || 0))
-          }),
-          (node) => Number(node.cluster || 0)
-        )
-      )
-        .sort((a, b) => b[1].strength - a[1].strength)
-        .slice(0, 8);
+      // Keep neighbours of searched authors and direct lab collaborators.
+      allEdgesRaw.forEach((edge) => {
+        if (edge.count < threshold) return;
+        if (searchMatches.has(edge.source) || searchMatches.has(edge.target)) {
+          keepIds.add(edge.source);
+          keepIds.add(edge.target);
+        }
+      });
 
-      clusterLegend.innerHTML = clusters.map(([clusterId, info]) => `
-        <span><i style="background:${clusterColor(clusterId)}"></i>${escapeHTML(info.label)} <em>${info.count}</em></span>
-      `).join("");
-    }
+      let edges = allEdgesRaw.filter((edge) => edge.count >= threshold && keepIds.has(edge.source) && keepIds.has(edge.target));
 
-    function labelForNode(node, importantIds, searchMatches) {
-      if (node.type === "lab") return true;
-      if (searchMatches && searchMatches.has(node.id)) return true;
-      return importantIds.has(node.id);
+      const connectedIds = new Set(labNodes.map((node) => node.id));
+      edges.forEach((edge) => {
+        connectedIds.add(edge.source);
+        connectedIds.add(edge.target);
+      });
+
+      const nodes = allNodesRaw.filter((node) => connectedIds.has(node.id));
+      const nodeIds = new Set(nodes.map((node) => node.id));
+      edges = edges.filter((edge) => nodeIds.has(edge.source) && nodeIds.has(edge.target));
+
+      return { nodes: nodes.map((node) => ({ ...node })), edges: edges.map((edge) => ({ ...edge })), searchMatches, threshold };
     }
 
     function draw() {
-      const graph = filteredGraph();
+      const graph = buildGraph();
       const nodes = graph.nodes;
-      const links = graph.edges;
-
-      sliderValue.textContent = String(graph.threshold);
-      status.textContent = `${nodes.length} authors · ${links.length} links · ${graph.mode.replaceAll("-", " ")}`;
-
-      updateClusterLegend(nodes);
+      const edges = graph.edges;
+      currentNodes = nodes;
+      status.textContent = `${nodes.length} authors · ${edges.length} links`;
 
       const nodeById = new Map(nodes.map((node) => [node.id, node]));
-      const linkObjects = links
-        .map((edge) => ({
-          ...edge,
-          source: nodeById.get(edge.source),
-          target: nodeById.get(edge.target)
-        }))
-        .filter((edge) => edge.source && edge.target);
-
-      const simulation = d3.forceSimulation(nodes)
-        .force("link", d3.forceLink(linkObjects)
-          .id((d) => d.id)
-          .distance((d) => {
-            const base = d.source.type === "lab" || d.target.type === "lab" ? 76 : 42;
-            return base + 145 / Math.sqrt(d.count || 1);
-          })
-          .strength((d) => Math.min(0.94, 0.18 + Math.log1p(d.count || 1) * 0.19)))
-        .force("charge", d3.forceManyBody().strength((d) => d.type === "lab" ? -620 : -170))
-        .force("center", d3.forceCenter(width / 2, height / 2))
-        .force("collide", d3.forceCollide().radius((d) => {
-          const strength = Math.max(Number(d.total_link_strength || 0), Number(d.documents || 1));
-          return (d.type === "lab" ? 19 : 6) + Math.sqrt(strength) * 1.35;
-        }).iterations(3))
-        .force("x", d3.forceX((d) => {
-          const cluster = Number(d.cluster || 0);
-          const angle = (Math.PI * 2 * cluster) / Math.max(3, maxCluster + 1);
-          return width / 2 + Math.cos(angle) * (d.type === "lab" ? 55 : 150);
-        }).strength((d) => d.type === "lab" ? 0.045 : 0.032))
-        .force("y", d3.forceY((d) => {
-          const cluster = Number(d.cluster || 0);
-          const angle = (Math.PI * 2 * cluster) / Math.max(3, maxCluster + 1);
-          return height / 2 + Math.sin(angle) * (d.type === "lab" ? 38 : 112);
-        }).strength((d) => d.type === "lab" ? 0.045 : 0.032));
-
-      simulation.stop();
-      for (let i = 0; i < 360; i += 1) simulation.tick();
-
-      const edgeWidth = d3.scaleSqrt().domain([1, maxWeight]).range([0.35, 5.8]);
-      const radiusScale = d3.scaleSqrt().domain([1, Math.max(maxDocuments, maxStrength)]).range([4.2, 21]);
-      const labelImportantIds = new Set(
-        [...nodes]
-          .filter((node) => node.type !== "lab")
-          .sort((a, b) => baseNodeRank(b) - baseNodeRank(a))
-          .slice(0, 26)
-          .map((node) => node.id)
-      );
-
+      const linkObjects = edges.map((edge) => ({ ...edge, source: nodeById.get(edge.source), target: nodeById.get(edge.target) })).filter((edge) => edge.source && edge.target);
       const linked = new Map();
       linkObjects.forEach((edge) => {
         linked.set(`${edge.source.id}||${edge.target.id}`, edge.count);
         linked.set(`${edge.target.id}||${edge.source.id}`, edge.count);
       });
 
+      const simulation = d3.forceSimulation(nodes)
+        .force("link", d3.forceLink(linkObjects)
+          .id((d) => d.id)
+          .distance((d) => (d.source.type === "lab" || d.target.type === "lab") ? (78 + 120 / Math.sqrt(d.count || 1)) : (46 + 88 / Math.sqrt(d.count || 1)))
+          .strength((d) => Math.min(0.92, 0.18 + Math.log1p(d.count || 1) * 0.18)))
+        .force("charge", d3.forceManyBody().strength((d) => d.type === "lab" ? -580 : -145))
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("collide", d3.forceCollide().radius((d) => {
+          const value = Math.max(Number(d.total_link_strength || 0), Number(d.documents || 1));
+          return (d.type === "lab" ? 18 : 5.5) + Math.sqrt(value) * 1.15;
+        }).iterations(2))
+        .force("x", d3.forceX(width / 2).strength(0.025))
+        .force("y", d3.forceY(height / 2).strength(0.025));
+
+      simulation.stop();
+      for (let i = 0; i < 300; i += 1) simulation.tick();
+
+      const radiusScale = d3.scaleSqrt().domain([1, maxStrength]).range([4.2, 18]);
+      const edgeWidth = d3.scaleSqrt().domain([1, maxWeight]).range([0.4, 5]);
+      const labelledExternal = new Set(nodes.filter((node) => node.type !== "lab").sort((a, b) => rankNode(b) - rankNode(a)).slice(0, 14).map((node) => node.id));
+
       hullLayer.selectAll("*").remove();
       linkLayer.selectAll("*").remove();
       nodeLayer.selectAll("*").remove();
       labelLayer.selectAll("*").remove();
 
-      const hullGroups = d3.groups(nodes.filter((node) => node.type !== "lab"), (node) => node.cluster)
-        .filter(([, items]) => items.length >= 4);
-
+      const hullGroups = d3.groups(nodes.filter((node) => node.type !== "lab"), (node) => node.cluster).filter(([, items]) => items.length >= 5);
       hullLayer.selectAll("path")
         .data(hullGroups)
         .enter()
         .append("path")
         .attr("d", ([, items]) => {
-          const points = items.map((node) => [node.x, node.y]);
-          const hull = d3.polygonHull(points);
+          const hull = d3.polygonHull(items.map((node) => [node.x, node.y]));
           if (!hull) return "";
           return `M${hull.map((point) => point.join(",")).join("L")}Z`;
         })
         .attr("fill", ([cluster]) => clusterColor(cluster))
-        .attr("opacity", 0.055)
+        .attr("opacity", 0.04)
         .attr("stroke", ([cluster]) => clusterColor(cluster))
-        .attr("stroke-opacity", 0.15)
+        .attr("stroke-opacity", 0.12)
         .attr("stroke-width", 1);
 
       const linkSelection = linkLayer.selectAll("line")
@@ -2004,10 +1813,7 @@
         .attr("y1", (d) => d.source.y)
         .attr("x2", (d) => d.target.x)
         .attr("y2", (d) => d.target.y)
-        .attr("stroke", (d) => {
-          if (d.source.type === "lab" && d.target.type === "lab") return "rgba(21, 62, 92, 0.34)";
-          return "rgba(73, 121, 150, 0.24)";
-        })
+        .attr("stroke", (d) => (d.source.type === "lab" && d.target.type === "lab") ? "rgba(21, 62, 92, 0.32)" : "rgba(73, 121, 150, 0.22)")
         .attr("stroke-width", (d) => edgeWidth(d.count))
         .attr("stroke-linecap", "round");
 
@@ -2023,18 +1829,13 @@
         })
         .attr("fill", (d) => d.type === "lab" ? "#153e5c" : clusterColor(d.cluster || 0))
         .attr("stroke", (d) => d.type === "lab" ? "#ffffff" : "rgba(255,255,255,0.94)")
-        .attr("stroke-width", (d) => d.type === "lab" ? 3 : 1.4)
-        .attr("opacity", (d) => graph.searchMatches.size && !graph.searchMatches.has(d.id) ? 0.25 : 0.96)
-        .attr("filter", (d) => d.type === "lab" ? "url(#vos-node-shadow)" : null)
+        .attr("stroke-width", (d) => d.type === "lab" ? 3 : 1.2)
+        .attr("filter", (d) => d.type === "lab" ? "url(#simple-node-shadow)" : null)
+        .attr("opacity", (d) => graph.searchMatches.size && !graph.searchMatches.has(d.id) && d.type !== "lab" ? 0.2 : 0.96)
         .style("cursor", "pointer");
 
-      const labelsAreOn = labelsToggle.checked;
-      const labelNodes = labelsAreOn
-        ? nodes.filter((node) => labelForNode(node, labelImportantIds, graph.searchMatches))
-        : nodes.filter((node) => node.type === "lab" || graph.searchMatches.has(node.id));
-
-      const labelSelection = labelLayer.selectAll("text")
-        .data(labelNodes)
+      const labels = labelLayer.selectAll("text")
+        .data(nodes.filter((node) => node.type === "lab" || labelledExternal.has(node.id) || graph.searchMatches.has(node.id)))
         .enter()
         .append("text")
         .attr("x", (d) => d.x)
@@ -2044,53 +1845,50 @@
           return d.y - r - 7;
         })
         .attr("text-anchor", "middle")
-        .attr("font-size", (d) => d.type === "lab" ? 12.3 : 10.6)
-        .attr("font-weight", (d) => d.type === "lab" ? 820 : 690)
+        .attr("font-size", (d) => d.type === "lab" ? 12 : 10.4)
+        .attr("font-weight", (d) => d.type === "lab" ? 820 : 670)
         .attr("fill", "#13202b")
         .attr("paint-order", "stroke")
         .attr("stroke", "rgba(255,255,255,0.96)")
-        .attr("stroke-width", 3.6)
-        .attr("opacity", (d) => graph.searchMatches.size && !graph.searchMatches.has(d.id) && d.type !== "lab" ? 0.25 : 1)
+        .attr("stroke-width", 3.5)
         .text((d) => labShortName(d.name));
 
       function applyFocus(focusNode, pinned = false) {
         if (!focusNode) {
           if (pinnedNodeId) {
-            const pinnedNode = nodes.find((node) => node.id === pinnedNodeId);
+            const pinnedNode = currentNodes.find((node) => node.id === pinnedNodeId);
             if (pinnedNode) {
               applyFocus(pinnedNode, true);
               return;
             }
           }
-          tooltip.innerHTML = "Hover a node to inspect an author. Click to keep the focus.";
-          nodeSelection.attr("opacity", (d) => graph.searchMatches.size && !graph.searchMatches.has(d.id) ? 0.25 : 0.96)
-            .attr("stroke-width", (d) => d.type === "lab" ? 3 : 1.4);
-          linkSelection.attr("opacity", 1).attr("stroke", (d) => d.source.type === "lab" && d.target.type === "lab" ? "rgba(21, 62, 92, 0.34)" : "rgba(73, 121, 150, 0.24)");
-          labelSelection.attr("opacity", 1);
+          tooltip.innerHTML = "Hover a node to inspect a collaborator. Click a node to keep the focus.";
+          nodeSelection.attr("opacity", (d) => graph.searchMatches.size && !graph.searchMatches.has(d.id) && d.type !== "lab" ? 0.2 : 0.96)
+            .attr("stroke-width", (d) => d.type === "lab" ? 3 : 1.2);
+          linkSelection.attr("opacity", 1).attr("stroke", (d) => (d.source.type === "lab" && d.target.type === "lab") ? "rgba(21, 62, 92, 0.32)" : "rgba(73, 121, 150, 0.22)");
+          labels.attr("opacity", 1);
           return;
         }
 
-        tooltip.innerHTML = `${vosTooltipHTML(focusNode)}${pinned ? `<div style="margin-top:.28rem;color:#7b8893">Pinned focus. Click Clear focus to reset.</div>` : ""}`;
+        tooltip.innerHTML = `${vosTooltipHTML(focusNode)}${pinned ? `<div style="margin-top:.25rem;color:#7b8893">Pinned focus.</div>` : ""}`;
 
-        nodeSelection
-          .attr("opacity", (d) => {
-            if (d.id === focusNode.id) return 1;
-            return linked.has(`${focusNode.id}||${d.id}`) ? 0.95 : 0.10;
-          })
-          .attr("stroke-width", (d) => d.id === focusNode.id ? 4.2 : (d.type === "lab" ? 3 : 1.4));
+        nodeSelection.attr("opacity", (d) => {
+          if (d.id === focusNode.id) return 1;
+          return linked.has(`${focusNode.id}||${d.id}`) ? 0.98 : 0.1;
+        }).attr("stroke-width", (d) => d.id === focusNode.id ? 4 : (d.type === "lab" ? 3 : 1.2));
 
-        linkSelection
-          .attr("opacity", (d) => (d.source.id === focusNode.id || d.target.id === focusNode.id) ? 1 : 0.055)
+        linkSelection.attr("opacity", (d) => (d.source.id === focusNode.id || d.target.id === focusNode.id) ? 1 : 0.05)
           .attr("stroke", (d) => (d.source.id === focusNode.id || d.target.id === focusNode.id) ? "rgba(25, 116, 130, 0.68)" : "rgba(73, 121, 150, 0.18)");
 
-        labelSelection.attr("opacity", (d) => {
+        labels.attr("opacity", (d) => {
           if (d.id === focusNode.id) return 1;
           if (linked.has(`${focusNode.id}||${d.id}`)) return 1;
-          if (d.type === "lab") return 0.36;
+          if (d.type === "lab") return 0.35;
           return 0.08;
         });
       }
 
+      currentApplyFocus = applyFocus;
       nodeSelection
         .on("mouseenter", (_event, d) => {
           if (!pinnedNodeId) applyFocus(d);
@@ -2109,51 +1907,49 @@
         applyFocus(null);
       });
 
-      currentDraw = { applyFocus, nodes };
       applyFocus(null);
     }
 
-    function redraw() {
+    draw();
+    slider.addEventListener("input", () => {
       pinnedNodeId = "";
       draw();
-    }
-
-    draw();
-
-    slider.addEventListener("input", redraw);
-    modeSelect.addEventListener("change", redraw);
-    labelsToggle.addEventListener("change", redraw);
+    });
     searchInput.addEventListener("input", () => {
       pinnedNodeId = "";
       draw();
     });
     clearButton.addEventListener("click", () => {
       pinnedNodeId = "";
-      if (currentDraw) currentDraw.applyFocus(null);
+      if (currentApplyFocus) currentApplyFocus(null);
     });
   }
-
 
   async function renderLabAtlas(profiles) {
     const grid = $("[data-people-grid]");
     if (!grid || $("#lab-collaboration-atlas")) return;
 
     let data = null;
+    let jsonWasLoadedButBad = false;
 
     try {
       const response = await fetch("data/scopus/lab.json");
-      if (response.ok) data = await response.json();
+      if (response.ok) {
+        const jsonData = await response.json();
+        if (labNetworkLooksUsable(jsonData)) {
+          data = jsonData;
+        } else {
+          jsonWasLoadedButBad = true;
+          console.info("data/scopus/lab.json exists but has too few external collaborators; falling back to publications.bib.");
+        }
+      }
     } catch (error) {
       console.info("Lab-wide Scopus analytics JSON unavailable; falling back to BibTeX.", error);
     }
 
     if (!data) {
       try {
-        const response = await fetch("data/publications.bib");
-        if (response.ok) {
-          const bibText = await response.text();
-          data = buildLabAtlasFromBibTeX(parseBibTeXForLab(bibText), profiles);
-        }
+        data = await buildLabAtlasFromBibTeXURL(profiles);
       } catch (error) {
         console.info("Could not build lab atlas from BibTeX.", error);
       }
@@ -2170,7 +1966,7 @@
             <div>
               <p class="kicker">Lab-wide map</p>
               <h2>Collaboration and research landscape</h2>
-              <p>Lab-wide analytics will appear here after <code>data/scopus/lab.json</code> is generated or when <code>data/publications.bib</code> is available.</p>
+              <p>The lab-wide network could not be built yet. This usually means <code>data/publications.bib</code> still contains incomplete author lists. Run the Scopus update Action after applying the Crossref full-author patch.</p>
             </div>
           </div>
         </div>
@@ -2193,6 +1989,7 @@
             <p class="kicker">Lab-wide map</p>
             <h2>Collaboration and research landscape</h2>
             <p>A lab-wide coauthorship map built from shared publications. Nodes represent authors, link thickness reflects repeated collaboration, and clusters are estimated from the coauthorship graph.</p>
+            ${jsonWasLoadedButBad ? `<p class="lab-atlas-note">Note: <code>data/scopus/lab.json</code> looked incomplete, so this map was rebuilt directly from <code>data/publications.bib</code>.</p>` : ""}
           </div>
           ${data.generated_at ? `<div class="lab-atlas-date">Updated ${escapeHTML(compactDate(data.generated_at))}</div>` : ""}
         </div>
@@ -2233,7 +2030,6 @@
       if (networkMount) networkMount.innerHTML = `<div class="note">Could not render the collaboration network.</div>`;
     }
   }
-
 
   async function init() {
     const indexURL = document.body.dataset.peopleIndex || "data/people/people.json";
