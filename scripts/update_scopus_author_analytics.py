@@ -2,45 +2,6 @@
 """
 Generate per-person Scopus analytics JSON files for the MAPLab people pages.
 
-SURNAME_PARTICLES = {
-    "da", "de", "del", "della", "di", "dos", "du", "la", "le",
-    "van", "von", "der", "den", "ter", "ten", "st", "saint"
-}
-
-
-def author_signature_for_matching(name: str) -> str:
-    raw = re.sub(r"\s+", " ", str(name or "")).strip()
-    if not raw:
-        return ""
-    raw = re.sub(r"\b([A-Z])\.\s*", r"\1 ", raw)
-
-    def norm(v):
-        v = unicodedata.normalize("NFD", str(v or ""))
-        v = "".join(ch for ch in v if unicodedata.category(ch) != "Mn")
-        v = v.lower()
-        v = re.sub(r"[.,]", " ", v)
-        v = re.sub(r"[^a-z0-9 ]+", " ", v)
-        return re.sub(r"\s+", " ", v).strip()
-
-    if "," in raw:
-        parts = [p.strip() for p in raw.split(",") if p.strip()]
-        surname_raw = parts[0] if parts else ""
-        given_raw = " ".join(parts[1:]) if len(parts) > 1 else ""
-    else:
-        parts = [p for p in raw.split() if p]
-        if not parts:
-            return ""
-        given_raw = parts[0]
-        if len(parts) >= 2 and norm(parts[-2]) in SURNAME_PARTICLES:
-            surname_raw = " ".join(parts[-2:])
-        else:
-            surname_raw = parts[-1]
-
-    surname = norm(surname_raw)
-    given = norm(given_raw)
-    return f"{surname}:{given[0]}" if surname and given else surname
-
-
 No Abstract Retrieval or Author Retrieval is used here, to avoid entitlement
 errors. Metrics are derived from Scopus Search records; coauthors are counted
 from data/publications.bib.
@@ -55,6 +16,7 @@ import os
 import re
 import sys
 import time
+import unicodedata
 from collections import Counter, OrderedDict
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
@@ -100,6 +62,50 @@ def write_json(path: str | Path, data: Any) -> None:
 
 def normalize_space(value: Any) -> str:
     return re.sub(r"\s+", " ", str(value or "")).strip()
+
+
+
+SURNAME_PARTICLES = {
+    "da", "de", "del", "della", "di", "dos", "du", "la", "le",
+    "van", "von", "der", "den", "ter", "ten", "st", "saint"
+}
+
+
+def author_signature_for_matching(name: str) -> str:
+    """Return surname + first given-name initial for robust author matching."""
+    raw = re.sub(r"\s+", " ", str(name or "")).strip()
+    if not raw:
+        return ""
+
+    raw = re.sub(r"\b([A-Z])\.\s*", r"\1 ", raw)
+
+    def _norm(value: str) -> str:
+        value = unicodedata.normalize("NFD", str(value or ""))
+        value = "".join(ch for ch in value if unicodedata.category(ch) != "Mn")
+        value = value.lower()
+        value = re.sub(r"[.,]", " ", value)
+        value = re.sub(r"[^a-z0-9 ]+", " ", value)
+        return re.sub(r"\s+", " ", value).strip()
+
+    if "," in raw:
+        parts = [part.strip() for part in raw.split(",") if part.strip()]
+        surname_raw = parts[0] if parts else ""
+        given_raw = " ".join(parts[1:]) if len(parts) > 1 else ""
+    else:
+        parts = [part for part in raw.split() if part]
+        if not parts:
+            return ""
+        given_raw = parts[0]
+        if len(parts) >= 2 and _norm(parts[-2]) in SURNAME_PARTICLES:
+            surname_raw = " ".join(parts[-2:])
+        else:
+            surname_raw = parts[-1]
+
+    surname = _norm(surname_raw)
+    given = _norm(given_raw)
+    if not surname:
+        return ""
+    return f"{surname}:{given[0]}" if given else surname
 
 
 def normalize_name(value: str) -> str:
@@ -338,7 +344,6 @@ def name_matches_alias(name: str, aliases: List[str]) -> bool:
 
 def canonical_author_key(author: str) -> str:
     return author_signature_for_matching(author)
-
 
 def author_name_score(name: str) -> Tuple[int, int]:
     display = bib_author_display_name(name)
