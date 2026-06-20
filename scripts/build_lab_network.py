@@ -43,47 +43,72 @@ STOPWORDS = {
     "responses", "significant", "task", "tasks", "test", "toward", "towards",
 }
 
-# Single words that are too generic/noisy for a public-facing keyword cloud.
-# They may still appear inside meaningful multi-word phrases.
+
+# Public-facing keyword cleaning.
+# Single generic words are usually bad labels for a public cloud; they should
+# appear only as part of phrases such as "visual perception" or
+# "magnetic resonance imaging".
 NOISY_SINGLE_KEYWORDS = {
-    "magnetic", "resonance", "imaging", "functional", "structural", "brain",
-    "neural", "neuronal", "cortical", "cortex", "visual", "perceptual",
-    "perception", "stimulus", "stimuli", "subject", "subjects", "observer",
-    "observers", "healthy", "adult", "adults", "children", "patient", "patients",
-    "modulation", "properties", "mechanisms", "system", "systems", "role",
-    "relationship", "comparison", "different", "specific", "general",
-    "eeg", "fmri", "mri"
+    "visual", "perception", "perceptual", "magnetic", "resonance", "imaging",
+    "functional", "structural", "brain", "neural", "neuronal", "cortical",
+    "cortex", "stimulus", "stimuli", "subject", "subjects", "observer",
+    "observers", "children", "patients", "patient", "adult", "adults",
+    "early", "role", "mechanisms", "mechanism", "information", "features",
+    "feature", "primary", "sensitivity", "temporal", "spatial", "motor",
+    "action", "encoding", "representation", "sensory", "perceived",
+    "depends", "affects", "typical", "high", "fast", "optimal", "specific",
+    "general", "cognitive", "behavioral", "developmental", "grouping",
+    "mapping", "number", "time", "space", "size", "sense", "math",
+    "estimation", "discrimination", "eeg", "fmri", "mri"
 }
 
-# Phrases that read well as research themes. These are counted before generic
-# n-grams so the cloud shows concepts, not fragments such as "magnetic".
+ALLOWED_SINGLE_KEYWORDS = {
+    "numerosity", "adaptation", "attention", "dyscalculia", "groupitizing",
+    "subitizing", "psychophysics", "pupil", "anxiety", "auditory",
+    "multisensory", "saccades", "microsaccades", "reading", "dyslexia",
+    "consciousness", "stabilization", "foveola", "fovea"
+}
+
 CANONICAL_KEYWORD_PHRASES = {
     "active vision": [r"\bactive vision\b"],
     "adaptation": [r"\badaptation\b"],
-    "attention": [r"\battention\b", r"\battentional\b"],
+    "attentional mechanisms": [r"\battentional\b", r"\bvisual attention\b"],
+    "auditory perception": [r"\bauditory\b"],
     "binocular vision": [r"\bbinocular vision\b"],
     "contrast sensitivity": [r"\bcontrast sensitivity\b"],
+    "developmental dyscalculia": [r"\bdevelopmental dyscalculia\b", r"\bdyscalculia\b"],
     "developmental dyslexia": [r"\bdevelopmental dyslexia\b", r"\bdyslexia\b"],
-    "eye movements": [r"\beye movements?\b", r"\bsaccades?\b", r"\bmicrosaccades?\b"],
-    "foveal vision": [r"\bfoveal\b", r"\bfoveola\b", r"\bfoveolar\b"],
+    "eye movements": [r"\beye movements?\b", r"\bsaccades?\b", r"\bmicrosaccades?\b", r"\bsaccadic\b"],
+    "foveal vision": [r"\bfoveal\b", r"\bfoveola\b", r"\bfoveolar\b", r"\bfovea\b"],
     "magnetic resonance imaging": [
         r"\bmagnetic resonance imaging\b",
-        r"\bfunctional magnetic resonance imaging\b",
+        r"\bfunctional magnetic resonance\b",
+        r"\bfunctional mri\b",
         r"\bfmri\b",
         r"\bmri\b"
     ],
     "motion perception": [r"\bmotion perception\b", r"\bvisual motion\b"],
-    "numerosity": [r"\bnumerosity\b", r"\bnumerical perception\b"],
+    "multisensory perception": [r"\bmultisensory\b", r"\bvisuo[- ]?spatial\b"],
+    "number sense": [r"\bnumber sense\b"],
+    "numerosity adaptation": [r"\bnumerosity adaptation\b"],
+    "numerosity estimation": [r"\bnumerosity estimation\b"],
+    "numerosity perception": [r"\bnumerosity perception\b", r"\bperception numerosity\b", r"\bnumerosity\b"],
+    "pupil responses": [r"\bpupil\b", r"\bpupillary\b"],
     "psychophysics": [r"\bpsychophysics\b", r"\bpsychophysical\b"],
     "serial dependence": [r"\bserial dependence\b"],
     "spatial vision": [r"\bspatial vision\b", r"\bspatial resolution\b"],
+    "subitizing": [r"\bsubitizing\b"],
     "symmetry perception": [r"\bsymmetry\b", r"\bsymmetrical\b"],
     "temporal processing": [r"\btemporal processing\b", r"\btemporal dynamics\b", r"\btemporal sensitivity\b"],
-    "visual attention": [r"\bvisual attention\b"],
-    "visual cortex": [r"\bvisual cortex\b", r"\bvisual cortical\b"],
+    "transcranial magnetic stimulation": [
+        r"\btranscranial magnetic stimulation\b",
+        r"\bnavigated transcranial\b",
+        r"\btranscranial magnetic\b",
+        r"\btms\b"
+    ],
     "visual perception": [r"\bvisual perception\b", r"\bperceptual organization\b"],
+    "visual cortex": [r"\bvisual cortex\b", r"\bvisual cortical\b"]
 }
-
 
 
 def load_json(path: Path) -> Any:
@@ -322,6 +347,9 @@ def tokenize(text: str) -> List[str]:
 
 def singularize_keyword(word: str) -> str:
     replacements = {
+        "attentional": "attention",
+        "pupillary": "pupil",
+        "saccadic": "eye movements",
         "saccade": "eye movements",
         "saccades": "eye movements",
         "microsaccade": "eye movements",
@@ -329,10 +357,12 @@ def singularize_keyword(word: str) -> str:
         "foveola": "foveal vision",
         "foveolar": "foveal vision",
         "foveal": "foveal vision",
+        "fovea": "foveal vision",
         "psychophysical": "psychophysics",
-        "attentional": "attention",
         "symmetrical": "symmetry perception",
         "numerosities": "numerosity",
+        "visuo-spatial": "multisensory perception",
+        "visuospatial": "multisensory perception",
     }
     if word in replacements:
         return replacements[word]
@@ -345,18 +375,34 @@ def singularize_keyword(word: str) -> str:
     return word
 
 
-def keyword_counts(titles: List[str], max_keywords: int = 70) -> List[Dict[str, Any]]:
-    """Extract public-facing research keywords from publication titles.
+def clean_keyword_counter(counter: Counter[str]) -> Counter[str]:
+    cleaned: Counter[str] = Counter()
+    for text, value in counter.items():
+        text = normalize_space(text).lower()
+        if not text:
+            continue
+        if text in NOISY_SINGLE_KEYWORDS:
+            continue
+        if " " not in text and text not in ALLOWED_SINGLE_KEYWORDS:
+            continue
+        cleaned[text] += int(value)
+    return cleaned
 
-    The previous version counted single words too aggressively. That produced
-    bad cloud entries such as "magnetic" instead of meaningful phrases such as
-    "magnetic resonance imaging". This version prioritizes canonical phrases,
-    then informative 2-3 word phrases, and uses single words only when they are
-    domain-specific.
+
+def keyword_counts(titles: List[str], max_keywords: int = 48) -> List[Dict[str, Any]]:
+    """Extract readable, public-facing research keywords from titles.
+
+    Phrase-first strategy:
+    1. Count canonical concepts such as "visual perception" and
+       "magnetic resonance imaging".
+    2. Count recurrent 2-3 word phrases.
+    3. Add only domain-specific single words.
+    4. Never display generic fragments such as "magnetic", "visual",
+       "perception", "brain", or "neural".
     """
     canonical: Counter[str] = Counter()
     ngrams: Counter[str] = Counter()
-    unigrams: Counter[str] = Counter()
+    singles: Counter[str] = Counter()
 
     for title in titles:
         normalized_title = normalize_keyword_text(title)
@@ -365,64 +411,59 @@ def keyword_counts(titles: List[str], max_keywords: int = 70) -> List[Dict[str, 
             if any(re.search(pattern, normalized_title) for pattern in patterns):
                 canonical[phrase] += 1
 
-        words = [singularize_keyword(word) for word in tokenize(title)]
-        # Remove multi-word replacements from the token stream before n-gramming.
-        flat_words = []
-        for word in words:
+        tokenized = [singularize_keyword(word) for word in tokenize(title)]
+
+        words: List[str] = []
+        for word in tokenized:
             if " " in word:
                 canonical[word] += 1
-                continue
-            flat_words.append(word)
+            else:
+                words.append(word)
 
-        words = flat_words
-
+        # Recurrent local phrases from titles.
         for n in (3, 2):
             for gram in zip(*(words[i:] for i in range(n))):
                 if len(set(gram)) < n:
                     continue
-                phrase = " ".join(gram)
-                if any(part in NOISY_SINGLE_KEYWORDS for part in gram) and n == 2:
+                if any(part in NOISY_SINGLE_KEYWORDS for part in gram):
                     continue
-                if not any(part in NOISY_SINGLE_KEYWORDS for part in gram):
-                    ngrams[phrase] += 1
+                phrase = " ".join(gram)
+                ngrams[phrase] += 1
 
         for word in words:
-            if word in NOISY_SINGLE_KEYWORDS:
-                continue
-            unigrams[word] += 1
+            singles[word] += 1
 
     combined: Counter[str] = Counter()
 
-    # Canonical phrases should dominate because they are readable labels.
     for phrase, count in canonical.items():
         if count >= 1:
-            combined[phrase] += count * 3
+            combined[phrase] += count * 4
 
-    # Add recurrent n-grams if they are not just fragments of already selected phrases.
-    selected_phrases = set(combined)
+    selected = set(combined)
+
     for phrase, count in ngrams.items():
         if count < 2:
             continue
-        if any(phrase in selected or selected in phrase for selected in selected_phrases):
+        if phrase in NOISY_SINGLE_KEYWORDS:
+            continue
+        if any(phrase in existing or existing in phrase for existing in selected):
             continue
         combined[phrase] += count * 2
 
-    # Add domain-specific unigrams only when they are not swallowed by a phrase.
-    for word, count in unigrams.items():
+    for word, count in clean_keyword_counter(singles).items():
         if count < 2:
             continue
-        if any(word in phrase.split() for phrase in selected_phrases):
+        if any(word in phrase.split() for phrase in combined if " " in phrase):
             continue
         combined[word] += count
 
-    if not combined:
-        for word, count in unigrams.items():
-            if word not in NOISY_SINGLE_KEYWORDS:
-                combined[word] += count
-
-    # Avoid showing a noisy single word next to its meaningful phrase.
-    for noisy in list(NOISY_SINGLE_KEYWORDS):
+    # Hard final guard: remove any generic single-word fragments.
+    for noisy in NOISY_SINGLE_KEYWORDS:
         combined.pop(noisy, None)
+
+    # Remove weird reversed fragments when the canonical phrase exists.
+    if "numerosity perception" in combined:
+        combined.pop("perception numerosity", None)
 
     return [
         {"text": text, "value": int(value)}
@@ -643,6 +684,7 @@ def main() -> int:
         "source": "Static network generated from data/publications.bib",
         "title_based_keywords": True,
         "abstracts_used": False,
+        "keyword_extractor": "phrase_v2_frontend_guarded",
         "keywords": network.pop("keywords", []),
         "network": network,
     }

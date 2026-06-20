@@ -760,16 +760,69 @@
     return colors[index % colors.length];
   }
 
+  const NOISY_DISPLAY_KEYWORDS = new Set([
+    "visual", "perception", "perceptual", "magnetic", "resonance", "imaging",
+    "functional", "structural", "brain", "neural", "neuronal", "cortical",
+    "cortex", "stimulus", "stimuli", "subject", "subjects", "observer",
+    "observers", "children", "patients", "patient", "adult", "adults",
+    "early", "role", "mechanisms", "mechanism", "information", "features",
+    "feature", "primary", "sensitivity", "temporal", "spatial", "motor",
+    "action", "encoding", "representation", "sensory", "perceived",
+    "depends", "affects", "typical", "high", "fast", "optimal", "specific",
+    "general", "cognitive", "behavioral", "developmental", "grouping",
+    "mapping", "number", "time", "space", "size", "sense", "math",
+    "estimation", "discrimination", "eeg", "fmri", "mri"
+  ]);
+
+  const DISPLAY_KEYWORD_RENAMES = new Map([
+    ["attentional", "attention"],
+    ["pupillary", "pupil responses"],
+    ["pupil", "pupil responses"],
+    ["saccadic", "eye movements"],
+    ["saccade", "eye movements"],
+    ["saccades", "eye movements"],
+    ["microsaccades", "eye movements"],
+    ["foveola", "foveal vision"],
+    ["foveal", "foveal vision"],
+    ["visuo-spatial", "multisensory perception"],
+    ["perception numerosity", "numerosity perception"],
+    ["transcranial magnetic", "transcranial magnetic stimulation"],
+    ["navigated transcranial", "transcranial magnetic stimulation"],
+    ["magnetic resonance", "magnetic resonance imaging"]
+  ]);
+
+  function cleanDisplayKeywords(keywords) {
+    const counts = new Map();
+
+    (keywords || []).forEach((item) => {
+      let text = normalize(String(item && item.text ? item.text : ""));
+      if (!text) return;
+
+      let value = Number(item.value || item.count || 0);
+      if (!Number.isFinite(value)) value = 1;
+
+      text = DISPLAY_KEYWORD_RENAMES.get(text) || text;
+
+      const isPhrase = text.includes(" ");
+      if (!isPhrase && NOISY_DISPLAY_KEYWORDS.has(text)) return;
+      if (!isPhrase && text.length < 5) return;
+
+      counts.set(text, (counts.get(text) || 0) + value);
+    });
+
+    // Final hard guard.
+    NOISY_DISPLAY_KEYWORDS.forEach((word) => counts.delete(word));
+
+    if (counts.has("numerosity perception")) counts.delete("perception numerosity");
+
+    return Array.from(counts.entries())
+      .map(([text, value]) => ({ text, value }))
+      .sort((a, b) => b.value - a.value || a.text.localeCompare(b.text));
+  }
+
+
   function labKeywordCloudHTML(keywords) {
-    const words = (keywords || [])
-      .filter((item) => item && item.text)
-      .map((item) => ({
-        text: String(item.text || "").trim(),
-        value: Number(item.value || item.count || 0)
-      }))
-      .filter((item) => item.text)
-      .sort((a, b) => b.value - a.value || a.text.localeCompare(b.text))
-      .slice(0, 72);
+    const words = cleanDisplayKeywords(keywords).slice(0, 56);
 
     if (!words.length) return `<div class="note">No keyword data available yet.</div>`;
 
