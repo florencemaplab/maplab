@@ -1,0 +1,303 @@
+{
+  "slug": "giovanni-anobile",
+  "name": "Giovanni Anobile",
+  "generated_at": "2026-06-20T18:55:50Z",
+  "source": "Scopus Search API; Scopus Abstract Retrieval when authorized",
+  "metrics": {
+    "scopus_author_id": "36466056200",
+    "document_count": null,
+    "citation_count": null,
+    "cited_by_count": null,
+    "h_index": null
+  },
+  "publications_analyzed": 68,
+  "abstracts_found": 0,
+  "keywords": [
+    {
+      "text": "numerosity",
+      "value": 35
+    },
+    {
+      "text": "perception",
+      "value": 17
+    },
+    {
+      "text": "number",
+      "value": 14
+    },
+    {
+      "text": "visual",
+      "value": 11
+    },
+    {
+      "text": "adaptation",
+      "value": 10
+    },
+    {
+      "text": "math",
+      "value": 10
+    },
+    {
+      "text": "children",
+      "value": 9
+    },
+    {
+      "text": "time",
+      "value": 8
+    },
+    {
+      "text": "attention",
+      "value": 7
+    },
+    {
+      "text": "estimation",
+      "value": 7
+    },
+    {
+      "text": "anxiety",
+      "value": 5
+    },
+    {
+      "text": "groupitizing",
+      "value": 5
+    },
+    {
+      "text": "space",
+      "value": 5
+    },
+    {
+      "text": "subitizing",
+      "value": 5
+    },
+    {
+      "text": "math anxiety",
+      "value": 5
+    },
+    {
+      "text": "numerosity adaptation",
+      "value": 5
+    },
+    {
+      "text": "numerosity perception",
+      "value": 5
+    },
+    {
+      "text": "perception numerosity",
+      "value": 5
+    },
+    {
+      "text": "role",
+      "value": 4
+    },
+    {
+      "text": "auditory",
+      "value": 4
+    },
+    {
+      "text": "sense",
+      "value": 4
+    },
+    {
+      "text": "primary",
+      "value": 4
+    },
+    {
+      "text": "mapping",
+      "value": 4
+    },
+    {
+      "text": "typical",
+      "value": 4
+    },
+    {
+      "text": "high",
+      "value": 4
+    },
+    {
+      "text": "attentional",
+      "value": 4
+    },
+    {
+      "text": "mechanisms",
+      "value": 4
+    },
+    {
+      "text": "time perception",
+      "value": 4
+    },
+    {
+      "text": "auditory time",
+      "value": 4
+    },
+    {
+      "text": "number sense",
+      "value": 4
+    },
+    {
+      "text": "numerosity estimation",
+      "value": 4
+    },
+    {
+      "text": "representation",
+      "value": 3
+    },
+    {
+      "text": "sensorimotor",
+      "value": 3
+    },
+    {
+      "text": "development",
+      "value": 3
+    },
+    {
+      "text": "depends",
+      "value": 3
+    },
+    {
+      "text": "visuo-spatial",
+      "value": 3
+    },
+    {
+      "text": "size",
+      "value": 3
+    },
+    {
+      "text": "motor",
+      "value": 3
+    },
+    {
+      "text": "dyscalculia",
+      "value": 3
+    },
+    {
+      "text": "action",
+      "value": 3
+    },
+    {
+      "text": "correlate",
+      "value": 3
+    },
+    {
+      "text": "encoding",
+      "value": 3
+    },
+    {
+      "text": "numbers",
+      "value": 3
+    },
+    {
+      "text": "spontaneous",
+      "value": 3
+    },
+    {
+      "text": "representation numerosity",
+      "value": 3
+    },
+    {
+      "text": "sensorimotor numerosity",
+      "value": 3
+    },
+    {
+      "text": "pupil size",
+      "value": 3
+    },
+    {
+      "text": "temporal numerosity",
+      "value": 3
+    },
+    {
+      "text": "milliseconds seconds",
+      "value": 3
+    },
+    {
+      "text": "primary school",
+      "value": 3
+    },
+    {
+      "text": "estimation numerosity",
+      "value": 3
+    },
+    {
+      "text": "motor adaptation",
+      "value": 3
+    },
+    {
+      "text": "numerosity typical",
+      "value": 3
+    },
+    {
+      "text": "typical dyscalculic",
+      "value": 3
+    },
+    {
+      "text": "dyscalculic development",
+      "value": 3
+    }
+  ],
+  "coauthors": [
+    {
+      "name": "Maldonado Moscoso P.A.",
+      "count": 7
+    },
+    {
+      "name": "Petrizzo I.",
+      "count": 6
+    },
+    {
+      "name": "Grasso P.A.",
+      "count": 5
+    },
+    {
+      "name": "Cicchini G.M.",
+      "count": 5
+    },
+    {
+      "name": "Burr D.",
+      "count": 3
+    },
+    {
+      "name": "Castaldi E.",
+      "count": 3
+    },
+    {
+      "name": "Benedetto A.",
+      "count": 2
+    },
+    {
+      "name": "Blini E.",
+      "count": 2
+    },
+    {
+      "name": "Burr D.C.",
+      "count": 2
+    },
+    {
+      "name": "Pomè A.",
+      "count": 2
+    },
+    {
+      "name": "Burgio I.",
+      "count": 1
+    },
+    {
+      "name": "Bartolini T.",
+      "count": 1
+    },
+    {
+      "name": "Aruanno B.",
+      "count": 1
+    },
+    {
+      "name": "Bhat A.",
+      "count": 1
+    },
+    {
+      "name": "Stievano P.",
+      "count": 1
+    },
+    {
+      "name": "Tinelli F.",
+      "count": 1
+    }
+  ]
+}

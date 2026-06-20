@@ -1,0 +1,54 @@
+{
+  "slug": "irene-burgio",
+  "name": "Irene Burgio",
+  "generated_at": "2026-06-20T18:55:50Z",
+  "source": "Scopus Search API; Scopus Abstract Retrieval when authorized",
+  "metrics": {
+    "scopus_author_id": "60138900600",
+    "document_count": null,
+    "citation_count": null,
+    "cited_by_count": null,
+    "h_index": null
+  },
+  "publications_analyzed": 1,
+  "abstracts_found": 0,
+  "keywords": [
+    {
+      "text": "stronger",
+      "value": 1
+    },
+    {
+      "text": "reliance",
+      "value": 1
+    },
+    {
+      "text": "visual",
+      "value": 1
+    },
+    {
+      "text": "perceptual",
+      "value": 1
+    },
+    {
+      "text": "history",
+      "value": 1
+    },
+    {
+      "text": "individuals",
+      "value": 1
+    },
+    {
+      "text": "higher",
+      "value": 1
+    },
+    {
+      "text": "math",
+      "value": 1
+    },
+    {
+      "text": "anxiety",
+      "value": 1
+    }
+  ],
+  "coauthors": []
+}
