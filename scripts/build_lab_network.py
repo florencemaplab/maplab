@@ -43,6 +43,48 @@ STOPWORDS = {
     "responses", "significant", "task", "tasks", "test", "toward", "towards",
 }
 
+# Single words that are too generic/noisy for a public-facing keyword cloud.
+# They may still appear inside meaningful multi-word phrases.
+NOISY_SINGLE_KEYWORDS = {
+    "magnetic", "resonance", "imaging", "functional", "structural", "brain",
+    "neural", "neuronal", "cortical", "cortex", "visual", "perceptual",
+    "perception", "stimulus", "stimuli", "subject", "subjects", "observer",
+    "observers", "healthy", "adult", "adults", "children", "patient", "patients",
+    "modulation", "properties", "mechanisms", "system", "systems", "role",
+    "relationship", "comparison", "different", "specific", "general",
+    "eeg", "fmri", "mri"
+}
+
+# Phrases that read well as research themes. These are counted before generic
+# n-grams so the cloud shows concepts, not fragments such as "magnetic".
+CANONICAL_KEYWORD_PHRASES = {
+    "active vision": [r"\bactive vision\b"],
+    "adaptation": [r"\badaptation\b"],
+    "attention": [r"\battention\b", r"\battentional\b"],
+    "binocular vision": [r"\bbinocular vision\b"],
+    "contrast sensitivity": [r"\bcontrast sensitivity\b"],
+    "developmental dyslexia": [r"\bdevelopmental dyslexia\b", r"\bdyslexia\b"],
+    "eye movements": [r"\beye movements?\b", r"\bsaccades?\b", r"\bmicrosaccades?\b"],
+    "foveal vision": [r"\bfoveal\b", r"\bfoveola\b", r"\bfoveolar\b"],
+    "magnetic resonance imaging": [
+        r"\bmagnetic resonance imaging\b",
+        r"\bfunctional magnetic resonance imaging\b",
+        r"\bfmri\b",
+        r"\bmri\b"
+    ],
+    "motion perception": [r"\bmotion perception\b", r"\bvisual motion\b"],
+    "numerosity": [r"\bnumerosity\b", r"\bnumerical perception\b"],
+    "psychophysics": [r"\bpsychophysics\b", r"\bpsychophysical\b"],
+    "serial dependence": [r"\bserial dependence\b"],
+    "spatial vision": [r"\bspatial vision\b", r"\bspatial resolution\b"],
+    "symmetry perception": [r"\bsymmetry\b", r"\bsymmetrical\b"],
+    "temporal processing": [r"\btemporal processing\b", r"\btemporal dynamics\b", r"\btemporal sensitivity\b"],
+    "visual attention": [r"\bvisual attention\b"],
+    "visual cortex": [r"\bvisual cortex\b", r"\bvisual cortical\b"],
+    "visual perception": [r"\bvisual perception\b", r"\bperceptual organization\b"],
+}
+
+
 
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -263,31 +305,129 @@ def name_matches_alias(name: str, aliases: List[str]) -> bool:
 
 
 
-def tokenize(text: str) -> List[str]:
-    text = normalize_space(text).lower()
+def normalize_keyword_text(text: str) -> str:
+    text = unicodedata.normalize("NFD", normalize_space(text))
+    text = "".join(ch for ch in text if unicodedata.category(ch) != "Mn")
+    text = text.lower()
     text = re.sub(r"[^a-z0-9à-ÿ\- ]+", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def tokenize(text: str) -> List[str]:
+    text = normalize_keyword_text(text)
     words = [word.strip("-") for word in text.split()]
     return [word for word in words if len(word) >= 4 and word not in STOPWORDS and not word.isdigit()]
 
 
+def singularize_keyword(word: str) -> str:
+    replacements = {
+        "saccade": "eye movements",
+        "saccades": "eye movements",
+        "microsaccade": "eye movements",
+        "microsaccades": "eye movements",
+        "foveola": "foveal vision",
+        "foveolar": "foveal vision",
+        "foveal": "foveal vision",
+        "psychophysical": "psychophysics",
+        "attentional": "attention",
+        "symmetrical": "symmetry perception",
+        "numerosities": "numerosity",
+    }
+    if word in replacements:
+        return replacements[word]
+    if word.endswith("ies") and len(word) > 5:
+        return word[:-3] + "y"
+    if word.endswith("es") and len(word) > 5:
+        return word[:-2]
+    if word.endswith("s") and len(word) > 5:
+        return word[:-1]
+    return word
+
+
 def keyword_counts(titles: List[str], max_keywords: int = 70) -> List[Dict[str, Any]]:
-    unigram: Counter[str] = Counter()
-    bigram: Counter[str] = Counter()
+    """Extract public-facing research keywords from publication titles.
+
+    The previous version counted single words too aggressively. That produced
+    bad cloud entries such as "magnetic" instead of meaningful phrases such as
+    "magnetic resonance imaging". This version prioritizes canonical phrases,
+    then informative 2-3 word phrases, and uses single words only when they are
+    domain-specific.
+    """
+    canonical: Counter[str] = Counter()
+    ngrams: Counter[str] = Counter()
+    unigrams: Counter[str] = Counter()
+
     for title in titles:
-        words = tokenize(title)
-        unigram.update(words)
-        bigram.update(" ".join(pair) for pair in zip(words, words[1:]) if pair[0] != pair[1])
+        normalized_title = normalize_keyword_text(title)
+
+        for phrase, patterns in CANONICAL_KEYWORD_PHRASES.items():
+            if any(re.search(pattern, normalized_title) for pattern in patterns):
+                canonical[phrase] += 1
+
+        words = [singularize_keyword(word) for word in tokenize(title)]
+        # Remove multi-word replacements from the token stream before n-gramming.
+        flat_words = []
+        for word in words:
+            if " " in word:
+                canonical[word] += 1
+                continue
+            flat_words.append(word)
+
+        words = flat_words
+
+        for n in (3, 2):
+            for gram in zip(*(words[i:] for i in range(n))):
+                if len(set(gram)) < n:
+                    continue
+                phrase = " ".join(gram)
+                if any(part in NOISY_SINGLE_KEYWORDS for part in gram) and n == 2:
+                    continue
+                if not any(part in NOISY_SINGLE_KEYWORDS for part in gram):
+                    ngrams[phrase] += 1
+
+        for word in words:
+            if word in NOISY_SINGLE_KEYWORDS:
+                continue
+            unigrams[word] += 1
 
     combined: Counter[str] = Counter()
-    for word, count in unigram.items():
-        if count >= 2:
-            combined[word] += count
-    for phrase, count in bigram.items():
-        if count >= 2:
-            combined[phrase] += count + 1
+
+    # Canonical phrases should dominate because they are readable labels.
+    for phrase, count in canonical.items():
+        if count >= 1:
+            combined[phrase] += count * 3
+
+    # Add recurrent n-grams if they are not just fragments of already selected phrases.
+    selected_phrases = set(combined)
+    for phrase, count in ngrams.items():
+        if count < 2:
+            continue
+        if any(phrase in selected or selected in phrase for selected in selected_phrases):
+            continue
+        combined[phrase] += count * 2
+
+    # Add domain-specific unigrams only when they are not swallowed by a phrase.
+    for word, count in unigrams.items():
+        if count < 2:
+            continue
+        if any(word in phrase.split() for phrase in selected_phrases):
+            continue
+        combined[word] += count
+
     if not combined:
-        combined.update(unigram)
-    return [{"text": text, "value": int(value)} for text, value in combined.most_common(max_keywords)]
+        for word, count in unigrams.items():
+            if word not in NOISY_SINGLE_KEYWORDS:
+                combined[word] += count
+
+    # Avoid showing a noisy single word next to its meaningful phrase.
+    for noisy in list(NOISY_SINGLE_KEYWORDS):
+        combined.pop(noisy, None)
+
+    return [
+        {"text": text, "value": int(value)}
+        for text, value in combined.most_common(max_keywords)
+    ]
 
 
 def load_profiles(people_index: Path, people_dir: Path) -> Dict[str, Dict[str, Any]]:
@@ -486,7 +626,7 @@ def main() -> int:
     parser.add_argument("--people-index", default="data/people/people.json")
     parser.add_argument("--people-dir", default="data/people")
     parser.add_argument("--output", default="data/network/lab-network.json")
-    parser.add_argument("--max-external", type=int, default=800)
+    parser.add_argument("--max-external", type=int, default=600)
     args = parser.parse_args()
 
     bib_path = Path(args.bibtex)
