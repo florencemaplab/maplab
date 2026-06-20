@@ -346,9 +346,16 @@ def tokenize(text: str) -> List[str]:
 
 
 def singularize_keyword(word: str) -> str:
+    """Normalize only known scientific variants.
+
+    Do not apply generic suffix stripping. The previous version converted
+    readable words into ugly stems such as `requir` and `resourc`, which is
+    wrong for a public keyword cloud.
+    """
     replacements = {
         "attentional": "attention",
-        "pupillary": "pupil",
+        "pupillary": "pupil responses",
+        "pupillary responses": "pupil responses",
         "saccadic": "eye movements",
         "saccade": "eye movements",
         "saccades": "eye movements",
@@ -360,20 +367,10 @@ def singularize_keyword(word: str) -> str:
         "fovea": "foveal vision",
         "psychophysical": "psychophysics",
         "symmetrical": "symmetry perception",
-        "numerosities": "numerosity",
         "visuo-spatial": "multisensory perception",
         "visuospatial": "multisensory perception",
     }
-    if word in replacements:
-        return replacements[word]
-    if word.endswith("ies") and len(word) > 5:
-        return word[:-3] + "y"
-    if word.endswith("es") and len(word) > 5:
-        return word[:-2]
-    if word.endswith("s") and len(word) > 5:
-        return word[:-1]
-    return word
-
+    return replacements.get(word, word)
 
 def clean_keyword_counter(counter: Counter[str]) -> Counter[str]:
     cleaned: Counter[str] = Counter()
@@ -388,6 +385,28 @@ def clean_keyword_counter(counter: Counter[str]) -> Counter[str]:
         cleaned[text] += int(value)
     return cleaned
 
+
+
+BAD_KEYWORD_PHRASES = {
+    "requir attention",
+    "require attention",
+    "requires attention",
+    "attention resourc",
+    "attention resource",
+    "attention resources",
+    "millisecond second",
+    "strategy numerosity",
+    "shared numerical",
+    "dyscalculic development",
+    "compression event",
+    "optical coating",
+    "numerosity texture-density",
+    "texture-density",
+    "translational real-time",
+    "real-time pupillometry",
+    "translational real-time pupillometry",
+    "navigated transcranial",
+}
 
 def keyword_counts(titles: List[str], max_keywords: int = 48) -> List[Dict[str, Any]]:
     """Extract readable, public-facing research keywords from titles.
@@ -465,10 +484,18 @@ def keyword_counts(titles: List[str], max_keywords: int = 48) -> List[Dict[str, 
     if "numerosity perception" in combined:
         combined.pop("perception numerosity", None)
 
-    return [
-        {"text": text, "value": int(value)}
-        for text, value in combined.most_common(max_keywords)
-    ]
+    readable_items = []
+    for text, value in combined.most_common(max_keywords * 2):
+        text = normalize_space(text).lower()
+        if not text or text in BAD_KEYWORD_PHRASES:
+            continue
+        if re.search(r"\b(requir|resourc)\b", text):
+            continue
+        if len(readable_items) >= max_keywords:
+            break
+        readable_items.append({"text": text, "value": int(value)})
+
+    return readable_items
 
 
 def load_profiles(people_index: Path, people_dir: Path) -> Dict[str, Dict[str, Any]]:
@@ -684,7 +711,7 @@ def main() -> int:
         "source": "Static network generated from data/publications.bib",
         "title_based_keywords": True,
         "abstracts_used": False,
-        "keyword_extractor": "phrase_v2_frontend_guarded",
+        "keyword_extractor": "phrase_v3_readable_keywords",
         "keywords": network.pop("keywords", []),
         "network": network,
     }

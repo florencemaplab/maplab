@@ -733,8 +733,43 @@
     return colors[index % colors.length];
   }
 
+  const BAD_DISPLAY_KEYWORD_PHRASES = new Set([
+    "requir attention",
+    "require attention",
+    "requires attention",
+    "attention resourc",
+    "attention resource",
+    "attention resources",
+    "millisecond second",
+    "strategy numerosity",
+    "shared numerical",
+    "dyscalculic development",
+    "compression event",
+    "optical coating",
+    "numerosity texture-density",
+    "texture-density",
+    "translational real-time",
+    "real-time pupillometry",
+    "translational real-time pupillometry",
+    "navigated transcranial",
+  ]);
+
   function labKeywordCloudHTML(keywords) {
-    const words = (keywords || []).filter((item) => item && item.text).slice(0, 42);
+    const mergedKeywords = new Map();
+    (keywords || []).forEach((item) => {
+      let text = normalize(String(item && item.text ? item.text : ""));
+      if (!text) return;
+      if (BAD_DISPLAY_KEYWORD_PHRASES.has(text)) return;
+      if (/\b(requir|resourc)\b/.test(text)) return;
+      let value = Number(item.value || item.count || 0);
+      if (!Number.isFinite(value)) value = 1;
+      mergedKeywords.set(text, (mergedKeywords.get(text) || 0) + value);
+    });
+
+    const words = Array.from(mergedKeywords.entries())
+      .map(([text, value]) => ({ text, value }))
+      .sort((a, b) => b.value - a.value || a.text.localeCompare(b.text))
+      .slice(0, 48);
     if (!words.length) return `<div class="note">No lab keyword data available yet.</div>`;
 
     const values = words.map((item) => Number(item.value || item.count || 0)).filter(Number.isFinite);
@@ -2140,7 +2175,7 @@
     let errorMessage = "";
 
     try {
-      const response = await fetch("data/network/lab-network.json?v=20260621full");
+      const response = await fetch("data/network/lab-network.json?v=20260621readable");
       if (!response.ok) {
         errorMessage = `Could not load data/network/lab-network.json (${response.status}).`;
       } else {
