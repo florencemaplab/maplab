@@ -1,27 +1,47 @@
 {
-  "slug": "serena-castellotti",
-  "name": "Serena Castellotti",
+  "slug": "michela-delviva",
+  "name": "Maria Michela Del Viva",
   "generated_at": "2026-06-20T21:03:07Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
-    "scopus_author_id": "57205731708",
-    "citation_count": 287,
-    "cited_by_count": 287,
-    "h_index": 8
+    "scopus_author_id": "8750278400",
+    "citation_count": 904,
+    "cited_by_count": 904,
+    "h_index": 14
   },
-  "publications_analyzed": 19,
+  "publications_analyzed": 34,
   "abstracts_found": 0,
   "keywords": [
     {
-      "text": "cognitive",
-      "value": 8
-    },
-    {
-      "text": "behavioral",
-      "value": 6
+      "text": "motion",
+      "value": 22
     },
     {
       "text": "visual",
+      "value": 16
+    },
+    {
+      "text": "perception",
+      "value": 10
+    },
+    {
+      "text": "feature",
+      "value": 8
+    },
+    {
+      "text": "information",
+      "value": 8
+    },
+    {
+      "text": "children",
+      "value": 8
+    },
+    {
+      "text": "motion perception",
+      "value": 7
+    },
+    {
+      "text": "congruency",
       "value": 6
     },
     {
@@ -33,7 +53,23 @@
       "value": 6
     },
     {
+      "text": "fast",
+      "value": 6
+    },
+    {
       "text": "features",
+      "value": 6
+    },
+    {
+      "text": "time",
+      "value": 6
+    },
+    {
+      "text": "patterns",
+      "value": 6
+    },
+    {
+      "text": "spatial",
       "value": 6
     },
     {
@@ -49,19 +85,11 @@
       "value": 5
     },
     {
-      "text": "reduction",
-      "value": 4
+      "text": "phase congruency",
+      "value": 5
     },
     {
       "text": "vision",
-      "value": 4
-    },
-    {
-      "text": "pupil",
-      "value": 4
-    },
-    {
-      "text": "fast",
       "value": 4
     },
     {
@@ -73,15 +101,27 @@
       "value": 4
     },
     {
+      "text": "behavioral",
+      "value": 4
+    },
+    {
       "text": "colour",
       "value": 4
     },
     {
-      "text": "local",
+      "text": "cognitive",
       "value": 4
     },
     {
-      "text": "time",
+      "text": "terms",
+      "value": 4
+    },
+    {
+      "text": "role",
+      "value": 4
+    },
+    {
+      "text": "local",
       "value": 4
     },
     {
@@ -93,11 +133,11 @@
       "value": 4
     },
     {
-      "text": "implied",
+      "text": "attention",
       "value": 4
     },
     {
-      "text": "motion",
+      "text": "implied",
       "value": 4
     },
     {
@@ -109,28 +149,32 @@
       "value": 4
     },
     {
-      "text": "dimensionality reduction",
-      "value": 3
+      "text": "real",
+      "value": 4
     },
     {
-      "text": "reduction techniques",
-      "value": 3
+      "text": "brain",
+      "value": 4
     },
     {
-      "text": "techniques pupillometry",
-      "value": 3
+      "text": "direction",
+      "value": 4
     },
     {
-      "text": "pupillometry primer",
-      "value": 3
+      "text": "caused",
+      "value": 4
     },
     {
-      "text": "primer behavioral",
-      "value": 3
+      "text": "global",
+      "value": 4
     },
     {
-      "text": "behavioral scientists",
-      "value": 3
+      "text": "integration",
+      "value": 4
+    },
+    {
+      "text": "phase",
+      "value": 4
     },
     {
       "text": "visual search",
@@ -187,59 +231,23 @@
     {
       "text": "traits shape",
       "value": 3
-    },
-    {
-      "text": "shape beneficial",
-      "value": 3
-    },
-    {
-      "text": "beneficial aesthetic",
-      "value": 3
-    },
-    {
-      "text": "aesthetic experiences",
-      "value": 3
-    },
-    {
-      "text": "pupil size",
-      "value": 3
-    },
-    {
-      "text": "size biomarker",
-      "value": 3
-    },
-    {
-      "text": "biomarker cognitive",
-      "value": 3
-    },
-    {
-      "text": "cognitive functions",
-      "value": 3
-    },
-    {
-      "text": "functions physiologically",
-      "value": 3
-    },
-    {
-      "text": "physiologically informed",
-      "value": 3
-    },
-    {
-      "text": "informed screening",
-      "value": 3
-    },
-    {
-      "text": "screening mental",
-      "value": 3
     }
   ],
   "coauthors": [
     {
-      "name": "Maria Michela Del Viva",
+      "name": "Serena Castellotti",
       "count": 16
     },
     {
+      "name": "M. Michela Del Viva",
+      "count": 6
+    },
+    {
       "name": "Ottavia D’Agostino",
+      "count": 5
+    },
+    {
+      "name": "David C. Burr",
       "count": 5
     },
     {
@@ -247,24 +255,36 @@
       "count": 3
     },
     {
-      "name": "Elvio Blini",
-      "count": 2
+      "name": "Giovanni Cioni",
+      "count": 3
     },
     {
-      "name": "Roberto Arrighi",
-      "count": 2
+      "name": "Monica Gori",
+      "count": 3
     },
     {
-      "name": "Irene Petrizzo",
-      "count": 2
+      "name": "Maria Concetta Morrone",
+      "count": 3
     },
     {
       "name": "Stefano Mastandrea",
       "count": 2
     },
     {
-      "name": "Elisa Castaldi",
-      "count": 1
+      "name": "Galina V. Paramei",
+      "count": 2
+    },
+    {
+      "name": "Giovanni Punzi",
+      "count": 2
+    },
+    {
+      "name": "Andrea Guzzetta",
+      "count": 2
+    },
+    {
+      "name": "Francesca Tinelli",
+      "count": 2
     },
     {
       "name": "Elisa Gragnoli",
@@ -323,15 +343,19 @@
       "count": 1
     },
     {
-      "name": "Galina V. Paramei",
-      "count": 1
-    },
-    {
       "name": "Alessandra Biondi",
       "count": 1
     },
     {
       "name": "Luigi Pignatiello",
+      "count": 1
+    },
+    {
+      "name": "Ilaria Mariani",
+      "count": 1
+    },
+    {
+      "name": "Carmen De Caro",
       "count": 1
     },
     {
@@ -351,19 +375,83 @@
       "count": 1
     },
     {
-      "name": "Simone Grassini",
+      "name": "Steven K. Shevell",
       "count": 1
     },
     {
-      "name": "Antti Revonsuo",
+      "name": "Arianna Tozzi",
       "count": 1
     },
     {
-      "name": "Viola Benedetti",
+      "name": "Stefania Bargagna",
       "count": 1
     },
     {
-      "name": "Mika Koivisto",
+      "name": "Daniele Benedetti",
+      "count": 1
+    },
+    {
+      "name": "Ada Bancale",
+      "count": 1
+    },
+    {
+      "name": "Roberto Arrighi",
+      "count": 1
+    },
+    {
+      "name": "Rosa R. Pascale",
+      "count": 1
+    },
+    {
+      "name": "Giulio Sandini",
+      "count": 1
+    },
+    {
+      "name": "Michela Tosetti",
+      "count": 1
+    },
+    {
+      "name": "Domenico Montanaro",
+      "count": 1
+    },
+    {
+      "name": "Elisa Ciaramelli",
+      "count": 1
+    },
+    {
+      "name": "Fabrizio Leo",
+      "count": 1
+    },
+    {
+      "name": "Elisabetta Ladavas",
+      "count": 1
+    },
+    {
+      "name": "Rachele Agostini",
+      "count": 1
+    },
+    {
+      "name": "Roberta Igliozzi",
+      "count": 1
+    },
+    {
+      "name": "Raffaella Tancredi",
+      "count": 1
+    },
+    {
+      "name": "Daniela Brizzolara",
+      "count": 1
+    },
+    {
+      "name": "Carolina Piccini",
+      "count": 1
+    },
+    {
+      "name": "Rosapia Lauro-Grotto",
+      "count": 1
+    },
+    {
+      "name": "Morrone M.",
       "count": 1
     }
   ]
