@@ -940,17 +940,837 @@
     });
   }
 
-  async function renderLabAtlas() {
+
+  const LAB_STOPWORDS = new Set([
+    "a", "about", "above", "across", "after", "again", "against", "all", "also", "am",
+    "an", "and", "any", "are", "as", "at", "based", "be", "because", "been", "before",
+    "being", "between", "both", "but", "by", "can", "could", "did", "do", "does",
+    "doing", "during", "each", "effect", "effects", "for", "from", "further", "had",
+    "has", "have", "having", "how", "however", "human", "humans", "if", "in", "into",
+    "is", "it", "its", "itself", "may", "more", "most", "no", "nor", "not", "of",
+    "on", "once", "only", "or", "other", "our", "out", "over", "paper", "per",
+    "results", "same", "show", "shows", "shown", "so", "some", "such", "study",
+    "than", "that", "the", "their", "then", "there", "these", "this", "those",
+    "through", "to", "under", "using", "very", "via", "was", "we", "were", "what",
+    "when", "where", "which", "while", "who", "will", "with", "within", "without",
+    "work", "works", "would", "analysis", "approach", "article", "case", "data",
+    "evidence", "experimental", "findings", "method", "methods", "model", "models",
+    "new", "performance", "possible", "process", "processing", "research", "response",
+    "responses", "significant", "task", "tasks", "test", "toward", "towards"
+  ]);
+
+  function normalizeName(value) {
+    return String(value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[.,]/g, " ")
+      .replace(/[^a-zA-Z0-9 ]+/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+      .toLowerCase();
+  }
+
+  function splitBibEntries(text) {
+    const entries = [];
+    let i = 0;
+
+    while (i < text.length) {
+      const at = text.indexOf("@", i);
+      if (at < 0) break;
+      const brace = text.indexOf("{", at);
+      if (brace < 0) break;
+
+      let depth = 0;
+      let end = brace;
+      while (end < text.length) {
+        const char = text[end];
+        if (char === "{") depth += 1;
+        if (char === "}") {
+          depth -= 1;
+          if (depth === 0) {
+            end += 1;
+            break;
+          }
+        }
+        end += 1;
+      }
+
+      entries.push(text.slice(at, end));
+      i = end;
+    }
+
+    return entries;
+  }
+
+  function cleanBibValue(value) {
+    return String(value || "")
+      .replaceAll("\\_", "_")
+      .replaceAll("\\&", "&")
+      .replaceAll("\\%", "%")
+      .replaceAll("\\$", "$")
+      .replaceAll("\\#", "#")
+      .replaceAll("\\{", "{")
+      .replaceAll("\\}", "}")
+      .replaceAll("\\textbackslash{}", "\\")
+      .replaceAll("\\textasciitilde{}", "~")
+      .replaceAll("\\textasciicircum{}", "^")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function parseBibFields(body) {
+    const fields = {};
+    let pos = 0;
+
+    while (pos < body.length) {
+      const rest = body.slice(pos);
+      const match = rest.match(/\s*([a-zA-Z][a-zA-Z0-9_-]*)\s*=\s*/);
+      if (!match) break;
+
+      pos += match.index + match[0].length;
+      const name = match[1].toLowerCase();
+      let value = "";
+
+      if (body[pos] === "{") {
+        let depth = 0;
+        const start = pos + 1;
+        let end = start;
+        while (end < body.length) {
+          if (body[end] === "{") depth += 1;
+          if (body[end] === "}") {
+            if (depth === 0) break;
+            depth -= 1;
+          }
+          end += 1;
+        }
+        value = body.slice(start, end);
+        pos = end + 1;
+      } else if (body[pos] === '"') {
+        const start = pos + 1;
+        let end = start;
+        while (end < body.length && body[end] !== '"') end += 1;
+        value = body.slice(start, end);
+        pos = end + 1;
+      } else {
+        const start = pos;
+        let end = start;
+        while (end < body.length && body[end] !== ",") end += 1;
+        value = body.slice(start, end);
+        pos = end;
+      }
+
+      fields[name] = cleanBibValue(value);
+
+      const comma = body.indexOf(",", pos);
+      if (comma < 0) break;
+      pos = comma + 1;
+    }
+
+    return fields;
+  }
+
+  function parseBibTeXForLab(text) {
+    return splitBibEntries(text).map((raw) => {
+      const header = raw.match(/^@([^{]+)\{\s*([^,]+),/);
+      if (!header) return null;
+      const body = raw.slice(header[0].length, -1);
+      return {
+        type: header[1].trim().toLowerCase(),
+        key: header[2].trim(),
+        fields: parseBibFields(body)
+      };
+    }).filter(Boolean);
+  }
+
+  function splitBibAuthors(authorField) {
+    return String(authorField || "")
+      .split(/\s+and\s+/i)
+      .map((author) => cleanBibValue(author).trim())
+      .filter(Boolean);
+  }
+
+  function bibAuthorDisplayName(author) {
+    const clean = cleanBibValue(author);
+    if (clean.includes(",")) {
+      const parts = clean.split(",").map((part) => part.trim()).filter(Boolean);
+      if (parts.length >= 2) return `${parts.slice(1).join(" ")} ${parts[0]}`.replace(/\s+/g, " ").trim();
+    }
+    return clean;
+  }
+
+  function nameMatchesAlias(name, aliases) {
+    const n = normalizeName(name);
+    const variants = new Set([n]);
+
+    if (name.includes(",")) {
+      const parts = name.split(",").map((part) => part.trim()).filter(Boolean);
+      if (parts.length >= 2) {
+        variants.add(normalizeName(`${parts[1]} ${parts[0]}`));
+        variants.add(normalizeName(`${parts[0]} ${parts[1]}`));
+      }
+    } else {
+      const parts = String(name || "").split(/\s+/).filter(Boolean);
+      if (parts.length >= 2) variants.add(normalizeName(`${parts[parts.length - 1]} ${parts.slice(0, -1).join(" ")}`));
+    }
+
+    const aliasVariants = (aliases || []).map(normalizeName).filter(Boolean);
+    return aliasVariants.some((alias) => {
+      return Array.from(variants).some((variant) => {
+        return variant === alias || (variant.length >= 8 && alias.length >= 8 && (variant.includes(alias) || alias.includes(variant)));
+      });
+    });
+  }
+
+  function profileAliases(profile) {
+    return [profile.name, profile.shortName, ...(profile.aliases || [])].filter(Boolean);
+  }
+
+  function isLabMemberName(name, profiles) {
+    return profiles.some((profile) => nameMatchesAlias(name, profileAliases(profile)));
+  }
+
+  function labSlugsForEntry(entry, profiles) {
+    const fields = entry.fields || {};
+    const explicit = fields.maplab_slugs || "";
+    if (explicit) {
+      const slugs = explicit.split(/\s*(?:;|\||,)\s*/).map((item) => item.trim()).filter(Boolean);
+      return slugs.filter((slug) => profiles.some((profile) => profile.slug === slug));
+    }
+
+    const mappedNames = (fields.maplab_people || "")
+      .split(/\s*(?:;|\||, and | and )\s*/i)
+      .map((item) => item.trim())
+      .filter(Boolean);
+
+    const slugs = new Set();
+    mappedNames.forEach((name) => {
+      profiles.forEach((profile) => {
+        if (nameMatchesAlias(name, profileAliases(profile))) slugs.add(profile.slug);
+      });
+    });
+
+    if (slugs.size) return Array.from(slugs);
+
+    const authors = splitBibAuthors(fields.author || "").map(bibAuthorDisplayName);
+    profiles.forEach((profile) => {
+      const aliases = profileAliases(profile);
+      if (authors.some((author) => nameMatchesAlias(author, aliases))) slugs.add(profile.slug);
+    });
+
+    return Array.from(slugs);
+  }
+
+  function canonicalCoauthorKey(author) {
+    const display = bibAuthorDisplayName(author).replace(/\b([A-Z])\.\s*/g, "$1 ");
+    const parts = normalizeName(display).split(/\s+/).filter(Boolean);
+    if (!parts.length) return "";
+    const surname = parts[parts.length - 1];
+    const initials = parts.slice(0, -1).map((part) => part[0]).join("");
+    return initials ? `${surname}:${initials.slice(0, 2)}` : surname;
+  }
+
+  function betterName(current, candidate) {
+    if (!current) return candidate;
+    const score = (name) => {
+      const parts = bibAuthorDisplayName(name).split(/\s+/).filter((part) => part.replace(/\./g, "").length > 1);
+      return [parts.length, name.length];
+    };
+    const a = score(current);
+    const b = score(candidate);
+    return b[0] > a[0] || (b[0] === a[0] && b[1] > a[1]) ? candidate : current;
+  }
+
+  function tokenizeLabText(text) {
+    return String(text || "")
+      .toLowerCase()
+      .replace(/[^a-z0-9à-ÿ\- ]+/g, " ")
+      .split(/\s+/)
+      .map((word) => word.replace(/^-+|-+$/g, ""))
+      .filter((word) => word.length >= 4 && !LAB_STOPWORDS.has(word) && !/^\d+$/.test(word));
+  }
+
+  function keywordCountsFromTitles(titles) {
+    const counts = new Map();
+    const add = (key, inc = 1) => counts.set(key, (counts.get(key) || 0) + inc);
+
+    titles.forEach((title) => {
+      const words = tokenizeLabText(title);
+      words.forEach((word) => add(word, 1));
+      words.slice(0, -1).forEach((word, index) => {
+        const phrase = `${word} ${words[index + 1]}`;
+        if (word !== words[index + 1]) add(phrase, 1.3);
+      });
+    });
+
+    return Array.from(counts.entries())
+      .filter(([, value]) => value >= 2)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 70)
+      .map(([text, value]) => ({ text, value: Math.round(value) }));
+  }
+
+  function buildLabAtlasFromBibTeX(entries, profiles) {
+    const nodeMap = new Map();
+    const edgeMap = new Map();
+    const titles = [];
+
+    function ensureNode(id, name, type, category = "") {
+      if (!nodeMap.has(id)) {
+        nodeMap.set(id, {
+          id,
+          name,
+          type,
+          category,
+          documents: 0,
+          total_link_strength: 0,
+          cluster: 0
+        });
+      }
+      return nodeMap.get(id);
+    }
+
+    function edgeKey(a, b) {
+      return [a, b].sort().join("||");
+    }
+
+    entries.forEach((entry) => {
+      const fields = entry.fields || {};
+      if (fields.title) titles.push(fields.title);
+
+      const authorsRaw = splitBibAuthors(fields.author || "").map(bibAuthorDisplayName).filter(Boolean);
+      if (!authorsRaw.length) return;
+
+      const participants = [];
+      const seen = new Set();
+      const hasLab = authorsRaw.some((authorName) => profiles.some((profile) => nameMatchesAlias(authorName, profileAliases(profile))));
+      if (!hasLab) return;
+
+      authorsRaw.forEach((authorName) => {
+        let matchedProfile = null;
+        for (const profile of profiles) {
+          if (nameMatchesAlias(authorName, profileAliases(profile))) {
+            matchedProfile = profile;
+            break;
+          }
+        }
+
+        let nodeId;
+        let node;
+        if (matchedProfile) {
+          nodeId = matchedProfile.slug;
+          node = ensureNode(nodeId, matchedProfile.name, "lab", matchedProfile.category || "");
+        } else {
+          const canonical = canonicalCoauthorKey(authorName);
+          if (!canonical) return;
+          nodeId = `co:${canonical}`;
+          node = ensureNode(nodeId, authorName, "external", "");
+        }
+
+        if (!seen.has(nodeId)) {
+          seen.add(nodeId);
+          node.documents += 1;
+          participants.push(nodeId);
+        }
+      });
+
+      for (let i = 0; i < participants.length; i += 1) {
+        for (let j = i + 1; j < participants.length; j += 1) {
+          const source = participants[i];
+          const target = participants[j];
+          const key = edgeKey(source, target);
+          if (!edgeMap.has(key)) {
+            edgeMap.set(key, { source, target, count: 0, type: "coauthorship" });
+          }
+          edgeMap.get(key).count += 1;
+        }
+      }
+    });
+
+    for (const edge of edgeMap.values()) {
+      const a = nodeMap.get(edge.source);
+      const b = nodeMap.get(edge.target);
+      if (a) a.total_link_strength += edge.count;
+      if (b) b.total_link_strength += edge.count;
+    }
+
+    const labNodes = [];
+    const externalNodes = [];
+    for (const profile of profiles) {
+      const node = nodeMap.get(profile.slug) || ensureNode(profile.slug, profile.name, "lab", profile.category || "");
+      labNodes.push(node);
+    }
+    for (const node of nodeMap.values()) {
+      if (node.type !== "lab") externalNodes.push(node);
+    }
+
+    externalNodes.sort((a, b) => (b.total_link_strength - a.total_link_strength) || (b.documents - a.documents) || a.name.localeCompare(b.name));
+    const keptExternal = externalNodes.slice(0, 280);
+    const keepIds = new Set([...labNodes, ...keptExternal].map((node) => node.id));
+
+    const edges = Array.from(edgeMap.values())
+      .filter((edge) => keepIds.has(edge.source) && keepIds.has(edge.target))
+      .sort((a, b) => b.count - a.count);
+
+    // Weighted label propagation for lightweight VOSviewer-like clusters.
+    const adjacency = new Map();
+    const nodes = [...labNodes, ...keptExternal];
+    nodes.forEach((node) => adjacency.set(node.id, []));
+    edges.forEach((edge) => {
+      adjacency.get(edge.source)?.push({ id: edge.target, weight: edge.count });
+      adjacency.get(edge.target)?.push({ id: edge.source, weight: edge.count });
+    });
+
+    const labels = new Map(nodes.map((node) => [node.id, node.id]));
+    const order = [...nodes].sort((a, b) => (b.total_link_strength - a.total_link_strength) || (b.documents - a.documents));
+    for (let iter = 0; iter < 18; iter += 1) {
+      let changed = false;
+      for (const node of order) {
+        const neighborWeights = new Map();
+        for (const neighbor of adjacency.get(node.id) || []) {
+          const label = labels.get(neighbor.id) || neighbor.id;
+          neighborWeights.set(label, (neighborWeights.get(label) || 0) + neighbor.weight);
+        }
+        if (!neighborWeights.size) continue;
+        let bestLabel = labels.get(node.id);
+        let bestWeight = -1;
+        Array.from(neighborWeights.entries())
+          .sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0])))
+          .forEach(([label, weight]) => {
+            if (weight > bestWeight) {
+              bestWeight = weight;
+              bestLabel = label;
+            }
+          });
+        if (bestLabel !== labels.get(node.id)) {
+          labels.set(node.id, bestLabel);
+          changed = true;
+        }
+      }
+      if (!changed) break;
+    }
+
+    const clusterMap = new Map();
+    let clusterIndex = 0;
+    nodes.forEach((node) => {
+      const root = labels.get(node.id) || node.id;
+      if (!clusterMap.has(root)) clusterMap.set(root, clusterIndex++);
+      node.cluster = clusterMap.get(root);
+    });
+
+    return {
+      slug: "lab",
+      name: "MAPLab",
+      generated_at: "",
+      source: "Client-side fallback from data/publications.bib",
+      title_based_keywords: true,
+      abstracts_used: false,
+      keywords: keywordCountsFromTitles(titles),
+      network: {
+        nodes,
+        edges,
+        stats: {
+          lab_members: labNodes.length,
+          external_collaborators: keptExternal.length,
+          edges: edges.length
+        }
+      }
+    };
+  }
+
+  async function ensureD3() {
+    if (window.d3) return window.d3;
+    if (window.__maplabD3Promise) return window.__maplabD3Promise;
+
+    window.__maplabD3Promise = new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src = "https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js";
+      script.async = true;
+      script.onload = () => resolve(window.d3);
+      script.onerror = () => reject(new Error("Could not load D3"));
+      document.head.appendChild(script);
+    });
+
+    return window.__maplabD3Promise;
+  }
+
+  function injectLabAtlasVOSStyles() {
+    if ($("#lab-atlas-vos-styles")) return;
+
+    const style = document.createElement("style");
+    style.id = "lab-atlas-vos-styles";
+    style.textContent = `
+      .lab-network-card {
+        padding: 1rem;
+      }
+
+      .lab-network-toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.8rem;
+        margin: 0 0 0.85rem;
+      }
+
+      .lab-network-toolbar label {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        color: var(--muted, #5d6a75);
+        font-size: 0.84rem;
+        font-weight: 640;
+      }
+
+      .lab-network-toolbar input[type="range"] {
+        width: 180px;
+      }
+
+      .lab-network-hint {
+        color: var(--subtle, #7b8893);
+        font-size: 0.78rem;
+      }
+
+      .lab-network-stage {
+        position: relative;
+        min-height: 640px;
+        border-radius: 22px;
+        overflow: hidden;
+        border: 1px solid rgba(226, 232, 236, 0.95);
+        background:
+          radial-gradient(circle at 14% 16%, rgba(43, 127, 136, 0.08), transparent 22%),
+          radial-gradient(circle at 85% 10%, rgba(31, 108, 148, 0.09), transparent 24%),
+          linear-gradient(180deg, #fbfdfe, #f5f9fb);
+      }
+
+      .lab-network-canvas {
+        width: 100%;
+        height: 640px;
+        display: block;
+      }
+
+      .lab-network-overlay {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+      }
+
+      .lab-network-status {
+        position: absolute;
+        top: 0.95rem;
+        right: 0.95rem;
+        padding: 0.45rem 0.65rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.86);
+        border: 1px solid rgba(220, 227, 234, 0.95);
+        color: var(--muted, #5d6a75);
+        font-size: 0.78rem;
+        box-shadow: 0 10px 24px rgba(19, 32, 43, 0.07);
+      }
+
+      .lab-network-tooltip {
+        position: absolute;
+        left: 0.95rem;
+        bottom: 0.95rem;
+        max-width: min(440px, calc(100% - 1.9rem));
+        padding: 0.8rem 0.95rem;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.94);
+        border: 1px solid rgba(220, 227, 234, 0.95);
+        box-shadow: 0 18px 36px rgba(19, 32, 43, 0.08);
+        color: var(--muted, #5d6a75);
+        font-size: 0.84rem;
+        line-height: 1.45;
+      }
+
+      .lab-network-tooltip strong {
+        display: block;
+        color: var(--navy, #153e5c);
+        font-size: 0.95rem;
+        margin-bottom: 0.16rem;
+      }
+
+      .lab-network-legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.55rem 0.9rem;
+        margin: 0.85rem 0 0;
+        color: var(--subtle, #7b8893);
+        font-size: 0.78rem;
+      }
+
+      .lab-network-legend span {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.38rem;
+      }
+
+      .lab-network-legend i {
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 999px;
+        display: inline-block;
+      }
+
+      @media (max-width: 980px) {
+        .lab-network-stage {
+          min-height: 520px;
+        }
+
+        .lab-network-canvas {
+          height: 520px;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  function vosTooltipHTML(node) {
+    const role = node.type === "lab" ? `MAPLab member${node.category ? ` · ${escapeHTML(node.category)}` : ""}` : "External collaborator";
+    return `
+      <strong>${escapeHTML(node.name)}</strong>
+      <div>${role}</div>
+      <div>Documents in network: ${escapeHTML(numberOrDash(node.documents || node.weight || 0))}</div>
+      <div>Total link strength: ${escapeHTML(numberOrDash(node.total_link_strength || node.weight || 0))}</div>
+    `;
+  }
+
+  async function renderVOSLikeLabNetwork(container, network) {
+    if (!container || !network || !Array.isArray(network.nodes) || !network.nodes.length) {
+      if (container) container.innerHTML = `<div class="note">No collaboration data available yet.</div>`;
+      return;
+    }
+
+    injectLabAtlasVOSStyles();
+    const d3 = await ensureD3();
+
+    const allNodes = network.nodes.map((node) => ({ ...node }));
+    const allEdges = (network.edges || []).map((edge) => ({ ...edge, count: Number(edge.count || 1) }));
+    const maxWeight = d3.max(allEdges, (d) => d.count) || 1;
+    const maxDocuments = d3.max(allNodes, (d) => Number(d.documents || d.weight || 1)) || 1;
+    const maxStrength = d3.max(allNodes, (d) => Number(d.total_link_strength || d.weight || 1)) || 1;
+    const maxCluster = d3.max(allNodes, (d) => Number(d.cluster || 0)) || 0;
+    const clusterColor = d3.scaleOrdinal()
+      .domain(d3.range(maxCluster + 1))
+      .range(["#1f6c94", "#2b7f88", "#7b5ea7", "#c97b32", "#9b4c77", "#2a8a5e", "#5b6c9b", "#b84f4f", "#5e8b2d", "#8b6a2d"]);
+
+    container.innerHTML = `
+      <div class="lab-network-toolbar">
+        <label>Minimum shared papers
+          <input type="range" min="1" max="${Math.max(1, maxWeight)}" step="1" value="1" data-edge-threshold>
+          <strong data-edge-threshold-value>1</strong>
+        </label>
+        <div class="lab-network-hint">Zoom and pan like a map. Hover a node to inspect collaborations.</div>
+      </div>
+      <div class="lab-network-stage">
+        <svg class="lab-network-canvas" viewBox="0 0 980 640" preserveAspectRatio="xMidYMid meet"></svg>
+        <div class="lab-network-overlay">
+          <div class="lab-network-status" data-lab-network-status></div>
+          <div class="lab-network-tooltip" data-lab-network-tooltip>Hover a node to inspect an author and their collaboration strength.</div>
+        </div>
+      </div>
+      <div class="lab-network-legend">
+        <span><i style="background:#153e5c"></i>MAPLab members</span>
+        <span><i style="background:#1f6c94"></i>External collaborators / cluster-colored nodes</span>
+        <span><i style="background:linear-gradient(90deg, #dfe9ef, #7fa6bd)"></i>Link thickness = coauthorship strength</span>
+      </div>
+    `;
+
+    const svg = d3.select(container.querySelector("svg"));
+    const tooltip = container.querySelector("[data-lab-network-tooltip]");
+    const status = container.querySelector("[data-lab-network-status]");
+    const slider = container.querySelector("[data-edge-threshold]");
+    const sliderValue = container.querySelector("[data-edge-threshold-value]");
+
+    const width = 980;
+    const height = 640;
+    svg.selectAll("*").remove();
+    const viewport = svg.append("g").attr("class", "vos-viewport");
+    const linkLayer = viewport.append("g");
+    const nodeLayer = viewport.append("g");
+    const labelLayer = viewport.append("g");
+
+    svg.call(
+      d3.zoom()
+        .scaleExtent([0.35, 4])
+        .on("zoom", (event) => viewport.attr("transform", event.transform))
+    );
+
+    function updateStatus(nodes, links, threshold) {
+      status.textContent = `${nodes.length} authors · ${links.length} links · threshold ≥ ${threshold}`;
+    }
+
+    function draw(threshold) {
+      sliderValue.textContent = String(threshold);
+      const links = allEdges.filter((edge) => edge.count >= threshold);
+      const keepIds = new Set();
+      links.forEach((edge) => {
+        keepIds.add(edge.source);
+        keepIds.add(edge.target);
+      });
+      allNodes.filter((node) => node.type === "lab").forEach((node) => keepIds.add(node.id));
+      const nodes = allNodes.filter((node) => keepIds.has(node.id));
+      const nodeMap = new Map(nodes.map((node) => [node.id, node]));
+      const filteredLinks = links.filter((edge) => nodeMap.has(edge.source) && nodeMap.has(edge.target));
+
+      updateStatus(nodes, filteredLinks, threshold);
+
+      const simulation = d3.forceSimulation(nodes)
+        .force("link", d3.forceLink(filteredLinks).id((d) => d.id).distance((d) => 26 + 135 / Math.sqrt(d.count)).strength((d) => Math.min(0.9, 0.16 + Math.log1p(d.count) * 0.18)))
+        .force("charge", d3.forceManyBody().strength((d) => d.type === "lab" ? -430 : -135))
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("collide", d3.forceCollide().radius((d) => {
+          const base = d.type === "lab" ? 14 : 4;
+          return base + Math.sqrt(Number(d.total_link_strength || d.documents || 1)) * 1.35;
+        }).iterations(2))
+        .force("x", d3.forceX(width / 2).strength(0.02))
+        .force("y", d3.forceY(height / 2).strength(0.02));
+
+      simulation.stop();
+      for (let i = 0; i < 320; i += 1) simulation.tick();
+
+      linkLayer.selectAll("*").remove();
+      nodeLayer.selectAll("*").remove();
+      labelLayer.selectAll("*").remove();
+
+      const linked = new Map();
+      filteredLinks.forEach((edge) => {
+        linked.set(`${edge.source}||${edge.target}`, edge.count);
+        linked.set(`${edge.target}||${edge.source}`, edge.count);
+      });
+
+      const linkWidth = d3.scaleSqrt().domain([1, maxWeight]).range([0.7, 4.5]);
+      const nodeRadius = d3.scaleSqrt().domain([1, Math.max(maxDocuments, maxStrength)]).range([4.5, 20]);
+
+      const linkSelection = linkLayer.selectAll("line")
+        .data(filteredLinks)
+        .enter()
+        .append("line")
+        .attr("x1", (d) => d.source.x)
+        .attr("y1", (d) => d.source.y)
+        .attr("x2", (d) => d.target.x)
+        .attr("y2", (d) => d.target.y)
+        .attr("stroke", "rgba(82, 128, 156, 0.28)")
+        .attr("stroke-width", (d) => linkWidth(d.count))
+        .attr("stroke-linecap", "round");
+
+      const importantExternalIds = new Set(
+        [...nodes]
+          .filter((d) => d.type !== "lab")
+          .sort((a, b) => (Number(b.total_link_strength || b.documents || 0) - Number(a.total_link_strength || a.documents || 0)))
+          .slice(0, 18)
+          .map((d) => d.id)
+      );
+
+      const nodeSelection = nodeLayer.selectAll("circle")
+        .data(nodes)
+        .enter()
+        .append("circle")
+        .attr("cx", (d) => d.x)
+        .attr("cy", (d) => d.y)
+        .attr("r", (d) => nodeRadius(Math.max(Number(d.total_link_strength || 0), Number(d.documents || 1))))
+        .attr("fill", (d) => d.type === "lab" ? "#153e5c" : clusterColor(Number(d.cluster || 0)))
+        .attr("stroke", (d) => d.type === "lab" ? "#ffffff" : "rgba(255,255,255,0.92)")
+        .attr("stroke-width", (d) => d.type === "lab" ? 2.6 : 1.2)
+        .attr("opacity", 0.97)
+        .style("cursor", "pointer");
+
+      const labelSelection = labelLayer.selectAll("text")
+        .data(nodes.filter((d) => d.type === "lab" || importantExternalIds.has(d.id)))
+        .enter()
+        .append("text")
+        .attr("x", (d) => d.x)
+        .attr("y", (d) => d.y - nodeRadius(Math.max(Number(d.total_link_strength || 0), Number(d.documents || 1))) - 6)
+        .attr("text-anchor", "middle")
+        .attr("font-size", (d) => d.type === "lab" ? 11.8 : 10.4)
+        .attr("font-weight", (d) => d.type === "lab" ? 780 : 650)
+        .attr("fill", "#13202b")
+        .attr("paint-order", "stroke")
+        .attr("stroke", "rgba(255,255,255,0.96)")
+        .attr("stroke-width", 3.5)
+        .text((d) => labShortName(d.name));
+
+      function setFocus(focusNode) {
+        if (!focusNode) {
+          tooltip.textContent = "Hover a node to inspect an author and their collaboration strength.";
+          nodeSelection.attr("opacity", 0.97).attr("stroke-width", (d) => d.type === "lab" ? 2.6 : 1.2);
+          linkSelection.attr("stroke", "rgba(82, 128, 156, 0.28)").attr("opacity", 1);
+          labelSelection.attr("opacity", 1);
+          return;
+        }
+
+        tooltip.innerHTML = vosTooltipHTML(focusNode);
+        nodeSelection.attr("opacity", (d) => {
+          if (d.id === focusNode.id) return 1;
+          return linked.has(`${focusNode.id}||${d.id}`) ? 1 : 0.16;
+        }).attr("stroke-width", (d) => d.id === focusNode.id ? 3.8 : (d.type === "lab" ? 2.6 : 1.2));
+
+        linkSelection
+          .attr("opacity", (d) => (d.source.id === focusNode.id || d.target.id === focusNode.id) ? 1 : 0.08)
+          .attr("stroke", (d) => (d.source.id === focusNode.id || d.target.id === focusNode.id) ? "rgba(34, 114, 129, 0.62)" : "rgba(82, 128, 156, 0.20)");
+
+        labelSelection.attr("opacity", (d) => {
+          if (d.id === focusNode.id) return 1;
+          if (linked.has(`${focusNode.id}||${d.id}`)) return 1;
+          if (d.type === "lab") return 0.45;
+          return 0.08;
+        });
+      }
+
+      nodeSelection
+        .on("mouseenter", (_event, d) => setFocus(d))
+        .on("mouseleave", () => setFocus(null));
+
+      setFocus(null);
+    }
+
+    draw(Number(slider.value || 1));
+    slider.addEventListener("input", () => draw(Number(slider.value || 1)));
+  }
+
+  async function renderLabAtlas(profiles) {
     const grid = $("[data-people-grid]");
     if (!grid || $("#lab-collaboration-atlas")) return;
 
-    let data;
+    let data = null;
+
     try {
       const response = await fetch("data/scopus/lab.json");
-      if (!response.ok) return;
-      data = await response.json();
+      if (response.ok) data = await response.json();
     } catch (error) {
-      console.info("Lab-wide Scopus analytics unavailable", error);
+      console.info("Lab-wide Scopus analytics JSON unavailable; falling back to BibTeX.", error);
+    }
+
+    if (!data) {
+      try {
+        const response = await fetch("data/publications.bib");
+        if (response.ok) {
+          const bibText = await response.text();
+          data = buildLabAtlasFromBibTeX(parseBibTeXForLab(bibText), profiles);
+        }
+      } catch (error) {
+        console.info("Could not build lab atlas from BibTeX.", error);
+      }
+    }
+
+    if (!data) {
+      injectLabAtlasStyles();
+      const section = document.createElement("section");
+      section.className = "lab-atlas";
+      section.id = "lab-collaboration-atlas";
+      section.innerHTML = `
+        <div class="lab-atlas-shell">
+          <div class="lab-atlas-head">
+            <div>
+              <p class="kicker">Lab-wide map</p>
+              <h2>Collaboration and research landscape</h2>
+              <p>Lab-wide analytics will appear here after <code>data/scopus/lab.json</code> is generated or when <code>data/publications.bib</code> is available.</p>
+            </div>
+          </div>
+        </div>
+      `;
+      const peopleSection = grid.closest("section") || grid.parentElement;
+      if (peopleSection && peopleSection.parentElement) peopleSection.insertAdjacentElement("afterend", section);
+      else grid.insertAdjacentElement("afterend", section);
       return;
     }
 
@@ -965,7 +1785,7 @@
           <div>
             <p class="kicker">Lab-wide map</p>
             <h2>Collaboration and research landscape</h2>
-            <p>Shared publication structure across MAPLab members, with external collaborators weighted by the number of shared papers.</p>
+            <p>A lab-wide coauthorship map built from shared publications. Nodes represent authors, link thickness reflects repeated collaboration, and clusters are estimated from the coauthorship graph.</p>
           </div>
           ${data.generated_at ? `<div class="lab-atlas-date">Updated ${escapeHTML(compactDate(data.generated_at))}</div>` : ""}
         </div>
@@ -974,9 +1794,9 @@
           <div class="lab-network-card">
             <div class="lab-card-title">
               <h3>Collaboration constellation</h3>
-              <span>hover nodes</span>
+              <span>VOSviewer-inspired</span>
             </div>
-            ${labNetworkHTML(data.network || data)}
+            <div data-lab-network></div>
           </div>
 
           <div class="lab-cloud-card">
@@ -998,8 +1818,15 @@
       grid.insertAdjacentElement("afterend", section);
     }
 
-    activateLabNetwork(section);
+    const networkMount = section.querySelector("[data-lab-network]");
+    try {
+      await renderVOSLikeLabNetwork(networkMount, data.network || data);
+    } catch (error) {
+      console.error("Could not render collaboration network", error);
+      if (networkMount) networkMount.innerHTML = `<div class="note">Could not render the collaboration network.</div>`;
+    }
   }
+
 
   async function init() {
     const indexURL = document.body.dataset.peopleIndex || "data/people/people.json";
@@ -1019,7 +1846,7 @@
     );
 
     renderPeopleDirectory(profiles);
-    renderLabAtlas();
+    renderLabAtlas(profiles);
   }
 
   init().catch((error) => {

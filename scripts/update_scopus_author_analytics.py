@@ -436,93 +436,166 @@ def is_any_lab_member(author_name: str, profiles: Dict[str, Dict[str, Any]]) -> 
 def build_lab_network_from_bibtex(
     bib_entries: List[Dict[str, Any]],
     profiles: Dict[str, Dict[str, Any]],
-    max_external_nodes: int = 120,
+    max_external_nodes: int = 500,
 ) -> Dict[str, Any]:
-    external_counts: Counter[str] = Counter()
-    best_names: Dict[str, str] = {}
-    external_edges: Counter[Tuple[str, str]] = Counter()
-    internal_edges: Counter[Tuple[str, str]] = Counter()
-    lab_counts: Counter[str] = Counter()
+    node_info: Dict[str, Dict[str, Any]] = {}
+    edge_counts: Counter[Tuple[str, str]] = Counter()
+
+    def ensure_node(node_id: str, name: str, node_type: str, category: str = "") -> Dict[str, Any]:
+        if node_id not in node_info:
+            node_info[node_id] = {
+                "id": node_id,
+                "name": name,
+                "type": node_type,
+                "category": category,
+                "documents": 0,
+                "total_link_strength": 0,
+                "cluster": 0,
+            }
+        return node_info[node_id]
+
+    def canonical_edge(a: str, b: str) -> Tuple[str, str]:
+        return (a, b) if a < b else (b, a)
 
     for entry in bib_entries:
-        fields = entry.get("fields", {})
-        lab_slugs = lab_slugs_for_bib_entry(entry, profiles)
-        if not lab_slugs:
+        authors = [bib_author_display_name(author) for author in split_bib_authors(entry.get("fields", {}).get("author", ""))]
+        authors = [author for author in authors if author]
+        if not authors:
             continue
 
-        for slug in lab_slugs:
-            lab_counts[slug] += 1
+        paper_nodes: List[str] = []
+        seen_nodes = set()
+        has_lab_member = False
 
-        for a_index, source in enumerate(sorted(set(lab_slugs))):
-            for target in sorted(set(lab_slugs))[a_index + 1:]:
-                internal_edges[(source, target)] += 1
+        for author_name in authors:
+            matched_slug = None
+            matched_profile = None
+            for slug, profile in profiles.items():
+                if name_matches_alias(author_name, aliases_for_profile(profile)):
+                    matched_slug = slug
+                    matched_profile = profile
+                    break
 
-        authors = [bib_author_display_name(author) for author in split_bib_authors(fields.get("author", ""))]
-        seen_external = set()
+            if matched_slug and matched_profile is not None:
+                has_lab_member = True
+                node = ensure_node(
+                    matched_slug,
+                    matched_profile.get("name", matched_slug),
+                    "lab",
+                    normalize_space(matched_profile.get("category") or matched_profile.get("group")),
+                )
+                node_id = matched_slug
+            else:
+                key = canonical_author_key(author_name)
+                if not key:
+                    continue
+                node_id = f"co:{key}"
+                node = ensure_node(node_id, author_name, "external", "")
 
-        for author in authors:
-            if not author or is_any_lab_member(author, profiles):
-                continue
+            if node_id not in seen_nodes:
+                seen_nodes.add(node_id)
+                paper_nodes.append(node_id)
+                node["documents"] += 1
 
-            key = canonical_author_key(author)
-            if not key or key in seen_external:
-                continue
-            seen_external.add(key)
+        if not has_lab_member:
+            continue
 
-            external_counts[key] += 1
-            previous = best_names.get(key)
-            if previous is None or author_name_score(author) > author_name_score(previous):
-                best_names[key] = author
+        for source_index, source_id in enumerate(paper_nodes):
+            for target_id in paper_nodes[source_index + 1:]:
+                edge_counts[canonical_edge(source_id, target_id)] += 1
 
-            for slug in lab_slugs:
-                external_edges[(slug, key)] += 1
+    for (source_id, target_id), count in edge_counts.items():
+        node_info[source_id]["total_link_strength"] += count
+        node_info[target_id]["total_link_strength"] += count
 
-    top_external_keys = {key for key, _count in external_counts.most_common(max_external_nodes)}
-    nodes: List[Dict[str, Any]] = []
-    edges: List[Dict[str, Any]] = []
-
+    lab_nodes = []
+    external_nodes = []
     for slug, profile in profiles.items():
-        nodes.append({
-            "id": slug,
-            "name": profile.get("name", slug),
-            "type": "lab",
-            "category": normalize_space(profile.get("category") or profile.get("group")),
-            "weight": int(lab_counts.get(slug, 0)),
-        })
+        node = node_info.get(slug)
+        if node is None:
+            node = ensure_node(
+                slug,
+                profile.get("name", slug),
+                "lab",
+                normalize_space(profile.get("category") or profile.get("group")),
+            )
+        lab_nodes.append(node)
 
-    for key in top_external_keys:
-        nodes.append({
-            "id": f"co:{key}",
-            "name": best_names.get(key, key),
-            "type": "coauthor",
-            "weight": int(external_counts[key]),
-        })
+    for node_id, node in node_info.items():
+        if node_id not in profiles:
+            external_nodes.append(node)
 
-    for (source, key), count in external_edges.items():
-        if key in top_external_keys:
+    external_nodes.sort(
+        key=lambda node: (
+            -int(node.get("total_link_strength", 0)),
+            -int(node.get("documents", 0)),
+            normalize_name(node.get("name", "")),
+        )
+    )
+    kept_external = external_nodes[:max_external_nodes]
+    kept_ids = {node["id"] for node in lab_nodes} | {node["id"] for node in kept_external}
+
+    edges: List[Dict[str, Any]] = []
+    adjacency: Dict[str, List[Tuple[str, int]]] = {node_id: [] for node_id in kept_ids}
+    for (source_id, target_id), count in edge_counts.items():
+        if source_id in kept_ids and target_id in kept_ids:
             edges.append({
-                "source": source,
-                "target": f"co:{key}",
+                "source": source_id,
+                "target": target_id,
                 "count": int(count),
-                "type": "external",
+                "type": "coauthorship",
             })
+            adjacency[source_id].append((target_id, int(count)))
+            adjacency[target_id].append((source_id, int(count)))
 
-    for (source, target), count in internal_edges.items():
-        edges.append({
-            "source": source,
-            "target": target,
-            "count": int(count),
-            "type": "internal",
-        })
+    # Lightweight weighted label propagation to obtain VOSviewer-like clusters.
+    labels: Dict[str, str] = {node_id: node_id for node_id in kept_ids}
+    traversal = sorted(
+        kept_ids,
+        key=lambda node_id: (
+            -int(node_info[node_id].get("total_link_strength", 0)),
+            -int(node_info[node_id].get("documents", 0)),
+            normalize_name(node_info[node_id].get("name", "")),
+        ),
+    )
+    for _ in range(20):
+        changed = False
+        for node_id in traversal:
+            if not adjacency.get(node_id):
+                continue
+            candidate_weights: Counter[str] = Counter()
+            for neighbor_id, weight in adjacency[node_id]:
+                candidate_weights[labels.get(neighbor_id, neighbor_id)] += int(weight)
+            best_label = labels[node_id]
+            best_weight = -1
+            for label, weight in sorted(candidate_weights.items(), key=lambda item: (-item[1], item[0])):
+                if weight > best_weight:
+                    best_weight = weight
+                    best_label = label
+            if best_label != labels[node_id]:
+                labels[node_id] = best_label
+                changed = True
+        if not changed:
+            break
 
-    edges.sort(key=lambda item: int(item.get("count", 0)), reverse=True)
+    cluster_roots = OrderedDict()
+    cluster_id = 0
+    nodes = lab_nodes + kept_external
+    for node in nodes:
+        root = labels.get(node["id"], node["id"])
+        if root not in cluster_roots:
+            cluster_roots[root] = cluster_id
+            cluster_id += 1
+        node["cluster"] = int(cluster_roots[root])
+
+    edges.sort(key=lambda item: (-int(item.get("count", 0)), item["source"], item["target"]))
 
     return {
         "nodes": nodes,
         "edges": edges,
         "stats": {
-            "lab_members": len(profiles),
-            "external_collaborators": len(top_external_keys),
+            "lab_members": len(lab_nodes),
+            "external_collaborators": len(kept_external),
             "edges": len(edges),
         },
     }
