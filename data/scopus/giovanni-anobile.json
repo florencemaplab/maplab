@@ -1,302 +1,541 @@
 {
   "slug": "giovanni-anobile",
   "name": "Giovanni Anobile",
-  "generated_at": "2026-06-20T18:55:50Z",
-  "source": "Scopus Search API; Scopus Abstract Retrieval when authorized",
+  "generated_at": "2026-06-20T19:11:55Z",
+  "source": "Scopus Search API for metrics/keywords; shared BibTeX for coauthor counts",
   "metrics": {
     "scopus_author_id": "36466056200",
-    "document_count": null,
-    "citation_count": null,
-    "cited_by_count": null,
-    "h_index": null
+    "citation_count": 2329,
+    "cited_by_count": 2329,
+    "h_index": 23
   },
   "publications_analyzed": 68,
   "abstracts_found": 0,
   "keywords": [
     {
       "text": "numerosity",
-      "value": 35
+      "value": 70
     },
     {
       "text": "perception",
-      "value": 17
+      "value": 34
     },
     {
       "text": "number",
-      "value": 14
+      "value": 28
     },
     {
       "text": "visual",
-      "value": 11
+      "value": 22
     },
     {
       "text": "adaptation",
-      "value": 10
+      "value": 20
     },
     {
       "text": "math",
-      "value": 10
+      "value": 20
     },
     {
       "text": "children",
-      "value": 9
+      "value": 18
     },
     {
       "text": "time",
-      "value": 8
+      "value": 16
     },
     {
       "text": "attention",
-      "value": 7
+      "value": 14
     },
     {
       "text": "estimation",
-      "value": 7
+      "value": 14
     },
     {
       "text": "anxiety",
-      "value": 5
+      "value": 10
     },
     {
       "text": "groupitizing",
-      "value": 5
+      "value": 10
     },
     {
       "text": "space",
-      "value": 5
+      "value": 10
     },
     {
       "text": "subitizing",
-      "value": 5
+      "value": 10
     },
     {
       "text": "math anxiety",
-      "value": 5
+      "value": 9
     },
     {
       "text": "numerosity adaptation",
-      "value": 5
+      "value": 9
     },
     {
       "text": "numerosity perception",
-      "value": 5
+      "value": 9
     },
     {
       "text": "perception numerosity",
-      "value": 5
+      "value": 9
     },
     {
       "text": "role",
-      "value": 4
+      "value": 8
     },
     {
       "text": "auditory",
-      "value": 4
+      "value": 8
     },
     {
       "text": "sense",
-      "value": 4
+      "value": 8
     },
     {
       "text": "primary",
-      "value": 4
+      "value": 8
     },
     {
       "text": "mapping",
-      "value": 4
+      "value": 8
     },
     {
       "text": "typical",
-      "value": 4
+      "value": 8
     },
     {
       "text": "high",
-      "value": 4
+      "value": 8
     },
     {
       "text": "attentional",
-      "value": 4
+      "value": 8
     },
     {
       "text": "mechanisms",
-      "value": 4
+      "value": 8
     },
     {
       "text": "time perception",
-      "value": 4
+      "value": 7
     },
     {
       "text": "auditory time",
-      "value": 4
+      "value": 7
     },
     {
       "text": "number sense",
-      "value": 4
+      "value": 7
     },
     {
       "text": "numerosity estimation",
-      "value": 4
+      "value": 7
     },
     {
       "text": "representation",
-      "value": 3
+      "value": 6
     },
     {
       "text": "sensorimotor",
-      "value": 3
+      "value": 6
     },
     {
       "text": "development",
-      "value": 3
+      "value": 6
     },
     {
       "text": "depends",
-      "value": 3
+      "value": 6
     },
     {
       "text": "visuo-spatial",
-      "value": 3
+      "value": 6
     },
     {
       "text": "size",
-      "value": 3
+      "value": 6
     },
     {
       "text": "motor",
-      "value": 3
+      "value": 6
     },
     {
       "text": "dyscalculia",
-      "value": 3
+      "value": 6
     },
     {
       "text": "action",
-      "value": 3
+      "value": 6
     },
     {
       "text": "correlate",
-      "value": 3
+      "value": 6
     },
     {
       "text": "encoding",
-      "value": 3
+      "value": 6
     },
     {
       "text": "numbers",
-      "value": 3
+      "value": 6
     },
     {
       "text": "spontaneous",
-      "value": 3
+      "value": 6
     },
     {
       "text": "representation numerosity",
-      "value": 3
+      "value": 5
     },
     {
       "text": "sensorimotor numerosity",
-      "value": 3
+      "value": 5
     },
     {
       "text": "pupil size",
-      "value": 3
+      "value": 5
     },
     {
       "text": "temporal numerosity",
-      "value": 3
+      "value": 5
     },
     {
       "text": "milliseconds seconds",
-      "value": 3
+      "value": 5
     },
     {
       "text": "primary school",
-      "value": 3
+      "value": 5
     },
     {
       "text": "estimation numerosity",
-      "value": 3
+      "value": 5
     },
     {
       "text": "motor adaptation",
-      "value": 3
+      "value": 5
     },
     {
       "text": "numerosity typical",
-      "value": 3
+      "value": 5
     },
     {
       "text": "typical dyscalculic",
-      "value": 3
+      "value": 5
     },
     {
       "text": "dyscalculic development",
-      "value": 3
+      "value": 5
     }
   ],
   "coauthors": [
     {
-      "name": "Maldonado Moscoso P.A.",
-      "count": 7
+      "name": "Roberto Arrighi",
+      "count": 37
     },
     {
-      "name": "Petrizzo I.",
+      "name": "David Charles Burr",
+      "count": 34
+    },
+    {
+      "name": "Guido Marco Cicchini",
+      "count": 21
+    },
+    {
+      "name": "Elisa Castaldi",
+      "count": 17
+    },
+    {
+      "name": "Paula Andrea Maldonado Moscoso",
+      "count": 11
+    },
+    {
+      "name": "Irene Petrizzo",
+      "count": 9
+    },
+    {
+      "name": "Francesca Tinelli",
+      "count": 8
+    },
+    {
+      "name": "Marco Turi",
       "count": 6
     },
     {
-      "name": "Grasso P.A.",
+      "name": "Paolo Antonino Grasso",
       "count": 5
     },
     {
-      "name": "Cicchini G.M.",
-      "count": 5
+      "name": "David Burr",
+      "count": 4
     },
     {
-      "name": "Burr D.",
+      "name": "Giuseppe Maduli",
+      "count": 4
+    },
+    {
+      "name": "Eleonora Chelli",
+      "count": 4
+    },
+    {
+      "name": "Mariaelisa Bartoli",
+      "count": 4
+    },
+    {
+      "name": "Maria Concetta Morrone",
       "count": 3
     },
     {
-      "name": "Castaldi E.",
+      "name": "Camilla Caponi",
       "count": 3
     },
     {
-      "name": "Benedetto A.",
+      "name": "Alessandro Benedetto",
       "count": 2
     },
     {
-      "name": "Blini E.",
+      "name": "Tommaso Bartolini",
       "count": 2
     },
     {
-      "name": "Burr D.C.",
+      "name": "Elvio Blini",
       "count": 2
     },
     {
-      "name": "Pomè A.",
+      "name": "Gabriele Masi",
       "count": 2
     },
     {
-      "name": "Burgio I.",
+      "name": "Giovanni Cioni",
+      "count": 2
+    },
+    {
+      "name": "Caterina Primi",
+      "count": 2
+    },
+    {
+      "name": "Filippo Gasperini",
+      "count": 2
+    },
+    {
+      "name": "Antonella Pomè",
+      "count": 2
+    },
+    {
+      "name": "Paolo Stievano",
+      "count": 2
+    },
+    {
+      "name": "Silvia Martelli",
       "count": 1
     },
     {
-      "name": "Bartolini T.",
+      "name": "Eleonora Bieber",
       "count": 1
     },
     {
-      "name": "Aruanno B.",
+      "name": "Sofia Ditano",
       "count": 1
     },
     {
-      "name": "Bhat A.",
+      "name": "Egle Casavecchia",
       "count": 1
     },
     {
-      "name": "Stievano P.",
+      "name": "Beatrice Aruanno",
       "count": 1
     },
     {
-      "name": "Tinelli F.",
+      "name": "Armando Viviano Razionale",
+      "count": 1
+    },
+    {
+      "name": "Monica Bordegoni",
+      "count": 1
+    },
+    {
+      "name": "Irene Burgio",
+      "count": 1
+    },
+    {
+      "name": "Massimo Gurioli",
+      "count": 1
+    },
+    {
+      "name": "Camilla Bonaudo",
+      "count": 1
+    },
+    {
+      "name": "Agnese Pedone",
+      "count": 1
+    },
+    {
+      "name": "Federico Capelli",
+      "count": 1
+    },
+    {
+      "name": "Alessandro Della Puppa",
+      "count": 1
+    },
+    {
+      "name": "Gasperini Filippo",
+      "count": 1
+    },
+    {
+      "name": "Paolo Marchesini",
+      "count": 1
+    },
+    {
+      "name": "Michele Pellegrino",
+      "count": 1
+    },
+    {
+      "name": "Fabrizio Doricchi",
+      "count": 1
+    },
+    {
+      "name": "Annalisa Tacchi",
+      "count": 1
+    },
+    {
+      "name": "Chiara Pfanner",
+      "count": 1
+    },
+    {
+      "name": "Moreno Marazzi",
+      "count": 1
+    },
+    {
+      "name": "Stefano Federici",
+      "count": 1
+    },
+    {
+      "name": "Agnese Napoletti",
+      "count": 1
+    },
+    {
+      "name": "Lucia Cecconi",
+      "count": 1
+    },
+    {
+      "name": "Akshatha Bhat",
+      "count": 1
+    },
+    {
+      "name": "Jan W. Kurzawski",
+      "count": 1
+    },
+    {
+      "name": "Laura Biagi",
+      "count": 1
+    },
+    {
+      "name": "Salvatore Buonincontro",
+      "count": 1
+    },
+    {
+      "name": "Francesca Bolognini",
+      "count": 1
+    },
+    {
+      "name": "Mark W. Greenlee",
+      "count": 1
+    },
+    {
+      "name": "Daniela Ricci",
+      "count": 1
+    },
+    {
+      "name": "Francesca Gallini",
+      "count": 1
+    },
+    {
+      "name": "Ilaria Merusi",
+      "count": 1
+    },
+    {
+      "name": "Arianna Andolfi",
+      "count": 1
+    },
+    {
+      "name": "Simone Bassanelli",
+      "count": 1
+    },
+    {
+      "name": "F. Tomaiuolo",
+      "count": 1
+    },
+    {
+      "name": "S. Campana",
+      "count": 1
+    },
+    {
+      "name": "Nicola Domenici",
+      "count": 1
+    },
+    {
+      "name": "Irene Togoli",
+      "count": 1
+    },
+    {
+      "name": "G. Guerrini",
+      "count": 1
+    },
+    {
+      "name": "M. Monti",
+      "count": 1
+    },
+    {
+      "name": "B. Del Lucchese",
+      "count": 1
+    },
+    {
+      "name": "Aurora Scabia",
+      "count": 1
+    },
+    {
+      "name": "Eleonora Grassi",
+      "count": 1
+    },
+    {
+      "name": "Lara Pedonese",
+      "count": 1
+    },
+    {
+      "name": "Marika Iaia",
+      "count": 1
+    },
+    {
+      "name": "Chiara V. Marinelli",
+      "count": 1
+    },
+    {
+      "name": "Paola Angelelli",
+      "count": 1
+    },
+    {
+      "name": "Davide M. Cammisuli",
+      "count": 1
+    },
+    {
+      "name": "Silvia Michetti",
+      "count": 1
+    },
+    {
+      "name": "Chiara Ceccolin",
+      "count": 1
+    },
+    {
+      "name": "Monica Gori",
+      "count": 1
+    },
+    {
+      "name": "David Aagten-Murphy",
       "count": 1
     }
   ]

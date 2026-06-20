@@ -1,11 +1,10 @@
 {
   "slug": "irene-burgio",
   "name": "Irene Burgio",
-  "generated_at": "2026-06-20T18:55:50Z",
-  "source": "Scopus Search API; Scopus Abstract Retrieval when authorized",
+  "generated_at": "2026-06-20T19:11:55Z",
+  "source": "Scopus Search API for metrics/keywords; shared BibTeX for coauthor counts",
   "metrics": {
     "scopus_author_id": "60138900600",
-    "document_count": null,
     "citation_count": null,
     "cited_by_count": null,
     "h_index": null
@@ -14,41 +13,86 @@
   "abstracts_found": 0,
   "keywords": [
     {
+      "text": "stronger reliance",
+      "value": 3
+    },
+    {
+      "text": "reliance visual",
+      "value": 3
+    },
+    {
+      "text": "visual perceptual",
+      "value": 3
+    },
+    {
+      "text": "perceptual history",
+      "value": 3
+    },
+    {
+      "text": "history individuals",
+      "value": 3
+    },
+    {
+      "text": "individuals higher",
+      "value": 3
+    },
+    {
+      "text": "higher math",
+      "value": 3
+    },
+    {
+      "text": "math anxiety",
+      "value": 3
+    },
+    {
       "text": "stronger",
-      "value": 1
+      "value": 2
     },
     {
       "text": "reliance",
-      "value": 1
+      "value": 2
     },
     {
       "text": "visual",
-      "value": 1
+      "value": 2
     },
     {
       "text": "perceptual",
-      "value": 1
+      "value": 2
     },
     {
       "text": "history",
-      "value": 1
+      "value": 2
     },
     {
       "text": "individuals",
-      "value": 1
+      "value": 2
     },
     {
       "text": "higher",
-      "value": 1
+      "value": 2
     },
     {
       "text": "math",
-      "value": 1
+      "value": 2
     },
     {
       "text": "anxiety",
-      "value": 1
+      "value": 2
     }
   ],
-  "coauthors": []
+  "coauthors": [
+    {
+      "name": "Paula A. Maldonado Moscoso",
+      "count": 1
+    },
+    {
+      "name": "Giovanni Anobile",
+      "count": 1
+    },
+    {
+      "name": "Elisa Castaldi",
+      "count": 1
+    }
+  ]
 }
