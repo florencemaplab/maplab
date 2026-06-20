@@ -38,7 +38,7 @@ jobs:
           python scripts/update_scopus_bibtex.py \
             --authors scripts/scopus_authors.json \
             --output data/publications.bib \
-            --view COMPLETE \
+            --view STANDARD \
             --skip-abstract-retrieval
 
       - name: Update author Scopus analytics
