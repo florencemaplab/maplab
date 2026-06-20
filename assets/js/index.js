@@ -742,35 +742,33 @@
       }))
       .filter((item) => item.text)
       .sort((a, b) => b.value - a.value || a.text.localeCompare(b.text))
-      .slice(0, 80);
+      .slice(0, 58);
 
     if (!words.length) return `<div class="note">No lab keyword data available yet.</div>`;
 
     const values = words.map((item) => item.value).filter(Number.isFinite);
     const max = Math.max(...values, 1);
-    const top = words.slice(0, 9);
-    const rest = words.slice(9);
+    const featured = words.slice(0, 10);
+    const supporting = words.slice(10);
 
-    const topHTML = top.map((item, index) => {
-      const ratio = Math.max(0.08, item.value / max);
+    const featuredHTML = featured.map((item, index) => {
+      const ratio = Math.max(0.18, item.value / max);
+      const tone = index % 6;
       return `
-        <div class="lab-keyword-feature" title="${escapeHTML(item.text)} · ${escapeHTML(numberOrDash(item.value))}">
-          <div class="lab-keyword-feature-rank">${String(index + 1).padStart(2, "0")}</div>
-          <div class="lab-keyword-feature-main">
-            <strong>${escapeHTML(item.text)}</strong>
-            <span>${escapeHTML(numberOrDash(item.value))}</span>
-            <i style="--keyword-ratio:${ratio.toFixed(3)}"></i>
-          </div>
-        </div>
+        <span class="theme-token theme-token-featured tone-${tone}"
+          style="--theme-ratio:${ratio.toFixed(3)}"
+          title="${escapeHTML(item.text)} · ${escapeHTML(numberOrDash(item.value))}">
+          ${escapeHTML(item.text)}
+        </span>
       `;
     }).join("");
 
-    const chipHTML = rest.map((item, index) => {
-      const ratio = Math.max(0.08, item.value / max);
-      const size = 0.78 + ratio * 0.58;
+    const supportingHTML = supporting.map((item, index) => {
+      const ratio = Math.max(0.12, item.value / max);
+      const tone = (index + 2) % 6;
       return `
-        <span class="lab-keyword-chip"
-          style="--keyword-ratio:${ratio.toFixed(3)}; --keyword-size:${size.toFixed(3)}rem"
+        <span class="theme-token tone-${tone}"
+          style="--theme-ratio:${ratio.toFixed(3)}"
           title="${escapeHTML(item.text)} · ${escapeHTML(numberOrDash(item.value))}">
           ${escapeHTML(item.text)}
         </span>
@@ -778,20 +776,15 @@
     }).join("");
 
     return `
-      <div class="lab-keyword-landscape">
-        <div class="lab-keyword-summary">
-          <div>
-            <span>Topic landscape</span>
-            <strong>${escapeHTML(numberOrDash(words.length))}</strong>
-          </div>
-          <p>Most recurrent terms across MAPLab publication titles. Larger and darker items appear more often.</p>
+      <div class="research-theme-cloud" aria-label="MAPLab research themes generated from publication titles">
+        <div class="theme-cloud-glow theme-cloud-glow-a"></div>
+        <div class="theme-cloud-glow theme-cloud-glow-b"></div>
+
+        <div class="theme-featured">
+          ${featuredHTML}
         </div>
 
-        <div class="lab-keyword-feature-grid">
-          ${topHTML}
-        </div>
-
-        ${chipHTML ? `<div class="lab-keyword-chip-cloud">${chipHTML}</div>` : ""}
+        ${supportingHTML ? `<div class="theme-supporting">${supportingHTML}</div>` : ""}
       </div>
     `;
   }
@@ -2203,11 +2196,11 @@
 
           <div class="lab-cloud-card">
             <div class="lab-card-title">
-              <h3>Research keyword cloud</h3>
-              <span>lab-wide</span>
+              <h3>Research themes</h3>
+              <span>title-based</span>
             </div>
             ${labKeywordCloudHTML(data.keywords || [])}
-            <p class="lab-atlas-note">Keyword landscape is title-based and generated from the shared Scopus/BibTeX publication set.</p>
+            <p class="lab-atlas-note">Themes are generated from publication titles in the shared Scopus/BibTeX record.</p>
           </div>
         </div>
       </div>
