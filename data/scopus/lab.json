@@ -1,0 +1,907 @@
+{
+  "slug": "lab",
+  "name": "MAPLab",
+  "generated_at": "2026-06-20T19:39:35Z",
+  "source": "Shared BibTeX generated from Scopus Search; keyword cloud generated from publication titles",
+  "title_based_keywords": true,
+  "abstracts_used": false,
+  "keywords": [
+    {
+      "text": "numerosity",
+      "value": 54
+    },
+    {
+      "text": "visual",
+      "value": 33
+    },
+    {
+      "text": "perception",
+      "value": 27
+    },
+    {
+      "text": "adaptation",
+      "value": 20
+    },
+    {
+      "text": "number",
+      "value": 18
+    },
+    {
+      "text": "time",
+      "value": 12
+    },
+    {
+      "text": "children",
+      "value": 11
+    },
+    {
+      "text": "math",
+      "value": 10
+    },
+    {
+      "text": "estimation",
+      "value": 10
+    },
+    {
+      "text": "attention",
+      "value": 10
+    },
+    {
+      "text": "numerosity perception",
+      "value": 10
+    },
+    {
+      "text": "motion",
+      "value": 9
+    },
+    {
+      "text": "cognitive",
+      "value": 8
+    },
+    {
+      "text": "vision",
+      "value": 8
+    },
+    {
+      "text": "early",
+      "value": 8
+    },
+    {
+      "text": "auditory",
+      "value": 8
+    },
+    {
+      "text": "space",
+      "value": 8
+    },
+    {
+      "text": "brain",
+      "value": 7
+    },
+    {
+      "text": "mapping",
+      "value": 7
+    },
+    {
+      "text": "role",
+      "value": 7
+    },
+    {
+      "text": "perceptual",
+      "value": 7
+    },
+    {
+      "text": "size",
+      "value": 7
+    },
+    {
+      "text": "neural",
+      "value": 7
+    },
+    {
+      "text": "dyscalculia",
+      "value": 7
+    },
+    {
+      "text": "attentional",
+      "value": 7
+    },
+    {
+      "text": "numerosity adaptation",
+      "value": 7
+    },
+    {
+      "text": "motor",
+      "value": 6
+    },
+    {
+      "text": "sense",
+      "value": 6
+    },
+    {
+      "text": "action",
+      "value": 6
+    },
+    {
+      "text": "mechanisms",
+      "value": 6
+    },
+    {
+      "text": "discrimination",
+      "value": 5
+    },
+    {
+      "text": "anxiety",
+      "value": 5
+    },
+    {
+      "text": "optimal",
+      "value": 5
+    },
+    {
+      "text": "encoding",
+      "value": 5
+    },
+    {
+      "text": "pupil",
+      "value": 5
+    },
+    {
+      "text": "groupitizing",
+      "value": 5
+    },
+    {
+      "text": "pupillary",
+      "value": 5
+    },
+    {
+      "text": "patients",
+      "value": 5
+    },
+    {
+      "text": "saccadic",
+      "value": 5
+    },
+    {
+      "text": "features",
+      "value": 5
+    },
+    {
+      "text": "primary",
+      "value": 5
+    },
+    {
+      "text": "sensitivity",
+      "value": 5
+    },
+    {
+      "text": "subitizing",
+      "value": 5
+    },
+    {
+      "text": "math anxiety",
+      "value": 5
+    },
+    {
+      "text": "developmental dyscalculia",
+      "value": 5
+    },
+    {
+      "text": "number sense",
+      "value": 5
+    },
+    {
+      "text": "numerosity estimation",
+      "value": 5
+    },
+    {
+      "text": "perception numerosity",
+      "value": 5
+    },
+    {
+      "text": "sensory",
+      "value": 4
+    },
+    {
+      "text": "representation",
+      "value": 4
+    },
+    {
+      "text": "magnetic",
+      "value": 4
+    },
+    {
+      "text": "functional",
+      "value": 4
+    },
+    {
+      "text": "behavioral",
+      "value": 4
+    },
+    {
+      "text": "depends",
+      "value": 4
+    },
+    {
+      "text": "information",
+      "value": 4
+    },
+    {
+      "text": "visuo-spatial",
+      "value": 4
+    },
+    {
+      "text": "spatial",
+      "value": 4
+    },
+    {
+      "text": "affects",
+      "value": 4
+    },
+    {
+      "text": "developmental",
+      "value": 4
+    },
+    {
+      "text": "fast",
+      "value": 4
+    },
+    {
+      "text": "temporal",
+      "value": 4
+    },
+    {
+      "text": "cortex",
+      "value": 4
+    },
+    {
+      "text": "perceived",
+      "value": 4
+    },
+    {
+      "text": "typical",
+      "value": 4
+    },
+    {
+      "text": "high",
+      "value": 4
+    },
+    {
+      "text": "spontaneous",
+      "value": 4
+    },
+    {
+      "text": "navigated transcranial",
+      "value": 4
+    },
+    {
+      "text": "transcranial magnetic",
+      "value": 4
+    },
+    {
+      "text": "magnetic stimulation",
+      "value": 4
+    },
+    {
+      "text": "time perception",
+      "value": 4
+    }
+  ],
+  "network": {
+    "nodes": [
+      {
+        "id": "giovanni-anobile",
+        "name": "Giovanni Anobile",
+        "type": "lab",
+        "category": "",
+        "weight": 68
+      },
+      {
+        "id": "roberto-arrighi",
+        "name": "Roberto Arrighi",
+        "type": "lab",
+        "category": "",
+        "weight": 77
+      },
+      {
+        "id": "alessandro-benedetto",
+        "name": "Alessandro Benedetto",
+        "type": "lab",
+        "category": "",
+        "weight": 23
+      },
+      {
+        "id": "elisa-castaldi",
+        "name": "Elisa Castaldi",
+        "type": "lab",
+        "category": "",
+        "weight": 43
+      },
+      {
+        "id": "serena-castellotti",
+        "name": "Serena Castellotti",
+        "type": "lab",
+        "category": "",
+        "weight": 19
+      },
+      {
+        "id": "irene-burgio",
+        "name": "Irene Burgio",
+        "type": "lab",
+        "category": "",
+        "weight": 1
+      },
+      {
+        "id": "co:a:p",
+        "name": "Pooresmaeili A.",
+        "type": "coauthor",
+        "weight": 4
+      },
+      {
+        "id": "co:r:m",
+        "name": "Mazziotti R.",
+        "type": "coauthor",
+        "weight": 2
+      },
+      {
+        "id": "co:t:b",
+        "name": "Bartolini T.",
+        "type": "coauthor",
+        "weight": 1
+      },
+      {
+        "id": "co:i:t",
+        "name": "Togoli I.",
+        "type": "coauthor",
+        "weight": 3
+      },
+      {
+        "id": "co:m:f",
+        "name": "Fornaciai M.",
+        "type": "coauthor",
+        "weight": 3
+      },
+      {
+        "id": "co:d:a",
+        "name": "Alais D.",
+        "type": "coauthor",
+        "weight": 1
+      },
+      {
+        "id": "co:b:a",
+        "name": "Aruanno B.",
+        "type": "coauthor",
+        "weight": 1
+      },
+      {
+        "id": "co:c:b",
+        "name": "Bonaudo C.",
+        "type": "coauthor",
+        "weight": 4
+      },
+      {
+        "id": "co:c:bd",
+        "name": "Burr D.C.",
+        "type": "coauthor",
+        "weight": 3
+      },
+      {
+        "id": "co:c:r",
+        "name": "Rocca C.",
+        "type": "coauthor",
+        "weight": 1
+      },
+      {
+        "id": "co:d:dh",
+        "name": "de Hevia M.D.",
+        "type": "coauthor",
+        "weight": 1
+      },
+      {
+        "id": "co:f:g",
+        "name": "Galluzzi F.",
+        "type": "coauthor",
+        "weight": 1
+      },
+      {
+        "id": "co:a:b",
+        "name": "Bhat A.",
+        "type": "coauthor",
+        "weight": 1
+      },
+      {
+        "id": "co:c:c",
+        "name": "Caponi C.",
+        "type": "coauthor",
+        "weight": 3
+      },
+      {
+        "id": "co:a:f",
+        "name": "Farini A.",
+        "type": "coauthor",
+        "weight": 2
+      },
+      {
+        "id": "co:a:gp",
+        "name": "Grasso P.A.",
+        "type": "coauthor",
+        "weight": 7
+      },
+      {
+        "id": "co:a:mm",
+        "name": "Maldonado Moscoso P.A.",
+        "type": "coauthor",
+        "weight": 8
+      },
+      {
+        "id": "co:i:p",
+        "name": "Petrizzo I.",
+        "type": "coauthor",
+        "weight": 7
+      },
+      {
+        "id": "co:m:dv",
+        "name": "Del Viva M.M.",
+        "type": "coauthor",
+        "weight": 1
+      },
+      {
+        "id": "co:a:g",
+        "name": "Guzzetta A.",
+        "type": "coauthor",
+        "weight": 1
+      },
+      {
+        "id": "co:s:g",
+        "name": "Grassini S.",
+        "type": "coauthor",
+        "weight": 1
+      },
+      {
+        "id": "co:o:da",
+        "name": "D’Agostino O.",
+        "type": "coauthor",
+        "weight": 1
+      },
+      {
+        "id": "co:t:k",
+        "name": "Karaminis T.",
+        "type": "coauthor",
+        "weight": 1
+      },
+      {
+        "id": "co:g:r",
+        "name": "Ranieri G.",
+        "type": "coauthor",
+        "weight": 1
+      },
+      {
+        "id": "co:e:b",
+        "name": "Blini E.",
+        "type": "coauthor",
+        "weight": 2
+      },
+      {
+        "id": "co:p:s",
+        "name": "Stievano P.",
+        "type": "coauthor",
+        "weight": 1
+      },
+      {
+        "id": "co:d:b",
+        "name": "Burr D.",
+        "type": "coauthor",
+        "weight": 3
+      },
+      {
+        "id": "co:k:m",
+        "name": "Mikellidou K.",
+        "type": "coauthor",
+        "weight": 1
+      },
+      {
+        "id": "co:a:t",
+        "name": "Tonelli A.",
+        "type": "coauthor",
+        "weight": 2
+      },
+      {
+        "id": "co:m:m",
+        "name": "Meocci M.",
+        "type": "coauthor",
+        "weight": 2
+      },
+      {
+        "id": "co:g:g",
+        "name": "Giacomelli G.",
+        "type": "coauthor",
+        "weight": 1
+      },
+      {
+        "id": "co:m:cg",
+        "name": "Cicchini G.M.",
+        "type": "coauthor",
+        "weight": 7
+      },
+      {
+        "id": "co:a:k",
+        "name": "Karami A.",
+        "type": "coauthor",
+        "weight": 1
+      },
+      {
+        "id": "co:f:t",
+        "name": "Tinelli F.",
+        "type": "coauthor",
+        "weight": 3
+      }
+    ],
+    "edges": [
+      {
+        "source": "giovanni-anobile",
+        "target": "roberto-arrighi",
+        "count": 38,
+        "type": "internal"
+      },
+      {
+        "source": "elisa-castaldi",
+        "target": "giovanni-anobile",
+        "count": 17,
+        "type": "internal"
+      },
+      {
+        "source": "elisa-castaldi",
+        "target": "roberto-arrighi",
+        "count": 17,
+        "type": "internal"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:a:mm",
+        "count": 8,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:a:gp",
+        "count": 7,
+        "type": "external"
+      },
+      {
+        "source": "giovanni-anobile",
+        "target": "co:a:mm",
+        "count": 7,
+        "type": "external"
+      },
+      {
+        "source": "elisa-castaldi",
+        "target": "co:a:mm",
+        "count": 6,
+        "type": "external"
+      },
+      {
+        "source": "giovanni-anobile",
+        "target": "co:i:p",
+        "count": 6,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:i:p",
+        "count": 6,
+        "type": "external"
+      },
+      {
+        "source": "giovanni-anobile",
+        "target": "co:a:gp",
+        "count": 5,
+        "type": "external"
+      },
+      {
+        "source": "giovanni-anobile",
+        "target": "co:m:cg",
+        "count": 5,
+        "type": "external"
+      },
+      {
+        "source": "elisa-castaldi",
+        "target": "co:c:b",
+        "count": 4,
+        "type": "external"
+      },
+      {
+        "source": "giovanni-anobile",
+        "target": "co:d:b",
+        "count": 3,
+        "type": "external"
+      },
+      {
+        "source": "elisa-castaldi",
+        "target": "co:c:c",
+        "count": 3,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:m:cg",
+        "count": 3,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:m:f",
+        "count": 3,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:c:bd",
+        "count": 3,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:i:t",
+        "count": 3,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:c:c",
+        "count": 2,
+        "type": "external"
+      },
+      {
+        "source": "giovanni-anobile",
+        "target": "co:e:b",
+        "count": 2,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:e:b",
+        "count": 2,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:m:m",
+        "count": 2,
+        "type": "external"
+      },
+      {
+        "source": "alessandro-benedetto",
+        "target": "co:r:m",
+        "count": 2,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:a:t",
+        "count": 2,
+        "type": "external"
+      },
+      {
+        "source": "giovanni-anobile",
+        "target": "co:c:bd",
+        "count": 2,
+        "type": "external"
+      },
+      {
+        "source": "giovanni-anobile",
+        "target": "co:a:p",
+        "count": 2,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:a:p",
+        "count": 2,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:a:f",
+        "count": 2,
+        "type": "external"
+      },
+      {
+        "source": "alessandro-benedetto",
+        "target": "giovanni-anobile",
+        "count": 2,
+        "type": "internal"
+      },
+      {
+        "source": "alessandro-benedetto",
+        "target": "roberto-arrighi",
+        "count": 2,
+        "type": "internal"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "serena-castellotti",
+        "count": 2,
+        "type": "internal"
+      },
+      {
+        "source": "giovanni-anobile",
+        "target": "co:b:a",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "giovanni-anobile",
+        "target": "co:t:b",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:t:b",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:d:b",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "elisa-castaldi",
+        "target": "co:a:k",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "serena-castellotti",
+        "target": "co:o:da",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "serena-castellotti",
+        "target": "co:m:dv",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "giovanni-anobile",
+        "target": "co:a:b",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "alessandro-benedetto",
+        "target": "co:f:g",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "alessandro-benedetto",
+        "target": "co:g:r",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "alessandro-benedetto",
+        "target": "co:c:r",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "elisa-castaldi",
+        "target": "co:c:bd",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "alessandro-benedetto",
+        "target": "co:m:cg",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "elisa-castaldi",
+        "target": "co:i:p",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "alessandro-benedetto",
+        "target": "co:f:t",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:t:k",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "serena-castellotti",
+        "target": "co:s:g",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:k:m",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "giovanni-anobile",
+        "target": "co:p:s",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "elisa-castaldi",
+        "target": "co:d:dh",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "giovanni-anobile",
+        "target": "co:f:t",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:f:t",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:g:g",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:a:g",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "co:d:a",
+        "count": 1,
+        "type": "external"
+      },
+      {
+        "source": "elisa-castaldi",
+        "target": "irene-burgio",
+        "count": 1,
+        "type": "internal"
+      },
+      {
+        "source": "giovanni-anobile",
+        "target": "irene-burgio",
+        "count": 1,
+        "type": "internal"
+      },
+      {
+        "source": "alessandro-benedetto",
+        "target": "serena-castellotti",
+        "count": 1,
+        "type": "internal"
+      },
+      {
+        "source": "elisa-castaldi",
+        "target": "serena-castellotti",
+        "count": 1,
+        "type": "internal"
+      }
+    ],
+    "stats": {
+      "lab_members": 6,
+      "external_collaborators": 34,
+      "edges": 60
+    }
+  }
+}
