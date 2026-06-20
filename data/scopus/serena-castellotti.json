@@ -1,7 +1,7 @@
 {
   "slug": "serena-castellotti",
   "name": "Serena Castellotti",
-  "generated_at": "2026-06-20T22:03:19Z",
+  "generated_at": "2026-06-20T22:08:00Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57205731708",
@@ -236,7 +236,7 @@
   "coauthors": [
     {
       "name": "Maria Michela Del Viva",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Ottavia D’Agostino",

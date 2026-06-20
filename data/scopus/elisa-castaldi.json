@@ -1,7 +1,7 @@
 {
   "slug": "elisa-castaldi",
   "name": "Elisa Castaldi",
-  "generated_at": "2026-06-20T22:03:19Z",
+  "generated_at": "2026-06-20T22:08:00Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "55660832000",
@@ -256,11 +256,11 @@
     },
     {
       "name": "Guido Marco Cicchini",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Maria Concetta Morrone",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Camilla Bonaudo",
@@ -315,6 +315,10 @@
       "count": 4
     },
     {
+      "name": "Paola Binda",
+      "count": 4
+    },
+    {
       "name": "Francesca Tinelli",
       "count": 4
     },
@@ -332,10 +336,6 @@
     },
     {
       "name": "Federico Capelli",
-      "count": 3
-    },
-    {
-      "name": "Paola Binda",
       "count": 3
     },
     {
@@ -496,6 +496,10 @@
     },
     {
       "name": "Claudia Lunghi",
+      "count": 1
+    },
+    {
+      "name": "Benedetto Falsini",
       "count": 1
     },
     {
