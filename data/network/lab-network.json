@@ -294,7 +294,7 @@
         "type": "lab",
         "category": "faculty",
         "documents": 68,
-        "total_link_strength": 238,
+        "total_link_strength": 241,
         "cluster": 0
       },
       {
@@ -325,13 +325,22 @@
         "cluster": 3
       },
       {
+        "id": "michela-delviva",
+        "name": "Maria Michela Del Viva",
+        "type": "lab",
+        "category": "faculty",
+        "documents": 17,
+        "total_link_strength": 53,
+        "cluster": 4
+      },
+      {
         "id": "serena-castellotti",
         "name": "Serena Castellotti",
         "type": "lab",
         "category": "postdoc",
         "documents": 19,
         "total_link_strength": 58,
-        "cluster": 4
+        "cluster": 5
       },
       {
         "id": "irene-burgio",
@@ -340,7 +349,7 @@
         "category": "phd",
         "documents": 1,
         "total_link_strength": 3,
-        "cluster": 5
+        "cluster": 6
       },
       {
         "id": "co:burr:d",
@@ -356,8 +365,8 @@
         "name": "Guido Marco Cicchini",
         "type": "external",
         "category": "",
-        "documents": 33,
-        "total_link_strength": 110,
+        "documents": 34,
+        "total_link_strength": 113,
         "cluster": 0
       },
       {
@@ -503,15 +512,6 @@
         "documents": 13,
         "total_link_strength": 55,
         "cluster": 1
-      },
-      {
-        "id": "co:viva:m",
-        "name": "Maria Michela Del Viva",
-        "type": "external",
-        "category": "",
-        "documents": 17,
-        "total_link_strength": 53,
-        "cluster": 4
       },
       {
         "id": "co:capelli:f",
@@ -1492,7 +1492,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 6,
-        "cluster": 1
+        "cluster": 4
       },
       {
         "id": "co:guzzetta:a",
@@ -1501,7 +1501,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 6,
-        "cluster": 1
+        "cluster": 4
       },
       {
         "id": "co:andolfi:a",
@@ -1537,7 +1537,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 6,
-        "cluster": 1
+        "cluster": 4
       },
       {
         "id": "co:tonelli:a",
@@ -1600,7 +1600,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 5,
-        "cluster": 4
+        "cluster": 5
       },
       {
         "id": "co:lucchese:b",
@@ -1753,7 +1753,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 5,
-        "cluster": 4
+        "cluster": 5
       },
       {
         "id": "co:marazzi:m",
@@ -1798,7 +1798,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 5,
-        "cluster": 4
+        "cluster": 5
       },
       {
         "id": "co:federici:s",
@@ -1816,7 +1816,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 5,
-        "cluster": 4
+        "cluster": 5
       },
       {
         "id": "co:biondi:a",
@@ -2224,6 +2224,15 @@
         "cluster": 4
       },
       {
+        "id": "co:tomaiuolo:f",
+        "name": "F. Tomaiuolo",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 3,
+        "cluster": 0
+      },
+      {
         "id": "co:galluzzi:f",
         "name": "Filippo Galluzzi",
         "type": "external",
@@ -2303,6 +2312,15 @@
         "documents": 1,
         "total_link_strength": 3,
         "cluster": 4
+      },
+      {
+        "id": "co:campana:s",
+        "name": "S. Campana",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 3,
+        "cluster": 0
       },
       {
         "id": "co:tomassini:a",
@@ -2450,7 +2468,7 @@
       {
         "source": "co:cicchini:g",
         "target": "giovanni-anobile",
-        "count": 20,
+        "count": 21,
         "type": "coauthorship"
       },
       {
@@ -2466,7 +2484,7 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:viva:m",
+        "source": "michela-delviva",
         "target": "serena-castellotti",
         "count": 16,
         "type": "coauthorship"
@@ -2599,7 +2617,7 @@
       },
       {
         "source": "co:agostino:o",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 5,
         "type": "coauthorship"
       },
@@ -3313,7 +3331,7 @@
       },
       {
         "source": "co:montagnini:a",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 3,
         "type": "coauthorship"
       },
@@ -4519,7 +4537,7 @@
       },
       {
         "source": "co:mastandrea:s",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 2,
         "type": "coauthorship"
       },
@@ -5101,13 +5119,13 @@
       },
       {
         "source": "alessandro-benedetto",
-        "target": "co:viva:m",
+        "target": "elisa-castaldi",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "alessandro-benedetto",
-        "target": "elisa-castaldi",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -5497,7 +5515,7 @@
       },
       {
         "source": "co:baglioni:g",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -5605,7 +5623,7 @@
       },
       {
         "source": "co:baldriga:i",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -5641,7 +5659,7 @@
       },
       {
         "source": "co:bancale:a",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -6139,7 +6157,7 @@
       },
       {
         "source": "co:biondi:a",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -6704,6 +6722,24 @@
       {
         "source": "co:campagnaro:l",
         "target": "co:visocchi:e",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:campana:s",
+        "target": "co:cicchini:g",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:campana:s",
+        "target": "co:tomaiuolo:f",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:campana:s",
+        "target": "giovanni-anobile",
         "count": 1,
         "type": "coauthorship"
       },
@@ -7297,6 +7333,12 @@
       },
       {
         "source": "co:cicchini:g",
+        "target": "co:tomaiuolo:f",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:cicchini:g",
         "target": "co:tosetti:m",
         "count": 1,
         "type": "coauthorship"
@@ -7363,7 +7405,7 @@
       },
       {
         "source": "co:cioni:g",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -7399,7 +7441,7 @@
       },
       {
         "source": "co:conti:m",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -7477,7 +7519,7 @@
       },
       {
         "source": "co:criminisi:r",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -7651,7 +7693,7 @@
       },
       {
         "source": "co:fabozzi:m",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -7969,7 +8011,7 @@
       },
       {
         "source": "co:francisci:c",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -8155,7 +8197,7 @@
       },
       {
         "source": "co:giangrasso:b",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -8461,7 +8503,7 @@
       },
       {
         "source": "co:gragnoli:e",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -8551,12 +8593,6 @@
       },
       {
         "source": "co:greenlee:m",
-        "target": "co:viva:m",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:greenlee:m",
         "target": "elisa-castaldi",
         "count": 1,
         "type": "coauthorship"
@@ -8564,6 +8600,12 @@
       {
         "source": "co:greenlee:m",
         "target": "giovanni-anobile",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:greenlee:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -8677,7 +8719,7 @@
       },
       {
         "source": "co:guzzetta:a",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -9289,7 +9331,7 @@
       },
       {
         "source": "co:mazzotta:g",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -9307,7 +9349,7 @@
       },
       {
         "source": "co:mencarini:a",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -9727,7 +9769,7 @@
       },
       {
         "source": "co:paramei:g",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -9751,7 +9793,7 @@
       },
       {
         "source": "co:pascale:r",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -9961,7 +10003,7 @@
       },
       {
         "source": "co:pignatiello:l",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -9991,7 +10033,7 @@
       },
       {
         "source": "co:plank:t",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -10105,7 +10147,7 @@
       },
       {
         "source": "co:santana:c",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -10135,7 +10177,7 @@
       },
       {
         "source": "co:scipioni:l",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -10159,7 +10201,7 @@
       },
       {
         "source": "co:soldo:m",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -10183,7 +10225,7 @@
       },
       {
         "source": "co:szinte:m",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -10231,7 +10273,7 @@
       },
       {
         "source": "co:tinelli:f",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -10266,6 +10308,12 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:tomaiuolo:f",
+        "target": "giovanni-anobile",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:tosetti:m",
         "target": "roberto-arrighi",
         "count": 1,
@@ -10279,7 +10327,7 @@
       },
       {
         "source": "co:varano:r",
-        "target": "co:viva:m",
+        "target": "michela-delviva",
         "count": 1,
         "type": "coauthorship"
       },
@@ -10308,12 +10356,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:viva:m",
-        "target": "roberto-arrighi",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:volpe:r",
         "target": "roberto-arrighi",
         "count": 1,
@@ -10336,12 +10378,18 @@
         "target": "irene-burgio",
         "count": 1,
         "type": "coauthorship"
+      },
+      {
+        "source": "michela-delviva",
+        "target": "roberto-arrighi",
+        "count": 1,
+        "type": "coauthorship"
       }
     ],
     "stats": {
-      "lab_members": 6,
-      "external_collaborators": 231,
-      "edges": 1319
+      "lab_members": 7,
+      "external_collaborators": 232,
+      "edges": 1324
     }
   }
 }
