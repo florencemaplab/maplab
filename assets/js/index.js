@@ -1885,7 +1885,7 @@
         .style("cursor", "pointer");
 
       const labels = labelLayer.selectAll("text")
-        .data(nodes.filter((node) => node.type === "lab" || labelledExternal.has(node.id) || graph.searchMatches.has(node.id)))
+        .data(nodes)
         .enter()
         .append("text")
         .attr("x", (d) => d.x)
@@ -1895,12 +1895,12 @@
           return d.y - r - 7;
         })
         .attr("text-anchor", "middle")
-        .attr("font-size", (d) => d.type === "lab" ? 12 : 10.4)
-        .attr("font-weight", (d) => d.type === "lab" ? 820 : 670)
+        .attr("font-size", (d) => d.type === "lab" ? 12 : 8.6)
+        .attr("font-weight", (d) => d.type === "lab" ? 820 : 560)
         .attr("fill", "#13202b")
         .attr("paint-order", "stroke")
         .attr("stroke", "rgba(255,255,255,0.96)")
-        .attr("stroke-width", 3.5)
+        .attr("stroke-width", (d) => d.type === "lab" ? 3.5 : 2.4)
         .text((d) => labShortName(d.name));
 
       function applyFocus(focusNode, pinned = false) {
@@ -1933,8 +1933,8 @@
         labels.attr("opacity", (d) => {
           if (d.id === focusNode.id) return 1;
           if (linked.has(`${focusNode.id}||${d.id}`)) return 1;
-          if (d.type === "lab") return 0.35;
-          return 0.08;
+          if (d.type === "lab") return 0.45;
+          return 0.22;
         });
       }
 
