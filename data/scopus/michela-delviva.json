@@ -1,7 +1,7 @@
 {
   "slug": "michela-delviva",
   "name": "Maria Michela Del Viva",
-  "generated_at": "2026-06-20T22:03:19Z",
+  "generated_at": "2026-06-20T22:08:00Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "8750278400",
@@ -236,7 +236,7 @@
   "coauthors": [
     {
       "name": "Serena Castellotti",
-      "count": 15
+      "count": 16
     },
     {
       "name": "M. Michela Del Viva",
@@ -320,10 +320,6 @@
     },
     {
       "name": "Mark W. Greenlee",
-      "count": 1
-    },
-    {
-      "name": "Castellotti S.",
       "count": 1
     },
     {
