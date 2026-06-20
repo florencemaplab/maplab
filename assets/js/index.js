@@ -344,33 +344,6 @@
           grid-template-columns: 1fr;
         }
       }
-      /* VISIBLE_WORD_CLOUD_FIX */
-
-      .lab-real-word-cloud {
-        position: relative;
-        overflow: hidden;
-        border-radius: 26px;
-        background: #f8fbfc;
-        border: 1px solid rgba(220, 227, 234, 0.92);
-        box-shadow:
-          inset 0 1px 0 rgba(255,255,255,0.82),
-          0 18px 42px rgba(19, 32, 43, 0.045);
-      }
-
-      .lab-real-word-cloud-svg {
-        display: block;
-        width: 100%;
-        height: auto;
-        min-height: 360px;
-        background: transparent;
-      }
-
-      @media (max-width: 640px) {
-        .lab-real-word-cloud-svg {
-          min-height: 300px;
-        }
-      }
-
     `;
     document.head.appendChild(style);
   }
@@ -760,203 +733,42 @@
     return colors[index % colors.length];
   }
 
-  const NOISY_DISPLAY_KEYWORDS = new Set([
-    "visual", "perception", "perceptual", "magnetic", "resonance", "imaging",
-    "functional", "structural", "brain", "neural", "neuronal", "cortical",
-    "cortex", "stimulus", "stimuli", "subject", "subjects", "observer",
-    "observers", "children", "patients", "patient", "adult", "adults",
-    "early", "role", "mechanisms", "mechanism", "information", "features",
-    "feature", "primary", "sensitivity", "temporal", "spatial", "motor",
-    "action", "encoding", "representation", "sensory", "perceived",
-    "depends", "affects", "typical", "high", "fast", "optimal", "specific",
-    "general", "cognitive", "behavioral", "developmental", "grouping",
-    "mapping", "number", "time", "space", "size", "sense", "math",
-    "estimation", "discrimination", "eeg", "fmri", "mri"
-  ]);
-
-  const DISPLAY_KEYWORD_RENAMES = new Map([
-    ["attentional", "attention"],
-    ["pupillary", "pupil responses"],
-    ["pupil", "pupil responses"],
-    ["saccadic", "eye movements"],
-    ["saccade", "eye movements"],
-    ["saccades", "eye movements"],
-    ["microsaccades", "eye movements"],
-    ["foveola", "foveal vision"],
-    ["foveal", "foveal vision"],
-    ["visuo-spatial", "multisensory perception"],
-    ["perception numerosity", "numerosity perception"],
-    ["transcranial magnetic", "transcranial magnetic stimulation"],
-    ["navigated transcranial", "transcranial magnetic stimulation"],
-    ["magnetic resonance", "magnetic resonance imaging"]
-  ]);
-
-  function cleanDisplayKeywords(keywords) {
-    const counts = new Map();
-
-    (keywords || []).forEach((item) => {
-      let text = normalize(String(item && item.text ? item.text : ""));
-      if (!text) return;
-
-      let value = Number(item.value || item.count || 0);
-      if (!Number.isFinite(value)) value = 1;
-
-      text = DISPLAY_KEYWORD_RENAMES.get(text) || text;
-
-      const isPhrase = text.includes(" ");
-      if (!isPhrase && NOISY_DISPLAY_KEYWORDS.has(text)) return;
-      if (!isPhrase && text.length < 5) return;
-
-      counts.set(text, (counts.get(text) || 0) + value);
-    });
-
-    // Final hard guard.
-    NOISY_DISPLAY_KEYWORDS.forEach((word) => counts.delete(word));
-
-    if (counts.has("numerosity perception")) counts.delete("perception numerosity");
-
-    return Array.from(counts.entries())
-      .map(([text, value]) => ({ text, value }))
-      .sort((a, b) => b.value - a.value || a.text.localeCompare(b.text));
-  }
-
-
   function labKeywordCloudHTML(keywords) {
-    const words = cleanDisplayKeywords(keywords).slice(0, 56);
+    const words = (keywords || []).filter((item) => item && item.text).slice(0, 42);
+    if (!words.length) return `<div class="note">No lab keyword data available yet.</div>`;
 
-    if (!words.length) return `<div class="note">No keyword data available yet.</div>`;
-
-    const values = words.map((item) => item.value).filter(Number.isFinite);
-    const max = Math.max(...values, 1);
-    const min = Math.min(...values, max);
-    const spread = Math.max(max - min, 1);
-
-    const width = 1120;
-    const height = 520;
-    const cx = width / 2;
-    const cy = height / 2;
-    const boxes = [];
-    const palette = ["#153e5c", "#1f6c94", "#2b7f88", "#5b6c9b", "#6e5ba6", "#2a8a5e", "#994c77"];
-
-    const overlaps = (box) => boxes.some((other) => !(
-      box.x2 < other.x1 ||
-      box.x1 > other.x2 ||
-      box.y2 < other.y1 ||
-      box.y1 > other.y2
-    ));
-
-    const placed = words.map((item, index) => {
-      const ratio = Math.max(0.08, (item.value - min) / spread);
-      const size = 15 + Math.pow(ratio, 0.72) * 48;
-      const fill = palette[index % palette.length];
-
-      let rotate = 0;
-      if (index > 14 && index % 17 === 0) rotate = -18;
-      else if (index > 16 && index % 19 === 0) rotate = 18;
-      else if (index > 22 && index % 23 === 0) rotate = -35;
-
-      const estimatedWidth = Math.max(34, item.text.length * size * 0.55);
-      const estimatedHeight = size * 1.18;
-      const boxWidth = Math.abs(rotate) > 25 ? estimatedHeight + 12 : estimatedWidth + 18;
-      const boxHeight = Math.abs(rotate) > 25 ? estimatedWidth * 0.35 + 18 : estimatedHeight + 16;
-
-      let chosen = null;
-
-      if (index === 0) {
-        chosen = { x: cx, y: cy };
-      } else {
-        for (let step = 0; step < 620; step += 1) {
-          const angle = step * 0.43 + index * 1.73;
-          const radius = 4.8 * Math.sqrt(step) * (1 + index * 0.006);
-          const wobble = Math.sin(step * 0.31 + index) * 9;
-          const x = cx + Math.cos(angle) * (radius + wobble);
-          const y = cy + Math.sin(angle) * (radius * 0.58 + wobble * 0.25);
-
-          const box = {
-            x1: x - boxWidth / 2,
-            x2: x + boxWidth / 2,
-            y1: y - boxHeight / 2,
-            y2: y + boxHeight / 2
-          };
-
-          const inside = box.x1 > 24 && box.x2 < width - 24 && box.y1 > 24 && box.y2 < height - 24;
-
-          if (inside && !overlaps(box)) {
-            chosen = { x, y, box };
-            break;
-          }
-        }
-      }
-
-      if (!chosen) {
-        const ring = Math.sqrt(index + 1);
-        const angle = index * 2.399963229728653;
-        const x = cx + Math.cos(angle) * Math.min(width * 0.44, ring * 38);
-        const y = cy + Math.sin(angle) * Math.min(height * 0.38, ring * 22);
-        chosen = {
-          x,
-          y,
-          box: {
-            x1: x - boxWidth / 2,
-            x2: x + boxWidth / 2,
-            y1: y - boxHeight / 2,
-            y2: y + boxHeight / 2
-          }
-        };
-      }
-
-      const box = chosen.box || {
-        x1: chosen.x - boxWidth / 2,
-        x2: chosen.x + boxWidth / 2,
-        y1: chosen.y - boxHeight / 2,
-        y2: chosen.y + boxHeight / 2
-      };
-      boxes.push(box);
-
-      return {
-        ...item,
-        x: chosen.x,
-        y: chosen.y,
-        size,
-        rotate,
-        fill,
-        ratio
-      };
-    });
+    const values = words.map((item) => Number(item.value || item.count || 0)).filter(Number.isFinite);
+    const min = Math.min(...values);
+    const max = Math.max(...values);
+    const cx = 310;
+    const cy = 185;
 
     return `
-      <div class="lab-real-word-cloud">
-        <svg class="lab-real-word-cloud-svg"
-          viewBox="0 0 ${width} ${height}"
-          role="img"
-          aria-label="MAPLab research keyword cloud generated from publication titles">
-          <rect x="8" y="8" width="${width - 16}" height="${height - 16}" rx="34"
-            fill="#f8fbfc" stroke="rgba(220,227,234,0.85)" stroke-width="1"></rect>
-          <circle cx="${(width * 0.23).toFixed(1)}" cy="${(height * 0.24).toFixed(1)}" r="170"
-            fill="rgba(43,127,136,0.10)"></circle>
-          <circle cx="${(width * 0.78).toFixed(1)}" cy="${(height * 0.70).toFixed(1)}" r="190"
-            fill="rgba(91,108,155,0.09)"></circle>
-          ${placed.map((item) => `
-            <text
-              x="${item.x.toFixed(1)}"
-              y="${item.y.toFixed(1)}"
-              fill="${item.fill}"
-              stroke="rgba(255,255,255,0.86)"
-              stroke-width="5"
-              stroke-linejoin="round"
-              paint-order="stroke"
-              font-family="inherit"
-              font-weight="820"
-              font-size="${item.size.toFixed(1)}"
-              text-anchor="middle"
-              dominant-baseline="middle"
-              opacity="${(0.66 + Math.min(0.34, item.ratio * 0.38)).toFixed(2)}"
-              transform="rotate(${item.rotate} ${item.x.toFixed(1)} ${item.y.toFixed(1)})">
-              <title>${escapeHTML(item.text)} · ${escapeHTML(numberOrDash(item.value))}</title>${escapeHTML(item.text)}
+      <svg class="lab-cloud-svg" viewBox="0 0 620 370" role="img" aria-label="MAPLab keyword cloud generated from publication titles">
+        ${words.map((item, index) => {
+          const value = Number(item.value || item.count || 0);
+          const ratio = max === min ? 0.65 : (value - min) / (max - min);
+          const size = 13 + ratio * 28;
+          const angle = index * 2.399963229728653;
+          const radius = index === 0 ? 0 : 18 + Math.sqrt(index) * 35;
+          const x = cx + Math.cos(angle) * radius;
+          const y = cy + Math.sin(angle) * radius * 0.66;
+          const rotate = index > 10 && index % 9 === 0 ? -7 : index > 10 && index % 6 === 0 ? 7 : 0;
+
+          return `
+            <text class="lab-cloud-word"
+              x="${x.toFixed(1)}"
+              y="${y.toFixed(1)}"
+              fill="${labKeywordColor(index)}"
+              font-size="${size.toFixed(1)}"
+              opacity="${(0.58 + Math.min(0.42, size / 76)).toFixed(2)}"
+              transform="rotate(${rotate} ${x.toFixed(1)} ${y.toFixed(1)})">
+              <title>${escapeHTML(item.text)} · ${escapeHTML(numberOrDash(value))}</title>
+              ${escapeHTML(item.text)}
             </text>
-          `).join("")}
-        </svg>
-      </div>
+          `;
+        }).join("")}
+      </svg>
     `;
   }
 
@@ -2371,7 +2183,7 @@
               <span>lab-wide</span>
             </div>
             ${labKeywordCloudHTML(data.keywords || [])}
-            <p class="lab-atlas-note">Keyword cloud generated from publication titles in the shared Scopus/BibTeX record.</p>
+            <p class="lab-atlas-note">Generated from publication titles indexed in Scopus/BibTeX. Abstracts are not used because the current Scopus API access does not provide stable abstract retrieval.</p>
           </div>
         </div>
       </div>
