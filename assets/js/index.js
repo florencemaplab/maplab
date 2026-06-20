@@ -2090,62 +2090,41 @@
     const grid = $("[data-people-grid]");
     if (!grid || $("#lab-collaboration-atlas")) return;
 
-    let data = null;
-    let sourceNote = "";
-
-    try {
-      const response = await fetch("data/scopus/lab.json");
-      if (response.ok) {
-        const jsonData = await response.json();
-        if (labNetworkLooksUsable(jsonData)) {
-          data = jsonData;
-        } else {
-          sourceNote = "The lab-wide JSON looked incomplete, so the map was rebuilt from other local data.";
-          console.info("data/scopus/lab.json exists but is incomplete; trying publications.bib and individual JSON files.");
-        }
-      }
-    } catch (error) {
-      console.info("Lab-wide Scopus analytics JSON unavailable; falling back to local data.", error);
-    }
-
-    if (!data) {
-      try {
-        const bibData = await buildLabAtlasFromBibTeXURL(profiles);
-        if (labNetworkLooksUsable(bibData)) {
-          data = bibData;
-          if (!sourceNote) sourceNote = "Built from data/publications.bib.";
-        }
-      } catch (error) {
-        console.info("Could not build lab atlas from BibTeX.", error);
-      }
-    }
-
-    if (!data) {
-      try {
-        const individualData = await buildLabAtlasFromIndividualScopus(profiles);
-        if (labNetworkLooksUsable(individualData)) {
-          data = individualData;
-          sourceNote = "Built from individual Scopus analytics files because lab-wide data were incomplete.";
-        }
-      } catch (error) {
-        console.info("Could not build lab atlas from individual Scopus JSON files.", error);
-      }
-    }
-
     injectLabAtlasStyles();
 
     const section = document.createElement("section");
     section.className = "lab-atlas";
     section.id = "lab-collaboration-atlas";
 
-    if (!data) {
+    let data = null;
+    let errorMessage = "";
+
+    try {
+      const response = await fetch("data/network/lab-network.json");
+      if (!response.ok) {
+        errorMessage = `Could not load data/network/lab-network.json (${response.status}).`;
+      } else {
+        data = await response.json();
+      }
+    } catch (error) {
+      errorMessage = "Could not load data/network/lab-network.json.";
+      console.info(errorMessage, error);
+    }
+
+    const network = data && (data.network || data);
+    const nodes = network && Array.isArray(network.nodes) ? network.nodes : [];
+    const edges = network && Array.isArray(network.edges) ? network.edges : [];
+    const externalNodes = nodes.filter((node) => node && node.type !== "lab");
+
+    if (!data || !nodes.length || !edges.length || !externalNodes.length) {
       section.innerHTML = `
         <div class="lab-atlas-shell">
           <div class="lab-atlas-head">
             <div>
               <p class="kicker">Lab-wide map</p>
               <h2>Collaboration and research landscape</h2>
-              <p>The lab-wide network is not available yet. The site could not find usable coauthor data. Open the browser console: it will show whether <code>data/publications.bib</code> was loaded and parsed correctly.</p>
+              <p>The static collaboration map has not been generated yet.</p>
+              <p class="lab-atlas-note">${escapeHTML(errorMessage || "Run the GitHub Action so it creates data/network/lab-network.json.")}</p>
             </div>
           </div>
         </div>
@@ -2163,16 +2142,14 @@
             <p class="kicker">Lab-wide map</p>
             <h2>Collaboration and research landscape</h2>
             <p>A clean collaboration constellation across MAPLab members and their coauthors. Link thickness reflects the number of shared publications.</p>
-            ${sourceNote ? `<p class="lab-atlas-note">${escapeHTML(sourceNote)}</p>` : ""}
           </div>
-          ${data.generated_at ? `<div class="lab-atlas-date">Updated ${escapeHTML(compactDate(data.generated_at))}</div>` : ""}
         </div>
 
         <div class="lab-atlas-grid">
           <div class="lab-network-card">
             <div class="lab-card-title">
               <h3>Collaboration constellation</h3>
-              <span>simple map</span>
+              <span>${escapeHTML(numberOrDash(externalNodes.length))} collaborators</span>
             </div>
             <div data-lab-network></div>
           </div>
