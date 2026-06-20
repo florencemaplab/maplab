@@ -124,7 +124,10 @@ def request_json(
             detail = response.text[:500].replace("\n", " ")
             message = f"Request failed: HTTP {response.status_code}: {detail}"
             if fail_soft:
-                print(f"Warning: {message}", file=sys.stderr)
+                # Optional metadata calls may be unavailable depending on the API
+                # entitlement. Keep logs readable: only print non-view errors.
+                if "View parameter entered is not valid" not in detail:
+                    print(f"Warning: {message}", file=sys.stderr)
                 return None
             raise RuntimeError(message)
 
@@ -310,12 +313,20 @@ def fetch_abstract_metadata(session: requests.Session, eid: str) -> Tuple[str, L
     if not eid:
         return "", []
 
-    # FULL often requires institutional entitlement; STANDARD is safer.
-    for view in ["FULL", "STANDARD"]:
+    # Abstract Retrieval does not accept the same views as Search/Author APIs.
+    # META_ABS is the useful lightweight view for abstract text; FULL may require
+    # institutional entitlement. Finally, try the endpoint default with no view.
+    request_variants = [
+        {"view": "META_ABS"},
+        {"view": "FULL"},
+        {},
+    ]
+
+    for params in request_variants:
         payload = request_json(
             session,
             SCOPUS_ABSTRACT_EID_URL.format(eid=eid),
-            params={"view": view},
+            params=params,
             fail_soft=True,
         )
         if payload:
@@ -346,12 +357,13 @@ def fetch_author_metrics(
     h_values: List[int] = []
 
     for author_id in scopus_author_ids:
-        # STANDARD is safest; METRICS sometimes works and may include citation/h-index fields.
-        for view in ["STANDARD", "METRICS"]:
+        # Author Retrieval does not support a METRICS view. STANDARD is safe;
+        # the endpoint default is used as a fallback without adding a view.
+        for params in [{"view": "STANDARD"}, {}]:
             payload = request_json(
                 session,
                 SCOPUS_AUTHOR_URL.format(author_id=author_id),
-                params={"view": view},
+                params=params,
                 fail_soft=True,
             )
             if not payload:
@@ -384,7 +396,6 @@ def fetch_author_metrics(
             if h_index is not None:
                 h_values.append(h_index)
 
-            # If STANDARD already worked, do not require METRICS.
             if citation is not None or h_index is not None:
                 break
 
