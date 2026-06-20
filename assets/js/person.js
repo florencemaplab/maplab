@@ -173,6 +173,10 @@
         text-decoration: none;
       }
 
+      .pub-count {
+        display: none !important;
+      }
+
       @media (max-width: 640px) {
         .people-menu {
           width: 100%;
@@ -553,6 +557,328 @@
     }
   }
 
+
+  function injectScopusAnalyticsStyles() {
+    if ($("#scopus-analytics-styles")) return;
+
+    const style = document.createElement("style");
+    style.id = "scopus-analytics-styles";
+    style.textContent = `
+      .scopus-analytics {
+        margin-top: 1.05rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(220, 227, 234, 0.92);
+      }
+
+      .scopus-analytics-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 0.8rem;
+        margin-bottom: 0.78rem;
+      }
+
+      .scopus-analytics-header h3 {
+        margin: 0;
+        font-size: 1.02rem;
+      }
+
+      .scopus-analytics-updated {
+        color: var(--subtle, #7b8893);
+        font-size: 0.78rem;
+        white-space: nowrap;
+      }
+
+      .scopus-metrics {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
+        gap: 0.55rem;
+        margin-bottom: 0.9rem;
+      }
+
+      .scopus-metric {
+        padding: 0.65rem 0.7rem;
+        border: 1px solid rgba(220, 227, 234, 0.92);
+        border-radius: 14px;
+        background: linear-gradient(180deg, #ffffff, #f8fbfd);
+      }
+
+      .scopus-metric-value {
+        display: block;
+        color: var(--navy, #153e5c);
+        font-size: 1.25rem;
+        line-height: 1.1;
+        font-weight: 830;
+        letter-spacing: -0.03em;
+      }
+
+      .scopus-metric-label {
+        display: block;
+        margin-top: 0.22rem;
+        color: var(--subtle, #7b8893);
+        font-size: 0.72rem;
+        line-height: 1.2;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .scopus-visuals {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(260px, 0.9fr);
+        gap: 0.85rem;
+        align-items: stretch;
+      }
+
+      .word-cloud-card,
+      .coauthor-card {
+        min-width: 0;
+        padding: 0.85rem;
+        border: 1px solid rgba(220, 227, 234, 0.92);
+        border-radius: 16px;
+        background: #fff;
+      }
+
+      .word-cloud-card h4,
+      .coauthor-card h4 {
+        margin: 0 0 0.65rem;
+        color: var(--ink, #13202b);
+        font-size: 0.92rem;
+        letter-spacing: 0;
+      }
+
+      .word-cloud {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.42rem 0.55rem;
+        align-items: center;
+      }
+
+      .word-cloud span {
+        display: inline-flex;
+        color: var(--navy, #153e5c);
+        line-height: 1.05;
+        font-weight: 760;
+      }
+
+      .word-cloud span:nth-child(3n+2) {
+        color: var(--blue, #1f6c94);
+      }
+
+      .word-cloud span:nth-child(4n+3) {
+        color: var(--teal, #2b7f88);
+      }
+
+      .coauthor-map {
+        width: 100%;
+        height: auto;
+        min-height: 240px;
+        display: block;
+      }
+
+      .coauthor-map text {
+        font-family: inherit;
+        fill: var(--ink, #13202b);
+      }
+
+      .coauthor-map .edge {
+        stroke: rgba(31, 108, 148, 0.26);
+        stroke-linecap: round;
+      }
+
+      .coauthor-map .node-center {
+        fill: var(--navy, #153e5c);
+      }
+
+      .coauthor-map .node-coauthor {
+        fill: var(--accent-soft, #e8f3f7);
+        stroke: var(--blue, #1f6c94);
+        stroke-width: 1.3;
+      }
+
+      .coauthor-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+        margin-top: 0.55rem;
+      }
+
+      .coauthor-list span {
+        display: inline-flex;
+        padding: 0.25rem 0.48rem;
+        border-radius: 999px;
+        border: 1px solid rgba(31, 108, 148, 0.14);
+        background: var(--accent-soft, #e8f3f7);
+        color: var(--navy, #153e5c);
+        font-size: 0.78rem;
+        font-weight: 700;
+      }
+
+      .scopus-note {
+        margin-top: 0.55rem;
+        color: var(--subtle, #7b8893);
+        font-size: 0.78rem;
+      }
+
+      @media (max-width: 900px) {
+        .scopus-visuals {
+          grid-template-columns: 1fr;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  function compactDate(value) {
+    const text = String(value || "");
+    const match = text.match(/^\d{4}-\d{2}-\d{2}/);
+    return match ? match[0] : text;
+  }
+
+  function numberOrDash(value) {
+    if (value === null || value === undefined || value === "") return "–";
+    const number = Number(value);
+    return Number.isFinite(number) ? number.toLocaleString("en-US") : String(value);
+  }
+
+  function metricCard(label, value) {
+    return `
+      <div class="scopus-metric">
+        <span class="scopus-metric-value">${escapeHTML(numberOrDash(value))}</span>
+        <span class="scopus-metric-label">${escapeHTML(label)}</span>
+      </div>
+    `;
+  }
+
+  function wordCloudHTML(keywords) {
+    const words = (keywords || []).slice(0, 42);
+    if (!words.length) {
+      return `<p class="scopus-note">No keyword data available yet. The next Scopus update will use titles and abstracts when available.</p>`;
+    }
+
+    const values = words.map((item) => Number(item.value || item.count || 0)).filter(Number.isFinite);
+    const min = Math.min(...values);
+    const max = Math.max(...values);
+
+    return `
+      <div class="word-cloud" aria-label="Keyword cloud">
+        ${words.map((item) => {
+          const value = Number(item.value || item.count || 0);
+          const scaled = max === min ? 1.1 : 0.84 + ((value - min) / (max - min)) * 0.95;
+          return `<span style="font-size:${scaled.toFixed(2)}rem" title="${escapeHTML(value)} occurrences">${escapeHTML(item.text)}</span>`;
+        }).join("")}
+      </div>
+    `;
+  }
+
+  function shortLabel(name) {
+    const text = String(name || "").trim();
+    if (text.length <= 19) return text;
+    const parts = text.split(/\s+/);
+    if (parts.length >= 2) {
+      const last = parts[parts.length - 1];
+      const initials = parts.slice(0, -1).map((part) => `${part[0]}.`).join(" ");
+      return `${initials} ${last}`;
+    }
+    return `${text.slice(0, 18)}…`;
+  }
+
+  function coauthorNetworkHTML(profileName, coauthors) {
+    const items = (coauthors || []).slice(0, 14);
+    if (!items.length) {
+      return `<p class="scopus-note">No coauthor network available yet.</p>`;
+    }
+
+    const cx = 240;
+    const cy = 132;
+    const radius = 88;
+    const maxCount = Math.max(...items.map((item) => Number(item.count || item.value || 1)));
+
+    const nodes = items.map((item, index) => {
+      const angle = (Math.PI * 2 * index) / items.length - Math.PI / 2;
+      const count = Number(item.count || item.value || 1);
+      const r = 7 + (count / maxCount) * 9;
+      const x = cx + Math.cos(angle) * radius;
+      const y = cy + Math.sin(angle) * radius;
+      const labelX = cx + Math.cos(angle) * (radius + 28);
+      const labelY = cy + Math.sin(angle) * (radius + 28);
+      const anchor = labelX < cx - 10 ? "end" : labelX > cx + 10 ? "start" : "middle";
+      return { ...item, x, y, r, labelX, labelY, anchor, count };
+    });
+
+    return `
+      <svg class="coauthor-map" viewBox="0 0 480 265" role="img" aria-label="Coauthor network map">
+        ${nodes.map((node) => `<line class="edge" x1="${cx}" y1="${cy}" x2="${node.x.toFixed(1)}" y2="${node.y.toFixed(1)}" stroke-width="${Math.max(1.2, Math.min(5, node.count / maxCount * 4)).toFixed(1)}"></line>`).join("")}
+        <circle class="node-center" cx="${cx}" cy="${cy}" r="18"></circle>
+        <text x="${cx}" y="${cy + 36}" text-anchor="middle" font-size="11" font-weight="800">${escapeHTML(shortLabel(profileName))}</text>
+        ${nodes.map((node) => `
+          <circle class="node-coauthor" cx="${node.x.toFixed(1)}" cy="${node.y.toFixed(1)}" r="${node.r.toFixed(1)}"></circle>
+          <text x="${node.labelX.toFixed(1)}" y="${node.labelY.toFixed(1)}" text-anchor="${node.anchor}" font-size="10" font-weight="650">${escapeHTML(shortLabel(node.name || node.label || node.id))}</text>
+        `).join("")}
+      </svg>
+      <div class="coauthor-list">
+        ${items.slice(0, 10).map((item) => `<span>${escapeHTML(item.name || item.label || item.id)} · ${escapeHTML(numberOrDash(item.count || item.value))}</span>`).join("")}
+      </div>
+    `;
+  }
+
+  async function renderScopusAnalytics(prefix, slug, profile) {
+    injectScopusAnalyticsStyles();
+
+    const interestsList = $("[data-profile-interests]");
+    const panel = interestsList ? interestsList.closest(".panel") : null;
+    if (!panel) return;
+
+    let data;
+    try {
+      const response = await fetch(`${prefix}data/scopus/${slug}.json`);
+      if (!response.ok) return;
+      data = await response.json();
+    } catch (error) {
+      console.info("Scopus analytics unavailable", error);
+      return;
+    }
+
+    const existing = panel.querySelector(".scopus-analytics");
+    if (existing) existing.remove();
+
+    const metrics = data.metrics || {};
+    const keywordCount = (data.keywords || []).length;
+    const coauthorCount = (data.coauthors || []).length;
+    if (!keywordCount && !coauthorCount && !Object.keys(metrics).length) return;
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "scopus-analytics";
+    wrapper.innerHTML = `
+      <div class="scopus-analytics-header">
+        <h3>Scopus research signals</h3>
+        ${data.generated_at ? `<span class="scopus-analytics-updated">Updated ${escapeHTML(compactDate(data.generated_at))}</span>` : ""}
+      </div>
+
+      <div class="scopus-metrics">
+        ${metricCard("Documents", metrics.document_count)}
+        ${metricCard("Citations", metrics.citation_count || metrics.cited_by_count)}
+        ${metricCard("h-index", metrics.h_index)}
+        ${metricCard("Analyzed", data.publications_analyzed)}
+      </div>
+
+      <div class="scopus-visuals">
+        <div class="word-cloud-card">
+          <h4>Keyword cloud</h4>
+          ${wordCloudHTML(data.keywords)}
+          <p class="scopus-note">Generated from Scopus titles and abstracts when accessible; titles are used as fallback.</p>
+        </div>
+
+        <div class="coauthor-card">
+          <h4>Coauthor network</h4>
+          ${coauthorNetworkHTML(profile.name, data.coauthors)}
+        </div>
+      </div>
+    `;
+
+    panel.appendChild(wrapper);
+  }
+
   async function init() {
     const slug = slugFromPath();
     const prefix = rootPrefix();
@@ -565,6 +891,7 @@
 
       const profile = await fetchJSON(`${prefix}data/people/${slug}.json`);
       renderProfile(profile);
+      renderScopusAnalytics(prefix, slug, profile);
 
       const response = await fetch(bibURL);
       if (!response.ok) throw new Error(`Could not load ${bibURL}`);
@@ -576,12 +903,13 @@
 
       const list = $("[data-publications-list]");
       const count = $("[data-publications-count]");
+      if (count) count.hidden = true;
       const input = $("[data-publications-search]");
       let activeYear = "all";
 
       if (!entries.length) {
         if (list) list.innerHTML = `<div class="note">No publications found for this profile. Check aliases in <code>data/people/${escapeHTML(slug)}.json</code> and the shared BibTeX file.</div>`;
-        if (count) count.textContent = "0 publications";
+        if (count) count.hidden = true;
         return;
       }
 
@@ -607,11 +935,7 @@
 
           group.hidden = groupVisible === 0;
         });
-
-        if (count) {
-          const label = visible === 1 ? "publication" : "publications";
-          count.textContent = activeYear === "all" ? `${visible} ${label}` : `${visible} ${label} in ${activeYear}`;
-        }
+        if (count) count.hidden = true;
       }
 
       renderYearFilter(entries, (year) => {
