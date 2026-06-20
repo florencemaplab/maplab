@@ -1,7 +1,7 @@
 {
   "slug": "roberto-arrighi",
   "name": "Roberto Arrighi",
-  "generated_at": "2026-06-20T22:27:23Z",
+  "generated_at": "2026-06-20T22:30:35Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "8870558800",
@@ -236,7 +236,7 @@
   "coauthors": [
     {
       "name": "Giovanni Anobile",
-      "count": 36
+      "count": 37
     },
     {
       "name": "David Charles Burr",
@@ -248,7 +248,7 @@
     },
     {
       "name": "Irene Petrizzo",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Paula Andrea Maldonado Moscoso",
@@ -487,10 +487,6 @@
       "count": 1
     },
     {
-      "name": "Petrizzo I.",
-      "count": 1
-    },
-    {
       "name": "G. Aghakhanyan",
       "count": 1
     },
@@ -552,6 +548,10 @@
     },
     {
       "name": "Giovanni Giacomelli",
+      "count": 1
+    },
+    {
+      "name": "Roberto Volpe",
       "count": 1
     }
   ]
