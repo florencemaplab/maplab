@@ -330,6 +330,220 @@ def name_matches_alias(name: str, aliases: List[str]) -> bool:
 
 
 
+# Curated public-facing keyword extraction.
+# Do not generate arbitrary n-grams from titles. Arbitrary n-grams produced
+# bad public labels such as "milliseconds seconds", "optical coating", and
+# "periventricular leukomalacia". The cloud should show lab-level themes only.
+
+CURATED_KEYWORD_PHRASES = {
+    "active vision": [
+        r"\bactive vision\b",
+    ],
+    "adaptation": [
+        r"\badaptation\b",
+        r"\badapting\b",
+        r"\badapted\b",
+    ],
+    "attention": [
+        r"\battention\b",
+        r"\battentional\b",
+    ],
+    "binocular vision": [
+        r"\bbinocular\b",
+        r"\bstereopsis\b",
+        r"\bstereoscopic\b",
+    ],
+    "biological motion": [
+        r"\bbiological motion\b",
+    ],
+    "contrast sensitivity": [
+        r"\bcontrast sensitivity\b",
+        r"\bcontrast\b",
+    ],
+    "developmental dyscalculia": [
+        r"\bdevelopmental dyscalculia\b",
+        r"\bdyscalculia\b",
+        r"\bdyscalculic\b",
+    ],
+    "developmental dyslexia": [
+        r"\bdevelopmental dyslexia\b",
+        r"\bdyslexia\b",
+        r"\bdyslexic\b",
+        r"\breading disorder\b",
+    ],
+    "eye movements": [
+        r"\beye movements?\b",
+        r"\bsaccades?\b",
+        r"\bsaccadic\b",
+        r"\bmicrosaccades?\b",
+        r"\bfixational\b",
+        r"\bfixation\b",
+    ],
+    "foveal vision": [
+        r"\bfovea\b",
+        r"\bfoveal\b",
+        r"\bfoveola\b",
+        r"\bfoveolar\b",
+    ],
+    "magnetic resonance imaging": [
+        r"\bmagnetic resonance imaging\b",
+        r"\bfunctional magnetic resonance imaging\b",
+        r"\bfunctional magnetic resonance\b",
+        r"\bfunctional mri\b",
+        r"\bfmri\b",
+        r"\bmri\b",
+    ],
+    "motion perception": [
+        r"\bmotion perception\b",
+        r"\bvisual motion\b",
+        r"\bimplied motion\b",
+        r"\bmotion\b",
+    ],
+    "multisensory perception": [
+        r"\bmultisensory\b",
+        r"\baudiovisual\b",
+        r"\bvisuo[- ]?spatial\b",
+        r"\bvisuotactile\b",
+    ],
+    "number sense": [
+        r"\bnumber sense\b",
+        r"\bnumerical cognition\b",
+        r"\bnumerical abilities\b",
+    ],
+    "numerosity adaptation": [
+        r"\bnumerosity adaptation\b",
+        r"\badaptation.*\bnumerosity\b",
+        r"\bnumerosity.*\badaptation\b",
+    ],
+    "numerosity estimation": [
+        r"\bnumerosity estimation\b",
+        r"\bnumber estimation\b",
+        r"\bestimation.*\bnumerosity\b",
+    ],
+    "numerosity perception": [
+        r"\bnumerosity perception\b",
+        r"\bperception of numerosity\b",
+        r"\bnumerosity\b",
+        r"\bnumber perception\b",
+    ],
+    "pupil responses": [
+        r"\bpupil\b",
+        r"\bpupillary\b",
+        r"\bpupillometry\b",
+    ],
+    "psychophysics": [
+        r"\bpsychophysics\b",
+        r"\bpsychophysical\b",
+    ],
+    "reading": [
+        r"\breading\b",
+    ],
+    "serial dependence": [
+        r"\bserial dependence\b",
+    ],
+    "spatial vision": [
+        r"\bspatial vision\b",
+        r"\bspatial resolution\b",
+        r"\bspatial frequency\b",
+    ],
+    "subitizing": [
+        r"\bsubitizing\b",
+        r"\bsubitising\b",
+    ],
+    "symmetry perception": [
+        r"\bsymmetry\b",
+        r"\bsymmetrical\b",
+    ],
+    "temporal processing": [
+        r"\btemporal processing\b",
+        r"\btemporal dynamics\b",
+        r"\btemporal sensitivity\b",
+        r"\btime perception\b",
+        r"\bduration\b",
+    ],
+    "transcranial magnetic stimulation": [
+        r"\btranscranial magnetic stimulation\b",
+        r"\bnavigated transcranial magnetic stimulation\b",
+        r"\btms\b",
+    ],
+    "visual attention": [
+        r"\bvisual attention\b",
+    ],
+    "visual cortex": [
+        r"\bvisual cortex\b",
+        r"\bvisual cortical\b",
+        r"\bprimary visual cortex\b",
+        r"\bv1\b",
+    ],
+    "visual perception": [
+        r"\bvisual perception\b",
+        r"\bperceptual organization\b",
+        r"\bperceptual organisation\b",
+        r"\bvision\b",
+    ],
+    "visual stability": [
+        r"\bvisual stability\b",
+        r"\bstabilization\b",
+        r"\bstabilisation\b",
+        r"\bretinal stabilization\b",
+        r"\bretinal stabilisation\b",
+    ],
+    "working memory": [
+        r"\bworking memory\b",
+        r"\bmemory\b",
+    ],
+}
+
+# Optional single-word labels. Everything else must be a curated phrase.
+CURATED_SINGLE_KEYWORDS = {
+    "adaptation",
+    "attention",
+    "dyscalculia",
+    "dyslexia",
+    "groupitizing",
+    "numerosity",
+    "psychophysics",
+    "reading",
+    "subitizing",
+}
+
+# Hard blocklist for public labels. These can occur in titles, but should not
+# appear as standalone cloud entries or generated phrase fragments.
+BAD_KEYWORD_LABELS = {
+    "milliseconds seconds",
+    "millisecond second",
+    "optical coating",
+    "periventricular leukomalacia",
+    "requir attention",
+    "require attention",
+    "requires attention",
+    "attention resourc",
+    "attention resource",
+    "attention resources",
+    "shared numerical",
+    "strategy numerosity",
+    "dyscalculic development",
+    "compression event",
+    "numerosity texture-density",
+    "texture-density",
+    "tumour surgery",
+    "tumor surgery",
+    "translational real-time",
+    "real-time pupillometry",
+    "translational real-time pupillometry",
+    "navigated transcranial",
+    "magnetic",
+    "resonance",
+    "imaging",
+    "visual",
+    "perception",
+    "brain",
+    "neural",
+    "functional",
+    "structural",
+}
+
+
 def normalize_keyword_text(text: str) -> str:
     text = unicodedata.normalize("NFD", normalize_space(text))
     text = "".join(ch for ch in text if unicodedata.category(ch) != "Mn")
@@ -339,163 +553,49 @@ def normalize_keyword_text(text: str) -> str:
     return text
 
 
-def tokenize(text: str) -> List[str]:
-    text = normalize_keyword_text(text)
-    words = [word.strip("-") for word in text.split()]
-    return [word for word in words if len(word) >= 4 and word not in STOPWORDS and not word.isdigit()]
+def keyword_counts(titles: List[str], max_keywords: int = 32) -> List[Dict[str, Any]]:
+    """Return only curated, readable lab-level keyword labels.
 
-
-def singularize_keyword(word: str) -> str:
-    """Normalize only known scientific variants.
-
-    Do not apply generic suffix stripping. The previous version converted
-    readable words into ugly stems such as `requir` and `resourc`, which is
-    wrong for a public keyword cloud.
+    This intentionally avoids free n-gram extraction. A public keyword cloud
+    should not expose arbitrary title fragments, medical side-topics, methods
+    side-effects, or stemmed tokens.
     """
-    replacements = {
-        "attentional": "attention",
-        "pupillary": "pupil responses",
-        "pupillary responses": "pupil responses",
-        "saccadic": "eye movements",
-        "saccade": "eye movements",
-        "saccades": "eye movements",
-        "microsaccade": "eye movements",
-        "microsaccades": "eye movements",
-        "foveola": "foveal vision",
-        "foveolar": "foveal vision",
-        "foveal": "foveal vision",
-        "fovea": "foveal vision",
-        "psychophysical": "psychophysics",
-        "symmetrical": "symmetry perception",
-        "visuo-spatial": "multisensory perception",
-        "visuospatial": "multisensory perception",
-    }
-    return replacements.get(word, word)
-
-def clean_keyword_counter(counter: Counter[str]) -> Counter[str]:
-    cleaned: Counter[str] = Counter()
-    for text, value in counter.items():
-        text = normalize_space(text).lower()
-        if not text:
-            continue
-        if text in NOISY_SINGLE_KEYWORDS:
-            continue
-        if " " not in text and text not in ALLOWED_SINGLE_KEYWORDS:
-            continue
-        cleaned[text] += int(value)
-    return cleaned
-
-
-
-BAD_KEYWORD_PHRASES = {
-    "requir attention",
-    "require attention",
-    "requires attention",
-    "attention resourc",
-    "attention resource",
-    "attention resources",
-    "millisecond second",
-    "strategy numerosity",
-    "shared numerical",
-    "dyscalculic development",
-    "compression event",
-    "optical coating",
-    "numerosity texture-density",
-    "texture-density",
-    "translational real-time",
-    "real-time pupillometry",
-    "translational real-time pupillometry",
-    "navigated transcranial",
-}
-
-def keyword_counts(titles: List[str], max_keywords: int = 48) -> List[Dict[str, Any]]:
-    """Extract readable, public-facing research keywords from titles.
-
-    Phrase-first strategy:
-    1. Count canonical concepts such as "visual perception" and
-       "magnetic resonance imaging".
-    2. Count recurrent 2-3 word phrases.
-    3. Add only domain-specific single words.
-    4. Never display generic fragments such as "magnetic", "visual",
-       "perception", "brain", or "neural".
-    """
-    canonical: Counter[str] = Counter()
-    ngrams: Counter[str] = Counter()
-    singles: Counter[str] = Counter()
+    counts: Counter[str] = Counter()
 
     for title in titles:
-        normalized_title = normalize_keyword_text(title)
-
-        for phrase, patterns in CANONICAL_KEYWORD_PHRASES.items():
-            if any(re.search(pattern, normalized_title) for pattern in patterns):
-                canonical[phrase] += 1
-
-        tokenized = [singularize_keyword(word) for word in tokenize(title)]
-
-        words: List[str] = []
-        for word in tokenized:
-            if " " in word:
-                canonical[word] += 1
-            else:
-                words.append(word)
-
-        # Recurrent local phrases from titles.
-        for n in (3, 2):
-            for gram in zip(*(words[i:] for i in range(n))):
-                if len(set(gram)) < n:
-                    continue
-                if any(part in NOISY_SINGLE_KEYWORDS for part in gram):
-                    continue
-                phrase = " ".join(gram)
-                ngrams[phrase] += 1
-
-        for word in words:
-            singles[word] += 1
-
-    combined: Counter[str] = Counter()
-
-    for phrase, count in canonical.items():
-        if count >= 1:
-            combined[phrase] += count * 4
-
-    selected = set(combined)
-
-    for phrase, count in ngrams.items():
-        if count < 2:
+        text = normalize_keyword_text(title)
+        if not text:
             continue
-        if phrase in NOISY_SINGLE_KEYWORDS:
-            continue
-        if any(phrase in existing or existing in phrase for existing in selected):
-            continue
-        combined[phrase] += count * 2
 
-    for word, count in clean_keyword_counter(singles).items():
-        if count < 2:
-            continue
-        if any(word in phrase.split() for phrase in combined if " " in phrase):
-            continue
-        combined[word] += count
+        for label, patterns in CURATED_KEYWORD_PHRASES.items():
+            if any(re.search(pattern, text) for pattern in patterns):
+                counts[label] += 1
 
-    # Hard final guard: remove any generic single-word fragments.
-    for noisy in NOISY_SINGLE_KEYWORDS:
-        combined.pop(noisy, None)
+        # Very limited single-word fallback.
+        for word in re.findall(r"\b[a-z][a-z\-]{3,}\b", text):
+            if word in CURATED_SINGLE_KEYWORDS:
+                counts[word] += 1
 
-    # Remove weird reversed fragments when the canonical phrase exists.
-    if "numerosity perception" in combined:
-        combined.pop("perception numerosity", None)
+    # Merge redundant labels into the nicer public-facing phrase.
+    if counts.get("numerosity"):
+        counts["numerosity perception"] += counts.pop("numerosity")
+    if counts.get("dyscalculia"):
+        counts["developmental dyscalculia"] += counts.pop("dyscalculia")
+    if counts.get("dyslexia"):
+        counts["developmental dyslexia"] += counts.pop("dyslexia")
 
-    readable_items = []
-    for text, value in combined.most_common(max_keywords * 2):
-        text = normalize_space(text).lower()
-        if not text or text in BAD_KEYWORD_PHRASES:
+    for bad in BAD_KEYWORD_LABELS:
+        counts.pop(bad, None)
+
+    items = []
+    for text, value in counts.most_common(max_keywords):
+        if text in BAD_KEYWORD_LABELS:
             continue
-        if re.search(r"\b(requir|resourc)\b", text):
+        if not text or value <= 0:
             continue
-        if len(readable_items) >= max_keywords:
-            break
-        readable_items.append({"text": text, "value": int(value)})
+        items.append({"text": text, "value": int(value)})
 
-    return readable_items
+    return items
 
 
 def load_profiles(people_index: Path, people_dir: Path) -> Dict[str, Dict[str, Any]]:
@@ -711,7 +811,7 @@ def main() -> int:
         "source": "Static network generated from data/publications.bib",
         "title_based_keywords": True,
         "abstracts_used": False,
-        "keyword_extractor": "phrase_v3_readable_keywords",
+        "keyword_extractor": "curated_keywords_v1",
         "keywords": network.pop("keywords", []),
         "network": network,
     }
