@@ -344,6 +344,33 @@
           grid-template-columns: 1fr;
         }
       }
+      /* VISIBLE_WORD_CLOUD_FIX */
+
+      .lab-real-word-cloud {
+        position: relative;
+        overflow: hidden;
+        border-radius: 26px;
+        background: #f8fbfc;
+        border: 1px solid rgba(220, 227, 234, 0.92);
+        box-shadow:
+          inset 0 1px 0 rgba(255,255,255,0.82),
+          0 18px 42px rgba(19, 32, 43, 0.045);
+      }
+
+      .lab-real-word-cloud-svg {
+        display: block;
+        width: 100%;
+        height: auto;
+        min-height: 360px;
+        background: transparent;
+      }
+
+      @media (max-width: 640px) {
+        .lab-real-word-cloud-svg {
+          min-height: 300px;
+        }
+      }
+
     `;
     document.head.appendChild(style);
   }
@@ -756,6 +783,7 @@
     const cx = width / 2;
     const cy = height / 2;
     const boxes = [];
+    const palette = ["#153e5c", "#1f6c94", "#2b7f88", "#5b6c9b", "#6e5ba6", "#2a8a5e", "#994c77"];
 
     const overlaps = (box) => boxes.some((other) => !(
       box.x2 < other.x1 ||
@@ -767,7 +795,7 @@
     const placed = words.map((item, index) => {
       const ratio = Math.max(0.08, (item.value - min) / spread);
       const size = 15 + Math.pow(ratio, 0.72) * 48;
-      const tone = index % 7;
+      const fill = palette[index % palette.length];
 
       let rotate = 0;
       if (index > 14 && index % 17 === 0) rotate = -18;
@@ -798,7 +826,7 @@
             y2: y + boxHeight / 2
           };
 
-          const inside = box.x1 > 18 && box.x2 < width - 18 && box.y1 > 18 && box.y2 < height - 18;
+          const inside = box.x1 > 24 && box.x2 < width - 24 && box.y1 > 24 && box.y2 < height - 24;
 
           if (inside && !overlaps(box)) {
             chosen = { x, y, box };
@@ -838,7 +866,7 @@
         y: chosen.y,
         size,
         rotate,
-        tone,
+        fill,
         ratio
       };
     });
@@ -849,22 +877,27 @@
           viewBox="0 0 ${width} ${height}"
           role="img"
           aria-label="MAPLab research keyword cloud generated from publication titles">
-          <defs>
-            <radialGradient id="keywordCloudGlow" cx="50%" cy="48%" r="58%">
-              <stop offset="0%" stop-color="rgba(255,255,255,0.98)" />
-              <stop offset="72%" stop-color="rgba(247,251,252,0.84)" />
-              <stop offset="100%" stop-color="rgba(238,246,249,0.72)" />
-            </radialGradient>
-          </defs>
-          <rect x="8" y="8" width="${width - 16}" height="${height - 16}" rx="34" class="lab-real-word-cloud-bg"></rect>
-          <circle cx="${(width * 0.23).toFixed(1)}" cy="${(height * 0.24).toFixed(1)}" r="170" class="lab-real-word-cloud-aura aura-a"></circle>
-          <circle cx="${(width * 0.78).toFixed(1)}" cy="${(height * 0.70).toFixed(1)}" r="190" class="lab-real-word-cloud-aura aura-b"></circle>
-          ${placed.map((item, index) => `
-            <text class="lab-real-cloud-word tone-${item.tone}"
+          <rect x="8" y="8" width="${width - 16}" height="${height - 16}" rx="34"
+            fill="#f8fbfc" stroke="rgba(220,227,234,0.85)" stroke-width="1"></rect>
+          <circle cx="${(width * 0.23).toFixed(1)}" cy="${(height * 0.24).toFixed(1)}" r="170"
+            fill="rgba(43,127,136,0.10)"></circle>
+          <circle cx="${(width * 0.78).toFixed(1)}" cy="${(height * 0.70).toFixed(1)}" r="190"
+            fill="rgba(91,108,155,0.09)"></circle>
+          ${placed.map((item) => `
+            <text
               x="${item.x.toFixed(1)}"
               y="${item.y.toFixed(1)}"
+              fill="${item.fill}"
+              stroke="rgba(255,255,255,0.86)"
+              stroke-width="5"
+              stroke-linejoin="round"
+              paint-order="stroke"
+              font-family="inherit"
+              font-weight="820"
               font-size="${item.size.toFixed(1)}"
-              opacity="${(0.58 + Math.min(0.40, item.ratio * 0.42)).toFixed(2)}"
+              text-anchor="middle"
+              dominant-baseline="middle"
+              opacity="${(0.66 + Math.min(0.34, item.ratio * 0.38)).toFixed(2)}"
               transform="rotate(${item.rotate} ${item.x.toFixed(1)} ${item.y.toFixed(1)})">
               <title>${escapeHTML(item.text)} · ${escapeHTML(numberOrDash(item.value))}</title>${escapeHTML(item.text)}
             </text>
