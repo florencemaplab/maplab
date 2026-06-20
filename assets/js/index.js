@@ -1233,45 +1233,97 @@
       return [a, b].sort().join("||");
     }
 
+    function profileForAuthor(authorName) {
+      return profiles.find((profile) => nameMatchesAlias(authorName, profileAliases(profile))) || null;
+    }
+
+    function labProfilesForEntry(entry, authorsRaw) {
+      const fields = entry.fields || {};
+      const explicitSlugs = String(fields.maplab_slugs || "")
+        .split(/\s*(?:;|\||,)\s*/)
+        .map((item) => item.trim())
+        .filter(Boolean);
+
+      const bySlug = explicitSlugs
+        .map((slug) => profiles.find((profile) => profile.slug === slug))
+        .filter(Boolean);
+
+      if (bySlug.length) return Array.from(new Map(bySlug.map((profile) => [profile.slug, profile])).values());
+
+      const maplabPeople = String(fields.maplab_people || fields.maplab_person || "")
+        .split(/\s*(?:;|\||, and | and )\s*/i)
+        .map((item) => item.trim())
+        .filter(Boolean);
+
+      const byMappedName = [];
+      maplabPeople.forEach((name) => {
+        profiles.forEach((profile) => {
+          if (nameMatchesAlias(name, profileAliases(profile))) byMappedName.push(profile);
+        });
+      });
+
+      if (byMappedName.length) {
+        return Array.from(new Map(byMappedName.map((profile) => [profile.slug, profile])).values());
+      }
+
+      const byAuthorField = [];
+      authorsRaw.forEach((authorName) => {
+        const profile = profileForAuthor(authorName);
+        if (profile) byAuthorField.push(profile);
+      });
+
+      return Array.from(new Map(byAuthorField.map((profile) => [profile.slug, profile])).values());
+    }
+
     entries.forEach((entry) => {
       const fields = entry.fields || {};
       if (fields.title) titles.push(fields.title);
 
       const authorsRaw = splitBibAuthors(fields.author || "").map(bibAuthorDisplayName).filter(Boolean);
-      if (!authorsRaw.length) return;
+      const labProfiles = labProfilesForEntry(entry, authorsRaw);
+      if (!labProfiles.length) return;
 
       const participants = [];
       const seen = new Set();
-      const hasLab = authorsRaw.some((authorName) => profiles.some((profile) => nameMatchesAlias(authorName, profileAliases(profile))));
-      if (!hasLab) return;
 
+      // First add MAPLab members from explicit maplab_people/maplab_slugs.
+      // This is much more reliable than trying to infer membership only from the author string.
+      labProfiles.forEach((profile) => {
+        const node = ensureNode(profile.slug, profile.name, "lab", profile.category || "");
+        if (!seen.has(profile.slug)) {
+          seen.add(profile.slug);
+          node.documents += 1;
+          participants.push(profile.slug);
+        }
+      });
+
+      // Then add all non-MAPLab coauthors from the author list.
       authorsRaw.forEach((authorName) => {
-        let matchedProfile = null;
-        for (const profile of profiles) {
-          if (nameMatchesAlias(authorName, profileAliases(profile))) {
-            matchedProfile = profile;
-            break;
-          }
-        }
-
-        let nodeId;
-        let node;
+        const matchedProfile = profileForAuthor(authorName);
         if (matchedProfile) {
-          nodeId = matchedProfile.slug;
-          node = ensureNode(nodeId, matchedProfile.name, "lab", matchedProfile.category || "");
-        } else {
-          const canonical = canonicalCoauthorKey(authorName);
-          if (!canonical) return;
-          nodeId = `co:${canonical}`;
-          node = ensureNode(nodeId, authorName, "external", "");
+          // If the matched MAPLab author was not already in maplab_people, keep it too.
+          const node = ensureNode(matchedProfile.slug, matchedProfile.name, "lab", matchedProfile.category || "");
+          if (!seen.has(matchedProfile.slug)) {
+            seen.add(matchedProfile.slug);
+            node.documents += 1;
+            participants.push(matchedProfile.slug);
+          }
+          return;
         }
 
+        const canonical = canonicalCoauthorKey(authorName);
+        if (!canonical) return;
+
+        const nodeId = `co:${canonical}`;
+        const node = ensureNode(nodeId, authorName, "external", "");
         if (!seen.has(nodeId)) {
           seen.add(nodeId);
           node.documents += 1;
           participants.push(nodeId);
         }
       });
+
+      if (participants.length < 2) return;
 
       for (let i = 0; i < participants.length; i += 1) {
         for (let j = i + 1; j < participants.length; j += 1) {
@@ -1304,14 +1356,13 @@
     }
 
     externalNodes.sort((a, b) => (b.total_link_strength - a.total_link_strength) || (b.documents - a.documents) || a.name.localeCompare(b.name));
-    const keptExternal = externalNodes.slice(0, 280);
+    const keptExternal = externalNodes.slice(0, 320);
     const keepIds = new Set([...labNodes, ...keptExternal].map((node) => node.id));
 
     const edges = Array.from(edgeMap.values())
       .filter((edge) => keepIds.has(edge.source) && keepIds.has(edge.target))
       .sort((a, b) => b.count - a.count);
 
-    // Weighted label propagation for lightweight VOSviewer-like clusters.
     const adjacency = new Map();
     const nodes = [...labNodes, ...keptExternal];
     nodes.forEach((node) => adjacency.set(node.id, []));
@@ -1361,7 +1412,7 @@
       slug: "lab",
       name: "MAPLab",
       generated_at: "",
-      source: "Client-side fallback from data/publications.bib",
+      source: "Client-side fallback from data/publications.bib using maplab_people/maplab_slugs",
       title_based_keywords: true,
       abstracts_used: false,
       keywords: keywordCountsFromTitles(titles),
@@ -1682,14 +1733,13 @@
 
     const width = 980;
     const height = 610;
-    const zoom = d3.zoom().scaleExtent([0.4, 4.5]).on("zoom", (event) => viewport.attr("transform", event.transform));
-    svg.call(zoom);
-
     svg.selectAll("*").remove();
     const defs = svg.append("defs");
     defs.append("filter").attr("id", "simple-node-shadow").attr("x", "-60%").attr("y", "-60%").attr("width", "220%").attr("height", "220%").html(`<feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#13202b" flood-opacity="0.15"/>`);
 
     const viewport = svg.append("g").attr("class", "constellation-viewport");
+    const zoom = d3.zoom().scaleExtent([0.4, 4.5]).on("zoom", (event) => viewport.attr("transform", event.transform));
+    svg.call(zoom);
     const hullLayer = viewport.append("g");
     const linkLayer = viewport.append("g");
     const nodeLayer = viewport.append("g");
@@ -2095,7 +2145,7 @@
             <div>
               <p class="kicker">Lab-wide map</p>
               <h2>Collaboration and research landscape</h2>
-              <p>The lab-wide network is not available yet. The site could not find usable coauthor data in <code>data/scopus/lab.json</code>, <code>data/publications.bib</code>, or the individual <code>data/scopus/*.json</code> files.</p>
+              <p>The lab-wide network is not available yet. The site could not find usable coauthor data. Open the browser console: it will show whether <code>data/publications.bib</code> was loaded and parsed correctly.</p>
             </div>
           </div>
         </div>
