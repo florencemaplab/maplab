@@ -7,39 +7,27 @@
   "keywords": [
     {
       "text": "numerosity",
-      "value": 54
-    },
-    {
-      "text": "visual",
-      "value": 38
-    },
-    {
-      "text": "perception",
-      "value": 31
+      "value": 153
     },
     {
       "text": "adaptation",
-      "value": 20
+      "value": 63
+    },
+    {
+      "text": "attention",
+      "value": 54
     },
     {
       "text": "number",
-      "value": 18
-    },
-    {
-      "text": "motion",
-      "value": 17
-    },
-    {
-      "text": "children",
-      "value": 14
+      "value": 21
     },
     {
       "text": "time",
       "value": 13
     },
     {
-      "text": "attention",
-      "value": 11
+      "text": "foveal vision",
+      "value": 12
     },
     {
       "text": "math",
@@ -50,23 +38,35 @@
       "value": 10
     },
     {
-      "text": "numerosity perception",
-      "value": 10
+      "text": "visual cortex",
+      "value": 9
+    },
+    {
+      "text": "eye movements",
+      "value": 9
+    },
+    {
+      "text": "motion perception",
+      "value": 9
     },
     {
       "text": "space",
       "value": 9
     },
     {
-      "text": "brain",
+      "text": "math anxiety",
+      "value": 8
+    },
+    {
+      "text": "developmental dyscalculia",
+      "value": 8
+    },
+    {
+      "text": "number sense",
       "value": 8
     },
     {
       "text": "cognitive",
-      "value": 8
-    },
-    {
-      "text": "vision",
       "value": 8
     },
     {
@@ -82,23 +82,11 @@
       "value": 7
     },
     {
-      "text": "role",
-      "value": 7
-    },
-    {
-      "text": "perceptual",
-      "value": 7
-    },
-    {
       "text": "size",
       "value": 7
     },
     {
       "text": "information",
-      "value": 7
-    },
-    {
-      "text": "neural",
       "value": 7
     },
     {
@@ -110,16 +98,40 @@
       "value": 7
     },
     {
-      "text": "mechanisms",
+      "text": "mechanism",
       "value": 7
     },
     {
-      "text": "attentional",
-      "value": 7
+      "text": "psychophysics",
+      "value": 6
     },
     {
-      "text": "numerosity adaptation",
-      "value": 7
+      "text": "symmetry perception",
+      "value": 6
+    },
+    {
+      "text": "serial dependence",
+      "value": 6
+    },
+    {
+      "text": "navigated transcranial",
+      "value": 6
+    },
+    {
+      "text": "pupil size",
+      "value": 6
+    },
+    {
+      "text": "auditory time",
+      "value": 6
+    },
+    {
+      "text": "biological motion",
+      "value": 6
+    },
+    {
+      "text": "mapping number",
+      "value": 6
     },
     {
       "text": "motor",
@@ -132,6 +144,10 @@
     {
       "text": "sense",
       "value": 6
+    },
+    {
+      "text": "representation",
+      "value": 5
     },
     {
       "text": "discrimination",
@@ -162,10 +178,6 @@
       "value": 5
     },
     {
-      "text": "patients",
-      "value": 5
-    },
-    {
       "text": "fast",
       "value": 5
     },
@@ -178,15 +190,11 @@
       "value": 5
     },
     {
-      "text": "features",
+      "text": "featur",
       "value": 5
     },
     {
       "text": "primary",
-      "value": 5
-    },
-    {
-      "text": "cortex",
       "value": 5
     },
     {
@@ -202,87 +210,79 @@
       "value": 5
     },
     {
-      "text": "math anxiety",
-      "value": 5
-    },
-    {
-      "text": "developmental dyscalculia",
-      "value": 5
-    },
-    {
-      "text": "number sense",
-      "value": 5
-    },
-    {
-      "text": "numerosity estimation",
-      "value": 5
-    },
-    {
-      "text": "perception numerosity",
-      "value": 5
-    },
-    {
-      "text": "sensory",
+      "text": "tumour surgery",
       "value": 4
     },
     {
-      "text": "representation",
+      "text": "virtual reality",
       "value": 4
     },
     {
-      "text": "magnetic",
+      "text": "psychophysiological behavioral",
       "value": 4
     },
     {
-      "text": "functional",
+      "text": "grouping strategy",
       "value": 4
     },
     {
-      "text": "behavioral",
+      "text": "time estimation",
       "value": 4
     },
     {
-      "text": "feature",
+      "text": "millisecond second",
       "value": 4
     },
     {
-      "text": "depends",
+      "text": "separate mechanism",
       "value": 4
     },
     {
-      "text": "visuo-spatial",
+      "text": "visuo-spatial working memory",
       "value": 4
     },
     {
-      "text": "affects",
+      "text": "visuo-spatial working",
       "value": 4
     },
     {
-      "text": "developmental",
+      "text": "working memory",
       "value": 4
     },
     {
-      "text": "grouping",
+      "text": "translational real-time pupillometry",
       "value": 4
     },
     {
-      "text": "typical",
+      "text": "translational real-time",
       "value": 4
     },
     {
-      "text": "high",
+      "text": "real-time pupillometry",
       "value": 4
     },
     {
-      "text": "spontaneous",
+      "text": "primary school",
       "value": 4
     },
     {
-      "text": "navigated transcranial",
+      "text": "implied motion",
       "value": 4
     },
     {
-      "text": "transcranial magnetic",
+      "text": "math achievement",
+      "value": 4
+    },
+    {
+      "text": "shared numerical representation",
+      "value": 4
+    },
+    {
+      "text": "numerical representation action",
+      "value": 4
+    },
+    {
+      "text": "shared numerical",
       "value": 4
     }
   ],
