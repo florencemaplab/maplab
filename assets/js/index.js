@@ -742,7 +742,7 @@
       }))
       .filter((item) => item.text)
       .sort((a, b) => b.value - a.value || a.text.localeCompare(b.text))
-      .slice(0, 60);
+      .slice(0, 72);
 
     if (!words.length) return `<div class="note">No keyword data available yet.</div>`;
 
@@ -751,29 +751,125 @@
     const min = Math.min(...values, max);
     const spread = Math.max(max - min, 1);
 
-    const cloudHTML = words.map((item, index) => {
-      const ratio = Math.max(0.1, (item.value - min) / spread);
-      const size = 0.92 + ratio * 1.45;
-      const weight = Math.round(520 + ratio * 260);
-      const tone = index % 6;
-      const lift = ((index % 7) - 3) * 1.4;
-      return `
-        <span
-          class="lab-cloud-word tone-${tone}"
-          style="--cloud-size:${size.toFixed(3)}rem; --cloud-weight:${weight}; --cloud-lift:${lift.toFixed(1)}px;"
-          title="${escapeHTML(item.text)} · ${escapeHTML(numberOrDash(item.value))}">
-          ${escapeHTML(item.text)}
-        </span>
-      `;
-    }).join("");
+    const width = 1120;
+    const height = 520;
+    const cx = width / 2;
+    const cy = height / 2;
+    const boxes = [];
+
+    const overlaps = (box) => boxes.some((other) => !(
+      box.x2 < other.x1 ||
+      box.x1 > other.x2 ||
+      box.y2 < other.y1 ||
+      box.y1 > other.y2
+    ));
+
+    const placed = words.map((item, index) => {
+      const ratio = Math.max(0.08, (item.value - min) / spread);
+      const size = 15 + Math.pow(ratio, 0.72) * 48;
+      const tone = index % 7;
+
+      let rotate = 0;
+      if (index > 14 && index % 17 === 0) rotate = -18;
+      else if (index > 16 && index % 19 === 0) rotate = 18;
+      else if (index > 22 && index % 23 === 0) rotate = -35;
+
+      const estimatedWidth = Math.max(34, item.text.length * size * 0.55);
+      const estimatedHeight = size * 1.18;
+      const boxWidth = Math.abs(rotate) > 25 ? estimatedHeight + 12 : estimatedWidth + 18;
+      const boxHeight = Math.abs(rotate) > 25 ? estimatedWidth * 0.35 + 18 : estimatedHeight + 16;
+
+      let chosen = null;
+
+      if (index === 0) {
+        chosen = { x: cx, y: cy };
+      } else {
+        for (let step = 0; step < 620; step += 1) {
+          const angle = step * 0.43 + index * 1.73;
+          const radius = 4.8 * Math.sqrt(step) * (1 + index * 0.006);
+          const wobble = Math.sin(step * 0.31 + index) * 9;
+          const x = cx + Math.cos(angle) * (radius + wobble);
+          const y = cy + Math.sin(angle) * (radius * 0.58 + wobble * 0.25);
+
+          const box = {
+            x1: x - boxWidth / 2,
+            x2: x + boxWidth / 2,
+            y1: y - boxHeight / 2,
+            y2: y + boxHeight / 2
+          };
+
+          const inside = box.x1 > 18 && box.x2 < width - 18 && box.y1 > 18 && box.y2 < height - 18;
+
+          if (inside && !overlaps(box)) {
+            chosen = { x, y, box };
+            break;
+          }
+        }
+      }
+
+      if (!chosen) {
+        const ring = Math.sqrt(index + 1);
+        const angle = index * 2.399963229728653;
+        const x = cx + Math.cos(angle) * Math.min(width * 0.44, ring * 38);
+        const y = cy + Math.sin(angle) * Math.min(height * 0.38, ring * 22);
+        chosen = {
+          x,
+          y,
+          box: {
+            x1: x - boxWidth / 2,
+            x2: x + boxWidth / 2,
+            y1: y - boxHeight / 2,
+            y2: y + boxHeight / 2
+          }
+        };
+      }
+
+      const box = chosen.box || {
+        x1: chosen.x - boxWidth / 2,
+        x2: chosen.x + boxWidth / 2,
+        y1: chosen.y - boxHeight / 2,
+        y2: chosen.y + boxHeight / 2
+      };
+      boxes.push(box);
+
+      return {
+        ...item,
+        x: chosen.x,
+        y: chosen.y,
+        size,
+        rotate,
+        tone,
+        ratio
+      };
+    });
 
     return `
-      <div class="lab-keyword-cloud-art">
-        <div class="lab-keyword-cloud-backdrop backdrop-a"></div>
-        <div class="lab-keyword-cloud-backdrop backdrop-b"></div>
-        <div class="lab-keyword-cloud-inner">
-          ${cloudHTML}
-        </div>
+      <div class="lab-real-word-cloud">
+        <svg class="lab-real-word-cloud-svg"
+          viewBox="0 0 ${width} ${height}"
+          role="img"
+          aria-label="MAPLab research keyword cloud generated from publication titles">
+          <defs>
+            <radialGradient id="keywordCloudGlow" cx="50%" cy="48%" r="58%">
+              <stop offset="0%" stop-color="rgba(255,255,255,0.98)" />
+              <stop offset="72%" stop-color="rgba(247,251,252,0.84)" />
+              <stop offset="100%" stop-color="rgba(238,246,249,0.72)" />
+            </radialGradient>
+          </defs>
+          <rect x="8" y="8" width="${width - 16}" height="${height - 16}" rx="34" class="lab-real-word-cloud-bg"></rect>
+          <circle cx="${(width * 0.23).toFixed(1)}" cy="${(height * 0.24).toFixed(1)}" r="170" class="lab-real-word-cloud-aura aura-a"></circle>
+          <circle cx="${(width * 0.78).toFixed(1)}" cy="${(height * 0.70).toFixed(1)}" r="190" class="lab-real-word-cloud-aura aura-b"></circle>
+          ${placed.map((item, index) => `
+            <text class="lab-real-cloud-word tone-${item.tone}"
+              x="${item.x.toFixed(1)}"
+              y="${item.y.toFixed(1)}"
+              font-size="${item.size.toFixed(1)}"
+              opacity="${(0.58 + Math.min(0.40, item.ratio * 0.42)).toFixed(2)}"
+              transform="rotate(${item.rotate} ${item.x.toFixed(1)} ${item.y.toFixed(1)})">
+              <title>${escapeHTML(item.text)} · ${escapeHTML(numberOrDash(item.value))}</title>${escapeHTML(item.text)}
+            </text>
+          `).join("")}
+        </svg>
       </div>
     `;
   }
@@ -2189,7 +2285,7 @@
               <span>lab-wide</span>
             </div>
             ${labKeywordCloudHTML(data.keywords || [])}
-            <p class="lab-atlas-note">Keyword cloud is generated from publication titles in the shared Scopus/BibTeX record.</p>
+            <p class="lab-atlas-note">Keyword cloud generated from publication titles in the shared Scopus/BibTeX record.</p>
           </div>
         </div>
       </div>
