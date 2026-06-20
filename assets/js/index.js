@@ -1400,52 +1400,120 @@
     style.id = "lab-atlas-vos-styles";
     style.textContent = `
       .lab-network-card {
-        padding: 1rem;
+        padding: clamp(0.85rem, 1.5vw, 1.1rem);
       }
 
-      .lab-network-toolbar {
+      .lab-network-toolbar-deluxe {
+        align-items: stretch;
+        gap: 0.85rem;
+        margin: 0 0 0.9rem;
+      }
+
+      .lab-network-controls {
         display: flex;
         flex-wrap: wrap;
+        gap: 0.65rem;
         align-items: center;
-        justify-content: space-between;
-        gap: 0.8rem;
-        margin: 0 0 0.85rem;
       }
 
-      .lab-network-toolbar label {
+      .lab-network-controls label {
+        min-height: 2.45rem;
         display: inline-flex;
         align-items: center;
-        gap: 0.55rem;
+        gap: 0.5rem;
+        padding: 0.35rem 0.55rem;
+        border: 1px solid rgba(220, 227, 234, 0.95);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.74);
         color: var(--muted, #5d6a75);
-        font-size: 0.84rem;
-        font-weight: 640;
+        font-size: 0.8rem;
+        font-weight: 720;
       }
 
-      .lab-network-toolbar input[type="range"] {
-        width: 180px;
-      }
-
-      .lab-network-hint {
+      .lab-network-controls label span:first-child {
         color: var(--subtle, #7b8893);
-        font-size: 0.78rem;
+        font-size: 0.72rem;
+        font-weight: 850;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
       }
 
-      .lab-network-stage {
+      .lab-search-label input {
+        width: min(210px, 38vw);
+        border: 0;
+        outline: 0;
+        background: transparent;
+        color: var(--ink, #13202b);
+        font: inherit;
+        font-weight: 650;
+      }
+
+      .lab-network-controls select {
+        border: 0;
+        outline: 0;
+        background: transparent;
+        color: var(--navy, #153e5c);
+        font: inherit;
+        font-weight: 780;
+      }
+
+      .lab-network-controls input[type="range"] {
+        width: 145px;
+        accent-color: var(--blue, #1f6c94);
+      }
+
+      .lab-check-label {
+        padding-right: 0.7rem !important;
+      }
+
+      .lab-check-label input {
+        accent-color: var(--blue, #1f6c94);
+      }
+
+      .lab-network-actions {
+        display: inline-flex;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+      .lab-network-actions button {
+        border: 1px solid rgba(31, 108, 148, 0.15);
+        border-radius: 999px;
+        background: var(--accent-soft, #e8f3f7);
+        color: var(--navy, #153e5c);
+        padding: 0.55rem 0.75rem;
+        font: inherit;
+        font-size: 0.82rem;
+        font-weight: 780;
+        cursor: pointer;
+      }
+
+      .lab-network-actions button:hover {
+        background: #dceff5;
+      }
+
+      .lab-network-stage-deluxe {
         position: relative;
-        min-height: 640px;
-        border-radius: 22px;
+        min-height: 680px;
+        border-radius: 24px;
         overflow: hidden;
         border: 1px solid rgba(226, 232, 236, 0.95);
         background:
-          radial-gradient(circle at 14% 16%, rgba(43, 127, 136, 0.08), transparent 22%),
-          radial-gradient(circle at 85% 10%, rgba(31, 108, 148, 0.09), transparent 24%),
-          linear-gradient(180deg, #fbfdfe, #f5f9fb);
+          radial-gradient(circle at 14% 16%, rgba(43, 127, 136, 0.10), transparent 23%),
+          radial-gradient(circle at 86% 12%, rgba(31, 108, 148, 0.11), transparent 25%),
+          linear-gradient(180deg, #fbfdfe, #f4f9fb);
       }
 
       .lab-network-canvas {
         width: 100%;
-        height: 640px;
+        height: 680px;
         display: block;
+        cursor: grab;
+      }
+
+      .lab-network-canvas:active {
+        cursor: grabbing;
       }
 
       .lab-network-overlay {
@@ -1458,9 +1526,9 @@
         position: absolute;
         top: 0.95rem;
         right: 0.95rem;
-        padding: 0.45rem 0.65rem;
+        padding: 0.48rem 0.68rem;
         border-radius: 999px;
-        background: rgba(255, 255, 255, 0.86);
+        background: rgba(255, 255, 255, 0.88);
         border: 1px solid rgba(220, 227, 234, 0.95);
         color: var(--muted, #5d6a75);
         font-size: 0.78rem;
@@ -1471,12 +1539,12 @@
         position: absolute;
         left: 0.95rem;
         bottom: 0.95rem;
-        max-width: min(440px, calc(100% - 1.9rem));
-        padding: 0.8rem 0.95rem;
-        border-radius: 16px;
+        max-width: min(460px, calc(100% - 1.9rem));
+        padding: 0.82rem 0.95rem;
+        border-radius: 17px;
         background: rgba(255, 255, 255, 0.94);
         border: 1px solid rgba(220, 227, 234, 0.95);
-        box-shadow: 0 18px 36px rgba(19, 32, 43, 0.08);
+        box-shadow: 0 18px 36px rgba(19, 32, 43, 0.09);
         color: var(--muted, #5d6a75);
         font-size: 0.84rem;
         line-height: 1.45;
@@ -1485,44 +1553,68 @@
       .lab-network-tooltip strong {
         display: block;
         color: var(--navy, #153e5c);
-        font-size: 0.95rem;
-        margin-bottom: 0.16rem;
+        font-size: 0.98rem;
+        margin-bottom: 0.18rem;
+      }
+
+      .lab-network-footer {
+        display: grid;
+        gap: 0.5rem;
+        margin-top: 0.82rem;
       }
 
       .lab-network-legend {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.55rem 0.9rem;
-        margin: 0.85rem 0 0;
+        gap: 0.48rem 0.72rem;
         color: var(--subtle, #7b8893);
-        font-size: 0.78rem;
+        font-size: 0.76rem;
       }
 
       .lab-network-legend span {
         display: inline-flex;
         align-items: center;
-        gap: 0.38rem;
+        gap: 0.34rem;
+        padding: 0.28rem 0.48rem;
+        border-radius: 999px;
+        border: 1px solid rgba(220, 227, 234, 0.8);
+        background: rgba(255, 255, 255, 0.7);
       }
 
       .lab-network-legend i {
-        width: 0.8rem;
-        height: 0.8rem;
+        width: 0.72rem;
+        height: 0.72rem;
         border-radius: 999px;
         display: inline-block;
       }
 
+      .lab-network-legend em {
+        color: var(--subtle, #7b8893);
+        font-style: normal;
+      }
+
+      .lab-network-hint {
+        color: var(--subtle, #7b8893);
+        font-size: 0.78rem;
+      }
+
       @media (max-width: 980px) {
-        .lab-network-stage {
-          min-height: 520px;
+        .lab-network-stage-deluxe {
+          min-height: 540px;
         }
 
         .lab-network-canvas {
-          height: 520px;
+          height: 540px;
+        }
+
+        .lab-network-actions {
+          justify-content: flex-start;
         }
       }
     `;
     document.head.appendChild(style);
   }
+
 
   function vosTooltipHTML(node) {
     const role = node.type === "lab" ? `MAPLab member${node.category ? ` · ${escapeHTML(node.category)}` : ""}` : "External collaborator";
@@ -1543,35 +1635,109 @@
     injectLabAtlasVOSStyles();
     const d3 = await ensureD3();
 
-    const allNodes = network.nodes.map((node) => ({ ...node }));
-    const allEdges = (network.edges || []).map((edge) => ({ ...edge, count: Number(edge.count || 1) }));
-    const maxWeight = d3.max(allEdges, (d) => d.count) || 1;
-    const maxDocuments = d3.max(allNodes, (d) => Number(d.documents || d.weight || 1)) || 1;
-    const maxStrength = d3.max(allNodes, (d) => Number(d.total_link_strength || d.weight || 1)) || 1;
-    const maxCluster = d3.max(allNodes, (d) => Number(d.cluster || 0)) || 0;
+    const allNodesRaw = network.nodes.map((node) => ({
+      ...node,
+      documents: Number(node.documents || node.weight || 0),
+      total_link_strength: Number(node.total_link_strength || node.weight || 0),
+      cluster: Number(node.cluster || 0)
+    }));
+
+    const allEdgesRaw = (network.edges || []).map((edge) => ({
+      ...edge,
+      count: Number(edge.count || 1)
+    }));
+
+    const maxWeight = d3.max(allEdgesRaw, (d) => d.count) || 1;
+    const maxDocuments = d3.max(allNodesRaw, (d) => d.documents || 1) || 1;
+    const maxStrength = d3.max(allNodesRaw, (d) => d.total_link_strength || 1) || 1;
+    const maxCluster = d3.max(allNodesRaw, (d) => d.cluster || 0) || 0;
+
+    const clusterPalette = [
+      "#1f6c94", "#2b7f88", "#7b5ea7", "#c97b32", "#9b4c77",
+      "#2a8a5e", "#5b6c9b", "#b84f4f", "#5e8b2d", "#8b6a2d",
+      "#3f7eaa", "#7b8f36"
+    ];
+
     const clusterColor = d3.scaleOrdinal()
       .domain(d3.range(maxCluster + 1))
-      .range(["#1f6c94", "#2b7f88", "#7b5ea7", "#c97b32", "#9b4c77", "#2a8a5e", "#5b6c9b", "#b84f4f", "#5e8b2d", "#8b6a2d"]);
+      .range(clusterPalette);
+
+    const idToNode = new Map(allNodesRaw.map((node) => [node.id, node]));
+    const linkStrengthByNode = new Map();
+    allNodesRaw.forEach((node) => linkStrengthByNode.set(node.id, 0));
+    allEdgesRaw.forEach((edge) => {
+      linkStrengthByNode.set(edge.source, (linkStrengthByNode.get(edge.source) || 0) + edge.count);
+      linkStrengthByNode.set(edge.target, (linkStrengthByNode.get(edge.target) || 0) + edge.count);
+    });
+
+    allNodesRaw.forEach((node) => {
+      node.total_link_strength = Math.max(node.total_link_strength || 0, linkStrengthByNode.get(node.id) || 0);
+    });
+
+    function clusterName(clusterId) {
+      const members = allNodesRaw
+        .filter((node) => node.cluster === clusterId && node.type !== "lab")
+        .sort((a, b) => (b.total_link_strength - a.total_link_strength) || (b.documents - a.documents))
+        .slice(0, 2)
+        .map((node) => labShortName(node.name));
+      return members.length ? members.join(" / ") : `Cluster ${clusterId + 1}`;
+    }
+
+    function defaultMode() {
+      return allNodesRaw.length > 260 ? "core" : "full";
+    }
 
     container.innerHTML = `
-      <div class="lab-network-toolbar">
-        <label>Minimum shared papers
-          <input type="range" min="1" max="${Math.max(1, maxWeight)}" step="1" value="1" data-edge-threshold>
-          <strong data-edge-threshold-value>1</strong>
-        </label>
-        <div class="lab-network-hint">Zoom and pan like a map. Hover a node to inspect collaborations.</div>
-      </div>
-      <div class="lab-network-stage">
-        <svg class="lab-network-canvas" viewBox="0 0 980 640" preserveAspectRatio="xMidYMid meet"></svg>
-        <div class="lab-network-overlay">
-          <div class="lab-network-status" data-lab-network-status></div>
-          <div class="lab-network-tooltip" data-lab-network-tooltip>Hover a node to inspect an author and their collaboration strength.</div>
+      <div class="lab-network-toolbar lab-network-toolbar-deluxe">
+        <div class="lab-network-controls">
+          <label class="lab-search-label">
+            <span>Search</span>
+            <input type="search" placeholder="author name…" data-network-search>
+          </label>
+
+          <label>
+            <span>View</span>
+            <select data-network-mode>
+              <option value="full">Full network</option>
+              <option value="core">Core map</option>
+              <option value="lab">Lab neighbourhood</option>
+              <option value="strong">Strong links</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Minimum shared papers</span>
+            <input type="range" min="1" max="${Math.max(1, maxWeight)}" step="1" value="1" data-edge-threshold>
+            <strong data-edge-threshold-value>1</strong>
+          </label>
+
+          <label class="lab-check-label">
+            <input type="checkbox" checked data-network-labels>
+            <span>Labels</span>
+          </label>
+        </div>
+
+        <div class="lab-network-actions">
+          <button type="button" data-network-reset>Reset view</button>
+          <button type="button" data-network-clear>Clear focus</button>
         </div>
       </div>
-      <div class="lab-network-legend">
-        <span><i style="background:#153e5c"></i>MAPLab members</span>
-        <span><i style="background:#1f6c94"></i>External collaborators / cluster-colored nodes</span>
-        <span><i style="background:linear-gradient(90deg, #dfe9ef, #7fa6bd)"></i>Link thickness = coauthorship strength</span>
+
+      <div class="lab-network-stage lab-network-stage-deluxe">
+        <svg class="lab-network-canvas" viewBox="0 0 1040 680" preserveAspectRatio="xMidYMid meet"></svg>
+        <div class="lab-network-overlay">
+          <div class="lab-network-status" data-lab-network-status></div>
+          <div class="lab-network-tooltip" data-lab-network-tooltip>
+            Hover a node to inspect an author. Click to keep the focus.
+          </div>
+        </div>
+      </div>
+
+      <div class="lab-network-footer">
+        <div class="lab-network-legend" data-cluster-legend></div>
+        <div class="lab-network-hint">
+          Mouse wheel or trackpad to zoom, drag to pan. Link thickness shows repeated coauthorship.
+        </div>
       </div>
     `;
 
@@ -1580,86 +1746,270 @@
     const status = container.querySelector("[data-lab-network-status]");
     const slider = container.querySelector("[data-edge-threshold]");
     const sliderValue = container.querySelector("[data-edge-threshold-value]");
+    const searchInput = container.querySelector("[data-network-search]");
+    const modeSelect = container.querySelector("[data-network-mode]");
+    const labelsToggle = container.querySelector("[data-network-labels]");
+    const resetButton = container.querySelector("[data-network-reset]");
+    const clearButton = container.querySelector("[data-network-clear]");
+    const clusterLegend = container.querySelector("[data-cluster-legend]");
 
-    const width = 980;
-    const height = 640;
+    if (modeSelect) modeSelect.value = defaultMode();
+
+    const width = 1040;
+    const height = 680;
+
     svg.selectAll("*").remove();
+
+    const defs = svg.append("defs");
+
+    defs.append("filter")
+      .attr("id", "vos-glow")
+      .attr("x", "-70%")
+      .attr("y", "-70%")
+      .attr("width", "240%")
+      .attr("height", "240%")
+      .html(`
+        <feGaussianBlur stdDeviation="4.5" result="coloredBlur"></feGaussianBlur>
+        <feMerge>
+          <feMergeNode in="coloredBlur"></feMergeNode>
+          <feMergeNode in="SourceGraphic"></feMergeNode>
+        </feMerge>
+      `);
+
+    defs.append("filter")
+      .attr("id", "vos-node-shadow")
+      .attr("x", "-70%")
+      .attr("y", "-70%")
+      .attr("width", "240%")
+      .attr("height", "240%")
+      .html(`<feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#13202b" flood-opacity="0.16"/>`);
+
     const viewport = svg.append("g").attr("class", "vos-viewport");
-    const linkLayer = viewport.append("g");
-    const nodeLayer = viewport.append("g");
-    const labelLayer = viewport.append("g");
+    const hullLayer = viewport.append("g").attr("class", "vos-hulls");
+    const linkLayer = viewport.append("g").attr("class", "vos-links");
+    const nodeLayer = viewport.append("g").attr("class", "vos-nodes");
+    const labelLayer = viewport.append("g").attr("class", "vos-labels");
 
-    svg.call(
-      d3.zoom()
-        .scaleExtent([0.35, 4])
-        .on("zoom", (event) => viewport.attr("transform", event.transform))
-    );
+    const zoom = d3.zoom()
+      .scaleExtent([0.28, 5.5])
+      .on("zoom", (event) => viewport.attr("transform", event.transform));
 
-    function updateStatus(nodes, links, threshold) {
-      status.textContent = `${nodes.length} authors · ${links.length} links · threshold ≥ ${threshold}`;
+    svg.call(zoom);
+    resetButton.addEventListener("click", () => {
+      svg.transition().duration(450).call(zoom.transform, d3.zoomIdentity);
+    });
+
+    let pinnedNodeId = "";
+    let currentDraw = null;
+
+    function baseNodeRank(node) {
+      return (node.type === "lab" ? 100000 : 0) + Number(node.total_link_strength || 0) * 8 + Number(node.documents || 0);
     }
 
-    function draw(threshold) {
-      sliderValue.textContent = String(threshold);
-      const links = allEdges.filter((edge) => edge.count >= threshold);
-      const keepIds = new Set();
-      links.forEach((edge) => {
-        keepIds.add(edge.source);
-        keepIds.add(edge.target);
-      });
-      allNodes.filter((node) => node.type === "lab").forEach((node) => keepIds.add(node.id));
-      const nodes = allNodes.filter((node) => keepIds.has(node.id));
-      const nodeMap = new Map(nodes.map((node) => [node.id, node]));
-      const filteredLinks = links.filter((edge) => nodeMap.has(edge.source) && nodeMap.has(edge.target));
+    function filteredGraph() {
+      const threshold = Number(slider.value || 1);
+      const mode = modeSelect.value || "full";
 
-      updateStatus(nodes, filteredLinks, threshold);
+      let candidateNodes = [...allNodesRaw];
+      const labIds = new Set(candidateNodes.filter((node) => node.type === "lab").map((node) => node.id));
+
+      if (mode === "core") {
+        const external = candidateNodes
+          .filter((node) => node.type !== "lab")
+          .sort((a, b) => baseNodeRank(b) - baseNodeRank(a))
+          .slice(0, 170);
+        candidateNodes = [...candidateNodes.filter((node) => node.type === "lab"), ...external];
+      }
+
+      if (mode === "lab") {
+        const labLinked = new Set();
+        allEdgesRaw.forEach((edge) => {
+          if (edge.count < threshold) return;
+          const sourceLab = labIds.has(edge.source);
+          const targetLab = labIds.has(edge.target);
+          if (sourceLab && !targetLab) labLinked.add(edge.target);
+          if (targetLab && !sourceLab) labLinked.add(edge.source);
+          if (sourceLab && targetLab) {
+            labLinked.add(edge.source);
+            labLinked.add(edge.target);
+          }
+        });
+        const external = candidateNodes
+          .filter((node) => node.type !== "lab" && labLinked.has(node.id))
+          .sort((a, b) => baseNodeRank(b) - baseNodeRank(a))
+          .slice(0, 220);
+        candidateNodes = [...candidateNodes.filter((node) => node.type === "lab"), ...external];
+      }
+
+      if (mode === "strong") {
+        const autoThreshold = Math.max(threshold, Math.min(maxWeight, Math.max(2, Math.ceil(maxWeight * 0.18))));
+        const ids = new Set();
+        allEdgesRaw.forEach((edge) => {
+          if (edge.count >= autoThreshold) {
+            ids.add(edge.source);
+            ids.add(edge.target);
+          }
+        });
+        candidateNodes = candidateNodes.filter((node) => node.type === "lab" || ids.has(node.id));
+      }
+
+      const keepIds = new Set(candidateNodes.map((node) => node.id));
+      let edges = allEdgesRaw.filter((edge) => edge.count >= threshold && keepIds.has(edge.source) && keepIds.has(edge.target));
+
+      if (mode === "strong") {
+        const autoThreshold = Math.max(threshold, Math.min(maxWeight, Math.max(2, Math.ceil(maxWeight * 0.18))));
+        edges = allEdgesRaw.filter((edge) => edge.count >= autoThreshold && keepIds.has(edge.source) && keepIds.has(edge.target));
+      }
+
+      const connectedIds = new Set();
+      edges.forEach((edge) => {
+        connectedIds.add(edge.source);
+        connectedIds.add(edge.target);
+      });
+      candidateNodes.filter((node) => node.type === "lab").forEach((node) => connectedIds.add(node.id));
+
+      const nodes = candidateNodes.filter((node) => connectedIds.has(node.id));
+      const nodeIds = new Set(nodes.map((node) => node.id));
+      edges = edges.filter((edge) => nodeIds.has(edge.source) && nodeIds.has(edge.target));
+
+      const search = normalizeName(searchInput.value || "");
+      let searchMatches = new Set();
+      if (search) {
+        nodes.forEach((node) => {
+          if (normalizeName(node.name).includes(search)) searchMatches.add(node.id);
+        });
+      }
+
+      return { nodes: nodes.map((node) => ({ ...node })), edges: edges.map((edge) => ({ ...edge })), threshold, mode, searchMatches };
+    }
+
+    function updateClusterLegend(nodes) {
+      const clusters = Array.from(
+        d3.rollups(
+          nodes.filter((node) => node.type !== "lab"),
+          (items) => ({
+            count: items.length,
+            strength: d3.sum(items, (item) => Number(item.total_link_strength || 0)),
+            label: clusterName(Number(items[0].cluster || 0))
+          }),
+          (node) => Number(node.cluster || 0)
+        )
+      )
+        .sort((a, b) => b[1].strength - a[1].strength)
+        .slice(0, 8);
+
+      clusterLegend.innerHTML = clusters.map(([clusterId, info]) => `
+        <span><i style="background:${clusterColor(clusterId)}"></i>${escapeHTML(info.label)} <em>${info.count}</em></span>
+      `).join("");
+    }
+
+    function labelForNode(node, importantIds, searchMatches) {
+      if (node.type === "lab") return true;
+      if (searchMatches && searchMatches.has(node.id)) return true;
+      return importantIds.has(node.id);
+    }
+
+    function draw() {
+      const graph = filteredGraph();
+      const nodes = graph.nodes;
+      const links = graph.edges;
+
+      sliderValue.textContent = String(graph.threshold);
+      status.textContent = `${nodes.length} authors · ${links.length} links · ${graph.mode.replaceAll("-", " ")}`;
+
+      updateClusterLegend(nodes);
+
+      const nodeById = new Map(nodes.map((node) => [node.id, node]));
+      const linkObjects = links
+        .map((edge) => ({
+          ...edge,
+          source: nodeById.get(edge.source),
+          target: nodeById.get(edge.target)
+        }))
+        .filter((edge) => edge.source && edge.target);
 
       const simulation = d3.forceSimulation(nodes)
-        .force("link", d3.forceLink(filteredLinks).id((d) => d.id).distance((d) => 26 + 135 / Math.sqrt(d.count)).strength((d) => Math.min(0.9, 0.16 + Math.log1p(d.count) * 0.18)))
-        .force("charge", d3.forceManyBody().strength((d) => d.type === "lab" ? -430 : -135))
+        .force("link", d3.forceLink(linkObjects)
+          .id((d) => d.id)
+          .distance((d) => {
+            const base = d.source.type === "lab" || d.target.type === "lab" ? 76 : 42;
+            return base + 145 / Math.sqrt(d.count || 1);
+          })
+          .strength((d) => Math.min(0.94, 0.18 + Math.log1p(d.count || 1) * 0.19)))
+        .force("charge", d3.forceManyBody().strength((d) => d.type === "lab" ? -620 : -170))
         .force("center", d3.forceCenter(width / 2, height / 2))
         .force("collide", d3.forceCollide().radius((d) => {
-          const base = d.type === "lab" ? 14 : 4;
-          return base + Math.sqrt(Number(d.total_link_strength || d.documents || 1)) * 1.35;
-        }).iterations(2))
-        .force("x", d3.forceX(width / 2).strength(0.02))
-        .force("y", d3.forceY(height / 2).strength(0.02));
+          const strength = Math.max(Number(d.total_link_strength || 0), Number(d.documents || 1));
+          return (d.type === "lab" ? 19 : 6) + Math.sqrt(strength) * 1.35;
+        }).iterations(3))
+        .force("x", d3.forceX((d) => {
+          const cluster = Number(d.cluster || 0);
+          const angle = (Math.PI * 2 * cluster) / Math.max(3, maxCluster + 1);
+          return width / 2 + Math.cos(angle) * (d.type === "lab" ? 55 : 150);
+        }).strength((d) => d.type === "lab" ? 0.045 : 0.032))
+        .force("y", d3.forceY((d) => {
+          const cluster = Number(d.cluster || 0);
+          const angle = (Math.PI * 2 * cluster) / Math.max(3, maxCluster + 1);
+          return height / 2 + Math.sin(angle) * (d.type === "lab" ? 38 : 112);
+        }).strength((d) => d.type === "lab" ? 0.045 : 0.032));
 
       simulation.stop();
-      for (let i = 0; i < 320; i += 1) simulation.tick();
+      for (let i = 0; i < 360; i += 1) simulation.tick();
 
+      const edgeWidth = d3.scaleSqrt().domain([1, maxWeight]).range([0.35, 5.8]);
+      const radiusScale = d3.scaleSqrt().domain([1, Math.max(maxDocuments, maxStrength)]).range([4.2, 21]);
+      const labelImportantIds = new Set(
+        [...nodes]
+          .filter((node) => node.type !== "lab")
+          .sort((a, b) => baseNodeRank(b) - baseNodeRank(a))
+          .slice(0, 26)
+          .map((node) => node.id)
+      );
+
+      const linked = new Map();
+      linkObjects.forEach((edge) => {
+        linked.set(`${edge.source.id}||${edge.target.id}`, edge.count);
+        linked.set(`${edge.target.id}||${edge.source.id}`, edge.count);
+      });
+
+      hullLayer.selectAll("*").remove();
       linkLayer.selectAll("*").remove();
       nodeLayer.selectAll("*").remove();
       labelLayer.selectAll("*").remove();
 
-      const linked = new Map();
-      filteredLinks.forEach((edge) => {
-        linked.set(`${edge.source}||${edge.target}`, edge.count);
-        linked.set(`${edge.target}||${edge.source}`, edge.count);
-      });
+      const hullGroups = d3.groups(nodes.filter((node) => node.type !== "lab"), (node) => node.cluster)
+        .filter(([, items]) => items.length >= 4);
 
-      const linkWidth = d3.scaleSqrt().domain([1, maxWeight]).range([0.7, 4.5]);
-      const nodeRadius = d3.scaleSqrt().domain([1, Math.max(maxDocuments, maxStrength)]).range([4.5, 20]);
+      hullLayer.selectAll("path")
+        .data(hullGroups)
+        .enter()
+        .append("path")
+        .attr("d", ([, items]) => {
+          const points = items.map((node) => [node.x, node.y]);
+          const hull = d3.polygonHull(points);
+          if (!hull) return "";
+          return `M${hull.map((point) => point.join(",")).join("L")}Z`;
+        })
+        .attr("fill", ([cluster]) => clusterColor(cluster))
+        .attr("opacity", 0.055)
+        .attr("stroke", ([cluster]) => clusterColor(cluster))
+        .attr("stroke-opacity", 0.15)
+        .attr("stroke-width", 1);
 
       const linkSelection = linkLayer.selectAll("line")
-        .data(filteredLinks)
+        .data(linkObjects)
         .enter()
         .append("line")
         .attr("x1", (d) => d.source.x)
         .attr("y1", (d) => d.source.y)
         .attr("x2", (d) => d.target.x)
         .attr("y2", (d) => d.target.y)
-        .attr("stroke", "rgba(82, 128, 156, 0.28)")
-        .attr("stroke-width", (d) => linkWidth(d.count))
+        .attr("stroke", (d) => {
+          if (d.source.type === "lab" && d.target.type === "lab") return "rgba(21, 62, 92, 0.34)";
+          return "rgba(73, 121, 150, 0.24)";
+        })
+        .attr("stroke-width", (d) => edgeWidth(d.count))
         .attr("stroke-linecap", "round");
-
-      const importantExternalIds = new Set(
-        [...nodes]
-          .filter((d) => d.type !== "lab")
-          .sort((a, b) => (Number(b.total_link_strength || b.documents || 0) - Number(a.total_link_strength || a.documents || 0)))
-          .slice(0, 18)
-          .map((d) => d.id)
-      );
 
       const nodeSelection = nodeLayer.selectAll("circle")
         .data(nodes)
@@ -1667,65 +2017,122 @@
         .append("circle")
         .attr("cx", (d) => d.x)
         .attr("cy", (d) => d.y)
-        .attr("r", (d) => nodeRadius(Math.max(Number(d.total_link_strength || 0), Number(d.documents || 1))))
-        .attr("fill", (d) => d.type === "lab" ? "#153e5c" : clusterColor(Number(d.cluster || 0)))
-        .attr("stroke", (d) => d.type === "lab" ? "#ffffff" : "rgba(255,255,255,0.92)")
-        .attr("stroke-width", (d) => d.type === "lab" ? 2.6 : 1.2)
-        .attr("opacity", 0.97)
+        .attr("r", (d) => {
+          const value = Math.max(Number(d.total_link_strength || 0), Number(d.documents || 1));
+          return d.type === "lab" ? radiusScale(value) + 4 : radiusScale(value);
+        })
+        .attr("fill", (d) => d.type === "lab" ? "#153e5c" : clusterColor(d.cluster || 0))
+        .attr("stroke", (d) => d.type === "lab" ? "#ffffff" : "rgba(255,255,255,0.94)")
+        .attr("stroke-width", (d) => d.type === "lab" ? 3 : 1.4)
+        .attr("opacity", (d) => graph.searchMatches.size && !graph.searchMatches.has(d.id) ? 0.25 : 0.96)
+        .attr("filter", (d) => d.type === "lab" ? "url(#vos-node-shadow)" : null)
         .style("cursor", "pointer");
 
+      const labelsAreOn = labelsToggle.checked;
+      const labelNodes = labelsAreOn
+        ? nodes.filter((node) => labelForNode(node, labelImportantIds, graph.searchMatches))
+        : nodes.filter((node) => node.type === "lab" || graph.searchMatches.has(node.id));
+
       const labelSelection = labelLayer.selectAll("text")
-        .data(nodes.filter((d) => d.type === "lab" || importantExternalIds.has(d.id)))
+        .data(labelNodes)
         .enter()
         .append("text")
         .attr("x", (d) => d.x)
-        .attr("y", (d) => d.y - nodeRadius(Math.max(Number(d.total_link_strength || 0), Number(d.documents || 1))) - 6)
+        .attr("y", (d) => {
+          const value = Math.max(Number(d.total_link_strength || 0), Number(d.documents || 1));
+          const r = d.type === "lab" ? radiusScale(value) + 4 : radiusScale(value);
+          return d.y - r - 7;
+        })
         .attr("text-anchor", "middle")
-        .attr("font-size", (d) => d.type === "lab" ? 11.8 : 10.4)
-        .attr("font-weight", (d) => d.type === "lab" ? 780 : 650)
+        .attr("font-size", (d) => d.type === "lab" ? 12.3 : 10.6)
+        .attr("font-weight", (d) => d.type === "lab" ? 820 : 690)
         .attr("fill", "#13202b")
         .attr("paint-order", "stroke")
         .attr("stroke", "rgba(255,255,255,0.96)")
-        .attr("stroke-width", 3.5)
+        .attr("stroke-width", 3.6)
+        .attr("opacity", (d) => graph.searchMatches.size && !graph.searchMatches.has(d.id) && d.type !== "lab" ? 0.25 : 1)
         .text((d) => labShortName(d.name));
 
-      function setFocus(focusNode) {
+      function applyFocus(focusNode, pinned = false) {
         if (!focusNode) {
-          tooltip.textContent = "Hover a node to inspect an author and their collaboration strength.";
-          nodeSelection.attr("opacity", 0.97).attr("stroke-width", (d) => d.type === "lab" ? 2.6 : 1.2);
-          linkSelection.attr("stroke", "rgba(82, 128, 156, 0.28)").attr("opacity", 1);
+          if (pinnedNodeId) {
+            const pinnedNode = nodes.find((node) => node.id === pinnedNodeId);
+            if (pinnedNode) {
+              applyFocus(pinnedNode, true);
+              return;
+            }
+          }
+          tooltip.innerHTML = "Hover a node to inspect an author. Click to keep the focus.";
+          nodeSelection.attr("opacity", (d) => graph.searchMatches.size && !graph.searchMatches.has(d.id) ? 0.25 : 0.96)
+            .attr("stroke-width", (d) => d.type === "lab" ? 3 : 1.4);
+          linkSelection.attr("opacity", 1).attr("stroke", (d) => d.source.type === "lab" && d.target.type === "lab" ? "rgba(21, 62, 92, 0.34)" : "rgba(73, 121, 150, 0.24)");
           labelSelection.attr("opacity", 1);
           return;
         }
 
-        tooltip.innerHTML = vosTooltipHTML(focusNode);
-        nodeSelection.attr("opacity", (d) => {
-          if (d.id === focusNode.id) return 1;
-          return linked.has(`${focusNode.id}||${d.id}`) ? 1 : 0.16;
-        }).attr("stroke-width", (d) => d.id === focusNode.id ? 3.8 : (d.type === "lab" ? 2.6 : 1.2));
+        tooltip.innerHTML = `${vosTooltipHTML(focusNode)}${pinned ? `<div style="margin-top:.28rem;color:#7b8893">Pinned focus. Click Clear focus to reset.</div>` : ""}`;
+
+        nodeSelection
+          .attr("opacity", (d) => {
+            if (d.id === focusNode.id) return 1;
+            return linked.has(`${focusNode.id}||${d.id}`) ? 0.95 : 0.10;
+          })
+          .attr("stroke-width", (d) => d.id === focusNode.id ? 4.2 : (d.type === "lab" ? 3 : 1.4));
 
         linkSelection
-          .attr("opacity", (d) => (d.source.id === focusNode.id || d.target.id === focusNode.id) ? 1 : 0.08)
-          .attr("stroke", (d) => (d.source.id === focusNode.id || d.target.id === focusNode.id) ? "rgba(34, 114, 129, 0.62)" : "rgba(82, 128, 156, 0.20)");
+          .attr("opacity", (d) => (d.source.id === focusNode.id || d.target.id === focusNode.id) ? 1 : 0.055)
+          .attr("stroke", (d) => (d.source.id === focusNode.id || d.target.id === focusNode.id) ? "rgba(25, 116, 130, 0.68)" : "rgba(73, 121, 150, 0.18)");
 
         labelSelection.attr("opacity", (d) => {
           if (d.id === focusNode.id) return 1;
           if (linked.has(`${focusNode.id}||${d.id}`)) return 1;
-          if (d.type === "lab") return 0.45;
+          if (d.type === "lab") return 0.36;
           return 0.08;
         });
       }
 
       nodeSelection
-        .on("mouseenter", (_event, d) => setFocus(d))
-        .on("mouseleave", () => setFocus(null));
+        .on("mouseenter", (_event, d) => {
+          if (!pinnedNodeId) applyFocus(d);
+        })
+        .on("mouseleave", () => {
+          if (!pinnedNodeId) applyFocus(null);
+        })
+        .on("click", (event, d) => {
+          event.stopPropagation();
+          pinnedNodeId = pinnedNodeId === d.id ? "" : d.id;
+          applyFocus(pinnedNodeId ? d : null, Boolean(pinnedNodeId));
+        });
 
-      setFocus(null);
+      svg.on("click", () => {
+        pinnedNodeId = "";
+        applyFocus(null);
+      });
+
+      currentDraw = { applyFocus, nodes };
+      applyFocus(null);
     }
 
-    draw(Number(slider.value || 1));
-    slider.addEventListener("input", () => draw(Number(slider.value || 1)));
+    function redraw() {
+      pinnedNodeId = "";
+      draw();
+    }
+
+    draw();
+
+    slider.addEventListener("input", redraw);
+    modeSelect.addEventListener("change", redraw);
+    labelsToggle.addEventListener("change", redraw);
+    searchInput.addEventListener("input", () => {
+      pinnedNodeId = "";
+      draw();
+    });
+    clearButton.addEventListener("click", () => {
+      pinnedNodeId = "";
+      if (currentDraw) currentDraw.applyFocus(null);
+    });
   }
+
 
   async function renderLabAtlas(profiles) {
     const grid = $("[data-people-grid]");
