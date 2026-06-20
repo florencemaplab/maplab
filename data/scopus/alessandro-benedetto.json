@@ -1,138 +1,469 @@
 {
   "slug": "alessandro-benedetto",
   "name": "Alessandro Benedetto",
-  "generated_at": "2026-06-20T18:55:50Z",
-  "source": "Scopus Search API; Scopus Abstract Retrieval when authorized",
+  "generated_at": "2026-06-20T19:11:55Z",
+  "source": "Scopus Search API for metrics/keywords; shared BibTeX for coauthor counts",
   "metrics": {
     "scopus_author_id": "57189371872",
-    "document_count": null,
-    "citation_count": null,
-    "cited_by_count": null,
-    "h_index": null
+    "citation_count": 397,
+    "cited_by_count": 397,
+    "h_index": 11
   },
   "publications_analyzed": 23,
   "abstracts_found": 0,
   "keywords": [
     {
       "text": "visual",
-      "value": 6
+      "value": 12
     },
     {
       "text": "modulation",
-      "value": 3
+      "value": 6
     },
     {
       "text": "perceptual",
-      "value": 3
+      "value": 6
     },
     {
       "text": "saccadic",
-      "value": 3
+      "value": 6
     },
     {
       "text": "serial dependence",
-      "value": 3
+      "value": 5
     },
     {
       "text": "modulation visual",
-      "value": 3
+      "value": 5
     },
     {
       "text": "translational real-time",
-      "value": 3
+      "value": 5
     },
     {
       "text": "real-time pupillometry",
-      "value": 3
+      "value": 5
     },
     {
       "text": "saccadic suppression",
-      "value": 3
+      "value": 5
     },
     {
       "text": "sensory",
-      "value": 2
+      "value": 4
     },
     {
       "text": "early",
-      "value": 2
+      "value": 4
     },
     {
       "text": "vision",
-      "value": 2
+      "value": 4
     },
     {
       "text": "discrimination",
-      "value": 2
+      "value": 4
     },
     {
       "text": "serial",
-      "value": 2
+      "value": 4
     },
     {
       "text": "dependence",
-      "value": 2
+      "value": 4
     },
     {
       "text": "meye",
-      "value": 2
+      "value": 4
     },
     {
       "text": "translational",
-      "value": 2
+      "value": 4
     },
     {
       "text": "real-time",
-      "value": 2
+      "value": 4
     },
     {
       "text": "pupillometry",
-      "value": 2
+      "value": 4
     },
     {
       "text": "rhythm",
-      "value": 2
+      "value": 4
     },
     {
       "text": "sensitivity",
-      "value": 2
+      "value": 4
     },
     {
       "text": "action",
-      "value": 2
+      "value": 4
     },
     {
       "text": "suppression",
-      "value": 2
+      "value": 4
+    },
+    {
+      "text": "adaptation acts",
+      "value": 3
+    },
+    {
+      "text": "acts directly",
+      "value": 3
+    },
+    {
+      "text": "directly sensory",
+      "value": 3
+    },
+    {
+      "text": "sensory representation",
+      "value": 3
+    },
+    {
+      "text": "representation numerosity",
+      "value": 3
+    },
+    {
+      "text": "optimal feature",
+      "value": 3
+    },
+    {
+      "text": "feature encoding",
+      "value": 3
+    },
+    {
+      "text": "encoding early",
+      "value": 3
+    },
+    {
+      "text": "early vision",
+      "value": 3
+    },
+    {
+      "text": "speed visual",
+      "value": 3
+    },
+    {
+      "text": "visual discrimination",
+      "value": 3
+    },
+    {
+      "text": "discrimination differs",
+      "value": 3
+    },
+    {
+      "text": "differs foveola",
+      "value": 3
+    },
+    {
+      "text": "foveola perifovea",
+      "value": 3
+    },
+    {
+      "text": "perifovea combined",
+      "value": 3
+    },
+    {
+      "text": "combined behavioral",
+      "value": 3
+    },
+    {
+      "text": "behavioral investigation",
+      "value": 3
+    },
+    {
+      "text": "role motor",
+      "value": 3
+    },
+    {
+      "text": "motor effort",
+      "value": 3
+    },
+    {
+      "text": "effort sensorimotor",
+      "value": 3
+    },
+    {
+      "text": "sensorimotor number",
+      "value": 3
+    },
+    {
+      "text": "number system",
+      "value": 3
+    },
+    {
+      "text": "active vision",
+      "value": 3
+    },
+    {
+      "text": "vision look",
+      "value": 3
+    },
+    {
+      "text": "look reflects",
+      "value": 3
+    },
+    {
+      "text": "reflects looking",
+      "value": 3
+    },
+    {
+      "text": "dependence decoding",
+      "value": 3
+    },
+    {
+      "text": "decoding visual",
+      "value": 3
+    },
+    {
+      "text": "visual evoked",
+      "value": 3
+    },
+    {
+      "text": "evoked potentials",
+      "value": 3
+    },
+    {
+      "text": "readiness potential",
+      "value": 3
+    },
+    {
+      "text": "potential correlates",
+      "value": 3
     }
   ],
   "coauthors": [
     {
-      "name": "Mazziotti R.",
+      "name": "Maria Concetta Morrone",
+      "count": 8
+    },
+    {
+      "name": "David Charles Burr",
+      "count": 5
+    },
+    {
+      "name": "Giovanni Anobile",
       "count": 2
     },
     {
-      "name": "Castellotti S.",
+      "name": "Roberto Arrighi",
+      "count": 2
+    },
+    {
+      "name": "Martina Poletti",
+      "count": 2
+    },
+    {
+      "name": "Hao Tam Ho",
+      "count": 2
+    },
+    {
+      "name": "Guido Marco Cicchini",
+      "count": 2
+    },
+    {
+      "name": "Raffaele Mazziotti",
+      "count": 2
+    },
+    {
+      "name": "Fabio Carrara",
+      "count": 2
+    },
+    {
+      "name": "Aurelia Viglione",
+      "count": 2
+    },
+    {
+      "name": "Leonardo Lupori",
+      "count": 2
+    },
+    {
+      "name": "Luca Lo Verde",
+      "count": 2
+    },
+    {
+      "name": "Giulia Ricci",
+      "count": 2
+    },
+    {
+      "name": "Giulia Sagona",
+      "count": 2
+    },
+    {
+      "name": "Giuseppe Amato",
+      "count": 2
+    },
+    {
+      "name": "Tommaso Pizzorusso",
+      "count": 2
+    },
+    {
+      "name": "Paola Binda",
+      "count": 2
+    },
+    {
+      "name": "Egle Casavecchia",
       "count": 1
     },
     {
-      "name": "Ranieri G.",
+      "name": "Samantha K. Jenks",
       "count": 1
     },
     {
-      "name": "Galluzzi F.",
+      "name": "Maruti V. Mishra",
       "count": 1
     },
     {
-      "name": "Rocca C.",
+      "name": "Barry Giesbrecht",
       "count": 1
     },
     {
-      "name": "Turco F.",
+      "name": "Serena Castellotti",
       "count": 1
     },
     {
-      "name": "Cicchini G.M.",
+      "name": "Giacomo Mazzotta",
+      "count": 1
+    },
+    {
+      "name": "Maria Michela Del Viva",
+      "count": 1
+    },
+    {
+      "name": "Eleonora Chelli",
+      "count": 1
+    },
+    {
+      "name": "Irene Petrizzo",
+      "count": 1
+    },
+    {
+      "name": "Igor Kagan",
+      "count": 1
+    },
+    {
+      "name": "Filippo Galluzzi",
+      "count": 1
+    },
+    {
+      "name": "Giacomo Ranieri",
+      "count": 1
+    },
+    {
+      "name": "Camilla Rocca",
+      "count": 1
+    },
+    {
+      "name": "Lucia Tiberi",
+      "count": 1
+    },
+    {
+      "name": "Sara Bargiacchi",
+      "count": 1
+    },
+    {
+      "name": "Viviana Palazzo",
+      "count": 1
+    },
+    {
+      "name": "Samuela Landini",
+      "count": 1
+    },
+    {
+      "name": "Elisa Marziali",
+      "count": 1
+    },
+    {
+      "name": "Roberto Caputo",
+      "count": 1
+    },
+    {
+      "name": "Francesca Tinelli",
+      "count": 1
+    },
+    {
+      "name": "Viviana Marchi",
+      "count": 1
+    },
+    {
+      "name": "Angelica Pagliazzi",
+      "count": 1
+    },
+    {
+      "name": "Giacomo Maria Bacci",
+      "count": 1
+    },
+    {
+      "name": "Gabriel Baud-Bovy",
+      "count": 1
+    },
+    {
+      "name": "Mauro Costagli",
+      "count": 1
+    },
+    {
+      "name": "Michela Tosetti",
+      "count": 1
+    },
+    {
+      "name": "Francesco Turco",
+      "count": 1
+    },
+    {
+      "name": "Filippo Sean Giorgi",
+      "count": 1
+    },
+    {
+      "name": "Michelangelo Maestri",
+      "count": 1
+    },
+    {
+      "name": "Riccardo Morganti",
+      "count": 1
+    },
+    {
+      "name": "Chiara Milano",
+      "count": 1
+    },
+    {
+      "name": "Chiara Pizzanelli",
+      "count": 1
+    },
+    {
+      "name": "Danilo Menicucci",
+      "count": 1
+    },
+    {
+      "name": "Angelo Gemignani",
+      "count": 1
+    },
+    {
+      "name": "Francesco Fornai",
+      "count": 1
+    },
+    {
+      "name": "Gabriele Siciliano",
+      "count": 1
+    },
+    {
+      "name": "Enrica Bonanni",
+      "count": 1
+    },
+    {
+      "name": "Alice Tomassini",
+      "count": 1
+    },
+    {
+      "name": "Diego Lozano‐Soldevilla",
+      "count": 1
+    },
+    {
+      "name": "Rufin VanRullen",
+      "count": 1
+    },
+    {
+      "name": "Donatella Spinelli",
       "count": 1
     }
   ]
