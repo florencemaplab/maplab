@@ -685,6 +685,61 @@ def enrich_entries(
         time.sleep(min(sleep, 0.1))
 
 
+
+
+def public_publication_url(entry: Dict[str, Any]) -> str:
+    """Return a public, browser-friendly publication URL.
+
+    Never expose Elsevier API URLs such as:
+    https://api.elsevier.com/content/abstract/scopus_id/...
+
+    Priority:
+    1. DOI resolver
+    2. Scopus public inward record URL
+    3. existing non-API URL
+    """
+    fields = entry.get("fields", {}) if isinstance(entry, dict) else {}
+    doi = str(fields.get("doi") or entry.get("doi") or entry.get("prism:doi") or "").strip()
+    if doi:
+        doi = doi.replace("https://doi.org/", "").replace("http://dx.doi.org/", "").strip()
+        return f"https://doi.org/{doi}"
+
+    scopus_id = (
+        str(fields.get("scopus_id") or fields.get("scp") or entry.get("scopus_id") or entry.get("dc:identifier") or "")
+        .replace("SCOPUS_ID:", "")
+        .strip()
+    )
+    eid = str(fields.get("eid") or entry.get("eid") or "").strip()
+    if scopus_id:
+        return f"https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp={scopus_id}&origin=inward"
+    if eid.startswith("2-s2.0-"):
+        scp = eid.replace("2-s2.0-", "", 1)
+        return f"https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp={scp}&origin=inward"
+
+    url = str(fields.get("url") or entry.get("prism:url") or entry.get("url") or "").strip()
+    if "api.elsevier.com/content/abstract" in url:
+        match = re.search(r"scopus_id/([0-9]+)", url)
+        if match:
+            return f"https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp={match.group(1)}&origin=inward"
+        return ""
+
+    return url
+
+
+
+def sanitize_bibtex_public_links(text: str) -> str:
+    """Rewrite Elsevier API abstract URLs in BibTeX text to public Scopus URLs."""
+    def repl(match: re.Match) -> str:
+        scp = match.group(1)
+        return f"https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp={scp}&origin=inward"
+
+    text = re.sub(
+        r"https://api\.elsevier\.com/content/abstract/scopus_id/([0-9]+)",
+        repl,
+        text,
+    )
+    return text
+
 def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="Update a shared BibTeX bibliography from Scopus.")
     parser.add_argument("--authors", default="scripts/scopus_authors.json", help="JSON config with authors")

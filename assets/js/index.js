@@ -25,7 +25,32 @@
     "irene-burgio": "phd"
   };
 
-  function escapeHTML(value) {
+  
+  function publicPublicationURL(url, doi = "", scopusId = "", eid = "") {
+    const cleanDOI = String(doi || "").replace(/^https?:\/\/(?:dx\.)?doi\.org\//i, "").trim();
+    if (cleanDOI) return `https://doi.org/${cleanDOI}`;
+
+    const rawScopus = String(scopusId || "").replace(/^SCOPUS_ID:/i, "").trim();
+    if (rawScopus) return `https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=${encodeURIComponent(rawScopus)}&origin=inward`;
+
+    const rawEid = String(eid || "").trim();
+    if (rawEid.startsWith("2-s2.0-")) {
+      return `https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=${encodeURIComponent(rawEid.replace("2-s2.0-", ""))}&origin=inward`;
+    }
+
+    const raw = String(url || "").trim();
+    if (!raw) return "";
+
+    const apiMatch = raw.match(/api\.elsevier\.com\/content\/abstract\/scopus_id\/([0-9]+)/i);
+    if (apiMatch) {
+      return `https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=${encodeURIComponent(apiMatch[1])}&origin=inward`;
+    }
+
+    return raw;
+  }
+
+
+function escapeHTML(value) {
     return String(value || "")
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
