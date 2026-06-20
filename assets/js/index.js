@@ -25,32 +25,7 @@
     "irene-burgio": "phd"
   };
 
-  
-  function publicPublicationURL(url, doi = "", scopusId = "", eid = "") {
-    const cleanDOI = String(doi || "").replace(/^https?:\/\/(?:dx\.)?doi\.org\//i, "").trim();
-    if (cleanDOI) return `https://doi.org/${cleanDOI}`;
-
-    const rawScopus = String(scopusId || "").replace(/^SCOPUS_ID:/i, "").trim();
-    if (rawScopus) return `https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=${encodeURIComponent(rawScopus)}&origin=inward`;
-
-    const rawEid = String(eid || "").trim();
-    if (rawEid.startsWith("2-s2.0-")) {
-      return `https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=${encodeURIComponent(rawEid.replace("2-s2.0-", ""))}&origin=inward`;
-    }
-
-    const raw = String(url || "").trim();
-    if (!raw) return "";
-
-    const apiMatch = raw.match(/api\.elsevier\.com\/content\/abstract\/scopus_id\/([0-9]+)/i);
-    if (apiMatch) {
-      return `https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=${encodeURIComponent(apiMatch[1])}&origin=inward`;
-    }
-
-    return raw;
-  }
-
-
-function escapeHTML(value) {
+  function escapeHTML(value) {
     return String(value || "")
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
@@ -759,41 +734,65 @@ function escapeHTML(value) {
   }
 
   function labKeywordCloudHTML(keywords) {
-    const words = (keywords || []).filter((item) => item && item.text).slice(0, 42);
+    const words = (keywords || [])
+      .filter((item) => item && item.text)
+      .map((item) => ({
+        text: String(item.text || "").trim(),
+        value: Number(item.value || item.count || 0)
+      }))
+      .filter((item) => item.text)
+      .sort((a, b) => b.value - a.value || a.text.localeCompare(b.text))
+      .slice(0, 80);
+
     if (!words.length) return `<div class="note">No lab keyword data available yet.</div>`;
 
-    const values = words.map((item) => Number(item.value || item.count || 0)).filter(Number.isFinite);
-    const min = Math.min(...values);
-    const max = Math.max(...values);
-    const cx = 310;
-    const cy = 185;
+    const values = words.map((item) => item.value).filter(Number.isFinite);
+    const max = Math.max(...values, 1);
+    const top = words.slice(0, 9);
+    const rest = words.slice(9);
+
+    const topHTML = top.map((item, index) => {
+      const ratio = Math.max(0.08, item.value / max);
+      return `
+        <div class="lab-keyword-feature" title="${escapeHTML(item.text)} · ${escapeHTML(numberOrDash(item.value))}">
+          <div class="lab-keyword-feature-rank">${String(index + 1).padStart(2, "0")}</div>
+          <div class="lab-keyword-feature-main">
+            <strong>${escapeHTML(item.text)}</strong>
+            <span>${escapeHTML(numberOrDash(item.value))}</span>
+            <i style="--keyword-ratio:${ratio.toFixed(3)}"></i>
+          </div>
+        </div>
+      `;
+    }).join("");
+
+    const chipHTML = rest.map((item, index) => {
+      const ratio = Math.max(0.08, item.value / max);
+      const size = 0.78 + ratio * 0.58;
+      return `
+        <span class="lab-keyword-chip"
+          style="--keyword-ratio:${ratio.toFixed(3)}; --keyword-size:${size.toFixed(3)}rem"
+          title="${escapeHTML(item.text)} · ${escapeHTML(numberOrDash(item.value))}">
+          ${escapeHTML(item.text)}
+        </span>
+      `;
+    }).join("");
 
     return `
-      <svg class="lab-cloud-svg" viewBox="0 0 620 370" role="img" aria-label="MAPLab keyword cloud generated from publication titles">
-        ${words.map((item, index) => {
-          const value = Number(item.value || item.count || 0);
-          const ratio = max === min ? 0.65 : (value - min) / (max - min);
-          const size = 13 + ratio * 28;
-          const angle = index * 2.399963229728653;
-          const radius = index === 0 ? 0 : 18 + Math.sqrt(index) * 35;
-          const x = cx + Math.cos(angle) * radius;
-          const y = cy + Math.sin(angle) * radius * 0.66;
-          const rotate = index > 10 && index % 9 === 0 ? -7 : index > 10 && index % 6 === 0 ? 7 : 0;
+      <div class="lab-keyword-landscape">
+        <div class="lab-keyword-summary">
+          <div>
+            <span>Topic landscape</span>
+            <strong>${escapeHTML(numberOrDash(words.length))}</strong>
+          </div>
+          <p>Most recurrent terms across MAPLab publication titles. Larger and darker items appear more often.</p>
+        </div>
 
-          return `
-            <text class="lab-cloud-word"
-              x="${x.toFixed(1)}"
-              y="${y.toFixed(1)}"
-              fill="${labKeywordColor(index)}"
-              font-size="${size.toFixed(1)}"
-              opacity="${(0.58 + Math.min(0.42, size / 76)).toFixed(2)}"
-              transform="rotate(${rotate} ${x.toFixed(1)} ${y.toFixed(1)})">
-              <title>${escapeHTML(item.text)} · ${escapeHTML(numberOrDash(value))}</title>
-              ${escapeHTML(item.text)}
-            </text>
-          `;
-        }).join("")}
-      </svg>
+        <div class="lab-keyword-feature-grid">
+          ${topHTML}
+        </div>
+
+        ${chipHTML ? `<div class="lab-keyword-chip-cloud">${chipHTML}</div>` : ""}
+      </div>
     `;
   }
 
@@ -2208,7 +2207,7 @@ function escapeHTML(value) {
               <span>lab-wide</span>
             </div>
             ${labKeywordCloudHTML(data.keywords || [])}
-            <p class="lab-atlas-note">Generated from publication titles indexed in Scopus/BibTeX. Abstracts are not used because the current Scopus API access does not provide stable abstract retrieval.</p>
+            <p class="lab-atlas-note">Keyword landscape is title-based and generated from the shared Scopus/BibTeX publication set.</p>
           </div>
         </div>
       </div>
