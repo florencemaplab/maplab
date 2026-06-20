@@ -1,7 +1,7 @@
 {
   "slug": "giovanni-anobile",
   "name": "Giovanni Anobile",
-  "generated_at": "2026-06-20T20:41:47Z",
+  "generated_at": "2026-06-20T20:46:18Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "36466056200",
@@ -244,7 +244,7 @@
     },
     {
       "name": "Guido Marco Cicchini",
-      "count": 21
+      "count": 20
     },
     {
       "name": "Elisa Castaldi",
@@ -460,14 +460,6 @@
     },
     {
       "name": "Simone Bassanelli",
-      "count": 1
-    },
-    {
-      "name": "F. Tomaiuolo",
-      "count": 1
-    },
-    {
-      "name": "S. Campana",
       "count": 1
     },
     {
