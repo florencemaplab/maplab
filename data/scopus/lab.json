@@ -1,7 +1,7 @@
 {
   "slug": "lab",
   "name": "MAPLab",
-  "generated_at": "2026-06-20T19:39:35Z",
+  "generated_at": "2026-06-20T19:48:40Z",
   "source": "Shared BibTeX generated from Scopus Search; keyword cloud generated from publication titles",
   "title_based_keywords": true,
   "abstracts_used": false,
@@ -294,614 +294,367 @@
         "name": "Giovanni Anobile",
         "type": "lab",
         "category": "",
-        "weight": 68
+        "documents": 25,
+        "total_link_strength": 0,
+        "cluster": 0
       },
       {
         "id": "roberto-arrighi",
         "name": "Roberto Arrighi",
         "type": "lab",
         "category": "",
-        "weight": 77
+        "documents": 9,
+        "total_link_strength": 0,
+        "cluster": 1
       },
       {
         "id": "alessandro-benedetto",
         "name": "Alessandro Benedetto",
         "type": "lab",
         "category": "",
-        "weight": 23
+        "documents": 15,
+        "total_link_strength": 0,
+        "cluster": 2
       },
       {
         "id": "elisa-castaldi",
         "name": "Elisa Castaldi",
         "type": "lab",
         "category": "",
-        "weight": 43
+        "documents": 19,
+        "total_link_strength": 0,
+        "cluster": 3
       },
       {
         "id": "serena-castellotti",
         "name": "Serena Castellotti",
         "type": "lab",
         "category": "",
-        "weight": 19
+        "documents": 16,
+        "total_link_strength": 0,
+        "cluster": 4
       },
       {
         "id": "irene-burgio",
         "name": "Irene Burgio",
         "type": "lab",
         "category": "",
-        "weight": 1
-      },
-      {
-        "id": "co:a:p",
-        "name": "Pooresmaeili A.",
-        "type": "coauthor",
-        "weight": 4
-      },
-      {
-        "id": "co:r:m",
-        "name": "Mazziotti R.",
-        "type": "coauthor",
-        "weight": 2
-      },
-      {
-        "id": "co:t:b",
-        "name": "Bartolini T.",
-        "type": "coauthor",
-        "weight": 1
-      },
-      {
-        "id": "co:i:t",
-        "name": "Togoli I.",
-        "type": "coauthor",
-        "weight": 3
-      },
-      {
-        "id": "co:m:f",
-        "name": "Fornaciai M.",
-        "type": "coauthor",
-        "weight": 3
-      },
-      {
-        "id": "co:d:a",
-        "name": "Alais D.",
-        "type": "coauthor",
-        "weight": 1
-      },
-      {
-        "id": "co:b:a",
-        "name": "Aruanno B.",
-        "type": "coauthor",
-        "weight": 1
-      },
-      {
-        "id": "co:c:b",
-        "name": "Bonaudo C.",
-        "type": "coauthor",
-        "weight": 4
-      },
-      {
-        "id": "co:c:bd",
-        "name": "Burr D.C.",
-        "type": "coauthor",
-        "weight": 3
-      },
-      {
-        "id": "co:c:r",
-        "name": "Rocca C.",
-        "type": "coauthor",
-        "weight": 1
-      },
-      {
-        "id": "co:d:dh",
-        "name": "de Hevia M.D.",
-        "type": "coauthor",
-        "weight": 1
-      },
-      {
-        "id": "co:f:g",
-        "name": "Galluzzi F.",
-        "type": "coauthor",
-        "weight": 1
-      },
-      {
-        "id": "co:a:b",
-        "name": "Bhat A.",
-        "type": "coauthor",
-        "weight": 1
-      },
-      {
-        "id": "co:c:c",
-        "name": "Caponi C.",
-        "type": "coauthor",
-        "weight": 3
-      },
-      {
-        "id": "co:a:f",
-        "name": "Farini A.",
-        "type": "coauthor",
-        "weight": 2
-      },
-      {
-        "id": "co:a:gp",
-        "name": "Grasso P.A.",
-        "type": "coauthor",
-        "weight": 7
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 5
       },
       {
         "id": "co:a:mm",
         "name": "Maldonado Moscoso P.A.",
-        "type": "coauthor",
-        "weight": 8
-      },
-      {
-        "id": "co:i:p",
-        "name": "Petrizzo I.",
-        "type": "coauthor",
-        "weight": 7
-      },
-      {
-        "id": "co:m:dv",
-        "name": "Del Viva M.M.",
-        "type": "coauthor",
-        "weight": 1
-      },
-      {
-        "id": "co:a:g",
-        "name": "Guzzetta A.",
-        "type": "coauthor",
-        "weight": 1
-      },
-      {
-        "id": "co:s:g",
-        "name": "Grassini S.",
-        "type": "coauthor",
-        "weight": 1
-      },
-      {
-        "id": "co:o:da",
-        "name": "D’Agostino O.",
-        "type": "coauthor",
-        "weight": 1
-      },
-      {
-        "id": "co:t:k",
-        "name": "Karaminis T.",
-        "type": "coauthor",
-        "weight": 1
-      },
-      {
-        "id": "co:g:r",
-        "name": "Ranieri G.",
-        "type": "coauthor",
-        "weight": 1
-      },
-      {
-        "id": "co:e:b",
-        "name": "Blini E.",
-        "type": "coauthor",
-        "weight": 2
-      },
-      {
-        "id": "co:p:s",
-        "name": "Stievano P.",
-        "type": "coauthor",
-        "weight": 1
-      },
-      {
-        "id": "co:d:b",
-        "name": "Burr D.",
-        "type": "coauthor",
-        "weight": 3
-      },
-      {
-        "id": "co:k:m",
-        "name": "Mikellidou K.",
-        "type": "coauthor",
-        "weight": 1
-      },
-      {
-        "id": "co:a:t",
-        "name": "Tonelli A.",
-        "type": "coauthor",
-        "weight": 2
-      },
-      {
-        "id": "co:m:m",
-        "name": "Meocci M.",
-        "type": "coauthor",
-        "weight": 2
-      },
-      {
-        "id": "co:g:g",
-        "name": "Giacomelli G.",
-        "type": "coauthor",
-        "weight": 1
+        "type": "external",
+        "category": "",
+        "documents": 8,
+        "total_link_strength": 0,
+        "cluster": 6
       },
       {
         "id": "co:m:cg",
         "name": "Cicchini G.M.",
-        "type": "coauthor",
-        "weight": 7
+        "type": "external",
+        "category": "",
+        "documents": 7,
+        "total_link_strength": 0,
+        "cluster": 7
+      },
+      {
+        "id": "co:a:gp",
+        "name": "Grasso P.A.",
+        "type": "external",
+        "category": "",
+        "documents": 7,
+        "total_link_strength": 0,
+        "cluster": 8
+      },
+      {
+        "id": "co:i:p",
+        "name": "Petrizzo I.",
+        "type": "external",
+        "category": "",
+        "documents": 7,
+        "total_link_strength": 0,
+        "cluster": 9
+      },
+      {
+        "id": "co:c:b",
+        "name": "Bonaudo C.",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 0,
+        "cluster": 10
+      },
+      {
+        "id": "co:a:p",
+        "name": "Pomè A.",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 0,
+        "cluster": 11
+      },
+      {
+        "id": "co:d:b",
+        "name": "Burr D.",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 12
+      },
+      {
+        "id": "co:c:bd",
+        "name": "Burr D.C.",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 13
+      },
+      {
+        "id": "co:c:c",
+        "name": "Caponi C.",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 14
+      },
+      {
+        "id": "co:m:f",
+        "name": "Fornaciai M.",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 15
+      },
+      {
+        "id": "co:i:t",
+        "name": "Togoli I.",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 16
+      },
+      {
+        "id": "co:f:t",
+        "name": "Turco F.",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 17
+      },
+      {
+        "id": "co:e:b",
+        "name": "Blini E.",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 18
+      },
+      {
+        "id": "co:a:f",
+        "name": "Farini A.",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 19
+      },
+      {
+        "id": "co:r:m",
+        "name": "Mazziotti R.",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 20
+      },
+      {
+        "id": "co:m:m",
+        "name": "Meocci M.",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 21
+      },
+      {
+        "id": "co:a:t",
+        "name": "Tonelli A.",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 22
+      },
+      {
+        "id": "co:d:a",
+        "name": "Alais D.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 23
+      },
+      {
+        "id": "co:b:a",
+        "name": "Aruanno B.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 24
+      },
+      {
+        "id": "co:t:b",
+        "name": "Bartolini T.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 25
+      },
+      {
+        "id": "co:a:b",
+        "name": "Bhat A.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 26
+      },
+      {
+        "id": "co:o:da",
+        "name": "D’Agostino O.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 27
+      },
+      {
+        "id": "co:d:dh",
+        "name": "de Hevia M.D.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 28
+      },
+      {
+        "id": "co:m:dv",
+        "name": "Del Viva M.M.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 29
+      },
+      {
+        "id": "co:f:g",
+        "name": "Galluzzi F.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 30
+      },
+      {
+        "id": "co:g:g",
+        "name": "Giacomelli G.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 31
+      },
+      {
+        "id": "co:s:g",
+        "name": "Grassini S.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 32
+      },
+      {
+        "id": "co:a:g",
+        "name": "Guzzetta A.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 33
       },
       {
         "id": "co:a:k",
         "name": "Karami A.",
-        "type": "coauthor",
-        "weight": 1
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 34
       },
       {
-        "id": "co:f:t",
-        "name": "Tinelli F.",
-        "type": "coauthor",
-        "weight": 3
+        "id": "co:t:k",
+        "name": "Karaminis T.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 35
+      },
+      {
+        "id": "co:k:m",
+        "name": "Mikellidou K.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 36
+      },
+      {
+        "id": "co:g:r",
+        "name": "Ranieri G.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 37
+      },
+      {
+        "id": "co:c:r",
+        "name": "Rocca C.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 38
+      },
+      {
+        "id": "co:p:s",
+        "name": "Stievano P.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 39
       }
     ],
-    "edges": [
-      {
-        "source": "giovanni-anobile",
-        "target": "roberto-arrighi",
-        "count": 38,
-        "type": "internal"
-      },
-      {
-        "source": "elisa-castaldi",
-        "target": "giovanni-anobile",
-        "count": 17,
-        "type": "internal"
-      },
-      {
-        "source": "elisa-castaldi",
-        "target": "roberto-arrighi",
-        "count": 17,
-        "type": "internal"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:a:mm",
-        "count": 8,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:a:gp",
-        "count": 7,
-        "type": "external"
-      },
-      {
-        "source": "giovanni-anobile",
-        "target": "co:a:mm",
-        "count": 7,
-        "type": "external"
-      },
-      {
-        "source": "elisa-castaldi",
-        "target": "co:a:mm",
-        "count": 6,
-        "type": "external"
-      },
-      {
-        "source": "giovanni-anobile",
-        "target": "co:i:p",
-        "count": 6,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:i:p",
-        "count": 6,
-        "type": "external"
-      },
-      {
-        "source": "giovanni-anobile",
-        "target": "co:a:gp",
-        "count": 5,
-        "type": "external"
-      },
-      {
-        "source": "giovanni-anobile",
-        "target": "co:m:cg",
-        "count": 5,
-        "type": "external"
-      },
-      {
-        "source": "elisa-castaldi",
-        "target": "co:c:b",
-        "count": 4,
-        "type": "external"
-      },
-      {
-        "source": "giovanni-anobile",
-        "target": "co:d:b",
-        "count": 3,
-        "type": "external"
-      },
-      {
-        "source": "elisa-castaldi",
-        "target": "co:c:c",
-        "count": 3,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:m:cg",
-        "count": 3,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:m:f",
-        "count": 3,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:c:bd",
-        "count": 3,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:i:t",
-        "count": 3,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:c:c",
-        "count": 2,
-        "type": "external"
-      },
-      {
-        "source": "giovanni-anobile",
-        "target": "co:e:b",
-        "count": 2,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:e:b",
-        "count": 2,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:m:m",
-        "count": 2,
-        "type": "external"
-      },
-      {
-        "source": "alessandro-benedetto",
-        "target": "co:r:m",
-        "count": 2,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:a:t",
-        "count": 2,
-        "type": "external"
-      },
-      {
-        "source": "giovanni-anobile",
-        "target": "co:c:bd",
-        "count": 2,
-        "type": "external"
-      },
-      {
-        "source": "giovanni-anobile",
-        "target": "co:a:p",
-        "count": 2,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:a:p",
-        "count": 2,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:a:f",
-        "count": 2,
-        "type": "external"
-      },
-      {
-        "source": "alessandro-benedetto",
-        "target": "giovanni-anobile",
-        "count": 2,
-        "type": "internal"
-      },
-      {
-        "source": "alessandro-benedetto",
-        "target": "roberto-arrighi",
-        "count": 2,
-        "type": "internal"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "serena-castellotti",
-        "count": 2,
-        "type": "internal"
-      },
-      {
-        "source": "giovanni-anobile",
-        "target": "co:b:a",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "giovanni-anobile",
-        "target": "co:t:b",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:t:b",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:d:b",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "elisa-castaldi",
-        "target": "co:a:k",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "serena-castellotti",
-        "target": "co:o:da",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "serena-castellotti",
-        "target": "co:m:dv",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "giovanni-anobile",
-        "target": "co:a:b",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "alessandro-benedetto",
-        "target": "co:f:g",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "alessandro-benedetto",
-        "target": "co:g:r",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "alessandro-benedetto",
-        "target": "co:c:r",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "elisa-castaldi",
-        "target": "co:c:bd",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "alessandro-benedetto",
-        "target": "co:m:cg",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "elisa-castaldi",
-        "target": "co:i:p",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "alessandro-benedetto",
-        "target": "co:f:t",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:t:k",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "serena-castellotti",
-        "target": "co:s:g",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:k:m",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "giovanni-anobile",
-        "target": "co:p:s",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "elisa-castaldi",
-        "target": "co:d:dh",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "giovanni-anobile",
-        "target": "co:f:t",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:f:t",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:g:g",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:a:g",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "roberto-arrighi",
-        "target": "co:d:a",
-        "count": 1,
-        "type": "external"
-      },
-      {
-        "source": "elisa-castaldi",
-        "target": "irene-burgio",
-        "count": 1,
-        "type": "internal"
-      },
-      {
-        "source": "giovanni-anobile",
-        "target": "irene-burgio",
-        "count": 1,
-        "type": "internal"
-      },
-      {
-        "source": "alessandro-benedetto",
-        "target": "serena-castellotti",
-        "count": 1,
-        "type": "internal"
-      },
-      {
-        "source": "elisa-castaldi",
-        "target": "serena-castellotti",
-        "count": 1,
-        "type": "internal"
-      }
-    ],
+    "edges": [],
     "stats": {
       "lab_members": 6,
       "external_collaborators": 34,
-      "edges": 60
+      "edges": 0
     }
   }
 }
