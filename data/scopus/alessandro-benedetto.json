@@ -1,8 +1,8 @@
 {
   "slug": "alessandro-benedetto",
   "name": "Alessandro Benedetto",
-  "generated_at": "2026-06-20T19:11:55Z",
-  "source": "Scopus Search API for metrics/keywords; shared BibTeX for coauthor counts",
+  "generated_at": "2026-06-20T19:24:29Z",
+  "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57189371872",
     "citation_count": 397,
@@ -235,235 +235,31 @@
   ],
   "coauthors": [
     {
-      "name": "Maria Concetta Morrone",
-      "count": 8
-    },
-    {
-      "name": "David Charles Burr",
-      "count": 5
-    },
-    {
-      "name": "Giovanni Anobile",
+      "name": "Mazziotti R.",
       "count": 2
     },
     {
-      "name": "Roberto Arrighi",
-      "count": 2
-    },
-    {
-      "name": "Martina Poletti",
-      "count": 2
-    },
-    {
-      "name": "Hao Tam Ho",
-      "count": 2
-    },
-    {
-      "name": "Guido Marco Cicchini",
-      "count": 2
-    },
-    {
-      "name": "Raffaele Mazziotti",
-      "count": 2
-    },
-    {
-      "name": "Fabio Carrara",
-      "count": 2
-    },
-    {
-      "name": "Aurelia Viglione",
-      "count": 2
-    },
-    {
-      "name": "Leonardo Lupori",
-      "count": 2
-    },
-    {
-      "name": "Luca Lo Verde",
-      "count": 2
-    },
-    {
-      "name": "Giulia Ricci",
-      "count": 2
-    },
-    {
-      "name": "Giulia Sagona",
-      "count": 2
-    },
-    {
-      "name": "Giuseppe Amato",
-      "count": 2
-    },
-    {
-      "name": "Tommaso Pizzorusso",
-      "count": 2
-    },
-    {
-      "name": "Paola Binda",
-      "count": 2
-    },
-    {
-      "name": "Egle Casavecchia",
+      "name": "Castellotti S.",
       "count": 1
     },
     {
-      "name": "Samantha K. Jenks",
+      "name": "Galluzzi F.",
       "count": 1
     },
     {
-      "name": "Maruti V. Mishra",
+      "name": "Ranieri G.",
       "count": 1
     },
     {
-      "name": "Barry Giesbrecht",
+      "name": "Rocca C.",
       "count": 1
     },
     {
-      "name": "Serena Castellotti",
+      "name": "Cicchini G.M.",
       "count": 1
     },
     {
-      "name": "Giacomo Mazzotta",
-      "count": 1
-    },
-    {
-      "name": "Maria Michela Del Viva",
-      "count": 1
-    },
-    {
-      "name": "Eleonora Chelli",
-      "count": 1
-    },
-    {
-      "name": "Irene Petrizzo",
-      "count": 1
-    },
-    {
-      "name": "Igor Kagan",
-      "count": 1
-    },
-    {
-      "name": "Filippo Galluzzi",
-      "count": 1
-    },
-    {
-      "name": "Giacomo Ranieri",
-      "count": 1
-    },
-    {
-      "name": "Camilla Rocca",
-      "count": 1
-    },
-    {
-      "name": "Lucia Tiberi",
-      "count": 1
-    },
-    {
-      "name": "Sara Bargiacchi",
-      "count": 1
-    },
-    {
-      "name": "Viviana Palazzo",
-      "count": 1
-    },
-    {
-      "name": "Samuela Landini",
-      "count": 1
-    },
-    {
-      "name": "Elisa Marziali",
-      "count": 1
-    },
-    {
-      "name": "Roberto Caputo",
-      "count": 1
-    },
-    {
-      "name": "Francesca Tinelli",
-      "count": 1
-    },
-    {
-      "name": "Viviana Marchi",
-      "count": 1
-    },
-    {
-      "name": "Angelica Pagliazzi",
-      "count": 1
-    },
-    {
-      "name": "Giacomo Maria Bacci",
-      "count": 1
-    },
-    {
-      "name": "Gabriel Baud-Bovy",
-      "count": 1
-    },
-    {
-      "name": "Mauro Costagli",
-      "count": 1
-    },
-    {
-      "name": "Michela Tosetti",
-      "count": 1
-    },
-    {
-      "name": "Francesco Turco",
-      "count": 1
-    },
-    {
-      "name": "Filippo Sean Giorgi",
-      "count": 1
-    },
-    {
-      "name": "Michelangelo Maestri",
-      "count": 1
-    },
-    {
-      "name": "Riccardo Morganti",
-      "count": 1
-    },
-    {
-      "name": "Chiara Milano",
-      "count": 1
-    },
-    {
-      "name": "Chiara Pizzanelli",
-      "count": 1
-    },
-    {
-      "name": "Danilo Menicucci",
-      "count": 1
-    },
-    {
-      "name": "Angelo Gemignani",
-      "count": 1
-    },
-    {
-      "name": "Francesco Fornai",
-      "count": 1
-    },
-    {
-      "name": "Gabriele Siciliano",
-      "count": 1
-    },
-    {
-      "name": "Enrica Bonanni",
-      "count": 1
-    },
-    {
-      "name": "Alice Tomassini",
-      "count": 1
-    },
-    {
-      "name": "Diego Lozano‐Soldevilla",
-      "count": 1
-    },
-    {
-      "name": "Rufin VanRullen",
-      "count": 1
-    },
-    {
-      "name": "Donatella Spinelli",
+      "name": "Turco F.",
       "count": 1
     }
   ]
