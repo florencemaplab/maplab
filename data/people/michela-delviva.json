@@ -6,7 +6,7 @@
   "ssd": "PSIC-01/B – Neuropsychology and cognitive neuroscience",
   "department": "NEUROFARBA, University of Florence",
   "email": "maria.delviva@unifi.it",
-  "photo": "../assets/images/michela-delviva.jpeg",
+  "photo": "../assets/images/michela-delviva.jpg",
   "photoCredit": "PisaVisionLab",
   "summary": "Professor of neuropsychology and cognitive neuroscience at the University of Florence. His research addresses visual and auditory perception, temporal processing, biological motion and multisensory integration.",
   "research": "His work studies perceptual mechanisms and neural constraints underlying time, motion and multisensory integration, with a focus on how sensory information is combined to guide perception and action.",
@@ -44,13 +44,14 @@
     }
   ],
   "aliases": [
-    "Michela Del Viva",
     "Maria Michela Del Viva",
-    "Del Viva, Serena",
-    "M Del Viva",
-    "M. Del Viva",
-    "Del Viva M",
-    "Del Viva, M",
-    "Del Viva M."
+    "Del Viva Maria Michela",
+    "Del Viva, Maria Michela",
+    "M M Del Viva",
+    "M. M. Del Viva",
+    "Del Viva M M",
+    "Del Viva, M. M.",
+    "Del Viva M.",
+    "Del Viva, M."
   ]
 }
