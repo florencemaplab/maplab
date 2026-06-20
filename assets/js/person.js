@@ -424,7 +424,7 @@ function escapeHTML(value) {
     const venue = escapeHTML(venueLine(entry));
     const year = escapeHTML(f.year || "n.d.");
     const doi = String(f.doi || "").replace(/^https?:\/\/(dx\.)?doi\.org\//i, "");
-    const url = f.url || (doi ? `https://doi.org/${doi}` : "");
+    const url = safePublicationURL(f.url, f.doi, f.scopus_id || f.scp, f.eid);
     const search = escapeHTML(normalize(`${f.title} ${formatAuthors(f.author)} ${venueLine(entry)} ${f.year} ${doi}`));
     const titleHTML = url ? `<a href="${escapeHTML(url)}">${title}</a>` : title;
 
