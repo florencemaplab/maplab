@@ -1,0 +1,127 @@
+{
+  "slug": "serena-castellotti",
+  "name": "Serena Castellotti",
+  "generated_at": "2026-06-20T18:55:50Z",
+  "source": "Scopus Search API; Scopus Abstract Retrieval when authorized",
+  "metrics": {
+    "scopus_author_id": "57205731708",
+    "document_count": null,
+    "citation_count": null,
+    "cited_by_count": null,
+    "h_index": null
+  },
+  "publications_analyzed": 19,
+  "abstracts_found": 0,
+  "keywords": [
+    {
+      "text": "cognitive",
+      "value": 4
+    },
+    {
+      "text": "behavioral",
+      "value": 3
+    },
+    {
+      "text": "visual",
+      "value": 3
+    },
+    {
+      "text": "optimal",
+      "value": 3
+    },
+    {
+      "text": "early",
+      "value": 3
+    },
+    {
+      "text": "features",
+      "value": 3
+    },
+    {
+      "text": "psychophysiological behavioral",
+      "value": 3
+    },
+    {
+      "text": "time estimation",
+      "value": 3
+    },
+    {
+      "text": "implied motion",
+      "value": 3
+    },
+    {
+      "text": "reduction",
+      "value": 2
+    },
+    {
+      "text": "vision",
+      "value": 2
+    },
+    {
+      "text": "pupil",
+      "value": 2
+    },
+    {
+      "text": "fast",
+      "value": 2
+    },
+    {
+      "text": "labels",
+      "value": 2
+    },
+    {
+      "text": "psychophysiological",
+      "value": 2
+    },
+    {
+      "text": "colour",
+      "value": 2
+    },
+    {
+      "text": "local",
+      "value": 2
+    },
+    {
+      "text": "time",
+      "value": 2
+    },
+    {
+      "text": "estimation",
+      "value": 2
+    },
+    {
+      "text": "motor",
+      "value": 2
+    },
+    {
+      "text": "implied",
+      "value": 2
+    },
+    {
+      "text": "motion",
+      "value": 2
+    },
+    {
+      "text": "paintings",
+      "value": 2
+    },
+    {
+      "text": "pupillary",
+      "value": 2
+    }
+  ],
+  "coauthors": [
+    {
+      "name": "Del Viva M.M.",
+      "count": 1
+    },
+    {
+      "name": "D’Agostino O.",
+      "count": 1
+    },
+    {
+      "name": "Grassini S.",
+      "count": 1
+    }
+  ]
+}

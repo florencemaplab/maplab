@@ -1,0 +1,279 @@
+{
+  "slug": "elisa-castaldi",
+  "name": "Elisa Castaldi",
+  "generated_at": "2026-06-20T18:55:50Z",
+  "source": "Scopus Search API; Scopus Abstract Retrieval when authorized",
+  "metrics": {
+    "scopus_author_id": "55660832000",
+    "document_count": null,
+    "citation_count": null,
+    "cited_by_count": null,
+    "h_index": null
+  },
+  "publications_analyzed": 43,
+  "abstracts_found": 0,
+  "keywords": [
+    {
+      "text": "numerosity",
+      "value": 21
+    },
+    {
+      "text": "visual",
+      "value": 10
+    },
+    {
+      "text": "perception",
+      "value": 8
+    },
+    {
+      "text": "numerosity perception",
+      "value": 6
+    },
+    {
+      "text": "brain",
+      "value": 5
+    },
+    {
+      "text": "dyscalculia",
+      "value": 5
+    },
+    {
+      "text": "developmental dyscalculia",
+      "value": 5
+    },
+    {
+      "text": "magnetic",
+      "value": 4
+    },
+    {
+      "text": "groupitizing",
+      "value": 4
+    },
+    {
+      "text": "children",
+      "value": 4
+    },
+    {
+      "text": "developmental",
+      "value": 4
+    },
+    {
+      "text": "estimation",
+      "value": 4
+    },
+    {
+      "text": "navigated transcranial",
+      "value": 4
+    },
+    {
+      "text": "transcranial magnetic",
+      "value": 4
+    },
+    {
+      "text": "magnetic stimulation",
+      "value": 4
+    },
+    {
+      "text": "adaptation numerosity",
+      "value": 4
+    },
+    {
+      "text": "tumour",
+      "value": 3
+    },
+    {
+      "text": "surgery",
+      "value": 3
+    },
+    {
+      "text": "mapping",
+      "value": 3
+    },
+    {
+      "text": "navigated",
+      "value": 3
+    },
+    {
+      "text": "transcranial",
+      "value": 3
+    },
+    {
+      "text": "stimulation",
+      "value": 3
+    },
+    {
+      "text": "functional",
+      "value": 3
+    },
+    {
+      "text": "math",
+      "value": 3
+    },
+    {
+      "text": "neural",
+      "value": 3
+    },
+    {
+      "text": "adaptation",
+      "value": 3
+    },
+    {
+      "text": "visuo-spatial",
+      "value": 3
+    },
+    {
+      "text": "spatial",
+      "value": 3
+    },
+    {
+      "text": "patients",
+      "value": 3
+    },
+    {
+      "text": "grouping",
+      "value": 3
+    },
+    {
+      "text": "number",
+      "value": 3
+    },
+    {
+      "text": "brain tumour",
+      "value": 3
+    },
+    {
+      "text": "tumour surgery",
+      "value": 3
+    },
+    {
+      "text": "grouping strategies",
+      "value": 3
+    },
+    {
+      "text": "visuo-spatial working",
+      "value": 3
+    },
+    {
+      "text": "working memory",
+      "value": 3
+    },
+    {
+      "text": "numerosity estimation",
+      "value": 3
+    },
+    {
+      "text": "plasticity",
+      "value": 2
+    },
+    {
+      "text": "ntms",
+      "value": 2
+    },
+    {
+      "text": "cognitive",
+      "value": 2
+    },
+    {
+      "text": "anxiety",
+      "value": 2
+    },
+    {
+      "text": "pupil",
+      "value": 2
+    },
+    {
+      "text": "size",
+      "value": 2
+    },
+    {
+      "text": "arithmetic",
+      "value": 2
+    },
+    {
+      "text": "auditory",
+      "value": 2
+    },
+    {
+      "text": "time",
+      "value": 2
+    },
+    {
+      "text": "impairment",
+      "value": 2
+    },
+    {
+      "text": "strategies",
+      "value": 2
+    },
+    {
+      "text": "working",
+      "value": 2
+    },
+    {
+      "text": "memory",
+      "value": 2
+    },
+    {
+      "text": "correlate",
+      "value": 2
+    },
+    {
+      "text": "geometric",
+      "value": 2
+    },
+    {
+      "text": "sequences",
+      "value": 2
+    },
+    {
+      "text": "formal",
+      "value": 2
+    },
+    {
+      "text": "cortex",
+      "value": 2
+    }
+  ],
+  "coauthors": [
+    {
+      "name": "Maldonado Moscoso P.A.",
+      "count": 6
+    },
+    {
+      "name": "Anobile G.",
+      "count": 5
+    },
+    {
+      "name": "Bonaudo C.",
+      "count": 4
+    },
+    {
+      "name": "Caponi C.",
+      "count": 3
+    },
+    {
+      "name": "Burgio I.",
+      "count": 1
+    },
+    {
+      "name": "Karami A.",
+      "count": 1
+    },
+    {
+      "name": "Castellotti S.",
+      "count": 1
+    },
+    {
+      "name": "Burr D.C.",
+      "count": 1
+    },
+    {
+      "name": "Petrizzo I.",
+      "count": 1
+    },
+    {
+      "name": "de Hevia M.D.",
+      "count": 1
+    }
+  ]
+}

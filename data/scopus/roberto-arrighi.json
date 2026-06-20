@@ -1,0 +1,343 @@
+{
+  "slug": "roberto-arrighi",
+  "name": "Roberto Arrighi",
+  "generated_at": "2026-06-20T18:55:50Z",
+  "source": "Scopus Search API; Scopus Abstract Retrieval when authorized",
+  "metrics": {
+    "scopus_author_id": "8870558800",
+    "document_count": null,
+    "citation_count": null,
+    "cited_by_count": null,
+    "h_index": null
+  },
+  "publications_analyzed": 77,
+  "abstracts_found": 0,
+  "keywords": [
+    {
+      "text": "numerosity",
+      "value": 30
+    },
+    {
+      "text": "adaptation",
+      "value": 15
+    },
+    {
+      "text": "perception",
+      "value": 15
+    },
+    {
+      "text": "visual",
+      "value": 11
+    },
+    {
+      "text": "number",
+      "value": 7
+    },
+    {
+      "text": "time",
+      "value": 6
+    },
+    {
+      "text": "math",
+      "value": 6
+    },
+    {
+      "text": "auditory",
+      "value": 6
+    },
+    {
+      "text": "motion",
+      "value": 6
+    },
+    {
+      "text": "numerosity adaptation",
+      "value": 6
+    },
+    {
+      "text": "numerosity perception",
+      "value": 6
+    },
+    {
+      "text": "role",
+      "value": 5
+    },
+    {
+      "text": "size",
+      "value": 5
+    },
+    {
+      "text": "groupitizing",
+      "value": 5
+    },
+    {
+      "text": "space",
+      "value": 5
+    },
+    {
+      "text": "children",
+      "value": 5
+    },
+    {
+      "text": "estimation",
+      "value": 5
+    },
+    {
+      "text": "vision",
+      "value": 4
+    },
+    {
+      "text": "anxiety",
+      "value": 4
+    },
+    {
+      "text": "motor",
+      "value": 4
+    },
+    {
+      "text": "temporal",
+      "value": 4
+    },
+    {
+      "text": "attention",
+      "value": 4
+    },
+    {
+      "text": "action",
+      "value": 4
+    },
+    {
+      "text": "sense",
+      "value": 4
+    },
+    {
+      "text": "pupil size",
+      "value": 4
+    },
+    {
+      "text": "math anxiety",
+      "value": 4
+    },
+    {
+      "text": "temporal numerosity",
+      "value": 4
+    },
+    {
+      "text": "numerosity estimation",
+      "value": 4
+    },
+    {
+      "text": "number sense",
+      "value": 4
+    },
+    {
+      "text": "motor adaptation",
+      "value": 4
+    },
+    {
+      "text": "biological motion",
+      "value": 4
+    },
+    {
+      "text": "sensory",
+      "value": 3
+    },
+    {
+      "text": "representation",
+      "value": 3
+    },
+    {
+      "text": "color",
+      "value": 3
+    },
+    {
+      "text": "cognitive",
+      "value": 3
+    },
+    {
+      "text": "depends",
+      "value": 3
+    },
+    {
+      "text": "information",
+      "value": 3
+    },
+    {
+      "text": "pupil",
+      "value": 3
+    },
+    {
+      "text": "visuo-spatial",
+      "value": 3
+    },
+    {
+      "text": "assessment",
+      "value": 3
+    },
+    {
+      "text": "grouping",
+      "value": 3
+    },
+    {
+      "text": "perceived",
+      "value": 3
+    },
+    {
+      "text": "neural",
+      "value": 3
+    },
+    {
+      "text": "sequences",
+      "value": 3
+    },
+    {
+      "text": "biological",
+      "value": 3
+    },
+    {
+      "text": "early",
+      "value": 3
+    },
+    {
+      "text": "compression",
+      "value": 3
+    },
+    {
+      "text": "artworks",
+      "value": 3
+    },
+    {
+      "text": "time perception",
+      "value": 3
+    },
+    {
+      "text": "grouping strategies",
+      "value": 3
+    },
+    {
+      "text": "visual auditory",
+      "value": 3
+    },
+    {
+      "text": "perceived numerosity",
+      "value": 3
+    },
+    {
+      "text": "shared numerical",
+      "value": 3
+    },
+    {
+      "text": "numerical representation",
+      "value": 3
+    },
+    {
+      "text": "representation action",
+      "value": 3
+    }
+  ],
+  "coauthors": [
+    {
+      "name": "Anobile G.",
+      "count": 9
+    },
+    {
+      "name": "Maldonado Moscoso P.A.",
+      "count": 8
+    },
+    {
+      "name": "Grasso P.A.",
+      "count": 7
+    },
+    {
+      "name": "Petrizzo I.",
+      "count": 6
+    },
+    {
+      "name": "Cicchini G.M.",
+      "count": 3
+    },
+    {
+      "name": "Fornaciai M.",
+      "count": 3
+    },
+    {
+      "name": "Burr D.C.",
+      "count": 3
+    },
+    {
+      "name": "Togoli I.",
+      "count": 3
+    },
+    {
+      "name": "Benedetto A.",
+      "count": 2
+    },
+    {
+      "name": "Castellotti S.",
+      "count": 2
+    },
+    {
+      "name": "Caponi C.",
+      "count": 2
+    },
+    {
+      "name": "Blini E.",
+      "count": 2
+    },
+    {
+      "name": "Meocci M.",
+      "count": 2
+    },
+    {
+      "name": "Castaldi E.",
+      "count": 2
+    },
+    {
+      "name": "Tonelli A.",
+      "count": 2
+    },
+    {
+      "name": "Farini A.",
+      "count": 2
+    },
+    {
+      "name": "Bartolini T.",
+      "count": 1
+    },
+    {
+      "name": "Burr D.",
+      "count": 1
+    },
+    {
+      "name": "Karaminis T.",
+      "count": 1
+    },
+    {
+      "name": "Mikellidou K.",
+      "count": 1
+    },
+    {
+      "name": "Pooresmaeili A.",
+      "count": 1
+    },
+    {
+      "name": "Tinelli F.",
+      "count": 1
+    },
+    {
+      "name": "Giacomelli G.",
+      "count": 1
+    },
+    {
+      "name": "Guzzetta A.",
+      "count": 1
+    },
+    {
+      "name": "Alais D.",
+      "count": 1
+    },
+    {
+      "name": "Piegari A.",
+      "count": 1
+    }
+  ]
+}
