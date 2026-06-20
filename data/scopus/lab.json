@@ -1,7 +1,7 @@
 {
   "slug": "lab",
   "name": "MAPLab",
-  "generated_at": "2026-06-20T20:41:47Z",
+  "generated_at": "2026-06-20T20:46:18Z",
   "source": "Shared BibTeX generated from Scopus Search; keyword cloud generated from publication titles",
   "title_based_keywords": true,
   "abstracts_used": false,
@@ -295,7 +295,7 @@
         "type": "lab",
         "category": "",
         "documents": 68,
-        "total_link_strength": 240,
+        "total_link_strength": 237,
         "cluster": 0
       },
       {
@@ -357,8 +357,8 @@
         "name": "Guido Marco Cicchini",
         "type": "external",
         "category": "",
-        "documents": 34,
-        "total_link_strength": 113,
+        "documents": 33,
+        "total_link_strength": 110,
         "cluster": 0
       },
       {
@@ -2234,15 +2234,6 @@
         "cluster": 1
       },
       {
-        "id": "co:tomaiuolo:f",
-        "name": "F. Tomaiuolo",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 3,
-        "cluster": 0
-      },
-      {
         "id": "co:galluzzi:f",
         "name": "Filippo Galluzzi",
         "type": "external",
@@ -2322,15 +2313,6 @@
         "documents": 1,
         "total_link_strength": 3,
         "cluster": 1
-      },
-      {
-        "id": "co:campana:s",
-        "name": "S. Campana",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 3,
-        "cluster": 0
       },
       {
         "id": "co:tomassini:a",
@@ -2478,7 +2460,7 @@
       {
         "source": "co:cicchini:g",
         "target": "giovanni-anobile",
-        "count": 21,
+        "count": 20,
         "type": "coauthorship"
       },
       {
@@ -6736,24 +6718,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:campana:s",
-        "target": "co:cicchini:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:campana:s",
-        "target": "co:tomaiuolo:f",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:campana:s",
-        "target": "giovanni-anobile",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:capelli:f",
         "target": "co:capialbi:n",
         "count": 1,
@@ -7344,12 +7308,6 @@
       {
         "source": "co:cicchini:g",
         "target": "co:scabia:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cicchini:g",
-        "target": "co:tomaiuolo:f",
         "count": 1,
         "type": "coauthorship"
       },
@@ -10336,12 +10294,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:tomaiuolo:f",
-        "target": "giovanni-anobile",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:tosetti:m",
         "target": "roberto-arrighi",
         "count": 1,
@@ -10416,8 +10368,8 @@
     ],
     "stats": {
       "lab_members": 6,
-      "external_collaborators": 234,
-      "edges": 1327
+      "external_collaborators": 232,
+      "edges": 1322
     }
   }
 }
