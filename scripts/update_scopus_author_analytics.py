@@ -351,8 +351,13 @@ def request_json(
             message = f"Request failed: HTTP {response.status_code}: {detail}"
             if fail_soft:
                 # Optional metadata calls may be unavailable depending on the API
-                # entitlement. Keep logs readable: only print non-view errors.
-                if "View parameter entered is not valid" not in detail:
+                # entitlement. Keep logs readable and fall back to Search/BibTeX.
+                quiet_fragments = [
+                    "View parameter entered is not valid",
+                    "AUTHORIZATION_ERROR",
+                    "not authorized to access",
+                ]
+                if not any(fragment in detail for fragment in quiet_fragments):
                     print(f"Warning: {message}", file=sys.stderr)
                 return None
             raise RuntimeError(message)
@@ -758,6 +763,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     parser.add_argument("--bibtex", default="data/publications.bib", help="Shared BibTeX file used for accurate coauthor counts")
     parser.add_argument("--max-results-per-author", type=int, default=DEFAULT_MAX_RESULTS_PER_AUTHOR)
     parser.add_argument("--sleep", type=float, default=0.2)
+    parser.add_argument("--include-abstracts", action="store_true", help="Try Abstract Retrieval for abstracts. Off by default because many Scopus keys are not authorized.")
     args = parser.parse_args(argv)
 
     api_key = normalize_space(os.environ.get("SCOPUS_API_KEY"))
@@ -810,12 +816,13 @@ def main(argv: Optional[List[str]] = None) -> int:
             full_authors: List[str] = []
 
             eid = first_value(entry, "eid")
-            if eid and eid not in seen_eids:
+            if args.include_abstracts and eid and eid not in seen_eids:
                 seen_eids.add(eid)
                 try:
                     abstract, full_authors = fetch_abstract_metadata(session, eid)
-                except Exception as exc:
-                    print(f"Warning: abstract metadata failed for {eid}: {exc}", file=sys.stderr)
+                except Exception:
+                    # Abstract Retrieval is optional; Search/BibTeX are enough for this site.
+                    abstract, full_authors = "", []
 
             if abstract:
                 abstracts_found += 1
@@ -852,7 +859,7 @@ def main(argv: Optional[List[str]] = None) -> int:
             "slug": slug,
             "name": profile.get("name", name),
             "generated_at": now,
-            "source": "Scopus Search API for metrics/keywords; shared BibTeX for coauthor counts",
+            "source": "Scopus Search API for metrics/keywords; shared BibTeX for coauthor counts; abstracts only if --include-abstracts is enabled",
             "metrics": metrics,
             "publications_analyzed": len(entries),
             "abstracts_found": abstracts_found,
