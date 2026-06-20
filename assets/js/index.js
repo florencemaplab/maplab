@@ -283,6 +283,30 @@
         letter-spacing: -0.05em;
       }
 
+
+      /* Full-width homepage atlas layout */
+      #lab-collaboration-atlas .lab-atlas-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      #lab-collaboration-atlas .lab-network-card {
+        grid-column: 1 / -1;
+      }
+
+      #lab-collaboration-atlas .lab-cloud-card {
+        grid-column: 1 / -1;
+      }
+
+      #lab-collaboration-atlas .lab-atlas-shell {
+        max-width: min(1500px, calc(100vw - 2rem));
+      }
+
+      #lab-collaboration-atlas .lab-network-card .lab-card-title {
+        margin-bottom: 0.8rem;
+      }
+
       @media (max-width: 980px) {
         .people-plane-grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1531,7 +1555,7 @@
 
       .lab-network-stage-simple {
         position: relative;
-        min-height: 610px;
+        min-height: 820px;
         border-radius: 24px;
         overflow: hidden;
         border: 1px solid rgba(226, 232, 236, 0.95);
@@ -1543,7 +1567,7 @@
 
       .lab-network-canvas {
         width: 100%;
-        height: 610px;
+        height: 820px;
         display: block;
         cursor: grab;
       }
@@ -1624,11 +1648,11 @@
 
       @media (max-width: 980px) {
         .lab-network-stage-simple {
-          min-height: 520px;
+          min-height: 620px;
         }
 
         .lab-network-canvas {
-          height: 520px;
+          height: 620px;
         }
 
         .lab-network-footer-simple {
@@ -1705,7 +1729,7 @@
       </div>
 
       <div class="lab-network-stage-simple">
-        <svg class="lab-network-canvas" viewBox="0 0 980 610" preserveAspectRatio="xMidYMid meet"></svg>
+        <svg class="lab-network-canvas" viewBox="0 0 1180 820" preserveAspectRatio="xMidYMid meet"></svg>
         <div class="lab-network-overlay">
           <div class="lab-network-status" data-lab-network-status></div>
           <div class="lab-network-tooltip" data-lab-network-tooltip>Hover a node to inspect a collaborator. Click a node to keep the focus.</div>
@@ -1731,8 +1755,8 @@
     const resetButton = container.querySelector("[data-network-reset]");
     const clearButton = container.querySelector("[data-network-clear]");
 
-    const width = 980;
-    const height = 610;
+    const width = 1180;
+    const height = 820;
     svg.selectAll("*").remove();
     const defs = svg.append("defs");
     defs.append("filter").attr("id", "simple-node-shadow").attr("x", "-60%").attr("y", "-60%").attr("width", "220%").attr("height", "220%").html(`<feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#13202b" flood-opacity="0.15"/>`);
