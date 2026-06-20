@@ -4,123 +4,107 @@
   "source": "Static network generated from data/publications.bib",
   "title_based_keywords": true,
   "abstracts_used": false,
-  "keyword_extractor": "curated_keywords_v1",
+  "keyword_extractor": "curated_keywords_v1_manual_json_patch",
   "keywords": [
     {
       "text": "numerosity perception",
-      "value": 105
+      "value": 204
     },
     {
       "text": "adaptation",
-      "value": 41
-    },
-    {
-      "text": "attention",
-      "value": 29
-    },
-    {
-      "text": "motion perception",
-      "value": 18
-    },
-    {
-      "text": "developmental dyscalculia",
-      "value": 16
-    },
-    {
-      "text": "numerosity adaptation",
-      "value": 12
+      "value": 84
     },
     {
       "text": "pupil responses",
-      "value": 12
+      "value": 56
     },
     {
-      "text": "subitizing",
-      "value": 10
-    },
-    {
-      "text": "visual perception",
-      "value": 8
+      "text": "eye movements",
+      "value": 44
     },
     {
       "text": "multisensory perception",
-      "value": 8
+      "value": 44
+    },
+    {
+      "text": "attention",
+      "value": 32
+    },
+    {
+      "text": "auditory perception",
+      "value": 32
+    },
+    {
+      "text": "developmental dyscalculia",
+      "value": 28
+    },
+    {
+      "text": "subitizing",
+      "value": 25
+    },
+    {
+      "text": "numerosity adaptation",
+      "value": 24
+    },
+    {
+      "text": "foveal vision",
+      "value": 16
+    },
+    {
+      "text": "number sense",
+      "value": 16
     },
     {
       "text": "numerosity estimation",
-      "value": 7
+      "value": 16
     },
     {
-      "text": "temporal processing",
-      "value": 5
+      "text": "transcranial magnetic stimulation",
+      "value": 12
+    },
+    {
+      "text": "visual cortex",
+      "value": 12
+    },
+    {
+      "text": "motion perception",
+      "value": 12
+    },
+    {
+      "text": "psychophysics",
+      "value": 10
+    },
+    {
+      "text": "symmetry perception",
+      "value": 8
+    },
+    {
+      "text": "serial dependence",
+      "value": 8
+    },
+    {
+      "text": "biological motion",
+      "value": 6
     },
     {
       "text": "groupitizing",
       "value": 5
     },
     {
-      "text": "eye movements",
-      "value": 5
-    },
-    {
-      "text": "number sense",
-      "value": 5
-    },
-    {
-      "text": "transcranial magnetic stimulation",
-      "value": 3
-    },
-    {
-      "text": "visual cortex",
-      "value": 3
-    },
-    {
-      "text": "biological motion",
-      "value": 3
-    },
-    {
-      "text": "reading",
-      "value": 3
-    },
-    {
-      "text": "foveal vision",
-      "value": 2
-    },
-    {
-      "text": "psychophysics",
-      "value": 2
-    },
-    {
-      "text": "symmetry perception",
-      "value": 2
-    },
-    {
-      "text": "serial dependence",
-      "value": 2
-    },
-    {
-      "text": "working memory",
-      "value": 2
-    },
-    {
-      "text": "contrast sensitivity",
-      "value": 2
-    },
-    {
       "text": "active vision",
-      "value": 1
-    },
-    {
-      "text": "visual attention",
-      "value": 1
+      "value": 4
     },
     {
       "text": "magnetic resonance imaging",
-      "value": 1
+      "value": 4
     },
     {
-      "text": "binocular vision",
-      "value": 1
+      "text": "working memory",
+      "value": 4
+    },
+    {
+      "text": "reading",
+      "value": 2
     }
   ],
   "network": {

@@ -811,7 +811,7 @@ def main() -> int:
         "source": "Static network generated from data/publications.bib",
         "title_based_keywords": True,
         "abstracts_used": False,
-        "keyword_extractor": "curated_keywords_v1",
+        "keyword_extractor": "curated_keywords_v1_manual_json_patch",
         "keywords": network.pop("keywords", []),
         "network": network,
     }
