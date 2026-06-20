@@ -633,6 +633,10 @@
         align-items: stretch;
       }
 
+      .scopus-visuals-single {
+        grid-template-columns: 1fr;
+      }
+
       .word-cloud-card,
       .coauthor-card {
         min-width: 0;
@@ -951,8 +955,7 @@
 
     const metrics = data.metrics || {};
     const keywordCount = (data.keywords || []).length;
-    const coauthorCount = (data.coauthors || []).length;
-    if (!keywordCount && !coauthorCount && !Object.keys(metrics).length) return;
+    if (!keywordCount && !Object.keys(metrics).length) return;
 
     const wrapper = document.createElement("div");
     wrapper.className = "scopus-analytics";
@@ -967,22 +970,16 @@
         ${metricCard("h-index", metrics.h_index)}
       </div>
 
-      <div class="scopus-visuals">
+      <div class="scopus-visuals scopus-visuals-single">
         <div class="word-cloud-card">
           <h4>Keyword cloud</h4>
           ${wordCloudHTML(data.keywords)}
-          <p class="scopus-note">Generated from Scopus titles and abstracts when accessible.</p>
-        </div>
-
-        <div class="coauthor-card">
-          <h4>Coauthor network</h4>
-          ${coauthorNetworkHTML(profile.name, data.coauthors)}
+          <p class="scopus-note">Generated from publication titles indexed in Scopus. Abstract retrieval is disabled because this Scopus key does not provide stable abstract access.</p>
         </div>
       </div>
     `;
 
     panel.appendChild(wrapper);
-    activateCoauthorTooltip(wrapper);
   }
 
   async function init() {

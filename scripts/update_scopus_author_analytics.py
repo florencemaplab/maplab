@@ -405,6 +405,157 @@ def match_author_to_profile(author: Dict[str, Any], profiles: Dict[str, Dict[str
     return slug, {"slug": slug, "name": name, "aliases": [name]}
 
 
+def aliases_for_profile(profile: Dict[str, Any]) -> List[str]:
+    name = normalize_space(profile.get("name"))
+    aliases = profile.get("aliases", [])
+    if not isinstance(aliases, list):
+        aliases = []
+    return list(OrderedDict.fromkeys([name, *aliases]))
+
+
+def lab_slugs_for_bib_entry(entry: Dict[str, Any], profiles: Dict[str, Dict[str, Any]]) -> List[str]:
+    fields = entry.get("fields", {})
+    explicit_slugs = fields.get("maplab_slugs", "")
+    if explicit_slugs:
+        slugs = [item.strip() for item in re.split(r"\s*(?:;|\||,)\s*", explicit_slugs) if item.strip()]
+        return [slug for slug in slugs if slug in profiles]
+
+    authors = [bib_author_display_name(author) for author in split_bib_authors(fields.get("author", ""))]
+    slugs: List[str] = []
+    for slug, profile in profiles.items():
+        aliases = aliases_for_profile(profile)
+        if any(name_matches_alias(author, aliases) for author in authors):
+            slugs.append(slug)
+    return slugs
+
+
+def is_any_lab_member(author_name: str, profiles: Dict[str, Dict[str, Any]]) -> bool:
+    return any(name_matches_alias(author_name, aliases_for_profile(profile)) for profile in profiles.values())
+
+
+def build_lab_network_from_bibtex(
+    bib_entries: List[Dict[str, Any]],
+    profiles: Dict[str, Dict[str, Any]],
+    max_external_nodes: int = 120,
+) -> Dict[str, Any]:
+    external_counts: Counter[str] = Counter()
+    best_names: Dict[str, str] = {}
+    external_edges: Counter[Tuple[str, str]] = Counter()
+    internal_edges: Counter[Tuple[str, str]] = Counter()
+    lab_counts: Counter[str] = Counter()
+
+    for entry in bib_entries:
+        fields = entry.get("fields", {})
+        lab_slugs = lab_slugs_for_bib_entry(entry, profiles)
+        if not lab_slugs:
+            continue
+
+        for slug in lab_slugs:
+            lab_counts[slug] += 1
+
+        for a_index, source in enumerate(sorted(set(lab_slugs))):
+            for target in sorted(set(lab_slugs))[a_index + 1:]:
+                internal_edges[(source, target)] += 1
+
+        authors = [bib_author_display_name(author) for author in split_bib_authors(fields.get("author", ""))]
+        seen_external = set()
+
+        for author in authors:
+            if not author or is_any_lab_member(author, profiles):
+                continue
+
+            key = canonical_author_key(author)
+            if not key or key in seen_external:
+                continue
+            seen_external.add(key)
+
+            external_counts[key] += 1
+            previous = best_names.get(key)
+            if previous is None or author_name_score(author) > author_name_score(previous):
+                best_names[key] = author
+
+            for slug in lab_slugs:
+                external_edges[(slug, key)] += 1
+
+    top_external_keys = {key for key, _count in external_counts.most_common(max_external_nodes)}
+    nodes: List[Dict[str, Any]] = []
+    edges: List[Dict[str, Any]] = []
+
+    for slug, profile in profiles.items():
+        nodes.append({
+            "id": slug,
+            "name": profile.get("name", slug),
+            "type": "lab",
+            "category": normalize_space(profile.get("category") or profile.get("group")),
+            "weight": int(lab_counts.get(slug, 0)),
+        })
+
+    for key in top_external_keys:
+        nodes.append({
+            "id": f"co:{key}",
+            "name": best_names.get(key, key),
+            "type": "coauthor",
+            "weight": int(external_counts[key]),
+        })
+
+    for (source, key), count in external_edges.items():
+        if key in top_external_keys:
+            edges.append({
+                "source": source,
+                "target": f"co:{key}",
+                "count": int(count),
+                "type": "external",
+            })
+
+    for (source, target), count in internal_edges.items():
+        edges.append({
+            "source": source,
+            "target": target,
+            "count": int(count),
+            "type": "internal",
+        })
+
+    edges.sort(key=lambda item: int(item.get("count", 0)), reverse=True)
+
+    return {
+        "nodes": nodes,
+        "edges": edges,
+        "stats": {
+            "lab_members": len(profiles),
+            "external_collaborators": len(top_external_keys),
+            "edges": len(edges),
+        },
+    }
+
+
+def build_lab_keyword_cloud(bib_entries: List[Dict[str, Any]], max_keywords: int = 70) -> List[Dict[str, Any]]:
+    titles = [
+        entry.get("fields", {}).get("title", "")
+        for entry in bib_entries
+        if entry.get("fields", {}).get("title", "")
+    ]
+    return keyword_counts(titles, max_keywords=max_keywords)
+
+
+def write_labwide_analytics(
+    output_dir: str | Path,
+    profiles: Dict[str, Dict[str, Any]],
+    bib_entries: List[Dict[str, Any]],
+    generated_at: str,
+) -> None:
+    output = {
+        "slug": "lab",
+        "name": "MAPLab",
+        "generated_at": generated_at,
+        "source": "Shared BibTeX generated from Scopus Search; keyword cloud generated from publication titles",
+        "title_based_keywords": True,
+        "abstracts_used": False,
+        "keywords": build_lab_keyword_cloud(bib_entries),
+        "network": build_lab_network_from_bibtex(bib_entries, profiles),
+    }
+    write_json(Path(output_dir) / "lab.json", output)
+
+
 def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="Generate per-author Scopus analytics JSON.")
     parser.add_argument("--authors", default="scripts/scopus_authors.json")
@@ -475,6 +626,13 @@ def main(argv: Optional[List[str]] = None) -> int:
 
         write_json(Path(args.output_dir) / f"{slug}.json", output)
         time.sleep(args.sleep)
+
+    write_labwide_analytics(
+        output_dir=args.output_dir,
+        profiles=profiles,
+        bib_entries=bib_entries,
+        generated_at=now,
+    )
 
     return 0
 
