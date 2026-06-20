@@ -1925,12 +1925,123 @@
     });
   }
 
+
+  function mergeKeywordLists(keywordLists, maxKeywords = 70) {
+    const counts = new Map();
+    keywordLists.flat().forEach((item) => {
+      if (!item || !item.text) return;
+      const key = String(item.text).trim().toLowerCase();
+      if (!key) return;
+      counts.set(key, (counts.get(key) || 0) + Number(item.value || item.count || 1));
+    });
+    return Array.from(counts.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, maxKeywords)
+      .map(([text, value]) => ({ text, value: Math.round(value) }));
+  }
+
+  async function buildLabAtlasFromIndividualScopus(profiles) {
+    const nodesById = new Map();
+    const edgesByKey = new Map();
+    const keywordLists = [];
+
+    function ensureNode(id, name, type, extra = {}) {
+      if (!nodesById.has(id)) {
+        nodesById.set(id, {
+          id,
+          name,
+          type,
+          documents: 0,
+          total_link_strength: 0,
+          cluster: 0,
+          ...extra
+        });
+      }
+      return nodesById.get(id);
+    }
+
+    function addEdge(source, target, count) {
+      if (!source || !target || source === target) return;
+      const key = [source, target].sort().join("||");
+      if (!edgesByKey.has(key)) {
+        edgesByKey.set(key, { source, target, count: 0, type: "fallback" });
+      }
+      edgesByKey.get(key).count += Number(count || 1);
+    }
+
+    await Promise.all(
+      profiles.map(async (profile, index) => {
+        ensureNode(profile.slug, profile.name, "lab", {
+          category: profile.category || "",
+          cluster: index
+        });
+
+        try {
+          const response = await fetch(`data/scopus/${profile.slug}.json`);
+          if (!response.ok) return;
+          const data = await response.json();
+
+          if (Array.isArray(data.keywords)) keywordLists.push(data.keywords);
+
+          (data.coauthors || []).forEach((coauthor) => {
+            const name = coauthor.name || coauthor.label || coauthor.id;
+            if (!name) return;
+            const canonical = canonicalCoauthorKey(name);
+            if (!canonical) return;
+            const id = `co:${canonical}`;
+            const count = Number(coauthor.count || coauthor.value || 1);
+
+            const node = ensureNode(id, name, "external", {
+              cluster: index
+            });
+            node.documents += count;
+            node.total_link_strength += count;
+
+            const labNode = ensureNode(profile.slug, profile.name, "lab", {
+              category: profile.category || "",
+              cluster: index
+            });
+            labNode.total_link_strength += count;
+
+            addEdge(profile.slug, id, count);
+          });
+        } catch (error) {
+          console.info(`Could not load data/scopus/${profile.slug}.json`, error);
+        }
+      })
+    );
+
+    const nodes = Array.from(nodesById.values());
+    const edges = Array.from(edgesByKey.values()).sort((a, b) => b.count - a.count);
+
+    if (!edges.length) return null;
+
+    return {
+      slug: "lab",
+      name: "MAPLab",
+      generated_at: "",
+      source: "Fallback built from individual data/scopus/*.json files",
+      title_based_keywords: true,
+      abstracts_used: false,
+      keywords: mergeKeywordLists(keywordLists),
+      network: {
+        nodes,
+        edges,
+        stats: {
+          lab_members: profiles.length,
+          external_collaborators: nodes.filter((node) => node.type !== "lab").length,
+          edges: edges.length
+        }
+      }
+    };
+  }
+
   async function renderLabAtlas(profiles) {
     const grid = $("[data-people-grid]");
     if (!grid || $("#lab-collaboration-atlas")) return;
 
     let data = null;
-    let jsonWasLoadedButBad = false;
+    let sourceNote = "";
 
     try {
       const response = await fetch("data/scopus/lab.json");
@@ -1939,34 +2050,52 @@
         if (labNetworkLooksUsable(jsonData)) {
           data = jsonData;
         } else {
-          jsonWasLoadedButBad = true;
-          console.info("data/scopus/lab.json exists but has too few external collaborators; falling back to publications.bib.");
+          sourceNote = "The lab-wide JSON looked incomplete, so the map was rebuilt from other local data.";
+          console.info("data/scopus/lab.json exists but is incomplete; trying publications.bib and individual JSON files.");
         }
       }
     } catch (error) {
-      console.info("Lab-wide Scopus analytics JSON unavailable; falling back to BibTeX.", error);
+      console.info("Lab-wide Scopus analytics JSON unavailable; falling back to local data.", error);
     }
 
     if (!data) {
       try {
-        data = await buildLabAtlasFromBibTeXURL(profiles);
+        const bibData = await buildLabAtlasFromBibTeXURL(profiles);
+        if (labNetworkLooksUsable(bibData)) {
+          data = bibData;
+          if (!sourceNote) sourceNote = "Built from data/publications.bib.";
+        }
       } catch (error) {
         console.info("Could not build lab atlas from BibTeX.", error);
       }
     }
 
     if (!data) {
-      injectLabAtlasStyles();
-      const section = document.createElement("section");
-      section.className = "lab-atlas";
-      section.id = "lab-collaboration-atlas";
+      try {
+        const individualData = await buildLabAtlasFromIndividualScopus(profiles);
+        if (labNetworkLooksUsable(individualData)) {
+          data = individualData;
+          sourceNote = "Built from individual Scopus analytics files because lab-wide data were incomplete.";
+        }
+      } catch (error) {
+        console.info("Could not build lab atlas from individual Scopus JSON files.", error);
+      }
+    }
+
+    injectLabAtlasStyles();
+
+    const section = document.createElement("section");
+    section.className = "lab-atlas";
+    section.id = "lab-collaboration-atlas";
+
+    if (!data) {
       section.innerHTML = `
         <div class="lab-atlas-shell">
           <div class="lab-atlas-head">
             <div>
               <p class="kicker">Lab-wide map</p>
               <h2>Collaboration and research landscape</h2>
-              <p>The lab-wide network could not be built yet. This usually means <code>data/publications.bib</code> still contains incomplete author lists. Run the Scopus update Action after applying the Crossref full-author patch.</p>
+              <p>The lab-wide network is not available yet. The site could not find usable coauthor data in <code>data/scopus/lab.json</code>, <code>data/publications.bib</code>, or the individual <code>data/scopus/*.json</code> files.</p>
             </div>
           </div>
         </div>
@@ -1977,19 +2106,14 @@
       return;
     }
 
-    injectLabAtlasStyles();
-
-    const section = document.createElement("section");
-    section.className = "lab-atlas";
-    section.id = "lab-collaboration-atlas";
     section.innerHTML = `
       <div class="lab-atlas-shell">
         <div class="lab-atlas-head">
           <div>
             <p class="kicker">Lab-wide map</p>
             <h2>Collaboration and research landscape</h2>
-            <p>A lab-wide coauthorship map built from shared publications. Nodes represent authors, link thickness reflects repeated collaboration, and clusters are estimated from the coauthorship graph.</p>
-            ${jsonWasLoadedButBad ? `<p class="lab-atlas-note">Note: <code>data/scopus/lab.json</code> looked incomplete, so this map was rebuilt directly from <code>data/publications.bib</code>.</p>` : ""}
+            <p>A clean collaboration constellation across MAPLab members and their coauthors. Link thickness reflects the number of shared publications.</p>
+            ${sourceNote ? `<p class="lab-atlas-note">${escapeHTML(sourceNote)}</p>` : ""}
           </div>
           ${data.generated_at ? `<div class="lab-atlas-date">Updated ${escapeHTML(compactDate(data.generated_at))}</div>` : ""}
         </div>
@@ -1998,7 +2122,7 @@
           <div class="lab-network-card">
             <div class="lab-card-title">
               <h3>Collaboration constellation</h3>
-              <span>VOSviewer-inspired</span>
+              <span>simple map</span>
             </div>
             <div data-lab-network></div>
           </div>
