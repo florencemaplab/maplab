@@ -1,7 +1,7 @@
 {
   "slug": "giovanni-anobile",
   "name": "Giovanni Anobile",
-  "generated_at": "2026-06-20T19:52:23Z",
+  "generated_at": "2026-06-20T19:55:01Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "36466056200",
@@ -235,63 +235,303 @@
   ],
   "coauthors": [
     {
-      "name": "Maldonado Moscoso P.A.",
-      "count": 7
+      "name": "David Charles Burr",
+      "count": 38
     },
     {
-      "name": "Petrizzo I.",
+      "name": "Roberto Arrighi",
+      "count": 37
+    },
+    {
+      "name": "Guido Marco Cicchini",
+      "count": 21
+    },
+    {
+      "name": "Elisa Castaldi",
+      "count": 17
+    },
+    {
+      "name": "Paula Andrea Maldonado Moscoso",
+      "count": 11
+    },
+    {
+      "name": "Irene Petrizzo",
+      "count": 9
+    },
+    {
+      "name": "Francesca Tinelli",
+      "count": 8
+    },
+    {
+      "name": "Marco Turi",
       "count": 6
     },
     {
-      "name": "Grasso P.A.",
+      "name": "Paolo Antonino Grasso",
       "count": 5
     },
     {
-      "name": "Cicchini G.M.",
-      "count": 5
+      "name": "Giuseppe Maduli",
+      "count": 4
     },
     {
-      "name": "Benedetto A.",
+      "name": "Eleonora Chelli",
+      "count": 4
+    },
+    {
+      "name": "Mariaelisa Bartoli",
+      "count": 4
+    },
+    {
+      "name": "Maria Concetta Morrone",
       "count": 3
     },
     {
-      "name": "Burr D.",
+      "name": "Camilla Caponi",
       "count": 3
     },
     {
-      "name": "Castaldi E.",
-      "count": 3
-    },
-    {
-      "name": "Blini E.",
+      "name": "Alessandro Benedetto",
       "count": 2
     },
     {
-      "name": "Burr D.C.",
+      "name": "Tommaso Bartolini",
       "count": 2
     },
     {
-      "name": "Pomè A.",
+      "name": "Elvio Blini",
       "count": 2
     },
     {
-      "name": "Aruanno B.",
+      "name": "Gabriele Masi",
+      "count": 2
+    },
+    {
+      "name": "Giovanni Cioni",
+      "count": 2
+    },
+    {
+      "name": "Caterina Primi",
+      "count": 2
+    },
+    {
+      "name": "Filippo Gasperini",
+      "count": 2
+    },
+    {
+      "name": "Antonella Pomè",
+      "count": 2
+    },
+    {
+      "name": "Paolo Stievano",
+      "count": 2
+    },
+    {
+      "name": "Silvia Martelli",
       "count": 1
     },
     {
-      "name": "Bartolini T.",
+      "name": "Eleonora Bieber",
       "count": 1
     },
     {
-      "name": "Burgio I.",
+      "name": "Sofia Ditano",
       "count": 1
     },
     {
-      "name": "Stievano P.",
+      "name": "Egle Casavecchia",
       "count": 1
     },
     {
-      "name": "Tinelli F.",
+      "name": "Beatrice Aruanno",
+      "count": 1
+    },
+    {
+      "name": "Armando Viviano Razionale",
+      "count": 1
+    },
+    {
+      "name": "Monica Bordegoni",
+      "count": 1
+    },
+    {
+      "name": "Irene Burgio",
+      "count": 1
+    },
+    {
+      "name": "Massimo Gurioli",
+      "count": 1
+    },
+    {
+      "name": "Camilla Bonaudo",
+      "count": 1
+    },
+    {
+      "name": "Agnese Pedone",
+      "count": 1
+    },
+    {
+      "name": "Federico Capelli",
+      "count": 1
+    },
+    {
+      "name": "Alessandro Della Puppa",
+      "count": 1
+    },
+    {
+      "name": "Gasperini Filippo",
+      "count": 1
+    },
+    {
+      "name": "Paolo Marchesini",
+      "count": 1
+    },
+    {
+      "name": "Michele Pellegrino",
+      "count": 1
+    },
+    {
+      "name": "Fabrizio Doricchi",
+      "count": 1
+    },
+    {
+      "name": "Annalisa Tacchi",
+      "count": 1
+    },
+    {
+      "name": "Chiara Pfanner",
+      "count": 1
+    },
+    {
+      "name": "Moreno Marazzi",
+      "count": 1
+    },
+    {
+      "name": "Stefano Federici",
+      "count": 1
+    },
+    {
+      "name": "Agnese Napoletti",
+      "count": 1
+    },
+    {
+      "name": "Lucia Cecconi",
+      "count": 1
+    },
+    {
+      "name": "Akshatha Bhat",
+      "count": 1
+    },
+    {
+      "name": "Jan W. Kurzawski",
+      "count": 1
+    },
+    {
+      "name": "Laura Biagi",
+      "count": 1
+    },
+    {
+      "name": "Salvatore Buonincontro",
+      "count": 1
+    },
+    {
+      "name": "Francesca Bolognini",
+      "count": 1
+    },
+    {
+      "name": "Mark W. Greenlee",
+      "count": 1
+    },
+    {
+      "name": "Daniela Ricci",
+      "count": 1
+    },
+    {
+      "name": "Francesca Gallini",
+      "count": 1
+    },
+    {
+      "name": "Ilaria Merusi",
+      "count": 1
+    },
+    {
+      "name": "Arianna Andolfi",
+      "count": 1
+    },
+    {
+      "name": "Simone Bassanelli",
+      "count": 1
+    },
+    {
+      "name": "F. Tomaiuolo",
+      "count": 1
+    },
+    {
+      "name": "S. Campana",
+      "count": 1
+    },
+    {
+      "name": "Nicola Domenici",
+      "count": 1
+    },
+    {
+      "name": "Irene Togoli",
+      "count": 1
+    },
+    {
+      "name": "G. Guerrini",
+      "count": 1
+    },
+    {
+      "name": "M. Monti",
+      "count": 1
+    },
+    {
+      "name": "B. Del Lucchese",
+      "count": 1
+    },
+    {
+      "name": "Aurora Scabia",
+      "count": 1
+    },
+    {
+      "name": "Eleonora Grassi",
+      "count": 1
+    },
+    {
+      "name": "Lara Pedonese",
+      "count": 1
+    },
+    {
+      "name": "Marika Iaia",
+      "count": 1
+    },
+    {
+      "name": "Chiara V. Marinelli",
+      "count": 1
+    },
+    {
+      "name": "Paola Angelelli",
+      "count": 1
+    },
+    {
+      "name": "Davide M. Cammisuli",
+      "count": 1
+    },
+    {
+      "name": "Silvia Michetti",
+      "count": 1
+    },
+    {
+      "name": "Chiara Ceccolin",
+      "count": 1
+    },
+    {
+      "name": "Monica Gori",
+      "count": 1
+    },
+    {
+      "name": "David Aagten-Murphy",
       "count": 1
     }
   ]
