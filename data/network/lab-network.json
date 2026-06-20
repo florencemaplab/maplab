@@ -4,7 +4,7 @@
   "source": "Static network generated from data/publications.bib",
   "title_based_keywords": true,
   "abstracts_used": false,
-  "keyword_extractor": "phrase_v2_frontend_guarded",
+  "keyword_extractor": "phrase_v3_readable_keywords",
   "keywords": [
     {
       "text": "numerosity perception",
@@ -15,16 +15,16 @@
       "value": 84
     },
     {
+      "text": "pupil responses",
+      "value": 56
+    },
+    {
       "text": "multisensory perception",
       "value": 44
     },
     {
       "text": "eye movements",
       "value": 44
-    },
-    {
-      "text": "pupil responses",
-      "value": 36
     },
     {
       "text": "auditory perception",
@@ -83,10 +83,6 @@
       "value": 8
     },
     {
-      "text": "navigated transcranial",
-      "value": 6
-    },
-    {
       "text": "biological motion",
       "value": 6
     },
@@ -119,11 +115,7 @@
       "value": 4
     },
     {
-      "text": "strategy numerosity",
-      "value": 4
-    },
-    {
-      "text": "millisecond second",
+      "text": "milliseconds seconds",
       "value": 4
     },
     {
@@ -131,27 +123,7 @@
       "value": 4
     },
     {
-      "text": "translational real-time pupillometry",
-      "value": 4
-    },
-    {
-      "text": "translational real-time",
-      "value": 4
-    },
-    {
-      "text": "real-time pupillometry",
-      "value": 4
-    },
-    {
       "text": "implied motion",
-      "value": 4
-    },
-    {
-      "text": "shared numerical",
-      "value": 4
-    },
-    {
-      "text": "dyscalculic development",
       "value": 4
     },
     {
@@ -159,27 +131,11 @@
       "value": 4
     },
     {
-      "text": "numerosity texture-density",
-      "value": 4
-    },
-    {
-      "text": "compression event",
-      "value": 4
-    },
-    {
-      "text": "requir attention",
-      "value": 4
-    },
-    {
-      "text": "attention resourc",
-      "value": 4
-    },
-    {
       "text": "phase congruency",
       "value": 4
     },
     {
-      "text": "optical coating",
+      "text": "optical coatings",
       "value": 4
     },
     {
