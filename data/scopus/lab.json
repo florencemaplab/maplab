@@ -1,7 +1,7 @@
 {
   "slug": "lab",
   "name": "MAPLab",
-  "generated_at": "2026-06-20T22:27:23Z",
+  "generated_at": "2026-06-20T22:30:35Z",
   "source": "Shared BibTeX generated from Scopus Search; keyword cloud generated from publication titles",
   "title_based_keywords": true,
   "abstracts_used": false,
@@ -294,8 +294,8 @@
         "name": "Giovanni Anobile",
         "type": "lab",
         "category": "",
-        "documents": 67,
-        "total_link_strength": 238,
+        "documents": 68,
+        "total_link_strength": 240,
         "cluster": 0
       },
       {
@@ -303,8 +303,8 @@
         "name": "Roberto Arrighi",
         "type": "lab",
         "category": "",
-        "documents": 75,
-        "total_link_strength": 262,
+        "documents": 76,
+        "total_link_strength": 264,
         "cluster": 0
       },
       {
@@ -497,21 +497,21 @@
         "cluster": 0
       },
       {
+        "id": "co:petrizzo:i",
+        "name": "Irene Petrizzo",
+        "type": "external",
+        "category": "",
+        "documents": 15,
+        "total_link_strength": 55,
+        "cluster": 0
+      },
+      {
         "id": "co:moscoso:p",
         "name": "Paula A. Maldonado Moscoso",
         "type": "external",
         "category": "",
         "documents": 13,
         "total_link_strength": 55,
-        "cluster": 0
-      },
-      {
-        "id": "co:petrizzo:i",
-        "name": "Irene Petrizzo",
-        "type": "external",
-        "category": "",
-        "documents": 14,
-        "total_link_strength": 53,
         "cluster": 0
       },
       {
@@ -2612,22 +2612,13 @@
         "cluster": 13
       },
       {
-        "id": "co:i:p",
-        "name": "Petrizzo I.",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 0,
-        "cluster": 14
-      },
-      {
         "id": "co:shevell:s",
         "name": "Steven K. Shevell",
         "type": "external",
         "category": "",
         "documents": 1,
         "total_link_strength": 0,
-        "cluster": 15
+        "cluster": 14
       }
     ],
     "edges": [
@@ -2640,7 +2631,7 @@
       {
         "source": "giovanni-anobile",
         "target": "roberto-arrighi",
-        "count": 36,
+        "count": 37,
         "type": "coauthorship"
       },
       {
@@ -2686,13 +2677,13 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:moscoso:p",
+        "source": "co:petrizzo:i",
         "target": "roberto-arrighi",
-        "count": 12,
+        "count": 13,
         "type": "coauthorship"
       },
       {
-        "source": "co:petrizzo:i",
+        "source": "co:moscoso:p",
         "target": "roberto-arrighi",
         "count": 12,
         "type": "coauthorship"
@@ -2722,6 +2713,12 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:petrizzo:i",
+        "target": "giovanni-anobile",
+        "count": 9,
+        "type": "coauthorship"
+      },
+      {
         "source": "alessandro-benedetto",
         "target": "co:morrone:m",
         "count": 8,
@@ -2736,12 +2733,6 @@
       {
         "source": "co:morrone:m",
         "target": "co:tinelli:f",
-        "count": 8,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:petrizzo:i",
-        "target": "giovanni-anobile",
         "count": 8,
         "type": "coauthorship"
       },
@@ -10830,7 +10821,7 @@
     ],
     "stats": {
       "lab_members": 7,
-      "external_collaborators": 253,
+      "external_collaborators": 252,
       "edges": 1366
     }
   }

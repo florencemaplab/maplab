@@ -1,7 +1,7 @@
 {
   "slug": "giovanni-anobile",
   "name": "Giovanni Anobile",
-  "generated_at": "2026-06-20T22:27:23Z",
+  "generated_at": "2026-06-20T22:30:35Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "36466056200",
@@ -240,7 +240,7 @@
     },
     {
       "name": "Roberto Arrighi",
-      "count": 36
+      "count": 37
     },
     {
       "name": "Guido Marco Cicchini",
@@ -255,11 +255,11 @@
       "count": 11
     },
     {
-      "name": "Francesca Tinelli",
-      "count": 8
+      "name": "Irene Petrizzo",
+      "count": 9
     },
     {
-      "name": "Irene Petrizzo",
+      "name": "Francesca Tinelli",
       "count": 8
     },
     {
@@ -476,10 +476,6 @@
     },
     {
       "name": "Irene Togoli",
-      "count": 1
-    },
-    {
-      "name": "Petrizzo I.",
       "count": 1
     },
     {
