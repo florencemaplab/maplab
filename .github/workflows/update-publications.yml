@@ -19,6 +19,14 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Sync latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -53,27 +61,58 @@ jobs:
             --bibtex data/publications.bib \
             --output-dir data/scopus
 
-      - name: Build lab network
+      - name: Build static lab network
         run: |
+          mkdir -p data/network
           python scripts/build_lab_network.py \
             --bibtex data/publications.bib \
             --people-index data/people/people.json \
             --people-dir data/people \
-            --output data/network/lab-network.json \
-            --max-external 800
+            --output data/network/lab-network.json
 
-      - name: Commit updated bibliography and analytics if changed
+          echo "Generated network file:"
+          ls -lah data/network
+          echo "First bytes:"
+          head -c 300 data/network/lab-network.json || true
+          echo
+          echo "Git status after network generation:"
+          git status --short
+
+      - name: Commit updated files if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/publications.bib data/scopus data/network data/people
+          git add data/publications.bib
+          git add data/scopus
+          git add -f data/network/lab-network.json
+
+          echo "Staged files:"
+          git diff --cached --name-only
 
           if git diff --cached --quiet; then
-            echo "No publication or analytics changes to commit."
+            echo "No publication, analytics, or network changes to commit."
           else
             git commit -m "Update publications, analytics, and lab network"
+
+            # main may have moved while this workflow was running.
+            # These files are generated outputs, so if rebase conflicts on them,
+            # keep the files produced by this workflow run and continue.
             git fetch origin main
-            git rebase origin/main
-            git push origin main
+
+            if ! git rebase -X theirs origin/main; then
+              echo "::warning::Rebase conflict detected in generated files. Keeping workflow-generated outputs."
+
+              git checkout --theirs data/publications.bib || true
+              git checkout --theirs data/scopus || true
+              git checkout --theirs data/network/lab-network.json || true
+
+              git add data/publications.bib
+              git add data/scopus
+              git add -f data/network/lab-network.json
+
+              GIT_EDITOR=true git rebase --continue
+            fi
+
+            git push origin HEAD:main
           fi
