@@ -1,12 +1,12 @@
 {
   "slug": "roberto-arrighi",
   "name": "Roberto Arrighi",
-  "generated_at": "2026-06-21T08:11:00Z",
+  "generated_at": "2026-06-22T09:23:08Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "8870558800",
-    "citation_count": 1779,
-    "cited_by_count": 1779,
+    "citation_count": 1782,
+    "cited_by_count": 1782,
     "h_index": 24
   },
   "publications_analyzed": 77,
@@ -236,11 +236,11 @@
   "coauthors": [
     {
       "name": "Giovanni Anobile",
-      "count": 35
+      "count": 37
     },
     {
       "name": "David Charles Burr",
-      "count": 29
+      "count": 30
     },
     {
       "name": "Elisa Castaldi",
@@ -256,11 +256,11 @@
     },
     {
       "name": "Guido Marco Cicchini",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Paolo Antonino Grasso",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Irene Togoli",
@@ -328,10 +328,6 @@
     },
     {
       "name": "Kyriaki Mikellidou",
-      "count": 2
-    },
-    {
-      "name": "Anobile G.",
       "count": 2
     },
     {
@@ -439,10 +435,6 @@
       "count": 1
     },
     {
-      "name": "Grasso P.A.",
-      "count": 1
-    },
-    {
       "name": "Salvatore Buonincontro",
       "count": 1
     },
@@ -523,6 +515,10 @@
       "count": 1
     },
     {
+      "name": "Anobile G.",
+      "count": 1
+    },
+    {
       "name": "Paola Binda",
       "count": 1
     },
@@ -552,6 +548,10 @@
     },
     {
       "name": "Giovanni Giacomelli",
+      "count": 1
+    },
+    {
+      "name": "Roberto Volpe",
       "count": 1
     }
   ]
