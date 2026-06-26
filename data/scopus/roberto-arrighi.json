@@ -1,12 +1,12 @@
 {
   "slug": "roberto-arrighi",
   "name": "Roberto Arrighi",
-  "generated_at": "2026-06-25T06:57:18Z",
+  "generated_at": "2026-06-26T07:04:14Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "8870558800",
-    "citation_count": 1782,
-    "cited_by_count": 1782,
+    "citation_count": 1783,
+    "cited_by_count": 1783,
     "h_index": 24
   },
   "publications_analyzed": 77,
@@ -236,19 +236,19 @@
   "coauthors": [
     {
       "name": "Giovanni Anobile",
-      "count": 37
+      "count": 35
     },
     {
       "name": "David Charles Burr",
-      "count": 30
+      "count": 29
     },
     {
       "name": "Elisa Castaldi",
-      "count": 17
+      "count": 15
     },
     {
       "name": "Irene Petrizzo",
-      "count": 13
+      "count": 12
     },
     {
       "name": "Paula Andrea Maldonado Moscoso",
@@ -263,11 +263,11 @@
       "count": 9
     },
     {
-      "name": "Irene Togoli",
-      "count": 7
+      "name": "Alessandro Farini",
+      "count": 6
     },
     {
-      "name": "Alessandro Farini",
+      "name": "Irene Togoli",
       "count": 6
     },
     {
@@ -339,11 +339,7 @@
       "count": 2
     },
     {
-      "name": "Olivier Collignon",
-      "count": 2
-    },
-    {
-      "name": "Virginie Crollen",
+      "name": "Anobile G.",
       "count": 2
     },
     {
@@ -463,11 +459,11 @@
       "count": 1
     },
     {
-      "name": "Simone Bassanelli",
+      "name": "Petrizzo I.",
       "count": 1
     },
     {
-      "name": "Cathy Marlair",
+      "name": "Togoli I.",
       "count": 1
     },
     {
@@ -484,6 +480,14 @@
     },
     {
       "name": "Elizabeth Pellicano",
+      "count": 1
+    },
+    {
+      "name": "Virginie Crollen",
+      "count": 1
+    },
+    {
+      "name": "Olivier Collignon",
       "count": 1
     },
     {
@@ -512,10 +516,6 @@
     },
     {
       "name": "Lara Pedonese",
-      "count": 1
-    },
-    {
-      "name": "Anobile G.",
       "count": 1
     },
     {
