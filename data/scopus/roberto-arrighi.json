@@ -1,7 +1,7 @@
 {
   "slug": "roberto-arrighi",
   "name": "Roberto Arrighi",
-  "generated_at": "2026-06-26T07:04:14Z",
+  "generated_at": "2026-06-27T06:37:45Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "8870558800",
@@ -236,19 +236,19 @@
   "coauthors": [
     {
       "name": "Giovanni Anobile",
-      "count": 35
+      "count": 37
     },
     {
       "name": "David Charles Burr",
-      "count": 29
+      "count": 30
     },
     {
       "name": "Elisa Castaldi",
-      "count": 15
+      "count": 17
     },
     {
       "name": "Irene Petrizzo",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Paula Andrea Maldonado Moscoso",
@@ -263,11 +263,11 @@
       "count": 9
     },
     {
-      "name": "Alessandro Farini",
-      "count": 6
+      "name": "Irene Togoli",
+      "count": 7
     },
     {
-      "name": "Irene Togoli",
+      "name": "Alessandro Farini",
       "count": 6
     },
     {
@@ -339,7 +339,11 @@
       "count": 2
     },
     {
-      "name": "Anobile G.",
+      "name": "Olivier Collignon",
+      "count": 2
+    },
+    {
+      "name": "Virginie Crollen",
       "count": 2
     },
     {
@@ -459,11 +463,11 @@
       "count": 1
     },
     {
-      "name": "Petrizzo I.",
+      "name": "Simone Bassanelli",
       "count": 1
     },
     {
-      "name": "Togoli I.",
+      "name": "Cathy Marlair",
       "count": 1
     },
     {
@@ -480,14 +484,6 @@
     },
     {
       "name": "Elizabeth Pellicano",
-      "count": 1
-    },
-    {
-      "name": "Virginie Crollen",
-      "count": 1
-    },
-    {
-      "name": "Olivier Collignon",
       "count": 1
     },
     {
@@ -516,6 +512,10 @@
     },
     {
       "name": "Lara Pedonese",
+      "count": 1
+    },
+    {
+      "name": "Anobile G.",
       "count": 1
     },
     {
