@@ -1,7 +1,7 @@
 {
   "slug": "giuseppe-devito",
   "name": "Giuseppe de Vito",
-  "generated_at": "2026-06-28T09:14:53Z",
+  "generated_at": "2026-06-28T09:21:58Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "55547668700",
@@ -12,10 +12,6 @@
   "publications_analyzed": 40,
   "abstracts_found": 0,
   "keywords": [
-    {
-      "text": "numerosity",
-      "value": 35
-    },
     {
       "text": "zebrafish",
       "value": 25
@@ -33,16 +29,8 @@
       "value": 18
     },
     {
-      "text": "perception",
-      "value": 17
-    },
-    {
       "text": "light-sheet",
       "value": 16
-    },
-    {
-      "text": "number",
-      "value": 14
     },
     {
       "text": "functional",
@@ -57,18 +45,6 @@
       "value": 13
     },
     {
-      "text": "visual",
-      "value": 11
-    },
-    {
-      "text": "adaptation",
-      "value": 10
-    },
-    {
-      "text": "math",
-      "value": 10
-    },
-    {
       "text": "zebrafish brain",
       "value": 10
     },
@@ -81,19 +57,11 @@
       "value": 9
     },
     {
-      "text": "motor",
-      "value": 9
-    },
-    {
       "text": "activity",
       "value": 9
     },
     {
       "text": "mice",
-      "value": 9
-    },
-    {
-      "text": "children",
       "value": 9
     },
     {
@@ -125,10 +93,6 @@
       "value": 8
     },
     {
-      "text": "time",
-      "value": 8
-    },
-    {
       "text": "two-photon all-optical",
       "value": 8
     },
@@ -141,14 +105,6 @@
       "value": 7
     },
     {
-      "text": "attention",
-      "value": 7
-    },
-    {
-      "text": "estimation",
-      "value": 7
-    },
-    {
       "text": "light-sheet fluorescence",
       "value": 7
     },
@@ -157,15 +113,11 @@
       "value": 7
     },
     {
-      "text": "high",
-      "value": 6
-    },
-    {
-      "text": "mechanisms",
-      "value": 6
-    },
-    {
       "text": "disease",
+      "value": 6
+    },
+    {
+      "text": "motor",
       "value": 6
     },
     {
@@ -190,10 +142,6 @@
     },
     {
       "text": "rp-cars",
-      "value": 6
-    },
-    {
-      "text": "mapping",
       "value": 6
     },
     {
@@ -231,28 +179,64 @@
     {
       "text": "dissecting",
       "value": 5
+    },
+    {
+      "text": "electrophysiology",
+      "value": 5
+    },
+    {
+      "text": "awake",
+      "value": 5
+    },
+    {
+      "text": "readout",
+      "value": 5
+    },
+    {
+      "text": "functional imaging",
+      "value": 5
+    },
+    {
+      "text": "larval zebrafish",
+      "value": 5
+    },
+    {
+      "text": "fluorescence microscopy",
+      "value": 5
+    },
+    {
+      "text": "volumetric imaging",
+      "value": 5
+    },
+    {
+      "text": "seizures zebrafish",
+      "value": 5
+    },
+    {
+      "text": "treatment glioblastoma",
+      "value": 5
+    },
+    {
+      "text": "striping artifacts",
+      "value": 5
+    },
+    {
+      "text": "calcium imaging",
+      "value": 5
+    },
+    {
+      "text": "cars microscopy",
+      "value": 5
+    },
+    {
+      "text": "stem cells",
+      "value": 5
     }
   ],
   "coauthors": [
     {
-      "name": "David Charles Burr",
-      "count": 38
-    },
-    {
-      "name": "Roberto Arrighi",
-      "count": 37
-    },
-    {
       "name": "Francesco Saverio Pavone",
       "count": 21
-    },
-    {
-      "name": "Guido Marco Cicchini",
-      "count": 21
-    },
-    {
-      "name": "Elisa Castaldi",
-      "count": 17
     },
     {
       "name": "Lapo Turrini",
@@ -267,24 +251,12 @@
       "count": 13
     },
     {
-      "name": "Paula Andrea Maldonado Moscoso",
-      "count": 11
-    },
-    {
       "name": "Ludovico Silvestri",
       "count": 10
     },
     {
-      "name": "Irene Petrizzo",
-      "count": 9
-    },
-    {
       "name": "Pietro Ricci",
       "count": 9
-    },
-    {
-      "name": "Francesca Tinelli",
-      "count": 8
     },
     {
       "name": "Giuseppe Sancataldo",
@@ -303,14 +275,6 @@
       "count": 6
     },
     {
-      "name": "Marco Turi",
-      "count": 6
-    },
-    {
-      "name": "Paolo Antonino Grasso",
-      "count": 5
-    },
-    {
       "name": "Michele Sorelli",
       "count": 5
     },
@@ -321,18 +285,6 @@
     {
       "name": "Virgilio Mattoli",
       "count": 5
-    },
-    {
-      "name": "Giuseppe Maduli",
-      "count": 4
-    },
-    {
-      "name": "Eleonora Chelli",
-      "count": 4
-    },
-    {
-      "name": "Mariaelisa Bartoli",
-      "count": 4
     },
     {
       "name": "Marco Marchetti",
@@ -371,19 +323,11 @@
       "count": 4
     },
     {
-      "name": "Maria Concetta Morrone",
-      "count": 3
-    },
-    {
       "name": "Giacomo Mazzamuto",
       "count": 3
     },
     {
       "name": "Leonardo Sacconi",
-      "count": 3
-    },
-    {
-      "name": "Camilla Caponi",
       "count": 3
     },
     {
@@ -395,51 +339,11 @@
       "count": 3
     },
     {
-      "name": "Guiseppe de Vito",
-      "count": 3
-    },
-    {
-      "name": "Alessandro Benedetto",
-      "count": 2
-    },
-    {
-      "name": "Tommaso Bartolini",
-      "count": 2
-    },
-    {
-      "name": "Elvio Blini",
-      "count": 2
-    },
-    {
-      "name": "Gabriele Masi",
-      "count": 2
-    },
-    {
-      "name": "Giovanni Cioni",
-      "count": 2
-    },
-    {
       "name": "Silvestro Micera",
       "count": 2
     },
     {
-      "name": "Caterina Primi",
-      "count": 2
-    },
-    {
       "name": "Roberta Cecchi",
-      "count": 2
-    },
-    {
-      "name": "Filippo Gasperini",
-      "count": 2
-    },
-    {
-      "name": "Antonella Pomè",
-      "count": 2
-    },
-    {
-      "name": "Paolo Stievano",
       "count": 2
     },
     {
@@ -467,75 +371,7 @@
       "count": 2
     },
     {
-      "name": "Silvia Martelli",
-      "count": 1
-    },
-    {
-      "name": "Eleonora Bieber",
-      "count": 1
-    },
-    {
-      "name": "Sofia Ditano",
-      "count": 1
-    },
-    {
-      "name": "Egle Casavecchia",
-      "count": 1
-    },
-    {
-      "name": "Beatrice Aruanno",
-      "count": 1
-    },
-    {
-      "name": "Armando Viviano Razionale",
-      "count": 1
-    },
-    {
-      "name": "Monica Bordegoni",
-      "count": 1
-    },
-    {
-      "name": "Irene Burgio",
-      "count": 1
-    },
-    {
-      "name": "Massimo Gurioli",
-      "count": 1
-    },
-    {
-      "name": "Camilla Bonaudo",
-      "count": 1
-    },
-    {
-      "name": "Agnese Pedone",
-      "count": 1
-    },
-    {
-      "name": "Federico Capelli",
-      "count": 1
-    },
-    {
-      "name": "Alessandro Della Puppa",
-      "count": 1
-    },
-    {
-      "name": "Gasperini Filippo",
-      "count": 1
-    },
-    {
       "name": "Turrini L.",
-      "count": 1
-    },
-    {
-      "name": "Paolo Marchesini",
-      "count": 1
-    },
-    {
-      "name": "Michele Pellegrino",
-      "count": 1
-    },
-    {
-      "name": "Fabrizio Doricchi",
       "count": 1
     },
     {
@@ -543,15 +379,179 @@
       "count": 1
     },
     {
-      "name": "Annalisa Tacchi",
+      "name": "Emilia Conti",
       "count": 1
     },
     {
-      "name": "Chiara Pfanner",
+      "name": "Francesco Calugi",
       "count": 1
     },
     {
-      "name": "Moreno Marazzi",
+      "name": "Maria Pasquini",
+      "count": 1
+    },
+    {
+      "name": "Tommaso Pizzorusso",
+      "count": 1
+    },
+    {
+      "name": "Carlotta Pucci",
+      "count": 1
+    },
+    {
+      "name": "Özlem Şen",
+      "count": 1
+    },
+    {
+      "name": "Daniele De Pasquale",
+      "count": 1
+    },
+    {
+      "name": "Martina Bartolucci",
+      "count": 1
+    },
+    {
+      "name": "Nerea Iturrioz-Rodríguez",
+      "count": 1
+    },
+    {
+      "name": "Nicoletta di Leo",
+      "count": 1
+    },
+    {
+      "name": "Doriana Debellis",
+      "count": 1
+    },
+    {
+      "name": "Andrea Petretto",
+      "count": 1
+    },
+    {
+      "name": "Caterina Credi",
+      "count": 1
+    },
+    {
+      "name": "Lorenzo Chicchi",
+      "count": 1
+    },
+    {
+      "name": "Gloria Cecchini",
+      "count": 1
+    },
+    {
+      "name": "Ihusan Adam",
+      "count": 1
+    },
+    {
+      "name": "Roberto Livi",
+      "count": 1
+    },
+    {
+      "name": "Paola Parlanti",
+      "count": 1
+    },
+    {
+      "name": "Stefano Luin",
+      "count": 1
+    },
+    {
+      "name": "Elena Trabalzini",
+      "count": 1
+    },
+    {
+      "name": "Meneghetti N.",
+      "count": 1
+    },
+    {
+      "name": "N Meneghetti",
+      "count": 1
+    },
+    {
+      "name": "F Dedola",
+      "count": 1
+    },
+    {
+      "name": "J Carpaneto",
+      "count": 1
+    },
+    {
+      "name": "A Cutrone",
+      "count": 1
+    },
+    {
+      "name": "A Mazzoni",
+      "count": 1
+    },
+    {
+      "name": "Alberto Montalbano",
+      "count": 1
+    },
+    {
+      "name": "Annunziatina Laurino",
+      "count": 1
+    },
+    {
+      "name": "Luca Pesce",
+      "count": 1
+    },
+    {
+      "name": "Enrico Almici",
+      "count": 1
+    },
+    {
+      "name": "Simone Migliorin",
+      "count": 1
+    },
+    {
+      "name": "Christos Tapeinos",
+      "count": 1
+    },
+    {
+      "name": "Matteo Battaglini",
+      "count": 1
+    },
+    {
+      "name": "Riccardo Cicchi",
+      "count": 1
+    },
+    {
+      "name": "Massimiliano Locatelli",
+      "count": 1
+    },
+    {
+      "name": "Janaka C. Ranasinghesagara",
+      "count": 1
+    },
+    {
+      "name": "Eric O. Potma",
+      "count": 1
+    },
+    {
+      "name": "Vasan Venugopalan",
+      "count": 1
+    },
+    {
+      "name": "Alessia Chiorazzi",
+      "count": 1
+    },
+    {
+      "name": "Valentina Alda Carozzi",
+      "count": 1
+    },
+    {
+      "name": "Cristina Meregalli",
+      "count": 1
+    },
+    {
+      "name": "Norberto Oggioni",
+      "count": 1
+    },
+    {
+      "name": "Mario Bossi",
+      "count": 1
+    },
+    {
+      "name": "Virginia Rodriguez-Menendez",
       "count": 1
     }
   ]

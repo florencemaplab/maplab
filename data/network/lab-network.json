@@ -184,8 +184,8 @@
         "name": "Raffaele Mazziotti",
         "type": "lab",
         "category": "faculty",
-        "documents": 40,
-        "total_link_strength": 349,
+        "documents": 41,
+        "total_link_strength": 350,
         "cluster": 6
       },
       {
@@ -4786,15 +4786,6 @@
         "documents": 1,
         "total_link_strength": 1,
         "cluster": 4
-      },
-      {
-        "id": "co:m:m",
-        "name": "Morrone M.",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 1,
-        "cluster": 5
       },
       {
         "id": "co:agostini:r",
@@ -21623,12 +21614,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:m:m",
-        "target": "michela-delviva",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:maduli:g",
         "target": "co:maiorelli:a",
         "count": 1,
@@ -25572,6 +25557,12 @@
       },
       {
         "source": "michela-delviva",
+        "target": "raffaele-mazziotti",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "michela-delviva",
         "target": "roberto-arrighi",
         "count": 1,
         "type": "coauthorship"
@@ -25579,7 +25570,7 @@
     ],
     "stats": {
       "lab_members": 9,
-      "external_collaborators": 512,
+      "external_collaborators": 511,
       "edges": 3460
     }
   }
