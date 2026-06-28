@@ -1,7 +1,7 @@
 {
   "slug": "lab",
   "name": "MAPLab",
-  "generated_at": "2026-06-28T07:11:17Z",
+  "generated_at": "2026-06-28T08:56:45Z",
   "source": "Shared BibTeX generated from Scopus Search; keyword cloud generated from publication titles",
   "title_based_keywords": true,
   "abstracts_used": false,
@@ -12,15 +12,19 @@
     },
     {
       "text": "visual",
-      "value": 38
+      "value": 50
     },
     {
       "text": "perception",
-      "value": 31
+      "value": 32
     },
     {
       "text": "adaptation",
       "value": 20
+    },
+    {
+      "text": "brain",
+      "value": 19
     },
     {
       "text": "number",
@@ -31,19 +35,51 @@
       "value": 17
     },
     {
+      "text": "imaging",
+      "value": 16
+    },
+    {
       "text": "children",
-      "value": 14
+      "value": 15
     },
     {
       "text": "time",
+      "value": 14
+    },
+    {
+      "text": "cortical",
       "value": 13
+    },
+    {
+      "text": "cortex",
+      "value": 13
+    },
+    {
+      "text": "zebrafish",
+      "value": 12
+    },
+    {
+      "text": "mice",
+      "value": 11
     },
     {
       "text": "attention",
       "value": 11
     },
     {
+      "text": "plasticity",
+      "value": 10
+    },
+    {
+      "text": "functional",
+      "value": 10
+    },
+    {
       "text": "math",
+      "value": 10
+    },
+    {
+      "text": "motor",
       "value": 10
     },
     {
@@ -55,19 +91,51 @@
       "value": 10
     },
     {
+      "text": "stimulation",
+      "value": 9
+    },
+    {
+      "text": "mapping",
+      "value": 9
+    },
+    {
+      "text": "cognitive",
+      "value": 9
+    },
+    {
+      "text": "two-photon",
+      "value": 9
+    },
+    {
+      "text": "microscopy",
+      "value": 9
+    },
+    {
+      "text": "role",
+      "value": 9
+    },
+    {
+      "text": "neural",
+      "value": 9
+    },
+    {
+      "text": "mouse",
+      "value": 9
+    },
+    {
       "text": "space",
       "value": 9
     },
     {
-      "text": "brain",
-      "value": 8
-    },
-    {
-      "text": "cognitive",
-      "value": 8
+      "text": "visual cortex",
+      "value": 9
     },
     {
       "text": "vision",
+      "value": 8
+    },
+    {
+      "text": "light-sheet",
       "value": 8
     },
     {
@@ -75,16 +143,20 @@
       "value": 8
     },
     {
+      "text": "spatial",
+      "value": 8
+    },
+    {
       "text": "auditory",
       "value": 8
     },
     {
-      "text": "mapping",
-      "value": 7
+      "text": "activity",
+      "value": 8
     },
     {
-      "text": "role",
-      "value": 7
+      "text": "mechanisms",
+      "value": 8
     },
     {
       "text": "perceptual",
@@ -99,19 +171,23 @@
       "value": 7
     },
     {
-      "text": "neural",
-      "value": 7
-    },
-    {
-      "text": "spatial",
-      "value": 7
-    },
-    {
       "text": "dyscalculia",
       "value": 7
     },
     {
-      "text": "mechanisms",
+      "text": "fast",
+      "value": 7
+    },
+    {
+      "text": "cdkl5",
+      "value": 7
+    },
+    {
+      "text": "disorder",
+      "value": 7
+    },
+    {
+      "text": "action",
       "value": 7
     },
     {
@@ -123,11 +199,19 @@
       "value": 7
     },
     {
-      "text": "motor",
+      "text": "sensory",
       "value": 6
     },
     {
-      "text": "action",
+      "text": "pupil",
+      "value": 6
+    },
+    {
+      "text": "pupillary",
+      "value": 6
+    },
+    {
+      "text": "patients",
       "value": 6
     },
     {
@@ -135,15 +219,31 @@
       "value": 6
     },
     {
+      "text": "sensitivity",
+      "value": 6
+    },
+    {
+      "text": "representation",
+      "value": 5
+    },
+    {
+      "text": "pupillometry",
+      "value": 5
+    },
+    {
+      "text": "high",
+      "value": 5
+    },
+    {
       "text": "discrimination",
       "value": 5
     },
     {
-      "text": "anxiety",
+      "text": "behavioral",
       "value": 5
     },
     {
-      "text": "pupil",
+      "text": "anxiety",
       "value": 5
     },
     {
@@ -159,19 +259,23 @@
       "value": 5
     },
     {
-      "text": "pupillary",
+      "text": "system",
       "value": 5
     },
     {
-      "text": "patients",
+      "text": "stimuli",
       "value": 5
     },
     {
-      "text": "fast",
+      "text": "recorded",
       "value": 5
     },
     {
       "text": "temporal",
+      "value": 5
+    },
+    {
+      "text": "connectivity",
       "value": 5
     },
     {
@@ -181,110 +285,6 @@
     {
       "text": "features",
       "value": 5
-    },
-    {
-      "text": "primary",
-      "value": 5
-    },
-    {
-      "text": "cortex",
-      "value": 5
-    },
-    {
-      "text": "sensitivity",
-      "value": 5
-    },
-    {
-      "text": "perceived",
-      "value": 5
-    },
-    {
-      "text": "subitizing",
-      "value": 5
-    },
-    {
-      "text": "math anxiety",
-      "value": 5
-    },
-    {
-      "text": "developmental dyscalculia",
-      "value": 5
-    },
-    {
-      "text": "number sense",
-      "value": 5
-    },
-    {
-      "text": "numerosity estimation",
-      "value": 5
-    },
-    {
-      "text": "perception numerosity",
-      "value": 5
-    },
-    {
-      "text": "sensory",
-      "value": 4
-    },
-    {
-      "text": "representation",
-      "value": 4
-    },
-    {
-      "text": "magnetic",
-      "value": 4
-    },
-    {
-      "text": "functional",
-      "value": 4
-    },
-    {
-      "text": "behavioral",
-      "value": 4
-    },
-    {
-      "text": "feature",
-      "value": 4
-    },
-    {
-      "text": "depends",
-      "value": 4
-    },
-    {
-      "text": "visuo-spatial",
-      "value": 4
-    },
-    {
-      "text": "affects",
-      "value": 4
-    },
-    {
-      "text": "developmental",
-      "value": 4
-    },
-    {
-      "text": "grouping",
-      "value": 4
-    },
-    {
-      "text": "typical",
-      "value": 4
-    },
-    {
-      "text": "high",
-      "value": 4
-    },
-    {
-      "text": "spontaneous",
-      "value": 4
-    },
-    {
-      "text": "navigated transcranial",
-      "value": 4
-    },
-    {
-      "text": "transcranial magnetic",
-      "value": 4
     }
   ],
   "network": {
@@ -326,13 +326,31 @@
         "cluster": 0
       },
       {
+        "id": "giuseppe-devito",
+        "name": "Giovanni Anobile",
+        "type": "lab",
+        "category": "",
+        "documents": 0,
+        "total_link_strength": 0,
+        "cluster": 1
+      },
+      {
         "id": "michela-delviva",
         "name": "Maria Michela Del Viva",
         "type": "lab",
         "category": "",
         "documents": 27,
         "total_link_strength": 73,
-        "cluster": 1
+        "cluster": 2
+      },
+      {
+        "id": "raffaele-mazziotti",
+        "name": "Giovanni Anobile",
+        "type": "lab",
+        "category": "",
+        "documents": 0,
+        "total_link_strength": 0,
+        "cluster": 3
       },
       {
         "id": "serena-castellotti",
@@ -341,7 +359,7 @@
         "category": "",
         "documents": 19,
         "total_link_strength": 58,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "irene-burgio",
@@ -366,7 +384,7 @@
         "name": "Guido Marco Cicchini",
         "type": "external",
         "category": "",
-        "documents": 34,
+        "documents": 35,
         "total_link_strength": 113,
         "cluster": 0
       },
@@ -618,7 +636,7 @@
         "name": "Giovanni Cioni",
         "type": "external",
         "category": "",
-        "documents": 6,
+        "documents": 11,
         "total_link_strength": 33,
         "cluster": 0
       },
@@ -665,7 +683,7 @@
         "category": "",
         "documents": 6,
         "total_link_strength": 24,
-        "cluster": 2
+        "cluster": 4
       },
       {
         "id": "co:caponi:c",
@@ -749,6 +767,15 @@
         "cluster": 0
       },
       {
+        "id": "co:pavone:f",
+        "name": "Francesco Saverio Pavone",
+        "type": "external",
+        "category": "",
+        "documents": 21,
+        "total_link_strength": 19,
+        "cluster": 0
+      },
+      {
         "id": "co:togoli:i",
         "name": "Irene Togoli",
         "type": "external",
@@ -763,15 +790,6 @@
         "type": "external",
         "category": "",
         "documents": 3,
-        "total_link_strength": 19,
-        "cluster": 0
-      },
-      {
-        "id": "co:pavone:f",
-        "name": "Francesco Saverio Pavone",
-        "type": "external",
-        "category": "",
-        "documents": 1,
         "total_link_strength": 19,
         "cluster": 0
       },
@@ -794,22 +812,67 @@
         "cluster": 0
       },
       {
+        "id": "co:mazziotti:r",
+        "name": "Raffaele M. Mazziotti",
+        "type": "external",
+        "category": "",
+        "documents": 39,
+        "total_link_strength": 18,
+        "cluster": 5
+      },
+      {
+        "id": "co:pizzorusso:t",
+        "name": "Tommaso Pizzorusso",
+        "type": "external",
+        "category": "",
+        "documents": 28,
+        "total_link_strength": 18,
+        "cluster": 5
+      },
+      {
+        "id": "co:lupori:l",
+        "name": "Leonardo Lupori",
+        "type": "external",
+        "category": "",
+        "documents": 21,
+        "total_link_strength": 18,
+        "cluster": 5
+      },
+      {
+        "id": "co:sagona:g",
+        "name": "Giulia Sagona",
+        "type": "external",
+        "category": "",
+        "documents": 15,
+        "total_link_strength": 18,
+        "cluster": 5
+      },
+      {
         "id": "co:viglione:a",
         "name": "Aurelia Viglione",
         "type": "external",
         "category": "",
-        "documents": 2,
+        "documents": 7,
         "total_link_strength": 18,
-        "cluster": 3
+        "cluster": 5
       },
       {
         "id": "co:carrara:f",
         "name": "Fabio Carrara",
         "type": "external",
         "category": "",
-        "documents": 2,
+        "documents": 6,
         "total_link_strength": 18,
-        "cluster": 3
+        "cluster": 5
+      },
+      {
+        "id": "co:amato:g",
+        "name": "Giuseppe Amato",
+        "type": "external",
+        "category": "",
+        "documents": 6,
+        "total_link_strength": 18,
+        "cluster": 5
       },
       {
         "id": "co:ricci:g",
@@ -818,34 +881,7 @@
         "category": "",
         "documents": 2,
         "total_link_strength": 18,
-        "cluster": 3
-      },
-      {
-        "id": "co:sagona:g",
-        "name": "Giulia Sagona",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 18,
-        "cluster": 3
-      },
-      {
-        "id": "co:amato:g",
-        "name": "Giuseppe Amato",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 18,
-        "cluster": 3
-      },
-      {
-        "id": "co:lupori:l",
-        "name": "Leonardo Lupori",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 18,
-        "cluster": 3
+        "cluster": 5
       },
       {
         "id": "co:verde:l",
@@ -854,25 +890,7 @@
         "category": "",
         "documents": 2,
         "total_link_strength": 18,
-        "cluster": 3
-      },
-      {
-        "id": "co:mazziotti:r",
-        "name": "Raffaele Mazziotti",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 18,
-        "cluster": 3
-      },
-      {
-        "id": "co:pizzorusso:t",
-        "name": "Tommaso Pizzorusso",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 18,
-        "cluster": 3
+        "cluster": 5
       },
       {
         "id": "co:piazza:m",
@@ -890,7 +908,7 @@
         "category": "",
         "documents": 5,
         "total_link_strength": 17,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:visocchi:e",
@@ -929,20 +947,20 @@
         "cluster": 0
       },
       {
+        "id": "co:guzzetta:a",
+        "name": "Andrea Guzzetta",
+        "type": "external",
+        "category": "",
+        "documents": 5,
+        "total_link_strength": 13,
+        "cluster": 0
+      },
+      {
         "id": "co:biagi:l",
         "name": "Laura Biagi",
         "type": "external",
         "category": "",
         "documents": 3,
-        "total_link_strength": 13,
-        "cluster": 0
-      },
-      {
-        "id": "co:guzzetta:a",
-        "name": "Andrea Guzzetta",
-        "type": "external",
-        "category": "",
-        "documents": 2,
         "total_link_strength": 13,
         "cluster": 0
       },
@@ -965,13 +983,22 @@
         "cluster": 0
       },
       {
+        "id": "co:marchi:v",
+        "name": "Viviana Marchi",
+        "type": "external",
+        "category": "",
+        "documents": 5,
+        "total_link_strength": 11,
+        "cluster": 0
+      },
+      {
         "id": "co:piegari:a",
         "name": "A. Piegari",
         "type": "external",
         "category": "",
         "documents": 3,
         "total_link_strength": 11,
-        "cluster": 2
+        "cluster": 4
       },
       {
         "id": "co:pome:a",
@@ -1007,7 +1034,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 11,
-        "cluster": 4
+        "cluster": 6
       },
       {
         "id": "co:rocca:c",
@@ -1025,7 +1052,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 11,
-        "cluster": 4
+        "cluster": 6
       },
       {
         "id": "co:pizzanelli:c",
@@ -1034,7 +1061,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 11,
-        "cluster": 4
+        "cluster": 6
       },
       {
         "id": "co:menicucci:d",
@@ -1043,7 +1070,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 11,
-        "cluster": 4
+        "cluster": 6
       },
       {
         "id": "co:marziali:e",
@@ -1061,7 +1088,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 11,
-        "cluster": 4
+        "cluster": 6
       },
       {
         "id": "co:giorgi:f",
@@ -1070,7 +1097,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 11,
-        "cluster": 4
+        "cluster": 6
       },
       {
         "id": "co:fornai:f",
@@ -1079,7 +1106,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 11,
-        "cluster": 4
+        "cluster": 6
       },
       {
         "id": "co:turco:f",
@@ -1088,7 +1115,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 11,
-        "cluster": 4
+        "cluster": 6
       },
       {
         "id": "co:siciliano:g",
@@ -1097,7 +1124,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 11,
-        "cluster": 4
+        "cluster": 6
       },
       {
         "id": "co:bacci:g",
@@ -1124,7 +1151,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 11,
-        "cluster": 4
+        "cluster": 6
       },
       {
         "id": "co:morganti:r",
@@ -1133,7 +1160,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 11,
-        "cluster": 4
+        "cluster": 6
       },
       {
         "id": "co:caputo:r",
@@ -1156,15 +1183,6 @@
       {
         "id": "co:bargiacchi:s",
         "name": "Sara Bargiacchi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 0
-      },
-      {
-        "id": "co:marchi:v",
-        "name": "Viviana Marchi",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -1205,7 +1223,7 @@
         "category": "",
         "documents": 2,
         "total_link_strength": 10,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:alais:d",
@@ -1232,7 +1250,7 @@
         "category": "",
         "documents": 2,
         "total_link_strength": 8,
-        "cluster": 2
+        "cluster": 4
       },
       {
         "id": "co:meocci:m",
@@ -1295,7 +1313,7 @@
         "category": "",
         "documents": 3,
         "total_link_strength": 7,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:gurioli:m",
@@ -1340,7 +1358,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 7,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:tarli barbieri:c",
@@ -1349,7 +1367,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 7,
-        "cluster": 2
+        "cluster": 4
       },
       {
         "id": "co:bolognini:f",
@@ -1367,7 +1385,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 7,
-        "cluster": 2
+        "cluster": 4
       },
       {
         "id": "co:giacomelli:g",
@@ -1376,7 +1394,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 7,
-        "cluster": 2
+        "cluster": 4
       },
       {
         "id": "co:baldriga:i",
@@ -1385,7 +1403,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 7,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:fabozzi:m",
@@ -1394,7 +1412,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 7,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:varano:r",
@@ -1403,7 +1421,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 7,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:mencucci:r",
@@ -1412,7 +1430,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 7,
-        "cluster": 2
+        "cluster": 4
       },
       {
         "id": "co:volpe:r",
@@ -1421,7 +1439,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 7,
-        "cluster": 2
+        "cluster": 4
       },
       {
         "id": "co:buonincontro:s",
@@ -1439,7 +1457,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 7,
-        "cluster": 2
+        "cluster": 4
       },
       {
         "id": "co:del viva:m",
@@ -1493,7 +1511,7 @@
         "category": "",
         "documents": 2,
         "total_link_strength": 6,
-        "cluster": 2
+        "cluster": 4
       },
       {
         "id": "co:stievano:p",
@@ -1574,7 +1592,7 @@
         "category": "",
         "documents": 2,
         "total_link_strength": 5,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:poletti:m",
@@ -1610,7 +1628,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 5,
-        "cluster": 2
+        "cluster": 4
       },
       {
         "id": "co:revonsuo:a",
@@ -1619,7 +1637,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 5,
-        "cluster": 5
+        "cluster": 7
       },
       {
         "id": "co:del lucchese:b",
@@ -1637,7 +1655,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 5,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:pfanner:c",
@@ -1673,7 +1691,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 5,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:gallini:f",
@@ -1700,7 +1718,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 5,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:merusi:i",
@@ -1745,7 +1763,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 5,
-        "cluster": 2
+        "cluster": 4
       },
       {
         "id": "co:monti:m",
@@ -1772,7 +1790,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 5,
-        "cluster": 5
+        "cluster": 7
       },
       {
         "id": "co:marazzi:m",
@@ -1799,7 +1817,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 5,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:rizzo:s",
@@ -1817,7 +1835,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 5,
-        "cluster": 5
+        "cluster": 7
       },
       {
         "id": "co:federici:s",
@@ -1835,7 +1853,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 5,
-        "cluster": 5
+        "cluster": 7
       },
       {
         "id": "co:biondi:a",
@@ -1844,7 +1862,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 4,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:terrosi:a",
@@ -2051,7 +2069,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 4,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:giusti:m",
@@ -2078,7 +2096,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 4,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:avraamides:m",
@@ -2213,7 +2231,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 4,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:branzi:v",
@@ -2234,6 +2252,15 @@
         "cluster": 0
       },
       {
+        "id": "co:tancredi:r",
+        "name": "Raffaella Tancredi",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 3,
+        "cluster": 8
+      },
+      {
         "id": "co:karami:a",
         "name": "Alireza Karami",
         "type": "external",
@@ -2249,7 +2276,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 3,
-        "cluster": 6
+        "cluster": 9
       },
       {
         "id": "co:de caro:c",
@@ -2258,7 +2285,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 3,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:piccini:c",
@@ -2276,7 +2303,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 3,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:brizzolara:d",
@@ -2285,7 +2312,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 3,
-        "cluster": 7
+        "cluster": 8
       },
       {
         "id": "co:tomaiuolo:f",
@@ -2312,7 +2339,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 3,
-        "cluster": 2
+        "cluster": 4
       },
       {
         "id": "co:coniglio:f",
@@ -2330,7 +2357,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 3,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:sandini:g",
@@ -2348,7 +2375,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 3,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:lorenceau:j",
@@ -2375,7 +2402,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 3,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:szinte:m",
@@ -2384,7 +2411,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 3,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:conti:m",
@@ -2393,16 +2420,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 3,
-        "cluster": 1
-      },
-      {
-        "id": "co:tancredi:r",
-        "name": "Raffaella Tancredi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 3,
-        "cluster": 7
+        "cluster": 2
       },
       {
         "id": "co:igliozzi:r",
@@ -2411,7 +2429,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 3,
-        "cluster": 7
+        "cluster": 8
       },
       {
         "id": "co:lauro grotto:r",
@@ -2438,7 +2456,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 3,
-        "cluster": 6
+        "cluster": 9
       },
       {
         "id": "co:tomassini:a",
@@ -2456,7 +2474,7 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 2,
-        "cluster": 1
+        "cluster": 2
       },
       {
         "id": "co:lunghi:c",
@@ -2555,7 +2573,547 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 1,
-        "cluster": 1
+        "cluster": 2
+      },
+      {
+        "id": "co:de vito:g",
+        "name": "Giuseppe de Vito",
+        "type": "external",
+        "category": "",
+        "documents": 34,
+        "total_link_strength": 0,
+        "cluster": 10
+      },
+      {
+        "id": "co:turrini:l",
+        "name": "Lapo Turrini",
+        "type": "external",
+        "category": "",
+        "documents": 15,
+        "total_link_strength": 0,
+        "cluster": 11
+      },
+      {
+        "id": "co:vanzi:f",
+        "name": "Francesco Vanzi",
+        "type": "external",
+        "category": "",
+        "documents": 13,
+        "total_link_strength": 0,
+        "cluster": 12
+      },
+      {
+        "id": "co:piazza:v",
+        "name": "Vincenzo Piazza",
+        "type": "external",
+        "category": "",
+        "documents": 13,
+        "total_link_strength": 0,
+        "cluster": 13
+      },
+      {
+        "id": "co:putignano:e",
+        "name": "Elena Putignano",
+        "type": "external",
+        "category": "",
+        "documents": 12,
+        "total_link_strength": 0,
+        "cluster": 14
+      },
+      {
+        "id": "co:baroncelli:l",
+        "name": "Laura Baroncelli",
+        "type": "external",
+        "category": "",
+        "documents": 9,
+        "total_link_strength": 0,
+        "cluster": 15
+      },
+      {
+        "id": "co:silvestri:l",
+        "name": "Ludovico Silvestri",
+        "type": "external",
+        "category": "",
+        "documents": 9,
+        "total_link_strength": 0,
+        "cluster": 16
+      },
+      {
+        "id": "co:sancataldo:g",
+        "name": "Giuseppe Sancataldo",
+        "type": "external",
+        "category": "",
+        "documents": 8,
+        "total_link_strength": 0,
+        "cluster": 17
+      },
+      {
+        "id": "co:ricci:p",
+        "name": "Pietro Ricci",
+        "type": "external",
+        "category": "",
+        "documents": 8,
+        "total_link_strength": 0,
+        "cluster": 18
+      },
+      {
+        "id": "co:ciofani:g",
+        "name": "Gianni Ciofani",
+        "type": "external",
+        "category": "",
+        "documents": 7,
+        "total_link_strength": 0,
+        "cluster": 19
+      },
+      {
+        "id": "co:tiso:n",
+        "name": "Natascia Tiso",
+        "type": "external",
+        "category": "",
+        "documents": 7,
+        "total_link_strength": 0,
+        "cluster": 20
+      },
+      {
+        "id": "co:tognini:p",
+        "name": "Paola Tognini",
+        "type": "external",
+        "category": "",
+        "documents": 6,
+        "total_link_strength": 0,
+        "cluster": 21
+      },
+      {
+        "id": "co:napoli:d",
+        "name": "Debora Napoli",
+        "type": "external",
+        "category": "",
+        "documents": 5,
+        "total_link_strength": 0,
+        "cluster": 22
+      },
+      {
+        "id": "co:sorelli:m",
+        "name": "Michele Sorelli",
+        "type": "external",
+        "category": "",
+        "documents": 5,
+        "total_link_strength": 0,
+        "cluster": 23
+      },
+      {
+        "id": "co:baldi:p",
+        "name": "Pierre Baldi",
+        "type": "external",
+        "category": "",
+        "documents": 5,
+        "total_link_strength": 0,
+        "cluster": 24
+      },
+      {
+        "id": "co:battini:r",
+        "name": "Roberta Battini",
+        "type": "external",
+        "category": "",
+        "documents": 5,
+        "total_link_strength": 0,
+        "cluster": 25
+      },
+      {
+        "id": "co:micera:s",
+        "name": "Silvestro Micera",
+        "type": "external",
+        "category": "",
+        "documents": 5,
+        "total_link_strength": 0,
+        "cluster": 26
+      },
+      {
+        "id": "co:mattoli:v",
+        "name": "Virgilio Mattoli",
+        "type": "external",
+        "category": "",
+        "documents": 5,
+        "total_link_strength": 0,
+        "cluster": 27
+      },
+      {
+        "id": "co:gavryusev:v",
+        "name": "Vladislav Gavryusev",
+        "type": "external",
+        "category": "",
+        "documents": 5,
+        "total_link_strength": 0,
+        "cluster": 28
+      },
+      {
+        "id": "co:scaglione:a",
+        "name": "Alessandro Scaglione",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 0,
+        "cluster": 29
+      },
+      {
+        "id": "co:mascaro:a",
+        "name": "Anna Letizia Allegra Mascaro",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 0,
+        "cluster": 30
+      },
+      {
+        "id": "co:marino:a",
+        "name": "Attilio Marino",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 0,
+        "cluster": 31
+      },
+      {
+        "id": "co:mazzolai:b",
+        "name": "Barbara Mazzolai",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 0,
+        "cluster": 32
+      },
+      {
+        "id": "co:mullenbroich:c",
+        "name": "Caroline Müllenbroich",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 0,
+        "cluster": 33
+      },
+      {
+        "id": "co:fornetto:c",
+        "name": "Chiara Fornetto",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 0,
+        "cluster": 34
+      },
+      {
+        "id": "co:fanelli:d",
+        "name": "Duccio Fanelli",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 0,
+        "cluster": 35
+      },
+      {
+        "id": "co:conti:e",
+        "name": "Eugenia Conti",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 0,
+        "cluster": 36
+      },
+      {
+        "id": "co:resta:f",
+        "name": "Francesco Resta",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 0,
+        "cluster": 37
+      },
+      {
+        "id": "co:marchetti:m",
+        "name": "Marco Marchetti",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 0,
+        "cluster": 38
+      },
+      {
+        "id": "co:gennaro:m",
+        "name": "Mariangela Gennaro",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 0,
+        "cluster": 39
+      },
+      {
+        "id": "co:chen:s",
+        "name": "Siwei Chen",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 0,
+        "cluster": 40
+      },
+      {
+        "id": "co:cappello:v",
+        "name": "Valentina Cappello",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 0,
+        "cluster": 41
+      },
+      {
+        "id": "co:totaro:v",
+        "name": "Valentino Totaro",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 0,
+        "cluster": 42
+      },
+      {
+        "id": "co:gennaro:c",
+        "name": "Claudio Gennaro",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 43
+      },
+      {
+        "id": "co:de luca:d",
+        "name": "Daniela De Luca",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 44
+      },
+      {
+        "id": "co:montagni:e",
+        "name": "Elena Montagni",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 45
+      },
+      {
+        "id": "co:scaffei:e",
+        "name": "Elena Scaffei",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 46
+      },
+      {
+        "id": "co:cacciante:f",
+        "name": "Francesco Cacciante",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 47
+      },
+      {
+        "id": "co:mazzamuto:g",
+        "name": "Giacomo Mazzamuto",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 48
+      },
+      {
+        "id": "co:tonazzini:i",
+        "name": "Ilaria Tonazzini",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 49
+      },
+      {
+        "id": "co:sacconi:l",
+        "name": "Leonardo Sacconi",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 50
+      },
+      {
+        "id": "co:samad:m",
+        "name": "Muntaha Samad",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 51
+      },
+      {
+        "id": "co:berardi:n",
+        "name": "Nicoletta Berardi",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 52
+      },
+      {
+        "id": "co:cornuti:s",
+        "name": "Sara Cornuti",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 53
+      },
+      {
+        "id": "co:moccia:s",
+        "name": "Sara Moccia",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 0,
+        "cluster": 54
+      },
+      {
+        "id": "co:cellerino:a",
+        "name": "Alessandro Cellerino",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 55
+      },
+      {
+        "id": "co:sale:a",
+        "name": "Alessandro Sale",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 56
+      },
+      {
+        "id": "co:canta:a",
+        "name": "Annalisa Canta",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 57
+      },
+      {
+        "id": "co:rocca:a",
+        "name": "Antonella Rocca",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 58
+      },
+      {
+        "id": "co:filippeschi:c",
+        "name": "Carlo Filippeschi",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 59
+      },
+      {
+        "id": "co:magnan:c",
+        "name": "Christophe Magnan",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 60
+      },
+      {
+        "id": "co:carmassi:c",
+        "name": "Claudia Carmassi",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 61
+      },
+      {
+        "id": "co:fuchs:c",
+        "name": "Claudia Fuchs",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 62
+      },
+      {
+        "id": "co:silingardi:d",
+        "name": "Davide Silingardi",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 63
+      },
+      {
+        "id": "co:ciani:e",
+        "name": "Elisabetta Ciani",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 64
+      },
+      {
+        "id": "co:farrokhtakin:e",
+        "name": "Elmira Farrokhtakin",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 65
+      },
+      {
+        "id": "co:strettoi:e",
+        "name": "Enrica Strettoi",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 66
+      },
+      {
+        "id": "co:sacramento:e",
+        "name": "Erika K Sacramento",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 67
+      },
+      {
+        "id": "co:tozzini:e",
+        "name": "Eva Terzibasi Tozzini",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 68
+      },
+      {
+        "id": "co:calugi:f",
+        "name": "Francesco Calugi",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 69
       },
       {
         "id": "co:punzi:g",
@@ -2564,7 +3122,502 @@
         "category": "",
         "documents": 2,
         "total_link_strength": 0,
-        "cluster": 8
+        "cluster": 70
+      },
+      {
+        "id": "co:della sala:g",
+        "name": "Grazia Della Sala",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 71
+      },
+      {
+        "id": "co:rutigliano:g",
+        "name": "Grazia Rutigliano",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 72
+      },
+      {
+        "id": "co:kwok:j",
+        "name": "Jessica CF Kwok",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 73
+      },
+      {
+        "id": "co:kirkpartick:j",
+        "name": "Joanna Kirkpartick",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 74
+      },
+      {
+        "id": "co:dell osso:l",
+        "name": "Liliana Dell’Osso",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 75
+      },
+      {
+        "id": "co:ciampi:l",
+        "name": "Luca Ciampi",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 76
+      },
+      {
+        "id": "co:cecchini:m",
+        "name": "Marco Cecchini",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 77
+      },
+      {
+        "id": "co:alessandri:m",
+        "name": "Maria Grazia Alessandrì",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 78
+      },
+      {
+        "id": "co:caldarelli:m",
+        "name": "Matteo Caldarelli",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 79
+      },
+      {
+        "id": "co:marmiroli:p",
+        "name": "Paola Marmiroli",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 80
+      },
+      {
+        "id": "co:cecchi:r",
+        "name": "Roberta Cecchi",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 81
+      },
+      {
+        "id": "co:bagnoli:s",
+        "name": "Sara Bagnoli",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 82
+      },
+      {
+        "id": "co:calderoni:s",
+        "name": "Sara Calderoni",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 83
+      },
+      {
+        "id": "co:costanzo:v",
+        "name": "Valeria Costanzo",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 0,
+        "cluster": 84
+      },
+      {
+        "id": "co:cutrone:a",
+        "name": "A Cutrone",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 85
+      },
+      {
+        "id": "co:mazzoni:a",
+        "name": "A Mazzoni",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 86
+      },
+      {
+        "id": "co:consorti:a",
+        "name": "Alan Consorti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 87
+      },
+      {
+        "id": "co:montalbano:a",
+        "name": "Alberto Montalbano",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 88
+      },
+      {
+        "id": "co:raspanti:a",
+        "name": "Alessandra Raspanti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 89
+      },
+      {
+        "id": "co:stella:a",
+        "name": "Alessandra Stella",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 90
+      },
+      {
+        "id": "co:mattiello:a",
+        "name": "Alessandro Mattiello",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 91
+      },
+      {
+        "id": "co:chiorazzi:a",
+        "name": "Alessia Chiorazzi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 92
+      },
+      {
+        "id": "co:galante:a",
+        "name": "Alessia Galante",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 93
+      },
+      {
+        "id": "co:nocentini:a",
+        "name": "Alessio Nocentini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 94
+      },
+      {
+        "id": "co:gastaldelli:a",
+        "name": "Amalia Gastaldelli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 95
+      },
+      {
+        "id": "co:cappelli:a",
+        "name": "Andrea Cappelli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 96
+      },
+      {
+        "id": "co:marcantoni:a",
+        "name": "Andrea Marcantoni",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 97
+      },
+      {
+        "id": "co:petretto:a",
+        "name": "Andrea Petretto",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 98
+      },
+      {
+        "id": "co:poli:a",
+        "name": "Andrea Poli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 99
+      },
+      {
+        "id": "co:stoccoro:a",
+        "name": "Andrea Stoccoro",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 100
+      },
+      {
+        "id": "co:marquez galera:a",
+        "name": "Angel Marquez-Galera",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 101
+      },
+      {
+        "id": "co:bifone:a",
+        "name": "Angelo Bifone",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 102
+      },
+      {
+        "id": "co:quattrini:a",
+        "name": "Angelo Quattrini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 103
+      },
+      {
+        "id": "co:grosso:a",
+        "name": "Anna Grosso",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 104
+      },
+      {
+        "id": "co:renna:a",
+        "name": "Annamaria Renna",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 105
+      },
+      {
+        "id": "co:ferrari:a",
+        "name": "Annarita Ferrari",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 106
+      },
+      {
+        "id": "co:laurino:a",
+        "name": "Annunziatina Laurino",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 107
+      },
+      {
+        "id": "co:gurgone:a",
+        "name": "Antonia Gurgone",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 108
+      },
+      {
+        "id": "co:stefanov:a",
+        "name": "Antonia Stefanov",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 109
+      },
+      {
+        "id": "co:di marco:b",
+        "name": "Beatrice Di Marco",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 110
+      },
+      {
+        "id": "co:sacchetti:b",
+        "name": "Benedetto Sacchetti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 111
+      },
+      {
+        "id": "co:chattopadhyaya:b",
+        "name": "Bidisha Chattopadhyaya",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 112
+      },
+      {
+        "id": "co:antonelli:c",
+        "name": "Camilla Antonelli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 113
+      },
+      {
+        "id": "co:santiago:c",
+        "name": "Carlos Santiago",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 114
+      },
+      {
+        "id": "co:pucci:c",
+        "name": "Carlotta Pucci",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 115
+      },
+      {
+        "id": "co:navarron:c",
+        "name": "Carmen M. Navarron",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 116
+      },
+      {
+        "id": "co:bendotti:c",
+        "name": "Caterina Bendotti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 117
+      },
+      {
+        "id": "co:credi:c",
+        "name": "Caterina Credi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 118
+      },
+      {
+        "id": "co:jahannault talignani:c",
+        "name": "Celine Jahannault-Talignani",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 119
+      },
+      {
+        "id": "co:bosetti:c",
+        "name": "Chiara Bosetti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 120
+      },
+      {
+        "id": "co:tapeinos:c",
+        "name": "Christos Tapeinos",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 121
+      },
+      {
+        "id": "co:gargini:c",
+        "name": "Claudia Gargini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 122
+      },
+      {
+        "id": "co:torelli:c",
+        "name": "Claudia Torelli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 123
+      },
+      {
+        "id": "co:supuran:c",
+        "name": "Claudiu T. Supuran",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 124
+      },
+      {
+        "id": "co:meregalli:c",
+        "name": "Cristina Meregalli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 125
       },
       {
         "id": "co:benedetti:d",
@@ -2573,7 +3626,115 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 0,
-        "cluster": 9
+        "cluster": 126
+      },
+      {
+        "id": "co:de pasquale:d",
+        "name": "Daniele De Pasquale",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 127
+      },
+      {
+        "id": "co:d:d",
+        "name": "De Luca D.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 128
+      },
+      {
+        "id": "co:g:d",
+        "name": "De Vito G.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 129
+      },
+      {
+        "id": "co:comai:d",
+        "name": "Debora Comai",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 130
+      },
+      {
+        "id": "co:golberg:d",
+        "name": "Dmitri Golberg",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 131
+      },
+      {
+        "id": "co:debellis:d",
+        "name": "Doriana Debellis",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 132
+      },
+      {
+        "id": "co:grilli:e",
+        "name": "Edda Grilli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 133
+      },
+      {
+        "id": "co:likhtik:e",
+        "name": "Ekaterina Likhtik",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 134
+      },
+      {
+        "id": "co:trabalzini:e",
+        "name": "Elena Trabalzini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 135
+      },
+      {
+        "id": "co:baho:e",
+        "name": "Elie Baho",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 136
+      },
+      {
+        "id": "co:borghi:e",
+        "name": "Elisa Borghi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 137
+      },
+      {
+        "id": "co:cerri:e",
+        "name": "Elisa Cerri",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 138
       },
       {
         "id": "co:ciaramelli:e",
@@ -2582,7 +3743,16 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 0,
-        "cluster": 10
+        "cluster": 139
+      },
+      {
+        "id": "co:ren:e",
+        "name": "Elisa Ren",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 140
       },
       {
         "id": "co:ladavas:e",
@@ -2591,7 +3761,97 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 0,
-        "cluster": 11
+        "cluster": 141
+      },
+      {
+        "id": "co:ghirardini:e",
+        "name": "Elsa Ghirardini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 142
+      },
+      {
+        "id": "co:vaucher:e",
+        "name": "Elvire Vaucher",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 143
+      },
+      {
+        "id": "co:ottaviano:e",
+        "name": "Emerenziana Ottaviano",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 144
+      },
+      {
+        "id": "co:almici:e",
+        "name": "Enrico Almici",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 145
+      },
+      {
+        "id": "co:potma:e",
+        "name": "Eric O. Potma",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 146
+      },
+      {
+        "id": "co:papini:e",
+        "name": "Ester M. Papini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 147
+      },
+      {
+        "id": "co:dedola:f",
+        "name": "F Dedola",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 148
+      },
+      {
+        "id": "co:ango:f",
+        "name": "Fabrice Ango",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 149
+      },
+      {
+        "id": "co:carli:f",
+        "name": "Fabrizia Carli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 150
+      },
+      {
+        "id": "co:falchi:f",
+        "name": "Fabrizio Falchi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 151
       },
       {
         "id": "co:leo:f",
@@ -2600,7 +3860,619 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 0,
-        "cluster": 12
+        "cluster": 152
+      },
+      {
+        "id": "co:avezza:f",
+        "name": "Federica Avezza",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 153
+      },
+      {
+        "id": "co:di vetta:f",
+        "name": "Federica Di Vetta",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 154
+      },
+      {
+        "id": "co:pilotto:f",
+        "name": "Federica Pilotto",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 155
+      },
+      {
+        "id": "co:cremisi:f",
+        "name": "Federico Cremisi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 156
+      },
+      {
+        "id": "co:muratori:f",
+        "name": "Filippo Muratori",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 157
+      },
+      {
+        "id": "co:corsi:f",
+        "name": "Francesca Corsi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 158
+      },
+      {
+        "id": "co:damiani:f",
+        "name": "Francesca Damiani",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 159
+      },
+      {
+        "id": "co:moscuzza:f",
+        "name": "Francesca Moscuzza",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 160
+      },
+      {
+        "id": "co:tozzi:f",
+        "name": "Francesca Tozzi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 161
+      },
+      {
+        "id": "co:finamore:f",
+        "name": "Francesco Finamore",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 162
+      },
+      {
+        "id": "co:raimondi:f",
+        "name": "Francesco Raimondi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 163
+      },
+      {
+        "id": "co:chelini:g",
+        "name": "Gabriele Chelini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 164
+      },
+      {
+        "id": "co:lagani:g",
+        "name": "Gabriele Lagani",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 165
+      },
+      {
+        "id": "co:sansevero:g",
+        "name": "Gabriele Sansevero",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 166
+      },
+      {
+        "id": "co:tealdi:g",
+        "name": "Gessica Tealdi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 167
+      },
+      {
+        "id": "co:sgherri:g",
+        "name": "Giada Sgherri",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 168
+      },
+      {
+        "id": "co:puleo:g",
+        "name": "Gianluigi Puleo",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 169
+      },
+      {
+        "id": "co:dina:g",
+        "name": "Giorgia Dina",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 170
+      },
+      {
+        "id": "co:medici:g",
+        "name": "Giorgio Medici",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 171
+      },
+      {
+        "id": "co:zoccoli:g",
+        "name": "Giovanna Zoccoli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 172
+      },
+      {
+        "id": "co:nardo:g",
+        "name": "Giovanni Nardo",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 173
+      },
+      {
+        "id": "co:amatori:g",
+        "name": "Giulia Amatori",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 174
+      },
+      {
+        "id": "co:concina:g",
+        "name": "Giulia Concina",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 175
+      },
+      {
+        "id": "co:salamone:g",
+        "name": "Giulia Salamone",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 176
+      },
+      {
+        "id": "co:chiantia:g",
+        "name": "Giuseppe Chiantia",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 177
+      },
+      {
+        "id": "co:basta:g",
+        "name": "Giuseppina Basta",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 178
+      },
+      {
+        "id": "co:cecchini:g",
+        "name": "Gloria Cecchini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 179
+      },
+      {
+        "id": "co:di cristo:g",
+        "name": "Graziella Di Cristo",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 180
+      },
+      {
+        "id": "co:cavaletti:g",
+        "name": "Guido Cavaletti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 181
+      },
+      {
+        "id": "co:adam:i",
+        "name": "Ihusan Adam",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 182
+      },
+      {
+        "id": "co:piano:i",
+        "name": "Ilaria Piano",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 183
+      },
+      {
+        "id": "co:carpaneto:j",
+        "name": "J Carpaneto",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 184
+      },
+      {
+        "id": "co:arthur:j",
+        "name": "J. Simon C. Arthur",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 185
+      },
+      {
+        "id": "co:ranasinghesagara:j",
+        "name": "Janaka C. Ranasinghesagara",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 186
+      },
+      {
+        "id": "co:mckew:j",
+        "name": "John C. McKew",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 187
+      },
+      {
+        "id": "co:barsotti:j",
+        "name": "Jonathan Barsotti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 188
+      },
+      {
+        "id": "co:tola:j",
+        "name": "Jonida Tola",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 189
+      },
+      {
+        "id": "co:lopez atalaya:j",
+        "name": "Jose P. Lopez-Atalaya",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 190
+      },
+      {
+        "id": "co:gordon:j",
+        "name": "Joshua A. Gordon",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 191
+      },
+      {
+        "id": "co:gherardini:l",
+        "name": "Lisa Gherardini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 192
+      },
+      {
+        "id": "co:chicchi:l",
+        "name": "Lorenzo Chicchi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 193
+      },
+      {
+        "id": "co:dada:l",
+        "name": "Lorenzo Dadà",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 194
+      },
+      {
+        "id": "co:roschi:l",
+        "name": "Lorenzo Roschi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 195
+      },
+      {
+        "id": "co:crippa:l",
+        "name": "Luca Crippa",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 196
+      },
+      {
+        "id": "co:pesce:l",
+        "name": "Luca Pesce",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 197
+      },
+      {
+        "id": "co:galli:l",
+        "name": "Lucia Galli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 198
+      },
+      {
+        "id": "co:saccaro:l",
+        "name": "Luigi F. Saccaro",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 199
+      },
+      {
+        "id": "co:yamaguchi:m",
+        "name": "Maho Yamaguchi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 200
+      },
+      {
+        "id": "co:cambiaghi:m",
+        "name": "Marco Cambiaghi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 201
+      },
+      {
+        "id": "co:maggi:m",
+        "name": "Maria Anna Maggi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 202
+      },
+      {
+        "id": "co:trolese:m",
+        "name": "Maria Chiara Trolese",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 203
+      },
+      {
+        "id": "co:pasquini:m",
+        "name": "Maria Pasquini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 204
+      },
+      {
+        "id": "co:de franceschi:m",
+        "name": "Marianna De Franceschi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 205
+      },
+      {
+        "id": "co:groleau:m",
+        "name": "Marianne Groleau",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 206
+      },
+      {
+        "id": "co:a:m",
+        "name": "Marino A.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 207
+      },
+      {
+        "id": "co:bossi:m",
+        "name": "Mario Bossi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 208
+      },
+      {
+        "id": "co:lavertu jolin:m",
+        "name": "Marisol Lavertu-Jolin",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 209
+      },
+      {
+        "id": "co:butt:m",
+        "name": "Mark Butt",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 210
+      },
+      {
+        "id": "co:bartolucci:m",
+        "name": "Martina Bartolucci",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 211
+      },
+      {
+        "id": "co:labardi:m",
+        "name": "Massimiliano Labardi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 212
+      },
+      {
+        "id": "co:locatelli:m",
+        "name": "Massimiliano Locatelli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 213
+      },
+      {
+        "id": "co:battaglini:m",
+        "name": "Matteo Battaglini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 214
+      },
+      {
+        "id": "co:giustetto:m",
+        "name": "Maurizio Giustetto",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 215
+      },
+      {
+        "id": "co:gemmi:m",
+        "name": "Mauro Gemmi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 216
+      },
+      {
+        "id": "co:n:m",
+        "name": "Meneghetti N.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 217
+      },
+      {
+        "id": "co:cas:m",
+        "name": "Michele Dei Cas",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 218
+      },
+      {
+        "id": "co:moscarelli:m",
+        "name": "Michele Moscarelli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 219
+      },
+      {
+        "id": "co:do:m",
+        "name": "Minh-Ha T. Do",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 220
       },
       {
         "id": "co:m:m",
@@ -2609,16 +4481,394 @@
         "category": "",
         "documents": 1,
         "total_link_strength": 0,
-        "cluster": 13
+        "cluster": 221
       },
       {
-        "id": "co:shevell:s",
-        "name": "Steven K. Shevell",
+        "id": "co:meneghetti:n",
+        "name": "N Meneghetti",
         "type": "external",
         "category": "",
         "documents": 1,
         "total_link_strength": 0,
-        "cluster": 14
+        "cluster": 222
+      },
+      {
+        "id": "co:stevenson:n",
+        "name": "Nathan Stevenson",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 223
+      },
+      {
+        "id": "co:iturrioz rodriguez:n",
+        "name": "Nerea Iturrioz-Rodríguez",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 224
+      },
+      {
+        "id": "co:ceglia:n",
+        "name": "Nicholas Ceglia",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 225
+      },
+      {
+        "id": "co:di leo:n",
+        "name": "Nicoletta di Leo",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 226
+      },
+      {
+        "id": "co:riva:n",
+        "name": "Nilo Riva",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 227
+      },
+      {
+        "id": "co:koolen:n",
+        "name": "Ninah Koolen",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 228
+      },
+      {
+        "id": "co:morello:n",
+        "name": "Noemi Morello",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 229
+      },
+      {
+        "id": "co:orsini:n",
+        "name": "Noemi Orsini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 230
+      },
+      {
+        "id": "co:oggioni:n",
+        "name": "Norberto Oggioni",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 231
+      },
+      {
+        "id": "co:shaw:p",
+        "name": "Pamela J. Shaw",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 232
+      },
+      {
+        "id": "co:parlanti:p",
+        "name": "Paola Parlanti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 233
+      },
+      {
+        "id": "co:ghirri:p",
+        "name": "Paolo Ghirri",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 234
+      },
+      {
+        "id": "co:awad:p",
+        "name": "Patricia N. Awad",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 235
+      },
+      {
+        "id": "co:heath:p",
+        "name": "Paul R. Heath",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 236
+      },
+      {
+        "id": "co:chehrazi:p",
+        "name": "Pegah Chehrazi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 237
+      },
+      {
+        "id": "co:lombardi:r",
+        "name": "Raffaella Lombardi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 238
+      },
+      {
+        "id": "co:bartesaghi:r",
+        "name": "Renata Bartesaghi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 239
+      },
+      {
+        "id": "co:cicchi:r",
+        "name": "Riccardo Cicchi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 240
+      },
+      {
+        "id": "co:melani:r",
+        "name": "Riccardo Melani",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 241
+      },
+      {
+        "id": "co:pizzo:r",
+        "name": "Riccardo Pizzo",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 242
+      },
+      {
+        "id": "co:rizzi:r",
+        "name": "Riccardo Rizzi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 243
+      },
+      {
+        "id": "co:nisar:r",
+        "name": "Rida Nisar",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 244
+      },
+      {
+        "id": "co:livi:r",
+        "name": "Roberto Livi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 245
+      },
+      {
+        "id": "co:rimondini:r",
+        "name": "Roberto Rimondini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 246
+      },
+      {
+        "id": "co:viggiano:r",
+        "name": "Rocchina Viggiano",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 247
+      },
+      {
+        "id": "co:boyd:r",
+        "name": "Roslyn N Boyd",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 248
+      },
+      {
+        "id": "co:pieri:r",
+        "name": "Rossella Pieri",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 249
+      },
+      {
+        "id": "co:vanhatalo:s",
+        "name": "Sampsa Vanhatalo",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 250
+      },
+      {
+        "id": "co:gnavi:s",
+        "name": "Sara Gnavi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 251
+      },
+      {
+        "id": "co:bovetti:s",
+        "name": "Serena Bovetti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 252
+      },
+      {
+        "id": "co:del turco:s",
+        "name": "Serena Del Turco",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 253
+      },
+      {
+        "id": "co:bisti:s",
+        "name": "Silvia Bisti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 254
+      },
+      {
+        "id": "co:morea:s",
+        "name": "Silvia Morea",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 255
+      },
+      {
+        "id": "co:rocchiccioli:s",
+        "name": "Silvia Rocchiccioli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 256
+      },
+      {
+        "id": "co:fenizia:s",
+        "name": "Simona Fenizia",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 257
+      },
+      {
+        "id": "co:migliorin:s",
+        "name": "Simone Migliorin",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 258
+      },
+      {
+        "id": "co:moscato:s",
+        "name": "Stefania Moscato",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 259
+      },
+      {
+        "id": "co:trazzi:s",
+        "name": "Stefania Trazzi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 260
+      },
+      {
+        "id": "co:bastianini:s",
+        "name": "Stefano Bastianini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 261
+      },
+      {
+        "id": "co:luin:s",
+        "name": "Stefano Luin",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 262
+      },
+      {
+        "id": "co:salvadori:s",
+        "name": "Stefano Salvadori",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 263
+      },
+      {
+        "id": "co:zucca:s",
+        "name": "Stefano Zucca",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 264
       }
     ],
     "edges": [
@@ -10820,8 +13070,8 @@
       }
     ],
     "stats": {
-      "lab_members": 7,
-      "external_collaborators": 252,
+      "lab_members": 9,
+      "external_collaborators": 500,
       "edges": 1366
     }
   }
