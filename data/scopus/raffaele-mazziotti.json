@@ -1,7 +1,11 @@
 {
   "slug": "raffaele-mazziotti",
   "name": "Raffaele Mazziotti",
+<<<<<<< HEAD
   "generated_at": "2026-06-28T08:56:45Z",
+=======
+  "generated_at": "2026-06-28T09:08:02Z",
+>>>>>>> f888205c00a1dfa5dd1af13489a9ec0825c23e79
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57110486800",
@@ -234,10 +238,6 @@
     }
   ],
   "coauthors": [
-    {
-      "name": "Raffaele M. Mazziotti",
-      "count": 39
-    },
     {
       "name": "David Charles Burr",
       "count": 38
@@ -552,6 +552,10 @@
     },
     {
       "name": "Alessandra Stella",
+      "count": 1
+    },
+    {
+      "name": "Rida Nisar",
       "count": 1
     }
   ]
