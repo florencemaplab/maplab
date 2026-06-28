@@ -21,6 +21,9 @@
     "roberto-arrighi": "faculty",
     "alessandro-benedetto": "faculty",
     "elisa-castaldi": "faculty",
+    "michela-delviva": "faculty",
+    "giuseppe-devito": "faculty",
+    "raffaele-mazziotti": "faculty",
     "serena-castellotti": "postdoc",
     "irene-burgio": "phd"
   };
