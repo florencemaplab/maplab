@@ -1,7 +1,7 @@
 {
   "slug": "raffaele-mazziotti",
-  "name": "Giovanni Anobile",
-  "generated_at": "2026-06-28T08:56:45Z",
+  "name": "Raffaele Mazziotti",
+  "generated_at": "2026-06-28T09:08:02Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57110486800",
@@ -234,10 +234,6 @@
     }
   ],
   "coauthors": [
-    {
-      "name": "Raffaele M. Mazziotti",
-      "count": 39
-    },
     {
       "name": "David Charles Burr",
       "count": 38
@@ -552,6 +548,10 @@
     },
     {
       "name": "Alessandra Stella",
+      "count": 1
+    },
+    {
+      "name": "Rida Nisar",
       "count": 1
     }
   ]

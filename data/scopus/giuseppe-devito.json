@@ -1,7 +1,7 @@
 {
   "slug": "giuseppe-devito",
-  "name": "Giovanni Anobile",
-  "generated_at": "2026-06-28T08:56:45Z",
+  "name": "Giuseppe de Vito",
+  "generated_at": "2026-06-28T09:08:02Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "55547668700",
@@ -243,12 +243,12 @@
       "count": 37
     },
     {
-      "name": "Guido Marco Cicchini",
+      "name": "Francesco Saverio Pavone",
       "count": 21
     },
     {
-      "name": "Francesco Saverio Pavone",
-      "count": 20
+      "name": "Guido Marco Cicchini",
+      "count": 21
     },
     {
       "name": "Elisa Castaldi",
@@ -256,11 +256,11 @@
     },
     {
       "name": "Lapo Turrini",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Francesco Vanzi",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Vincenzo Piazza",
@@ -271,19 +271,19 @@
       "count": 11
     },
     {
+      "name": "Ludovico Silvestri",
+      "count": 10
+    },
+    {
       "name": "Irene Petrizzo",
       "count": 9
     },
     {
-      "name": "Ludovico Silvestri",
+      "name": "Pietro Ricci",
       "count": 9
     },
     {
       "name": "Francesca Tinelli",
-      "count": 8
-    },
-    {
-      "name": "Pietro Ricci",
       "count": 8
     },
     {
@@ -292,11 +292,15 @@
     },
     {
       "name": "Natascia Tiso",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Gianni Ciofani",
       "count": 7
+    },
+    {
+      "name": "Vladislav Gavryusev",
+      "count": 6
     },
     {
       "name": "Marco Turi",
@@ -311,7 +315,7 @@
       "count": 5
     },
     {
-      "name": "Vladislav Gavryusev",
+      "name": "Caroline Müllenbroich",
       "count": 5
     },
     {
@@ -340,10 +344,6 @@
     },
     {
       "name": "Anna Letizia Allegra Mascaro",
-      "count": 4
-    },
-    {
-      "name": "Caroline Müllenbroich",
       "count": 4
     },
     {

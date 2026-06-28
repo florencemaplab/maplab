@@ -149,7 +149,7 @@
         "type": "lab",
         "category": "faculty",
         "documents": 23,
-        "total_link_strength": 86,
+        "total_link_strength": 84,
         "cluster": 2
       },
       {
@@ -163,11 +163,11 @@
       },
       {
         "id": "giuseppe-devito",
-        "name": "Giovanni Anobile",
+        "name": "Giuseppe de Vito",
         "type": "lab",
         "category": "faculty",
         "documents": 38,
-        "total_link_strength": 290,
+        "total_link_strength": 263,
         "cluster": 4
       },
       {
@@ -181,11 +181,11 @@
       },
       {
         "id": "raffaele-mazziotti",
-        "name": "Giovanni Anobile",
+        "name": "Raffaele Mazziotti",
         "type": "lab",
         "category": "faculty",
         "documents": 40,
-        "total_link_strength": 388,
+        "total_link_strength": 349,
         "cluster": 6
       },
       {
@@ -207,31 +207,13 @@
         "cluster": 8
       },
       {
-        "id": "co:mazziotti:r",
-        "name": "Raffaele M. Mazziotti",
-        "type": "external",
-        "category": "",
-        "documents": 39,
-        "total_link_strength": 387,
-        "cluster": 6
-      },
-      {
         "id": "co:pizzorusso:t",
         "name": "Tommaso Pizzorusso",
         "type": "external",
         "category": "",
         "documents": 28,
-        "total_link_strength": 293,
+        "total_link_strength": 265,
         "cluster": 6
-      },
-      {
-        "id": "co:de vito:g",
-        "name": "Giuseppe de Vito",
-        "type": "external",
-        "category": "",
-        "documents": 34,
-        "total_link_strength": 286,
-        "cluster": 4
       },
       {
         "id": "co:lupori:l",
@@ -239,7 +221,7 @@
         "type": "external",
         "category": "",
         "documents": 21,
-        "total_link_strength": 232,
+        "total_link_strength": 211,
         "cluster": 6
       },
       {
@@ -256,8 +238,8 @@
         "name": "Francesco Saverio Pavone",
         "type": "external",
         "category": "",
-        "documents": 21,
-        "total_link_strength": 196,
+        "documents": 22,
+        "total_link_strength": 184,
         "cluster": 4
       },
       {
@@ -266,7 +248,7 @@
         "type": "external",
         "category": "",
         "documents": 15,
-        "total_link_strength": 171,
+        "total_link_strength": 156,
         "cluster": 6
       },
       {
@@ -275,7 +257,7 @@
         "type": "external",
         "category": "",
         "documents": 12,
-        "total_link_strength": 157,
+        "total_link_strength": 145,
         "cluster": 6
       },
       {
@@ -283,8 +265,8 @@
         "name": "Lapo Turrini",
         "type": "external",
         "category": "",
-        "documents": 15,
-        "total_link_strength": 139,
+        "documents": 16,
+        "total_link_strength": 132,
         "cluster": 4
       },
       {
@@ -292,8 +274,8 @@
         "name": "Francesco Vanzi",
         "type": "external",
         "category": "",
-        "documents": 13,
-        "total_link_strength": 128,
+        "documents": 14,
+        "total_link_strength": 123,
         "cluster": 4
       },
       {
@@ -302,7 +284,7 @@
         "type": "external",
         "category": "",
         "documents": 35,
-        "total_link_strength": 121,
+        "total_link_strength": 120,
         "cluster": 0
       },
       {
@@ -311,7 +293,7 @@
         "type": "external",
         "category": "",
         "documents": 9,
-        "total_link_strength": 108,
+        "total_link_strength": 99,
         "cluster": 6
       },
       {
@@ -319,26 +301,8 @@
         "name": "Ludovico Silvestri",
         "type": "external",
         "category": "",
-        "documents": 9,
-        "total_link_strength": 99,
-        "cluster": 4
-      },
-      {
-        "id": "co:piazza:v",
-        "name": "Vincenzo Piazza",
-        "type": "external",
-        "category": "",
-        "documents": 13,
+        "documents": 10,
         "total_link_strength": 98,
-        "cluster": 4
-      },
-      {
-        "id": "co:sancataldo:g",
-        "name": "Giuseppe Sancataldo",
-        "type": "external",
-        "category": "",
-        "documents": 8,
-        "total_link_strength": 94,
         "cluster": 4
       },
       {
@@ -351,17 +315,17 @@
         "cluster": 2
       },
       {
-        "id": "co:cioni:g",
-        "name": "Giovanni Cioni",
-        "type": "external",
-        "category": "",
-        "documents": 11,
-        "total_link_strength": 86,
-        "cluster": 6
-      },
-      {
         "id": "co:ricci:p",
         "name": "Pietro Ricci",
+        "type": "external",
+        "category": "",
+        "documents": 9,
+        "total_link_strength": 86,
+        "cluster": 4
+      },
+      {
+        "id": "co:sancataldo:g",
+        "name": "Giuseppe Sancataldo",
         "type": "external",
         "category": "",
         "documents": 8,
@@ -369,13 +333,13 @@
         "cluster": 4
       },
       {
-        "id": "co:tognini:p",
-        "name": "Paola Tognini",
+        "id": "co:piazza:v",
+        "name": "Vincenzo Piazza",
         "type": "external",
         "category": "",
-        "documents": 6,
+        "documents": 13,
         "total_link_strength": 85,
-        "cluster": 6
+        "cluster": 4
       },
       {
         "id": "co:pedone:a",
@@ -409,8 +373,8 @@
         "name": "Natascia Tiso",
         "type": "external",
         "category": "",
-        "documents": 7,
-        "total_link_strength": 82,
+        "documents": 8,
+        "total_link_strength": 83,
         "cluster": 4
       },
       {
@@ -423,12 +387,21 @@
         "cluster": 0
       },
       {
-        "id": "co:baldi:p",
-        "name": "Pierre Baldi",
+        "id": "co:cioni:g",
+        "name": "Giovanni Cioni",
         "type": "external",
         "category": "",
-        "documents": 5,
-        "total_link_strength": 78,
+        "documents": 11,
+        "total_link_strength": 81,
+        "cluster": 6
+      },
+      {
+        "id": "co:tognini:p",
+        "name": "Paola Tognini",
+        "type": "external",
+        "category": "",
+        "documents": 6,
+        "total_link_strength": 79,
         "cluster": 6
       },
       {
@@ -495,48 +468,12 @@
         "cluster": 3
       },
       {
-        "id": "co:viglione:a",
-        "name": "Aurelia Viglione",
-        "type": "external",
-        "category": "",
-        "documents": 7,
-        "total_link_strength": 67,
-        "cluster": 6
-      },
-      {
-        "id": "co:ciofani:g",
-        "name": "Gianni Ciofani",
-        "type": "external",
-        "category": "",
-        "documents": 7,
-        "total_link_strength": 67,
-        "cluster": 4
-      },
-      {
-        "id": "co:chen:s",
-        "name": "Siwei Chen",
-        "type": "external",
-        "category": "",
-        "documents": 4,
-        "total_link_strength": 64,
-        "cluster": 6
-      },
-      {
-        "id": "co:carrara:f",
-        "name": "Fabio Carrara",
-        "type": "external",
-        "category": "",
-        "documents": 6,
-        "total_link_strength": 63,
-        "cluster": 6
-      },
-      {
-        "id": "co:napoli:d",
-        "name": "Debora Napoli",
+        "id": "co:baldi:p",
+        "name": "Pierre Baldi",
         "type": "external",
         "category": "",
         "documents": 5,
-        "total_link_strength": 62,
+        "total_link_strength": 73,
         "cluster": 6
       },
       {
@@ -549,11 +486,29 @@
         "cluster": 3
       },
       {
-        "id": "co:amato:g",
-        "name": "Giuseppe Amato",
+        "id": "co:viglione:a",
+        "name": "Aurelia Viglione",
         "type": "external",
         "category": "",
-        "documents": 6,
+        "documents": 7,
+        "total_link_strength": 60,
+        "cluster": 6
+      },
+      {
+        "id": "co:ciofani:g",
+        "name": "Gianni Ciofani",
+        "type": "external",
+        "category": "",
+        "documents": 7,
+        "total_link_strength": 60,
+        "cluster": 4
+      },
+      {
+        "id": "co:chen:s",
+        "name": "Siwei Chen",
+        "type": "external",
+        "category": "",
+        "documents": 4,
         "total_link_strength": 60,
         "cluster": 6
       },
@@ -567,12 +522,30 @@
         "cluster": 3
       },
       {
-        "id": "co:battini:r",
-        "name": "Roberta Battini",
+        "id": "co:gavryusev:v",
+        "name": "Vladislav Gavryusev",
+        "type": "external",
+        "category": "",
+        "documents": 6,
+        "total_link_strength": 58,
+        "cluster": 4
+      },
+      {
+        "id": "co:carrara:f",
+        "name": "Fabio Carrara",
+        "type": "external",
+        "category": "",
+        "documents": 6,
+        "total_link_strength": 57,
+        "cluster": 6
+      },
+      {
+        "id": "co:napoli:d",
+        "name": "Debora Napoli",
         "type": "external",
         "category": "",
         "documents": 5,
-        "total_link_strength": 58,
+        "total_link_strength": 57,
         "cluster": 6
       },
       {
@@ -594,39 +567,30 @@
         "cluster": 1
       },
       {
-        "id": "co:gavryusev:v",
-        "name": "Vladislav Gavryusev",
+        "id": "co:amato:g",
+        "name": "Giuseppe Amato",
+        "type": "external",
+        "category": "",
+        "documents": 6,
+        "total_link_strength": 54,
+        "cluster": 6
+      },
+      {
+        "id": "co:battini:r",
+        "name": "Roberta Battini",
         "type": "external",
         "category": "",
         "documents": 5,
-        "total_link_strength": 55,
-        "cluster": 4
+        "total_link_strength": 53,
+        "cluster": 6
       },
       {
-        "id": "co:marchi:v",
-        "name": "Viviana Marchi",
+        "id": "co:mullenbroich:c",
+        "name": "Caroline Müllenbroich",
         "type": "external",
         "category": "",
         "documents": 5,
         "total_link_strength": 51,
-        "cluster": 6
-      },
-      {
-        "id": "co:fornetto:c",
-        "name": "Chiara Fornetto",
-        "type": "external",
-        "category": "",
-        "documents": 4,
-        "total_link_strength": 50,
-        "cluster": 4
-      },
-      {
-        "id": "co:fanelli:d",
-        "name": "Duccio Fanelli",
-        "type": "external",
-        "category": "",
-        "documents": 4,
-        "total_link_strength": 49,
         "cluster": 4
       },
       {
@@ -639,48 +603,39 @@
         "cluster": 3
       },
       {
+        "id": "co:marchi:v",
+        "name": "Viviana Marchi",
+        "type": "external",
+        "category": "",
+        "documents": 5,
+        "total_link_strength": 47,
+        "cluster": 6
+      },
+      {
+        "id": "co:fornetto:c",
+        "name": "Chiara Fornetto",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 46,
+        "cluster": 4
+      },
+      {
+        "id": "co:fanelli:d",
+        "name": "Duccio Fanelli",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 45,
+        "cluster": 4
+      },
+      {
         "id": "co:samad:m",
         "name": "Muntaha Samad",
         "type": "external",
         "category": "",
         "documents": 3,
-        "total_link_strength": 48,
-        "cluster": 6
-      },
-      {
-        "id": "co:mullenbroich:c",
-        "name": "Caroline Müllenbroich",
-        "type": "external",
-        "category": "",
-        "documents": 4,
-        "total_link_strength": 47,
-        "cluster": 4
-      },
-      {
-        "id": "co:mattoli:v",
-        "name": "Virgilio Mattoli",
-        "type": "external",
-        "category": "",
-        "documents": 5,
         "total_link_strength": 45,
-        "cluster": 4
-      },
-      {
-        "id": "co:gennaro:m",
-        "name": "Mariangela Gennaro",
-        "type": "external",
-        "category": "",
-        "documents": 4,
-        "total_link_strength": 43,
-        "cluster": 6
-      },
-      {
-        "id": "co:cacciante:f",
-        "name": "Francesco Cacciante",
-        "type": "external",
-        "category": "",
-        "documents": 3,
-        "total_link_strength": 43,
         "cluster": 6
       },
       {
@@ -691,15 +646,6 @@
         "documents": 5,
         "total_link_strength": 42,
         "cluster": 3
-      },
-      {
-        "id": "co:totaro:v",
-        "name": "Valentino Totaro",
-        "type": "external",
-        "category": "",
-        "documents": 4,
-        "total_link_strength": 42,
-        "cluster": 6
       },
       {
         "id": "co:amadori:a",
@@ -738,47 +684,20 @@
         "cluster": 3
       },
       {
-        "id": "co:guzzetta:a",
-        "name": "Andrea Guzzetta",
-        "type": "external",
-        "category": "",
-        "documents": 5,
-        "total_link_strength": 41,
-        "cluster": 6
-      },
-      {
-        "id": "co:marino:a",
-        "name": "Attilio Marino",
-        "type": "external",
-        "category": "",
-        "documents": 4,
-        "total_link_strength": 41,
-        "cluster": 4
-      },
-      {
-        "id": "co:micera:s",
-        "name": "Silvestro Micera",
+        "id": "co:mattoli:v",
+        "name": "Virgilio Mattoli",
         "type": "external",
         "category": "",
         "documents": 5,
         "total_link_strength": 40,
-        "cluster": 6
-      },
-      {
-        "id": "co:mazzolai:b",
-        "name": "Barbara Mazzolai",
-        "type": "external",
-        "category": "",
-        "documents": 4,
-        "total_link_strength": 40,
         "cluster": 4
       },
       {
-        "id": "co:conti:e",
-        "name": "Eugenia Conti",
+        "id": "co:cacciante:f",
+        "name": "Francesco Cacciante",
         "type": "external",
         "category": "",
-        "documents": 4,
+        "documents": 3,
         "total_link_strength": 40,
         "cluster": 6
       },
@@ -792,12 +711,66 @@
         "cluster": 3
       },
       {
+        "id": "co:gennaro:m",
+        "name": "Mariangela Gennaro",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 39,
+        "cluster": 6
+      },
+      {
+        "id": "co:guzzetta:a",
+        "name": "Andrea Guzzetta",
+        "type": "external",
+        "category": "",
+        "documents": 5,
+        "total_link_strength": 38,
+        "cluster": 6
+      },
+      {
+        "id": "co:totaro:v",
+        "name": "Valentino Totaro",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 38,
+        "cluster": 6
+      },
+      {
+        "id": "co:marino:a",
+        "name": "Attilio Marino",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 37,
+        "cluster": 4
+      },
+      {
+        "id": "co:mazzolai:b",
+        "name": "Barbara Mazzolai",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 36,
+        "cluster": 4
+      },
+      {
+        "id": "co:conti:e",
+        "name": "Eugenia Conti",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 36,
+        "cluster": 6
+      },
+      {
         "id": "co:mazzamuto:g",
         "name": "Giacomo Mazzamuto",
         "type": "external",
         "category": "",
         "documents": 3,
-        "total_link_strength": 39,
+        "total_link_strength": 36,
         "cluster": 4
       },
       {
@@ -806,7 +779,7 @@
         "type": "external",
         "category": "",
         "documents": 3,
-        "total_link_strength": 39,
+        "total_link_strength": 36,
         "cluster": 4
       },
       {
@@ -815,35 +788,8 @@
         "type": "external",
         "category": "",
         "documents": 3,
-        "total_link_strength": 39,
-        "cluster": 6
-      },
-      {
-        "id": "co:sorelli:m",
-        "name": "Michele Sorelli",
-        "type": "external",
-        "category": "",
-        "documents": 5,
-        "total_link_strength": 38,
-        "cluster": 4
-      },
-      {
-        "id": "co:marchetti:m",
-        "name": "Marco Marchetti",
-        "type": "external",
-        "category": "",
-        "documents": 4,
-        "total_link_strength": 37,
-        "cluster": 4
-      },
-      {
-        "id": "co:cappello:v",
-        "name": "Valentina Cappello",
-        "type": "external",
-        "category": "",
-        "documents": 4,
         "total_link_strength": 36,
-        "cluster": 4
+        "cluster": 6
       },
       {
         "id": "co:montcel:b",
@@ -882,76 +828,40 @@
         "cluster": 3
       },
       {
-        "id": "co:cellerino:a",
-        "name": "Alessandro Cellerino",
+        "id": "co:micera:s",
+        "name": "Silvestro Micera",
         "type": "external",
         "category": "",
-        "documents": 2,
+        "documents": 5,
+        "total_link_strength": 35,
+        "cluster": 6
+      },
+      {
+        "id": "co:sorelli:m",
+        "name": "Michele Sorelli",
+        "type": "external",
+        "category": "",
+        "documents": 5,
+        "total_link_strength": 33,
+        "cluster": 4
+      },
+      {
+        "id": "co:marchetti:m",
+        "name": "Marco Marchetti",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 33,
+        "cluster": 4
+      },
+      {
+        "id": "co:cappello:v",
+        "name": "Valentina Cappello",
+        "type": "external",
+        "category": "",
+        "documents": 4,
         "total_link_strength": 32,
-        "cluster": 6
-      },
-      {
-        "id": "co:sacramento:e",
-        "name": "Erika Kelmer Sacramento",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 32,
-        "cluster": 6
-      },
-      {
-        "id": "co:tozzini:e",
-        "name": "Eva Terzibasi Tozzini",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 32,
-        "cluster": 6
-      },
-      {
-        "id": "co:kwok:j",
-        "name": "Jessica CF Kwok",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 32,
-        "cluster": 6
-      },
-      {
-        "id": "co:kirkpartick:j",
-        "name": "Joanna Kirkpartick",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 32,
-        "cluster": 6
-      },
-      {
-        "id": "co:bagnoli:s",
-        "name": "Sara Bagnoli",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 32,
-        "cluster": 6
-      },
-      {
-        "id": "co:gennaro:c",
-        "name": "Claudio Gennaro",
-        "type": "external",
-        "category": "",
-        "documents": 3,
-        "total_link_strength": 31,
-        "cluster": 6
-      },
-      {
-        "id": "co:scaffei:e",
-        "name": "Elena Scaffei",
-        "type": "external",
-        "category": "",
-        "documents": 3,
-        "total_link_strength": 31,
-        "cluster": 6
+        "cluster": 4
       },
       {
         "id": "co:turi:m",
@@ -981,8 +891,8 @@
         "cluster": 0
       },
       {
-        "id": "co:magnan:c",
-        "name": "Christophe Magnan",
+        "id": "co:cellerino:a",
+        "name": "Alessandro Cellerino",
         "type": "external",
         "category": "",
         "documents": 2,
@@ -990,13 +900,76 @@
         "cluster": 6
       },
       {
-        "id": "co:resta:f",
-        "name": "Francesco A. Resta",
+        "id": "co:sacramento:e",
+        "name": "Erika Kelmer Sacramento",
         "type": "external",
         "category": "",
-        "documents": 4,
-        "total_link_strength": 29,
-        "cluster": 4
+        "documents": 2,
+        "total_link_strength": 30,
+        "cluster": 6
+      },
+      {
+        "id": "co:tozzini:e",
+        "name": "Eva Terzibasi Tozzini",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 30,
+        "cluster": 6
+      },
+      {
+        "id": "co:kwok:j",
+        "name": "Jessica CF Kwok",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 30,
+        "cluster": 6
+      },
+      {
+        "id": "co:kirkpartick:j",
+        "name": "Joanna Kirkpartick",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 30,
+        "cluster": 6
+      },
+      {
+        "id": "co:bagnoli:s",
+        "name": "Sara Bagnoli",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 30,
+        "cluster": 6
+      },
+      {
+        "id": "co:gennaro:c",
+        "name": "Claudio Gennaro",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 28,
+        "cluster": 6
+      },
+      {
+        "id": "co:scaffei:e",
+        "name": "Elena Scaffei",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 28,
+        "cluster": 6
+      },
+      {
+        "id": "co:magnan:c",
+        "name": "Christophe Magnan",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 28,
+        "cluster": 6
       },
       {
         "id": "co:eger:e",
@@ -1008,21 +981,12 @@
         "cluster": 3
       },
       {
-        "id": "co:scaglione:a",
-        "name": "Alessandro Scaglione",
+        "id": "co:resta:f",
+        "name": "Francesco A. Resta",
         "type": "external",
         "category": "",
         "documents": 4,
-        "total_link_strength": 27,
-        "cluster": 4
-      },
-      {
-        "id": "co:mascaro:a",
-        "name": "Anna Letizia Allegra Mascaro",
-        "type": "external",
-        "category": "",
-        "documents": 4,
-        "total_link_strength": 27,
+        "total_link_strength": 25,
         "cluster": 4
       },
       {
@@ -1031,7 +995,7 @@
         "type": "external",
         "category": "",
         "documents": 2,
-        "total_link_strength": 27,
+        "total_link_strength": 25,
         "cluster": 6
       },
       {
@@ -1040,44 +1004,8 @@
         "type": "external",
         "category": "",
         "documents": 2,
-        "total_link_strength": 27,
-        "cluster": 6
-      },
-      {
-        "id": "co:berardi:n",
-        "name": "Nicoletta Berardi",
-        "type": "external",
-        "category": "",
-        "documents": 3,
-        "total_link_strength": 26,
-        "cluster": 6
-      },
-      {
-        "id": "co:fuchs:c",
-        "name": "Claudia Fuchs",
-        "type": "external",
-        "category": "",
-        "documents": 2,
         "total_link_strength": 25,
         "cluster": 6
-      },
-      {
-        "id": "co:ciani:e",
-        "name": "Elisabetta Ciani",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 25,
-        "cluster": 6
-      },
-      {
-        "id": "co:calugi:f",
-        "name": "Francesco Calugi",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 25,
-        "cluster": 4
       },
       {
         "id": "co:farini:a",
@@ -1107,17 +1035,53 @@
         "cluster": 3
       },
       {
-        "id": "co:silingardi:d",
-        "name": "Davide Silingardi",
+        "id": "co:scaglione:a",
+        "name": "Alessandro Scaglione",
         "type": "external",
         "category": "",
-        "documents": 2,
-        "total_link_strength": 24,
+        "documents": 4,
+        "total_link_strength": 23,
+        "cluster": 4
+      },
+      {
+        "id": "co:mascaro:a",
+        "name": "Anna Letizia Allegra Mascaro",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 23,
+        "cluster": 4
+      },
+      {
+        "id": "co:berardi:n",
+        "name": "Nicoletta Berardi",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 23,
         "cluster": 6
       },
       {
-        "id": "co:rocca:a",
-        "name": "Antonella Rocca",
+        "id": "co:fuchs:c",
+        "name": "Claudia Fuchs",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 23,
+        "cluster": 6
+      },
+      {
+        "id": "co:ciani:e",
+        "name": "Elisabetta Ciani",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 23,
+        "cluster": 6
+      },
+      {
+        "id": "co:calugi:f",
+        "name": "Francesco Calugi",
         "type": "external",
         "category": "",
         "documents": 2,
@@ -1125,39 +1089,12 @@
         "cluster": 4
       },
       {
-        "id": "co:carmassi:c",
-        "name": "Claudia Carmassi",
+        "id": "co:silingardi:d",
+        "name": "Davide Silingardi",
         "type": "external",
         "category": "",
         "documents": 2,
-        "total_link_strength": 23,
-        "cluster": 6
-      },
-      {
-        "id": "co:ciampi:l",
-        "name": "Luca Ciampi",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 23,
-        "cluster": 6
-      },
-      {
-        "id": "co:calderoni:s",
-        "name": "Sara Calderoni",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 23,
-        "cluster": 6
-      },
-      {
-        "id": "co:costanzo:v",
-        "name": "Valeria Costanzo",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 23,
+        "total_link_strength": 22,
         "cluster": 6
       },
       {
@@ -1170,8 +1107,44 @@
         "cluster": 3
       },
       {
-        "id": "co:della sala:g",
-        "name": "Grazia Della Sala",
+        "id": "co:rocca:a",
+        "name": "Antonella Rocca",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 21,
+        "cluster": 4
+      },
+      {
+        "id": "co:carmassi:c",
+        "name": "Claudia Carmassi",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 21,
+        "cluster": 6
+      },
+      {
+        "id": "co:ciampi:l",
+        "name": "Luca Ciampi",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 21,
+        "cluster": 6
+      },
+      {
+        "id": "co:calderoni:s",
+        "name": "Sara Calderoni",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 21,
+        "cluster": 6
+      },
+      {
+        "id": "co:costanzo:v",
+        "name": "Valeria Costanzo",
         "type": "external",
         "category": "",
         "documents": 2,
@@ -1233,24 +1206,6 @@
         "cluster": 0
       },
       {
-        "id": "co:ricci:g",
-        "name": "Giulia Ricci",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 20,
-        "cluster": 2
-      },
-      {
-        "id": "co:verde:l",
-        "name": "Luca Lo Verde",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 20,
-        "cluster": 2
-      },
-      {
         "id": "co:togoli:i",
         "name": "Irene Togoli",
         "type": "external",
@@ -1269,8 +1224,8 @@
         "cluster": 3
       },
       {
-        "id": "co:dell osso:l",
-        "name": "Liliana Dell’Osso",
+        "id": "co:della sala:g",
+        "name": "Grazia Della Sala",
         "type": "external",
         "category": "",
         "documents": 2,
@@ -1296,175 +1251,22 @@
         "cluster": 3
       },
       {
-        "id": "co:de luca:d",
-        "name": "Daniela De Luca",
-        "type": "external",
-        "category": "",
-        "documents": 3,
-        "total_link_strength": 18,
-        "cluster": 6
-      },
-      {
-        "id": "co:montagni:e",
-        "name": "Elena Montagni",
-        "type": "external",
-        "category": "",
-        "documents": 3,
-        "total_link_strength": 18,
-        "cluster": 4
-      },
-      {
-        "id": "co:moccia:s",
-        "name": "Sara Moccia",
-        "type": "external",
-        "category": "",
-        "documents": 3,
-        "total_link_strength": 18,
-        "cluster": 6
-      },
-      {
-        "id": "co:canta:a",
-        "name": "Annalisa Canta",
+        "id": "co:ricci:g",
+        "name": "Giulia Ricci",
         "type": "external",
         "category": "",
         "documents": 2,
         "total_link_strength": 18,
-        "cluster": 4
+        "cluster": 2
       },
       {
-        "id": "co:marmiroli:p",
-        "name": "Paola Marmiroli",
+        "id": "co:verde:l",
+        "name": "Luca Lo Verde",
         "type": "external",
         "category": "",
         "documents": 2,
         "total_link_strength": 18,
-        "cluster": 4
-      },
-      {
-        "id": "co:cecchi:r",
-        "name": "Roberta Cecchi",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 18,
-        "cluster": 4
-      },
-      {
-        "id": "co:raspanti:a",
-        "name": "Alessandra Raspanti",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 18,
-        "cluster": 6
-      },
-      {
-        "id": "co:nocentini:a",
-        "name": "Alessio Nocentini",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 18,
-        "cluster": 6
-      },
-      {
-        "id": "co:marcantoni:a",
-        "name": "Andrea Marcantoni",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 18,
-        "cluster": 6
-      },
-      {
-        "id": "co:gurgone:a",
-        "name": "Antonia Gurgone",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 18,
-        "cluster": 6
-      },
-      {
-        "id": "co:supuran:c",
-        "name": "Claudiu T. Supuran",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 18,
-        "cluster": 6
-      },
-      {
-        "id": "co:comai:d",
-        "name": "Debora Comai",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 18,
-        "cluster": 6
-      },
-      {
-        "id": "co:pilotto:f",
-        "name": "Federica Pilotto",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 18,
-        "cluster": 6
-      },
-      {
-        "id": "co:chiantia:g",
-        "name": "Giuseppe Chiantia",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 18,
-        "cluster": 6
-      },
-      {
-        "id": "co:giustetto:m",
-        "name": "Maurizio Giustetto",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 18,
-        "cluster": 6
-      },
-      {
-        "id": "co:morello:n",
-        "name": "Noemi Morello",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 18,
-        "cluster": 6
-      },
-      {
-        "id": "co:pizzo:r",
-        "name": "Riccardo Pizzo",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 18,
-        "cluster": 6
-      },
-      {
-        "id": "co:gnavi:s",
-        "name": "Sara Gnavi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 18,
-        "cluster": 6
-      },
-      {
-        "id": "co:devi:s",
-        "name": "Sunaina Devi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 18,
-        "cluster": 6
+        "cluster": 2
       },
       {
         "id": "co:piazza:m",
@@ -1485,13 +1287,67 @@
         "cluster": 5
       },
       {
-        "id": "co:filippeschi:c",
-        "name": "Carlo Filippeschi",
+        "id": "co:dell osso:l",
+        "name": "Liliana Dell’Osso",
         "type": "external",
         "category": "",
         "documents": 2,
         "total_link_strength": 17,
-        "cluster": 4
+        "cluster": 6
+      },
+      {
+        "id": "co:raspanti:a",
+        "name": "Alessandra Raspanti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 17,
+        "cluster": 6
+      },
+      {
+        "id": "co:nocentini:a",
+        "name": "Alessio Nocentini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 17,
+        "cluster": 6
+      },
+      {
+        "id": "co:marcantoni:a",
+        "name": "Andrea Marcantoni",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 17,
+        "cluster": 6
+      },
+      {
+        "id": "co:gurgone:a",
+        "name": "Antonia Gurgone",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 17,
+        "cluster": 6
+      },
+      {
+        "id": "co:supuran:c",
+        "name": "Claudiu T. Supuran",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 17,
+        "cluster": 6
+      },
+      {
+        "id": "co:comai:d",
+        "name": "Debora Comai",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 17,
+        "cluster": 6
       },
       {
         "id": "co:visocchi:e",
@@ -1503,6 +1359,60 @@
         "cluster": 3
       },
       {
+        "id": "co:pilotto:f",
+        "name": "Federica Pilotto",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 17,
+        "cluster": 6
+      },
+      {
+        "id": "co:chiantia:g",
+        "name": "Giuseppe Chiantia",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 17,
+        "cluster": 6
+      },
+      {
+        "id": "co:giustetto:m",
+        "name": "Maurizio Giustetto",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 17,
+        "cluster": 6
+      },
+      {
+        "id": "co:morello:n",
+        "name": "Noemi Morello",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 17,
+        "cluster": 6
+      },
+      {
+        "id": "co:pizzo:r",
+        "name": "Riccardo Pizzo",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 17,
+        "cluster": 6
+      },
+      {
+        "id": "co:gnavi:s",
+        "name": "Sara Gnavi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 17,
+        "cluster": 6
+      },
+      {
         "id": "co:tola:s",
         "name": "Serena Tola",
         "type": "external",
@@ -1510,6 +1420,15 @@
         "documents": 1,
         "total_link_strength": 17,
         "cluster": 3
+      },
+      {
+        "id": "co:devi:s",
+        "name": "Sunaina Devi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 17,
+        "cluster": 6
       },
       {
         "id": "co:gori:m",
@@ -1530,22 +1449,67 @@
         "cluster": 0
       },
       {
-        "id": "co:tonazzini:i",
-        "name": "Ilaria Tonazzini",
-        "type": "external",
-        "category": "",
-        "documents": 3,
-        "total_link_strength": 16,
-        "cluster": 4
-      },
-      {
-        "id": "co:strettoi:e",
-        "name": "Enrica Strettoi",
+        "id": "co:canta:a",
+        "name": "Annalisa Canta",
         "type": "external",
         "category": "",
         "documents": 2,
         "total_link_strength": 16,
+        "cluster": 4
+      },
+      {
+        "id": "co:marmiroli:p",
+        "name": "Paola Marmiroli",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 16,
+        "cluster": 4
+      },
+      {
+        "id": "co:cecchi:r",
+        "name": "Roberta Cecchi",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 16,
+        "cluster": 4
+      },
+      {
+        "id": "co:de luca:d",
+        "name": "Daniela De Luca",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 15,
         "cluster": 6
+      },
+      {
+        "id": "co:montagni:e",
+        "name": "Elena Montagni",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 15,
+        "cluster": 4
+      },
+      {
+        "id": "co:moccia:s",
+        "name": "Sara Moccia",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 15,
+        "cluster": 6
+      },
+      {
+        "id": "co:filippeschi:c",
+        "name": "Carlo Filippeschi",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 15,
+        "cluster": 4
       },
       {
         "id": "co:gastaldelli:a",
@@ -1553,7 +1517,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 16,
+        "total_link_strength": 15,
         "cluster": 6
       },
       {
@@ -1562,7 +1526,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 16,
+        "total_link_strength": 15,
         "cluster": 6
       },
       {
@@ -1571,7 +1535,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 16,
+        "total_link_strength": 15,
         "cluster": 6
       },
       {
@@ -1580,7 +1544,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 16,
+        "total_link_strength": 15,
         "cluster": 6
       },
       {
@@ -1589,7 +1553,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 16,
+        "total_link_strength": 15,
         "cluster": 6
       },
       {
@@ -1598,7 +1562,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 16,
+        "total_link_strength": 15,
         "cluster": 6
       },
       {
@@ -1607,7 +1571,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 16,
+        "total_link_strength": 15,
         "cluster": 6
       },
       {
@@ -1616,7 +1580,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 16,
+        "total_link_strength": 15,
         "cluster": 6
       },
       {
@@ -1625,7 +1589,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 16,
+        "total_link_strength": 15,
         "cluster": 6
       },
       {
@@ -1634,7 +1598,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 16,
+        "total_link_strength": 15,
         "cluster": 6
       },
       {
@@ -1643,7 +1607,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 16,
+        "total_link_strength": 15,
         "cluster": 6
       },
       {
@@ -1652,7 +1616,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 16,
+        "total_link_strength": 15,
         "cluster": 6
       },
       {
@@ -1661,7 +1625,16 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 16,
+        "total_link_strength": 15,
+        "cluster": 6
+      },
+      {
+        "id": "co:strettoi:e",
+        "name": "Enrica Strettoi",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 14,
         "cluster": 6
       },
       {
@@ -1670,7 +1643,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 15,
+        "total_link_strength": 14,
         "cluster": 6
       },
       {
@@ -1679,7 +1652,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 15,
+        "total_link_strength": 14,
         "cluster": 6
       },
       {
@@ -1688,7 +1661,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 15,
+        "total_link_strength": 14,
         "cluster": 6
       },
       {
@@ -1697,7 +1670,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 15,
+        "total_link_strength": 14,
         "cluster": 6
       },
       {
@@ -1706,7 +1679,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 15,
+        "total_link_strength": 14,
         "cluster": 6
       },
       {
@@ -1715,7 +1688,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 15,
+        "total_link_strength": 14,
         "cluster": 6
       },
       {
@@ -1724,7 +1697,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 15,
+        "total_link_strength": 14,
         "cluster": 6
       },
       {
@@ -1733,7 +1706,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 15,
+        "total_link_strength": 14,
         "cluster": 6
       },
       {
@@ -1742,7 +1715,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 15,
+        "total_link_strength": 14,
         "cluster": 6
       },
       {
@@ -1751,7 +1724,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 15,
+        "total_link_strength": 14,
         "cluster": 6
       },
       {
@@ -1760,7 +1733,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 15,
+        "total_link_strength": 14,
         "cluster": 6
       },
       {
@@ -1769,7 +1742,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 15,
+        "total_link_strength": 14,
         "cluster": 6
       },
       {
@@ -1778,7 +1751,7 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 15,
+        "total_link_strength": 14,
         "cluster": 6
       },
       {
@@ -1787,169 +1760,16 @@
         "type": "external",
         "category": "",
         "documents": 1,
-        "total_link_strength": 15,
-        "cluster": 6
-      },
-      {
-        "id": "co:sale:a",
-        "name": "Alessandro Sale",
-        "type": "external",
-        "category": "",
-        "documents": 2,
         "total_link_strength": 14,
         "cluster": 6
       },
       {
-        "id": "co:chiorazzi:a",
-        "name": "Alessia Chiorazzi",
+        "id": "co:tonazzini:i",
+        "name": "Ilaria Tonazzini",
         "type": "external",
         "category": "",
-        "documents": 1,
-        "total_link_strength": 14,
-        "cluster": 4
-      },
-      {
-        "id": "co:meregalli:c",
-        "name": "Cristina Meregalli",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 14,
-        "cluster": 4
-      },
-      {
-        "id": "co:grilli:e",
-        "name": "Edda Grilli",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 14,
-        "cluster": 6
-      },
-      {
-        "id": "co:trabalzini:e",
-        "name": "Elena Trabalzini",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 14,
-        "cluster": 4
-      },
-      {
-        "id": "co:avezza:f",
-        "name": "Federica Avezza",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 14,
-        "cluster": 4
-      },
-      {
-        "id": "co:tozzi:f",
-        "name": "Francesca Tozzi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 14,
-        "cluster": 6
-      },
-      {
-        "id": "co:chelini:g",
-        "name": "Gabriele Chelini",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 14,
-        "cluster": 6
-      },
-      {
-        "id": "co:cavaletti:g",
-        "name": "Guido Cavaletti",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 14,
-        "cluster": 4
-      },
-      {
-        "id": "co:arthur:j",
-        "name": "J. Simon C. Arthur",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 14,
-        "cluster": 6
-      },
-      {
-        "id": "co:tola:j",
-        "name": "Jonida Tola",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 14,
-        "cluster": 6
-      },
-      {
-        "id": "co:crippa:l",
-        "name": "Luca Crippa",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 14,
-        "cluster": 4
-      },
-      {
-        "id": "co:bossi:m",
-        "name": "Mario Bossi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 14,
-        "cluster": 4
-      },
-      {
-        "id": "co:ceglia:n",
-        "name": "Nicholas Ceglia",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 14,
-        "cluster": 6
-      },
-      {
-        "id": "co:oggioni:n",
-        "name": "Norberto Oggioni",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 14,
-        "cluster": 4
-      },
-      {
-        "id": "co:lombardi:r",
-        "name": "Raffaella Lombardi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 14,
-        "cluster": 4
-      },
-      {
-        "id": "co:carozzi:v",
-        "name": "Valentina Alda Carozzi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 14,
-        "cluster": 4
-      },
-      {
-        "id": "co:rodriguez menendez:v",
-        "name": "Virginia Rodriguez-Menendez",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 14,
+        "documents": 3,
+        "total_link_strength": 13,
         "cluster": 4
       },
       {
@@ -1962,265 +1782,166 @@
         "cluster": 3
       },
       {
-        "id": "co:farrokhtakin:e",
-        "name": "Elmira Farrokhtakin",
+        "id": "co:chiorazzi:a",
+        "name": "Alessia Chiorazzi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 13,
+        "cluster": 4
+      },
+      {
+        "id": "co:meregalli:c",
+        "name": "Cristina Meregalli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 13,
+        "cluster": 4
+      },
+      {
+        "id": "co:grilli:e",
+        "name": "Edda Grilli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 13,
+        "cluster": 6
+      },
+      {
+        "id": "co:trabalzini:e",
+        "name": "Elena Trabalzini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 13,
+        "cluster": 4
+      },
+      {
+        "id": "co:avezza:f",
+        "name": "Federica Avezza",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 13,
+        "cluster": 4
+      },
+      {
+        "id": "co:tozzi:f",
+        "name": "Francesca Tozzi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 13,
+        "cluster": 6
+      },
+      {
+        "id": "co:chelini:g",
+        "name": "Gabriele Chelini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 13,
+        "cluster": 6
+      },
+      {
+        "id": "co:cavaletti:g",
+        "name": "Guido Cavaletti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 13,
+        "cluster": 4
+      },
+      {
+        "id": "co:arthur:j",
+        "name": "J. Simon C. Arthur",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 13,
+        "cluster": 6
+      },
+      {
+        "id": "co:tola:j",
+        "name": "Jonida Tola",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 13,
+        "cluster": 6
+      },
+      {
+        "id": "co:crippa:l",
+        "name": "Luca Crippa",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 13,
+        "cluster": 4
+      },
+      {
+        "id": "co:bossi:m",
+        "name": "Mario Bossi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 13,
+        "cluster": 4
+      },
+      {
+        "id": "co:ceglia:n",
+        "name": "Nicholas Ceglia",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 13,
+        "cluster": 6
+      },
+      {
+        "id": "co:oggioni:n",
+        "name": "Norberto Oggioni",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 13,
+        "cluster": 4
+      },
+      {
+        "id": "co:lombardi:r",
+        "name": "Raffaella Lombardi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 13,
+        "cluster": 4
+      },
+      {
+        "id": "co:carozzi:v",
+        "name": "Valentina Alda Carozzi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 13,
+        "cluster": 4
+      },
+      {
+        "id": "co:rodriguez menendez:v",
+        "name": "Virginia Rodriguez-Menendez",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 13,
+        "cluster": 4
+      },
+      {
+        "id": "co:sale:a",
+        "name": "Alessandro Sale",
         "type": "external",
         "category": "",
         "documents": 2,
-        "total_link_strength": 13,
-        "cluster": 4
-      },
-      {
-        "id": "co:tancredi:r",
-        "name": "Raffaella Tancredi",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 13,
-        "cluster": 5
-      },
-      {
-        "id": "co:cutrone:a",
-        "name": "A Cutrone",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 4
-      },
-      {
-        "id": "co:mazzoni:a",
-        "name": "A Mazzoni",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 4
-      },
-      {
-        "id": "co:montalbano:a",
-        "name": "Alberto Montalbano",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 4
-      },
-      {
-        "id": "co:laurino:a",
-        "name": "Annunziatina Laurino",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 4
-      },
-      {
-        "id": "co:chattopadhyaya:b",
-        "name": "Bidisha Chattopadhyaya",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
+        "total_link_strength": 12,
         "cluster": 6
-      },
-      {
-        "id": "co:jahannault talignani:c",
-        "name": "Celine Jahannault-Talignani",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 6
-      },
-      {
-        "id": "co:bosetti:c",
-        "name": "Chiara Bosetti",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 6
-      },
-      {
-        "id": "co:golberg:d",
-        "name": "Dmitri Golberg",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 4
-      },
-      {
-        "id": "co:baho:e",
-        "name": "Elie Baho",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 6
-      },
-      {
-        "id": "co:vaucher:e",
-        "name": "Elvire Vaucher",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 6
-      },
-      {
-        "id": "co:dedola:f",
-        "name": "F Dedola",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 4
-      },
-      {
-        "id": "co:ango:f",
-        "name": "Fabrice Ango",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 6
-      },
-      {
-        "id": "co:muratori:f",
-        "name": "Filippo Muratori",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 6
-      },
-      {
-        "id": "co:basta:g",
-        "name": "Giuseppina Basta",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 4
-      },
-      {
-        "id": "co:di cristo:g",
-        "name": "Graziella Di Cristo",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 6
-      },
-      {
-        "id": "co:carpaneto:j",
-        "name": "J Carpaneto",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 4
-      },
-      {
-        "id": "co:pesce:l",
-        "name": "Luca Pesce",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 4
-      },
-      {
-        "id": "co:yamaguchi:m",
-        "name": "Maho Yamaguchi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 4
-      },
-      {
-        "id": "co:groleau:m",
-        "name": "Marianne Groleau",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 6
-      },
-      {
-        "id": "co:lavertu jolin:m",
-        "name": "Marisol Lavertu-Jolin",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 6
-      },
-      {
-        "id": "co:gemmi:m",
-        "name": "Mauro Gemmi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 4
-      },
-      {
-        "id": "co:meneghetti:n",
-        "name": "N Meneghetti",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 4
-      },
-      {
-        "id": "co:awad:p",
-        "name": "Patricia N. Awad",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 6
-      },
-      {
-        "id": "co:chehrazi:p",
-        "name": "Pegah Chehrazi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 6
-      },
-      {
-        "id": "co:del turco:s",
-        "name": "Serena Del Turco",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 4
-      },
-      {
-        "id": "co:dell oste:v",
-        "name": "Valerio Dell’Oste",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 6
-      },
-      {
-        "id": "co:li:x",
-        "name": "Xia Li",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 13,
-        "cluster": 4
       },
       {
         "id": "co:frijia:f",
@@ -2241,13 +1962,256 @@
         "cluster": 1
       },
       {
-        "id": "co:ferrari:a",
-        "name": "Annarita Ferrari",
+        "id": "co:tancredi:r",
+        "name": "Raffaella Tancredi",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 12,
+        "cluster": 5
+      },
+      {
+        "id": "co:cutrone:a",
+        "name": "A Cutrone",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 4
+      },
+      {
+        "id": "co:mazzoni:a",
+        "name": "A Mazzoni",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 4
+      },
+      {
+        "id": "co:montalbano:a",
+        "name": "Alberto Montalbano",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 4
+      },
+      {
+        "id": "co:laurino:a",
+        "name": "Annunziatina Laurino",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 4
+      },
+      {
+        "id": "co:chattopadhyaya:b",
+        "name": "Bidisha Chattopadhyaya",
         "type": "external",
         "category": "",
         "documents": 1,
         "total_link_strength": 12,
         "cluster": 6
+      },
+      {
+        "id": "co:jahannault talignani:c",
+        "name": "Celine Jahannault-Talignani",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 6
+      },
+      {
+        "id": "co:bosetti:c",
+        "name": "Chiara Bosetti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 6
+      },
+      {
+        "id": "co:golberg:d",
+        "name": "Dmitri Golberg",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 4
+      },
+      {
+        "id": "co:baho:e",
+        "name": "Elie Baho",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 6
+      },
+      {
+        "id": "co:vaucher:e",
+        "name": "Elvire Vaucher",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 6
+      },
+      {
+        "id": "co:dedola:f",
+        "name": "F Dedola",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 4
+      },
+      {
+        "id": "co:ango:f",
+        "name": "Fabrice Ango",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 6
+      },
+      {
+        "id": "co:muratori:f",
+        "name": "Filippo Muratori",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 6
+      },
+      {
+        "id": "co:basta:g",
+        "name": "Giuseppina Basta",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 4
+      },
+      {
+        "id": "co:di cristo:g",
+        "name": "Graziella Di Cristo",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 6
+      },
+      {
+        "id": "co:carpaneto:j",
+        "name": "J Carpaneto",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 4
+      },
+      {
+        "id": "co:pesce:l",
+        "name": "Luca Pesce",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 4
+      },
+      {
+        "id": "co:yamaguchi:m",
+        "name": "Maho Yamaguchi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 4
+      },
+      {
+        "id": "co:groleau:m",
+        "name": "Marianne Groleau",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 6
+      },
+      {
+        "id": "co:lavertu jolin:m",
+        "name": "Marisol Lavertu-Jolin",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 6
+      },
+      {
+        "id": "co:gemmi:m",
+        "name": "Mauro Gemmi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 4
+      },
+      {
+        "id": "co:meneghetti:n",
+        "name": "N Meneghetti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 4
+      },
+      {
+        "id": "co:awad:p",
+        "name": "Patricia N. Awad",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 6
+      },
+      {
+        "id": "co:chehrazi:p",
+        "name": "Pegah Chehrazi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 6
+      },
+      {
+        "id": "co:del turco:s",
+        "name": "Serena Del Turco",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 4
+      },
+      {
+        "id": "co:dell oste:v",
+        "name": "Valerio Dell’Oste",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 6
+      },
+      {
+        "id": "co:li:x",
+        "name": "Xia Li",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 12,
+        "cluster": 4
       },
       {
         "id": "co:piegari:a",
@@ -2277,20 +2241,11 @@
         "cluster": 3
       },
       {
-        "id": "co:stella:a",
-        "name": "Alessandra Stella",
+        "id": "co:farrokhtakin:e",
+        "name": "Elmira Farrokhtakin",
         "type": "external",
         "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 6
-      },
-      {
-        "id": "co:petretto:a",
-        "name": "Andrea Petretto",
-        "type": "external",
-        "category": "",
-        "documents": 1,
+        "documents": 2,
         "total_link_strength": 11,
         "cluster": 4
       },
@@ -2313,13 +2268,13 @@
         "cluster": 2
       },
       {
-        "id": "co:quattrini:a",
-        "name": "Angelo Quattrini",
+        "id": "co:ferrari:a",
+        "name": "Annarita Ferrari",
         "type": "external",
         "category": "",
         "documents": 1,
         "total_link_strength": 11,
-        "cluster": 4
+        "cluster": 6
       },
       {
         "id": "co:rocca:c",
@@ -2329,24 +2284,6 @@
         "documents": 1,
         "total_link_strength": 11,
         "cluster": 2
-      },
-      {
-        "id": "co:pucci:c",
-        "name": "Carlotta Pucci",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
-      },
-      {
-        "id": "co:bendotti:c",
-        "name": "Caterina Bendotti",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
       },
       {
         "id": "co:milano:c",
@@ -2367,24 +2304,6 @@
         "cluster": 2
       },
       {
-        "id": "co:tapeinos:c",
-        "name": "Christos Tapeinos",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
-      },
-      {
-        "id": "co:de pasquale:d",
-        "name": "Daniele De Pasquale",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
-      },
-      {
         "id": "co:menicucci:d",
         "name": "Danilo Menicucci",
         "type": "external",
@@ -2392,15 +2311,6 @@
         "documents": 1,
         "total_link_strength": 11,
         "cluster": 2
-      },
-      {
-        "id": "co:debellis:d",
-        "name": "Doriana Debellis",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
       },
       {
         "id": "co:marziali:e",
@@ -2419,24 +2329,6 @@
         "documents": 1,
         "total_link_strength": 11,
         "cluster": 2
-      },
-      {
-        "id": "co:almici:e",
-        "name": "Enrico Almici",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
-      },
-      {
-        "id": "co:papini:e",
-        "name": "Ester M. Papini",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 6
       },
       {
         "id": "co:giorgi:f",
@@ -2484,24 +2376,6 @@
         "cluster": 2
       },
       {
-        "id": "co:dina:g",
-        "name": "Giorgia Dina",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
-      },
-      {
-        "id": "co:nardo:g",
-        "name": "Giovanni Nardo",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
-      },
-      {
         "id": "co:tiberi:l",
         "name": "Lucia Tiberi",
         "type": "external",
@@ -2509,33 +2383,6 @@
         "documents": 1,
         "total_link_strength": 11,
         "cluster": 2
-      },
-      {
-        "id": "co:trolese:m",
-        "name": "Maria Chiara Trolese",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
-      },
-      {
-        "id": "co:bartolucci:m",
-        "name": "Martina Bartolucci",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
-      },
-      {
-        "id": "co:battaglini:m",
-        "name": "Matteo Battaglini",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
       },
       {
         "id": "co:maestri:m",
@@ -2547,69 +2394,6 @@
         "cluster": 2
       },
       {
-        "id": "co:iturrioz rodriguez:n",
-        "name": "Nerea Iturrioz-Rodríguez",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
-      },
-      {
-        "id": "co:di leo:n",
-        "name": "Nicoletta di Leo",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
-      },
-      {
-        "id": "co:riva:n",
-        "name": "Nilo Riva",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
-      },
-      {
-        "id": "co:sen:o",
-        "name": "Özlem Şen",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
-      },
-      {
-        "id": "co:shaw:p",
-        "name": "Pamela J. Shaw",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
-      },
-      {
-        "id": "co:heath:p",
-        "name": "Paul R. Heath",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
-      },
-      {
-        "id": "co:cicchi:r",
-        "name": "Riccardo Cicchi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
-      },
-      {
         "id": "co:morganti:r",
         "name": "Riccardo Morganti",
         "type": "external",
@@ -2617,15 +2401,6 @@
         "documents": 1,
         "total_link_strength": 11,
         "cluster": 2
-      },
-      {
-        "id": "co:nisar:r",
-        "name": "Rida Nisar",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 6
       },
       {
         "id": "co:caputo:r",
@@ -2653,33 +2428,6 @@
         "documents": 1,
         "total_link_strength": 11,
         "cluster": 2
-      },
-      {
-        "id": "co:bovetti:s",
-        "name": "Serena Bovetti",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 6
-      },
-      {
-        "id": "co:migliorin:s",
-        "name": "Simone Migliorin",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 4
-      },
-      {
-        "id": "co:zucca:s",
-        "name": "Stefano Zucca",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 6
       },
       {
         "id": "co:palazzo:v",
@@ -2718,8 +2466,8 @@
         "cluster": 5
       },
       {
-        "id": "co:poli:a",
-        "name": "Andrea Poli",
+        "id": "co:stella:a",
+        "name": "Alessandra Stella",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -2727,35 +2475,8 @@
         "cluster": 6
       },
       {
-        "id": "co:stoccoro:a",
-        "name": "Andrea Stoccoro",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 10,
-        "cluster": 6
-      },
-      {
-        "id": "co:stefanov:a",
-        "name": "Antonia Stefanov",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 10,
-        "cluster": 6
-      },
-      {
-        "id": "co:moscuzza:f",
-        "name": "Francesca Moscuzza",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 10,
-        "cluster": 6
-      },
-      {
-        "id": "co:cecchini:g",
-        "name": "Gloria Cecchini",
+        "id": "co:petretto:a",
+        "name": "Andrea Petretto",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -2763,8 +2484,8 @@
         "cluster": 4
       },
       {
-        "id": "co:adam:i",
-        "name": "Ihusan Adam",
+        "id": "co:quattrini:a",
+        "name": "Angelo Quattrini",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -2772,8 +2493,8 @@
         "cluster": 4
       },
       {
-        "id": "co:chicchi:l",
-        "name": "Lorenzo Chicchi",
+        "id": "co:pucci:c",
+        "name": "Carlotta Pucci",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -2781,8 +2502,8 @@
         "cluster": 4
       },
       {
-        "id": "co:locatelli:m",
-        "name": "Massimiliano Locatelli",
+        "id": "co:bendotti:c",
+        "name": "Caterina Bendotti",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -2790,44 +2511,8 @@
         "cluster": 4
       },
       {
-        "id": "co:stevenson:n",
-        "name": "Nathan Stevenson",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 10,
-        "cluster": 6
-      },
-      {
-        "id": "co:koolen:n",
-        "name": "Ninah Koolen",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 10,
-        "cluster": 6
-      },
-      {
-        "id": "co:ghirri:p",
-        "name": "Paolo Ghirri",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 10,
-        "cluster": 6
-      },
-      {
-        "id": "co:melani:r",
-        "name": "Riccardo Melani",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 10,
-        "cluster": 6
-      },
-      {
-        "id": "co:livi:r",
-        "name": "Roberto Livi",
+        "id": "co:tapeinos:c",
+        "name": "Christos Tapeinos",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -2835,35 +2520,8 @@
         "cluster": 4
       },
       {
-        "id": "co:pieri:r",
-        "name": "Rossella Pieri",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 10,
-        "cluster": 6
-      },
-      {
-        "id": "co:vanhatalo:s",
-        "name": "Sampsa Vanhatalo",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 10,
-        "cluster": 6
-      },
-      {
-        "id": "co:morea:s",
-        "name": "Silvia Morea",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 10,
-        "cluster": 6
-      },
-      {
-        "id": "co:moscato:s",
-        "name": "Stefania Moscato",
+        "id": "co:de pasquale:d",
+        "name": "Daniele De Pasquale",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -2871,8 +2529,26 @@
         "cluster": 4
       },
       {
-        "id": "co:salvadori:s",
-        "name": "Stefano Salvadori",
+        "id": "co:debellis:d",
+        "name": "Doriana Debellis",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 10,
+        "cluster": 4
+      },
+      {
+        "id": "co:almici:e",
+        "name": "Enrico Almici",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 10,
+        "cluster": 4
+      },
+      {
+        "id": "co:papini:e",
+        "name": "Ester M. Papini",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -2880,8 +2556,8 @@
         "cluster": 6
       },
       {
-        "id": "co:ngo anh:t",
-        "name": "Thu Jennifer Ngo-Anh",
+        "id": "co:dina:g",
+        "name": "Giorgia Dina",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -2889,13 +2565,139 @@
         "cluster": 4
       },
       {
-        "id": "co:rocca:v",
-        "name": "Veronica Rocca",
+        "id": "co:nardo:g",
+        "name": "Giovanni Nardo",
         "type": "external",
         "category": "",
         "documents": 1,
         "total_link_strength": 10,
         "cluster": 4
+      },
+      {
+        "id": "co:trolese:m",
+        "name": "Maria Chiara Trolese",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 10,
+        "cluster": 4
+      },
+      {
+        "id": "co:bartolucci:m",
+        "name": "Martina Bartolucci",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 10,
+        "cluster": 4
+      },
+      {
+        "id": "co:battaglini:m",
+        "name": "Matteo Battaglini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 10,
+        "cluster": 4
+      },
+      {
+        "id": "co:iturrioz rodriguez:n",
+        "name": "Nerea Iturrioz-Rodríguez",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 10,
+        "cluster": 4
+      },
+      {
+        "id": "co:di leo:n",
+        "name": "Nicoletta di Leo",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 10,
+        "cluster": 4
+      },
+      {
+        "id": "co:riva:n",
+        "name": "Nilo Riva",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 10,
+        "cluster": 4
+      },
+      {
+        "id": "co:sen:o",
+        "name": "Özlem Şen",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 10,
+        "cluster": 4
+      },
+      {
+        "id": "co:shaw:p",
+        "name": "Pamela J. Shaw",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 10,
+        "cluster": 4
+      },
+      {
+        "id": "co:heath:p",
+        "name": "Paul R. Heath",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 10,
+        "cluster": 4
+      },
+      {
+        "id": "co:cicchi:r",
+        "name": "Riccardo Cicchi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 10,
+        "cluster": 4
+      },
+      {
+        "id": "co:nisar:r",
+        "name": "Rida Nisar",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 10,
+        "cluster": 6
+      },
+      {
+        "id": "co:bovetti:s",
+        "name": "Serena Bovetti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 10,
+        "cluster": 6
+      },
+      {
+        "id": "co:migliorin:s",
+        "name": "Simone Migliorin",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 10,
+        "cluster": 4
+      },
+      {
+        "id": "co:zucca:s",
+        "name": "Stefano Zucca",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 10,
+        "cluster": 6
       },
       {
         "id": "co:alais:d",
@@ -2907,15 +2709,6 @@
         "cluster": 1
       },
       {
-        "id": "co:cecchini:m",
-        "name": "Marco Cecchini",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 9,
-        "cluster": 4
-      },
-      {
         "id": "co:greenlee:m",
         "name": "Mark W. Greenlee",
         "type": "external",
@@ -2925,8 +2718,8 @@
         "cluster": 3
       },
       {
-        "id": "co:mattiello:a",
-        "name": "Alessandro Mattiello",
+        "id": "co:poli:a",
+        "name": "Andrea Poli",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -2934,8 +2727,8 @@
         "cluster": 6
       },
       {
-        "id": "co:grosso:a",
-        "name": "Anna Grosso",
+        "id": "co:stoccoro:a",
+        "name": "Andrea Stoccoro",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -2943,8 +2736,8 @@
         "cluster": 6
       },
       {
-        "id": "co:renna:a",
-        "name": "Annamaria Renna",
+        "id": "co:stefanov:a",
+        "name": "Antonia Stefanov",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -2952,8 +2745,8 @@
         "cluster": 6
       },
       {
-        "id": "co:sacchetti:b",
-        "name": "Benedetto Sacchetti",
+        "id": "co:moscuzza:f",
+        "name": "Francesca Moscuzza",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -2961,80 +2754,8 @@
         "cluster": 6
       },
       {
-        "id": "co:antonelli:c",
-        "name": "Camilla Antonelli",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 9,
-        "cluster": 6
-      },
-      {
-        "id": "co:santiago:c",
-        "name": "Carlos Santiago",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 9,
-        "cluster": 6
-      },
-      {
-        "id": "co:likhtik:e",
-        "name": "Ekaterina Likhtik",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 9,
-        "cluster": 6
-      },
-      {
-        "id": "co:borghi:e",
-        "name": "Elisa Borghi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 9,
-        "cluster": 6
-      },
-      {
-        "id": "co:ottaviano:e",
-        "name": "Emerenziana Ottaviano",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 9,
-        "cluster": 6
-      },
-      {
-        "id": "co:tealdi:g",
-        "name": "Gessica Tealdi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 9,
-        "cluster": 6
-      },
-      {
-        "id": "co:sgherri:g",
-        "name": "Giada Sgherri",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 9,
-        "cluster": 6
-      },
-      {
-        "id": "co:concina:g",
-        "name": "Giulia Concina",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 9,
-        "cluster": 6
-      },
-      {
-        "id": "co:barsotti:j",
-        "name": "Jonathan Barsotti",
+        "id": "co:cecchini:g",
+        "name": "Gloria Cecchini",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3042,35 +2763,8 @@
         "cluster": 4
       },
       {
-        "id": "co:gordon:j",
-        "name": "Joshua A. Gordon",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 9,
-        "cluster": 6
-      },
-      {
-        "id": "co:gherardini:l",
-        "name": "Lisa Gherardini",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 9,
-        "cluster": 6
-      },
-      {
-        "id": "co:cambiaghi:m",
-        "name": "Marco Cambiaghi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 9,
-        "cluster": 6
-      },
-      {
-        "id": "co:pasquini:m",
-        "name": "Maria Pasquini",
+        "id": "co:adam:i",
+        "name": "Ihusan Adam",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3078,8 +2772,8 @@
         "cluster": 4
       },
       {
-        "id": "co:labardi:m",
-        "name": "Massimiliano Labardi",
+        "id": "co:chicchi:l",
+        "name": "Lorenzo Chicchi",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3087,8 +2781,17 @@
         "cluster": 4
       },
       {
-        "id": "co:cas:m",
-        "name": "Michele Dei Cas",
+        "id": "co:locatelli:m",
+        "name": "Massimiliano Locatelli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 9,
+        "cluster": 4
+      },
+      {
+        "id": "co:stevenson:n",
+        "name": "Nathan Stevenson",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3096,8 +2799,8 @@
         "cluster": 6
       },
       {
-        "id": "co:moscarelli:m",
-        "name": "Michele Moscarelli",
+        "id": "co:koolen:n",
+        "name": "Ninah Koolen",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3105,8 +2808,8 @@
         "cluster": 6
       },
       {
-        "id": "co:boyd:r",
-        "name": "Roslyn N Boyd",
+        "id": "co:ghirri:p",
+        "name": "Paolo Ghirri",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3114,8 +2817,8 @@
         "cluster": 6
       },
       {
-        "id": "co:sacco:t",
-        "name": "Tiziana Sacco",
+        "id": "co:melani:r",
+        "name": "Riccardo Melani",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3123,13 +2826,76 @@
         "cluster": 6
       },
       {
-        "id": "co:burzi:v",
-        "name": "Valentina Burzi",
+        "id": "co:livi:r",
+        "name": "Roberto Livi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 9,
+        "cluster": 4
+      },
+      {
+        "id": "co:pieri:r",
+        "name": "Rossella Pieri",
         "type": "external",
         "category": "",
         "documents": 1,
         "total_link_strength": 9,
         "cluster": 6
+      },
+      {
+        "id": "co:vanhatalo:s",
+        "name": "Sampsa Vanhatalo",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 9,
+        "cluster": 6
+      },
+      {
+        "id": "co:morea:s",
+        "name": "Silvia Morea",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 9,
+        "cluster": 6
+      },
+      {
+        "id": "co:moscato:s",
+        "name": "Stefania Moscato",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 9,
+        "cluster": 4
+      },
+      {
+        "id": "co:salvadori:s",
+        "name": "Stefano Salvadori",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 9,
+        "cluster": 6
+      },
+      {
+        "id": "co:ngo anh:t",
+        "name": "Thu Jennifer Ngo-Anh",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 9,
+        "cluster": 4
+      },
+      {
+        "id": "co:rocca:v",
+        "name": "Veronica Rocca",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 9,
+        "cluster": 4
       },
       {
         "id": "co:gheri:c",
@@ -3139,15 +2905,6 @@
         "documents": 2,
         "total_link_strength": 8,
         "cluster": 1
-      },
-      {
-        "id": "co:rutigliano:g",
-        "name": "Grazia Rutigliano",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 8,
-        "cluster": 6
       },
       {
         "id": "co:meocci:m",
@@ -3177,6 +2934,87 @@
         "cluster": 3
       },
       {
+        "id": "co:mattiello:a",
+        "name": "Alessandro Mattiello",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
+        "id": "co:grosso:a",
+        "name": "Anna Grosso",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
+        "id": "co:renna:a",
+        "name": "Annamaria Renna",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
+        "id": "co:sacchetti:b",
+        "name": "Benedetto Sacchetti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
+        "id": "co:antonelli:c",
+        "name": "Camilla Antonelli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
+        "id": "co:santiago:c",
+        "name": "Carlos Santiago",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
+        "id": "co:likhtik:e",
+        "name": "Ekaterina Likhtik",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
+        "id": "co:borghi:e",
+        "name": "Elisa Borghi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
+        "id": "co:ottaviano:e",
+        "name": "Emerenziana Ottaviano",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
         "id": "co:de masi:f",
         "name": "F. De Masi",
         "type": "external",
@@ -3184,24 +3022,6 @@
         "documents": 1,
         "total_link_strength": 8,
         "cluster": 1
-      },
-      {
-        "id": "co:falchi:f",
-        "name": "Fabrizio Falchi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 8,
-        "cluster": 6
-      },
-      {
-        "id": "co:cremisi:f",
-        "name": "Federico Cremisi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 8,
-        "cluster": 6
       },
       {
         "id": "co:aghakhanyan:g",
@@ -3213,8 +3033,8 @@
         "cluster": 1
       },
       {
-        "id": "co:lagani:g",
-        "name": "Gabriele Lagani",
+        "id": "co:tealdi:g",
+        "name": "Gessica Tealdi",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3222,8 +3042,26 @@
         "cluster": 6
       },
       {
-        "id": "co:puleo:g",
-        "name": "Gianluigi Puleo",
+        "id": "co:sgherri:g",
+        "name": "Giada Sgherri",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
+        "id": "co:concina:g",
+        "name": "Giulia Concina",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
+        "id": "co:barsotti:j",
+        "name": "Jonathan Barsotti",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3231,8 +3069,71 @@
         "cluster": 4
       },
       {
-        "id": "co:rizzi:r",
-        "name": "Riccardo Rizzi",
+        "id": "co:gordon:j",
+        "name": "Joshua A. Gordon",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
+        "id": "co:gherardini:l",
+        "name": "Lisa Gherardini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
+        "id": "co:cambiaghi:m",
+        "name": "Marco Cambiaghi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
+        "id": "co:pasquini:m",
+        "name": "Maria Pasquini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 4
+      },
+      {
+        "id": "co:labardi:m",
+        "name": "Massimiliano Labardi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 4
+      },
+      {
+        "id": "co:cas:m",
+        "name": "Michele Dei Cas",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
+        "id": "co:moscarelli:m",
+        "name": "Michele Moscarelli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
+        "id": "co:boyd:r",
+        "name": "Roslyn N Boyd",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3249,6 +3150,24 @@
         "cluster": 1
       },
       {
+        "id": "co:sacco:t",
+        "name": "Tiziana Sacco",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
+        "id": "co:burzi:v",
+        "name": "Valentina Burzi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 8,
+        "cluster": 6
+      },
+      {
         "id": "co:montagnini:a",
         "name": "Anna Montagnini",
         "type": "external",
@@ -3256,6 +3175,15 @@
         "documents": 3,
         "total_link_strength": 7,
         "cluster": 5
+      },
+      {
+        "id": "co:cecchini:m",
+        "name": "Marco Cecchini",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 7,
+        "cluster": 4
       },
       {
         "id": "co:gurioli:m",
@@ -3294,24 +3222,6 @@
         "cluster": 1
       },
       {
-        "id": "co:consorti:a",
-        "name": "Alan Consorti",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 7,
-        "cluster": 6
-      },
-      {
-        "id": "co:galante:a",
-        "name": "Alessia Galante",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 7,
-        "cluster": 6
-      },
-      {
         "id": "co:mencarini:a",
         "name": "Angelica Mencarini",
         "type": "external",
@@ -3319,15 +3229,6 @@
         "documents": 1,
         "total_link_strength": 7,
         "cluster": 5
-      },
-      {
-        "id": "co:credi:c",
-        "name": "Caterina Credi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 7,
-        "cluster": 4
       },
       {
         "id": "co:tarli barbieri:c",
@@ -3339,8 +3240,8 @@
         "cluster": 1
       },
       {
-        "id": "co:gargini:c",
-        "name": "Claudia Gargini",
+        "id": "co:falchi:f",
+        "name": "Fabrizio Falchi",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3348,8 +3249,8 @@
         "cluster": 6
       },
       {
-        "id": "co:torelli:c",
-        "name": "Claudia Torelli",
+        "id": "co:cremisi:f",
+        "name": "Federico Cremisi",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3366,8 +3267,8 @@
         "cluster": 3
       },
       {
-        "id": "co:corsi:f",
-        "name": "Francesca Corsi",
+        "id": "co:lagani:g",
+        "name": "Gabriele Lagani",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3375,13 +3276,13 @@
         "cluster": 6
       },
       {
-        "id": "co:sansevero:g",
-        "name": "Gabriele Sansevero",
+        "id": "co:puleo:g",
+        "name": "Gianluigi Puleo",
         "type": "external",
         "category": "",
         "documents": 1,
         "total_link_strength": 7,
-        "cluster": 6
+        "cluster": 4
       },
       {
         "id": "co:virgili:g",
@@ -3402,15 +3303,6 @@
         "cluster": 1
       },
       {
-        "id": "co:piano:i",
-        "name": "Ilaria Piano",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 7,
-        "cluster": 6
-      },
-      {
         "id": "co:baldriga:i",
         "name": "Irene Baldriga",
         "type": "external",
@@ -3418,24 +3310,6 @@
         "documents": 1,
         "total_link_strength": 7,
         "cluster": 5
-      },
-      {
-        "id": "co:galli:l",
-        "name": "Lucia Galli",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 7,
-        "cluster": 6
-      },
-      {
-        "id": "co:maggi:m",
-        "name": "Maria Anna Maggi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 7,
-        "cluster": 6
       },
       {
         "id": "co:fabozzi:m",
@@ -3447,15 +3321,6 @@
         "cluster": 5
       },
       {
-        "id": "co:parlanti:p",
-        "name": "Paola Parlanti",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 7,
-        "cluster": 4
-      },
-      {
         "id": "co:varano:r",
         "name": "Raimondo Varano",
         "type": "external",
@@ -3463,6 +3328,15 @@
         "documents": 1,
         "total_link_strength": 7,
         "cluster": 5
+      },
+      {
+        "id": "co:rizzi:r",
+        "name": "Riccardo Rizzi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 7,
+        "cluster": 6
       },
       {
         "id": "co:mencucci:r",
@@ -3490,33 +3364,6 @@
         "documents": 1,
         "total_link_strength": 7,
         "cluster": 3
-      },
-      {
-        "id": "co:bisti:s",
-        "name": "Silvia Bisti",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 7,
-        "cluster": 6
-      },
-      {
-        "id": "co:luin:s",
-        "name": "Stefano Luin",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 7,
-        "cluster": 4
-      },
-      {
-        "id": "co:begenisic:t",
-        "name": "Tatjana Begenisic",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 7,
-        "cluster": 6
       },
       {
         "id": "co:menchini:u",
@@ -3555,6 +3402,15 @@
         "cluster": 0
       },
       {
+        "id": "co:rutigliano:g",
+        "name": "Grazia Rutigliano",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 6,
+        "cluster": 6
+      },
+      {
         "id": "co:ho:h",
         "name": "Hao Tam Ho",
         "type": "external",
@@ -3591,8 +3447,17 @@
         "cluster": 5
       },
       {
-        "id": "co:cappelli:a",
-        "name": "Andrea Cappelli",
+        "id": "co:consorti:a",
+        "name": "Alan Consorti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 6,
+        "cluster": 6
+      },
+      {
+        "id": "co:galante:a",
+        "name": "Alessia Galante",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3609,8 +3474,26 @@
         "cluster": 3
       },
       {
-        "id": "co:di marco:b",
-        "name": "Beatrice Di Marco",
+        "id": "co:credi:c",
+        "name": "Caterina Credi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 6,
+        "cluster": 4
+      },
+      {
+        "id": "co:gargini:c",
+        "name": "Claudia Gargini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 6,
+        "cluster": 6
+      },
+      {
+        "id": "co:torelli:c",
+        "name": "Claudia Torelli",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3627,8 +3510,8 @@
         "cluster": 3
       },
       {
-        "id": "co:amatori:g",
-        "name": "Giulia Amatori",
+        "id": "co:corsi:f",
+        "name": "Francesca Corsi",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3636,8 +3519,17 @@
         "cluster": 6
       },
       {
-        "id": "co:salamone:g",
-        "name": "Giulia Salamone",
+        "id": "co:sansevero:g",
+        "name": "Gabriele Sansevero",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 6,
+        "cluster": 6
+      },
+      {
+        "id": "co:piano:i",
+        "name": "Ilaria Piano",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3654,8 +3546,8 @@
         "cluster": 3
       },
       {
-        "id": "co:saccaro:l",
-        "name": "Luigi F. Saccaro",
+        "id": "co:galli:l",
+        "name": "Lucia Galli",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3663,13 +3555,22 @@
         "cluster": 6
       },
       {
-        "id": "co:orsini:n",
-        "name": "Noemi Orsini",
+        "id": "co:maggi:m",
+        "name": "Maria Anna Maggi",
         "type": "external",
         "category": "",
         "documents": 1,
         "total_link_strength": 6,
         "cluster": 6
+      },
+      {
+        "id": "co:parlanti:p",
+        "name": "Paola Parlanti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 6,
+        "cluster": 4
       },
       {
         "id": "co:pascale:r",
@@ -3679,6 +3580,33 @@
         "documents": 1,
         "total_link_strength": 6,
         "cluster": 5
+      },
+      {
+        "id": "co:bisti:s",
+        "name": "Silvia Bisti",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 6,
+        "cluster": 6
+      },
+      {
+        "id": "co:luin:s",
+        "name": "Stefano Luin",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 6,
+        "cluster": 4
+      },
+      {
+        "id": "co:begenisic:t",
+        "name": "Tatjana Begenisic",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 6,
+        "cluster": 6
       },
       {
         "id": "co:tonelli:a",
@@ -3735,6 +3663,15 @@
         "cluster": 0
       },
       {
+        "id": "co:cappelli:a",
+        "name": "Andrea Cappelli",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 5,
+        "cluster": 6
+      },
+      {
         "id": "co:sytchkova:a",
         "name": "Anna Krasilnikova Sytchkova",
         "type": "external",
@@ -3769,6 +3706,15 @@
         "documents": 1,
         "total_link_strength": 5,
         "cluster": 5
+      },
+      {
+        "id": "co:di marco:b",
+        "name": "Beatrice Di Marco",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 5,
+        "cluster": 6
       },
       {
         "id": "co:pfanner:c",
@@ -3807,15 +3753,6 @@
         "cluster": 5
       },
       {
-        "id": "co:potma:e",
-        "name": "Eric O. Potma",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 5,
-        "cluster": 4
-      },
-      {
         "id": "co:gallini:f",
         "name": "Francesca Gallini",
         "type": "external",
@@ -3843,6 +3780,24 @@
         "cluster": 5
       },
       {
+        "id": "co:amatori:g",
+        "name": "Giulia Amatori",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 5,
+        "cluster": 6
+      },
+      {
+        "id": "co:salamone:g",
+        "name": "Giulia Salamone",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 5,
+        "cluster": 6
+      },
+      {
         "id": "co:merusi:i",
         "name": "Ilaria Merusi",
         "type": "external",
@@ -3861,15 +3816,6 @@
         "cluster": 0
       },
       {
-        "id": "co:ranasinghesagara:j",
-        "name": "Janaka C. Ranasinghesagara",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 5,
-        "cluster": 4
-      },
-      {
         "id": "co:cinelli:l",
         "name": "L. Cinelli",
         "type": "external",
@@ -3879,15 +3825,6 @@
         "cluster": 3
       },
       {
-        "id": "co:roschi:l",
-        "name": "Lorenzo Roschi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 5,
-        "cluster": 4
-      },
-      {
         "id": "co:cecconi:l",
         "name": "Lucia Cecconi",
         "type": "external",
@@ -3895,6 +3832,15 @@
         "documents": 1,
         "total_link_strength": 5,
         "cluster": 0
+      },
+      {
+        "id": "co:saccaro:l",
+        "name": "Luigi F. Saccaro",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 5,
+        "cluster": 6
       },
       {
         "id": "co:grilli:m",
@@ -3942,6 +3888,15 @@
         "cluster": 0
       },
       {
+        "id": "co:orsini:n",
+        "name": "Noemi Orsini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 5,
+        "cluster": 6
+      },
+      {
         "id": "co:angelelli:p",
         "name": "Paola Angelelli",
         "type": "external",
@@ -3987,15 +3942,6 @@
         "cluster": 0
       },
       {
-        "id": "co:venugopalan:v",
-        "name": "Vasan Venugopalan",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 5,
-        "cluster": 4
-      },
-      {
         "id": "co:benedetti:v",
         "name": "Viola Benedetti",
         "type": "external",
@@ -4003,15 +3949,6 @@
         "documents": 1,
         "total_link_strength": 5,
         "cluster": 7
-      },
-      {
-        "id": "co:martini:v",
-        "name": "Virginia Martini",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 5,
-        "cluster": 6
       },
       {
         "id": "co:punzi:g",
@@ -4194,6 +4131,15 @@
         "cluster": 1
       },
       {
+        "id": "co:potma:e",
+        "name": "Eric O. Potma",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 4,
+        "cluster": 4
+      },
+      {
         "id": "co:doricchi:f",
         "name": "Fabrizio Doricchi",
         "type": "external",
@@ -4246,6 +4192,24 @@
         "documents": 1,
         "total_link_strength": 4,
         "cluster": 1
+      },
+      {
+        "id": "co:ranasinghesagara:j",
+        "name": "Janaka C. Ranasinghesagara",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 4,
+        "cluster": 4
+      },
+      {
+        "id": "co:roschi:l",
+        "name": "Lorenzo Roschi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 4,
+        "cluster": 4
       },
       {
         "id": "co:cecchetti:l",
@@ -4437,6 +4401,15 @@
         "cluster": 1
       },
       {
+        "id": "co:venugopalan:v",
+        "name": "Vasan Venugopalan",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 4,
+        "cluster": 4
+      },
+      {
         "id": "co:izard:v",
         "name": "Véronique Izard",
         "type": "external",
@@ -4446,6 +4419,15 @@
         "cluster": 3
       },
       {
+        "id": "co:martini:v",
+        "name": "Virginia Martini",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 4,
+        "cluster": 6
+      },
+      {
         "id": "co:karami:a",
         "name": "Alireza Karami",
         "type": "external",
@@ -4453,15 +4435,6 @@
         "documents": 1,
         "total_link_strength": 3,
         "cluster": 3
-      },
-      {
-        "id": "co:bifone:a",
-        "name": "Angelo Bifone",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 3,
-        "cluster": 4
       },
       {
         "id": "co:tozzi:a",
@@ -4662,6 +4635,15 @@
         "cluster": 2
       },
       {
+        "id": "co:bifone:a",
+        "name": "Angelo Bifone",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 2,
+        "cluster": 4
+      },
+      {
         "id": "co:francisci:c",
         "name": "Carlo Francisci",
         "type": "external",
@@ -4770,15 +4752,6 @@
         "cluster": 6
       },
       {
-        "id": "co:g:d",
-        "name": "De Vito G.",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 1,
-        "cluster": 4
-      },
-      {
         "id": "co:baud bovy:g",
         "name": "Gabriel Baud-Bovy",
         "type": "external",
@@ -4844,12 +4817,6 @@
     ],
     "edges": [
       {
-        "source": "co:mazziotti:r",
-        "target": "raffaele-mazziotti",
-        "count": 39,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:burr:d",
         "target": "giovanni-anobile",
         "count": 38,
@@ -4862,21 +4829,9 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:de vito:g",
-        "target": "giuseppe-devito",
-        "count": 34,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:burr:d",
         "target": "roberto-arrighi",
         "count": 30,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:pizzorusso:t",
-        "count": 27,
         "type": "coauthorship"
       },
       {
@@ -4899,26 +4854,14 @@
       },
       {
         "source": "co:lupori:l",
-        "target": "co:mazziotti:r",
-        "count": 21,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:lupori:l",
         "target": "raffaele-mazziotti",
         "count": 21,
         "type": "coauthorship"
       },
       {
-        "source": "co:de vito:g",
-        "target": "co:pavone:f",
-        "count": 20,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:pavone:f",
         "target": "giuseppe-devito",
-        "count": 20,
+        "count": 21,
         "type": "coauthorship"
       },
       {
@@ -4940,38 +4883,26 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:pavone:f",
+        "target": "co:turrini:l",
+        "count": 16,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:turrini:l",
+        "target": "giuseppe-devito",
+        "count": 16,
+        "type": "coauthorship"
+      },
+      {
         "source": "michela-delviva",
         "target": "serena-castellotti",
         "count": 16,
         "type": "coauthorship"
       },
       {
-        "source": "co:de vito:g",
-        "target": "co:turrini:l",
-        "count": 15,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:sagona:g",
-        "count": 15,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:pavone:f",
-        "target": "co:turrini:l",
-        "count": 15,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:sagona:g",
         "target": "raffaele-mazziotti",
-        "count": 15,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:turrini:l",
-        "target": "giuseppe-devito",
         "count": 15,
         "type": "coauthorship"
       },
@@ -4988,27 +4919,27 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:pavone:f",
+        "target": "co:vanzi:f",
+        "count": 14,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:pizzorusso:t",
         "target": "co:sagona:g",
         "count": 14,
         "type": "coauthorship"
       },
       {
-        "source": "co:de vito:g",
-        "target": "co:piazza:v",
-        "count": 13,
+        "source": "co:turrini:l",
+        "target": "co:vanzi:f",
+        "count": 14,
         "type": "coauthorship"
       },
       {
-        "source": "co:de vito:g",
-        "target": "co:vanzi:f",
-        "count": 13,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:pavone:f",
-        "target": "co:vanzi:f",
-        "count": 13,
+        "source": "co:vanzi:f",
+        "target": "giuseppe-devito",
+        "count": 14,
         "type": "coauthorship"
       },
       {
@@ -5021,24 +4952,6 @@
         "source": "co:piazza:v",
         "target": "giuseppe-devito",
         "count": 13,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:turrini:l",
-        "target": "co:vanzi:f",
-        "count": 13,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:vanzi:f",
-        "target": "giuseppe-devito",
-        "count": 13,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:putignano:e",
-        "count": 12,
         "type": "coauthorship"
       },
       {
@@ -5084,20 +4997,26 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:baroncelli:l",
-        "target": "co:mazziotti:r",
-        "count": 9,
+        "source": "co:pavone:f",
+        "target": "co:silvestri:l",
+        "count": 10,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:silvestri:l",
+        "target": "co:turrini:l",
+        "count": 10,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:silvestri:l",
+        "target": "giuseppe-devito",
+        "count": 10,
         "type": "coauthorship"
       },
       {
         "source": "co:baroncelli:l",
         "target": "raffaele-mazziotti",
-        "count": 9,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:silvestri:l",
         "count": 9,
         "type": "coauthorship"
       },
@@ -5109,7 +5028,7 @@
       },
       {
         "source": "co:pavone:f",
-        "target": "co:silvestri:l",
+        "target": "co:ricci:p",
         "count": 9,
         "type": "coauthorship"
       },
@@ -5126,32 +5045,26 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:silvestri:l",
+        "source": "co:ricci:p",
         "target": "co:turrini:l",
         "count": 9,
         "type": "coauthorship"
       },
       {
-        "source": "co:silvestri:l",
+        "source": "co:ricci:p",
         "target": "giuseppe-devito",
+        "count": 9,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:silvestri:l",
+        "target": "co:vanzi:f",
         "count": 9,
         "type": "coauthorship"
       },
       {
         "source": "alessandro-benedetto",
         "target": "co:morrone:m",
-        "count": 8,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:ricci:p",
-        "count": 8,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:sancataldo:g",
         "count": 8,
         "type": "coauthorship"
       },
@@ -5169,49 +5082,61 @@
       },
       {
         "source": "co:pavone:f",
-        "target": "co:ricci:p",
-        "count": 8,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:pavone:f",
         "target": "co:sancataldo:g",
         "count": 8,
         "type": "coauthorship"
       },
       {
-        "source": "co:ricci:p",
-        "target": "co:turrini:l",
+        "source": "co:pavone:f",
+        "target": "co:tiso:n",
         "count": 8,
         "type": "coauthorship"
       },
       {
         "source": "co:ricci:p",
-        "target": "giuseppe-devito",
+        "target": "co:silvestri:l",
         "count": 8,
         "type": "coauthorship"
       },
       {
-        "source": "co:sancataldo:g",
-        "target": "co:turrini:l",
-        "count": 8,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:sancataldo:g",
-        "target": "giuseppe-devito",
-        "count": 8,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:silvestri:l",
+        "source": "co:ricci:p",
         "target": "co:vanzi:f",
+        "count": 8,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:sancataldo:g",
+        "target": "co:turrini:l",
+        "count": 8,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:sancataldo:g",
+        "target": "giuseppe-devito",
         "count": 8,
         "type": "coauthorship"
       },
       {
         "source": "co:tinelli:f",
         "target": "giovanni-anobile",
+        "count": 8,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:tiso:n",
+        "target": "co:turrini:l",
+        "count": 8,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:tiso:n",
+        "target": "co:vanzi:f",
+        "count": 8,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:tiso:n",
+        "target": "giuseppe-devito",
         "count": 8,
         "type": "coauthorship"
       },
@@ -5235,25 +5160,7 @@
       },
       {
         "source": "co:ciofani:g",
-        "target": "co:de vito:g",
-        "count": 7,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:ciofani:g",
         "target": "giuseppe-devito",
-        "count": 7,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:tiso:n",
-        "count": 7,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:viglione:a",
         "count": 7,
         "type": "coauthorship"
       },
@@ -5264,30 +5171,12 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:pavone:f",
-        "target": "co:tiso:n",
-        "count": 7,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:pizzorusso:t",
         "target": "co:viglione:a",
         "count": 7,
         "type": "coauthorship"
       },
       {
-        "source": "co:ricci:p",
-        "target": "co:silvestri:l",
-        "count": 7,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:ricci:p",
-        "target": "co:vanzi:f",
-        "count": 7,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:sancataldo:g",
         "target": "co:silvestri:l",
         "count": 7,
@@ -5296,24 +5185,6 @@
       {
         "source": "co:sancataldo:g",
         "target": "co:vanzi:f",
-        "count": 7,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:tiso:n",
-        "target": "co:turrini:l",
-        "count": 7,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:tiso:n",
-        "target": "co:vanzi:f",
-        "count": 7,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:tiso:n",
-        "target": "giuseppe-devito",
         "count": 7,
         "type": "coauthorship"
       },
@@ -5331,12 +5202,6 @@
       },
       {
         "source": "co:amato:g",
-        "target": "co:mazziotti:r",
-        "count": 6,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:amato:g",
         "target": "co:pizzorusso:t",
         "count": 6,
         "type": "coauthorship"
@@ -5350,12 +5215,6 @@
       {
         "source": "co:burr:d",
         "target": "co:morrone:m",
-        "count": 6,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:carrara:f",
-        "target": "co:mazziotti:r",
         "count": 6,
         "type": "coauthorship"
       },
@@ -5384,8 +5243,20 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:mazziotti:r",
-        "target": "co:tognini:p",
+        "source": "co:gavryusev:v",
+        "target": "co:pavone:f",
+        "count": 6,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:gavryusev:v",
+        "target": "co:turrini:l",
+        "count": 6,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:gavryusev:v",
+        "target": "giuseppe-devito",
         "count": 6,
         "type": "coauthorship"
       },
@@ -5397,6 +5268,12 @@
       },
       {
         "source": "co:sancataldo:g",
+        "target": "co:tiso:n",
+        "count": 6,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:silvestri:l",
         "target": "co:tiso:n",
         "count": 6,
         "type": "coauthorship"
@@ -5433,12 +5310,6 @@
       },
       {
         "source": "co:baldi:p",
-        "target": "co:mazziotti:r",
-        "count": 5,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:baldi:p",
         "target": "raffaele-mazziotti",
         "count": 5,
         "type": "coauthorship"
@@ -5452,12 +5323,6 @@
       {
         "source": "co:baroncelli:l",
         "target": "co:pizzorusso:t",
-        "count": 5,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:battini:r",
-        "target": "co:mazziotti:r",
         "count": 5,
         "type": "coauthorship"
       },
@@ -5523,12 +5388,6 @@
       },
       {
         "source": "co:cioni:g",
-        "target": "co:mazziotti:r",
-        "count": 5,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cioni:g",
         "target": "co:tinelli:f",
         "count": 5,
         "type": "coauthorship"
@@ -5552,24 +5411,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:de vito:g",
-        "target": "co:gavryusev:v",
-        "count": 5,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:mattoli:v",
-        "count": 5,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:sorelli:m",
-        "count": 5,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:della puppa:a",
         "target": "co:pedone:a",
         "count": 5,
@@ -5589,25 +5430,19 @@
       },
       {
         "source": "co:gavryusev:v",
-        "target": "co:pavone:f",
-        "count": 5,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:gavryusev:v",
         "target": "co:sancataldo:g",
         "count": 5,
         "type": "coauthorship"
       },
       {
         "source": "co:gavryusev:v",
-        "target": "co:turrini:l",
+        "target": "co:silvestri:l",
         "count": 5,
         "type": "coauthorship"
       },
       {
         "source": "co:gavryusev:v",
-        "target": "giuseppe-devito",
+        "target": "co:vanzi:f",
         "count": 5,
         "type": "coauthorship"
       },
@@ -5642,14 +5477,38 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:mazziotti:r",
-        "target": "co:napoli:d",
+        "source": "co:morrone:m",
+        "target": "co:tosetti:m",
         "count": 5,
         "type": "coauthorship"
       },
       {
-        "source": "co:morrone:m",
-        "target": "co:tosetti:m",
+        "source": "co:mullenbroich:c",
+        "target": "co:pavone:f",
+        "count": 5,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:mullenbroich:c",
+        "target": "co:ricci:p",
+        "count": 5,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:mullenbroich:c",
+        "target": "co:silvestri:l",
+        "count": 5,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:mullenbroich:c",
+        "target": "co:turrini:l",
+        "count": 5,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:mullenbroich:c",
+        "target": "giuseppe-devito",
         "count": 5,
         "type": "coauthorship"
       },
@@ -5684,7 +5543,7 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:silvestri:l",
+        "source": "co:ricci:p",
         "target": "co:tiso:n",
         "count": 5,
         "type": "coauthorship"
@@ -5901,12 +5760,6 @@
       },
       {
         "source": "co:cappello:v",
-        "target": "co:de vito:g",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cappello:v",
         "target": "giuseppe-devito",
         "count": 4,
         "type": "coauthorship"
@@ -5985,12 +5838,6 @@
       },
       {
         "source": "co:chen:s",
-        "target": "co:mazziotti:r",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:chen:s",
         "target": "raffaele-mazziotti",
         "count": 4,
         "type": "coauthorship"
@@ -6010,60 +5857,6 @@
       {
         "source": "co:cioni:g",
         "target": "co:guzzetta:a",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:fanelli:d",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:fornetto:c",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:marchetti:m",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:marino:a",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:mascaro:a",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:mazzolai:b",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:mullenbroich:c",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:resta:f",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:scaglione:a",
         "count": 4,
         "type": "coauthorship"
       },
@@ -6207,19 +6000,13 @@
       },
       {
         "source": "co:gavryusev:v",
-        "target": "co:silvestri:l",
+        "target": "co:ricci:p",
         "count": 4,
         "type": "coauthorship"
       },
       {
         "source": "co:gavryusev:v",
-        "target": "co:vanzi:f",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:gennaro:m",
-        "target": "co:mazziotti:r",
+        "target": "co:tiso:n",
         "count": 4,
         "type": "coauthorship"
       },
@@ -6321,12 +6108,6 @@
       },
       {
         "source": "co:marchi:v",
-        "target": "co:mazziotti:r",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:marchi:v",
         "target": "raffaele-mazziotti",
         "count": 4,
         "type": "coauthorship"
@@ -6362,12 +6143,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:mazziotti:r",
-        "target": "co:totaro:v",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:mazzolai:b",
         "target": "co:piazza:v",
         "count": 4,
@@ -6393,37 +6168,19 @@
       },
       {
         "source": "co:mullenbroich:c",
-        "target": "co:pavone:f",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mullenbroich:c",
-        "target": "co:ricci:p",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mullenbroich:c",
         "target": "co:sancataldo:g",
         "count": 4,
         "type": "coauthorship"
       },
       {
         "source": "co:mullenbroich:c",
-        "target": "co:silvestri:l",
+        "target": "co:tiso:n",
         "count": 4,
         "type": "coauthorship"
       },
       {
         "source": "co:mullenbroich:c",
-        "target": "co:turrini:l",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mullenbroich:c",
-        "target": "giuseppe-devito",
+        "target": "co:vanzi:f",
         "count": 4,
         "type": "coauthorship"
       },
@@ -6490,12 +6247,6 @@
       {
         "source": "co:resta:f",
         "target": "giuseppe-devito",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:ricci:p",
-        "target": "co:tiso:n",
         "count": 4,
         "type": "coauthorship"
       },
@@ -6633,12 +6384,6 @@
       },
       {
         "source": "co:berardi:n",
-        "target": "co:mazziotti:r",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:berardi:n",
         "target": "co:pizzorusso:t",
         "count": 3,
         "type": "coauthorship"
@@ -6706,12 +6451,6 @@
       {
         "source": "co:cacciante:f",
         "target": "co:lupori:l",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cacciante:f",
-        "target": "co:mazziotti:r",
         "count": 3,
         "type": "coauthorship"
       },
@@ -6915,12 +6654,6 @@
       },
       {
         "source": "co:conti:e",
-        "target": "co:mazziotti:r",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:conti:e",
         "target": "co:scaffei:e",
         "count": 3,
         "type": "coauthorship"
@@ -6939,12 +6672,6 @@
       },
       {
         "source": "co:cornuti:s",
-        "target": "co:mazziotti:r",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cornuti:s",
         "target": "co:tognini:p",
         "count": 3,
         "type": "coauthorship"
@@ -6958,12 +6685,6 @@
       {
         "source": "co:de luca:d",
         "target": "co:lupori:l",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de luca:d",
-        "target": "co:mazziotti:r",
         "count": 3,
         "type": "coauthorship"
       },
@@ -6988,30 +6709,6 @@
       {
         "source": "co:de luca:d",
         "target": "raffaele-mazziotti",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:mazzamuto:g",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:montagni:e",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:sacconi:l",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:tonazzini:i",
         "count": 3,
         "type": "coauthorship"
       },
@@ -7118,24 +6815,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:gavryusev:v",
-        "target": "co:ricci:p",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:gavryusev:v",
-        "target": "co:tiso:n",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:gennaro:c",
-        "target": "co:mazziotti:r",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:gennaro:c",
         "target": "co:pizzorusso:t",
         "count": 3,
@@ -7168,12 +6847,6 @@
       {
         "source": "co:gori:m",
         "target": "michela-delviva",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:guzzetta:a",
-        "target": "co:mazziotti:r",
         "count": 3,
         "type": "coauthorship"
       },
@@ -7310,30 +6983,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:mazziotti:r",
-        "target": "co:micera:s",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:moccia:s",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:samad:m",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:scaffei:e",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:micera:s",
         "target": "co:moccia:s",
         "count": 3,
@@ -7414,18 +7063,6 @@
       {
         "source": "co:mullenbroich:c",
         "target": "co:sacconi:l",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mullenbroich:c",
-        "target": "co:tiso:n",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mullenbroich:c",
-        "target": "co:vanzi:f",
         "count": 3,
         "type": "coauthorship"
       },
@@ -7605,12 +7242,6 @@
       },
       {
         "source": "alessandro-benedetto",
-        "target": "co:mazziotti:r",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "alessandro-benedetto",
         "target": "co:pizzorusso:t",
         "count": 2,
         "type": "coauthorship"
@@ -7708,12 +7339,6 @@
       {
         "source": "co:alessandri:m",
         "target": "co:lupori:l",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:alessandri:m",
-        "target": "co:mazziotti:r",
         "count": 2,
         "type": "coauthorship"
       },
@@ -7900,12 +7525,6 @@
       {
         "source": "co:bagnoli:s",
         "target": "co:lupori:l",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bagnoli:s",
-        "target": "co:mazziotti:r",
         "count": 2,
         "type": "coauthorship"
       },
@@ -8445,12 +8064,6 @@
       },
       {
         "source": "co:caldarelli:m",
-        "target": "co:mazziotti:r",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:caldarelli:m",
         "target": "raffaele-mazziotti",
         "count": 2,
         "type": "coauthorship"
@@ -8470,12 +8083,6 @@
       {
         "source": "co:calderoni:s",
         "target": "co:costanzo:v",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:calderoni:s",
-        "target": "co:mazziotti:r",
         "count": 2,
         "type": "coauthorship"
       },
@@ -8518,12 +8125,6 @@
       {
         "source": "co:campagnaro:l",
         "target": "co:muscas:g",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:canta:a",
-        "target": "co:de vito:g",
         "count": 2,
         "type": "coauthorship"
       },
@@ -8709,12 +8310,6 @@
       },
       {
         "source": "co:carmassi:c",
-        "target": "co:mazziotti:r",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:carmassi:c",
         "target": "co:scaffei:e",
         "count": 2,
         "type": "coauthorship"
@@ -8787,12 +8382,6 @@
       },
       {
         "source": "co:cecchi:r",
-        "target": "co:de vito:g",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cecchi:r",
         "target": "co:piazza:v",
         "count": 2,
         "type": "coauthorship"
@@ -8800,12 +8389,6 @@
       {
         "source": "co:cecchi:r",
         "target": "giuseppe-devito",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cecchini:m",
-        "target": "co:de vito:g",
         "count": 2,
         "type": "coauthorship"
       },
@@ -8848,12 +8431,6 @@
       {
         "source": "co:cellerino:a",
         "target": "co:lupori:l",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cellerino:a",
-        "target": "co:mazziotti:r",
         "count": 2,
         "type": "coauthorship"
       },
@@ -8955,12 +8532,6 @@
       },
       {
         "source": "co:ciampi:l",
-        "target": "co:mazziotti:r",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:ciampi:l",
         "target": "co:pizzorusso:t",
         "count": 2,
         "type": "coauthorship"
@@ -8986,12 +8557,6 @@
       {
         "source": "co:ciani:e",
         "target": "co:lupori:l",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:ciani:e",
-        "target": "co:mazziotti:r",
         "count": 2,
         "type": "coauthorship"
       },
@@ -9117,12 +8682,6 @@
       },
       {
         "source": "co:costanzo:v",
-        "target": "co:mazziotti:r",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:costanzo:v",
         "target": "co:scaffei:e",
         "count": 2,
         "type": "coauthorship"
@@ -9146,36 +8705,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:de vito:g",
-        "target": "co:farrokhtakin:e",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:filippeschi:c",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:marmiroli:p",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:micera:s",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:rocca:a",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:dehaene:s",
         "target": "co:eger:e",
         "count": 2,
@@ -9190,12 +8719,6 @@
       {
         "source": "co:dehaene:s",
         "target": "elisa-castaldi",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:dell osso:l",
-        "target": "co:mazziotti:r",
         "count": 2,
         "type": "coauthorship"
       },
@@ -9238,12 +8761,6 @@
       {
         "source": "co:della puppa:a",
         "target": "co:van reeth:e",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:della sala:g",
-        "target": "co:mazziotti:r",
         "count": 2,
         "type": "coauthorship"
       },
@@ -9483,12 +9000,6 @@
       },
       {
         "source": "co:fuchs:c",
-        "target": "co:mazziotti:r",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:fuchs:c",
         "target": "co:pizzorusso:t",
         "count": 2,
         "type": "coauthorship"
@@ -9514,6 +9025,12 @@
       {
         "source": "co:gassama:s",
         "target": "elisa-castaldi",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:gavryusev:v",
+        "target": "co:mullenbroich:c",
         "count": 2,
         "type": "coauthorship"
       },
@@ -9621,12 +9138,6 @@
       },
       {
         "source": "co:kirkpartick:j",
-        "target": "co:mazziotti:r",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:kirkpartick:j",
         "target": "co:napoli:d",
         "count": 2,
         "type": "coauthorship"
@@ -9682,12 +9193,6 @@
       {
         "source": "co:kwok:j",
         "target": "co:lupori:l",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:kwok:j",
-        "target": "co:mazziotti:r",
         "count": 2,
         "type": "coauthorship"
       },
@@ -9778,12 +9283,6 @@
       {
         "source": "co:maduli:g",
         "target": "co:pedone:a",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:magnan:c",
-        "target": "co:mazziotti:r",
         "count": 2,
         "type": "coauthorship"
       },
@@ -9892,54 +9391,6 @@
       {
         "source": "co:mattoli:v",
         "target": "co:rocca:a",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:ricci:g",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:rutigliano:g",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:sacramento:e",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:sale:a",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:silingardi:d",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:strettoi:e",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:tozzini:e",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:verde:l",
         "count": 2,
         "type": "coauthorship"
       },
@@ -10731,12 +10182,6 @@
       },
       {
         "source": "co:adam:i",
-        "target": "co:de vito:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:adam:i",
         "target": "co:fanelli:d",
         "count": 1,
         "type": "coauthorship"
@@ -10899,12 +10344,6 @@
       },
       {
         "source": "co:almici:e",
-        "target": "co:de vito:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:almici:e",
         "target": "co:marchetti:m",
         "count": 1,
         "type": "coauthorship"
@@ -11055,12 +10494,6 @@
       },
       {
         "source": "co:amatori:g",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:amatori:g",
         "target": "co:rutigliano:g",
         "count": 1,
         "type": "coauthorship"
@@ -11199,12 +10632,6 @@
       },
       {
         "source": "co:ango:f",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:ango:f",
         "target": "co:pizzorusso:t",
         "count": 1,
         "type": "coauthorship"
@@ -11254,12 +10681,6 @@
       {
         "source": "co:antonelli:c",
         "target": "co:mattiello:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:antonelli:c",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -11326,12 +10747,6 @@
       {
         "source": "co:arthur:j",
         "target": "co:magnan:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:arthur:j",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -11434,12 +10849,6 @@
       {
         "source": "co:avezza:f",
         "target": "co:crippa:l",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:avezza:f",
-        "target": "co:de vito:g",
         "count": 1,
         "type": "coauthorship"
       },
@@ -11572,12 +10981,6 @@
       {
         "source": "co:awad:p",
         "target": "co:lavertu jolin:m",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:awad:p",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -11728,12 +11131,6 @@
       {
         "source": "co:baho:e",
         "target": "co:lavertu jolin:m",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:baho:e",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -12345,12 +11742,6 @@
       },
       {
         "source": "co:barsotti:j",
-        "target": "co:de vito:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:barsotti:j",
         "target": "co:filippeschi:c",
         "count": 1,
         "type": "coauthorship"
@@ -12424,12 +11815,6 @@
       {
         "source": "co:bartesaghi:r",
         "target": "co:martire:v",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bartesaghi:r",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -12543,12 +11928,6 @@
       },
       {
         "source": "co:bartolucci:m",
-        "target": "co:de vito:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bartolucci:m",
         "target": "co:debellis:d",
         "count": 1,
         "type": "coauthorship"
@@ -12628,12 +12007,6 @@
       {
         "source": "co:basta:g",
         "target": "co:ciofani:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:basta:g",
-        "target": "co:de vito:g",
         "count": 1,
         "type": "coauthorship"
       },
@@ -12729,12 +12102,6 @@
       },
       {
         "source": "co:bastianini:s",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bastianini:s",
         "target": "co:medici:g",
         "count": 1,
         "type": "coauthorship"
@@ -12796,12 +12163,6 @@
       {
         "source": "co:battaglini:m",
         "target": "co:ciofani:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:battaglini:m",
-        "target": "co:de vito:g",
         "count": 1,
         "type": "coauthorship"
       },
@@ -12975,12 +12336,6 @@
       },
       {
         "source": "co:begenisic:t",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:begenisic:t",
         "target": "co:sagona:g",
         "count": 1,
         "type": "coauthorship"
@@ -13000,12 +12355,6 @@
       {
         "source": "co:bendotti:c",
         "target": "co:cecchi:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bendotti:c",
-        "target": "co:de vito:g",
         "count": 1,
         "type": "coauthorship"
       },
@@ -13395,12 +12744,6 @@
       },
       {
         "source": "co:bifone:a",
-        "target": "co:de vito:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bifone:a",
         "target": "co:piazza:v",
         "count": 1,
         "type": "coauthorship"
@@ -13498,12 +12841,6 @@
       {
         "source": "co:bisti:s",
         "target": "co:maggi:m",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bisti:s",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -13749,12 +13086,6 @@
       },
       {
         "source": "co:borghi:e",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:borghi:e",
         "target": "co:ottaviano:e",
         "count": 1,
         "type": "coauthorship"
@@ -13827,12 +13158,6 @@
       },
       {
         "source": "co:bosetti:c",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bosetti:c",
         "target": "co:muratori:f",
         "count": 1,
         "type": "coauthorship"
@@ -13876,12 +13201,6 @@
       {
         "source": "co:bossi:m",
         "target": "co:crippa:l",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bossi:m",
-        "target": "co:de vito:g",
         "count": 1,
         "type": "coauthorship"
       },
@@ -13936,12 +13255,6 @@
       {
         "source": "co:bovetti:s",
         "target": "co:carrara:f",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bovetti:s",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -14014,12 +13327,6 @@
       {
         "source": "co:boyd:r",
         "target": "co:marchi:v",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:boyd:r",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -14361,12 +13668,6 @@
       },
       {
         "source": "co:burzi:v",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:burzi:v",
         "target": "co:moscarelli:m",
         "count": 1,
         "type": "coauthorship"
@@ -14422,12 +13723,6 @@
       {
         "source": "co:butt:m",
         "target": "co:lupori:l",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:butt:m",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -14715,12 +14010,6 @@
       },
       {
         "source": "co:calugi:f",
-        "target": "co:de vito:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:calugi:f",
         "target": "co:di vetta:f",
         "count": 1,
         "type": "coauthorship"
@@ -14752,12 +14041,6 @@
       {
         "source": "co:calugi:f",
         "target": "co:mascaro:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:calugi:f",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -14836,12 +14119,6 @@
       {
         "source": "co:cambiaghi:m",
         "target": "co:likhtik:e",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cambiaghi:m",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -15195,12 +14472,6 @@
       },
       {
         "source": "co:cappelli:a",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cappelli:a",
         "target": "co:rutigliano:g",
         "count": 1,
         "type": "coauthorship"
@@ -15459,12 +14730,6 @@
       },
       {
         "source": "co:carli:f",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:carli:f",
         "target": "co:raimondi:f",
         "count": 1,
         "type": "coauthorship"
@@ -15549,12 +14814,6 @@
       },
       {
         "source": "co:carozzi:v",
-        "target": "co:de vito:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:carozzi:v",
         "target": "co:lombardi:r",
         "count": 1,
         "type": "coauthorship"
@@ -15598,12 +14857,6 @@
       {
         "source": "co:carpaneto:j",
         "target": "co:cutrone:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:carpaneto:j",
-        "target": "co:de vito:g",
         "count": 1,
         "type": "coauthorship"
       },
@@ -15813,12 +15066,6 @@
       },
       {
         "source": "co:cas:m",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cas:m",
         "target": "co:ottaviano:e",
         "count": 1,
         "type": "coauthorship"
@@ -15969,12 +15216,6 @@
       },
       {
         "source": "co:cavaletti:g",
-        "target": "co:de vito:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cavaletti:g",
         "target": "co:lombardi:r",
         "count": 1,
         "type": "coauthorship"
@@ -16101,12 +15342,6 @@
       },
       {
         "source": "co:cecchini:g",
-        "target": "co:de vito:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cecchini:g",
         "target": "co:fanelli:d",
         "count": 1,
         "type": "coauthorship"
@@ -16215,12 +15450,6 @@
       },
       {
         "source": "co:ceglia:n",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:ceglia:n",
         "target": "co:napoli:d",
         "count": 1,
         "type": "coauthorship"
@@ -16287,12 +15516,6 @@
       },
       {
         "source": "co:cerri:e",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cerri:e",
         "target": "co:mckew:j",
         "count": 1,
         "type": "coauthorship"
@@ -16353,12 +15576,6 @@
       },
       {
         "source": "co:chattopadhyaya:b",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:chattopadhyaya:b",
         "target": "co:pizzorusso:t",
         "count": 1,
         "type": "coauthorship"
@@ -16401,12 +15618,6 @@
       },
       {
         "source": "co:chehrazi:p",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:chehrazi:p",
         "target": "co:pizzorusso:t",
         "count": 1,
         "type": "coauthorship"
@@ -16432,12 +15643,6 @@
       {
         "source": "co:chelini:g",
         "target": "co:magnan:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:chelini:g",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -16617,12 +15822,6 @@
       },
       {
         "source": "co:chiantia:g",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:chiantia:g",
         "target": "co:morello:n",
         "count": 1,
         "type": "coauthorship"
@@ -16683,12 +15882,6 @@
       },
       {
         "source": "co:chicchi:l",
-        "target": "co:de vito:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:chicchi:l",
         "target": "co:fanelli:d",
         "count": 1,
         "type": "coauthorship"
@@ -16732,12 +15925,6 @@
       {
         "source": "co:chiorazzi:a",
         "target": "co:crippa:l",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:chiorazzi:a",
-        "target": "co:de vito:g",
         "count": 1,
         "type": "coauthorship"
       },
@@ -16929,12 +16116,6 @@
       },
       {
         "source": "co:cicchi:r",
-        "target": "co:de vito:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cicchi:r",
         "target": "co:marchetti:m",
         "count": 1,
         "type": "coauthorship"
@@ -17062,12 +16243,6 @@
       {
         "source": "co:cicchini:g",
         "target": "co:marchesini:p",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cicchini:g",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -17421,12 +16596,6 @@
       },
       {
         "source": "co:comai:d",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:comai:d",
         "target": "co:morello:n",
         "count": 1,
         "type": "coauthorship"
@@ -17505,12 +16674,6 @@
       },
       {
         "source": "co:concina:g",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:concina:g",
         "target": "co:renna:a",
         "count": 1,
         "type": "coauthorship"
@@ -17553,12 +16716,6 @@
       },
       {
         "source": "co:consorti:a",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:consorti:a",
         "target": "co:pizzorusso:t",
         "count": 1,
         "type": "coauthorship"
@@ -17584,12 +16741,6 @@
       {
         "source": "co:consorti:a",
         "target": "raffaele-mazziotti",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:conti:e",
-        "target": "co:de vito:g",
         "count": 1,
         "type": "coauthorship"
       },
@@ -17805,12 +16956,6 @@
       },
       {
         "source": "co:corsi:f",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:corsi:f",
         "target": "co:piano:i",
         "count": 1,
         "type": "coauthorship"
@@ -17871,12 +17016,6 @@
       },
       {
         "source": "co:credi:c",
-        "target": "co:de vito:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:credi:c",
         "target": "co:pavone:f",
         "count": 1,
         "type": "coauthorship"
@@ -17926,12 +17065,6 @@
       {
         "source": "co:cremisi:f",
         "target": "co:lagani:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cremisi:f",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -18015,12 +17148,6 @@
       },
       {
         "source": "co:crippa:l",
-        "target": "co:de vito:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:crippa:l",
         "target": "co:lombardi:r",
         "count": 1,
         "type": "coauthorship"
@@ -18064,12 +17191,6 @@
       {
         "source": "co:crollen:v",
         "target": "co:marlair:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:cutrone:a",
-        "target": "co:de vito:g",
         "count": 1,
         "type": "coauthorship"
       },
@@ -18207,12 +17328,6 @@
       },
       {
         "source": "co:dada:l",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:dada:l",
         "target": "co:navarron:c",
         "count": 1,
         "type": "coauthorship"
@@ -18268,12 +17383,6 @@
       {
         "source": "co:damiani:f",
         "target": "co:magnan:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:damiani:f",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -18340,12 +17449,6 @@
       {
         "source": "co:de franceschi:m",
         "target": "co:martire:v",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de franceschi:m",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -18454,12 +17557,6 @@
       {
         "source": "co:de masi:f",
         "target": "roberto-arrighi",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de pasquale:d",
-        "target": "co:de vito:g",
         "count": 1,
         "type": "coauthorship"
       },
@@ -18586,282 +17683,6 @@
       {
         "source": "co:de pellegrin:s",
         "target": "elisa-castaldi",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:debellis:d",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:dedola:f",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:del turco:s",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:di leo:n",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:dina:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:gemmi:m",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:golberg:d",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:heath:p",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:iturrioz rodriguez:n",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:labardi:m",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:laurino:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:li:x",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:livi:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:locatelli:m",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:lombardi:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:luin:s",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:mazzoni:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:meneghetti:n",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:meregalli:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:migliorin:s",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:montalbano:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:moscato:s",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:nardo:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:ngo anh:t",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:oggioni:n",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:parlanti:p",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:pasquini:m",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:pesce:l",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:petretto:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:pizzorusso:t",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:potma:e",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:pucci:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:puleo:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:quattrini:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:ranasinghesagara:j",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:riva:n",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:rocca:v",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:rodriguez menendez:v",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:roschi:l",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:sen:o",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:shaw:p",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:tapeinos:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:trabalzini:e",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:trolese:m",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:venugopalan:v",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:de vito:g",
-        "target": "co:yamaguchi:m",
         "count": 1,
         "type": "coauthorship"
       },
@@ -19095,12 +17916,6 @@
       },
       {
         "source": "co:dell oste:v",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:dell oste:v",
         "target": "co:muratori:f",
         "count": 1,
         "type": "coauthorship"
@@ -19257,12 +18072,6 @@
       },
       {
         "source": "co:devi:s",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:devi:s",
         "target": "co:morello:n",
         "count": 1,
         "type": "coauthorship"
@@ -19341,12 +18150,6 @@
       },
       {
         "source": "co:di cristo:g",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:di cristo:g",
         "target": "co:pizzorusso:t",
         "count": 1,
         "type": "coauthorship"
@@ -19401,12 +18204,6 @@
       },
       {
         "source": "co:di marco:b",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:di marco:b",
         "target": "co:napoli:d",
         "count": 1,
         "type": "coauthorship"
@@ -19456,12 +18253,6 @@
       {
         "source": "co:di vetta:f",
         "target": "co:marquez galera:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:di vetta:f",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -19570,12 +18361,6 @@
       {
         "source": "co:do:m",
         "target": "co:lupori:l",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:do:m",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -19809,12 +18594,6 @@
       },
       {
         "source": "co:falchi:f",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:falchi:f",
         "target": "co:pizzorusso:t",
         "count": 1,
         "type": "coauthorship"
@@ -20043,12 +18822,6 @@
       },
       {
         "source": "co:fenizia:s",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:fenizia:s",
         "target": "co:raimondi:f",
         "count": 1,
         "type": "coauthorship"
@@ -20086,12 +18859,6 @@
       {
         "source": "co:ferrari:a",
         "target": "co:lupori:l",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:ferrari:a",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -20170,12 +18937,6 @@
       {
         "source": "co:finamore:f",
         "target": "co:magnan:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:finamore:f",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -20438,12 +19199,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:g:d",
-        "target": "giuseppe-devito",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:galante:a",
         "target": "co:gargini:c",
         "count": 1,
@@ -20452,12 +19207,6 @@
       {
         "source": "co:galante:a",
         "target": "co:maggi:m",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:galante:a",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -20476,12 +19225,6 @@
       {
         "source": "co:galli:l",
         "target": "co:lupori:l",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:galli:l",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -20541,12 +19284,6 @@
       },
       {
         "source": "co:gargini:c",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:gargini:c",
         "target": "co:piano:i",
         "count": 1,
         "type": "coauthorship"
@@ -20572,12 +19309,6 @@
       {
         "source": "co:gastaldelli:a",
         "target": "co:magnan:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:gastaldelli:a",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -20650,12 +19381,6 @@
       {
         "source": "co:gavryusev:v",
         "target": "co:montalbano:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:gavryusev:v",
-        "target": "co:mullenbroich:c",
         "count": 1,
         "type": "coauthorship"
       },
@@ -20853,12 +19578,6 @@
       },
       {
         "source": "co:gherardini:l",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:gherardini:l",
         "target": "co:pizzorusso:t",
         "count": 1,
         "type": "coauthorship"
@@ -20907,12 +19626,6 @@
       },
       {
         "source": "co:ghirardini:e",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:ghirardini:e",
         "target": "co:navarron:c",
         "count": 1,
         "type": "coauthorship"
@@ -20956,12 +19669,6 @@
       {
         "source": "co:ghirri:p",
         "target": "co:marchi:v",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:ghirri:p",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -21201,12 +19908,6 @@
       },
       {
         "source": "co:giustetto:m",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:giustetto:m",
         "target": "co:morello:n",
         "count": 1,
         "type": "coauthorship"
@@ -21286,12 +19987,6 @@
       {
         "source": "co:gnavi:s",
         "target": "co:marcantoni:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:gnavi:s",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -21454,12 +20149,6 @@
       {
         "source": "co:gordon:j",
         "target": "co:likhtik:e",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:gordon:j",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -21711,12 +20400,6 @@
       },
       {
         "source": "co:grilli:e",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:grilli:e",
         "target": "co:pizzorusso:t",
         "count": 1,
         "type": "coauthorship"
@@ -21825,12 +20508,6 @@
       },
       {
         "source": "co:groleau:m",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:groleau:m",
         "target": "co:pizzorusso:t",
         "count": 1,
         "type": "coauthorship"
@@ -21850,12 +20527,6 @@
       {
         "source": "co:grosso:a",
         "target": "co:likhtik:e",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:grosso:a",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -21904,12 +20575,6 @@
       {
         "source": "co:gurgone:a",
         "target": "co:marcantoni:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:gurgone:a",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -22203,12 +20868,6 @@
       },
       {
         "source": "co:jahannault talignani:c",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:jahannault talignani:c",
         "target": "co:pizzorusso:t",
         "count": 1,
         "type": "coauthorship"
@@ -22282,12 +20941,6 @@
       {
         "source": "co:koolen:n",
         "target": "co:marchi:v",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:koolen:n",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -22390,12 +21043,6 @@
       {
         "source": "co:ladavas:e",
         "target": "michela-delviva",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:lagani:g",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -22527,12 +21174,6 @@
       },
       {
         "source": "co:lavertu jolin:m",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:lavertu jolin:m",
         "target": "co:pizzorusso:t",
         "count": 1,
         "type": "coauthorship"
@@ -22588,12 +21229,6 @@
       {
         "source": "co:li:x",
         "target": "giuseppe-devito",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:likhtik:e",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -22738,12 +21373,6 @@
       {
         "source": "co:lopez atalaya:j",
         "target": "co:marquez galera:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:lopez atalaya:j",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -23061,12 +21690,6 @@
       },
       {
         "source": "co:maggi:m",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:maggi:m",
         "target": "co:piano:i",
         "count": 1,
         "type": "coauthorship"
@@ -23170,12 +21793,6 @@
       {
         "source": "co:marazzi:m",
         "target": "roberto-arrighi",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:marcantoni:a",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -23499,12 +22116,6 @@
       },
       {
         "source": "co:marquez galera:a",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:marquez galera:a",
         "target": "co:navarron:c",
         "count": 1,
         "type": "coauthorship"
@@ -23601,12 +22212,6 @@
       },
       {
         "source": "co:martini:v",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:martini:v",
         "target": "co:pizzorusso:t",
         "count": 1,
         "type": "coauthorship"
@@ -23620,12 +22225,6 @@
       {
         "source": "co:martini:v",
         "target": "raffaele-mazziotti",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:martire:v",
-        "target": "co:mazziotti:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -23787,12 +22386,6 @@
       },
       {
         "source": "co:mattiello:a",
-        "target": "co:mazziotti:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mattiello:a",
         "target": "co:pizzorusso:t",
         "count": 1,
         "type": "coauthorship"
@@ -23836,306 +22429,6 @@
       {
         "source": "co:mazzamuto:g",
         "target": "co:trabalzini:e",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:mckew:j",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:medici:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:melani:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:morea:s",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:morello:n",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:moscarelli:m",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:moscuzza:f",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:muratori:f",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:navarron:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:nisar:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:nocentini:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:orsini:n",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:ottaviano:e",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:papini:e",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:piano:i",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:pieri:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:pilotto:f",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:pizzo:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:poli:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:raimondi:f",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:raspanti:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:ren:e",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:renna:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:rimondini:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:rizzi:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:rocchiccioli:s",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:saccaro:l",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:sacchetti:b",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:sacco:t",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:salamone:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:salvadori:s",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:sansevero:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:santiago:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:sgherri:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:stefanov:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:stella:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:stevenson:n",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:stoccoro:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:supuran:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:tancredi:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:tealdi:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:tola:j",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:torelli:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:tozzi:f",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:trazzi:s",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:vanhatalo:s",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:vaucher:e",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:viggiano:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:zoccoli:g",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:mazziotti:r",
-        "target": "co:zucca:s",
         "count": 1,
         "type": "coauthorship"
       },
@@ -27286,8 +25579,8 @@
     ],
     "stats": {
       "lab_members": 9,
-      "external_collaborators": 515,
-      "edges": 3740
+      "external_collaborators": 512,
+      "edges": 3460
     }
   }
 }
