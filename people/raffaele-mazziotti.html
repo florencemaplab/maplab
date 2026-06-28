@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faculty profile | Florence MAPLab</title>
+  <meta name="description" content="Faculty profile, research interests, teaching, CV highlights and publications.">
+  <link rel="stylesheet" href="../assets/css/style.css?v=20260612g">
+</head>
+<body data-bib-url="../data/publications.bib" data-people-index="../data/people/people.json">
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="../index.html">
+        <span class="brand-title">Florence MAPLab</span>
+        <span class="brand-subtitle">Vision, action & neurophysiology</span>
+      </a>
+      <div class="nav-links" data-people-nav></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="profile-hero" aria-labelledby="profile-name">
+      <div class="profile-heading">
+        <div class="kicker">Faculty profile</div>
+        <h1 id="profile-name" data-profile-name>Loading profile…</h1>
+        <p class="profile-role" data-profile-role></p>
+        <p class="lede" data-profile-summary></p>
+        <div class="profile-actions" data-profile-links></div>
+      </div>
+
+      <aside class="profile-facts" aria-label="Profile details">
+        <dl>
+          <div><dt>Department</dt><dd data-profile-department></dd></div>
+          <div><dt>SSD</dt><dd data-profile-ssd></dd></div>
+          <div><dt>Email</dt><dd data-profile-email></dd></div>
+        </dl>
+      </aside>
+
+      <figure class="profile-photo-large">
+        <img data-profile-photo src="" alt="">
+        <figcaption data-profile-photo-credit></figcaption>
+      </figure>
+    </section>
+
+    <section class="content-grid">
+      <article class="panel panel-wide">
+        <h2>Research interests</h2>
+        <p data-profile-research></p>
+        <ul class="tags" data-profile-interests></ul>
+      </article>
+
+      <article class="panel">
+        <h2>Teaching</h2>
+        <p data-profile-teaching></p>
+        <div class="text-links" data-profile-teaching-links></div>
+      </article>
+
+      <article class="panel">
+        <h2>CV highlights</h2>
+        <ul class="clean-list" data-profile-cv></ul>
+      </article>
+
+      <article class="panel">
+        <h2>Selected topics</h2>
+        <p data-profile-topics></p>
+      </article>
+    </section>
+
+    <section class="publications-section" aria-labelledby="publications-title">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">Bibliography</div>
+          <h2 id="publications-title">Publications</h2>
+        </div>
+        <div class="pub-count" data-publications-count>Loading publications…</div>
+      </div>
+
+      <div class="publication-tools">
+        <input class="search-box" type="search" placeholder="Search by title, author, journal or DOI" aria-label="Search publications" data-publications-search>
+        <div class="year-filter" data-year-filter aria-label="Filter publications by year"></div>
+      </div>
+
+      <div class="publications-list" data-publications-list></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Profile content is loaded from <code>data/people/&lt;slug&gt;.json</code>. Publications are loaded from <code>data/publications.bib</code>.</p>
+  </footer>
+
+  <script src="../assets/js/person.js?v=20260612g" defer></script>
+</body>
+</html>

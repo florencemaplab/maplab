@@ -1,0 +1,370 @@
+{
+  "slug": "giuseppe-devito",
+  "name": "Giuseppe de Vito",
+  "generated_at": "2026-06-20T23:02:54Z",
+  "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
+  "metrics": {
+    "scopus_author_id": "55547668700",
+    "citation_count": 287,
+    "cited_by_count": 287,
+    "h_index": 8
+  },
+  "publications_analyzed": 19,
+  "abstracts_found": 0,
+  "keywords": [
+    {
+      "text": "cognitive",
+      "value": 8
+    },
+    {
+      "text": "behavioral",
+      "value": 6
+    },
+    {
+      "text": "visual",
+      "value": 6
+    },
+    {
+      "text": "optimal",
+      "value": 6
+    },
+    {
+      "text": "early",
+      "value": 6
+    },
+    {
+      "text": "features",
+      "value": 6
+    },
+    {
+      "text": "psychophysiological behavioral",
+      "value": 5
+    },
+    {
+      "text": "time estimation",
+      "value": 5
+    },
+    {
+      "text": "implied motion",
+      "value": 5
+    },
+    {
+      "text": "reduction",
+      "value": 4
+    },
+    {
+      "text": "vision",
+      "value": 4
+    },
+    {
+      "text": "pupil",
+      "value": 4
+    },
+    {
+      "text": "fast",
+      "value": 4
+    },
+    {
+      "text": "labels",
+      "value": 4
+    },
+    {
+      "text": "psychophysiological",
+      "value": 4
+    },
+    {
+      "text": "colour",
+      "value": 4
+    },
+    {
+      "text": "local",
+      "value": 4
+    },
+    {
+      "text": "time",
+      "value": 4
+    },
+    {
+      "text": "estimation",
+      "value": 4
+    },
+    {
+      "text": "motor",
+      "value": 4
+    },
+    {
+      "text": "implied",
+      "value": 4
+    },
+    {
+      "text": "motion",
+      "value": 4
+    },
+    {
+      "text": "paintings",
+      "value": 4
+    },
+    {
+      "text": "pupillary",
+      "value": 4
+    },
+    {
+      "text": "dimensionality reduction",
+      "value": 3
+    },
+    {
+      "text": "reduction techniques",
+      "value": 3
+    },
+    {
+      "text": "techniques pupillometry",
+      "value": 3
+    },
+    {
+      "text": "pupillometry primer",
+      "value": 3
+    },
+    {
+      "text": "primer behavioral",
+      "value": 3
+    },
+    {
+      "text": "behavioral scientists",
+      "value": 3
+    },
+    {
+      "text": "visual search",
+      "value": 3
+    },
+    {
+      "text": "search depends",
+      "value": 3
+    },
+    {
+      "text": "depends congruency",
+      "value": 3
+    },
+    {
+      "text": "congruency olfactory",
+      "value": 3
+    },
+    {
+      "text": "olfactory sensations",
+      "value": 3
+    },
+    {
+      "text": "optimal feature",
+      "value": 3
+    },
+    {
+      "text": "feature encoding",
+      "value": 3
+    },
+    {
+      "text": "encoding early",
+      "value": 3
+    },
+    {
+      "text": "early vision",
+      "value": 3
+    },
+    {
+      "text": "art-induced psychological",
+      "value": 3
+    },
+    {
+      "text": "psychological well-being",
+      "value": 3
+    },
+    {
+      "text": "well-being individual",
+      "value": 3
+    },
+    {
+      "text": "individual traits",
+      "value": 3
+    },
+    {
+      "text": "traits shape",
+      "value": 3
+    },
+    {
+      "text": "shape beneficial",
+      "value": 3
+    },
+    {
+      "text": "beneficial aesthetic",
+      "value": 3
+    },
+    {
+      "text": "aesthetic experiences",
+      "value": 3
+    },
+    {
+      "text": "pupil size",
+      "value": 3
+    },
+    {
+      "text": "size biomarker",
+      "value": 3
+    },
+    {
+      "text": "biomarker cognitive",
+      "value": 3
+    },
+    {
+      "text": "cognitive functions",
+      "value": 3
+    },
+    {
+      "text": "functions physiologically",
+      "value": 3
+    },
+    {
+      "text": "physiologically informed",
+      "value": 3
+    },
+    {
+      "text": "informed screening",
+      "value": 3
+    },
+    {
+      "text": "screening mental",
+      "value": 3
+    }
+  ],
+  "coauthors": [
+    {
+      "name": "Maria Michela Del Viva",
+      "count": 16
+    },
+    {
+      "name": "Ottavia D’Agostino",
+      "count": 5
+    },
+    {
+      "name": "Anna Montagnini",
+      "count": 3
+    },
+    {
+      "name": "Elvio Blini",
+      "count": 2
+    },
+    {
+      "name": "Roberto Arrighi",
+      "count": 2
+    },
+    {
+      "name": "Irene Petrizzo",
+      "count": 2
+    },
+    {
+      "name": "Stefano Mastandrea",
+      "count": 2
+    },
+    {
+      "name": "Elisa Castaldi",
+      "count": 1
+    },
+    {
+      "name": "Elisa Gragnoli",
+      "count": 1
+    },
+    {
+      "name": "Giada Baglioni",
+      "count": 1
+    },
+    {
+      "name": "Roberta Criminisi",
+      "count": 1
+    },
+    {
+      "name": "Barbara Giangrasso",
+      "count": 1
+    },
+    {
+      "name": "Giacomo Mazzotta",
+      "count": 1
+    },
+    {
+      "name": "Alessandro Benedetto",
+      "count": 1
+    },
+    {
+      "name": "Marija Soldo",
+      "count": 1
+    },
+    {
+      "name": "Tina Plank",
+      "count": 1
+    },
+    {
+      "name": "Mark W. Greenlee",
+      "count": 1
+    },
+    {
+      "name": "Angelica Mencarini",
+      "count": 1
+    },
+    {
+      "name": "Martina Fabozzi",
+      "count": 1
+    },
+    {
+      "name": "Raimondo Varano",
+      "count": 1
+    },
+    {
+      "name": "Irene Baldriga",
+      "count": 1
+    },
+    {
+      "name": "Martin Szinte",
+      "count": 1
+    },
+    {
+      "name": "Galina V. Paramei",
+      "count": 1
+    },
+    {
+      "name": "Alessandra Biondi",
+      "count": 1
+    },
+    {
+      "name": "Luigi Pignatiello",
+      "count": 1
+    },
+    {
+      "name": "Carlo Francisci",
+      "count": 1
+    },
+    {
+      "name": "Lisa Scipioni",
+      "count": 1
+    },
+    {
+      "name": "Martina Conti",
+      "count": 1
+    },
+    {
+      "name": "Claudia Feitosa-Santana",
+      "count": 1
+    },
+    {
+      "name": "Simone Grassini",
+      "count": 1
+    },
+    {
+      "name": "Antti Revonsuo",
+      "count": 1
+    },
+    {
+      "name": "Viola Benedetti",
+      "count": 1
+    },
+    {
+      "name": "Mika Koivisto",
+      "count": 1
+    }
+  ]
+}

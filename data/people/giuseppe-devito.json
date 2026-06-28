@@ -1,0 +1,60 @@
+{
+  "slug": "giovanni-anobile",
+  "shortName": "Anobile",
+  "name": "Giovanni Anobile",
+  "role": "Associate Professor",
+  "ssd": "PSIC-01/B – Neuropsychology and cognitive neuroscience",
+  "department": "NEUROFARBA, University of Florence",
+  "email": "giovanni.anobile@unifi.it",
+  "photo": "../assets/images/giuseppe-devito.jpeg",
+  "photoCredit": "PisaVisionLab",
+  "summary": "Associate Professor at the University of Florence. His work investigates numerical cognition, numerosity perception, multisensory processing and the links between perception, action and mathematical abilities.",
+  "research": "His research focuses on how the human brain represents number, space and action. He combines psychophysics, developmental approaches and multisensory paradigms to study numerosity, attention and sensorimotor contributions to cognition.",
+  "interests": [
+    "Numerosity perception",
+    "Numerical cognition",
+    "Attention",
+    "Sensorimotor integration",
+    "Multisensory perception",
+    "Mathematical abilities"
+  ],
+  "teaching": {
+    "text": "Teaching information is maintained on the official University of Florence profile and course catalogue.",
+    "links": [
+      {
+        "label": "Open UniFI teaching/profile page",
+        "url": "https://cercachi.unifi.it/p-doc2-0-0-A-3f2b3a32352e2c.html"
+      }
+    ]
+  },
+  "cv": [
+    "Associate Professor, University of Florence.",
+    "Research activity on numerosity perception, attention and sensorimotor number cognition.",
+    "Member of Florence MAPLab and PisaVisionLab research networks."
+  ],
+  "topics": "Current themes include perceptual and sensorimotor foundations of number cognition, developmental trajectories of mathematical abilities, visual attention and multisensory processing.",
+  "links": [
+    {
+      "label": "UniFI",
+      "url": "https://cercachi.unifi.it/p-doc2-0-0-A-3f2b3a32352e2c.html"
+    },
+    {
+      "label": "ORCID",
+      "url": "https://orcid.org/0000-0003-2796-0661"
+    },
+    {
+      "label": "PisaVisionLab",
+      "url": "https://www.pisavisionlab.org/members/giovanni-anobile/"
+    }
+  ],
+  "aliases": [
+    "Giovanni Anobile",
+    "Anobile Giovanni",
+    "Anobile, Giovanni",
+    "G Anobile",
+    "G. Anobile",
+    "Anobile G",
+    "Anobile, G",
+    "Anobile G."
+  ]
+}

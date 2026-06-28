@@ -9,8 +9,7 @@
     "slug": "roberto-arrighi",
     "name": "Roberto Arrighi",
     "scopus_author_id": "8870558800",
-    "orcid": "0000-0002-5435-6729",
-    "search_query": "AUTHLASTNAME(Arrighi) AND AUTHFIRST(Roberto) AND AFFIL(Florence)"
+    "orcid": "0000-0002-5435-6729"
   },
   {
     "slug": "giovanni-anobile",
@@ -41,5 +40,17 @@
     "name": "Maria Michela Del Viva",
     "scopus_author_id": "8750278400",
     "orcid": "0000-0001-6332-4959"
+  },
+    {
+    "slug": "giuseppe-devito",
+    "name": "Giuseppe de Vito",
+    "scopus_author_id": "55547668700",
+    "orcid": "0000-0001-8225-5944"
+  },
+    {
+    "slug": "raffaele-mazziotti",
+    "name": "Raffaele Mario Mazziotti",
+    "scopus_author_id": "57110486800",
+    "orcid": "0000-0001-5344-5079"
   }
 ]

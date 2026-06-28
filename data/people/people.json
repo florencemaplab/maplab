@@ -19,9 +19,19 @@
     "shortName": "Castaldi",
     "category": "faculty"
   },
+    {
+    "slug": "giuseppe-devito",
+    "shortName": "De Vito",
+    "category": "faculty"
+  },
    {
     "slug": "michela-delviva",
     "shortName": "Del Viva",
+    "category": "faculty"
+  },
+   {
+    "slug": "raffaele-mazziotti",
+    "shortName": "Mazziotti",
     "category": "faculty"
   },
   {
