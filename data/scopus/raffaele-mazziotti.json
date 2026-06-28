@@ -1,7 +1,7 @@
 {
   "slug": "raffaele-mazziotti",
   "name": "Raffaele Mazziotti",
-  "generated_at": "2026-06-28T09:14:53Z",
+  "generated_at": "2026-06-28T09:21:58Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57110486800",
@@ -14,15 +14,7 @@
   "keywords": [
     {
       "text": "visual",
-      "value": 35
-    },
-    {
-      "text": "numerosity",
-      "value": 35
-    },
-    {
-      "text": "perception",
-      "value": 19
+      "value": 24
     },
     {
       "text": "cortical",
@@ -31,10 +23,6 @@
     {
       "text": "mouse",
       "value": 16
-    },
-    {
-      "text": "cortex",
-      "value": 15
     },
     {
       "text": "mice",
@@ -49,19 +37,11 @@
       "value": 14
     },
     {
-      "text": "number",
+      "text": "cortex",
       "value": 14
     },
     {
       "text": "visual cortex",
-      "value": 12
-    },
-    {
-      "text": "disorder",
-      "value": 11
-    },
-    {
-      "text": "children",
       "value": 11
     },
     {
@@ -73,15 +53,7 @@
       "value": 10
     },
     {
-      "text": "time",
-      "value": 10
-    },
-    {
-      "text": "adaptation",
-      "value": 10
-    },
-    {
-      "text": "math",
+      "text": "disorder",
       "value": 10
     },
     {
@@ -90,10 +62,6 @@
     },
     {
       "text": "pupillometry",
-      "value": 8
-    },
-    {
-      "text": "role",
       "value": 8
     },
     {
@@ -107,14 +75,6 @@
     {
       "text": "adult",
       "value": 8
-    },
-    {
-      "text": "attention",
-      "value": 7
-    },
-    {
-      "text": "estimation",
-      "value": 7
     },
     {
       "text": "retinitis pigmentosa",
@@ -143,10 +103,6 @@
     {
       "text": "adult visual",
       "value": 7
-    },
-    {
-      "text": "mapping",
-      "value": 6
     },
     {
       "text": "retinitis",
@@ -181,42 +137,6 @@
       "value": 6
     },
     {
-      "text": "system",
-      "value": 6
-    },
-    {
-      "text": "review",
-      "value": 5
-    },
-    {
-      "text": "motor",
-      "value": 5
-    },
-    {
-      "text": "representation",
-      "value": 5
-    },
-    {
-      "text": "action",
-      "value": 5
-    },
-    {
-      "text": "anxiety",
-      "value": 5
-    },
-    {
-      "text": "groupitizing",
-      "value": 5
-    },
-    {
-      "text": "space",
-      "value": 5
-    },
-    {
-      "text": "subitizing",
-      "value": 5
-    },
-    {
       "text": "predicting visual",
       "value": 5
     },
@@ -231,32 +151,96 @@
     {
       "text": "imaging mouse",
       "value": 5
+    },
+    {
+      "text": "autism spectrum",
+      "value": 5
+    },
+    {
+      "text": "cdkl5 deficiency",
+      "value": 5
+    },
+    {
+      "text": "deficiency disorder",
+      "value": 5
+    },
+    {
+      "text": "cortical plasticity",
+      "value": 5
+    },
+    {
+      "text": "cdkl5 mutant",
+      "value": 5
+    },
+    {
+      "text": "mutant mice",
+      "value": 5
+    },
+    {
+      "text": "systematic review",
+      "value": 5
+    },
+    {
+      "text": "translational real-time",
+      "value": 5
+    },
+    {
+      "text": "real-time pupillometry",
+      "value": 5
+    },
+    {
+      "text": "mir-29 coordinates",
+      "value": 5
+    },
+    {
+      "text": "coordinates age-dependent",
+      "value": 5
+    },
+    {
+      "text": "age-dependent plasticity",
+      "value": 5
+    },
+    {
+      "text": "plasticity brakes",
+      "value": 5
+    },
+    {
+      "text": "brakes adult",
+      "value": 5
+    },
+    {
+      "text": "cdkl5 disorder",
+      "value": 5
+    },
+    {
+      "text": "role",
+      "value": 4
+    },
+    {
+      "text": "predicting",
+      "value": 4
+    },
+    {
+      "text": "wide-field",
+      "value": 4
+    },
+    {
+      "text": "perineuronal",
+      "value": 4
+    },
+    {
+      "text": "memories",
+      "value": 4
     }
   ],
   "coauthors": [
-    {
-      "name": "David Charles Burr",
-      "count": 38
-    },
-    {
-      "name": "Roberto Arrighi",
-      "count": 37
-    },
     {
       "name": "Tommaso Pizzorusso",
       "count": 27
     },
     {
-      "name": "Guido Marco Cicchini",
-      "count": 22
-    },
-    {
       "name": "Leonardo Lupori",
       "count": 21
-    },
-    {
-      "name": "Elisa Castaldi",
-      "count": 17
     },
     {
       "name": "Giulia Sagona",
@@ -267,27 +251,11 @@
       "count": 12
     },
     {
-      "name": "Paula Andrea Maldonado Moscoso",
-      "count": 11
-    },
-    {
-      "name": "Irene Petrizzo",
-      "count": 9
-    },
-    {
       "name": "Laura Baroncelli",
       "count": 9
     },
     {
-      "name": "Francesca Tinelli",
-      "count": 8
-    },
-    {
       "name": "Aurelia Viglione",
-      "count": 7
-    },
-    {
-      "name": "Giovanni Cioni",
       "count": 7
     },
     {
@@ -303,14 +271,6 @@
       "count": 6
     },
     {
-      "name": "Marco Turi",
-      "count": 6
-    },
-    {
-      "name": "Paolo Antonino Grasso",
-      "count": 5
-    },
-    {
       "name": "Debora Napoli",
       "count": 5
     },
@@ -323,20 +283,8 @@
       "count": 5
     },
     {
-      "name": "Alessandro Benedetto",
-      "count": 4
-    },
-    {
-      "name": "Giuseppe Maduli",
-      "count": 4
-    },
-    {
-      "name": "Eleonora Chelli",
-      "count": 4
-    },
-    {
-      "name": "Mariaelisa Bartoli",
-      "count": 4
+      "name": "Giovanni Cioni",
+      "count": 5
     },
     {
       "name": "Siwei Chen",
@@ -395,14 +343,6 @@
       "count": 3
     },
     {
-      "name": "Maria Concetta Morrone",
-      "count": 3
-    },
-    {
-      "name": "Camilla Caponi",
-      "count": 3
-    },
-    {
       "name": "Andrea Guzzetta",
       "count": 3
     },
@@ -411,15 +351,7 @@
       "count": 2
     },
     {
-      "name": "Tommaso Bartolini",
-      "count": 2
-    },
-    {
       "name": "Enrica Strettoi",
-      "count": 2
-    },
-    {
-      "name": "Elvio Blini",
       "count": 2
     },
     {
@@ -447,19 +379,15 @@
       "count": 2
     },
     {
-      "name": "Gabriele Masi",
-      "count": 2
-    },
-    {
       "name": "Liliana Dell’Osso",
       "count": 2
     },
     {
-      "name": "Caterina Primi",
+      "name": "Luca Lo Verde",
       "count": 2
     },
     {
-      "name": "Luca Lo Verde",
+      "name": "Alessandro Benedetto",
       "count": 2
     },
     {
@@ -503,10 +431,6 @@
       "count": 2
     },
     {
-      "name": "Filippo Gasperini",
-      "count": 2
-    },
-    {
       "name": "Claudia Fuchs",
       "count": 2
     },
@@ -515,32 +439,8 @@
       "count": 2
     },
     {
-      "name": "Antonella Pomè",
-      "count": 2
-    },
-    {
-      "name": "Paolo Stievano",
-      "count": 2
-    },
-    {
       "name": "Grazia Della Sala",
       "count": 2
-    },
-    {
-      "name": "Silvia Martelli",
-      "count": 1
-    },
-    {
-      "name": "Eleonora Bieber",
-      "count": 1
-    },
-    {
-      "name": "Sofia Ditano",
-      "count": 1
-    },
-    {
-      "name": "Egle Casavecchia",
-      "count": 1
     },
     {
       "name": "Stefano Zucca",
@@ -552,6 +452,106 @@
     },
     {
       "name": "Rida Nisar",
+      "count": 1
+    },
+    {
+      "name": "Ester M. Papini",
+      "count": 1
+    },
+    {
+      "name": "Serena Bovetti",
+      "count": 1
+    },
+    {
+      "name": "Raffaele M. Mazziotti",
+      "count": 1
+    },
+    {
+      "name": "Francesca Corsi",
+      "count": 1
+    },
+    {
+      "name": "Alessia Galante",
+      "count": 1
+    },
+    {
+      "name": "Maria Anna Maggi",
+      "count": 1
+    },
+    {
+      "name": "Silvia Bisti",
+      "count": 1
+    },
+    {
+      "name": "Ilaria Piano",
+      "count": 1
+    },
+    {
+      "name": "Claudia Gargini",
+      "count": 1
+    },
+    {
+      "name": "Beatrice Di Marco",
+      "count": 1
+    },
+    {
+      "name": "Giulia Salamone",
+      "count": 1
+    },
+    {
+      "name": "Noemi Orsini",
+      "count": 1
+    },
+    {
+      "name": "Francesco Finamore",
+      "count": 1
+    },
+    {
+      "name": "Fabrizia Carli",
+      "count": 1
+    },
+    {
+      "name": "Simona Fenizia",
+      "count": 1
+    },
+    {
+      "name": "Francesca Damiani",
+      "count": 1
+    },
+    {
+      "name": "Francesco Raimondi",
+      "count": 1
+    },
+    {
+      "name": "Silvia Rocchiccioli",
+      "count": 1
+    },
+    {
+      "name": "Amalia Gastaldelli",
+      "count": 1
+    },
+    {
+      "name": "De Luca D.",
+      "count": 1
+    },
+    {
+      "name": "Elsa Ghirardini",
+      "count": 1
+    },
+    {
+      "name": "Angel Marquez-Galera",
+      "count": 1
+    },
+    {
+      "name": "Francesco Calugi",
+      "count": 1
+    },
+    {
+      "name": "Carmen M. Navarron",
+      "count": 1
+    },
+    {
+      "name": "Federica Di Vetta",
       "count": 1
     }
   ]
