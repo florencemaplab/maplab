@@ -1,369 +1,557 @@
 {
   "slug": "giuseppe-devito",
-  "name": "Giuseppe de Vito",
-  "generated_at": "2026-06-20T23:02:54Z",
+  "name": "Giovanni Anobile",
+  "generated_at": "2026-06-28T08:56:45Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "55547668700",
-    "citation_count": 287,
-    "cited_by_count": 287,
-    "h_index": 8
+    "citation_count": 1000,
+    "cited_by_count": 1000,
+    "h_index": 19
   },
-  "publications_analyzed": 19,
+  "publications_analyzed": 40,
   "abstracts_found": 0,
   "keywords": [
     {
-      "text": "cognitive",
-      "value": 8
+      "text": "numerosity",
+      "value": 35
     },
     {
-      "text": "behavioral",
-      "value": 6
+      "text": "zebrafish",
+      "value": 25
+    },
+    {
+      "text": "imaging",
+      "value": 24
+    },
+    {
+      "text": "two-photon",
+      "value": 19
+    },
+    {
+      "text": "microscopy",
+      "value": 18
+    },
+    {
+      "text": "perception",
+      "value": 17
+    },
+    {
+      "text": "light-sheet",
+      "value": 16
+    },
+    {
+      "text": "number",
+      "value": 14
+    },
+    {
+      "text": "functional",
+      "value": 13
+    },
+    {
+      "text": "brain",
+      "value": 13
+    },
+    {
+      "text": "stimulation",
+      "value": 13
     },
     {
       "text": "visual",
-      "value": 6
+      "value": 11
     },
     {
-      "text": "optimal",
-      "value": 6
+      "text": "adaptation",
+      "value": 10
     },
     {
-      "text": "early",
-      "value": 6
+      "text": "math",
+      "value": 10
     },
     {
-      "text": "features",
-      "value": 6
+      "text": "zebrafish brain",
+      "value": 10
     },
     {
-      "text": "psychophysiological behavioral",
-      "value": 5
+      "text": "all-optical",
+      "value": 9
     },
     {
-      "text": "time estimation",
-      "value": 5
-    },
-    {
-      "text": "implied motion",
-      "value": 5
-    },
-    {
-      "text": "reduction",
-      "value": 4
-    },
-    {
-      "text": "vision",
-      "value": 4
-    },
-    {
-      "text": "pupil",
-      "value": 4
-    },
-    {
-      "text": "fast",
-      "value": 4
-    },
-    {
-      "text": "labels",
-      "value": 4
-    },
-    {
-      "text": "psychophysiological",
-      "value": 4
-    },
-    {
-      "text": "colour",
-      "value": 4
-    },
-    {
-      "text": "local",
-      "value": 4
-    },
-    {
-      "text": "time",
-      "value": 4
-    },
-    {
-      "text": "estimation",
-      "value": 4
+      "text": "connectivity",
+      "value": 9
     },
     {
       "text": "motor",
-      "value": 4
+      "value": 9
     },
     {
-      "text": "implied",
-      "value": 4
+      "text": "activity",
+      "value": 9
     },
     {
-      "text": "motion",
-      "value": 4
+      "text": "mice",
+      "value": 9
     },
     {
-      "text": "paintings",
-      "value": 4
+      "text": "children",
+      "value": 9
     },
     {
-      "text": "pupillary",
-      "value": 4
+      "text": "two-photon light-sheet",
+      "value": 9
     },
     {
-      "text": "dimensionality reduction",
-      "value": 3
+      "text": "zebrafish larvae",
+      "value": 9
     },
     {
-      "text": "reduction techniques",
-      "value": 3
+      "text": "light-sheet microscopy",
+      "value": 9
     },
     {
-      "text": "techniques pupillometry",
-      "value": 3
+      "text": "fluorescence",
+      "value": 8
     },
     {
-      "text": "pupillometry primer",
-      "value": 3
+      "text": "larvae",
+      "value": 8
     },
     {
-      "text": "primer behavioral",
-      "value": 3
+      "text": "cells",
+      "value": 8
     },
     {
-      "text": "behavioral scientists",
-      "value": 3
+      "text": "cars",
+      "value": 8
     },
     {
-      "text": "visual search",
-      "value": 3
+      "text": "time",
+      "value": 8
     },
     {
-      "text": "search depends",
-      "value": 3
+      "text": "two-photon all-optical",
+      "value": 8
     },
     {
-      "text": "depends congruency",
-      "value": 3
+      "text": "brain functional",
+      "value": 8
     },
     {
-      "text": "congruency olfactory",
-      "value": 3
+      "text": "neuronal",
+      "value": 7
     },
     {
-      "text": "olfactory sensations",
-      "value": 3
+      "text": "attention",
+      "value": 7
     },
     {
-      "text": "optimal feature",
-      "value": 3
+      "text": "estimation",
+      "value": 7
     },
     {
-      "text": "feature encoding",
-      "value": 3
+      "text": "light-sheet fluorescence",
+      "value": 7
     },
     {
-      "text": "encoding early",
-      "value": 3
+      "text": "barium titanate",
+      "value": 7
     },
     {
-      "text": "early vision",
-      "value": 3
+      "text": "high",
+      "value": 6
     },
     {
-      "text": "art-induced psychological",
-      "value": 3
+      "text": "mechanisms",
+      "value": 6
     },
     {
-      "text": "psychological well-being",
-      "value": 3
+      "text": "disease",
+      "value": 6
     },
     {
-      "text": "well-being individual",
-      "value": 3
+      "text": "nanoparticles",
+      "value": 6
     },
     {
-      "text": "individual traits",
-      "value": 3
+      "text": "piezoelectric",
+      "value": 6
     },
     {
-      "text": "traits shape",
-      "value": 3
+      "text": "activation",
+      "value": 6
     },
     {
-      "text": "shape beneficial",
-      "value": 3
+      "text": "myelin",
+      "value": 6
     },
     {
-      "text": "beneficial aesthetic",
-      "value": 3
+      "text": "molecular",
+      "value": 6
     },
     {
-      "text": "aesthetic experiences",
-      "value": 3
+      "text": "rp-cars",
+      "value": 6
     },
     {
-      "text": "pupil size",
-      "value": 3
+      "text": "mapping",
+      "value": 6
     },
     {
-      "text": "size biomarker",
-      "value": 3
+      "text": "barium",
+      "value": 6
     },
     {
-      "text": "biomarker cognitive",
-      "value": 3
+      "text": "titanate",
+      "value": 6
     },
     {
-      "text": "cognitive functions",
-      "value": 3
+      "text": "dissecting zebrafish",
+      "value": 6
     },
     {
-      "text": "functions physiologically",
-      "value": 3
+      "text": "functional connectivity",
+      "value": 6
     },
     {
-      "text": "physiologically informed",
-      "value": 3
+      "text": "connectivity two-photon",
+      "value": 6
     },
     {
-      "text": "informed screening",
-      "value": 3
+      "text": "all-optical electrophysiology",
+      "value": 6
     },
     {
-      "text": "screening mental",
-      "value": 3
+      "text": "neuronal activity",
+      "value": 6
+    },
+    {
+      "text": "awake mice",
+      "value": 6
+    },
+    {
+      "text": "dissecting",
+      "value": 5
     }
   ],
   "coauthors": [
     {
-      "name": "Maria Michela Del Viva",
-      "count": 16
+      "name": "David Charles Burr",
+      "count": 38
     },
     {
-      "name": "Ottavia D’Agostino",
+      "name": "Roberto Arrighi",
+      "count": 37
+    },
+    {
+      "name": "Guido Marco Cicchini",
+      "count": 21
+    },
+    {
+      "name": "Francesco Saverio Pavone",
+      "count": 20
+    },
+    {
+      "name": "Elisa Castaldi",
+      "count": 17
+    },
+    {
+      "name": "Lapo Turrini",
+      "count": 15
+    },
+    {
+      "name": "Francesco Vanzi",
+      "count": 13
+    },
+    {
+      "name": "Vincenzo Piazza",
+      "count": 13
+    },
+    {
+      "name": "Paula Andrea Maldonado Moscoso",
+      "count": 11
+    },
+    {
+      "name": "Irene Petrizzo",
+      "count": 9
+    },
+    {
+      "name": "Ludovico Silvestri",
+      "count": 9
+    },
+    {
+      "name": "Francesca Tinelli",
+      "count": 8
+    },
+    {
+      "name": "Pietro Ricci",
+      "count": 8
+    },
+    {
+      "name": "Giuseppe Sancataldo",
+      "count": 8
+    },
+    {
+      "name": "Natascia Tiso",
+      "count": 7
+    },
+    {
+      "name": "Gianni Ciofani",
+      "count": 7
+    },
+    {
+      "name": "Marco Turi",
+      "count": 6
+    },
+    {
+      "name": "Paolo Antonino Grasso",
       "count": 5
     },
     {
-      "name": "Anna Montagnini",
+      "name": "Michele Sorelli",
+      "count": 5
+    },
+    {
+      "name": "Vladislav Gavryusev",
+      "count": 5
+    },
+    {
+      "name": "Virgilio Mattoli",
+      "count": 5
+    },
+    {
+      "name": "Giuseppe Maduli",
+      "count": 4
+    },
+    {
+      "name": "Eleonora Chelli",
+      "count": 4
+    },
+    {
+      "name": "Mariaelisa Bartoli",
+      "count": 4
+    },
+    {
+      "name": "Marco Marchetti",
+      "count": 4
+    },
+    {
+      "name": "Alessandro Scaglione",
+      "count": 4
+    },
+    {
+      "name": "Anna Letizia Allegra Mascaro",
+      "count": 4
+    },
+    {
+      "name": "Caroline Müllenbroich",
+      "count": 4
+    },
+    {
+      "name": "Duccio Fanelli",
+      "count": 4
+    },
+    {
+      "name": "Attilio Marino",
+      "count": 4
+    },
+    {
+      "name": "Francesco A. Resta",
+      "count": 4
+    },
+    {
+      "name": "Chiara Fornetto",
+      "count": 4
+    },
+    {
+      "name": "Valentina Cappello",
+      "count": 4
+    },
+    {
+      "name": "Barbara Mazzolai",
+      "count": 4
+    },
+    {
+      "name": "Maria Concetta Morrone",
       "count": 3
+    },
+    {
+      "name": "Giacomo Mazzamuto",
+      "count": 3
+    },
+    {
+      "name": "Leonardo Sacconi",
+      "count": 3
+    },
+    {
+      "name": "Camilla Caponi",
+      "count": 3
+    },
+    {
+      "name": "Elena Montagni",
+      "count": 3
+    },
+    {
+      "name": "Ilaria Tonazzini",
+      "count": 3
+    },
+    {
+      "name": "Guiseppe de Vito",
+      "count": 3
+    },
+    {
+      "name": "Alessandro Benedetto",
+      "count": 2
+    },
+    {
+      "name": "Tommaso Bartolini",
+      "count": 2
     },
     {
       "name": "Elvio Blini",
       "count": 2
     },
     {
-      "name": "Roberto Arrighi",
+      "name": "Gabriele Masi",
       "count": 2
     },
     {
-      "name": "Irene Petrizzo",
+      "name": "Giovanni Cioni",
       "count": 2
     },
     {
-      "name": "Stefano Mastandrea",
+      "name": "Silvestro Micera",
       "count": 2
     },
     {
-      "name": "Elisa Castaldi",
+      "name": "Caterina Primi",
+      "count": 2
+    },
+    {
+      "name": "Roberta Cecchi",
+      "count": 2
+    },
+    {
+      "name": "Filippo Gasperini",
+      "count": 2
+    },
+    {
+      "name": "Antonella Pomè",
+      "count": 2
+    },
+    {
+      "name": "Paolo Stievano",
+      "count": 2
+    },
+    {
+      "name": "Marco Cecchini",
+      "count": 2
+    },
+    {
+      "name": "Annalisa Canta",
+      "count": 2
+    },
+    {
+      "name": "Paola Marmiroli",
+      "count": 2
+    },
+    {
+      "name": "Elmira Farrokhtakin",
+      "count": 2
+    },
+    {
+      "name": "Antonella Rocca",
+      "count": 2
+    },
+    {
+      "name": "Carlo Filippeschi",
+      "count": 2
+    },
+    {
+      "name": "Silvia Martelli",
       "count": 1
     },
     {
-      "name": "Elisa Gragnoli",
+      "name": "Eleonora Bieber",
       "count": 1
     },
     {
-      "name": "Giada Baglioni",
+      "name": "Sofia Ditano",
       "count": 1
     },
     {
-      "name": "Roberta Criminisi",
+      "name": "Egle Casavecchia",
       "count": 1
     },
     {
-      "name": "Barbara Giangrasso",
+      "name": "Beatrice Aruanno",
       "count": 1
     },
     {
-      "name": "Giacomo Mazzotta",
+      "name": "Armando Viviano Razionale",
       "count": 1
     },
     {
-      "name": "Alessandro Benedetto",
+      "name": "Monica Bordegoni",
       "count": 1
     },
     {
-      "name": "Marija Soldo",
+      "name": "Irene Burgio",
       "count": 1
     },
     {
-      "name": "Tina Plank",
+      "name": "Massimo Gurioli",
       "count": 1
     },
     {
-      "name": "Mark W. Greenlee",
+      "name": "Camilla Bonaudo",
       "count": 1
     },
     {
-      "name": "Angelica Mencarini",
+      "name": "Agnese Pedone",
       "count": 1
     },
     {
-      "name": "Martina Fabozzi",
+      "name": "Federico Capelli",
       "count": 1
     },
     {
-      "name": "Raimondo Varano",
+      "name": "Alessandro Della Puppa",
       "count": 1
     },
     {
-      "name": "Irene Baldriga",
+      "name": "Gasperini Filippo",
       "count": 1
     },
     {
-      "name": "Martin Szinte",
+      "name": "Turrini L.",
       "count": 1
     },
     {
-      "name": "Galina V. Paramei",
+      "name": "Paolo Marchesini",
       "count": 1
     },
     {
-      "name": "Alessandra Biondi",
+      "name": "Michele Pellegrino",
       "count": 1
     },
     {
-      "name": "Luigi Pignatiello",
+      "name": "Fabrizio Doricchi",
       "count": 1
     },
     {
-      "name": "Carlo Francisci",
+      "name": "Lorenzo Roschi",
       "count": 1
     },
     {
-      "name": "Lisa Scipioni",
+      "name": "Annalisa Tacchi",
       "count": 1
     },
     {
-      "name": "Martina Conti",
+      "name": "Chiara Pfanner",
       "count": 1
     },
     {
-      "name": "Claudia Feitosa-Santana",
-      "count": 1
-    },
-    {
-      "name": "Simone Grassini",
-      "count": 1
-    },
-    {
-      "name": "Antti Revonsuo",
-      "count": 1
-    },
-    {
-      "name": "Viola Benedetti",
-      "count": 1
-    },
-    {
-      "name": "Mika Koivisto",
+      "name": "Moreno Marazzi",
       "count": 1
     }
   ]

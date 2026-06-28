@@ -1,369 +1,557 @@
 {
   "slug": "raffaele-mazziotti",
-  "name": "Raffaele Mazziotti",
-  "generated_at": "2026-06-20T23:02:54Z",
+  "name": "Giovanni Anobile",
+  "generated_at": "2026-06-28T08:56:45Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57110486800",
-    "citation_count": 287,
-    "cited_by_count": 287,
-    "h_index": 8
+    "citation_count": 808,
+    "cited_by_count": 808,
+    "h_index": 17
   },
-  "publications_analyzed": 19,
+  "publications_analyzed": 40,
   "abstracts_found": 0,
   "keywords": [
     {
-      "text": "cognitive",
-      "value": 8
-    },
-    {
-      "text": "behavioral",
-      "value": 6
-    },
-    {
       "text": "visual",
-      "value": 6
+      "value": 35
     },
     {
-      "text": "optimal",
-      "value": 6
+      "text": "numerosity",
+      "value": 35
     },
     {
-      "text": "early",
-      "value": 6
+      "text": "perception",
+      "value": 19
     },
     {
-      "text": "features",
-      "value": 6
+      "text": "cortical",
+      "value": 18
     },
     {
-      "text": "psychophysiological behavioral",
-      "value": 5
+      "text": "mouse",
+      "value": 16
     },
     {
-      "text": "time estimation",
-      "value": 5
+      "text": "cortex",
+      "value": 15
     },
     {
-      "text": "implied motion",
-      "value": 5
+      "text": "mice",
+      "value": 14
     },
     {
-      "text": "reduction",
-      "value": 4
+      "text": "cdkl5",
+      "value": 14
     },
     {
-      "text": "vision",
-      "value": 4
+      "text": "plasticity",
+      "value": 14
     },
     {
-      "text": "pupil",
-      "value": 4
+      "text": "number",
+      "value": 14
     },
     {
-      "text": "fast",
-      "value": 4
+      "text": "visual cortex",
+      "value": 12
     },
     {
-      "text": "labels",
-      "value": 4
+      "text": "disorder",
+      "value": 11
     },
     {
-      "text": "psychophysiological",
-      "value": 4
+      "text": "children",
+      "value": 11
     },
     {
-      "text": "colour",
-      "value": 4
+      "text": "deficiency",
+      "value": 10
     },
     {
-      "text": "local",
-      "value": 4
+      "text": "brain",
+      "value": 10
     },
     {
       "text": "time",
-      "value": 4
+      "value": 10
+    },
+    {
+      "text": "adaptation",
+      "value": 10
+    },
+    {
+      "text": "math",
+      "value": 10
+    },
+    {
+      "text": "visual stimuli",
+      "value": 9
+    },
+    {
+      "text": "pupillometry",
+      "value": 8
+    },
+    {
+      "text": "role",
+      "value": 8
+    },
+    {
+      "text": "stimuli",
+      "value": 8
+    },
+    {
+      "text": "recorded",
+      "value": 8
+    },
+    {
+      "text": "adult",
+      "value": 8
+    },
+    {
+      "text": "attention",
+      "value": 7
     },
     {
       "text": "estimation",
-      "value": 4
+      "value": 7
+    },
+    {
+      "text": "retinitis pigmentosa",
+      "value": 7
+    },
+    {
+      "text": "stimuli cortical",
+      "value": 7
+    },
+    {
+      "text": "cortical recorded",
+      "value": 7
+    },
+    {
+      "text": "creatine transporter",
+      "value": 7
+    },
+    {
+      "text": "transporter deficiency",
+      "value": 7
+    },
+    {
+      "text": "mouse cdkl5",
+      "value": 7
+    },
+    {
+      "text": "adult visual",
+      "value": 7
+    },
+    {
+      "text": "mapping",
+      "value": 6
+    },
+    {
+      "text": "retinitis",
+      "value": 6
+    },
+    {
+      "text": "pigmentosa",
+      "value": 6
+    },
+    {
+      "text": "imaging",
+      "value": 6
+    },
+    {
+      "text": "parvalbumin",
+      "value": 6
+    },
+    {
+      "text": "creatine",
+      "value": 6
+    },
+    {
+      "text": "transporter",
+      "value": 6
+    },
+    {
+      "text": "fnirs",
+      "value": 6
+    },
+    {
+      "text": "translational",
+      "value": 6
+    },
+    {
+      "text": "system",
+      "value": 6
+    },
+    {
+      "text": "review",
+      "value": 5
     },
     {
       "text": "motor",
-      "value": 4
+      "value": 5
     },
     {
-      "text": "implied",
-      "value": 4
+      "text": "representation",
+      "value": 5
     },
     {
-      "text": "motion",
-      "value": 4
+      "text": "action",
+      "value": 5
     },
     {
-      "text": "paintings",
-      "value": 4
+      "text": "anxiety",
+      "value": 5
     },
     {
-      "text": "pupillary",
-      "value": 4
+      "text": "groupitizing",
+      "value": 5
     },
     {
-      "text": "dimensionality reduction",
-      "value": 3
+      "text": "space",
+      "value": 5
     },
     {
-      "text": "reduction techniques",
-      "value": 3
+      "text": "subitizing",
+      "value": 5
     },
     {
-      "text": "techniques pupillometry",
-      "value": 3
+      "text": "predicting visual",
+      "value": 5
     },
     {
-      "text": "pupillometry primer",
-      "value": 3
+      "text": "recorded wide-field",
+      "value": 5
     },
     {
-      "text": "primer behavioral",
-      "value": 3
+      "text": "wide-field imaging",
+      "value": 5
     },
     {
-      "text": "behavioral scientists",
-      "value": 3
-    },
-    {
-      "text": "visual search",
-      "value": 3
-    },
-    {
-      "text": "search depends",
-      "value": 3
-    },
-    {
-      "text": "depends congruency",
-      "value": 3
-    },
-    {
-      "text": "congruency olfactory",
-      "value": 3
-    },
-    {
-      "text": "olfactory sensations",
-      "value": 3
-    },
-    {
-      "text": "optimal feature",
-      "value": 3
-    },
-    {
-      "text": "feature encoding",
-      "value": 3
-    },
-    {
-      "text": "encoding early",
-      "value": 3
-    },
-    {
-      "text": "early vision",
-      "value": 3
-    },
-    {
-      "text": "art-induced psychological",
-      "value": 3
-    },
-    {
-      "text": "psychological well-being",
-      "value": 3
-    },
-    {
-      "text": "well-being individual",
-      "value": 3
-    },
-    {
-      "text": "individual traits",
-      "value": 3
-    },
-    {
-      "text": "traits shape",
-      "value": 3
-    },
-    {
-      "text": "shape beneficial",
-      "value": 3
-    },
-    {
-      "text": "beneficial aesthetic",
-      "value": 3
-    },
-    {
-      "text": "aesthetic experiences",
-      "value": 3
-    },
-    {
-      "text": "pupil size",
-      "value": 3
-    },
-    {
-      "text": "size biomarker",
-      "value": 3
-    },
-    {
-      "text": "biomarker cognitive",
-      "value": 3
-    },
-    {
-      "text": "cognitive functions",
-      "value": 3
-    },
-    {
-      "text": "functions physiologically",
-      "value": 3
-    },
-    {
-      "text": "physiologically informed",
-      "value": 3
-    },
-    {
-      "text": "informed screening",
-      "value": 3
-    },
-    {
-      "text": "screening mental",
-      "value": 3
+      "text": "imaging mouse",
+      "value": 5
     }
   ],
   "coauthors": [
     {
-      "name": "Maria Michela Del Viva",
-      "count": 16
+      "name": "Raffaele M. Mazziotti",
+      "count": 39
     },
     {
-      "name": "Ottavia D’Agostino",
+      "name": "David Charles Burr",
+      "count": 38
+    },
+    {
+      "name": "Roberto Arrighi",
+      "count": 37
+    },
+    {
+      "name": "Tommaso Pizzorusso",
+      "count": 27
+    },
+    {
+      "name": "Guido Marco Cicchini",
+      "count": 22
+    },
+    {
+      "name": "Leonardo Lupori",
+      "count": 21
+    },
+    {
+      "name": "Elisa Castaldi",
+      "count": 17
+    },
+    {
+      "name": "Giulia Sagona",
+      "count": 15
+    },
+    {
+      "name": "Elena Putignano",
+      "count": 12
+    },
+    {
+      "name": "Paula Andrea Maldonado Moscoso",
+      "count": 11
+    },
+    {
+      "name": "Irene Petrizzo",
+      "count": 9
+    },
+    {
+      "name": "Laura Baroncelli",
+      "count": 9
+    },
+    {
+      "name": "Francesca Tinelli",
+      "count": 8
+    },
+    {
+      "name": "Aurelia Viglione",
+      "count": 7
+    },
+    {
+      "name": "Giovanni Cioni",
+      "count": 7
+    },
+    {
+      "name": "Fabio Carrara",
+      "count": 6
+    },
+    {
+      "name": "Paola Tognini",
+      "count": 6
+    },
+    {
+      "name": "Giuseppe Amato",
+      "count": 6
+    },
+    {
+      "name": "Marco Turi",
+      "count": 6
+    },
+    {
+      "name": "Paolo Antonino Grasso",
       "count": 5
     },
     {
-      "name": "Anna Montagnini",
+      "name": "Debora Napoli",
+      "count": 5
+    },
+    {
+      "name": "Pierre Baldi",
+      "count": 5
+    },
+    {
+      "name": "Roberta Battini",
+      "count": 5
+    },
+    {
+      "name": "Alessandro Benedetto",
+      "count": 4
+    },
+    {
+      "name": "Giuseppe Maduli",
+      "count": 4
+    },
+    {
+      "name": "Eleonora Chelli",
+      "count": 4
+    },
+    {
+      "name": "Mariaelisa Bartoli",
+      "count": 4
+    },
+    {
+      "name": "Siwei Chen",
+      "count": 4
+    },
+    {
+      "name": "Valentino Totaro",
+      "count": 4
+    },
+    {
+      "name": "Viviana Marchi",
+      "count": 4
+    },
+    {
+      "name": "Mariangela Gennaro",
+      "count": 4
+    },
+    {
+      "name": "Daniela De Luca",
       "count": 3
+    },
+    {
+      "name": "Sara Moccia",
+      "count": 3
+    },
+    {
+      "name": "Silvestro Micera",
+      "count": 3
+    },
+    {
+      "name": "Sara Cornuti",
+      "count": 3
+    },
+    {
+      "name": "Muntaha Samad",
+      "count": 3
+    },
+    {
+      "name": "Francesco Cacciante",
+      "count": 3
+    },
+    {
+      "name": "Claudio Gennaro",
+      "count": 3
+    },
+    {
+      "name": "Nicoletta Berardi",
+      "count": 3
+    },
+    {
+      "name": "Elena Scaffei",
+      "count": 3
+    },
+    {
+      "name": "Eugenia Conti",
+      "count": 3
+    },
+    {
+      "name": "Maria Concetta Morrone",
+      "count": 3
+    },
+    {
+      "name": "Camilla Caponi",
+      "count": 3
+    },
+    {
+      "name": "Andrea Guzzetta",
+      "count": 3
+    },
+    {
+      "name": "Matteo Caldarelli",
+      "count": 2
+    },
+    {
+      "name": "Tommaso Bartolini",
+      "count": 2
+    },
+    {
+      "name": "Enrica Strettoi",
+      "count": 2
     },
     {
       "name": "Elvio Blini",
       "count": 2
     },
     {
-      "name": "Roberto Arrighi",
+      "name": "Christophe Magnan",
       "count": 2
     },
     {
-      "name": "Irene Petrizzo",
+      "name": "Luca Ciampi",
       "count": 2
     },
     {
-      "name": "Stefano Mastandrea",
+      "name": "Davide Silingardi",
       "count": 2
     },
     {
-      "name": "Elisa Castaldi",
+      "name": "Valeria Costanzo",
+      "count": 2
+    },
+    {
+      "name": "Sara Calderoni",
+      "count": 2
+    },
+    {
+      "name": "Claudia Carmassi",
+      "count": 2
+    },
+    {
+      "name": "Gabriele Masi",
+      "count": 2
+    },
+    {
+      "name": "Liliana Dell’Osso",
+      "count": 2
+    },
+    {
+      "name": "Caterina Primi",
+      "count": 2
+    },
+    {
+      "name": "Luca Lo Verde",
+      "count": 2
+    },
+    {
+      "name": "Giulia Ricci",
+      "count": 2
+    },
+    {
+      "name": "Grazia Rutigliano",
+      "count": 2
+    },
+    {
+      "name": "Sara Bagnoli",
+      "count": 2
+    },
+    {
+      "name": "Erika Kelmer Sacramento",
+      "count": 2
+    },
+    {
+      "name": "Joanna Kirkpartick",
+      "count": 2
+    },
+    {
+      "name": "Eva Terzibasi Tozzini",
+      "count": 2
+    },
+    {
+      "name": "Jessica CF Kwok",
+      "count": 2
+    },
+    {
+      "name": "Alessandro Cellerino",
+      "count": 2
+    },
+    {
+      "name": "Alessandro Sale",
+      "count": 2
+    },
+    {
+      "name": "Maria Grazia Alessandrì",
+      "count": 2
+    },
+    {
+      "name": "Filippo Gasperini",
+      "count": 2
+    },
+    {
+      "name": "Claudia Fuchs",
+      "count": 2
+    },
+    {
+      "name": "Elisabetta Ciani",
+      "count": 2
+    },
+    {
+      "name": "Antonella Pomè",
+      "count": 2
+    },
+    {
+      "name": "Paolo Stievano",
+      "count": 2
+    },
+    {
+      "name": "Grazia Della Sala",
+      "count": 2
+    },
+    {
+      "name": "Silvia Martelli",
       "count": 1
     },
     {
-      "name": "Elisa Gragnoli",
+      "name": "Eleonora Bieber",
       "count": 1
     },
     {
-      "name": "Giada Baglioni",
+      "name": "Sofia Ditano",
       "count": 1
     },
     {
-      "name": "Roberta Criminisi",
+      "name": "Egle Casavecchia",
       "count": 1
     },
     {
-      "name": "Barbara Giangrasso",
+      "name": "Stefano Zucca",
       "count": 1
     },
     {
-      "name": "Giacomo Mazzotta",
-      "count": 1
-    },
-    {
-      "name": "Alessandro Benedetto",
-      "count": 1
-    },
-    {
-      "name": "Marija Soldo",
-      "count": 1
-    },
-    {
-      "name": "Tina Plank",
-      "count": 1
-    },
-    {
-      "name": "Mark W. Greenlee",
-      "count": 1
-    },
-    {
-      "name": "Angelica Mencarini",
-      "count": 1
-    },
-    {
-      "name": "Martina Fabozzi",
-      "count": 1
-    },
-    {
-      "name": "Raimondo Varano",
-      "count": 1
-    },
-    {
-      "name": "Irene Baldriga",
-      "count": 1
-    },
-    {
-      "name": "Martin Szinte",
-      "count": 1
-    },
-    {
-      "name": "Galina V. Paramei",
-      "count": 1
-    },
-    {
-      "name": "Alessandra Biondi",
-      "count": 1
-    },
-    {
-      "name": "Luigi Pignatiello",
-      "count": 1
-    },
-    {
-      "name": "Carlo Francisci",
-      "count": 1
-    },
-    {
-      "name": "Lisa Scipioni",
-      "count": 1
-    },
-    {
-      "name": "Martina Conti",
-      "count": 1
-    },
-    {
-      "name": "Claudia Feitosa-Santana",
-      "count": 1
-    },
-    {
-      "name": "Simone Grassini",
-      "count": 1
-    },
-    {
-      "name": "Antti Revonsuo",
-      "count": 1
-    },
-    {
-      "name": "Viola Benedetti",
-      "count": 1
-    },
-    {
-      "name": "Mika Koivisto",
+      "name": "Alessandra Stella",
       "count": 1
     }
   ]
