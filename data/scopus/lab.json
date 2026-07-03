@@ -1,7 +1,7 @@
 {
   "slug": "lab",
   "name": "MAPLab",
-  "generated_at": "2026-06-28T09:21:58Z",
+  "generated_at": "2026-07-03T06:43:20Z",
   "source": "Shared BibTeX generated from Scopus Search; keyword cloud generated from publication titles",
   "title_based_keywords": true,
   "abstracts_used": false,
@@ -294,8 +294,8 @@
         "name": "Giovanni Anobile",
         "type": "lab",
         "category": "",
-        "documents": 68,
-        "total_link_strength": 240,
+        "documents": 67,
+        "total_link_strength": 238,
         "cluster": 0
       },
       {
@@ -393,8 +393,8 @@
         "name": "David C. Burr",
         "type": "external",
         "category": "",
-        "documents": 63,
-        "total_link_strength": 200,
+        "documents": 62,
+        "total_link_strength": 198,
         "cluster": 0
       },
       {
@@ -1019,15 +1019,6 @@
         "cluster": 1
       },
       {
-        "id": "co:turi:m",
-        "name": "Marco Turi",
-        "type": "external",
-        "category": "",
-        "documents": 9,
-        "total_link_strength": 30,
-        "cluster": 0
-      },
-      {
         "id": "co:grasso:p",
         "name": "Paolo A. Grasso",
         "type": "external",
@@ -1107,6 +1098,15 @@
         "documents": 4,
         "total_link_strength": 29,
         "cluster": 1
+      },
+      {
+        "id": "co:turi:m",
+        "name": "Marco Turi",
+        "type": "external",
+        "category": "",
+        "documents": 8,
+        "total_link_strength": 28,
+        "cluster": 0
       },
       {
         "id": "co:gennaro:c",
@@ -4853,8 +4853,8 @@
         "cluster": 12
       },
       {
-        "id": "co:benedetti:d",
-        "name": "Daniele Benedetti",
+        "id": "co:d:b",
+        "name": "Burr D.",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -4862,8 +4862,8 @@
         "cluster": 13
       },
       {
-        "id": "co:d:d",
-        "name": "De Luca D.",
+        "id": "co:benedetti:d",
+        "name": "Daniele Benedetti",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -4875,7 +4875,7 @@
       {
         "source": "co:burr:d",
         "target": "giovanni-anobile",
-        "count": 38,
+        "count": 37,
         "type": "coauthorship"
       },
       {
@@ -5203,12 +5203,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:burr:d",
-        "target": "co:turi:m",
-        "count": 7,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:cicchini:g",
         "target": "elisa-castaldi",
         "count": 7,
@@ -5253,6 +5247,12 @@
       {
         "source": "co:burr:d",
         "target": "co:morrone:m",
+        "count": 6,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:burr:d",
+        "target": "co:turi:m",
         "count": 6,
         "type": "coauthorship"
       },
@@ -5319,12 +5319,6 @@
       {
         "source": "co:tognini:p",
         "target": "raffaele-mazziotti",
-        "count": 6,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:turi:m",
-        "target": "giovanni-anobile",
         "count": 6,
         "type": "coauthorship"
       },
@@ -5583,6 +5577,12 @@
       {
         "source": "co:sorelli:m",
         "target": "giuseppe-devito",
+        "count": 5,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:turi:m",
+        "target": "giovanni-anobile",
         "count": 5,
         "type": "coauthorship"
       },
