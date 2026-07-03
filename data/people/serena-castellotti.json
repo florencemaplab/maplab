@@ -2,47 +2,60 @@
   "slug": "serena-castellotti",
   "shortName": "Castellotti",
   "name": "Serena Castellotti",
-  "role": "Post-Doc",
-  "ssd": "PSIC-01/B – Neuropsychology and cognitive neuroscience",
+  "role": "Postdoctoral Researcher",
+  "ssd": "PSIC-01/B – Neuropsychology and Cognitive Neuroscience",
   "department": "NEUROFARBA, University of Florence",
   "email": "serena.castellotti@unifi.it",
   "photo": "../assets/images/serena-castellotti.jpeg",
   "photoCredit": "PisaVisionLab",
-  "summary": "Professor of neuropsychology and cognitive neuroscience at the University of Florence. His research addresses visual and auditory perception, temporal processing, biological motion and multisensory integration.",
-  "research": "His work studies perceptual mechanisms and neural constraints underlying time, motion and multisensory integration, with a focus on how sensory information is combined to guide perception and action.",
+
+  "summary": "Postdoctoral researcher in cognitive neuroscience at the University of Florence. Her research investigates the computational and neural mechanisms underlying human perception, with a particular focus on vision. She combines psychophysics, electroencephalography (EEG), eye tracking, pupillometry, and computational approaches to study how sensory information is encoded and transformed into perceptual experience.",
+
+  "research": "Her research focuses on the computational and neural principles governing visual perception. She investigates how sensory information is efficiently encoded and transformed into perceptual experience using behavioural, psychophysiological, and neuroimaging approaches. Additional research interests include perceptual adaptation, time perception, visuo-olfactory interactions, and neuroaesthetics.",
+
   "interests": [
     "Visual perception",
-    "Auditory perception",
-    "Temporal processing",
-    "Biological motion",
-    "Multisensory integration",
-    "Action and perception"
+    "Efficient coding",
+    "Perceptual adaptation",
+    "Neuroaesthetics",
+    "Time perception",
+    "Visuo-olfactory interactions"
   ],
+
   "teaching": {
     "text": "Teaching information is maintained on the official University of Florence profile and course catalogue.",
     "links": [
       {
         "label": "Open UniFI teaching/profile page",
-        "url": "https://cercachi.unifi.it/p-doc2-0-0-A-3f2b342d3b272d.html"
+        "url": "https://cercachi.unifi.it/p-doc2-0-0-A-3f2b3d2c352a2d.html"
       }
     ]
   },
+
   "cv": [
-    "Full Professor, University of Florence.",
-    "Research in visual, auditory and multisensory perception.",
-    "Faculty member of Florence MAPLab and PisaVisionLab."
+    "Postdoctoral Researcher, University of Florence.",
+    "Research Associate, Florence MAPLab.",
+    "Research Associate, PisaVisionLab.",
+    "Expertise in psychophysics, EEG, eye tracking, pupillometry, and computational modelling."
   ],
-  "topics": "Current themes include time perception, sensory integration, motion processing, perceptual decision mechanisms and the interaction between action systems and sensory representations.",
+
+  "topics": "Current research investigates how perceptual experience emerges from the interaction between sensory inputs, contextual information, and adaptive neural mechanisms. Particular emphasis is placed on understanding how low-level visual features are integrated and transformed into complex perceptual representations and higher-level cognitive experiences.",
+
   "links": [
     {
       "label": "UniFI",
-      "url": "https://cercachi.unifi.it/p-doc2-0-0-A-3f2b342d3b272d.html"
+      "url": "https://cercachi.unifi.it/p-doc2-0-0-A-3f2b3d2c352a2d.html"
     },
     {
       "label": "PisaVisionLab",
-      "url": "https://www.pisavisionlab.org/members/roberto-arrighi/"
+      "url": "https://www.pisavisionlab.org/members/serena-castellotti/"
+    },
+    {
+      "label": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Serena-Castellotti?ev=hdr_xprf"
     }
   ],
+
   "aliases": [
     "Serena Castellotti",
     "Castellotti Serena",
