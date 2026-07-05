@@ -55,6 +55,10 @@
       "value": 7
     },
     {
+      "text": "number sense",
+      "value": 6
+    },
+    {
       "text": "temporal processing",
       "value": 5
     },
@@ -64,10 +68,6 @@
     },
     {
       "text": "eye movements",
-      "value": 5
-    },
-    {
-      "text": "number sense",
       "value": 5
     },
     {
@@ -130,8 +130,8 @@
         "name": "Giovanni Anobile",
         "type": "lab",
         "category": "faculty",
-        "documents": 68,
-        "total_link_strength": 241,
+        "documents": 69,
+        "total_link_strength": 242,
         "cluster": 0
       },
       {
@@ -4750,6 +4750,15 @@
         "documents": 1,
         "total_link_strength": 1,
         "cluster": 6
+      },
+      {
+        "id": "co:s:f",
+        "name": "Federici S.",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 1,
+        "cluster": 0
       },
       {
         "id": "co:baud bovy:g",
@@ -24830,6 +24839,12 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:s:f",
+        "target": "giovanni-anobile",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:saccaro:l",
         "target": "raffaele-mazziotti",
         "count": 1,
@@ -25570,8 +25585,8 @@
     ],
     "stats": {
       "lab_members": 9,
-      "external_collaborators": 511,
-      "edges": 3460
+      "external_collaborators": 512,
+      "edges": 3461
     }
   }
 }

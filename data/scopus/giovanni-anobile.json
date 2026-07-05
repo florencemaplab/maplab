@@ -1,15 +1,15 @@
 {
   "slug": "giovanni-anobile",
   "name": "Giovanni Anobile",
-  "generated_at": "2026-07-04T06:30:06Z",
+  "generated_at": "2026-07-05T06:51:32Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "36466056200",
-    "citation_count": 2334,
-    "cited_by_count": 2334,
+    "citation_count": 2342,
+    "cited_by_count": 2342,
     "h_index": 23
   },
-  "publications_analyzed": 68,
+  "publications_analyzed": 69,
   "abstracts_found": 0,
   "keywords": [
     {
@@ -33,12 +33,12 @@
       "value": 20
     },
     {
-      "text": "math",
+      "text": "children",
       "value": 20
     },
     {
-      "text": "children",
-      "value": 18
+      "text": "math",
+      "value": 20
     },
     {
       "text": "time",
@@ -83,6 +83,10 @@
     {
       "text": "perception numerosity",
       "value": 9
+    },
+    {
+      "text": "motor",
+      "value": 8
     },
     {
       "text": "role",
@@ -149,6 +153,10 @@
       "value": 6
     },
     {
+      "text": "skills",
+      "value": 6
+    },
+    {
       "text": "depends",
       "value": 6
     },
@@ -158,10 +166,6 @@
     },
     {
       "text": "size",
-      "value": 6
-    },
-    {
-      "text": "motor",
       "value": 6
     },
     {
@@ -226,10 +230,6 @@
     },
     {
       "text": "typical dyscalculic",
-      "value": 5
-    },
-    {
-      "text": "dyscalculic development",
       "value": 5
     }
   ],
@@ -340,6 +340,10 @@
     },
     {
       "name": "Egle Casavecchia",
+      "count": 1
+    },
+    {
+      "name": "Federici S.",
       "count": 1
     },
     {

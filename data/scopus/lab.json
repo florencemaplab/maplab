@@ -1,7 +1,7 @@
 {
   "slug": "lab",
   "name": "MAPLab",
-  "generated_at": "2026-07-04T06:30:06Z",
+  "generated_at": "2026-07-05T06:51:32Z",
   "source": "Shared BibTeX generated from Scopus Search; keyword cloud generated from publication titles",
   "title_based_keywords": true,
   "abstracts_used": false,
@@ -35,12 +35,12 @@
       "value": 17
     },
     {
-      "text": "imaging",
+      "text": "children",
       "value": 16
     },
     {
-      "text": "children",
-      "value": 15
+      "text": "imaging",
+      "value": 16
     },
     {
       "text": "time",
@@ -63,6 +63,10 @@
       "value": 11
     },
     {
+      "text": "motor",
+      "value": 11
+    },
+    {
       "text": "attention",
       "value": 11
     },
@@ -76,10 +80,6 @@
     },
     {
       "text": "math",
-      "value": 10
-    },
-    {
-      "text": "motor",
       "value": 10
     },
     {
