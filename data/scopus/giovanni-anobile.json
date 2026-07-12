@@ -1,7 +1,7 @@
 {
   "slug": "giovanni-anobile",
   "name": "Giovanni Anobile",
-  "generated_at": "2026-07-11T05:49:59Z",
+  "generated_at": "2026-07-12T06:13:48Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "36466056200",
@@ -236,11 +236,11 @@
   "coauthors": [
     {
       "name": "David Charles Burr",
-      "count": 37
+      "count": 38
     },
     {
       "name": "Roberto Arrighi",
-      "count": 34
+      "count": 37
     },
     {
       "name": "Guido Marco Cicchini",
@@ -248,18 +248,18 @@
     },
     {
       "name": "Elisa Castaldi",
-      "count": 15
+      "count": 17
     },
     {
       "name": "Paula Andrea Maldonado Moscoso",
-      "count": 10
-    },
-    {
-      "name": "Francesca Tinelli",
-      "count": 8
+      "count": 11
     },
     {
       "name": "Irene Petrizzo",
+      "count": 9
+    },
+    {
+      "name": "Francesca Tinelli",
       "count": 8
     },
     {
@@ -268,7 +268,7 @@
     },
     {
       "name": "Paolo Antonino Grasso",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Giuseppe Maduli",
@@ -284,6 +284,10 @@
     },
     {
       "name": "Maria Concetta Morrone",
+      "count": 3
+    },
+    {
+      "name": "Camilla Caponi",
       "count": 3
     },
     {
@@ -304,10 +308,6 @@
     },
     {
       "name": "Giovanni Cioni",
-      "count": 2
-    },
-    {
-      "name": "Camilla Caponi",
       "count": 2
     },
     {
@@ -463,11 +463,7 @@
       "count": 1
     },
     {
-      "name": "Grasso P.A.",
-      "count": 1
-    },
-    {
-      "name": "Petrizzo I.",
+      "name": "Simone Bassanelli",
       "count": 1
     },
     {
