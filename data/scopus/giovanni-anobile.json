@@ -1,12 +1,12 @@
 {
   "slug": "giovanni-anobile",
   "name": "Giovanni Anobile",
-  "generated_at": "2026-07-12T06:13:48Z",
+  "generated_at": "2026-07-13T06:31:29Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "36466056200",
-    "citation_count": 2344,
-    "cited_by_count": 2344,
+    "citation_count": 2345,
+    "cited_by_count": 2345,
     "h_index": 23
   },
   "publications_analyzed": 69,
@@ -235,16 +235,16 @@
   ],
   "coauthors": [
     {
-      "name": "David Charles Burr",
-      "count": 38
-    },
-    {
       "name": "Roberto Arrighi",
       "count": 37
     },
     {
+      "name": "David Charles Burr",
+      "count": 36
+    },
+    {
       "name": "Guido Marco Cicchini",
-      "count": 21
+      "count": 20
     },
     {
       "name": "Elisa Castaldi",
@@ -263,11 +263,11 @@
       "count": 8
     },
     {
-      "name": "Marco Turi",
-      "count": 6
+      "name": "Paolo Antonino Grasso",
+      "count": 5
     },
     {
-      "name": "Paolo Antonino Grasso",
+      "name": "Marco Turi",
       "count": 5
     },
     {
@@ -495,6 +495,10 @@
       "count": 1
     },
     {
+      "name": "Cicchini G.M.",
+      "count": 1
+    },
+    {
       "name": "Aurora Scabia",
       "count": 1
     },
@@ -504,18 +508,6 @@
     },
     {
       "name": "Lara Pedonese",
-      "count": 1
-    },
-    {
-      "name": "Marika Iaia",
-      "count": 1
-    },
-    {
-      "name": "Chiara V. Marinelli",
-      "count": 1
-    },
-    {
-      "name": "Paola Angelelli",
       "count": 1
     },
     {
