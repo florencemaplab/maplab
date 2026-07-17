@@ -1,15 +1,15 @@
 {
   "slug": "raffaele-mazziotti",
   "name": "Raffaele Mazziotti",
-  "generated_at": "2026-07-16T05:51:11Z",
+  "generated_at": "2026-07-17T05:51:20Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57110486800",
-    "citation_count": 816,
-    "cited_by_count": 816,
+    "citation_count": 819,
+    "cited_by_count": 819,
     "h_index": 17
   },
-  "publications_analyzed": 40,
+  "publications_analyzed": 41,
   "abstracts_found": 0,
   "keywords": [
     {
@@ -17,12 +17,12 @@
       "value": 24
     },
     {
-      "text": "cortical",
+      "text": "mouse",
       "value": 18
     },
     {
-      "text": "mouse",
-      "value": 16
+      "text": "cortical",
+      "value": 18
     },
     {
       "text": "mice",
@@ -43,6 +43,10 @@
     {
       "text": "visual cortex",
       "value": 11
+    },
+    {
+      "text": "adult",
+      "value": 10
     },
     {
       "text": "deficiency",
@@ -73,10 +77,6 @@
       "value": 8
     },
     {
-      "text": "adult",
-      "value": 8
-    },
-    {
       "text": "retinitis pigmentosa",
       "value": 7
     },
@@ -103,6 +103,10 @@
     {
       "text": "adult visual",
       "value": 7
+    },
+    {
+      "text": "regulates",
+      "value": 6
     },
     {
       "text": "retinitis",
@@ -213,6 +217,10 @@
       "value": 5
     },
     {
+      "text": "expression",
+      "value": 4
+    },
+    {
       "text": "role",
       "value": 4
     },
@@ -223,20 +231,12 @@
     {
       "text": "wide-field",
       "value": 4
-    },
-    {
-      "text": "perineuronal",
-      "value": 4
-    },
-    {
-      "text": "memories",
-      "value": 4
     }
   ],
   "coauthors": [
     {
       "name": "Tommaso Pizzorusso",
-      "count": 27
+      "count": 28
     },
     {
       "name": "Leonardo Lupori",
@@ -248,7 +248,7 @@
     },
     {
       "name": "Elena Putignano",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Laura Baroncelli",
@@ -256,14 +256,14 @@
     },
     {
       "name": "Aurelia Viglione",
+      "count": 8
+    },
+    {
+      "name": "Paola Tognini",
       "count": 7
     },
     {
       "name": "Fabio Carrara",
-      "count": 6
-    },
-    {
-      "name": "Paola Tognini",
       "count": 6
     },
     {
@@ -301,6 +301,14 @@
     {
       "name": "Mariangela Gennaro",
       "count": 4
+    },
+    {
+      "name": "Sara Bagnoli",
+      "count": 3
+    },
+    {
+      "name": "Alessandro Cellerino",
+      "count": 3
     },
     {
       "name": "Daniela De Luca",
@@ -399,10 +407,6 @@
       "count": 2
     },
     {
-      "name": "Sara Bagnoli",
-      "count": 2
-    },
-    {
       "name": "Erika Kelmer Sacramento",
       "count": 2
     },
@@ -416,10 +420,6 @@
     },
     {
       "name": "Jessica CF Kwok",
-      "count": 2
-    },
-    {
-      "name": "Alessandro Cellerino",
       "count": 2
     },
     {
@@ -464,6 +464,10 @@
     },
     {
       "name": "Raffaele M. Mazziotti",
+      "count": 1
+    },
+    {
+      "name": "Chiara Giannuzzi",
       "count": 1
     },
     {
@@ -548,10 +552,6 @@
     },
     {
       "name": "Carmen M. Navarron",
-      "count": 1
-    },
-    {
-      "name": "Federica Di Vetta",
       "count": 1
     }
   ]
