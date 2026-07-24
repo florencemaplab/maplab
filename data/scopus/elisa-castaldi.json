@@ -1,7 +1,7 @@
 {
   "slug": "elisa-castaldi",
   "name": "Elisa Castaldi",
-  "generated_at": "2026-07-23T06:11:45Z",
+  "generated_at": "2026-07-24T06:05:09Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "55660832000",
@@ -252,15 +252,15 @@
     },
     {
       "name": "Evelyn Eger",
-      "count": 8
-    },
-    {
-      "name": "Guido Marco Cicchini",
       "count": 7
     },
     {
       "name": "Maria Concetta Morrone",
       "count": 7
+    },
+    {
+      "name": "Guido Marco Cicchini",
+      "count": 6
     },
     {
       "name": "Camilla Bonaudo",
@@ -323,10 +323,6 @@
       "count": 4
     },
     {
-      "name": "Marco Turi",
-      "count": 4
-    },
-    {
       "name": "Enrico Fainardi",
       "count": 3
     },
@@ -336,6 +332,10 @@
     },
     {
       "name": "Federico Capelli",
+      "count": 3
+    },
+    {
+      "name": "Marco Turi",
       "count": 3
     },
     {
@@ -376,10 +376,6 @@
     },
     {
       "name": "Andrea Amadori",
-      "count": 2
-    },
-    {
-      "name": "Sahawanatou Gassama",
       "count": 2
     },
     {
@@ -496,6 +492,10 @@
     },
     {
       "name": "Claudia Lunghi",
+      "count": 1
+    },
+    {
+      "name": "Sahawanatou Gassama",
       "count": 1
     },
     {
