@@ -1,7 +1,7 @@
 {
   "slug": "roberto-arrighi",
   "name": "Roberto Arrighi",
-  "generated_at": "2026-07-25T05:56:09Z",
+  "generated_at": "2026-07-26T06:16:21Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "8870558800",
@@ -236,26 +236,26 @@
   "coauthors": [
     {
       "name": "Giovanni Anobile",
-      "count": 35
+      "count": 37
     },
     {
       "name": "David Charles Burr",
-      "count": 29
+      "count": 30
     },
     {
       "name": "Elisa Castaldi",
-      "count": 15
+      "count": 17
     },
     {
       "name": "Irene Petrizzo",
       "count": 13
     },
     {
-      "name": "Guido Marco Cicchini",
-      "count": 10
+      "name": "Paula Andrea Maldonado Moscoso",
+      "count": 12
     },
     {
-      "name": "Paula Andrea Maldonado Moscoso",
+      "name": "Guido Marco Cicchini",
       "count": 10
     },
     {
@@ -263,11 +263,11 @@
       "count": 9
     },
     {
-      "name": "Alessandro Farini",
-      "count": 6
+      "name": "Irene Togoli",
+      "count": 7
     },
     {
-      "name": "Irene Togoli",
+      "name": "Alessandro Farini",
       "count": 6
     },
     {
@@ -276,6 +276,10 @@
     },
     {
       "name": "Elvio Blini",
+      "count": 4
+    },
+    {
+      "name": "Giuseppe Maduli",
       "count": 4
     },
     {
@@ -289,10 +293,6 @@
     {
       "name": "David Alais",
       "count": 4
-    },
-    {
-      "name": "Giuseppe Maduli",
-      "count": 3
     },
     {
       "name": "Michele Fornaciai",
@@ -331,15 +331,19 @@
       "count": 2
     },
     {
-      "name": "Maldonado Moscoso P.A.",
-      "count": 2
-    },
-    {
       "name": "Caterina Primi",
       "count": 2
     },
     {
       "name": "Alessia Tonelli",
+      "count": 2
+    },
+    {
+      "name": "Olivier Collignon",
+      "count": 2
+    },
+    {
+      "name": "Virginie Crollen",
       "count": 2
     },
     {
@@ -467,14 +471,6 @@
       "count": 1
     },
     {
-      "name": "Olivier Collignon",
-      "count": 1
-    },
-    {
-      "name": "Virginie Crollen",
-      "count": 1
-    },
-    {
       "name": "Nicola Domenici",
       "count": 1
     },
@@ -488,10 +484,6 @@
     },
     {
       "name": "Elizabeth Pellicano",
-      "count": 1
-    },
-    {
-      "name": "Togoli I.",
       "count": 1
     },
     {
@@ -552,6 +544,14 @@
     },
     {
       "name": "Roy Lunardi",
+      "count": 1
+    },
+    {
+      "name": "Giovanni Giacomelli",
+      "count": 1
+    },
+    {
+      "name": "Roberto Volpe",
       "count": 1
     }
   ]

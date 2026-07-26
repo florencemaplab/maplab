@@ -1,7 +1,7 @@
 {
   "slug": "lab",
   "name": "MAPLab",
-  "generated_at": "2026-07-25T05:56:09Z",
+  "generated_at": "2026-07-26T06:16:21Z",
   "source": "Shared BibTeX generated from Scopus Search; keyword cloud generated from publication titles",
   "title_based_keywords": true,
   "abstracts_used": false,
@@ -294,8 +294,8 @@
         "name": "Giovanni Anobile",
         "type": "lab",
         "category": "",
-        "documents": 66,
-        "total_link_strength": 232,
+        "documents": 68,
+        "total_link_strength": 240,
         "cluster": 0
       },
       {
@@ -303,8 +303,8 @@
         "name": "Roberto Arrighi",
         "type": "lab",
         "category": "",
-        "documents": 73,
-        "total_link_strength": 253,
+        "documents": 76,
+        "total_link_strength": 264,
         "cluster": 0
       },
       {
@@ -321,8 +321,8 @@
         "name": "Elisa Castaldi",
         "type": "lab",
         "category": "",
-        "documents": 41,
-        "total_link_strength": 218,
+        "documents": 43,
+        "total_link_strength": 226,
         "cluster": 0
       },
       {
@@ -393,8 +393,8 @@
         "name": "David C. Burr",
         "type": "external",
         "category": "",
-        "documents": 62,
-        "total_link_strength": 196,
+        "documents": 63,
+        "total_link_strength": 200,
         "cluster": 0
       },
       {
@@ -704,6 +704,15 @@
         "cluster": 0
       },
       {
+        "id": "co:moscoso:p",
+        "name": "Paula A. Maldonado Moscoso",
+        "type": "external",
+        "category": "",
+        "documents": 13,
+        "total_link_strength": 55,
+        "cluster": 0
+      },
+      {
         "id": "co:amato:g",
         "name": "Giuseppe Amato",
         "type": "external",
@@ -746,15 +755,6 @@
         "category": "",
         "documents": 3,
         "total_link_strength": 49,
-        "cluster": 0
-      },
-      {
-        "id": "co:moscoso:p",
-        "name": "Paula A. Maldonado Moscoso",
-        "type": "external",
-        "category": "",
-        "documents": 11,
-        "total_link_strength": 47,
         "cluster": 0
       },
       {
@@ -801,6 +801,15 @@
         "documents": 3,
         "total_link_strength": 45,
         "cluster": 3
+      },
+      {
+        "id": "co:maduli:g",
+        "name": "Giuseppe Maduli",
+        "type": "external",
+        "category": "",
+        "documents": 5,
+        "total_link_strength": 42,
+        "cluster": 0
       },
       {
         "id": "co:amadori:a",
@@ -873,15 +882,6 @@
         "documents": 5,
         "total_link_strength": 38,
         "cluster": 3
-      },
-      {
-        "id": "co:maduli:g",
-        "name": "Giuseppe Maduli",
-        "type": "external",
-        "category": "",
-        "documents": 4,
-        "total_link_strength": 38,
-        "cluster": 0
       },
       {
         "id": "co:totaro:v",
@@ -1361,6 +1361,15 @@
         "cluster": 0
       },
       {
+        "id": "co:togoli:i",
+        "name": "Irene Togoli",
+        "type": "external",
+        "category": "",
+        "documents": 7,
+        "total_link_strength": 19,
+        "cluster": 0
+      },
+      {
         "id": "co:montanaro:d",
         "name": "D. Montanaro",
         "type": "external",
@@ -1575,15 +1584,6 @@
         "documents": 1,
         "total_link_strength": 17,
         "cluster": 3
-      },
-      {
-        "id": "co:togoli:i",
-        "name": "Irene Togoli",
-        "type": "external",
-        "category": "",
-        "documents": 6,
-        "total_link_strength": 16,
-        "cluster": 0
       },
       {
         "id": "co:gori:m",
@@ -3305,8 +3305,26 @@
         "cluster": 0
       },
       {
+        "id": "co:collignon:o",
+        "name": "Olivier Collignon",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 7,
+        "cluster": 0
+      },
+      {
         "id": "co:bartolini:t",
         "name": "Tommaso Bartolini",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 7,
+        "cluster": 0
+      },
+      {
+        "id": "co:crollen:v",
+        "name": "Virginie Crollen",
         "type": "external",
         "category": "",
         "documents": 2,
@@ -4385,15 +4403,6 @@
         "cluster": 0
       },
       {
-        "id": "co:collignon:o",
-        "name": "Olivier Collignon",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 4,
-        "cluster": 0
-      },
-      {
         "id": "co:marchesini:p",
         "name": "Paolo Marchesini",
         "type": "external",
@@ -4500,15 +4509,6 @@
         "documents": 1,
         "total_link_strength": 4,
         "cluster": 3
-      },
-      {
-        "id": "co:crollen:v",
-        "name": "Virginie Crollen",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 4,
-        "cluster": 0
       },
       {
         "id": "co:izard:v",
@@ -4844,26 +4844,26 @@
         "cluster": 2
       },
       {
-        "id": "co:a:m",
-        "name": "Maldonado Moscoso P.A.",
-        "type": "external",
-        "category": "",
-        "documents": 3,
-        "total_link_strength": 0,
-        "cluster": 11
-      },
-      {
         "id": "co:punzi:g",
         "name": "Giovanni Punzi",
         "type": "external",
         "category": "",
         "documents": 2,
         "total_link_strength": 0,
-        "cluster": 12
+        "cluster": 11
       },
       {
         "id": "co:stella:a",
         "name": "Alessandra Stella",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 0,
+        "cluster": 12
+      },
+      {
+        "id": "co:benedetti:d",
+        "name": "Daniele Benedetti",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -4875,19 +4875,19 @@
       {
         "source": "co:burr:d",
         "target": "giovanni-anobile",
-        "count": 37,
+        "count": 38,
         "type": "coauthorship"
       },
       {
         "source": "giovanni-anobile",
         "target": "roberto-arrighi",
-        "count": 35,
+        "count": 37,
         "type": "coauthorship"
       },
       {
         "source": "co:burr:d",
         "target": "roberto-arrighi",
-        "count": 29,
+        "count": 30,
         "type": "coauthorship"
       },
       {
@@ -4927,6 +4927,18 @@
         "type": "coauthorship"
       },
       {
+        "source": "elisa-castaldi",
+        "target": "giovanni-anobile",
+        "count": 17,
+        "type": "coauthorship"
+      },
+      {
+        "source": "elisa-castaldi",
+        "target": "roberto-arrighi",
+        "count": 17,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:pavone:f",
         "target": "co:turrini:l",
         "count": 16,
@@ -4945,15 +4957,9 @@
         "type": "coauthorship"
       },
       {
-        "source": "elisa-castaldi",
-        "target": "giovanni-anobile",
-        "count": 15,
-        "type": "coauthorship"
-      },
-      {
-        "source": "elisa-castaldi",
-        "target": "roberto-arrighi",
-        "count": 15,
+        "source": "co:burr:d",
+        "target": "elisa-castaldi",
+        "count": 14,
         "type": "coauthorship"
       },
       {
@@ -4987,12 +4993,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:burr:d",
-        "target": "elisa-castaldi",
-        "count": 13,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:petrizzo:i",
         "target": "roberto-arrighi",
         "count": 13,
@@ -5017,9 +5017,27 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:moscoso:p",
+        "target": "roberto-arrighi",
+        "count": 12,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:piazza:v",
         "target": "giuseppe-devito",
         "count": 12,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:moscoso:p",
+        "target": "elisa-castaldi",
+        "count": 11,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:moscoso:p",
+        "target": "giovanni-anobile",
+        "count": 11,
         "type": "coauthorship"
       },
       {
@@ -5031,12 +5049,6 @@
       {
         "source": "co:lupori:l",
         "target": "co:putignano:e",
-        "count": 10,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:moscoso:p",
-        "target": "roberto-arrighi",
         "count": 10,
         "type": "coauthorship"
       },
@@ -5067,18 +5079,6 @@
       {
         "source": "co:grasso:p",
         "target": "roberto-arrighi",
-        "count": 9,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:moscoso:p",
-        "target": "elisa-castaldi",
-        "count": 9,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:moscoso:p",
-        "target": "giovanni-anobile",
         "count": 9,
         "type": "coauthorship"
       },
@@ -5198,6 +5198,12 @@
       },
       {
         "source": "co:burr:d",
+        "target": "co:moscoso:p",
+        "count": 7,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:burr:d",
         "target": "co:turi:m",
         "count": 7,
         "type": "coauthorship"
@@ -5239,6 +5245,12 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:togoli:i",
+        "target": "roberto-arrighi",
+        "count": 7,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:viglione:a",
         "target": "raffaele-mazziotti",
         "count": 7,
@@ -5259,12 +5271,6 @@
       {
         "source": "co:burr:d",
         "target": "co:morrone:m",
-        "count": 6,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:burr:d",
-        "target": "co:moscoso:p",
         "count": 6,
         "type": "coauthorship"
       },
@@ -5325,12 +5331,6 @@
       {
         "source": "co:silvestri:l",
         "target": "co:tiso:n",
-        "count": 6,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:togoli:i",
-        "target": "roberto-arrighi",
         "count": 6,
         "type": "coauthorship"
       },
@@ -5493,6 +5493,12 @@
       {
         "source": "co:lupori:l",
         "target": "co:tognini:p",
+        "count": 5,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:maduli:g",
+        "target": "elisa-castaldi",
         "count": 5,
         "type": "coauthorship"
       },
@@ -6092,7 +6098,13 @@
       },
       {
         "source": "co:maduli:g",
-        "target": "elisa-castaldi",
+        "target": "giovanni-anobile",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:maduli:g",
+        "target": "roberto-arrighi",
         "count": 4,
         "type": "coauthorship"
       },
@@ -6957,18 +6969,6 @@
       {
         "source": "co:lupori:l",
         "target": "co:totaro:v",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:maduli:g",
-        "target": "giovanni-anobile",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:maduli:g",
-        "target": "roberto-arrighi",
         "count": 3,
         "type": "coauthorship"
       },
@@ -8677,6 +8677,24 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:collignon:o",
+        "target": "co:crollen:v",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:collignon:o",
+        "target": "co:togoli:i",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:collignon:o",
+        "target": "roberto-arrighi",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:conti:e",
         "target": "co:costanzo:v",
         "count": 2,
@@ -8703,6 +8721,18 @@
       {
         "source": "co:costanzo:v",
         "target": "raffaele-mazziotti",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:crollen:v",
+        "target": "co:togoli:i",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:crollen:v",
+        "target": "roberto-arrighi",
         "count": 2,
         "type": "coauthorship"
       },
@@ -9225,6 +9255,12 @@
       {
         "source": "co:lupori:l",
         "target": "co:verde:l",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:maduli:g",
+        "target": "co:moscoso:p",
         "count": 2,
         "type": "coauthorship"
       },
@@ -16352,25 +16388,7 @@
       },
       {
         "source": "co:collignon:o",
-        "target": "co:crollen:v",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:collignon:o",
         "target": "co:marlair:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:collignon:o",
-        "target": "co:togoli:i",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:collignon:o",
-        "target": "roberto-arrighi",
         "count": 1,
         "type": "coauthorship"
       },
@@ -17007,18 +17025,6 @@
       {
         "source": "co:crollen:v",
         "target": "co:marlair:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:crollen:v",
-        "target": "co:togoli:i",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:crollen:v",
-        "target": "roberto-arrighi",
         "count": 1,
         "type": "coauthorship"
       },
@@ -21501,12 +21507,6 @@
       {
         "source": "co:maduli:g",
         "target": "co:maiorelli:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:maduli:g",
-        "target": "co:moscoso:p",
         "count": 1,
         "type": "coauthorship"
       },
