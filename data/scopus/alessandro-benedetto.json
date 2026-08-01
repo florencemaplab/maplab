@@ -1,13 +1,13 @@
 {
   "slug": "alessandro-benedetto",
   "name": "Alessandro Benedetto",
-  "generated_at": "2026-07-31T06:24:40Z",
+  "generated_at": "2026-08-01T06:09:41Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57189371872",
-    "citation_count": 409,
-    "cited_by_count": 409,
-    "h_index": 11
+    "citation_count": 413,
+    "cited_by_count": 413,
+    "h_index": 12
   },
   "publications_analyzed": 23,
   "abstracts_found": 0,
