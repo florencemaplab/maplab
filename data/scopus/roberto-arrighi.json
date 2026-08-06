@@ -1,7 +1,7 @@
 {
   "slug": "roberto-arrighi",
   "name": "Roberto Arrighi",
-  "generated_at": "2026-08-05T06:03:04Z",
+  "generated_at": "2026-08-06T06:06:36Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "8870558800",
@@ -244,7 +244,7 @@
     },
     {
       "name": "Elisa Castaldi",
-      "count": 16
+      "count": 17
     },
     {
       "name": "Irene Petrizzo",
@@ -252,7 +252,7 @@
     },
     {
       "name": "Paula Andrea Maldonado Moscoso",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Guido Marco Cicchini",
@@ -260,7 +260,7 @@
     },
     {
       "name": "Paolo Antonino Grasso",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Irene Togoli",
@@ -272,7 +272,7 @@
     },
     {
       "name": "Camilla Caponi",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Elvio Blini",
@@ -400,10 +400,6 @@
     },
     {
       "name": "Marios Avraamides",
-      "count": 1
-    },
-    {
-      "name": "Caponi C.",
       "count": 1
     },
     {
@@ -552,6 +548,10 @@
     },
     {
       "name": "Giovanni Giacomelli",
+      "count": 1
+    },
+    {
+      "name": "Roberto Volpe",
       "count": 1
     }
   ]
