@@ -1,12 +1,12 @@
 {
   "slug": "giuseppe-devito",
   "name": "Giuseppe de Vito",
-  "generated_at": "2026-08-07T05:04:07Z",
+  "generated_at": "2026-08-08T04:29:44Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "55547668700",
-    "citation_count": 1010,
-    "cited_by_count": 1010,
+    "citation_count": 1011,
+    "cited_by_count": 1011,
     "h_index": 19
   },
   "publications_analyzed": 40,
