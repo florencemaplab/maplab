@@ -148,8 +148,8 @@
         "name": "Alessandro Benedetto",
         "type": "lab",
         "category": "faculty",
-        "documents": 23,
-        "total_link_strength": 84,
+        "documents": 24,
+        "total_link_strength": 85,
         "cluster": 2
       },
       {
@@ -3384,6 +3384,15 @@
         "cluster": 1
       },
       {
+        "id": "co:poletti:m",
+        "name": "Martina Poletti",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 6,
+        "cluster": 2
+      },
+      {
         "id": "co:fornaciai:m",
         "name": "Michele Fornaciai",
         "type": "external",
@@ -3643,15 +3652,6 @@
         "documents": 2,
         "total_link_strength": 5,
         "cluster": 5
-      },
-      {
-        "id": "co:poletti:m",
-        "name": "Martina Poletti",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 5,
-        "cluster": 2
       },
       {
         "id": "co:napoletti:a",
@@ -6302,6 +6302,12 @@
         "type": "coauthorship"
       },
       {
+        "source": "alessandro-benedetto",
+        "target": "co:poletti:m",
+        "count": 3,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:alais:d",
         "target": "co:burr:d",
         "count": 3,
@@ -7306,12 +7312,6 @@
       {
         "source": "alessandro-benedetto",
         "target": "co:pizzorusso:t",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "alessandro-benedetto",
-        "target": "co:poletti:m",
         "count": 2,
         "type": "coauthorship"
       },

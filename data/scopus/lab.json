@@ -1,7 +1,7 @@
 {
   "slug": "lab",
   "name": "MAPLab",
-  "generated_at": "2026-08-08T04:29:44Z",
+  "generated_at": "2026-08-11T04:40:39Z",
   "source": "Shared BibTeX generated from Scopus Search; keyword cloud generated from publication titles",
   "title_based_keywords": true,
   "abstracts_used": false,
@@ -12,7 +12,7 @@
     },
     {
       "text": "visual",
-      "value": 50
+      "value": 52
     },
     {
       "text": "perception",
@@ -312,8 +312,8 @@
         "name": "Alessandro Benedetto",
         "type": "lab",
         "category": "",
-        "documents": 23,
-        "total_link_strength": 84,
+        "documents": 24,
+        "total_link_strength": 85,
         "cluster": 0
       },
       {
@@ -3494,6 +3494,15 @@
         "cluster": 3
       },
       {
+        "id": "co:poletti:m",
+        "name": "Martina Poletti",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 6,
+        "cluster": 0
+      },
+      {
         "id": "co:fornaciai:m",
         "name": "Michele Fornaciai",
         "type": "external",
@@ -3753,15 +3762,6 @@
         "documents": 2,
         "total_link_strength": 5,
         "cluster": 2
-      },
-      {
-        "id": "co:poletti:m",
-        "name": "Martina Poletti",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 5,
-        "cluster": 0
       },
       {
         "id": "co:napoletti:a",
@@ -6313,6 +6313,12 @@
         "type": "coauthorship"
       },
       {
+        "source": "alessandro-benedetto",
+        "target": "co:poletti:m",
+        "count": 3,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:alais:d",
         "target": "co:burr:d",
         "count": 3,
@@ -7341,12 +7347,6 @@
       {
         "source": "alessandro-benedetto",
         "target": "co:pizzorusso:t",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "alessandro-benedetto",
-        "target": "co:poletti:m",
         "count": 2,
         "type": "coauthorship"
       },

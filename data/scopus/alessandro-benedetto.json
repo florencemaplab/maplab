@@ -1,20 +1,20 @@
 {
   "slug": "alessandro-benedetto",
   "name": "Alessandro Benedetto",
-  "generated_at": "2026-08-08T04:29:44Z",
+  "generated_at": "2026-08-11T04:40:39Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57189371872",
-    "citation_count": 413,
-    "cited_by_count": 413,
+    "citation_count": 415,
+    "cited_by_count": 415,
     "h_index": 12
   },
-  "publications_analyzed": 23,
+  "publications_analyzed": 24,
   "abstracts_found": 0,
   "keywords": [
     {
       "text": "visual",
-      "value": 12
+      "value": 16
     },
     {
       "text": "modulation",
@@ -27,6 +27,10 @@
     {
       "text": "saccadic",
       "value": 6
+    },
+    {
+      "text": "speed visual",
+      "value": 5
     },
     {
       "text": "serial dependence",
@@ -50,6 +54,10 @@
     },
     {
       "text": "sensory",
+      "value": 4
+    },
+    {
+      "text": "speed",
       "value": 4
     },
     {
@@ -125,6 +133,10 @@
       "value": 3
     },
     {
+      "text": "visual field",
+      "value": 3
+    },
+    {
       "text": "optimal feature",
       "value": 3
     },
@@ -138,10 +150,6 @@
     },
     {
       "text": "early vision",
-      "value": 3
-    },
-    {
-      "text": "speed visual",
       "value": 3
     },
     {
@@ -223,14 +231,6 @@
     {
       "text": "evoked potentials",
       "value": 3
-    },
-    {
-      "text": "readiness potential",
-      "value": 3
-    },
-    {
-      "text": "potential correlates",
-      "value": 3
     }
   ],
   "coauthors": [
@@ -243,15 +243,15 @@
       "count": 5
     },
     {
+      "name": "Martina Poletti",
+      "count": 3
+    },
+    {
       "name": "Giovanni Anobile",
       "count": 2
     },
     {
       "name": "Roberto Arrighi",
-      "count": 2
-    },
-    {
-      "name": "Martina Poletti",
       "count": 2
     },
     {
