@@ -1,12 +1,12 @@
 {
   "slug": "serena-castellotti",
   "name": "Serena Castellotti",
-  "generated_at": "2026-08-12T05:03:38Z",
+  "generated_at": "2026-08-13T05:06:26Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57205731708",
-    "citation_count": 301,
-    "cited_by_count": 301,
+    "citation_count": 302,
+    "cited_by_count": 302,
     "h_index": 8
   },
   "publications_analyzed": 19,

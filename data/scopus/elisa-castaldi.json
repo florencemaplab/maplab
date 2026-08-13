@@ -1,7 +1,7 @@
 {
   "slug": "elisa-castaldi",
   "name": "Elisa Castaldi",
-  "generated_at": "2026-08-12T05:03:38Z",
+  "generated_at": "2026-08-13T05:06:26Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "55660832000",
@@ -263,6 +263,18 @@
       "count": 7
     },
     {
+      "name": "Camilla Bonaudo",
+      "count": 5
+    },
+    {
+      "name": "Agnese Pedone",
+      "count": 5
+    },
+    {
+      "name": "Alessandro Della Puppa",
+      "count": 5
+    },
+    {
       "name": "Manuela Piazza",
       "count": 5
     },
@@ -271,15 +283,31 @@
       "count": 5
     },
     {
-      "name": "Camilla Bonaudo",
+      "name": "Edoardo Pieropan",
       "count": 4
     },
     {
-      "name": "Agnese Pedone",
+      "name": "Francesca Fedi",
       "count": 4
     },
     {
-      "name": "Alessandro Della Puppa",
+      "name": "Fabrizio Baldanzi",
+      "count": 4
+    },
+    {
+      "name": "Simone Troiano",
+      "count": 4
+    },
+    {
+      "name": "Antonio Maiorelli",
+      "count": 4
+    },
+    {
+      "name": "Riccardo Carrai",
+      "count": 4
+    },
+    {
+      "name": "Antonello Grippo",
       "count": 4
     },
     {
@@ -299,31 +327,15 @@
       "count": 4
     },
     {
-      "name": "Edoardo Pieropan",
+      "name": "Enrico Fainardi",
       "count": 3
     },
     {
-      "name": "Francesca Fedi",
+      "name": "Luca Campagnaro",
       "count": 3
     },
     {
-      "name": "Fabrizio Baldanzi",
-      "count": 3
-    },
-    {
-      "name": "Simone Troiano",
-      "count": 3
-    },
-    {
-      "name": "Antonio Maiorelli",
-      "count": 3
-    },
-    {
-      "name": "Riccardo Carrai",
-      "count": 3
-    },
-    {
-      "name": "Antonello Grippo",
+      "name": "Federico Capelli",
       "count": 3
     },
     {
@@ -347,19 +359,23 @@
       "count": 2
     },
     {
-      "name": "Enrico Fainardi",
-      "count": 2
-    },
-    {
-      "name": "Luca Campagnaro",
-      "count": 2
-    },
-    {
       "name": "Paolo Antonino Grasso",
       "count": 2
     },
     {
-      "name": "Federico Capelli",
+      "name": "Shani Enderage Don",
+      "count": 2
+    },
+    {
+      "name": "Giovanni Muscas",
+      "count": 2
+    },
+    {
+      "name": "Francesca Battista",
+      "count": 2
+    },
+    {
+      "name": "Andrea Amadori",
       "count": 2
     },
     {
@@ -415,23 +431,7 @@
       "count": 1
     },
     {
-      "name": "Bonaudo C.",
-      "count": 1
-    },
-    {
-      "name": "Shani Enderage Don",
-      "count": 1
-    },
-    {
       "name": "Marika Gobbo",
-      "count": 1
-    },
-    {
-      "name": "Giovanni Muscas",
-      "count": 1
-    },
-    {
-      "name": "Francesca Battista",
       "count": 1
     },
     {
@@ -439,7 +439,19 @@
       "count": 1
     },
     {
-      "name": "Andrea Amadori",
+      "name": "Benedetta Gori",
+      "count": 1
+    },
+    {
+      "name": "Giulia Masi",
+      "count": 1
+    },
+    {
+      "name": "Cristiana Martinelli",
+      "count": 1
+    },
+    {
+      "name": "Nicole Amanda Capialbi",
       "count": 1
     },
     {
