@@ -1,7 +1,7 @@
 {
   "slug": "elisa-castaldi",
   "name": "Elisa Castaldi",
-  "generated_at": "2026-08-16T04:00:07Z",
+  "generated_at": "2026-08-17T04:03:19Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "55660832000",
@@ -263,18 +263,6 @@
       "count": 7
     },
     {
-      "name": "Camilla Bonaudo",
-      "count": 5
-    },
-    {
-      "name": "Agnese Pedone",
-      "count": 5
-    },
-    {
-      "name": "Alessandro Della Puppa",
-      "count": 5
-    },
-    {
       "name": "Manuela Piazza",
       "count": 5
     },
@@ -283,31 +271,15 @@
       "count": 5
     },
     {
-      "name": "Edoardo Pieropan",
+      "name": "Camilla Bonaudo",
       "count": 4
     },
     {
-      "name": "Francesca Fedi",
+      "name": "Agnese Pedone",
       "count": 4
     },
     {
-      "name": "Fabrizio Baldanzi",
-      "count": 4
-    },
-    {
-      "name": "Simone Troiano",
-      "count": 4
-    },
-    {
-      "name": "Antonio Maiorelli",
-      "count": 4
-    },
-    {
-      "name": "Riccardo Carrai",
-      "count": 4
-    },
-    {
-      "name": "Antonello Grippo",
+      "name": "Alessandro Della Puppa",
       "count": 4
     },
     {
@@ -327,32 +299,40 @@
       "count": 4
     },
     {
+      "name": "Edoardo Pieropan",
+      "count": 3
+    },
+    {
+      "name": "Francesca Fedi",
+      "count": 3
+    },
+    {
+      "name": "Fabrizio Baldanzi",
+      "count": 3
+    },
+    {
+      "name": "Simone Troiano",
+      "count": 3
+    },
+    {
+      "name": "Antonio Maiorelli",
+      "count": 3
+    },
+    {
       "name": "Enrico Fainardi",
       "count": 3
     },
     {
-      "name": "Luca Campagnaro",
+      "name": "Riccardo Carrai",
+      "count": 3
+    },
+    {
+      "name": "Antonello Grippo",
       "count": 3
     },
     {
       "name": "Federico Capelli",
       "count": 3
-    },
-    {
-      "name": "Charly Caredda",
-      "count": 2
-    },
-    {
-      "name": "Bruno Montcel",
-      "count": 2
-    },
-    {
-      "name": "Eric Van Reeth",
-      "count": 2
-    },
-    {
-      "name": "Matteo Elias Schapira",
-      "count": 2
     },
     {
       "name": "Andrea Bianchi",
@@ -372,6 +352,10 @@
     },
     {
       "name": "Francesca Battista",
+      "count": 2
+    },
+    {
+      "name": "Luca Campagnaro",
       "count": 2
     },
     {
@@ -395,7 +379,27 @@
       "count": 2
     },
     {
+      "name": "Bonaudo C.",
+      "count": 1
+    },
+    {
+      "name": "Charly Caredda",
+      "count": 1
+    },
+    {
+      "name": "Bruno Montcel",
+      "count": 1
+    },
+    {
+      "name": "Eric Van Reeth",
+      "count": 1
+    },
+    {
       "name": "Luca Giannoni",
+      "count": 1
+    },
+    {
+      "name": "Matteo Elias Schapira",
       "count": 1
     },
     {
@@ -404,14 +408,6 @@
     },
     {
       "name": "Francesco Saverio Pavone",
-      "count": 1
-    },
-    {
-      "name": "Eleonora Visocchi",
-      "count": 1
-    },
-    {
-      "name": "Serena Tola",
       "count": 1
     },
     {
