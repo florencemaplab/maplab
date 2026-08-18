@@ -1,7 +1,7 @@
 {
   "slug": "lab",
   "name": "MAPLab",
-  "generated_at": "2026-08-17T04:03:19Z",
+  "generated_at": "2026-08-18T03:59:18Z",
   "source": "Shared BibTeX generated from Scopus Search; keyword cloud generated from publication titles",
   "title_based_keywords": true,
   "abstracts_used": false,
@@ -95,15 +95,15 @@
       "value": 10
     },
     {
+      "text": "stimulation",
+      "value": 9
+    },
+    {
       "text": "mapping",
       "value": 9
     },
     {
       "text": "cognitive",
-      "value": 9
-    },
-    {
-      "text": "stimulation",
       "value": 9
     },
     {
@@ -321,8 +321,8 @@
         "name": "Elisa Castaldi",
         "type": "lab",
         "category": "",
-        "documents": 42,
-        "total_link_strength": 209,
+        "documents": 43,
+        "total_link_strength": 226,
         "cluster": 0
       },
       {
@@ -506,6 +506,33 @@
         "cluster": 3
       },
       {
+        "id": "co:pedone:a",
+        "name": "Agnese Pedone",
+        "type": "external",
+        "category": "",
+        "documents": 5,
+        "total_link_strength": 85,
+        "cluster": 0
+      },
+      {
+        "id": "co:della puppa:a",
+        "name": "Alessandro Della Puppa",
+        "type": "external",
+        "category": "",
+        "documents": 5,
+        "total_link_strength": 85,
+        "cluster": 0
+      },
+      {
+        "id": "co:bonaudo:c",
+        "name": "Camilla Bonaudo",
+        "type": "external",
+        "category": "",
+        "documents": 5,
+        "total_link_strength": 85,
+        "cluster": 0
+      },
+      {
         "id": "co:tiso:n",
         "name": "Natascia Tiso",
         "type": "external",
@@ -542,6 +569,69 @@
         "cluster": 1
       },
       {
+        "id": "co:grippo:a",
+        "name": "Antonello Grippo",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 78,
+        "cluster": 0
+      },
+      {
+        "id": "co:maiorelli:a",
+        "name": "Antonio Maiorelli",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 78,
+        "cluster": 0
+      },
+      {
+        "id": "co:pieropan:e",
+        "name": "Edoardo Pieropan",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 78,
+        "cluster": 0
+      },
+      {
+        "id": "co:baldanzi:f",
+        "name": "Fabrizio Baldanzi",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 78,
+        "cluster": 0
+      },
+      {
+        "id": "co:fedi:f",
+        "name": "Francesca Fedi",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 78,
+        "cluster": 0
+      },
+      {
+        "id": "co:carrai:r",
+        "name": "Riccardo Carrai",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 78,
+        "cluster": 0
+      },
+      {
+        "id": "co:troiano:s",
+        "name": "Simone Troiano",
+        "type": "external",
+        "category": "",
+        "documents": 4,
+        "total_link_strength": 78,
+        "cluster": 0
+      },
+      {
         "id": "co:baldi:p",
         "name": "Pierre Baldi",
         "type": "external",
@@ -551,98 +641,8 @@
         "cluster": 3
       },
       {
-        "id": "co:pedone:a",
-        "name": "Agnese Pedone",
-        "type": "external",
-        "category": "",
-        "documents": 4,
-        "total_link_strength": 68,
-        "cluster": 0
-      },
-      {
-        "id": "co:della puppa:a",
-        "name": "Alessandro Della Puppa",
-        "type": "external",
-        "category": "",
-        "documents": 4,
-        "total_link_strength": 68,
-        "cluster": 0
-      },
-      {
-        "id": "co:bonaudo:c",
-        "name": "Camilla Bonaudo",
-        "type": "external",
-        "category": "",
-        "documents": 4,
-        "total_link_strength": 68,
-        "cluster": 0
-      },
-      {
-        "id": "co:grippo:a",
-        "name": "Antonello Grippo",
-        "type": "external",
-        "category": "",
-        "documents": 3,
-        "total_link_strength": 61,
-        "cluster": 0
-      },
-      {
-        "id": "co:maiorelli:a",
-        "name": "Antonio Maiorelli",
-        "type": "external",
-        "category": "",
-        "documents": 3,
-        "total_link_strength": 61,
-        "cluster": 0
-      },
-      {
-        "id": "co:pieropan:e",
-        "name": "Edoardo Pieropan",
-        "type": "external",
-        "category": "",
-        "documents": 3,
-        "total_link_strength": 61,
-        "cluster": 0
-      },
-      {
         "id": "co:fainardi:e",
         "name": "Enrico Fainardi",
-        "type": "external",
-        "category": "",
-        "documents": 3,
-        "total_link_strength": 61,
-        "cluster": 0
-      },
-      {
-        "id": "co:baldanzi:f",
-        "name": "Fabrizio Baldanzi",
-        "type": "external",
-        "category": "",
-        "documents": 3,
-        "total_link_strength": 61,
-        "cluster": 0
-      },
-      {
-        "id": "co:fedi:f",
-        "name": "Francesca Fedi",
-        "type": "external",
-        "category": "",
-        "documents": 3,
-        "total_link_strength": 61,
-        "cluster": 0
-      },
-      {
-        "id": "co:carrai:r",
-        "name": "Riccardo Carrai",
-        "type": "external",
-        "category": "",
-        "documents": 3,
-        "total_link_strength": 61,
-        "cluster": 0
-      },
-      {
-        "id": "co:troiano:s",
-        "name": "Simone Troiano",
         "type": "external",
         "category": "",
         "documents": 3,
@@ -657,6 +657,15 @@
         "documents": 4,
         "total_link_strength": 60,
         "cluster": 3
+      },
+      {
+        "id": "co:campagnaro:l",
+        "name": "Luca Campagnaro",
+        "type": "external",
+        "category": "",
+        "documents": 3,
+        "total_link_strength": 59,
+        "cluster": 0
       },
       {
         "id": "co:gavryusev:v",
@@ -830,15 +839,6 @@
         "cluster": 0
       },
       {
-        "id": "co:campagnaro:l",
-        "name": "Luca Campagnaro",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 42,
-        "cluster": 0
-      },
-      {
         "id": "co:don:s",
         "name": "Shani Enderage Don",
         "type": "external",
@@ -954,6 +954,42 @@
         "documents": 3,
         "total_link_strength": 36,
         "cluster": 3
+      },
+      {
+        "id": "co:montcel:b",
+        "name": "Bruno Montcel",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 36,
+        "cluster": 0
+      },
+      {
+        "id": "co:caredda:c",
+        "name": "Charly Caredda",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 36,
+        "cluster": 0
+      },
+      {
+        "id": "co:van reeth:e",
+        "name": "Eric Van Reeth",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 36,
+        "cluster": 0
+      },
+      {
+        "id": "co:schapira:m",
+        "name": "Matteo Elias Schapira",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 36,
+        "cluster": 0
       },
       {
         "id": "co:micera:s",
@@ -1352,44 +1388,8 @@
         "cluster": 3
       },
       {
-        "id": "co:montcel:b",
-        "name": "Bruno Montcel",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 19,
-        "cluster": 0
-      },
-      {
-        "id": "co:caredda:c",
-        "name": "Charly Caredda",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 19,
-        "cluster": 0
-      },
-      {
-        "id": "co:van reeth:e",
-        "name": "Eric Van Reeth",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 19,
-        "cluster": 0
-      },
-      {
         "id": "co:giannoni:l",
         "name": "Luca Giannoni",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 19,
-        "cluster": 0
-      },
-      {
-        "id": "co:schapira:m",
-        "name": "Matteo Elias Schapira",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -1505,6 +1505,15 @@
         "cluster": 3
       },
       {
+        "id": "co:visocchi:e",
+        "name": "Eleonora Visocchi",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 17,
+        "cluster": 0
+      },
+      {
         "id": "co:pilotto:f",
         "name": "Federica Pilotto",
         "type": "external",
@@ -1557,6 +1566,15 @@
         "documents": 1,
         "total_link_strength": 17,
         "cluster": 3
+      },
+      {
+        "id": "co:tola:s",
+        "name": "Serena Tola",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 17,
+        "cluster": 0
       },
       {
         "id": "co:devi:s",
@@ -4844,31 +4862,13 @@
         "cluster": 12
       },
       {
-        "id": "co:c:b",
-        "name": "Bonaudo C.",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 0,
-        "cluster": 13
-      },
-      {
         "id": "co:benedetti:d",
         "name": "Daniele Benedetti",
         "type": "external",
         "category": "",
         "documents": 1,
         "total_link_strength": 0,
-        "cluster": 14
-      },
-      {
-        "id": "co:d:d",
-        "name": "De Luca D.",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 0,
-        "cluster": 15
+        "cluster": 13
       }
     ],
     "edges": [
@@ -5383,6 +5383,24 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:bonaudo:c",
+        "target": "co:della puppa:a",
+        "count": 5,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:bonaudo:c",
+        "target": "co:pedone:a",
+        "count": 5,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:bonaudo:c",
+        "target": "elisa-castaldi",
+        "count": 5,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:caponi:c",
         "target": "roberto-arrighi",
         "count": 5,
@@ -5427,6 +5445,18 @@
       {
         "source": "co:d agostino:o",
         "target": "serena-castellotti",
+        "count": 5,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:della puppa:a",
+        "target": "co:pedone:a",
+        "count": 5,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:della puppa:a",
+        "target": "elisa-castaldi",
         "count": 5,
         "type": "coauthorship"
       },
@@ -5521,6 +5551,12 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:pedone:a",
+        "target": "elisa-castaldi",
+        "count": 5,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:piazza:m",
         "target": "elisa-castaldi",
         "count": 5,
@@ -5565,6 +5601,66 @@
       {
         "source": "co:amato:g",
         "target": "co:viglione:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:baldanzi:f",
+        "target": "co:bonaudo:c",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:baldanzi:f",
+        "target": "co:carrai:r",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:baldanzi:f",
+        "target": "co:della puppa:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:baldanzi:f",
+        "target": "co:fedi:f",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:baldanzi:f",
+        "target": "co:grippo:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:baldanzi:f",
+        "target": "co:maiorelli:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:baldanzi:f",
+        "target": "co:pedone:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:baldanzi:f",
+        "target": "co:pieropan:e",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:baldanzi:f",
+        "target": "co:troiano:s",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:baldanzi:f",
+        "target": "elisa-castaldi",
         "count": 4,
         "type": "coauthorship"
       },
@@ -5642,19 +5738,37 @@
       },
       {
         "source": "co:bonaudo:c",
-        "target": "co:della puppa:a",
+        "target": "co:carrai:r",
         "count": 4,
         "type": "coauthorship"
       },
       {
         "source": "co:bonaudo:c",
-        "target": "co:pedone:a",
+        "target": "co:fedi:f",
         "count": 4,
         "type": "coauthorship"
       },
       {
         "source": "co:bonaudo:c",
-        "target": "elisa-castaldi",
+        "target": "co:grippo:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:bonaudo:c",
+        "target": "co:maiorelli:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:bonaudo:c",
+        "target": "co:pieropan:e",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:bonaudo:c",
+        "target": "co:troiano:s",
         "count": 4,
         "type": "coauthorship"
       },
@@ -5679,6 +5793,54 @@
       {
         "source": "co:cappello:v",
         "target": "giuseppe-devito",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:carrai:r",
+        "target": "co:della puppa:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:carrai:r",
+        "target": "co:fedi:f",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:carrai:r",
+        "target": "co:grippo:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:carrai:r",
+        "target": "co:maiorelli:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:carrai:r",
+        "target": "co:pedone:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:carrai:r",
+        "target": "co:pieropan:e",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:carrai:r",
+        "target": "co:troiano:s",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:carrai:r",
+        "target": "elisa-castaldi",
         "count": 4,
         "type": "coauthorship"
       },
@@ -5738,13 +5900,31 @@
       },
       {
         "source": "co:della puppa:a",
-        "target": "co:pedone:a",
+        "target": "co:fedi:f",
         "count": 4,
         "type": "coauthorship"
       },
       {
         "source": "co:della puppa:a",
-        "target": "elisa-castaldi",
+        "target": "co:grippo:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:della puppa:a",
+        "target": "co:maiorelli:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:della puppa:a",
+        "target": "co:pieropan:e",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:della puppa:a",
+        "target": "co:troiano:s",
         "count": 4,
         "type": "coauthorship"
       },
@@ -5775,6 +5955,42 @@
       {
         "source": "co:fanelli:d",
         "target": "giuseppe-devito",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:fedi:f",
+        "target": "co:grippo:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:fedi:f",
+        "target": "co:maiorelli:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:fedi:f",
+        "target": "co:pedone:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:fedi:f",
+        "target": "co:pieropan:e",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:fedi:f",
+        "target": "co:troiano:s",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:fedi:f",
+        "target": "elisa-castaldi",
         "count": 4,
         "type": "coauthorship"
       },
@@ -5845,6 +6061,36 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:grippo:a",
+        "target": "co:maiorelli:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:grippo:a",
+        "target": "co:pedone:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:grippo:a",
+        "target": "co:pieropan:e",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:grippo:a",
+        "target": "co:troiano:s",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:grippo:a",
+        "target": "elisa-castaldi",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:lupori:l",
         "target": "co:viglione:a",
         "count": 4,
@@ -5859,6 +6105,30 @@
       {
         "source": "co:maduli:g",
         "target": "roberto-arrighi",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:maiorelli:a",
+        "target": "co:pedone:a",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:maiorelli:a",
+        "target": "co:pieropan:e",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:maiorelli:a",
+        "target": "co:troiano:s",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:maiorelli:a",
+        "target": "elisa-castaldi",
         "count": 4,
         "type": "coauthorship"
       },
@@ -5972,6 +6242,24 @@
       },
       {
         "source": "co:pedone:a",
+        "target": "co:pieropan:e",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:pedone:a",
+        "target": "co:troiano:s",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:pieropan:e",
+        "target": "co:troiano:s",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:pieropan:e",
         "target": "elisa-castaldi",
         "count": 4,
         "type": "coauthorship"
@@ -6009,6 +6297,12 @@
       {
         "source": "co:totaro:v",
         "target": "raffaele-mazziotti",
+        "count": 4,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:troiano:s",
+        "target": "elisa-castaldi",
         "count": 4,
         "type": "coauthorship"
       },
@@ -6080,67 +6374,13 @@
       },
       {
         "source": "co:baldanzi:f",
-        "target": "co:bonaudo:c",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:baldanzi:f",
-        "target": "co:carrai:r",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:baldanzi:f",
-        "target": "co:della puppa:a",
+        "target": "co:campagnaro:l",
         "count": 3,
         "type": "coauthorship"
       },
       {
         "source": "co:baldanzi:f",
         "target": "co:fainardi:e",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:baldanzi:f",
-        "target": "co:fedi:f",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:baldanzi:f",
-        "target": "co:grippo:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:baldanzi:f",
-        "target": "co:maiorelli:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:baldanzi:f",
-        "target": "co:pedone:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:baldanzi:f",
-        "target": "co:pieropan:e",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:baldanzi:f",
-        "target": "co:troiano:s",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:baldanzi:f",
-        "target": "elisa-castaldi",
         "count": 3,
         "type": "coauthorship"
       },
@@ -6236,49 +6476,19 @@
       },
       {
         "source": "co:bonaudo:c",
+        "target": "co:campagnaro:l",
+        "count": 3,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:bonaudo:c",
         "target": "co:capelli:f",
         "count": 3,
         "type": "coauthorship"
       },
       {
         "source": "co:bonaudo:c",
-        "target": "co:carrai:r",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bonaudo:c",
         "target": "co:fainardi:e",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bonaudo:c",
-        "target": "co:fedi:f",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bonaudo:c",
-        "target": "co:grippo:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bonaudo:c",
-        "target": "co:maiorelli:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bonaudo:c",
-        "target": "co:pieropan:e",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bonaudo:c",
-        "target": "co:troiano:s",
         "count": 3,
         "type": "coauthorship"
       },
@@ -6331,6 +6541,60 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:campagnaro:l",
+        "target": "co:carrai:r",
+        "count": 3,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:campagnaro:l",
+        "target": "co:della puppa:a",
+        "count": 3,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:campagnaro:l",
+        "target": "co:fedi:f",
+        "count": 3,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:campagnaro:l",
+        "target": "co:grippo:a",
+        "count": 3,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:campagnaro:l",
+        "target": "co:maiorelli:a",
+        "count": 3,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:campagnaro:l",
+        "target": "co:pedone:a",
+        "count": 3,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:campagnaro:l",
+        "target": "co:pieropan:e",
+        "count": 3,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:campagnaro:l",
+        "target": "co:troiano:s",
+        "count": 3,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:campagnaro:l",
+        "target": "elisa-castaldi",
+        "count": 3,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:capelli:f",
         "target": "co:della puppa:a",
         "count": 3,
@@ -6362,55 +6626,7 @@
       },
       {
         "source": "co:carrai:r",
-        "target": "co:della puppa:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:carrai:r",
         "target": "co:fainardi:e",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:carrai:r",
-        "target": "co:fedi:f",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:carrai:r",
-        "target": "co:grippo:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:carrai:r",
-        "target": "co:maiorelli:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:carrai:r",
-        "target": "co:pedone:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:carrai:r",
-        "target": "co:pieropan:e",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:carrai:r",
-        "target": "co:troiano:s",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:carrai:r",
-        "target": "elisa-castaldi",
         "count": 3,
         "type": "coauthorship"
       },
@@ -6595,36 +6811,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:della puppa:a",
-        "target": "co:fedi:f",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:della puppa:a",
-        "target": "co:grippo:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:della puppa:a",
-        "target": "co:maiorelli:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:della puppa:a",
-        "target": "co:pieropan:e",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:della puppa:a",
-        "target": "co:troiano:s",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:fainardi:e",
         "target": "co:fedi:f",
         "count": 3,
@@ -6709,42 +6895,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:fedi:f",
-        "target": "co:grippo:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:fedi:f",
-        "target": "co:maiorelli:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:fedi:f",
-        "target": "co:pedone:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:fedi:f",
-        "target": "co:pieropan:e",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:fedi:f",
-        "target": "co:troiano:s",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:fedi:f",
-        "target": "elisa-castaldi",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:fornaciai:m",
         "target": "roberto-arrighi",
         "count": 3,
@@ -6793,36 +6943,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:grippo:a",
-        "target": "co:maiorelli:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:grippo:a",
-        "target": "co:pedone:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:grippo:a",
-        "target": "co:pieropan:e",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:grippo:a",
-        "target": "co:troiano:s",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:grippo:a",
-        "target": "elisa-castaldi",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:guzzetta:a",
         "target": "raffaele-mazziotti",
         "count": 3,
@@ -6855,30 +6975,6 @@
       {
         "source": "co:lupori:l",
         "target": "co:totaro:v",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:maiorelli:a",
-        "target": "co:pedone:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:maiorelli:a",
-        "target": "co:pieropan:e",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:maiorelli:a",
-        "target": "co:troiano:s",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:maiorelli:a",
-        "target": "elisa-castaldi",
         "count": 3,
         "type": "coauthorship"
       },
@@ -7093,18 +7189,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:pedone:a",
-        "target": "co:pieropan:e",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:pedone:a",
-        "target": "co:troiano:s",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:piazza:v",
         "target": "co:tonazzini:i",
         "count": 3,
@@ -7113,18 +7197,6 @@
       {
         "source": "co:piegari:a",
         "target": "roberto-arrighi",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:pieropan:e",
-        "target": "co:troiano:s",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:pieropan:e",
-        "target": "elisa-castaldi",
         "count": 3,
         "type": "coauthorship"
       },
@@ -7233,12 +7305,6 @@
       {
         "source": "co:totaro:v",
         "target": "co:viglione:a",
-        "count": 3,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:troiano:s",
-        "target": "elisa-castaldi",
         "count": 3,
         "type": "coauthorship"
       },
@@ -7598,13 +7664,13 @@
       },
       {
         "source": "co:baldanzi:f",
-        "target": "co:campagnaro:l",
+        "target": "co:capelli:f",
         "count": 2,
         "type": "coauthorship"
       },
       {
         "source": "co:baldanzi:f",
-        "target": "co:capelli:f",
+        "target": "co:caredda:c",
         "count": 2,
         "type": "coauthorship"
       },
@@ -7616,7 +7682,25 @@
       },
       {
         "source": "co:baldanzi:f",
+        "target": "co:montcel:b",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:baldanzi:f",
         "target": "co:muscas:g",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:baldanzi:f",
+        "target": "co:schapira:m",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:baldanzi:f",
+        "target": "co:van reeth:e",
         "count": 2,
         "type": "coauthorship"
       },
@@ -7958,7 +8042,7 @@
       },
       {
         "source": "co:bonaudo:c",
-        "target": "co:campagnaro:l",
+        "target": "co:caredda:c",
         "count": 2,
         "type": "coauthorship"
       },
@@ -7976,7 +8060,25 @@
       },
       {
         "source": "co:bonaudo:c",
+        "target": "co:montcel:b",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:bonaudo:c",
         "target": "co:muscas:g",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:bonaudo:c",
+        "target": "co:schapira:m",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:bonaudo:c",
+        "target": "co:van reeth:e",
         "count": 2,
         "type": "coauthorship"
       },
@@ -8072,18 +8174,6 @@
       },
       {
         "source": "co:campagnaro:l",
-        "target": "co:carrai:r",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:campagnaro:l",
-        "target": "co:della puppa:a",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:campagnaro:l",
         "target": "co:don:s",
         "count": 2,
         "type": "coauthorship"
@@ -8096,49 +8186,7 @@
       },
       {
         "source": "co:campagnaro:l",
-        "target": "co:fedi:f",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:campagnaro:l",
-        "target": "co:grippo:a",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:campagnaro:l",
-        "target": "co:maiorelli:a",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:campagnaro:l",
         "target": "co:muscas:g",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:campagnaro:l",
-        "target": "co:pedone:a",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:campagnaro:l",
-        "target": "co:pieropan:e",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:campagnaro:l",
-        "target": "co:troiano:s",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:campagnaro:l",
-        "target": "elisa-castaldi",
         "count": 2,
         "type": "coauthorship"
       },
@@ -8239,6 +8287,78 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:caredda:c",
+        "target": "co:carrai:r",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:caredda:c",
+        "target": "co:della puppa:a",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:caredda:c",
+        "target": "co:fedi:f",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:caredda:c",
+        "target": "co:grippo:a",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:caredda:c",
+        "target": "co:maiorelli:a",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:caredda:c",
+        "target": "co:montcel:b",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:caredda:c",
+        "target": "co:pedone:a",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:caredda:c",
+        "target": "co:pieropan:e",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:caredda:c",
+        "target": "co:schapira:m",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:caredda:c",
+        "target": "co:troiano:s",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:caredda:c",
+        "target": "co:van reeth:e",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:caredda:c",
+        "target": "elisa-castaldi",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:carmassi:c",
         "target": "co:conti:e",
         "count": 2,
@@ -8270,7 +8390,25 @@
       },
       {
         "source": "co:carrai:r",
+        "target": "co:montcel:b",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:carrai:r",
         "target": "co:muscas:g",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:carrai:r",
+        "target": "co:schapira:m",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:carrai:r",
+        "target": "co:van reeth:e",
         "count": 2,
         "type": "coauthorship"
       },
@@ -8636,7 +8774,25 @@
       },
       {
         "source": "co:della puppa:a",
+        "target": "co:montcel:b",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:della puppa:a",
         "target": "co:muscas:g",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:della puppa:a",
+        "target": "co:schapira:m",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:della puppa:a",
+        "target": "co:van reeth:e",
         "count": 2,
         "type": "coauthorship"
       },
@@ -8768,7 +8924,25 @@
       },
       {
         "source": "co:fedi:f",
+        "target": "co:montcel:b",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:fedi:f",
         "target": "co:muscas:g",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:fedi:f",
+        "target": "co:schapira:m",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:fedi:f",
+        "target": "co:van reeth:e",
         "count": 2,
         "type": "coauthorship"
       },
@@ -8888,7 +9062,25 @@
       },
       {
         "source": "co:grippo:a",
+        "target": "co:montcel:b",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:grippo:a",
         "target": "co:muscas:g",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:grippo:a",
+        "target": "co:schapira:m",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:grippo:a",
+        "target": "co:van reeth:e",
         "count": 2,
         "type": "coauthorship"
       },
@@ -9092,7 +9284,25 @@
       },
       {
         "source": "co:maiorelli:a",
+        "target": "co:montcel:b",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:maiorelli:a",
         "target": "co:muscas:g",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:maiorelli:a",
+        "target": "co:schapira:m",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:maiorelli:a",
+        "target": "co:van reeth:e",
         "count": 2,
         "type": "coauthorship"
       },
@@ -9217,6 +9427,42 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:montcel:b",
+        "target": "co:pedone:a",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:montcel:b",
+        "target": "co:pieropan:e",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:montcel:b",
+        "target": "co:schapira:m",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:montcel:b",
+        "target": "co:troiano:s",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:montcel:b",
+        "target": "co:van reeth:e",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:montcel:b",
+        "target": "elisa-castaldi",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:moscoso:p",
         "target": "co:primi:c",
         "count": 2,
@@ -9277,6 +9523,18 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:pedone:a",
+        "target": "co:schapira:m",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:pedone:a",
+        "target": "co:van reeth:e",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:petrizzo:i",
         "target": "serena-castellotti",
         "count": 2,
@@ -9285,6 +9543,18 @@
       {
         "source": "co:piazza:v",
         "target": "co:rocca:a",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:pieropan:e",
+        "target": "co:schapira:m",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:pieropan:e",
+        "target": "co:van reeth:e",
         "count": 2,
         "type": "coauthorship"
       },
@@ -9469,6 +9739,24 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:schapira:m",
+        "target": "co:troiano:s",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:schapira:m",
+        "target": "co:van reeth:e",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:schapira:m",
+        "target": "elisa-castaldi",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:silingardi:d",
         "target": "raffaele-mazziotti",
         "count": 2,
@@ -9525,6 +9813,18 @@
       {
         "source": "co:tozzini:e",
         "target": "raffaele-mazziotti",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:troiano:s",
+        "target": "co:van reeth:e",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:van reeth:e",
+        "target": "elisa-castaldi",
         "count": 2,
         "type": "coauthorship"
       },
@@ -10844,12 +11144,6 @@
       },
       {
         "source": "co:baldanzi:f",
-        "target": "co:caredda:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:baldanzi:f",
         "target": "co:casseri:t",
         "count": 1,
         "type": "coauthorship"
@@ -10898,25 +11192,19 @@
       },
       {
         "source": "co:baldanzi:f",
-        "target": "co:montcel:b",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:baldanzi:f",
         "target": "co:pavone:f",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:baldanzi:f",
-        "target": "co:schapira:m",
+        "target": "co:tola:s",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:baldanzi:f",
-        "target": "co:van reeth:e",
+        "target": "co:visocchi:e",
         "count": 1,
         "type": "coauthorship"
       },
@@ -12662,12 +12950,6 @@
       },
       {
         "source": "co:bonaudo:c",
-        "target": "co:caredda:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bonaudo:c",
         "target": "co:casseri:t",
         "count": 1,
         "type": "coauthorship"
@@ -12710,25 +12992,19 @@
       },
       {
         "source": "co:bonaudo:c",
-        "target": "co:montcel:b",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bonaudo:c",
         "target": "co:pavone:f",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:bonaudo:c",
-        "target": "co:schapira:m",
+        "target": "co:tola:s",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:bonaudo:c",
-        "target": "co:van reeth:e",
+        "target": "co:visocchi:e",
         "count": 1,
         "type": "coauthorship"
       },
@@ -13754,6 +14030,12 @@
       },
       {
         "source": "co:campagnaro:l",
+        "target": "co:caredda:c",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:campagnaro:l",
         "target": "co:de pellegrin:s",
         "count": 1,
         "type": "coauthorship"
@@ -13785,6 +14067,36 @@
       {
         "source": "co:campagnaro:l",
         "target": "co:masi:g",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:campagnaro:l",
+        "target": "co:montcel:b",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:campagnaro:l",
+        "target": "co:schapira:m",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:campagnaro:l",
+        "target": "co:tola:s",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:campagnaro:l",
+        "target": "co:van reeth:e",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:campagnaro:l",
+        "target": "co:visocchi:e",
         "count": 1,
         "type": "coauthorship"
       },
@@ -14186,19 +14498,7 @@
       },
       {
         "source": "co:caredda:c",
-        "target": "co:carrai:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:caredda:c",
         "target": "co:casseri:t",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:caredda:c",
-        "target": "co:della puppa:a",
         "count": 1,
         "type": "coauthorship"
       },
@@ -14210,31 +14510,7 @@
       },
       {
         "source": "co:caredda:c",
-        "target": "co:fedi:f",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:caredda:c",
         "target": "co:giannoni:l",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:caredda:c",
-        "target": "co:grippo:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:caredda:c",
-        "target": "co:maiorelli:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:caredda:c",
-        "target": "co:montcel:b",
         "count": 1,
         "type": "coauthorship"
       },
@@ -14246,37 +14522,13 @@
       },
       {
         "source": "co:caredda:c",
-        "target": "co:pedone:a",
+        "target": "co:tola:s",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:caredda:c",
-        "target": "co:pieropan:e",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:caredda:c",
-        "target": "co:schapira:m",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:caredda:c",
-        "target": "co:troiano:s",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:caredda:c",
-        "target": "co:van reeth:e",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:caredda:c",
-        "target": "elisa-castaldi",
+        "target": "co:visocchi:e",
         "count": 1,
         "type": "coauthorship"
       },
@@ -14576,25 +14828,19 @@
       },
       {
         "source": "co:carrai:r",
-        "target": "co:montcel:b",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:carrai:r",
         "target": "co:pavone:f",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:carrai:r",
-        "target": "co:schapira:m",
+        "target": "co:tola:s",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:carrai:r",
-        "target": "co:van reeth:e",
+        "target": "co:visocchi:e",
         "count": 1,
         "type": "coauthorship"
       },
@@ -17570,25 +17816,19 @@
       },
       {
         "source": "co:della puppa:a",
-        "target": "co:montcel:b",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:della puppa:a",
         "target": "co:pavone:f",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:della puppa:a",
-        "target": "co:schapira:m",
+        "target": "co:tola:s",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:della puppa:a",
-        "target": "co:van reeth:e",
+        "target": "co:visocchi:e",
         "count": 1,
         "type": "coauthorship"
       },
@@ -18380,25 +18620,19 @@
       },
       {
         "source": "co:fedi:f",
-        "target": "co:montcel:b",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:fedi:f",
         "target": "co:pavone:f",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:fedi:f",
-        "target": "co:schapira:m",
+        "target": "co:tola:s",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:fedi:f",
-        "target": "co:van reeth:e",
+        "target": "co:visocchi:e",
         "count": 1,
         "type": "coauthorship"
       },
@@ -20144,25 +20378,19 @@
       },
       {
         "source": "co:grippo:a",
-        "target": "co:montcel:b",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:grippo:a",
         "target": "co:pavone:f",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:grippo:a",
-        "target": "co:schapira:m",
+        "target": "co:tola:s",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:grippo:a",
-        "target": "co:van reeth:e",
+        "target": "co:visocchi:e",
         "count": 1,
         "type": "coauthorship"
       },
@@ -21410,25 +21638,19 @@
       },
       {
         "source": "co:maiorelli:a",
-        "target": "co:montcel:b",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:maiorelli:a",
         "target": "co:pavone:f",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:maiorelli:a",
-        "target": "co:schapira:m",
+        "target": "co:tola:s",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:maiorelli:a",
-        "target": "co:van reeth:e",
+        "target": "co:visocchi:e",
         "count": 1,
         "type": "coauthorship"
       },
@@ -22700,37 +22922,13 @@
       },
       {
         "source": "co:montcel:b",
-        "target": "co:pedone:a",
+        "target": "co:tola:s",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:montcel:b",
-        "target": "co:pieropan:e",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:montcel:b",
-        "target": "co:schapira:m",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:montcel:b",
-        "target": "co:troiano:s",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:montcel:b",
-        "target": "co:van reeth:e",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:montcel:b",
-        "target": "elisa-castaldi",
+        "target": "co:visocchi:e",
         "count": 1,
         "type": "coauthorship"
       },
@@ -23432,13 +23630,13 @@
       },
       {
         "source": "co:pedone:a",
-        "target": "co:schapira:m",
+        "target": "co:tola:s",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:pedone:a",
-        "target": "co:van reeth:e",
+        "target": "co:visocchi:e",
         "count": 1,
         "type": "coauthorship"
       },
@@ -23702,13 +23900,13 @@
       },
       {
         "source": "co:pieropan:e",
-        "target": "co:schapira:m",
+        "target": "co:tola:s",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:pieropan:e",
-        "target": "co:van reeth:e",
+        "target": "co:visocchi:e",
         "count": 1,
         "type": "coauthorship"
       },
@@ -24560,19 +24758,13 @@
       },
       {
         "source": "co:schapira:m",
-        "target": "co:troiano:s",
+        "target": "co:tola:s",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:schapira:m",
-        "target": "co:van reeth:e",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:schapira:m",
-        "target": "elisa-castaldi",
+        "target": "co:visocchi:e",
         "count": 1,
         "type": "coauthorship"
       },
@@ -24859,6 +25051,30 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:tola:s",
+        "target": "co:troiano:s",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:tola:s",
+        "target": "co:van reeth:e",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:tola:s",
+        "target": "co:visocchi:e",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:tola:s",
+        "target": "elisa-castaldi",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:tomaiuolo:f",
         "target": "giovanni-anobile",
         "count": 1,
@@ -24944,7 +25160,7 @@
       },
       {
         "source": "co:troiano:s",
-        "target": "co:van reeth:e",
+        "target": "co:visocchi:e",
         "count": 1,
         "type": "coauthorship"
       },
@@ -24956,7 +25172,7 @@
       },
       {
         "source": "co:van reeth:e",
-        "target": "elisa-castaldi",
+        "target": "co:visocchi:e",
         "count": 1,
         "type": "coauthorship"
       },
@@ -25015,6 +25231,12 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:visocchi:e",
+        "target": "elisa-castaldi",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:volpe:r",
         "target": "roberto-arrighi",
         "count": 1,
@@ -25054,7 +25276,7 @@
     "stats": {
       "lab_members": 9,
       "external_collaborators": 500,
-      "edges": 3363
+      "edges": 3400
     }
   }
 }
