@@ -148,8 +148,8 @@
         "name": "Alessandro Benedetto",
         "type": "lab",
         "category": "faculty",
-        "documents": 24,
-        "total_link_strength": 85,
+        "documents": 25,
+        "total_link_strength": 90,
         "cluster": 2
       },
       {
@@ -1458,6 +1458,24 @@
         "cluster": 4
       },
       {
+        "id": "co:bonanni:e",
+        "name": "Enrica Bonanni",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 16,
+        "cluster": 2
+      },
+      {
+        "id": "co:turco:f",
+        "name": "Francesco Turco",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 16,
+        "cluster": 2
+      },
+      {
         "id": "co:marmiroli:p",
         "name": "Paola Marmiroli",
         "type": "external",
@@ -2322,15 +2340,6 @@
         "cluster": 2
       },
       {
-        "id": "co:bonanni:e",
-        "name": "Enrica Bonanni",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 2
-      },
-      {
         "id": "co:giorgi:f",
         "name": "Filippo Sean Giorgi",
         "type": "external",
@@ -2342,15 +2351,6 @@
       {
         "id": "co:fornai:f",
         "name": "Francesco Fornai",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 11,
-        "cluster": 2
-      },
-      {
-        "id": "co:turco:f",
-        "name": "Francesco Turco",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -3726,6 +3726,15 @@
         "cluster": 6
       },
       {
+        "id": "co:steinwurzel:c",
+        "name": "Cecilia Steinwurzel",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 5,
+        "cluster": 2
+      },
+      {
         "id": "co:pfanner:c",
         "name": "Chiara Pfanner",
         "type": "external",
@@ -3787,6 +3796,15 @@
         "documents": 1,
         "total_link_strength": 5,
         "cluster": 5
+      },
+      {
+        "id": "co:strigaro:g",
+        "name": "Gionata Strigaro",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 5,
+        "cluster": 2
       },
       {
         "id": "co:amatori:g",
@@ -3922,6 +3940,15 @@
         "documents": 1,
         "total_link_strength": 5,
         "cluster": 5
+      },
+      {
+        "id": "co:cantello:r",
+        "name": "Roberto Cantello",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 5,
+        "cluster": 2
       },
       {
         "id": "co:rizzo:s",
@@ -7287,6 +7314,12 @@
       },
       {
         "source": "alessandro-benedetto",
+        "target": "co:bonanni:e",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "alessandro-benedetto",
         "target": "co:carrara:f",
         "count": 2,
         "type": "coauthorship"
@@ -7324,6 +7357,12 @@
       {
         "source": "alessandro-benedetto",
         "target": "co:sagona:g",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "alessandro-benedetto",
+        "target": "co:turco:f",
         "count": 2,
         "type": "coauthorship"
       },
@@ -8002,6 +8041,12 @@
       {
         "source": "co:blini:e",
         "target": "serena-castellotti",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:bonanni:e",
+        "target": "co:turco:f",
         "count": 2,
         "type": "coauthorship"
       },
@@ -9909,7 +9954,7 @@
       },
       {
         "source": "alessandro-benedetto",
-        "target": "co:bonanni:e",
+        "target": "co:cantello:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -10089,6 +10134,18 @@
       },
       {
         "source": "alessandro-benedetto",
+        "target": "co:steinwurzel:c",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "alessandro-benedetto",
+        "target": "co:strigaro:g",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "alessandro-benedetto",
         "target": "co:tiberi:l",
         "count": 1,
         "type": "coauthorship"
@@ -10108,12 +10165,6 @@
       {
         "source": "alessandro-benedetto",
         "target": "co:tosetti:m",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "alessandro-benedetto",
-        "target": "co:turco:f",
         "count": 1,
         "type": "coauthorship"
       },
@@ -12939,6 +12990,12 @@
       },
       {
         "source": "co:bonanni:e",
+        "target": "co:cantello:r",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:bonanni:e",
         "target": "co:fornai:f",
         "count": 1,
         "type": "coauthorship"
@@ -12993,7 +13050,13 @@
       },
       {
         "source": "co:bonanni:e",
-        "target": "co:turco:f",
+        "target": "co:steinwurzel:c",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:bonanni:e",
+        "target": "co:strigaro:g",
         "count": 1,
         "type": "coauthorship"
       },
@@ -14338,6 +14401,24 @@
       {
         "source": "co:canta:a",
         "target": "co:rodriguez menendez:v",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:cantello:r",
+        "target": "co:steinwurzel:c",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:cantello:r",
+        "target": "co:strigaro:g",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:cantello:r",
+        "target": "co:turco:f",
         "count": 1,
         "type": "coauthorship"
       },
@@ -25214,6 +25295,18 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:steinwurzel:c",
+        "target": "co:strigaro:g",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:steinwurzel:c",
+        "target": "co:turco:f",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:stella:a",
         "target": "co:viglione:a",
         "count": 1,
@@ -25258,6 +25351,12 @@
       {
         "source": "co:streri:a",
         "target": "elisa-castaldi",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:strigaro:g",
+        "target": "co:turco:f",
         "count": 1,
         "type": "coauthorship"
       },
@@ -25648,8 +25747,8 @@
     ],
     "stats": {
       "lab_members": 9,
-      "external_collaborators": 513,
-      "edges": 3470
+      "external_collaborators": 516,
+      "edges": 3482
     }
   }
 }

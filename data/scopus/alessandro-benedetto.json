@@ -1,15 +1,15 @@
 {
   "slug": "alessandro-benedetto",
   "name": "Alessandro Benedetto",
-  "generated_at": "2026-08-22T03:57:30Z",
+  "generated_at": "2026-08-23T04:02:35Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57189371872",
-    "citation_count": 415,
-    "cited_by_count": 415,
+    "citation_count": 416,
+    "cited_by_count": 416,
     "h_index": 12
   },
-  "publications_analyzed": 24,
+  "publications_analyzed": 25,
   "abstracts_found": 0,
   "keywords": [
     {
@@ -137,6 +137,30 @@
       "value": 3
     },
     {
+      "text": "altered cortical",
+      "value": 3
+    },
+    {
+      "text": "cortical synchronization",
+      "value": 3
+    },
+    {
+      "text": "synchronization photosensitive",
+      "value": 3
+    },
+    {
+      "text": "photosensitive idiopathic",
+      "value": 3
+    },
+    {
+      "text": "idiopathic generalized",
+      "value": 3
+    },
+    {
+      "text": "generalized epilepsy",
+      "value": 3
+    },
+    {
       "text": "optimal feature",
       "value": 3
     },
@@ -207,30 +231,6 @@
     {
       "text": "vision look",
       "value": 3
-    },
-    {
-      "text": "look reflects",
-      "value": 3
-    },
-    {
-      "text": "reflects looking",
-      "value": 3
-    },
-    {
-      "text": "dependence decoding",
-      "value": 3
-    },
-    {
-      "text": "decoding visual",
-      "value": 3
-    },
-    {
-      "text": "visual evoked",
-      "value": 3
-    },
-    {
-      "text": "evoked potentials",
-      "value": 3
     }
   ],
   "coauthors": [
@@ -252,6 +252,14 @@
     },
     {
       "name": "Roberto Arrighi",
+      "count": 2
+    },
+    {
+      "name": "Francesco Turco",
+      "count": 2
+    },
+    {
+      "name": "Enrica Bonanni",
       "count": 2
     },
     {
@@ -304,6 +312,18 @@
     },
     {
       "name": "Egle Casavecchia",
+      "count": 1
+    },
+    {
+      "name": "Cecilia Steinwurzel",
+      "count": 1
+    },
+    {
+      "name": "Roberto Cantello",
+      "count": 1
+    },
+    {
+      "name": "Gionata Strigaro",
       "count": 1
     },
     {
@@ -407,10 +427,6 @@
       "count": 1
     },
     {
-      "name": "Francesco Turco",
-      "count": 1
-    },
-    {
       "name": "Filippo Sean Giorgi",
       "count": 1
     },
@@ -444,10 +460,6 @@
     },
     {
       "name": "Gabriele Siciliano",
-      "count": 1
-    },
-    {
-      "name": "Enrica Bonanni",
       "count": 1
     },
     {
