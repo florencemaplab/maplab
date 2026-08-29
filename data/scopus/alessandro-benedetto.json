@@ -1,7 +1,7 @@
 {
   "slug": "alessandro-benedetto",
   "name": "Alessandro Benedetto",
-  "generated_at": "2026-08-28T15:25:15Z",
+  "generated_at": "2026-08-29T10:07:14Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57189371872",
@@ -9,12 +9,16 @@
     "cited_by_count": 416,
     "h_index": 12
   },
-  "publications_analyzed": 25,
+  "publications_analyzed": 26,
   "abstracts_found": 0,
   "keywords": [
     {
       "text": "visual",
       "value": 16
+    },
+    {
+      "text": "pupillometry",
+      "value": 6
     },
     {
       "text": "modulation",
@@ -93,10 +97,6 @@
       "value": 4
     },
     {
-      "text": "pupillometry",
-      "value": 4
-    },
-    {
       "text": "rhythm",
       "value": 4
     },
@@ -134,6 +134,38 @@
     },
     {
       "text": "visual field",
+      "value": 3
+    },
+    {
+      "text": "meyelens affordable",
+      "value": 3
+    },
+    {
+      "text": "affordable open-source",
+      "value": 3
+    },
+    {
+      "text": "open-source 3d-printable",
+      "value": 3
+    },
+    {
+      "text": "3d-printable eyewear",
+      "value": 3
+    },
+    {
+      "text": "eyewear platform",
+      "value": 3
+    },
+    {
+      "text": "platform pupillometry",
+      "value": 3
+    },
+    {
+      "text": "pupillometry gaze",
+      "value": 3
+    },
+    {
+      "text": "gaze tracking",
       "value": 3
     },
     {
@@ -199,38 +231,6 @@
     {
       "text": "combined behavioral",
       "value": 3
-    },
-    {
-      "text": "behavioral investigation",
-      "value": 3
-    },
-    {
-      "text": "role motor",
-      "value": 3
-    },
-    {
-      "text": "motor effort",
-      "value": 3
-    },
-    {
-      "text": "effort sensorimotor",
-      "value": 3
-    },
-    {
-      "text": "sensorimotor number",
-      "value": 3
-    },
-    {
-      "text": "number system",
-      "value": 3
-    },
-    {
-      "text": "active vision",
-      "value": 3
-    },
-    {
-      "text": "vision look",
-      "value": 3
     }
   ],
   "coauthors": [
@@ -244,6 +244,18 @@
     },
     {
       "name": "Martina Poletti",
+      "count": 3
+    },
+    {
+      "name": "Fabio Carrara",
+      "count": 3
+    },
+    {
+      "name": "Tommaso Pizzorusso",
+      "count": 3
+    },
+    {
+      "name": "Raffaele M. Mazziotti",
       "count": 3
     },
     {
@@ -271,14 +283,6 @@
       "count": 2
     },
     {
-      "name": "Raffaele Mazziotti",
-      "count": 2
-    },
-    {
-      "name": "Fabio Carrara",
-      "count": 2
-    },
-    {
       "name": "Aurelia Viglione",
       "count": 2
     },
@@ -303,10 +307,6 @@
       "count": 2
     },
     {
-      "name": "Tommaso Pizzorusso",
-      "count": 2
-    },
-    {
       "name": "Paola Binda",
       "count": 2
     },
@@ -324,6 +324,30 @@
     },
     {
       "name": "Gionata Strigaro",
+      "count": 1
+    },
+    {
+      "name": "Giacomo Vecchieschi",
+      "count": 1
+    },
+    {
+      "name": "Letizia Ingenito",
+      "count": 1
+    },
+    {
+      "name": "Caterina Luciani",
+      "count": 1
+    },
+    {
+      "name": "Giovanni Cioni",
+      "count": 1
+    },
+    {
+      "name": "Andrea Guzzetta",
+      "count": 1
+    },
+    {
+      "name": "Laura Baroncelli",
       "count": 1
     },
     {
