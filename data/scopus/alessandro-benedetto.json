@@ -1,12 +1,12 @@
 {
   "slug": "alessandro-benedetto",
   "name": "Alessandro Benedetto",
-  "generated_at": "2026-08-29T10:07:14Z",
+  "generated_at": "2026-08-30T09:16:15Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57189371872",
-    "citation_count": 416,
-    "cited_by_count": 416,
+    "citation_count": 418,
+    "cited_by_count": 418,
     "h_index": 12
   },
   "publications_analyzed": 26,
@@ -133,10 +133,6 @@
       "value": 3
     },
     {
-      "text": "visual field",
-      "value": 3
-    },
-    {
       "text": "meyelens affordable",
       "value": 3
     },
@@ -166,6 +162,10 @@
     },
     {
       "text": "gaze tracking",
+      "value": 3
+    },
+    {
+      "text": "visual field",
       "value": 3
     },
     {
