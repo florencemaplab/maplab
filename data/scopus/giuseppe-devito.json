@@ -1,7 +1,7 @@
 {
   "slug": "giuseppe-devito",
   "name": "Giuseppe de Vito",
-  "generated_at": "2026-09-04T07:59:53Z",
+  "generated_at": "2026-09-05T07:41:50Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "55547668700",
@@ -236,35 +236,35 @@
   "coauthors": [
     {
       "name": "Francesco Saverio Pavone",
-      "count": 20
+      "count": 21
     },
     {
       "name": "Lapo Turrini",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Francesco Vanzi",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Vincenzo Piazza",
-      "count": 11
+      "count": 13
     },
     {
       "name": "Ludovico Silvestri",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Pietro Ricci",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Giuseppe Sancataldo",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Natascia Tiso",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Gianni Ciofani",
@@ -276,6 +276,10 @@
     },
     {
       "name": "Michele Sorelli",
+      "count": 5
+    },
+    {
+      "name": "Caroline Müllenbroich",
       "count": 5
     },
     {
@@ -295,7 +299,7 @@
       "count": 4
     },
     {
-      "name": "Caroline Müllenbroich",
+      "name": "Duccio Fanelli",
       "count": 4
     },
     {
@@ -307,6 +311,10 @@
       "count": 4
     },
     {
+      "name": "Chiara Fornetto",
+      "count": 4
+    },
+    {
       "name": "Valentina Cappello",
       "count": 4
     },
@@ -315,7 +323,11 @@
       "count": 4
     },
     {
-      "name": "Duccio Fanelli",
+      "name": "Giacomo Mazzamuto",
+      "count": 3
+    },
+    {
+      "name": "Leonardo Sacconi",
       "count": 3
     },
     {
@@ -327,23 +339,23 @@
       "count": 3
     },
     {
-      "name": "Chiara Fornetto",
-      "count": 3
-    },
-    {
       "name": "Silvestro Micera",
       "count": 2
     },
     {
-      "name": "Giacomo Mazzamuto",
-      "count": 2
-    },
-    {
-      "name": "Leonardo Sacconi",
+      "name": "Roberta Cecchi",
       "count": 2
     },
     {
       "name": "Marco Cecchini",
+      "count": 2
+    },
+    {
+      "name": "Annalisa Canta",
+      "count": 2
+    },
+    {
+      "name": "Paola Marmiroli",
       "count": 2
     },
     {
@@ -439,10 +451,6 @@
       "count": 1
     },
     {
-      "name": "Roberta Cecchi",
-      "count": 1
-    },
-    {
       "name": "Stefano Luin",
       "count": 1
     },
@@ -523,35 +531,27 @@
       "count": 1
     },
     {
-      "name": "Canta A.",
+      "name": "Alessia Chiorazzi",
       "count": 1
     },
     {
-      "name": "Nardo G.",
+      "name": "Valentina Alda Carozzi",
       "count": 1
     },
     {
-      "name": "Veronica Rocca",
+      "name": "Cristina Meregalli",
       "count": 1
     },
     {
-      "name": "Stefania Moscato",
+      "name": "Norberto Oggioni",
       "count": 1
     },
     {
-      "name": "Thu Jennifer Ngo-Anh",
+      "name": "Mario Bossi",
       "count": 1
     },
     {
-      "name": "A. CANTA",
-      "count": 1
-    },
-    {
-      "name": "P. MARMIROLI",
-      "count": 1
-    },
-    {
-      "name": "Jonathan Barsotti",
+      "name": "Virginia Rodriguez-Menendez",
       "count": 1
     }
   ]
