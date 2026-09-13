@@ -1,12 +1,12 @@
 {
   "slug": "giovanni-anobile",
   "name": "Giovanni Anobile",
-  "generated_at": "2026-09-12T07:57:07Z",
+  "generated_at": "2026-09-13T08:19:54Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "36466056200",
-    "citation_count": 2384,
-    "cited_by_count": 2384,
+    "citation_count": 2386,
+    "cited_by_count": 2386,
     "h_index": 24
   },
   "publications_analyzed": 69,
