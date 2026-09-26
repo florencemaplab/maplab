@@ -1,12 +1,12 @@
 {
   "slug": "elisa-castaldi",
   "name": "Elisa Castaldi",
-  "generated_at": "2026-09-25T08:51:00Z",
+  "generated_at": "2026-09-26T08:37:18Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "55660832000",
-    "citation_count": 928,
-    "cited_by_count": 928,
+    "citation_count": 930,
+    "cited_by_count": 930,
     "h_index": 16
   },
   "publications_analyzed": 43,
@@ -251,16 +251,16 @@
       "count": 11
     },
     {
+      "name": "Maria Concetta Morrone",
+      "count": 7
+    },
+    {
       "name": "Evelyn Eger",
-      "count": 8
+      "count": 6
     },
     {
       "name": "Guido Marco Cicchini",
-      "count": 7
-    },
-    {
-      "name": "Maria Concetta Morrone",
-      "count": 7
+      "count": 6
     },
     {
       "name": "Camilla Bonaudo",
@@ -323,10 +323,6 @@
       "count": 4
     },
     {
-      "name": "Marco Turi",
-      "count": 4
-    },
-    {
       "name": "Enrico Fainardi",
       "count": 3
     },
@@ -336,6 +332,10 @@
     },
     {
       "name": "Federico Capelli",
+      "count": 3
+    },
+    {
+      "name": "Marco Turi",
       "count": 3
     },
     {
@@ -376,10 +376,6 @@
     },
     {
       "name": "Andrea Amadori",
-      "count": 2
-    },
-    {
-      "name": "Sahawanatou Gassama",
       "count": 2
     },
     {
@@ -499,6 +495,10 @@
       "count": 1
     },
     {
+      "name": "Sahawanatou Gassama",
+      "count": 1
+    },
+    {
       "name": "Benedetto Falsini",
       "count": 1
     },
@@ -515,15 +515,7 @@
       "count": 1
     },
     {
-      "name": "Maria Dolores de Hevia",
-      "count": 1
-    },
-    {
-      "name": "Arlette Streri",
-      "count": 1
-    },
-    {
-      "name": "Véronique Izard",
+      "name": "de Hevia M.D.",
       "count": 1
     },
     {
