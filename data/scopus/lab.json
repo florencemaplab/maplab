@@ -1,14 +1,14 @@
 {
   "slug": "lab",
   "name": "MAPLab",
-  "generated_at": "2026-09-27T09:17:30Z",
+  "generated_at": "2026-09-28T09:49:19Z",
   "source": "Shared BibTeX generated from Scopus Search; keyword cloud generated from publication titles",
   "title_based_keywords": true,
   "abstracts_used": false,
   "keywords": [
     {
       "text": "numerosity",
-      "value": 54
+      "value": 55
     },
     {
       "text": "visual",
@@ -31,23 +31,23 @@
       "value": 18
     },
     {
-      "text": "motion",
+      "text": "children",
       "value": 17
     },
     {
-      "text": "children",
-      "value": 16
+      "text": "motion",
+      "value": 17
     },
     {
       "text": "imaging",
       "value": 16
     },
     {
-      "text": "cortical",
-      "value": 14
+      "text": "time",
+      "value": 15
     },
     {
-      "text": "time",
+      "text": "cortical",
       "value": 14
     },
     {
@@ -57,6 +57,10 @@
     {
       "text": "zebrafish",
       "value": 12
+    },
+    {
+      "text": "estimation",
+      "value": 11
     },
     {
       "text": "mice",
@@ -69,6 +73,10 @@
     {
       "text": "attention",
       "value": 11
+    },
+    {
+      "text": "space",
+      "value": 10
     },
     {
       "text": "plasticity",
@@ -87,12 +95,12 @@
       "value": 10
     },
     {
-      "text": "estimation",
+      "text": "numerosity perception",
       "value": 10
     },
     {
-      "text": "numerosity perception",
-      "value": 10
+      "text": "vision",
+      "value": 9
     },
     {
       "text": "stimulation",
@@ -123,15 +131,11 @@
       "value": 9
     },
     {
-      "text": "space",
-      "value": 9
-    },
-    {
       "text": "visual cortex",
       "value": 9
     },
     {
-      "text": "vision",
+      "text": "action",
       "value": 8
     },
     {
@@ -187,10 +191,6 @@
       "value": 7
     },
     {
-      "text": "action",
-      "value": 7
-    },
-    {
       "text": "attentional",
       "value": 7
     },
@@ -228,6 +228,10 @@
     },
     {
       "text": "sensitivity",
+      "value": 6
+    },
+    {
+      "text": "numerosity estimation",
       "value": 6
     },
     {
@@ -281,10 +285,6 @@
     {
       "text": "connectivity",
       "value": 5
-    },
-    {
-      "text": "saccadic",
-      "value": 5
     }
   ],
   "network": {
@@ -294,8 +294,8 @@
         "name": "Giovanni Anobile",
         "type": "lab",
         "category": "",
-        "documents": 68,
-        "total_link_strength": 240,
+        "documents": 69,
+        "total_link_strength": 246,
         "cluster": 0
       },
       {
@@ -479,6 +479,15 @@
         "cluster": 1
       },
       {
+        "id": "co:tinelli:f",
+        "name": "Francesca Tinelli",
+        "type": "external",
+        "category": "",
+        "documents": 16,
+        "total_link_strength": 87,
+        "cluster": 0
+      },
+      {
         "id": "co:morrone:m",
         "name": "Maria Concetta Morrone",
         "type": "external",
@@ -549,15 +558,6 @@
         "documents": 8,
         "total_link_strength": 83,
         "cluster": 2
-      },
-      {
-        "id": "co:tinelli:f",
-        "name": "Francesca Tinelli",
-        "type": "external",
-        "category": "",
-        "documents": 15,
-        "total_link_strength": 81,
-        "cluster": 0
       },
       {
         "id": "co:piazza:v",
@@ -2405,6 +2405,15 @@
         "cluster": 0
       },
       {
+        "id": "co:pfanner:c",
+        "name": "Chiara Pfanner",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 11,
+        "cluster": 0
+      },
+      {
         "id": "co:aagten murphy:d",
         "name": "D. Aagten-Murphy",
         "type": "external",
@@ -2596,6 +2605,33 @@
       {
         "id": "co:primi:c",
         "name": "Caterina Primi",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 10,
+        "cluster": 0
+      },
+      {
+        "id": "co:bieber:e",
+        "name": "Eleonora Bieber",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 10,
+        "cluster": 0
+      },
+      {
+        "id": "co:martelli:s",
+        "name": "Silvia Martelli",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 10,
+        "cluster": 0
+      },
+      {
+        "id": "co:ditano:s",
+        "name": "Sofia Ditano",
         "type": "external",
         "category": "",
         "documents": 2,
@@ -3674,6 +3710,15 @@
         "cluster": 0
       },
       {
+        "id": "co:ricci:f",
+        "name": "Federica Ricci",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 6,
+        "cluster": 0
+      },
+      {
         "id": "co:corsi:f",
         "name": "Francesca Corsi",
         "type": "external",
@@ -3879,15 +3924,6 @@
         "documents": 1,
         "total_link_strength": 5,
         "cluster": 1
-      },
-      {
-        "id": "co:pfanner:c",
-        "name": "Chiara Pfanner",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 5,
-        "cluster": 0
       },
       {
         "id": "co:marinelli:c",
@@ -4277,15 +4313,6 @@
         "cluster": 0
       },
       {
-        "id": "co:bieber:e",
-        "name": "Eleonora Bieber",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 4,
-        "cluster": 0
-      },
-      {
         "id": "co:pellicano:e",
         "name": "Elizabeth Pellicano",
         "type": "external",
@@ -4493,15 +4520,6 @@
         "cluster": 0
       },
       {
-        "id": "co:martelli:s",
-        "name": "Silvia Martelli",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 4,
-        "cluster": 0
-      },
-      {
         "id": "co:michetti:s",
         "name": "Silvia Michetti",
         "type": "external",
@@ -4513,15 +4531,6 @@
       {
         "id": "co:bassanelli:s",
         "name": "Simone Bassanelli",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 4,
-        "cluster": 0
-      },
-      {
-        "id": "co:ditano:s",
-        "name": "Sofia Ditano",
         "type": "external",
         "category": "",
         "documents": 1,
@@ -4860,15 +4869,6 @@
         "documents": 1,
         "total_link_strength": 2,
         "cluster": 0
-      },
-      {
-        "id": "co:lunardi:r",
-        "name": "Roy Lunardi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 2,
-        "cluster": 0
       }
     ],
     "edges": [
@@ -5119,6 +5119,12 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:tinelli:f",
+        "target": "giovanni-anobile",
+        "count": 9,
+        "type": "coauthorship"
+      },
+      {
         "source": "alessandro-benedetto",
         "target": "co:morrone:m",
         "count": 8,
@@ -5169,12 +5175,6 @@
       {
         "source": "co:sancataldo:g",
         "target": "giuseppe-devito",
-        "count": 8,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:tinelli:f",
-        "target": "giovanni-anobile",
         "count": 8,
         "type": "coauthorship"
       },
@@ -8035,6 +8035,30 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:bieber:e",
+        "target": "co:ditano:s",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:bieber:e",
+        "target": "co:martelli:s",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:bieber:e",
+        "target": "co:tinelli:f",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:bieber:e",
+        "target": "giovanni-anobile",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:binda:p",
         "target": "co:morrone:m",
         "count": 2,
@@ -8851,6 +8875,24 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:ditano:s",
+        "target": "co:martelli:s",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:ditano:s",
+        "target": "co:tinelli:f",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:ditano:s",
+        "target": "giovanni-anobile",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:don:s",
         "target": "co:fainardi:e",
         "count": 2,
@@ -9373,6 +9415,18 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:martelli:s",
+        "target": "co:tinelli:f",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:martelli:s",
+        "target": "giovanni-anobile",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:masi:g",
         "target": "co:tinelli:f",
         "count": 2,
@@ -9561,6 +9615,18 @@
       {
         "source": "co:petrizzo:i",
         "target": "serena-castellotti",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:pfanner:c",
+        "target": "co:tinelli:f",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:pfanner:c",
+        "target": "giovanni-anobile",
         "count": 2,
         "type": "coauthorship"
       },
@@ -12776,25 +12842,13 @@
       },
       {
         "source": "co:bieber:e",
-        "target": "co:ditano:s",
+        "target": "co:pfanner:c",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:bieber:e",
-        "target": "co:martelli:s",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bieber:e",
-        "target": "co:tinelli:f",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:bieber:e",
-        "target": "giovanni-anobile",
+        "target": "co:ricci:f",
         "count": 1,
         "type": "coauthorship"
       },
@@ -13551,12 +13605,6 @@
       {
         "source": "co:burr:d",
         "target": "co:lauro grotto:r",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:burr:d",
-        "target": "co:lunardi:r",
         "count": 1,
         "type": "coauthorship"
       },
@@ -18362,19 +18410,13 @@
       },
       {
         "source": "co:ditano:s",
-        "target": "co:martelli:s",
+        "target": "co:pfanner:c",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:ditano:s",
-        "target": "co:tinelli:f",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:ditano:s",
-        "target": "giovanni-anobile",
+        "target": "co:ricci:f",
         "count": 1,
         "type": "coauthorship"
       },
@@ -21553,12 +21595,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:lunardi:r",
-        "target": "roberto-arrighi",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:lunghi:c",
         "target": "co:morrone:m",
         "count": 1,
@@ -22250,13 +22286,13 @@
       },
       {
         "source": "co:martelli:s",
-        "target": "co:tinelli:f",
+        "target": "co:pfanner:c",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:martelli:s",
-        "target": "giovanni-anobile",
+        "target": "co:ricci:f",
         "count": 1,
         "type": "coauthorship"
       },
@@ -24014,13 +24050,7 @@
       },
       {
         "source": "co:pfanner:c",
-        "target": "co:tinelli:f",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:pfanner:c",
-        "target": "giovanni-anobile",
+        "target": "co:ricci:f",
         "count": 1,
         "type": "coauthorship"
       },
@@ -24692,6 +24722,18 @@
       },
       {
         "source": "co:ricci:d",
+        "target": "giovanni-anobile",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:ricci:f",
+        "target": "co:tinelli:f",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:ricci:f",
         "target": "giovanni-anobile",
         "count": 1,
         "type": "coauthorship"
@@ -25540,7 +25582,7 @@
     "stats": {
       "lab_members": 9,
       "external_collaborators": 500,
-      "edges": 3444
+      "edges": 3451
     }
   }
 }
