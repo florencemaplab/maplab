@@ -1,12 +1,12 @@
 {
   "slug": "raffaele-mazziotti",
   "name": "Raffaele Mazziotti",
-  "generated_at": "2026-10-07T10:17:29Z",
+  "generated_at": "2026-10-08T10:36:43Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57110486800",
-    "citation_count": 865,
-    "cited_by_count": 865,
+    "citation_count": 866,
+    "cited_by_count": 866,
     "h_index": 17
   },
   "publications_analyzed": 42,
@@ -240,7 +240,7 @@
     },
     {
       "name": "Leonardo Lupori",
-      "count": 21
+      "count": 20
     },
     {
       "name": "Giulia Sagona",
@@ -263,11 +263,11 @@
       "count": 7
     },
     {
-      "name": "Paola Tognini",
-      "count": 7
+      "name": "Giovanni Cioni",
+      "count": 6
     },
     {
-      "name": "Giovanni Cioni",
+      "name": "Paola Tognini",
       "count": 6
     },
     {
@@ -279,10 +279,6 @@
       "count": 5
     },
     {
-      "name": "Pierre Baldi",
-      "count": 5
-    },
-    {
       "name": "Roberta Battini",
       "count": 5
     },
@@ -291,7 +287,7 @@
       "count": 4
     },
     {
-      "name": "Siwei Chen",
+      "name": "Pierre Baldi",
       "count": 4
     },
     {
@@ -331,15 +327,11 @@
       "count": 3
     },
     {
-      "name": "Sara Cornuti",
-      "count": 3
-    },
-    {
-      "name": "Muntaha Samad",
-      "count": 3
-    },
-    {
       "name": "Francesco Cacciante",
+      "count": 3
+    },
+    {
+      "name": "Siwei Chen",
       "count": 3
     },
     {
@@ -359,10 +351,6 @@
       "count": 3
     },
     {
-      "name": "Matteo Caldarelli",
-      "count": 2
-    },
-    {
       "name": "Raffaele M. Mazziotti",
       "count": 2
     },
@@ -371,7 +359,7 @@
       "count": 2
     },
     {
-      "name": "Christophe Magnan",
+      "name": "Sara Cornuti",
       "count": 2
     },
     {
@@ -411,6 +399,10 @@
       "count": 2
     },
     {
+      "name": "Muntaha Samad",
+      "count": 2
+    },
+    {
       "name": "Erika Kelmer Sacramento",
       "count": 2
     },
@@ -445,6 +437,10 @@
     {
       "name": "Grazia Della Sala",
       "count": 2
+    },
+    {
+      "name": "Matteo Caldarelli",
+      "count": 1
     },
     {
       "name": "Stefano Zucca",
@@ -519,31 +515,7 @@
       "count": 1
     },
     {
-      "name": "Francesco Finamore",
-      "count": 1
-    },
-    {
-      "name": "Fabrizia Carli",
-      "count": 1
-    },
-    {
-      "name": "Simona Fenizia",
-      "count": 1
-    },
-    {
-      "name": "Francesca Damiani",
-      "count": 1
-    },
-    {
-      "name": "Francesco Raimondi",
-      "count": 1
-    },
-    {
-      "name": "Silvia Rocchiccioli",
-      "count": 1
-    },
-    {
-      "name": "Amalia Gastaldelli",
+      "name": "Cornuti S.",
       "count": 1
     },
     {
@@ -552,6 +524,34 @@
     },
     {
       "name": "Elsa Ghirardini",
+      "count": 1
+    },
+    {
+      "name": "Angel Marquez-Galera",
+      "count": 1
+    },
+    {
+      "name": "Francesco Calugi",
+      "count": 1
+    },
+    {
+      "name": "Carmen M. Navarron",
+      "count": 1
+    },
+    {
+      "name": "Federica Di Vetta",
+      "count": 1
+    },
+    {
+      "name": "Lorenzo Dadà",
+      "count": 1
+    },
+    {
+      "name": "Jose P. Lopez-Atalaya",
+      "count": 1
+    },
+    {
+      "name": "Antonia Gurgone",
       "count": 1
     }
   ]
