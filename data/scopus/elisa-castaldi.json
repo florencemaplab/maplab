@@ -1,15 +1,15 @@
 {
   "slug": "elisa-castaldi",
   "name": "Elisa Castaldi",
-  "generated_at": "2026-10-15T08:19:38Z",
+  "generated_at": "2026-10-16T08:12:36Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "55660832000",
-    "citation_count": 941,
-    "cited_by_count": 941,
+    "citation_count": 951,
+    "cited_by_count": 951,
     "h_index": 16
   },
-  "publications_analyzed": 43,
+  "publications_analyzed": 44,
   "abstracts_found": 0,
   "keywords": [
     {
@@ -25,15 +25,15 @@
       "value": 16
     },
     {
+      "text": "dyscalculia",
+      "value": 12
+    },
+    {
       "text": "numerosity perception",
       "value": 11
     },
     {
       "text": "brain",
-      "value": 10
-    },
-    {
-      "text": "dyscalculia",
       "value": 10
     },
     {
@@ -75,6 +75,10 @@
     {
       "text": "adaptation numerosity",
       "value": 7
+    },
+    {
+      "text": "geometric",
+      "value": 6
     },
     {
       "text": "tumour",
@@ -161,6 +165,10 @@
       "value": 5
     },
     {
+      "text": "individuals",
+      "value": 4
+    },
+    {
       "text": "plasticity",
       "value": 4
     },
@@ -217,26 +225,18 @@
       "value": 4
     },
     {
-      "text": "geometric",
-      "value": 4
-    },
-    {
       "text": "sequences",
       "value": 4
     },
     {
       "text": "formal",
       "value": 4
-    },
-    {
-      "text": "cortex",
-      "value": 4
     }
   ],
   "coauthors": [
     {
       "name": "Giovanni Anobile",
-      "count": 17
+      "count": 18
     },
     {
       "name": "Roberto Arrighi",
@@ -272,6 +272,10 @@
     },
     {
       "name": "Alessandro Della Puppa",
+      "count": 5
+    },
+    {
+      "name": "Marco Turi",
       "count": 5
     },
     {
@@ -320,10 +324,6 @@
     },
     {
       "name": "Francesca Tinelli",
-      "count": 4
-    },
-    {
-      "name": "Marco Turi",
       "count": 4
     },
     {
@@ -412,6 +412,18 @@
     },
     {
       "name": "Serena Tola",
+      "count": 1
+    },
+    {
+      "name": "Moreno Marazzi",
+      "count": 1
+    },
+    {
+      "name": "Stefano Federici",
+      "count": 1
+    },
+    {
+      "name": "Paola Angelelli",
       "count": 1
     },
     {
@@ -540,14 +552,6 @@
     },
     {
       "name": "S. Rizzo",
-      "count": 1
-    },
-    {
-      "name": "F. Frijia",
-      "count": 1
-    },
-    {
-      "name": "D. Montanaro",
       "count": 1
     }
   ]

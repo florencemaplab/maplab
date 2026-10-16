@@ -19,15 +19,15 @@
       "value": 29
     },
     {
+      "text": "developmental dyscalculia",
+      "value": 18
+    },
+    {
       "text": "motion perception",
       "value": 18
     },
     {
       "text": "pupil responses",
-      "value": 16
-    },
-    {
-      "text": "developmental dyscalculia",
       "value": 16
     },
     {
@@ -87,6 +87,10 @@
       "value": 3
     },
     {
+      "text": "developmental dyslexia",
+      "value": 2
+    },
+    {
       "text": "foveal vision",
       "value": 2
     },
@@ -130,8 +134,8 @@
         "name": "Giovanni Anobile",
         "type": "lab",
         "category": "faculty",
-        "documents": 70,
-        "total_link_strength": 248,
+        "documents": 71,
+        "total_link_strength": 253,
         "cluster": 0
       },
       {
@@ -157,8 +161,8 @@
         "name": "Elisa Castaldi",
         "type": "lab",
         "category": "faculty",
-        "documents": 43,
-        "total_link_strength": 226,
+        "documents": 44,
+        "total_link_strength": 231,
         "cluster": 3
       },
       {
@@ -846,6 +850,15 @@
         "cluster": 3
       },
       {
+        "id": "co:turi:m",
+        "name": "Marco Turi",
+        "type": "external",
+        "category": "",
+        "documents": 10,
+        "total_link_strength": 35,
+        "cluster": 0
+      },
+      {
         "id": "co:micera:s",
         "name": "Silvestro Micera",
         "type": "external",
@@ -880,15 +893,6 @@
         "documents": 4,
         "total_link_strength": 32,
         "cluster": 4
-      },
-      {
-        "id": "co:turi:m",
-        "name": "Marco Turi",
-        "type": "external",
-        "category": "",
-        "documents": 9,
-        "total_link_strength": 30,
-        "cluster": 0
       },
       {
         "id": "co:grasso:p",
@@ -2475,6 +2479,24 @@
         "cluster": 0
       },
       {
+        "id": "co:marazzi:m",
+        "name": "Moreno Marazzi",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 10,
+        "cluster": 0
+      },
+      {
+        "id": "co:angelelli:p",
+        "name": "Paola Angelelli",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 10,
+        "cluster": 0
+      },
+      {
         "id": "co:martelli:s",
         "name": "Silvia Martelli",
         "type": "external",
@@ -2486,6 +2508,15 @@
       {
         "id": "co:ditano:s",
         "name": "Sofia Ditano",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 10,
+        "cluster": 0
+      },
+      {
+        "id": "co:federici:s",
+        "name": "Stefano Federici",
         "type": "external",
         "category": "",
         "documents": 2,
@@ -3969,15 +4000,6 @@
         "cluster": 7
       },
       {
-        "id": "co:marazzi:m",
-        "name": "Moreno Marazzi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 5,
-        "cluster": 0
-      },
-      {
         "id": "co:orsini:n",
         "name": "Noemi Orsini",
         "type": "external",
@@ -3985,15 +4007,6 @@
         "documents": 1,
         "total_link_strength": 5,
         "cluster": 6
-      },
-      {
-        "id": "co:angelelli:p",
-        "name": "Paola Angelelli",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 5,
-        "cluster": 0
       },
       {
         "id": "co:criminisi:r",
@@ -4030,15 +4043,6 @@
         "documents": 1,
         "total_link_strength": 5,
         "cluster": 7
-      },
-      {
-        "id": "co:federici:s",
-        "name": "Stefano Federici",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 5,
-        "cluster": 0
       },
       {
         "id": "co:benedetti:v",
@@ -4945,7 +4949,7 @@
       {
         "source": "elisa-castaldi",
         "target": "giovanni-anobile",
-        "count": 17,
+        "count": 18,
         "type": "coauthorship"
       },
       {
@@ -5291,6 +5295,12 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:turi:m",
+        "target": "giovanni-anobile",
+        "count": 7,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:amato:g",
         "target": "co:pizzorusso:t",
         "count": 6,
@@ -5371,12 +5381,6 @@
       {
         "source": "co:silvestri:l",
         "target": "co:tiso:n",
-        "count": 6,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:turi:m",
-        "target": "giovanni-anobile",
         "count": 6,
         "type": "coauthorship"
       },
@@ -5647,6 +5651,12 @@
       {
         "source": "co:sorelli:m",
         "target": "giuseppe-devito",
+        "count": 5,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:turi:m",
+        "target": "elisa-castaldi",
         "count": 5,
         "type": "coauthorship"
       },
@@ -6372,12 +6382,6 @@
       },
       {
         "source": "co:troiano:s",
-        "target": "elisa-castaldi",
-        "count": 4,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:turi:m",
         "target": "elisa-castaldi",
         "count": 4,
         "type": "coauthorship"
@@ -7627,6 +7631,18 @@
       {
         "source": "co:amato:g",
         "target": "co:verde:l",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:angelelli:p",
+        "target": "co:turi:m",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:angelelli:p",
+        "target": "giovanni-anobile",
         "count": 2,
         "type": "coauthorship"
       },
@@ -9041,6 +9057,18 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:federici:s",
+        "target": "co:marazzi:m",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:federici:s",
+        "target": "giovanni-anobile",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:fedi:f",
         "target": "co:montcel:b",
         "count": 2,
@@ -9457,6 +9485,12 @@
       {
         "source": "co:maiorelli:a",
         "target": "co:van reeth:e",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:marazzi:m",
+        "target": "giovanni-anobile",
         "count": 2,
         "type": "coauthorship"
       },
@@ -10764,7 +10798,19 @@
       },
       {
         "source": "co:angelelli:p",
+        "target": "co:federici:s",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:angelelli:p",
         "target": "co:iaia:m",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:angelelli:p",
+        "target": "co:marazzi:m",
         "count": 1,
         "type": "coauthorship"
       },
@@ -10776,13 +10822,7 @@
       },
       {
         "source": "co:angelelli:p",
-        "target": "co:turi:m",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:angelelli:p",
-        "target": "giovanni-anobile",
+        "target": "elisa-castaldi",
         "count": 1,
         "type": "coauthorship"
       },
@@ -19032,19 +19072,19 @@
       },
       {
         "source": "co:federici:s",
-        "target": "co:marazzi:m",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:federici:s",
         "target": "co:napoletti:a",
         "count": 1,
         "type": "coauthorship"
       },
       {
         "source": "co:federici:s",
-        "target": "giovanni-anobile",
+        "target": "co:turi:m",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:federici:s",
+        "target": "elisa-castaldi",
         "count": 1,
         "type": "coauthorship"
       },
@@ -22188,7 +22228,13 @@
       },
       {
         "source": "co:marazzi:m",
-        "target": "giovanni-anobile",
+        "target": "co:turi:m",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:marazzi:m",
+        "target": "elisa-castaldi",
         "count": 1,
         "type": "coauthorship"
       },
@@ -26024,7 +26070,7 @@
     "stats": {
       "lab_members": 9,
       "external_collaborators": 520,
-      "edges": 3522
+      "edges": 3529
     }
   }
 }

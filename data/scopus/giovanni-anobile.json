@@ -1,15 +1,15 @@
 {
   "slug": "giovanni-anobile",
   "name": "Giovanni Anobile",
-  "generated_at": "2026-10-15T08:19:38Z",
+  "generated_at": "2026-10-16T08:12:36Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "36466056200",
-    "citation_count": 2421,
-    "cited_by_count": 2421,
+    "citation_count": 2427,
+    "cited_by_count": 2427,
     "h_index": 24
   },
-  "publications_analyzed": 70,
+  "publications_analyzed": 71,
   "abstracts_found": 0,
   "keywords": [
     {
@@ -89,6 +89,14 @@
       "value": 9
     },
     {
+      "text": "development",
+      "value": 8
+    },
+    {
+      "text": "dyscalculia",
+      "value": 8
+    },
+    {
       "text": "action",
       "value": 8
     },
@@ -149,11 +157,11 @@
       "value": 6
     },
     {
-      "text": "sensorimotor",
+      "text": "geometric",
       "value": 6
     },
     {
-      "text": "development",
+      "text": "sensorimotor",
       "value": 6
     },
     {
@@ -170,10 +178,6 @@
     },
     {
       "text": "size",
-      "value": 6
-    },
-    {
-      "text": "dyscalculia",
       "value": 6
     },
     {
@@ -227,10 +231,6 @@
     {
       "text": "numerosity typical",
       "value": 5
-    },
-    {
-      "text": "typical dyscalculic",
-      "value": 5
     }
   ],
   "coauthors": [
@@ -248,7 +248,7 @@
     },
     {
       "name": "Elisa Castaldi",
-      "count": 17
+      "count": 18
     },
     {
       "name": "Paula Andrea Maldonado Moscoso",
@@ -264,7 +264,7 @@
     },
     {
       "name": "Marco Turi",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Paolo Antonino Grasso",
@@ -308,6 +308,18 @@
     },
     {
       "name": "Alessandro Benedetto",
+      "count": 2
+    },
+    {
+      "name": "Moreno Marazzi",
+      "count": 2
+    },
+    {
+      "name": "Stefano Federici",
+      "count": 2
+    },
+    {
+      "name": "Paola Angelelli",
       "count": 2
     },
     {
@@ -411,14 +423,6 @@
       "count": 1
     },
     {
-      "name": "Moreno Marazzi",
-      "count": 1
-    },
-    {
-      "name": "Stefano Federici",
-      "count": 1
-    },
-    {
       "name": "Agnese Napoletti",
       "count": 1
     },
@@ -516,10 +520,6 @@
     },
     {
       "name": "Chiara V. Marinelli",
-      "count": 1
-    },
-    {
-      "name": "Paola Angelelli",
       "count": 1
     },
     {
