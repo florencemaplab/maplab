@@ -1,20 +1,20 @@
 {
   "slug": "elisa-castaldi",
   "name": "Elisa Castaldi",
-  "generated_at": "2026-10-16T08:12:36Z",
+  "generated_at": "2026-10-17T07:50:07Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "55660832000",
-    "citation_count": 951,
-    "cited_by_count": 951,
+    "citation_count": 954,
+    "cited_by_count": 954,
     "h_index": 16
   },
-  "publications_analyzed": 44,
+  "publications_analyzed": 45,
   "abstracts_found": 0,
   "keywords": [
     {
       "text": "numerosity",
-      "value": 42
+      "value": 44
     },
     {
       "text": "visual",
@@ -39,6 +39,10 @@
     {
       "text": "developmental dyscalculia",
       "value": 9
+    },
+    {
+      "text": "adaptation",
+      "value": 8
     },
     {
       "text": "magnetic",
@@ -75,6 +79,10 @@
     {
       "text": "adaptation numerosity",
       "value": 7
+    },
+    {
+      "text": "size",
+      "value": 6
     },
     {
       "text": "geometric",
@@ -114,10 +122,6 @@
     },
     {
       "text": "neural",
-      "value": 6
-    },
-    {
-      "text": "adaptation",
       "value": 6
     },
     {
@@ -189,10 +193,6 @@
       "value": 4
     },
     {
-      "text": "size",
-      "value": 4
-    },
-    {
       "text": "arithmetic",
       "value": 4
     },
@@ -240,7 +240,7 @@
     },
     {
       "name": "Roberto Arrighi",
-      "count": 17
+      "count": 18
     },
     {
       "name": "David Charles Burr",
@@ -359,6 +359,10 @@
       "count": 2
     },
     {
+      "name": "Serena Castellotti",
+      "count": 2
+    },
+    {
       "name": "Paolo Antonino Grasso",
       "count": 2
     },
@@ -427,11 +431,11 @@
       "count": 1
     },
     {
-      "name": "Irene Burgio",
+      "name": "Letizia Ingenito",
       "count": 1
     },
     {
-      "name": "Serena Castellotti",
+      "name": "Irene Burgio",
       "count": 1
     },
     {
@@ -548,10 +552,6 @@
     },
     {
       "name": "L. Biagi",
-      "count": 1
-    },
-    {
-      "name": "S. Rizzo",
       "count": 1
     }
   ]

@@ -1,7 +1,7 @@
 {
   "slug": "serena-castellotti",
   "name": "Serena Castellotti",
-  "generated_at": "2026-10-16T08:12:36Z",
+  "generated_at": "2026-10-17T07:50:07Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57205731708",
@@ -9,7 +9,7 @@
     "cited_by_count": 321,
     "h_index": 8
   },
-  "publications_analyzed": 19,
+  "publications_analyzed": 20,
   "abstracts_found": 0,
   "keywords": [
     {
@@ -47,6 +47,10 @@
     {
       "text": "implied motion",
       "value": 5
+    },
+    {
+      "text": "size",
+      "value": 4
     },
     {
       "text": "reduction",
@@ -107,6 +111,18 @@
     {
       "text": "pupillary",
       "value": 4
+    },
+    {
+      "text": "numerosity adaptation",
+      "value": 3
+    },
+    {
+      "text": "adaptation size",
+      "value": 3
+    },
+    {
+      "text": "size transformations",
+      "value": 3
     },
     {
       "text": "dimensionality reduction",
@@ -215,22 +231,6 @@
     {
       "text": "cognitive functions",
       "value": 3
-    },
-    {
-      "text": "functions physiologically",
-      "value": 3
-    },
-    {
-      "text": "physiologically informed",
-      "value": 3
-    },
-    {
-      "text": "informed screening",
-      "value": 3
-    },
-    {
-      "text": "screening mental",
-      "value": 3
     }
   ],
   "coauthors": [
@@ -243,15 +243,19 @@
       "count": 5
     },
     {
+      "name": "Roberto Arrighi",
+      "count": 3
+    },
+    {
       "name": "Anna Montagnini",
       "count": 3
     },
     {
-      "name": "Elvio Blini",
+      "name": "Elisa Castaldi",
       "count": 2
     },
     {
-      "name": "Roberto Arrighi",
+      "name": "Elvio Blini",
       "count": 2
     },
     {
@@ -263,7 +267,7 @@
       "count": 2
     },
     {
-      "name": "Elisa Castaldi",
+      "name": "Letizia Ingenito",
       "count": 1
     },
     {

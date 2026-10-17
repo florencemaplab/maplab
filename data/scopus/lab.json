@@ -1,14 +1,14 @@
 {
   "slug": "lab",
   "name": "MAPLab",
-  "generated_at": "2026-10-16T08:12:36Z",
+  "generated_at": "2026-10-17T07:50:07Z",
   "source": "Shared BibTeX generated from Scopus Search; keyword cloud generated from publication titles",
   "title_based_keywords": true,
   "abstracts_used": false,
   "keywords": [
     {
       "text": "numerosity",
-      "value": 55
+      "value": 56
     },
     {
       "text": "visual",
@@ -20,7 +20,7 @@
     },
     {
       "text": "adaptation",
-      "value": 20
+      "value": 21
     },
     {
       "text": "brain",
@@ -143,6 +143,10 @@
       "value": 8
     },
     {
+      "text": "size",
+      "value": 8
+    },
+    {
       "text": "light-sheet",
       "value": 8
     },
@@ -167,11 +171,11 @@
       "value": 8
     },
     {
-      "text": "perceptual",
-      "value": 7
+      "text": "numerosity adaptation",
+      "value": 8
     },
     {
-      "text": "size",
+      "text": "perceptual",
       "value": 7
     },
     {
@@ -192,10 +196,6 @@
     },
     {
       "text": "attentional",
-      "value": 7
-    },
-    {
-      "text": "numerosity adaptation",
       "value": 7
     },
     {
@@ -303,8 +303,8 @@
         "name": "Roberto Arrighi",
         "type": "lab",
         "category": "",
-        "documents": 76,
-        "total_link_strength": 264,
+        "documents": 77,
+        "total_link_strength": 267,
         "cluster": 0
       },
       {
@@ -321,8 +321,8 @@
         "name": "Elisa Castaldi",
         "type": "lab",
         "category": "",
-        "documents": 44,
-        "total_link_strength": 231,
+        "documents": 45,
+        "total_link_strength": 234,
         "cluster": 0
       },
       {
@@ -357,8 +357,8 @@
         "name": "Serena Castellotti",
         "type": "lab",
         "category": "",
-        "documents": 19,
-        "total_link_strength": 58,
+        "documents": 20,
+        "total_link_strength": 61,
         "cluster": 3
       },
       {
@@ -2135,6 +2135,15 @@
         "cluster": 0
       },
       {
+        "id": "co:ingenito:l",
+        "name": "Letizia Ingenito",
+        "type": "external",
+        "category": "",
+        "documents": 2,
+        "total_link_strength": 12,
+        "cluster": 1
+      },
+      {
         "id": "co:tancredi:r",
         "name": "Raffaella Tancredi",
         "type": "external",
@@ -2961,15 +2970,6 @@
         "documents": 1,
         "total_link_strength": 9,
         "cluster": 2
-      },
-      {
-        "id": "co:ingenito:l",
-        "name": "Letizia Ingenito",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 9,
-        "cluster": 1
       },
       {
         "id": "co:chicchi:l",
@@ -4935,7 +4935,7 @@
       {
         "source": "elisa-castaldi",
         "target": "roberto-arrighi",
-        "count": 17,
+        "count": 18,
         "type": "coauthorship"
       },
       {
@@ -7317,6 +7317,12 @@
       {
         "source": "co:totaro:v",
         "target": "co:viglione:a",
+        "count": 3,
+        "type": "coauthorship"
+      },
+      {
+        "source": "roberto-arrighi",
+        "target": "serena-castellotti",
         "count": 3,
         "type": "coauthorship"
       },
@@ -9967,7 +9973,7 @@
         "type": "coauthorship"
       },
       {
-        "source": "roberto-arrighi",
+        "source": "elisa-castaldi",
         "target": "serena-castellotti",
         "count": 2,
         "type": "coauthorship"
@@ -21019,6 +21025,24 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:ingenito:l",
+        "target": "elisa-castaldi",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:ingenito:l",
+        "target": "roberto-arrighi",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:ingenito:l",
+        "target": "serena-castellotti",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:iturrioz rodriguez:n",
         "target": "co:marino:a",
         "count": 1,
@@ -25609,12 +25633,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "elisa-castaldi",
-        "target": "serena-castellotti",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
         "source": "giovanni-anobile",
         "target": "irene-burgio",
         "count": 1,
@@ -25624,7 +25642,7 @@
     "stats": {
       "lab_members": 9,
       "external_collaborators": 500,
-      "edges": 3458
+      "edges": 3461
     }
   }
 }

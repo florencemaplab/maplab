@@ -1,24 +1,24 @@
 {
   "slug": "roberto-arrighi",
   "name": "Roberto Arrighi",
-  "generated_at": "2026-10-16T08:12:36Z",
+  "generated_at": "2026-10-17T07:50:07Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "8870558800",
-    "citation_count": 1852,
-    "cited_by_count": 1852,
+    "citation_count": 1861,
+    "cited_by_count": 1861,
     "h_index": 24
   },
-  "publications_analyzed": 77,
+  "publications_analyzed": 78,
   "abstracts_found": 0,
   "keywords": [
     {
       "text": "numerosity",
-      "value": 60
+      "value": 62
     },
     {
       "text": "adaptation",
-      "value": 30
+      "value": 32
     },
     {
       "text": "perception",
@@ -31,6 +31,14 @@
     {
       "text": "number",
       "value": 14
+    },
+    {
+      "text": "numerosity adaptation",
+      "value": 13
+    },
+    {
+      "text": "size",
+      "value": 12
     },
     {
       "text": "time",
@@ -49,19 +57,11 @@
       "value": 12
     },
     {
-      "text": "numerosity adaptation",
-      "value": 11
-    },
-    {
       "text": "numerosity perception",
       "value": 11
     },
     {
       "text": "role",
-      "value": 10
-    },
-    {
-      "text": "size",
       "value": 10
     },
     {
@@ -244,7 +244,7 @@
     },
     {
       "name": "Elisa Castaldi",
-      "count": 17
+      "count": 18
     },
     {
       "name": "Irene Petrizzo",
@@ -295,6 +295,10 @@
       "count": 4
     },
     {
+      "name": "Serena Castellotti",
+      "count": 3
+    },
+    {
       "name": "Michele Fornaciai",
       "count": 3
     },
@@ -316,10 +320,6 @@
     },
     {
       "name": "Tommaso Bartolini",
-      "count": 2
-    },
-    {
-      "name": "Serena Castellotti",
       "count": 2
     },
     {
@@ -364,6 +364,10 @@
     },
     {
       "name": "Egle Casavecchia",
+      "count": 1
+    },
+    {
+      "name": "Letizia Ingenito",
       "count": 1
     },
     {
@@ -548,10 +552,6 @@
     },
     {
       "name": "Giovanni Giacomelli",
-      "count": 1
-    },
-    {
-      "name": "Roberto Volpe",
       "count": 1
     }
   ]
