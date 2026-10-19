@@ -1,20 +1,20 @@
 {
   "slug": "elisa-castaldi",
   "name": "Elisa Castaldi",
-  "generated_at": "2026-10-18T08:04:01Z",
+  "generated_at": "2026-10-19T08:54:20Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "55660832000",
-    "citation_count": 954,
-    "cited_by_count": 954,
+    "citation_count": 961,
+    "cited_by_count": 961,
     "h_index": 16
   },
-  "publications_analyzed": 45,
+  "publications_analyzed": 46,
   "abstracts_found": 0,
   "keywords": [
     {
       "text": "numerosity",
-      "value": 44
+      "value": 46
     },
     {
       "text": "visual",
@@ -22,15 +22,15 @@
     },
     {
       "text": "perception",
-      "value": 16
+      "value": 18
+    },
+    {
+      "text": "numerosity perception",
+      "value": 13
     },
     {
       "text": "dyscalculia",
       "value": 12
-    },
-    {
-      "text": "numerosity perception",
-      "value": 11
     },
     {
       "text": "brain",
@@ -251,12 +251,12 @@
       "count": 11
     },
     {
-      "name": "Evelyn Eger",
+      "name": "Guido Marco Cicchini",
       "count": 8
     },
     {
-      "name": "Guido Marco Cicchini",
-      "count": 7
+      "name": "Evelyn Eger",
+      "count": 8
     },
     {
       "name": "Maria Concetta Morrone",
@@ -359,6 +359,10 @@
       "count": 2
     },
     {
+      "name": "Irene Burgio",
+      "count": 2
+    },
+    {
       "name": "Serena Castellotti",
       "count": 2
     },
@@ -432,10 +436,6 @@
     },
     {
       "name": "Letizia Ingenito",
-      "count": 1
-    },
-    {
-      "name": "Irene Burgio",
       "count": 1
     },
     {

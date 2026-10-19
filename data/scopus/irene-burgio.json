@@ -1,7 +1,7 @@
 {
   "slug": "irene-burgio",
   "name": "Irene Burgio",
-  "generated_at": "2026-10-18T08:04:01Z",
+  "generated_at": "2026-10-19T08:54:20Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "60138900600",
@@ -9,9 +9,37 @@
     "cited_by_count": 3,
     "h_index": 1
   },
-  "publications_analyzed": 1,
+  "publications_analyzed": 2,
   "abstracts_found": 0,
   "keywords": [
+    {
+      "text": "different timescales",
+      "value": 3
+    },
+    {
+      "text": "timescales generalized",
+      "value": 3
+    },
+    {
+      "text": "generalized attraction",
+      "value": 3
+    },
+    {
+      "text": "attraction category-specific",
+      "value": 3
+    },
+    {
+      "text": "category-specific repulsion",
+      "value": 3
+    },
+    {
+      "text": "repulsion numerosity",
+      "value": 3
+    },
+    {
+      "text": "numerosity perception",
+      "value": 3
+    },
     {
       "text": "stronger reliance",
       "value": 3
@@ -43,6 +71,38 @@
     {
       "text": "math anxiety",
       "value": 3
+    },
+    {
+      "text": "different",
+      "value": 2
+    },
+    {
+      "text": "timescales",
+      "value": 2
+    },
+    {
+      "text": "generalized",
+      "value": 2
+    },
+    {
+      "text": "attraction",
+      "value": 2
+    },
+    {
+      "text": "category-specific",
+      "value": 2
+    },
+    {
+      "text": "repulsion",
+      "value": 2
+    },
+    {
+      "text": "numerosity",
+      "value": 2
+    },
+    {
+      "text": "perception",
+      "value": 2
     },
     {
       "text": "stronger",
@@ -83,15 +143,19 @@
   ],
   "coauthors": [
     {
+      "name": "Elisa Castaldi",
+      "count": 2
+    },
+    {
+      "name": "Guido Marco Cicchini",
+      "count": 1
+    },
+    {
       "name": "Paula A. Maldonado Moscoso",
       "count": 1
     },
     {
       "name": "Giovanni Anobile",
-      "count": 1
-    },
-    {
-      "name": "Elisa Castaldi",
       "count": 1
     }
   ]

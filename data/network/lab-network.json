@@ -8,7 +8,7 @@
   "keywords": [
     {
       "text": "numerosity perception",
-      "value": 109
+      "value": 111
     },
     {
       "text": "adaptation",
@@ -144,7 +144,7 @@
         "type": "lab",
         "category": "faculty",
         "documents": 78,
-        "total_link_strength": 268,
+        "total_link_strength": 265,
         "cluster": 1
       },
       {
@@ -161,8 +161,8 @@
         "name": "Elisa Castaldi",
         "type": "lab",
         "category": "faculty",
-        "documents": 45,
-        "total_link_strength": 234,
+        "documents": 46,
+        "total_link_strength": 236,
         "cluster": 3
       },
       {
@@ -206,8 +206,8 @@
         "name": "Irene Burgio",
         "type": "lab",
         "category": "phd",
-        "documents": 1,
-        "total_link_strength": 3,
+        "documents": 2,
+        "total_link_strength": 5,
         "cluster": 8
       },
       {
@@ -287,8 +287,8 @@
         "name": "Guido Marco Cicchini",
         "type": "external",
         "category": "",
-        "documents": 35,
-        "total_link_strength": 120,
+        "documents": 36,
+        "total_link_strength": 122,
         "cluster": 0
       },
       {
@@ -1012,15 +1012,6 @@
         "cluster": 6
       },
       {
-        "id": "co:farini:a",
-        "name": "Alessandro Farini",
-        "type": "external",
-        "category": "",
-        "documents": 6,
-        "total_link_strength": 24,
-        "cluster": 1
-      },
-      {
         "id": "co:caponi:c",
         "name": "Camilla Caponi",
         "type": "external",
@@ -1109,6 +1100,15 @@
         "documents": 7,
         "total_link_strength": 21,
         "cluster": 3
+      },
+      {
+        "id": "co:farini:a",
+        "name": "Alessandro Farini",
+        "type": "external",
+        "category": "",
+        "documents": 5,
+        "total_link_strength": 21,
+        "cluster": 1
       },
       {
         "id": "co:rocca:a",
@@ -2992,15 +2992,6 @@
         "cluster": 4
       },
       {
-        "id": "co:gheri:c",
-        "name": "Carolina Gheri",
-        "type": "external",
-        "category": "",
-        "documents": 2,
-        "total_link_strength": 8,
-        "cluster": 1
-      },
-      {
         "id": "co:meocci:m",
         "name": "Monica Meocci",
         "type": "external",
@@ -3829,6 +3820,15 @@
         "cluster": 6
       },
       {
+        "id": "co:gheri:c",
+        "name": "C. Gheri",
+        "type": "external",
+        "category": "",
+        "documents": 1,
+        "total_link_strength": 5,
+        "cluster": 1
+      },
+      {
         "id": "co:steinwurzel:c",
         "name": "Cecilia Steinwurzel",
         "type": "external",
@@ -4576,15 +4576,6 @@
         "cluster": 2
       },
       {
-        "id": "co:arecchi:f",
-        "name": "Fortunato Tito Arecchi",
-        "type": "external",
-        "category": "",
-        "documents": 1,
-        "total_link_strength": 3,
-        "cluster": 1
-      },
-      {
         "id": "co:coniglio:f",
         "name": "Francesca Coniglio",
         "type": "external",
@@ -5151,6 +5142,12 @@
         "type": "coauthorship"
       },
       {
+        "source": "co:cicchini:g",
+        "target": "elisa-castaldi",
+        "count": 8,
+        "type": "coauthorship"
+      },
+      {
         "source": "co:eger:e",
         "target": "elisa-castaldi",
         "count": 8,
@@ -5253,12 +5250,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:cicchini:g",
-        "target": "elisa-castaldi",
-        "count": 7,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:ciofani:g",
         "target": "giuseppe-devito",
         "count": 7,
@@ -5333,12 +5324,6 @@
       {
         "source": "co:cioni:g",
         "target": "raffaele-mazziotti",
-        "count": 6,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:farini:a",
-        "target": "roberto-arrighi",
         "count": 6,
         "type": "coauthorship"
       },
@@ -5513,6 +5498,12 @@
       {
         "source": "co:eger:e",
         "target": "co:piazza:m",
+        "count": 5,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:farini:a",
+        "target": "roberto-arrighi",
         "count": 5,
         "type": "coauthorship"
       },
@@ -9039,12 +9030,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "co:farini:a",
-        "target": "co:gheri:c",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
         "source": "co:farrokhtakin:e",
         "target": "co:mattoli:v",
         "count": 2,
@@ -9209,12 +9194,6 @@
       {
         "source": "co:gennaro:c",
         "target": "co:totaro:v",
-        "count": 2,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:gheri:c",
-        "target": "roberto-arrighi",
         "count": 2,
         "type": "coauthorship"
       },
@@ -10073,6 +10052,12 @@
       {
         "source": "co:vignaud:a",
         "target": "elisa-castaldi",
+        "count": 2,
+        "type": "coauthorship"
+      },
+      {
+        "source": "elisa-castaldi",
+        "target": "irene-burgio",
         "count": 2,
         "type": "coauthorship"
       },
@@ -10949,24 +10934,6 @@
       {
         "source": "co:antonelli:c",
         "target": "raffaele-mazziotti",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:arecchi:f",
-        "target": "co:farini:a",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:arecchi:f",
-        "target": "co:gheri:c",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
-        "source": "co:arecchi:f",
-        "target": "roberto-arrighi",
         "count": 1,
         "type": "coauthorship"
       },
@@ -16660,6 +16627,12 @@
       },
       {
         "source": "co:cicchini:g",
+        "target": "irene-burgio",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:cicchini:g",
         "target": "raffaele-mazziotti",
         "count": 1,
         "type": "coauthorship"
@@ -19000,6 +18973,12 @@
       },
       {
         "source": "co:farini:a",
+        "target": "co:gheri:c",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:farini:a",
         "target": "co:giacomelli:g",
         "count": 1,
         "type": "coauthorship"
@@ -19973,6 +19952,12 @@
       {
         "source": "co:gheri:c",
         "target": "co:sytchkova:a",
+        "count": 1,
+        "type": "coauthorship"
+      },
+      {
+        "source": "co:gheri:c",
+        "target": "roberto-arrighi",
         "count": 1,
         "type": "coauthorship"
       },
@@ -26061,12 +26046,6 @@
         "type": "coauthorship"
       },
       {
-        "source": "elisa-castaldi",
-        "target": "irene-burgio",
-        "count": 1,
-        "type": "coauthorship"
-      },
-      {
         "source": "giovanni-anobile",
         "target": "irene-burgio",
         "count": 1,
@@ -26087,8 +26066,8 @@
     ],
     "stats": {
       "lab_members": 9,
-      "external_collaborators": 520,
-      "edges": 3532
+      "external_collaborators": 519,
+      "edges": 3530
     }
   }
 }
