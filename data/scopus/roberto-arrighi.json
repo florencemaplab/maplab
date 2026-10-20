@@ -1,7 +1,7 @@
 {
   "slug": "roberto-arrighi",
   "name": "Roberto Arrighi",
-  "generated_at": "2026-10-19T08:54:20Z",
+  "generated_at": "2026-10-20T08:34:25Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "8870558800",
@@ -268,7 +268,7 @@
     },
     {
       "name": "Alessandro Farini",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Camilla Caponi",
@@ -352,6 +352,10 @@
     },
     {
       "name": "Giovanni Cioni",
+      "count": 2
+    },
+    {
+      "name": "Carolina Gheri",
       "count": 2
     },
     {
@@ -548,10 +552,6 @@
     },
     {
       "name": "Giovanni Giacomelli",
-      "count": 1
-    },
-    {
-      "name": "Roberto Volpe",
       "count": 1
     }
   ]
