@@ -1,12 +1,12 @@
 {
   "slug": "raffaele-mazziotti",
   "name": "Raffaele Mazziotti",
-  "generated_at": "2026-10-22T08:38:30Z",
+  "generated_at": "2026-10-23T08:34:15Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57110486800",
-    "citation_count": 874,
-    "cited_by_count": 874,
+    "citation_count": 875,
+    "cited_by_count": 875,
     "h_index": 17
   },
   "publications_analyzed": 42,
