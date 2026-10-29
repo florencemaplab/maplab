@@ -1,7 +1,7 @@
 {
   "slug": "serena-castellotti",
   "name": "Serena Castellotti",
-  "generated_at": "2026-10-28T09:42:03Z",
+  "generated_at": "2026-10-29T09:59:31Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57205731708",
@@ -243,10 +243,6 @@
       "count": 5
     },
     {
-      "name": "Roberto Arrighi",
-      "count": 3
-    },
-    {
       "name": "Anna Montagnini",
       "count": 3
     },
@@ -255,11 +251,7 @@
       "count": 2
     },
     {
-      "name": "Elvio Blini",
-      "count": 2
-    },
-    {
-      "name": "Irene Petrizzo",
+      "name": "Roberto Arrighi",
       "count": 2
     },
     {
@@ -268,6 +260,10 @@
     },
     {
       "name": "Letizia Ingenito",
+      "count": 1
+    },
+    {
+      "name": "Elvio Blini",
       "count": 1
     },
     {
@@ -360,6 +356,10 @@
     },
     {
       "name": "Antti Revonsuo",
+      "count": 1
+    },
+    {
+      "name": "Irene Petrizzo",
       "count": 1
     },
     {
