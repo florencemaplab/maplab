@@ -1,12 +1,12 @@
 {
   "slug": "michela-delviva",
   "name": "Maria Michela Del Viva",
-  "generated_at": "2026-11-01T10:29:03Z",
+  "generated_at": "2026-11-02T11:09:55Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "8750278400",
-    "citation_count": 939,
-    "cited_by_count": 939,
+    "citation_count": 941,
+    "cited_by_count": 941,
     "h_index": 14
   },
   "publications_analyzed": 34,
