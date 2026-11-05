@@ -1,12 +1,12 @@
 {
   "slug": "roberto-arrighi",
   "name": "Roberto Arrighi",
-  "generated_at": "2026-11-04T10:57:22Z",
+  "generated_at": "2026-11-05T10:57:43Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "8870558800",
-    "citation_count": 1878,
-    "cited_by_count": 1878,
+    "citation_count": 1879,
+    "cited_by_count": 1879,
     "h_index": 25
   },
   "publications_analyzed": 78,
@@ -244,7 +244,7 @@
     },
     {
       "name": "Elisa Castaldi",
-      "count": 18
+      "count": 17
     },
     {
       "name": "Irene Petrizzo",
@@ -260,7 +260,7 @@
     },
     {
       "name": "Paolo Antonino Grasso",
-      "count": 9
+      "count": 8
     },
     {
       "name": "Irene Togoli",
@@ -269,10 +269,6 @@
     {
       "name": "Alessandro Farini",
       "count": 6
-    },
-    {
-      "name": "Camilla Caponi",
-      "count": 5
     },
     {
       "name": "Elvio Blini",
@@ -284,6 +280,10 @@
     },
     {
       "name": "Eleonora Chelli",
+      "count": 4
+    },
+    {
+      "name": "Camilla Caponi",
       "count": 4
     },
     {
@@ -368,6 +368,10 @@
     },
     {
       "name": "Letizia Ingenito",
+      "count": 1
+    },
+    {
+      "name": "Caponi C.",
       "count": 1
     },
     {
@@ -548,10 +552,6 @@
     },
     {
       "name": "Roy Lunardi",
-      "count": 1
-    },
-    {
-      "name": "Giovanni Giacomelli",
       "count": 1
     }
   ]
