@@ -1,7 +1,7 @@
 {
   "slug": "giovanni-anobile",
   "name": "Giovanni Anobile",
-  "generated_at": "2026-11-05T10:57:43Z",
+  "generated_at": "2026-11-06T10:55:10Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "36466056200",
@@ -235,19 +235,19 @@
   ],
   "coauthors": [
     {
+      "name": "David Charles Burr",
+      "count": 38
+    },
+    {
       "name": "Roberto Arrighi",
       "count": 37
     },
     {
-      "name": "David Charles Burr",
-      "count": 36
+      "name": "Guido Marco Cicchini",
+      "count": 21
     },
     {
       "name": "Elisa Castaldi",
-      "count": 18
-    },
-    {
-      "name": "Guido Marco Cicchini",
       "count": 18
     },
     {
@@ -255,12 +255,12 @@
       "count": 11
     },
     {
-      "name": "Irene Petrizzo",
+      "name": "Francesca Tinelli",
       "count": 9
     },
     {
-      "name": "Francesca Tinelli",
-      "count": 8
+      "name": "Irene Petrizzo",
+      "count": 9
     },
     {
       "name": "Marco Turi",
@@ -281,6 +281,10 @@
     {
       "name": "Mariaelisa Bartoli",
       "count": 4
+    },
+    {
+      "name": "Maria Concetta Morrone",
+      "count": 3
     },
     {
       "name": "Camilla Caponi",
@@ -335,11 +339,11 @@
       "count": 2
     },
     {
-      "name": "Maria Concetta Morrone",
+      "name": "Caterina Primi",
       "count": 2
     },
     {
-      "name": "Caterina Primi",
+      "name": "Filippo Gasperini",
       "count": 2
     },
     {
@@ -451,6 +455,18 @@
       "count": 1
     },
     {
+      "name": "Daniela Ricci",
+      "count": 1
+    },
+    {
+      "name": "Francesca Gallini",
+      "count": 1
+    },
+    {
+      "name": "Ilaria Merusi",
+      "count": 1
+    },
+    {
       "name": "Arianna Andolfi",
       "count": 1
     },
@@ -459,11 +475,31 @@
       "count": 1
     },
     {
+      "name": "F. Tomaiuolo",
+      "count": 1
+    },
+    {
+      "name": "S. Campana",
+      "count": 1
+    },
+    {
       "name": "Nicola Domenici",
       "count": 1
     },
     {
       "name": "Irene Togoli",
+      "count": 1
+    },
+    {
+      "name": "G. Guerrini",
+      "count": 1
+    },
+    {
+      "name": "M. Monti",
+      "count": 1
+    },
+    {
+      "name": "B. Del Lucchese",
       "count": 1
     },
     {
@@ -484,10 +520,6 @@
     },
     {
       "name": "Chiara V. Marinelli",
-      "count": 1
-    },
-    {
-      "name": "Filippo Gasperini",
       "count": 1
     },
     {

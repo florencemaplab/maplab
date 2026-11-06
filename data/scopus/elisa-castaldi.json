@@ -1,7 +1,7 @@
 {
   "slug": "elisa-castaldi",
   "name": "Elisa Castaldi",
-  "generated_at": "2026-11-05T10:57:43Z",
+  "generated_at": "2026-11-06T10:55:10Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "55660832000",
@@ -240,7 +240,7 @@
     },
     {
       "name": "Roberto Arrighi",
-      "count": 17
+      "count": 18
     },
     {
       "name": "David Charles Burr",
@@ -315,6 +315,10 @@
       "count": 4
     },
     {
+      "name": "Camilla Caponi",
+      "count": 4
+    },
+    {
       "name": "Paola Binda",
       "count": 4
     },
@@ -332,10 +336,6 @@
     },
     {
       "name": "Federico Capelli",
-      "count": 3
-    },
-    {
-      "name": "Camilla Caponi",
       "count": 3
     },
     {
@@ -364,6 +364,10 @@
     },
     {
       "name": "Serena Castellotti",
+      "count": 2
+    },
+    {
+      "name": "Paolo Antonino Grasso",
       "count": 2
     },
     {
@@ -435,10 +439,6 @@
       "count": 1
     },
     {
-      "name": "Caponi C.",
-      "count": 1
-    },
-    {
       "name": "Elvio Blini",
       "count": 1
     },
@@ -476,10 +476,6 @@
     },
     {
       "name": "Mariaelisa Bartoli",
-      "count": 1
-    },
-    {
-      "name": "Paolo A. Grasso",
       "count": 1
     },
     {
@@ -552,6 +548,10 @@
     },
     {
       "name": "L. Cinelli",
+      "count": 1
+    },
+    {
+      "name": "L. Biagi",
       "count": 1
     }
   ]
