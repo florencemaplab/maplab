@@ -1,7 +1,7 @@
 {
   "slug": "giovanni-anobile",
   "name": "Giovanni Anobile",
-  "generated_at": "2026-11-09T11:34:29Z",
+  "generated_at": "2026-11-10T11:13:59Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "36466056200",
@@ -236,19 +236,19 @@
   "coauthors": [
     {
       "name": "David Charles Burr",
-      "count": 38
+      "count": 36
     },
     {
       "name": "Roberto Arrighi",
-      "count": 37
+      "count": 35
     },
     {
       "name": "Guido Marco Cicchini",
-      "count": 21
+      "count": 20
     },
     {
       "name": "Elisa Castaldi",
-      "count": 18
+      "count": 16
     },
     {
       "name": "Paula Andrea Maldonado Moscoso",
@@ -271,16 +271,16 @@
       "count": 5
     },
     {
-      "name": "Giuseppe Maduli",
-      "count": 4
-    },
-    {
       "name": "Eleonora Chelli",
       "count": 4
     },
     {
       "name": "Mariaelisa Bartoli",
       "count": 4
+    },
+    {
+      "name": "Giuseppe Maduli",
+      "count": 3
     },
     {
       "name": "Maria Concetta Morrone",
@@ -467,7 +467,11 @@
       "count": 1
     },
     {
-      "name": "Arianna Andolfi",
+      "name": "Burr D.C.",
+      "count": 1
+    },
+    {
+      "name": "Castaldi E.",
       "count": 1
     },
     {

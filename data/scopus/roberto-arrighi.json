@@ -1,7 +1,7 @@
 {
   "slug": "roberto-arrighi",
   "name": "Roberto Arrighi",
-  "generated_at": "2026-11-09T11:34:29Z",
+  "generated_at": "2026-11-10T11:13:59Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "8870558800",
@@ -236,15 +236,15 @@
   "coauthors": [
     {
       "name": "Giovanni Anobile",
-      "count": 37
+      "count": 35
     },
     {
       "name": "David Charles Burr",
-      "count": 30
+      "count": 28
     },
     {
       "name": "Elisa Castaldi",
-      "count": 18
+      "count": 16
     },
     {
       "name": "Irene Petrizzo",
@@ -255,19 +255,19 @@
       "count": 12
     },
     {
-      "name": "Guido Marco Cicchini",
-      "count": 10
-    },
-    {
       "name": "Paolo Antonino Grasso",
       "count": 9
     },
     {
-      "name": "Irene Togoli",
-      "count": 7
+      "name": "Guido Marco Cicchini",
+      "count": 9
     },
     {
       "name": "Alessandro Farini",
+      "count": 6
+    },
+    {
+      "name": "Irene Togoli",
       "count": 6
     },
     {
@@ -276,10 +276,6 @@
     },
     {
       "name": "Elvio Blini",
-      "count": 4
-    },
-    {
-      "name": "Giuseppe Maduli",
       "count": 4
     },
     {
@@ -296,6 +292,10 @@
     },
     {
       "name": "Serena Castellotti",
+      "count": 3
+    },
+    {
+      "name": "Giuseppe Maduli",
       "count": 3
     },
     {
@@ -455,7 +455,11 @@
       "count": 1
     },
     {
-      "name": "Arianna Andolfi",
+      "name": "Burr D.C.",
+      "count": 1
+    },
+    {
+      "name": "Castaldi E.",
       "count": 1
     },
     {
@@ -468,6 +472,10 @@
     },
     {
       "name": "Simone Bassanelli",
+      "count": 1
+    },
+    {
+      "name": "Togoli I.",
       "count": 1
     },
     {
@@ -544,14 +552,6 @@
     },
     {
       "name": "Giulia Cartocci",
-      "count": 1
-    },
-    {
-      "name": "Roy Lunardi",
-      "count": 1
-    },
-    {
-      "name": "Giovanni Giacomelli",
       "count": 1
     }
   ]

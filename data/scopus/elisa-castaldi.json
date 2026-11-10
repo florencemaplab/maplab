@@ -1,7 +1,7 @@
 {
   "slug": "elisa-castaldi",
   "name": "Elisa Castaldi",
-  "generated_at": "2026-11-09T11:34:29Z",
+  "generated_at": "2026-11-10T11:13:59Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "55660832000",
@@ -236,27 +236,27 @@
   "coauthors": [
     {
       "name": "Giovanni Anobile",
-      "count": 18
+      "count": 16
     },
     {
       "name": "Roberto Arrighi",
-      "count": 18
+      "count": 16
     },
     {
       "name": "David Charles Burr",
-      "count": 14
+      "count": 12
     },
     {
       "name": "Paula A. Maldonado Moscoso",
       "count": 11
     },
     {
-      "name": "Guido Marco Cicchini",
+      "name": "Evelyn Eger",
       "count": 8
     },
     {
-      "name": "Evelyn Eger",
-      "count": 8
+      "name": "Guido Marco Cicchini",
+      "count": 7
     },
     {
       "name": "Maria Concetta Morrone",
@@ -280,10 +280,6 @@
     },
     {
       "name": "Manuela Piazza",
-      "count": 5
-    },
-    {
-      "name": "Giuseppe Maduli",
       "count": 5
     },
     {
@@ -316,6 +312,10 @@
     },
     {
       "name": "Camilla Caponi",
+      "count": 4
+    },
+    {
+      "name": "Giuseppe Maduli",
       "count": 4
     },
     {
@@ -495,7 +495,7 @@
       "count": 1
     },
     {
-      "name": "Arianna Andolfi",
+      "name": "Burr D.C.",
       "count": 1
     },
     {
