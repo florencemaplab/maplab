@@ -1,7 +1,7 @@
 {
   "slug": "roberto-arrighi",
   "name": "Roberto Arrighi",
-  "generated_at": "2026-11-13T11:00:54Z",
+  "generated_at": "2026-11-14T10:27:47Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "8870558800",
@@ -240,7 +240,7 @@
     },
     {
       "name": "David Charles Burr",
-      "count": 30
+      "count": 28
     },
     {
       "name": "Elisa Castaldi",
@@ -255,19 +255,19 @@
       "count": 12
     },
     {
-      "name": "Guido Marco Cicchini",
-      "count": 10
-    },
-    {
       "name": "Paolo Antonino Grasso",
       "count": 9
     },
     {
-      "name": "Irene Togoli",
-      "count": 7
+      "name": "Guido Marco Cicchini",
+      "count": 9
     },
     {
       "name": "Alessandro Farini",
+      "count": 6
+    },
+    {
+      "name": "Irene Togoli",
       "count": 6
     },
     {
@@ -287,10 +287,6 @@
       "count": 4
     },
     {
-      "name": "Maria Concetta Morrone",
-      "count": 4
-    },
-    {
       "name": "David Alais",
       "count": 4
     },
@@ -304,6 +300,10 @@
     },
     {
       "name": "Francesca Tinelli",
+      "count": 3
+    },
+    {
+      "name": "Maria Concetta Morrone",
       "count": 3
     },
     {
@@ -344,10 +344,6 @@
     },
     {
       "name": "Virginie Crollen",
-      "count": 2
-    },
-    {
-      "name": "Arezoo Pooresmaeili",
       "count": 2
     },
     {
@@ -491,6 +487,10 @@
       "count": 1
     },
     {
+      "name": "Arezoo Pooresmaeili",
+      "count": 1
+    },
+    {
       "name": "G. Aghakhanyan",
       "count": 1
     },
@@ -527,7 +527,7 @@
       "count": 1
     },
     {
-      "name": "Laura Biagi",
+      "name": "Pooresmaeili A.",
       "count": 1
     },
     {
@@ -535,11 +535,7 @@
       "count": 1
     },
     {
-      "name": "Luca Cecchetti",
-      "count": 1
-    },
-    {
-      "name": "Marco Giusti",
+      "name": "Cicchini G.M.",
       "count": 1
     },
     {
@@ -552,6 +548,10 @@
     },
     {
       "name": "Giovanni Giacomelli",
+      "count": 1
+    },
+    {
+      "name": "Roberto Volpe",
       "count": 1
     }
   ]
