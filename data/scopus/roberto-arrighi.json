@@ -1,12 +1,12 @@
 {
   "slug": "roberto-arrighi",
   "name": "Roberto Arrighi",
-  "generated_at": "2026-11-14T10:27:47Z",
+  "generated_at": "2026-11-15T10:55:17Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "8870558800",
-    "citation_count": 1880,
-    "cited_by_count": 1880,
+    "citation_count": 1882,
+    "cited_by_count": 1882,
     "h_index": 25
   },
   "publications_analyzed": 78,
@@ -240,7 +240,7 @@
     },
     {
       "name": "David Charles Burr",
-      "count": 28
+      "count": 30
     },
     {
       "name": "Elisa Castaldi",
@@ -255,19 +255,19 @@
       "count": 12
     },
     {
+      "name": "Guido Marco Cicchini",
+      "count": 10
+    },
+    {
       "name": "Paolo Antonino Grasso",
       "count": 9
     },
     {
-      "name": "Guido Marco Cicchini",
-      "count": 9
+      "name": "Irene Togoli",
+      "count": 7
     },
     {
       "name": "Alessandro Farini",
-      "count": 6
-    },
-    {
-      "name": "Irene Togoli",
       "count": 6
     },
     {
@@ -287,6 +287,10 @@
       "count": 4
     },
     {
+      "name": "Maria Concetta Morrone",
+      "count": 4
+    },
+    {
       "name": "David Alais",
       "count": 4
     },
@@ -300,10 +304,6 @@
     },
     {
       "name": "Francesca Tinelli",
-      "count": 3
-    },
-    {
-      "name": "Maria Concetta Morrone",
       "count": 3
     },
     {
@@ -344,6 +344,10 @@
     },
     {
       "name": "Virginie Crollen",
+      "count": 2
+    },
+    {
+      "name": "Arezoo Pooresmaeili",
       "count": 2
     },
     {
@@ -487,10 +491,6 @@
       "count": 1
     },
     {
-      "name": "Arezoo Pooresmaeili",
-      "count": 1
-    },
-    {
       "name": "G. Aghakhanyan",
       "count": 1
     },
@@ -527,7 +527,7 @@
       "count": 1
     },
     {
-      "name": "Pooresmaeili A.",
+      "name": "Laura Biagi",
       "count": 1
     },
     {
@@ -535,7 +535,11 @@
       "count": 1
     },
     {
-      "name": "Cicchini G.M.",
+      "name": "Luca Cecchetti",
+      "count": 1
+    },
+    {
+      "name": "Marco Giusti",
       "count": 1
     },
     {
@@ -548,10 +552,6 @@
     },
     {
       "name": "Giovanni Giacomelli",
-      "count": 1
-    },
-    {
-      "name": "Roberto Volpe",
       "count": 1
     }
   ]
