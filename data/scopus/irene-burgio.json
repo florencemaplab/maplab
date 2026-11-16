@@ -1,12 +1,12 @@
 {
   "slug": "irene-burgio",
   "name": "Irene Burgio",
-  "generated_at": "2026-11-15T10:55:17Z",
+  "generated_at": "2026-11-16T11:20:22Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "60138900600",
-    "citation_count": 3,
-    "cited_by_count": 3,
+    "citation_count": 4,
+    "cited_by_count": 4,
     "h_index": 1
   },
   "publications_analyzed": 2,

@@ -1,12 +1,12 @@
 {
   "slug": "roberto-arrighi",
   "name": "Roberto Arrighi",
-  "generated_at": "2026-11-15T10:55:17Z",
+  "generated_at": "2026-11-16T11:20:22Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "8870558800",
-    "citation_count": 1882,
-    "cited_by_count": 1882,
+    "citation_count": 1885,
+    "cited_by_count": 1885,
     "h_index": 25
   },
   "publications_analyzed": 78,
@@ -236,15 +236,15 @@
   "coauthors": [
     {
       "name": "Giovanni Anobile",
-      "count": 37
+      "count": 36
     },
     {
       "name": "David Charles Burr",
-      "count": 30
+      "count": 29
     },
     {
       "name": "Elisa Castaldi",
-      "count": 18
+      "count": 17
     },
     {
       "name": "Irene Petrizzo",
@@ -252,7 +252,7 @@
     },
     {
       "name": "Paula Andrea Maldonado Moscoso",
-      "count": 12
+      "count": 11
     },
     {
       "name": "Guido Marco Cicchini",
@@ -336,6 +336,10 @@
     },
     {
       "name": "Alessia Tonelli",
+      "count": 2
+    },
+    {
+      "name": "Anobile G.",
       "count": 2
     },
     {
@@ -516,10 +520,6 @@
     },
     {
       "name": "Lara Pedonese",
-      "count": 1
-    },
-    {
-      "name": "Anobile G.",
       "count": 1
     },
     {
