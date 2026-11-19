@@ -1,7 +1,7 @@
 {
   "slug": "alessandro-benedetto",
   "name": "Alessandro Benedetto",
-  "generated_at": "2026-11-18T11:44:04Z",
+  "generated_at": "2026-11-19T11:41:45Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "57189371872",
@@ -133,6 +133,30 @@
       "value": 3
     },
     {
+      "text": "altered cortical",
+      "value": 3
+    },
+    {
+      "text": "cortical synchronization",
+      "value": 3
+    },
+    {
+      "text": "synchronization photosensitive",
+      "value": 3
+    },
+    {
+      "text": "photosensitive idiopathic",
+      "value": 3
+    },
+    {
+      "text": "idiopathic generalized",
+      "value": 3
+    },
+    {
+      "text": "generalized epilepsy",
+      "value": 3
+    },
+    {
       "text": "meyelens affordable",
       "value": 3
     },
@@ -166,30 +190,6 @@
     },
     {
       "text": "visual field",
-      "value": 3
-    },
-    {
-      "text": "altered cortical",
-      "value": 3
-    },
-    {
-      "text": "cortical synchronization",
-      "value": 3
-    },
-    {
-      "text": "synchronization photosensitive",
-      "value": 3
-    },
-    {
-      "text": "photosensitive idiopathic",
-      "value": 3
-    },
-    {
-      "text": "idiopathic generalized",
-      "value": 3
-    },
-    {
-      "text": "generalized epilepsy",
       "value": 3
     },
     {
