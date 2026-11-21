@@ -1,12 +1,12 @@
 {
   "slug": "roberto-arrighi",
   "name": "Roberto Arrighi",
-  "generated_at": "2026-11-20T11:42:16Z",
+  "generated_at": "2026-11-21T11:03:19Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "8870558800",
-    "citation_count": 1887,
-    "cited_by_count": 1887,
+    "citation_count": 1889,
+    "cited_by_count": 1889,
     "h_index": 25
   },
   "publications_analyzed": 78,
@@ -236,7 +236,7 @@
   "coauthors": [
     {
       "name": "Giovanni Anobile",
-      "count": 37
+      "count": 36
     },
     {
       "name": "David Charles Burr",
@@ -248,7 +248,7 @@
     },
     {
       "name": "Irene Petrizzo",
-      "count": 13
+      "count": 12
     },
     {
       "name": "Paula Andrea Maldonado Moscoso",
@@ -283,10 +283,6 @@
       "count": 4
     },
     {
-      "name": "Eleonora Chelli",
-      "count": 4
-    },
-    {
       "name": "Maria Concetta Morrone",
       "count": 4
     },
@@ -296,6 +292,10 @@
     },
     {
       "name": "Serena Castellotti",
+      "count": 3
+    },
+    {
+      "name": "Eleonora Chelli",
       "count": 3
     },
     {
@@ -316,10 +316,6 @@
     },
     {
       "name": "Massimo Gurioli",
-      "count": 2
-    },
-    {
-      "name": "Tommaso Bartolini",
       "count": 2
     },
     {
@@ -371,6 +367,10 @@
       "count": 1
     },
     {
+      "name": "Tommaso Bartolini",
+      "count": 1
+    },
+    {
       "name": "Camilla Bonaudo",
       "count": 1
     },
@@ -408,6 +408,10 @@
     },
     {
       "name": "Paolo Marchesini",
+      "count": 1
+    },
+    {
+      "name": "Petrizzo I.",
       "count": 1
     },
     {
@@ -548,10 +552,6 @@
     },
     {
       "name": "Roy Lunardi",
-      "count": 1
-    },
-    {
-      "name": "Giovanni Giacomelli",
       "count": 1
     }
   ]
