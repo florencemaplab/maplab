@@ -1,12 +1,12 @@
 {
   "slug": "giovanni-anobile",
   "name": "Giovanni Anobile",
-  "generated_at": "2026-11-21T11:03:19Z",
+  "generated_at": "2026-11-22T11:27:28Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "36466056200",
-    "citation_count": 2468,
-    "cited_by_count": 2468,
+    "citation_count": 2469,
+    "cited_by_count": 2469,
     "h_index": 25
   },
   "publications_analyzed": 71,
@@ -240,7 +240,7 @@
     },
     {
       "name": "Roberto Arrighi",
-      "count": 36
+      "count": 37
     },
     {
       "name": "Guido Marco Cicchini",
@@ -260,7 +260,7 @@
     },
     {
       "name": "Irene Petrizzo",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Marco Turi",
@@ -275,12 +275,12 @@
       "count": 4
     },
     {
-      "name": "Mariaelisa Bartoli",
+      "name": "Eleonora Chelli",
       "count": 4
     },
     {
-      "name": "Eleonora Chelli",
-      "count": 3
+      "name": "Mariaelisa Bartoli",
+      "count": 4
     },
     {
       "name": "Maria Concetta Morrone",
@@ -320,6 +320,10 @@
     },
     {
       "name": "Paola Angelelli",
+      "count": 2
+    },
+    {
+      "name": "Tommaso Bartolini",
       "count": 2
     },
     {
@@ -375,10 +379,6 @@
       "count": 1
     },
     {
-      "name": "Tommaso Bartolini",
-      "count": 1
-    },
-    {
       "name": "Irene Burgio",
       "count": 1
     },
@@ -408,10 +408,6 @@
     },
     {
       "name": "Paolo Marchesini",
-      "count": 1
-    },
-    {
-      "name": "Petrizzo I.",
       "count": 1
     },
     {
