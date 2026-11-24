@@ -1,12 +1,12 @@
 {
   "slug": "elisa-castaldi",
   "name": "Elisa Castaldi",
-  "generated_at": "2026-11-23T12:43:09Z",
+  "generated_at": "2026-11-24T13:45:29Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "55660832000",
-    "citation_count": 979,
-    "cited_by_count": 979,
+    "citation_count": 980,
+    "cited_by_count": 980,
     "h_index": 16
   },
   "publications_analyzed": 46,
