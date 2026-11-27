@@ -1,12 +1,12 @@
 {
   "slug": "roberto-arrighi",
   "name": "Roberto Arrighi",
-  "generated_at": "2026-11-26T12:36:00Z",
+  "generated_at": "2026-11-27T12:23:43Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "8870558800",
-    "citation_count": 1891,
-    "cited_by_count": 1891,
+    "citation_count": 1894,
+    "cited_by_count": 1894,
     "h_index": 25
   },
   "publications_analyzed": 78,
