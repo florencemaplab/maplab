@@ -1,7 +1,7 @@
 {
   "slug": "elisa-castaldi",
   "name": "Elisa Castaldi",
-  "generated_at": "2026-11-27T12:23:43Z",
+  "generated_at": "2026-11-28T11:46:45Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "55660832000",
@@ -235,12 +235,12 @@
   ],
   "coauthors": [
     {
-      "name": "Giovanni Anobile",
+      "name": "Roberto Arrighi",
       "count": 18
     },
     {
-      "name": "Roberto Arrighi",
-      "count": 18
+      "name": "Giovanni Anobile",
+      "count": 17
     },
     {
       "name": "David Charles Burr",
@@ -323,10 +323,6 @@
       "count": 4
     },
     {
-      "name": "Francesca Tinelli",
-      "count": 4
-    },
-    {
       "name": "Enrico Fainardi",
       "count": 3
     },
@@ -336,6 +332,10 @@
     },
     {
       "name": "Federico Capelli",
+      "count": 3
+    },
+    {
+      "name": "Francesca Tinelli",
       "count": 3
     },
     {
@@ -471,14 +471,6 @@
       "count": 1
     },
     {
-      "name": "Gasperini Filippo",
-      "count": 1
-    },
-    {
-      "name": "Mariaelisa Bartoli",
-      "count": 1
-    },
-    {
       "name": "Caterina Primi",
       "count": 1
     },
@@ -552,6 +544,14 @@
     },
     {
       "name": "L. Biagi",
+      "count": 1
+    },
+    {
+      "name": "S. Rizzo",
+      "count": 1
+    },
+    {
+      "name": "F. Frijia",
       "count": 1
     }
   ]

@@ -1,7 +1,7 @@
 {
   "slug": "giovanni-anobile",
   "name": "Giovanni Anobile",
-  "generated_at": "2026-11-27T12:23:43Z",
+  "generated_at": "2026-11-28T11:46:45Z",
   "source": "Scopus Search API for citation counts; shared BibTeX for keywords/coauthor counts",
   "metrics": {
     "scopus_author_id": "36466056200",
@@ -236,19 +236,19 @@
   "coauthors": [
     {
       "name": "David Charles Burr",
-      "count": 38
-    },
-    {
-      "name": "Roberto Arrighi",
       "count": 37
     },
     {
+      "name": "Roberto Arrighi",
+      "count": 36
+    },
+    {
       "name": "Guido Marco Cicchini",
-      "count": 21
+      "count": 19
     },
     {
       "name": "Elisa Castaldi",
-      "count": 18
+      "count": 17
     },
     {
       "name": "Paula Andrea Maldonado Moscoso",
@@ -256,14 +256,14 @@
     },
     {
       "name": "Francesca Tinelli",
-      "count": 9
-    },
-    {
-      "name": "Irene Petrizzo",
-      "count": 9
+      "count": 8
     },
     {
       "name": "Marco Turi",
+      "count": 7
+    },
+    {
+      "name": "Irene Petrizzo",
       "count": 7
     },
     {
@@ -280,7 +280,7 @@
     },
     {
       "name": "Mariaelisa Bartoli",
-      "count": 4
+      "count": 3
     },
     {
       "name": "Maria Concetta Morrone",
@@ -327,6 +327,10 @@
       "count": 2
     },
     {
+      "name": "Petrizzo I.",
+      "count": 2
+    },
+    {
       "name": "Elvio Blini",
       "count": 2
     },
@@ -367,15 +371,7 @@
       "count": 1
     },
     {
-      "name": "Beatrice Aruanno",
-      "count": 1
-    },
-    {
-      "name": "Armando Viviano Razionale",
-      "count": 1
-    },
-    {
-      "name": "Monica Bordegoni",
+      "name": "Aruanno B.",
       "count": 1
     },
     {
@@ -384,6 +380,10 @@
     },
     {
       "name": "Massimo Gurioli",
+      "count": 1
+    },
+    {
+      "name": "Castaldi E.",
       "count": 1
     },
     {
@@ -403,19 +403,7 @@
       "count": 1
     },
     {
-      "name": "Gasperini Filippo",
-      "count": 1
-    },
-    {
       "name": "Paolo Marchesini",
-      "count": 1
-    },
-    {
-      "name": "Michele Pellegrino",
-      "count": 1
-    },
-    {
-      "name": "Fabrizio Doricchi",
       "count": 1
     },
     {
